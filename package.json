@@ -30,7 +30,8 @@
 	],
     "categories":
     [
-        "Languages"
+        "Languages",
+        "Snippets"
     ],
     "contributes":
     {
@@ -49,6 +50,13 @@
                 "language": "papyrus",
                 "scopeName": "source.papyrus",
                 "path": "./syntaxes/Papyrus.tmLanguage"
+            }
+        ],
+        "snippets":
+        [
+            {
+                "language": "papyrus",
+                "path": "./snippets/language.json"
             }
         ]
     }

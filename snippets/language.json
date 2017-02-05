@@ -1,0 +1,74 @@
+{
+	"astate": {
+		"prefix": "astate",
+		"body": "Auto State ${1:state}\r\n\t${0}\r\nEndState",
+		"description": "Auto State Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"event": {
+		"prefix": "event",
+		"body": "Event ${1:EventName}(${2:params})\r\n\t${0}\r\nEndEvent",
+		"description": "Event Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "int ${1:count} = 0\r\nWhile (${1:count} < ${2:maxSize})\r\n\t${0}\r\n\t${1:count} += 1\r\nEndWhile",
+		"description": "Pseudo For Loop",
+		"scope": "source.papyrusf4"
+	},
+	"forEach": {
+		"prefix": "forEach",
+		"body": "int ${1:count} = 0\r\nWhile (${1:count} < ${2:arrayName}.length)\r\n\t${3:type} curItem = ${2:arrayName}[${1:count}]\r\n\t${0}\r\n\t${1:count} += 1\r\nEndWhile",
+		"description": "Pseudo For-Each Loop",
+		"scope": "source.papyrusf4"
+	},
+	"fun": {
+		"prefix": "fun",
+		"body": "Function ${1:FunctionName}($2)\r\n\t${0}\r\nEndFunction",
+		"description": "Function Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"group": {
+		"prefix": "group",
+		"body": "Group ${1:GroupName}\r\n\t${0}\r\nEndGroup",
+		"description": "Group Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"if": {
+		"prefix": "if",
+		"body": "\r\nIf (${1:$SELECTION})\r\n\t${0}\r\nEndIf",
+		"description": "If Condition Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"prop": {
+		"prefix": "prop",
+		"body": "${1:type} Property ${2:PropertyName}${0} Auto ${3:Const} ${4:Mandatory}",
+		"description": "Auto Property Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"propFull": {
+		"prefix": "propFull",
+		"body": "${1:type} ${2:PropertyName}_var${0}\r\n${1:type} Property ${2:PropertyName} ${3:Mandatory}\r\n\t${1:type} Function Get()\r\n\t\treturn ${2:PropertyName}_var\r\n\tEndFunction\r\n\r\n\tFunction Set(${1:type} aValue)\r\n\t\t${2:PropertyName}_var = aValue\r\n\tEndFunction\r\nEndProperty",
+		"description": "Property (with get and set)",
+		"scope": "source.papyrusf4"
+	},
+	"state": {
+		"prefix": "state",
+		"body": "State ${1:state}\r\n\t${0}\r\nEndState",
+		"description": "State Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"struct": {
+		"prefix": "struct",
+		"body": "Struct ${1:StructName}\r\n\t${0}\r\nEndStruct",
+		"description": "Struct Snippet",
+		"scope": "source.papyrusf4"
+	},
+	"while": {
+		"prefix": "while",
+		"body": "While (${1:$SELECTION})\r\n\t${0}\r\nEndWhile",
+		"description": "While Loop Snippet",
+		"scope": "source.papyrusf4"
+	}
+}
