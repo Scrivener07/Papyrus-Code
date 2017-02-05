@@ -44,7 +44,17 @@
                 "aliases": ["Papyrus", "papyrus"],
                 "extensions": [".psc"],
                 "configuration": "./language-configuration.json"
-            }
+            },
+			{
+				"id": "papyrus-assembly",
+				"aliases": ["Papyrus Assembly", "papyrus-assembly"],
+				"extensions": [".pas"]
+			},
+			{
+				"id": "papyrus-compiled",
+				"aliases": ["Papyrus Compiled", "papyrus-compiled"],
+				"extensions": [".pex"]
+			}
         ],
         "grammars":
         [
@@ -52,7 +62,17 @@
                 "language": "papyrus",
                 "scopeName": "source.papyrus",
                 "path": "./syntaxes/Papyrus.tmLanguage"
-            }
+            },
+			{
+				"language": "papyrus-assembly",
+				"scopeName": "source.papyrus-assembly",
+				"path": "./syntaxes/Papyrus-Assembly.tmLanguage"
+			},
+			{
+				"language": "papyrus-compiled",
+				"scopeName": "source.papyrus-compiled",
+				"path": "./syntaxes/Papyrus-Compiled.tmLanguage"
+			}
         ],
         "snippets":
         [
