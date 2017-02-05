@@ -1,0 +1,55 @@
+{
+    "name": "papyrus",
+    "displayName": "Papyrus Code",
+    "description": "A package for working with Mark Hanna's Papyrus scripting language.",
+	"publisher": "Scrivener07",
+    "icon": "images/icon.png",
+	"galleryBanner":
+	{
+		"color": "#1e415e",
+		"theme": "dark"
+	},
+    "version": "0.0.1",
+	"engines":
+    {
+        "vscode": "^1.9.0"
+    },
+    "repository":
+    {
+		"type": "git",
+		"url": "https://github.com/Scrivener07/Papyrus-Code"
+	},
+	"bugs":
+	{
+		"url": "https://github.com/Scrivener07/Papyrus-Code/issues"
+	},
+	"keywords":
+	[
+		"papyrus",
+		"fallout-4"
+	],
+    "categories":
+    [
+        "Languages"
+    ],
+    "contributes":
+    {
+        "languages":
+        [
+            {
+                "id": "papyrus",
+                "aliases": ["Papyrus", "papyrus"],
+                "extensions": [".psc"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars":
+        [
+            {
+                "language": "papyrus",
+                "scopeName": "source.papyrus",
+                "path": "./syntaxes/Papyrus.tmLanguage"
+            }
+        ]
+    }
+}
