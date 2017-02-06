@@ -46,7 +46,8 @@
 	},
 	"activationEvents": [
 		"onCommand:extension.papyrusHello",
-		"onCommand:extension.papyrusCount"
+		"onCommand:extension.papyrusCount",
+		"onCommand:extension.statusCounter"
 	],
 	"contributes": {
 		"commands": [
@@ -57,6 +58,10 @@
 			{
 				"command": "extension.papyrusCount",
 				"title": "Papyrus - Count Selection"
+			},
+			{
+				"command": "extension.statusCounter",
+				"title": "Papyrus - Status Counter"
 			}
 		],
 		"languages": [
