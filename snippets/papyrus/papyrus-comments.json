@@ -1,6 +1,6 @@
 {
 	"Documentation Region": {
-		"prefix": "docRegion",
+		"prefix": "Region Class Snippet",
 		"scope": "source.papyrus",
 		"description": [
 			"Comment Division Snippet"
@@ -8,7 +8,7 @@
 		"body": [
 			"; ${1:Documentation Division}",
 			";---------------------------------------------",
-			"\n\n${0}"
+			"\n${0}"
 		]
 	}
 }
