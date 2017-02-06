@@ -45,13 +45,18 @@
 		"@types/mocha": "^2.2.32"
 	},
 	"activationEvents": [
-		"onCommand:extension.sayHello"
+		"onCommand:extension.papyrusHello",
+		"onCommand:extension.papyrusCount"
 	],
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.sayHello",
-				"title": "Hello World"
+				"command": "extension.papyrusHello",
+				"title": "Papyrus - Hello World!"
+			},
+			{
+				"command": "extension.papyrusCount",
+				"title": "Papyrus - Count Selection"
 			}
 		],
 		"languages": [
