@@ -69,8 +69,7 @@ export class WordCounter {
 
         let doc = editor.document;
 
-        // Only update status if an MD file
-        if (doc.languageId === "markdown") {
+        if (doc.languageId === "papyrus") {
             let wordCount = this._getWordCount(doc);
 
             // Update the status bar
