@@ -1,0 +1,80 @@
+{
+	"enablefasttravel": {
+		"prefix": "enablefasttravel",
+		"body": "EnableFastTravel(${1:bool abEnable = True})${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"getactorowner": {
+		"prefix": "getactorowner",
+		"body": "GetActorOwner()${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"getfactionowner": {
+		"prefix": "getfactionowner",
+		"body": "GetFactionOwner()${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"isattached": {
+		"prefix": "isattached",
+		"body": "IsAttached()${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"isinterior": {
+		"prefix": "isinterior",
+		"body": "IsInterior()${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"isloaded": {
+		"prefix": "isloaded",
+		"body": "IsLoaded()${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"reset": {
+		"prefix": "reset",
+		"body": "Reset()${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"setactorowner": {
+		"prefix": "setactorowner",
+		"body": "SetActorOwner(${1:ActorBase akActorBase})${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"setfactionowner": {
+		"prefix": "setfactionowner",
+		"body": "SetFactionOwner(${1:Faction akFaction})${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"setfogcolor": {
+		"prefix": "setfogcolor",
+		"body": "SetFogColor(${1:int aiNearRed}, ${2:int aiNearGreen}, ${3:int aiNearBlue}, ${4:int aiFarRed}, ${5:int aiFarGreen}, ${6:int aiFarBlue})${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"setfogplanes": {
+		"prefix": "setfogplanes",
+		"body": "SetFogPlanes(${1:float afNear}, ${2:float afFar})${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"setfogpower": {
+		"prefix": "setfogpower",
+		"body": "SetFogPower(${1:float afPower})${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	},
+	"setpublic": {
+		"prefix": "setpublic",
+		"body": "SetPublic(${1:bool abPublic = True})${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
+	}
+}

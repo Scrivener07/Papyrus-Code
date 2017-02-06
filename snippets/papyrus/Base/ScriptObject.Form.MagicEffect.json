@@ -1,0 +1,8 @@
+{
+	"getassociatedskill": {
+		"prefix": "getassociatedskill",
+		"body": "GetAssociatedSkill()${0}",
+		"description": "MagicEffect",
+		"scope": "source.papyrus"
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"Statement If": {
+		"prefix": "if",
+		"scope": "source.papyrus",
+		"description": [
+			"If Condition Snippet"
+		],
+		"body": [
+			"\r\nIf (${1:$SELECTION})\r\n\t${0}\r\nEndIf"
+		]
+	},
+	"Statement loop While": {
+		"prefix": "Loop While",
+		"scope": "source.papyrus",
+		"description": [
+			"While Loop Snippet"
+		],
+		"body": [
+			"While (${1:$SELECTION})\r\n\t${0}\r\nEndWhile"
+		]
+	},
+	"Statement loop For": {
+		"prefix": "Loop For",
+		"scope": "source.papyrus",
+		"description": [
+			"Pseudo For Loop Snippet"
+		],
+		"body": [
+			"int ${1:index} = 0\r\nWhile (${1:index} < ${2:maxSize})\r\n\t${0}\r\n\t${1:index} += 1\r\nEndWhile"
+		]
+	},
+	"Statement loop For Each": {
+		"prefix": "Loop For Each",
+		"scope": "source.papyrus",
+		"description": [
+			"Pseudo For-Each Loop Snippet"
+		],
+		"body": [
+			"int ${1:index} = 0\r\nWhile (${1:index} < ${2:array}.Length)\r\n\t${3:type} curItem = ${2:array}[${1:index}]\r\n\t${0}\r\n\t${1:index} += 1\r\nEndWhile"
+		]
+	}
+}

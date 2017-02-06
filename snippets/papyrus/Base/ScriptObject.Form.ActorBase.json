@@ -1,0 +1,98 @@
+{
+	"getclass": {
+		"prefix": "getclass",
+		"body": "GetClass()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getdeadcount": {
+		"prefix": "getdeadcount",
+		"body": "GetDeadCount()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getgiftfilter": {
+		"prefix": "getgiftfilter",
+		"body": "GetGiftFilter()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getlevel": {
+		"prefix": "getlevel",
+		"body": "GetLevel()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getlevelexact": {
+		"prefix": "getlevelexact",
+		"body": "GetLevelExact()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getrace": {
+		"prefix": "getrace",
+		"body": "GetRace()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getsex": {
+		"prefix": "getsex",
+		"body": "GetSex()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getuniqueactor": {
+		"prefix": "getuniqueactor",
+		"body": "GetUniqueActor()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"isessential": {
+		"prefix": "isessential",
+		"body": "IsEssential()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"isinvulnerable": {
+		"prefix": "isinvulnerable",
+		"body": "IsInvulnerable()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"isprotected": {
+		"prefix": "isprotected",
+		"body": "IsProtected()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"isunique": {
+		"prefix": "isunique",
+		"body": "IsUnique()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"setessential": {
+		"prefix": "setessential",
+		"body": "SetEssential(${1:bool abEssential = true})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"setinvulnerable": {
+		"prefix": "setinvulnerable",
+		"body": "SetInvulnerable(${1:bool abInvulnerable = true})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"setoutfit": {
+		"prefix": "setoutfit",
+		"body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"setprotected": {
+		"prefix": "setprotected",
+		"body": "SetProtected(${1:bool abProtected = true})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	}
+}

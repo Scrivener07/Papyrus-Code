@@ -1,0 +1,20 @@
+{
+	"clear": {
+		"prefix": "clear",
+		"body": "Clear()${0}",
+		"description": "LocationAlias",
+		"scope": "source.papyrus"
+	},
+	"forcelocationto": {
+		"prefix": "forcelocationto",
+		"body": "ForceLocationTo(${1:Location akNewLocation})${0}",
+		"description": "LocationAlias",
+		"scope": "source.papyrus"
+	},
+	"getlocation": {
+		"prefix": "getlocation",
+		"body": "GetLocation()${0}",
+		"description": "LocationAlias",
+		"scope": "source.papyrus"
+	}
+}

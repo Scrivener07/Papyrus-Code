@@ -1,0 +1,20 @@
+{
+	"onmenuitemrun-REM": {
+		"prefix": "onmenuitemrun-REM",
+		"body": "Event Terminal.OnMenuItemRun(Terminal akSender, int auiMenuItemID, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Terminal.OnMenuItemRun",
+		"scope": "source.papyrus"
+	},
+	"onmenuitemrun": {
+		"prefix": "onmenuitemrun",
+		"body": "Event OnMenuItemRun(int auiMenuItemID, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Terminal.OnMenuItemRun",
+		"scope": "source.papyrus"
+	},
+	"showonpipboy": {
+		"prefix": "showonpipboy",
+		"body": "ShowOnPipboy()${0}",
+		"description": "Terminal",
+		"scope": "source.papyrus"
+	}
+}

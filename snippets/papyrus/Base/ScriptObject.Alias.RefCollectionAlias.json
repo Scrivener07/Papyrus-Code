@@ -1,0 +1,1124 @@
+{
+	"addarray": {
+		"prefix": "addarray",
+		"body": "AddArray(${1:ObjectReference[] refArrayToAdd})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"addref": {
+		"prefix": "addref",
+		"body": "AddRef(${1:ObjectReference akNewRef})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"addrefcollection": {
+		"prefix": "addrefcollection",
+		"body": "AddRefCollection(${1:RefCollectionAlias refCollectionAliasToAdd})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"addtofaction": {
+		"prefix": "addtofaction",
+		"body": "AddToFaction(${1:faction akFaction})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"blockactivation": {
+		"prefix": "blockactivation",
+		"body": "BlockActivation(${1:bool abBlocked = true}, ${2:bool abHideActivateText = false})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"disableall": {
+		"prefix": "disableall",
+		"body": "DisableAll(${1:bool bFadeOut = false})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"enableall": {
+		"prefix": "enableall",
+		"body": "EnableAll(${1:bool bFadeIn = false})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"evaluateall": {
+		"prefix": "evaluateall",
+		"body": "EvaluateAll()${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"find": {
+		"prefix": "find",
+		"body": "Find(${1:ObjectReference akFindRef})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"getat": {
+		"prefix": "getat",
+		"body": "GetAt(${1:int aiIndex})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"getcount": {
+		"prefix": "getcount",
+		"body": "GetCount()${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"getfirstownedobject": {
+		"prefix": "getfirstownedobject",
+		"body": "GetFirstOwnedObject(${1:Actor actorOwner})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"isownedobjectinlist": {
+		"prefix": "isownedobjectinlist",
+		"body": "IsOwnedObjectInList(${1:Actor actorOwner})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"killall": {
+		"prefix": "killall",
+		"body": "KillAll(${1:actor akKiller = NONE})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"linkcollectionto": {
+		"prefix": "linkcollectionto",
+		"body": "LinkCollectionTo(${1:RefCollectionAlias LinkedRefCollectionAlias}, ${2:keyword LinkKeyword = none}, ${3:bool WrapLinks = false})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"moveallto": {
+		"prefix": "moveallto",
+		"body": "MoveAllTo(${1:ObjectReference akTarget})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"onactivate-RC": {
+		"prefix": "onactivate-RC",
+		"body": "Event OnActivate(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnActivate",
+		"scope": "source.papyrus"
+	},
+	"oncellattach-RC": {
+		"prefix": "oncellattach-RC",
+		"body": "Event OnCellAttach(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCellAttach",
+		"scope": "source.papyrus"
+	},
+	"oncelldetach-RC": {
+		"prefix": "oncelldetach-RC",
+		"body": "Event OnCellDetach(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCellDetach",
+		"scope": "source.papyrus"
+	},
+	"oncellload-RC": {
+		"prefix": "oncellload-RC",
+		"body": "Event OnCellLoad(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCellLoad",
+		"scope": "source.papyrus"
+	},
+	"onclose-RC": {
+		"prefix": "onclose-RC",
+		"body": "Event OnClose(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnClose",
+		"scope": "source.papyrus"
+	},
+	"oncombatstatechanged-RC": {
+		"prefix": "oncombatstatechanged-RC",
+		"body": "Event OnCombatStateChanged(ObjectReference akSender, Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCombatStateChanged",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodecompletecommand-RC": {
+		"prefix": "oncommandmodecompletecommand-RC",
+		"body": "Event OnCommandModeCompleteCommand(ObjectReference akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCommandModeCompleteCommand",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodeenter-RC": {
+		"prefix": "oncommandmodeenter-RC",
+		"body": "Event OnCommandModeEnter(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCommandModeEnter",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodeexit-RC": {
+		"prefix": "oncommandmodeexit-RC",
+		"body": "Event OnCommandModeExit(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCommandModeExit",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodegivecommand-RC": {
+		"prefix": "oncommandmodegivecommand-RC",
+		"body": "Event OnCommandModeGiveCommand(ObjectReference akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCommandModeGiveCommand",
+		"scope": "source.papyrus"
+	},
+	"oncompaniondismiss-RC": {
+		"prefix": "oncompaniondismiss-RC",
+		"body": "Event OnCompanionDismiss(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCompanionDismiss",
+		"scope": "source.papyrus"
+	},
+	"onconsciousnessstatechanged-RC": {
+		"prefix": "onconsciousnessstatechanged-RC",
+		"body": "Event OnConsciousnessStateChanged(ObjectReference akSender, bool abUnconscious )\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnConsciousnessStateChanged",
+		"scope": "source.papyrus"
+	},
+	"oncontainerchanged-RC": {
+		"prefix": "oncontainerchanged-RC",
+		"body": "Event OnContainerChanged(ObjectReference akSender, ObjectReference akNewContainer, ObjectReference akOldContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnContainerChanged",
+		"scope": "source.papyrus"
+	},
+	"oncripple-RC": {
+		"prefix": "oncripple-RC",
+		"body": "Event OnCripple(ObjectReference akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnCripple",
+		"scope": "source.papyrus"
+	},
+	"ondeath-RC": {
+		"prefix": "ondeath-RC",
+		"body": "Event OnDeath(ObjectReference akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnDeath",
+		"scope": "source.papyrus"
+	},
+	"ondeferredkill-RC": {
+		"prefix": "ondeferredkill-RC",
+		"body": "Event OnDeferredKill(ObjectReference akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnDeferredKill",
+		"scope": "source.papyrus"
+	},
+	"ondestructionstagechanged-RC": {
+		"prefix": "ondestructionstagechanged-RC",
+		"body": "Event OnDestructionStageChanged(ObjectReference akSender, int aiOldStage, int aiCurrentStage)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnDestructionStageChanged",
+		"scope": "source.papyrus"
+	},
+	"ondifficultychanged-RC": {
+		"prefix": "ondifficultychanged-RC",
+		"body": "Event OnDifficultyChanged(ObjectReference akSender, int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnDifficultyChanged",
+		"scope": "source.papyrus"
+	},
+	"ondying-RC": {
+		"prefix": "ondying-RC",
+		"body": "Event OnDying(ObjectReference akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnDying",
+		"scope": "source.papyrus"
+	},
+	"onenterbleedout-RC": {
+		"prefix": "onenterbleedout-RC",
+		"body": "Event OnEnterBleedout(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnEnterBleedout",
+		"scope": "source.papyrus"
+	},
+	"onentersneaking-RC": {
+		"prefix": "onentersneaking-RC",
+		"body": "Event OnEnterSneaking(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnEnterSneaking",
+		"scope": "source.papyrus"
+	},
+	"onequipped-RC": {
+		"prefix": "onequipped-RC",
+		"body": "Event OnEquipped(ObjectReference akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnEquipped",
+		"scope": "source.papyrus"
+	},
+	"onescortwaitstart-RC": {
+		"prefix": "onescortwaitstart-RC",
+		"body": "Event OnEscortWaitStart(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnEscortWaitStart",
+		"scope": "source.papyrus"
+	},
+	"onescortwaitstop-RC": {
+		"prefix": "onescortwaitstop-RC",
+		"body": "Event OnEscortWaitStop(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnEscortWaitStop",
+		"scope": "source.papyrus"
+	},
+	"onexitfurniture-RC": {
+		"prefix": "onexitfurniture-RC",
+		"body": "Event OnExitFurniture(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnExitFurniture",
+		"scope": "source.papyrus"
+	},
+	"ongetup-RC": {
+		"prefix": "ongetup-RC",
+		"body": "Event OnGetUp(ObjectReference akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnGetUp",
+		"scope": "source.papyrus"
+	},
+	"ongrab-RC": {
+		"prefix": "ongrab-RC",
+		"body": "Event OnGrab(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnGrab",
+		"scope": "source.papyrus"
+	},
+	"onholotapechatter-RC": {
+		"prefix": "onholotapechatter-RC",
+		"body": "Event OnHolotapeChatter(ObjectReference akSender, string astrChatter, float afNumericData )\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnHolotapeChatter",
+		"scope": "source.papyrus"
+	},
+	"onholotapeplay-RC": {
+		"prefix": "onholotapeplay-RC",
+		"body": "Event OnHolotapePlay(ObjectReference akSender, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnHolotapePlay",
+		"scope": "source.papyrus"
+	},
+	"onitemadded-RC": {
+		"prefix": "onitemadded-RC",
+		"body": "Event OnItemAdded(ObjectReference akSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnItemAdded",
+		"scope": "source.papyrus"
+	},
+	"onitemequipped-RC": {
+		"prefix": "onitemequipped-RC",
+		"body": "Event OnItemEquipped(ObjectReference akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnItemEquipped",
+		"scope": "source.papyrus"
+	},
+	"onitemremoved-RC": {
+		"prefix": "onitemremoved-RC",
+		"body": "Event OnItemRemoved(ObjectReference akSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akDestContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnItemRemoved",
+		"scope": "source.papyrus"
+	},
+	"onitemunequipped-RC": {
+		"prefix": "onitemunequipped-RC",
+		"body": "Event OnItemUnequipped(ObjectReference akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnItemUnequipped",
+		"scope": "source.papyrus"
+	},
+	"onkill-RC": {
+		"prefix": "onkill-RC",
+		"body": "Event OnKill(ObjectReference akSender, Actor akVictim)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnKill",
+		"scope": "source.papyrus"
+	},
+	"onload-RC": {
+		"prefix": "onload-RC",
+		"body": "Event OnLoad(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnLoad",
+		"scope": "source.papyrus"
+	},
+	"onlocationchange-RC": {
+		"prefix": "onlocationchange-RC",
+		"body": "Event OnLocationChange(ObjectReference akSender, Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnLocationChange",
+		"scope": "source.papyrus"
+	},
+	"onlockstatechanged-RC": {
+		"prefix": "onlockstatechanged-RC",
+		"body": "Event OnLockStateChanged(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnLockStateChanged",
+		"scope": "source.papyrus"
+	},
+	"onopen-RC": {
+		"prefix": "onopen-RC",
+		"body": "Event OnOpen(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnOpen",
+		"scope": "source.papyrus"
+	},
+	"onpackagechange-RC": {
+		"prefix": "onpackagechange-RC",
+		"body": "Event OnPackageChange(ObjectReference akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPackageChange",
+		"scope": "source.papyrus"
+	},
+	"onpackageend-RC": {
+		"prefix": "onpackageend-RC",
+		"body": "Event OnPackageEnd(ObjectReference akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPackageEnd",
+		"scope": "source.papyrus"
+	},
+	"onpackagestart-RC": {
+		"prefix": "onpackagestart-RC",
+		"body": "Event OnPackageStart(ObjectReference akSender, Package akNewPackage)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPackageStart",
+		"scope": "source.papyrus"
+	},
+	"onpartialcripple-RC": {
+		"prefix": "onpartialcripple-RC",
+		"body": "Event OnPartialCripple(ObjectReference akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPartialCripple",
+		"scope": "source.papyrus"
+	},
+	"onpickpocketfailed-RC": {
+		"prefix": "onpickpocketfailed-RC",
+		"body": "Event OnPickpocketFailed(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPickpocketFailed",
+		"scope": "source.papyrus"
+	},
+	"onpipboyradiodetection-RC": {
+		"prefix": "onpipboyradiodetection-RC",
+		"body": "Event OnPipboyRadioDetection(ObjectReference akSender, bool abDetected)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPipboyRadioDetection",
+		"scope": "source.papyrus"
+	},
+	"onplayercreaterobot-RC": {
+		"prefix": "onplayercreaterobot-RC",
+		"body": "Event OnPlayerCreateRobot(ObjectReference akSender, Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerCreateRobot",
+		"scope": "source.papyrus"
+	},
+	"onplayerdialoguetarget-RC": {
+		"prefix": "onplayerdialoguetarget-RC",
+		"body": "Event OnPlayerDialogueTarget(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerDialogueTarget",
+		"scope": "source.papyrus"
+	},
+	"onplayerentervertibird-RC": {
+		"prefix": "onplayerentervertibird-RC",
+		"body": "Event OnPlayerEnterVertibird(ObjectReference akSender, ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerEnterVertibird",
+		"scope": "source.papyrus"
+	},
+	"onplayerfalllongdistance-RC": {
+		"prefix": "onplayerfalllongdistance-RC",
+		"body": "Event OnPlayerFallLongDistance(ObjectReference akSender, float afDamage)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerFallLongDistance",
+		"scope": "source.papyrus"
+	},
+	"onplayerfireweapon-RC": {
+		"prefix": "onplayerfireweapon-RC",
+		"body": "Event OnPlayerFireWeapon(ObjectReference akSender, Form akBaseObject)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerFireWeapon",
+		"scope": "source.papyrus"
+	},
+	"onplayerhealteammate-RC": {
+		"prefix": "onplayerhealteammate-RC",
+		"body": "Event OnPlayerHealTeammate(ObjectReference akSender, Actor akTeammate)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerHealTeammate",
+		"scope": "source.papyrus"
+	},
+	"onplayerloadgame-RC": {
+		"prefix": "onplayerloadgame-RC",
+		"body": "Event OnPlayerLoadGame(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerLoadGame",
+		"scope": "source.papyrus"
+	},
+	"onplayermodarmorweapon-RC": {
+		"prefix": "onplayermodarmorweapon-RC",
+		"body": "Event OnPlayerModArmorWeapon(ObjectReference akSender, Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerModArmorWeapon",
+		"scope": "source.papyrus"
+	},
+	"onplayermodrobot-RC": {
+		"prefix": "onplayermodrobot-RC",
+		"body": "Event OnPlayerModRobot(ObjectReference akSender, Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerModRobot",
+		"scope": "source.papyrus"
+	},
+	"onplayerswimming-RC": {
+		"prefix": "onplayerswimming-RC",
+		"body": "Event OnPlayerSwimming(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerSwimming",
+		"scope": "source.papyrus"
+	},
+	"onplayeruseworkbench-RC": {
+		"prefix": "onplayeruseworkbench-RC",
+		"body": "Event OnPlayerUseWorkBench(ObjectReference akSender, ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPlayerUseWorkBench",
+		"scope": "source.papyrus"
+	},
+	"onpoweroff-RC": {
+		"prefix": "onpoweroff-RC",
+		"body": "Event OnPowerOff(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPowerOff",
+		"scope": "source.papyrus"
+	},
+	"onpoweron-RC": {
+		"prefix": "onpoweron-RC",
+		"body": "Event OnPowerOn(ObjectReference akSender, ObjectReference akPowerGenerator)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnPowerOn",
+		"scope": "source.papyrus"
+	},
+	"onraceswitchcomplete-RC": {
+		"prefix": "onraceswitchcomplete-RC",
+		"body": "Event OnRaceSwitchComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnRaceSwitchComplete",
+		"scope": "source.papyrus"
+	},
+	"onread-RC": {
+		"prefix": "onread-RC",
+		"body": "Event OnRead(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnRead",
+		"scope": "source.papyrus"
+	},
+	"onrelease-RC": {
+		"prefix": "onrelease-RC",
+		"body": "Event OnRelease(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnRelease",
+		"scope": "source.papyrus"
+	},
+	"onreset-RC": {
+		"prefix": "onreset-RC",
+		"body": "Event OnReset(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnReset",
+		"scope": "source.papyrus"
+	},
+	"onsell-RC": {
+		"prefix": "onsell-RC",
+		"body": "Event OnSell(ObjectReference akSender, Actor akSeller)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnSell",
+		"scope": "source.papyrus"
+	},
+	"onsit-RC": {
+		"prefix": "onsit-RC",
+		"body": "Event OnSit(ObjectReference akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnSit",
+		"scope": "source.papyrus"
+	},
+	"onspeechchallengeavailable-RC": {
+		"prefix": "onspeechchallengeavailable-RC",
+		"body": "Event OnSpeechChallengeAvailable(ObjectReference akSender, ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnSpeechChallengeAvailable",
+		"scope": "source.papyrus"
+	},
+	"onspellcast-RC": {
+		"prefix": "onspellcast-RC",
+		"body": "Event OnSpellCast(ObjectReference akSender, Form akSpell)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnSpellCast",
+		"scope": "source.papyrus"
+	},
+	"ontranslationalmostcomplete-RC": {
+		"prefix": "ontranslationalmostcomplete-RC",
+		"body": "Event OnTranslationAlmostComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnTranslationAlmostComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationcomplete-RC": {
+		"prefix": "ontranslationcomplete-RC",
+		"body": "Event OnTranslationComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnTranslationComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationfailed-RC": {
+		"prefix": "ontranslationfailed-RC",
+		"body": "Event OnTranslationFailed(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnTranslationFailed",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstart-RC": {
+		"prefix": "ontraphitstart-RC",
+		"body": "Event OnTrapHitStart(ObjectReference akSender, ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnTrapHitStart",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstop-RC": {
+		"prefix": "ontraphitstop-RC",
+		"body": "Event OnTrapHitStop(ObjectReference akSender, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnTrapHitStop",
+		"scope": "source.papyrus"
+	},
+	"ontriggerenter-RC": {
+		"prefix": "ontriggerenter-RC",
+		"body": "Event OnTriggerEnter(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnTriggerEnter",
+		"scope": "source.papyrus"
+	},
+	"ontriggerleave-RC": {
+		"prefix": "ontriggerleave-RC",
+		"body": "Event OnTriggerLeave(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnTriggerLeave",
+		"scope": "source.papyrus"
+	},
+	"onunequipped-RC": {
+		"prefix": "onunequipped-RC",
+		"body": "Event OnUnequipped(ObjectReference akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnUnequipped",
+		"scope": "source.papyrus"
+	},
+	"onunload-RC": {
+		"prefix": "onunload-RC",
+		"body": "Event OnUnload(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnUnload",
+		"scope": "source.papyrus"
+	},
+	"onworkshopmode-RC": {
+		"prefix": "onworkshopmode-RC",
+		"body": "Event OnWorkshopMode(ObjectReference akSender, bool aStart)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnWorkshopMode",
+		"scope": "source.papyrus"
+	},
+	"onworkshopnpctransfer-RC": {
+		"prefix": "onworkshopnpctransfer-RC",
+		"body": "Event OnWorkshopNPCTransfer(ObjectReference akSender, Location akNewWorkshop, Keyword akActionKW)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnWorkshopNPCTransfer",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectdestroyed-RC": {
+		"prefix": "onworkshopobjectdestroyed-RC",
+		"body": "Event OnWorkshopObjectDestroyed(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnWorkshopObjectDestroyed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectgrabbed-RC": {
+		"prefix": "onworkshopobjectgrabbed-RC",
+		"body": "Event OnWorkshopObjectGrabbed(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnWorkshopObjectGrabbed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectmoved-RC": {
+		"prefix": "onworkshopobjectmoved-RC",
+		"body": "Event OnWorkshopObjectMoved(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnWorkshopObjectMoved",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectplaced-RC": {
+		"prefix": "onworkshopobjectplaced-RC",
+		"body": "Event OnWorkshopObjectPlaced(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnWorkshopObjectPlaced",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectrepaired-RC": {
+		"prefix": "onworkshopobjectrepaired-RC",
+		"body": "Event OnWorkshopObjectRepaired(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event RefCollectionAlias.OnWorkshopObjectRepaired",
+		"scope": "source.papyrus"
+	},
+	"removeall": {
+		"prefix": "removeall",
+		"body": "RemoveAll()${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"removefromallfactions": {
+		"prefix": "removefromallfactions",
+		"body": "RemoveFromAllFactions()${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"removefromfaction": {
+		"prefix": "removefromfaction",
+		"body": "RemoveFromFaction(${1:faction akFaction})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"removeref": {
+		"prefix": "removeref",
+		"body": "RemoveRef(${1:ObjectReference akRefToRemove})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"resetall": {
+		"prefix": "resetall",
+		"body": "ResetAll()${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"setessential": {
+		"prefix": "setessential",
+		"body": "SetEssential(${1:bool bSetEssential = true})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"setprotected": {
+		"prefix": "setprotected",
+		"body": "SetProtected(${1:bool bSetProtected = true})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"setvalue": {
+		"prefix": "setvalue",
+		"body": "SetValue(${1:ActorValue akActorValue}, ${2:float fValue})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"startcombatall": {
+		"prefix": "startcombatall",
+		"body": "StartCombatAll(${1:Actor akCombatTarget})${0}",
+		"description": "RefCollectionAlias",
+		"scope": "source.papyrus"
+	},
+	"onactivate-RC-REM": {
+		"prefix": "onactivate-RC-REM",
+		"body": "Event RefCollectionAlias.OnActivate(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnActivate",
+		"scope": "source.papyrus"
+	},
+	"oncellattach-RC-REM": {
+		"prefix": "oncellattach-RC-REM",
+		"body": "Event RefCollectionAlias.OnCellAttach(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCellAttach",
+		"scope": "source.papyrus"
+	},
+	"oncelldetach-RC-REM": {
+		"prefix": "oncelldetach-RC-REM",
+		"body": "Event RefCollectionAlias.OnCellDetach(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCellDetach",
+		"scope": "source.papyrus"
+	},
+	"oncellload-RC-REM": {
+		"prefix": "oncellload-RC-REM",
+		"body": "Event RefCollectionAlias.OnCellLoad(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCellLoad",
+		"scope": "source.papyrus"
+	},
+	"onclose-RC-REM": {
+		"prefix": "onclose-RC-REM",
+		"body": "Event RefCollectionAlias.OnClose(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnClose",
+		"scope": "source.papyrus"
+	},
+	"oncombatstatechanged-RC-REM": {
+		"prefix": "oncombatstatechanged-RC-REM",
+		"body": "Event RefCollectionAlias.OnCombatStateChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCombatStateChanged",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodecompletecommand-RC-REM": {
+		"prefix": "oncommandmodecompletecommand-RC-REM",
+		"body": "Event RefCollectionAlias.OnCommandModeCompleteCommand(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCommandModeCompleteCommand",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodeenter-RC-REM": {
+		"prefix": "oncommandmodeenter-RC-REM",
+		"body": "Event RefCollectionAlias.OnCommandModeEnter(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCommandModeEnter",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodeexit-RC-REM": {
+		"prefix": "oncommandmodeexit-RC-REM",
+		"body": "Event RefCollectionAlias.OnCommandModeExit(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCommandModeExit",
+		"scope": "source.papyrus"
+	},
+	"oncommandmodegivecommand-RC-REM": {
+		"prefix": "oncommandmodegivecommand-RC-REM",
+		"body": "Event RefCollectionAlias.OnCommandModeGiveCommand(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCommandModeGiveCommand",
+		"scope": "source.papyrus"
+	},
+	"oncompaniondismiss-RC-REM": {
+		"prefix": "oncompaniondismiss-RC-REM",
+		"body": "Event RefCollectionAlias.OnCompanionDismiss(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCompanionDismiss",
+		"scope": "source.papyrus"
+	},
+	"onconsciousnessstatechanged-RC-REM": {
+		"prefix": "onconsciousnessstatechanged-RC-REM",
+		"body": "Event RefCollectionAlias.OnConsciousnessStateChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, bool abUnconscious )\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnConsciousnessStateChanged",
+		"scope": "source.papyrus"
+	},
+	"oncontainerchanged-RC-REM": {
+		"prefix": "oncontainerchanged-RC-REM",
+		"body": "Event RefCollectionAlias.OnContainerChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akNewContainer, ObjectReference akOldContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnContainerChanged",
+		"scope": "source.papyrus"
+	},
+	"oncripple-RC-REM": {
+		"prefix": "oncripple-RC-REM",
+		"body": "Event RefCollectionAlias.OnCripple(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnCripple",
+		"scope": "source.papyrus"
+	},
+	"ondeath-RC-REM": {
+		"prefix": "ondeath-RC-REM",
+		"body": "Event RefCollectionAlias.OnDeath(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnDeath",
+		"scope": "source.papyrus"
+	},
+	"ondeferredkill-RC-REM": {
+		"prefix": "ondeferredkill-RC-REM",
+		"body": "Event RefCollectionAlias.OnDeferredKill(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnDeferredKill",
+		"scope": "source.papyrus"
+	},
+	"ondestructionstagechanged-RC-REM": {
+		"prefix": "ondestructionstagechanged-RC-REM",
+		"body": "Event RefCollectionAlias.OnDestructionStageChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aiOldStage, int aiCurrentStage)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnDestructionStageChanged",
+		"scope": "source.papyrus"
+	},
+	"ondifficultychanged-RC-REM": {
+		"prefix": "ondifficultychanged-RC-REM",
+		"body": "Event RefCollectionAlias.OnDifficultyChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnDifficultyChanged",
+		"scope": "source.papyrus"
+	},
+	"ondying-RC-REM": {
+		"prefix": "ondying-RC-REM",
+		"body": "Event RefCollectionAlias.OnDying(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnDying",
+		"scope": "source.papyrus"
+	},
+	"onenterbleedout-RC-REM": {
+		"prefix": "onenterbleedout-RC-REM",
+		"body": "Event RefCollectionAlias.OnEnterBleedout(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnEnterBleedout",
+		"scope": "source.papyrus"
+	},
+	"onentersneaking-RC-REM": {
+		"prefix": "onentersneaking-RC-REM",
+		"body": "Event RefCollectionAlias.OnEnterSneaking(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnEnterSneaking",
+		"scope": "source.papyrus"
+	},
+	"onequipped-RC-REM": {
+		"prefix": "onequipped-RC-REM",
+		"body": "Event RefCollectionAlias.OnEquipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnEquipped",
+		"scope": "source.papyrus"
+	},
+	"onescortwaitstart-RC-REM": {
+		"prefix": "onescortwaitstart-RC-REM",
+		"body": "Event RefCollectionAlias.OnEscortWaitStart(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnEscortWaitStart",
+		"scope": "source.papyrus"
+	},
+	"onescortwaitstop-RC-REM": {
+		"prefix": "onescortwaitstop-RC-REM",
+		"body": "Event RefCollectionAlias.OnEscortWaitStop(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnEscortWaitStop",
+		"scope": "source.papyrus"
+	},
+	"onexitfurniture-RC-REM": {
+		"prefix": "onexitfurniture-RC-REM",
+		"body": "Event RefCollectionAlias.OnExitFurniture(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnExitFurniture",
+		"scope": "source.papyrus"
+	},
+	"ongetup-RC-REM": {
+		"prefix": "ongetup-RC-REM",
+		"body": "Event RefCollectionAlias.OnGetUp(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnGetUp",
+		"scope": "source.papyrus"
+	},
+	"ongrab-RC-REM": {
+		"prefix": "ongrab-RC-REM",
+		"body": "Event RefCollectionAlias.OnGrab(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnGrab",
+		"scope": "source.papyrus"
+	},
+	"onholotapechatter-RC-REM": {
+		"prefix": "onholotapechatter-RC-REM",
+		"body": "Event RefCollectionAlias.OnHolotapeChatter(RefCollectionAlias akAliasSender, ObjectReference akRefSender, string astrChatter, float afNumericData )\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnHolotapeChatter",
+		"scope": "source.papyrus"
+	},
+	"onholotapeplay-RC-REM": {
+		"prefix": "onholotapeplay-RC-REM",
+		"body": "Event RefCollectionAlias.OnHolotapePlay(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnHolotapePlay",
+		"scope": "source.papyrus"
+	},
+	"onitemadded-RC-REM": {
+		"prefix": "onitemadded-RC-REM",
+		"body": "Event RefCollectionAlias.OnItemAdded(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnItemAdded",
+		"scope": "source.papyrus"
+	},
+	"onitemequipped-RC-REM": {
+		"prefix": "onitemequipped-RC-REM",
+		"body": "Event RefCollectionAlias.OnItemEquipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnItemEquipped",
+		"scope": "source.papyrus"
+	},
+	"onitemremoved-RC-REM": {
+		"prefix": "onitemremoved-RC-REM",
+		"body": "Event RefCollectionAlias.OnItemRemoved(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akDestContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnItemRemoved",
+		"scope": "source.papyrus"
+	},
+	"onitemunequipped-RC-REM": {
+		"prefix": "onitemunequipped-RC-REM",
+		"body": "Event RefCollectionAlias.OnItemUnequipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnItemUnequipped",
+		"scope": "source.papyrus"
+	},
+	"onkill-RC-REM": {
+		"prefix": "onkill-RC-REM",
+		"body": "Event RefCollectionAlias.OnKill(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akVictim)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnKill",
+		"scope": "source.papyrus"
+	},
+	"onload-RC-REM": {
+		"prefix": "onload-RC-REM",
+		"body": "Event RefCollectionAlias.OnLoad(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnLoad",
+		"scope": "source.papyrus"
+	},
+	"onlocationchange-RC-REM": {
+		"prefix": "onlocationchange-RC-REM",
+		"body": "Event RefCollectionAlias.OnLocationChange(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnLocationChange",
+		"scope": "source.papyrus"
+	},
+	"onlockstatechanged-RC-REM": {
+		"prefix": "onlockstatechanged-RC-REM",
+		"body": "Event RefCollectionAlias.OnLockStateChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnLockStateChanged",
+		"scope": "source.papyrus"
+	},
+	"onopen-RC-REM": {
+		"prefix": "onopen-RC-REM",
+		"body": "Event RefCollectionAlias.OnOpen(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnOpen",
+		"scope": "source.papyrus"
+	},
+	"onpackagechange-RC-REM": {
+		"prefix": "onpackagechange-RC-REM",
+		"body": "Event RefCollectionAlias.OnPackageChange(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPackageChange",
+		"scope": "source.papyrus"
+	},
+	"onpackageend-RC-REM": {
+		"prefix": "onpackageend-RC-REM",
+		"body": "Event RefCollectionAlias.OnPackageEnd(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPackageEnd",
+		"scope": "source.papyrus"
+	},
+	"onpackagestart-RC-REM": {
+		"prefix": "onpackagestart-RC-REM",
+		"body": "Event RefCollectionAlias.OnPackageStart(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Package akNewPackage)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPackageStart",
+		"scope": "source.papyrus"
+	},
+	"onpartialcripple-RC-REM": {
+		"prefix": "onpartialcripple-RC-REM",
+		"body": "Event RefCollectionAlias.OnPartialCripple(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPartialCripple",
+		"scope": "source.papyrus"
+	},
+	"onpickpocketfailed-RC-REM": {
+		"prefix": "onpickpocketfailed-RC-REM",
+		"body": "Event RefCollectionAlias.OnPickpocketFailed(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPickpocketFailed",
+		"scope": "source.papyrus"
+	},
+	"onpipboyradiodetection-RC-REM": {
+		"prefix": "onpipboyradiodetection-RC-REM",
+		"body": "Event RefCollectionAlias.OnPipboyRadioDetection(RefCollectionAlias akAliasSender, ObjectReference akRefSender, bool abDetected)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPipboyRadioDetection",
+		"scope": "source.papyrus"
+	},
+	"onplayercreaterobot-RC-REM": {
+		"prefix": "onplayercreaterobot-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerCreateRobot(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerCreateRobot",
+		"scope": "source.papyrus"
+	},
+	"onplayerdialoguetarget-RC-REM": {
+		"prefix": "onplayerdialoguetarget-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerDialogueTarget(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerDialogueTarget",
+		"scope": "source.papyrus"
+	},
+	"onplayerentervertibird-RC-REM": {
+		"prefix": "onplayerentervertibird-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerEnterVertibird(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerEnterVertibird",
+		"scope": "source.papyrus"
+	},
+	"onplayerfalllongdistance-RC-REM": {
+		"prefix": "onplayerfalllongdistance-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerFallLongDistance(RefCollectionAlias akAliasSender, ObjectReference akRefSender, float afDamage)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerFallLongDistance",
+		"scope": "source.papyrus"
+	},
+	"onplayerfireweapon-RC-REM": {
+		"prefix": "onplayerfireweapon-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerFireWeapon(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerFireWeapon",
+		"scope": "source.papyrus"
+	},
+	"onplayerhealteammate-RC-REM": {
+		"prefix": "onplayerhealteammate-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerHealTeammate(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akTeammate)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerHealTeammate",
+		"scope": "source.papyrus"
+	},
+	"onplayerloadgame-RC-REM": {
+		"prefix": "onplayerloadgame-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerLoadGame(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerLoadGame",
+		"scope": "source.papyrus"
+	},
+	"onplayermodarmorweapon-RC-REM": {
+		"prefix": "onplayermodarmorweapon-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerModArmorWeapon(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerModArmorWeapon",
+		"scope": "source.papyrus"
+	},
+	"onplayermodrobot-RC-REM": {
+		"prefix": "onplayermodrobot-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerModRobot(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerModRobot",
+		"scope": "source.papyrus"
+	},
+	"onplayerswimming-RC-REM": {
+		"prefix": "onplayerswimming-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerSwimming(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerSwimming",
+		"scope": "source.papyrus"
+	},
+	"onplayeruseworkbench-RC-REM": {
+		"prefix": "onplayeruseworkbench-RC-REM",
+		"body": "Event RefCollectionAlias.OnPlayerUseWorkBench(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPlayerUseWorkBench",
+		"scope": "source.papyrus"
+	},
+	"onpoweroff-RC-REM": {
+		"prefix": "onpoweroff-RC-REM",
+		"body": "Event RefCollectionAlias.OnPowerOff(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPowerOff",
+		"scope": "source.papyrus"
+	},
+	"onpoweron-RC-REM": {
+		"prefix": "onpoweron-RC-REM",
+		"body": "Event RefCollectionAlias.OnPowerOn(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akPowerGenerator)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnPowerOn",
+		"scope": "source.papyrus"
+	},
+	"onraceswitchcomplete-RC-REM": {
+		"prefix": "onraceswitchcomplete-RC-REM",
+		"body": "Event RefCollectionAlias.OnRaceSwitchComplete(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnRaceSwitchComplete",
+		"scope": "source.papyrus"
+	},
+	"onread-RC-REM": {
+		"prefix": "onread-RC-REM",
+		"body": "Event RefCollectionAlias.OnRead(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnRead",
+		"scope": "source.papyrus"
+	},
+	"onrelease-RC-REM": {
+		"prefix": "onrelease-RC-REM",
+		"body": "Event RefCollectionAlias.OnRelease(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnRelease",
+		"scope": "source.papyrus"
+	},
+	"onreset-RC-REM": {
+		"prefix": "onreset-RC-REM",
+		"body": "Event RefCollectionAlias.OnReset(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnReset",
+		"scope": "source.papyrus"
+	},
+	"onsell-RC-REM": {
+		"prefix": "onsell-RC-REM",
+		"body": "Event RefCollectionAlias.OnSell(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akSeller)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnSell",
+		"scope": "source.papyrus"
+	},
+	"onsit-RC-REM": {
+		"prefix": "onsit-RC-REM",
+		"body": "Event RefCollectionAlias.OnSit(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnSit",
+		"scope": "source.papyrus"
+	},
+	"onspeechchallengeavailable-RC-REM": {
+		"prefix": "onspeechchallengeavailable-RC-REM",
+		"body": "Event RefCollectionAlias.OnSpeechChallengeAvailable(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnSpeechChallengeAvailable",
+		"scope": "source.papyrus"
+	},
+	"onspellcast-RC-REM": {
+		"prefix": "onspellcast-RC-REM",
+		"body": "Event RefCollectionAlias.OnSpellCast(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akSpell)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnSpellCast",
+		"scope": "source.papyrus"
+	},
+	"ontranslationalmostcomplete-RC-REM": {
+		"prefix": "ontranslationalmostcomplete-RC-REM",
+		"body": "Event RefCollectionAlias.OnTranslationAlmostComplete(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnTranslationAlmostComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationcomplete-RC-REM": {
+		"prefix": "ontranslationcomplete-RC-REM",
+		"body": "Event RefCollectionAlias.OnTranslationComplete(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnTranslationComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationfailed-RC-REM": {
+		"prefix": "ontranslationfailed-RC-REM",
+		"body": "Event RefCollectionAlias.OnTranslationFailed(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnTranslationFailed",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstart-RC-REM": {
+		"prefix": "ontraphitstart-RC-REM",
+		"body": "Event RefCollectionAlias.OnTrapHitStart(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnTrapHitStart",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstop-RC-REM": {
+		"prefix": "ontraphitstop-RC-REM",
+		"body": "Event RefCollectionAlias.OnTrapHitStop(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnTrapHitStop",
+		"scope": "source.papyrus"
+	},
+	"ontriggerenter-RC-REM": {
+		"prefix": "ontriggerenter-RC-REM",
+		"body": "Event RefCollectionAlias.OnTriggerEnter(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnTriggerEnter",
+		"scope": "source.papyrus"
+	},
+	"ontriggerleave-RC-REM": {
+		"prefix": "ontriggerleave-RC-REM",
+		"body": "Event RefCollectionAlias.OnTriggerLeave(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnTriggerLeave",
+		"scope": "source.papyrus"
+	},
+	"onunequipped-RC-REM": {
+		"prefix": "onunequipped-RC-REM",
+		"body": "Event RefCollectionAlias.OnUnequipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnUnequipped",
+		"scope": "source.papyrus"
+	},
+	"onunload-RC-REM": {
+		"prefix": "onunload-RC-REM",
+		"body": "Event RefCollectionAlias.OnUnload(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnUnload",
+		"scope": "source.papyrus"
+	},
+	"onworkshopmode-RC-REM": {
+		"prefix": "onworkshopmode-RC-REM",
+		"body": "Event RefCollectionAlias.OnWorkshopMode(RefCollectionAlias akAliasSender, ObjectReference akRefSender, bool aStart)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnWorkshopMode",
+		"scope": "source.papyrus"
+	},
+	"onworkshopnpctransfer-RC-REM": {
+		"prefix": "onworkshopnpctransfer-RC-REM",
+		"body": "Event RefCollectionAlias.OnWorkshopNPCTransfer(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Location akNewWorkshop, Keyword akActionKW)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnWorkshopNPCTransfer",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectdestroyed-RC-REM": {
+		"prefix": "onworkshopobjectdestroyed-RC-REM",
+		"body": "Event RefCollectionAlias.OnWorkshopObjectDestroyed(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnWorkshopObjectDestroyed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectgrabbed-RC-REM": {
+		"prefix": "onworkshopobjectgrabbed-RC-REM",
+		"body": "Event RefCollectionAlias.OnWorkshopObjectGrabbed(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnWorkshopObjectGrabbed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectmoved-RC-REM": {
+		"prefix": "onworkshopobjectmoved-RC-REM",
+		"body": "Event RefCollectionAlias.OnWorkshopObjectMoved(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnWorkshopObjectMoved",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectplaced-RC-REM": {
+		"prefix": "onworkshopobjectplaced-RC-REM",
+		"body": "Event RefCollectionAlias.OnWorkshopObjectPlaced(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnWorkshopObjectPlaced",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectrepaired-RC-REM": {
+		"prefix": "onworkshopobjectrepaired-RC-REM",
+		"body": "Event RefCollectionAlias.OnWorkshopObjectRepaired(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote RefCollectionAlias.OnWorkshopObjectRepaired",
+		"scope": "source.papyrus"
+	}
+}

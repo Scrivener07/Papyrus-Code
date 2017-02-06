@@ -1,0 +1,44 @@
+{
+	"addform": {
+		"prefix": "addform",
+		"body": "AddForm(${1:Form apForm})${0}",
+		"description": "FormList",
+		"scope": "source.papyrus"
+	},
+	"find": {
+		"prefix": "find",
+		"body": "Find(${1:Form apForm})${0}",
+		"description": "FormList",
+		"scope": "source.papyrus"
+	},
+	"getat": {
+		"prefix": "getat",
+		"body": "GetAt(${1:int aiIndex})${0}",
+		"description": "FormList",
+		"scope": "source.papyrus"
+	},
+	"getsize": {
+		"prefix": "getsize",
+		"body": "GetSize()${0}",
+		"description": "FormList",
+		"scope": "source.papyrus"
+	},
+	"hasform": {
+		"prefix": "hasform",
+		"body": "HasForm(${1:Form akForm})${0}",
+		"description": "FormList",
+		"scope": "source.papyrus"
+	},
+	"removeaddedform": {
+		"prefix": "removeaddedform",
+		"body": "RemoveAddedForm(${1:Form apForm})${0}",
+		"description": "FormList",
+		"scope": "source.papyrus"
+	},
+	"revert": {
+		"prefix": "revert",
+		"body": "Revert()${0}",
+		"description": "FormList",
+		"scope": "source.papyrus"
+	}
+}

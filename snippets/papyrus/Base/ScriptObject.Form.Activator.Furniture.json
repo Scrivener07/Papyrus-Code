@@ -1,0 +1,8 @@
+{
+	"getassociatedform": {
+		"prefix": "getassociatedform",
+		"body": "GetAssociatedForm()${0}",
+		"description": "Furniture",
+		"scope": "source.papyrus"
+	}
+}

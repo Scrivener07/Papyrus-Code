@@ -1,0 +1,14 @@
+{
+	"push": {
+		"prefix": "push",
+		"body": "Push(${1:float afTransitionSecs = 1.0})${0}",
+		"description": "SoundCategorySnapshot",
+		"scope": "source.papyrus"
+	},
+	"remove": {
+		"prefix": "remove",
+		"body": "Remove()${0}",
+		"description": "SoundCategorySnapshot",
+		"scope": "source.papyrus"
+	}
+}

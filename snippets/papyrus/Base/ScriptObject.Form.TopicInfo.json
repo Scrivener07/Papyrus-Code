@@ -1,0 +1,38 @@
+{
+	"onbegin-REM": {
+		"prefix": "onbegin-REM",
+		"body": "Event TopicInfo.OnBegin(TopicInfo akSender, ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote TopicInfo.OnBegin",
+		"scope": "source.papyrus"
+	},
+	"onend-REM": {
+		"prefix": "onend-REM",
+		"body": "Event TopicInfo.OnEnd(TopicInfo akSender, ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote TopicInfo.OnEnd",
+		"scope": "source.papyrus"
+	},
+	"getowningquest": {
+		"prefix": "getowningquest",
+		"body": "GetOwningQuest()${0}",
+		"description": "TopicInfo",
+		"scope": "source.papyrus"
+	},
+	"hasbeensaid": {
+		"prefix": "hasbeensaid",
+		"body": "HasBeenSaid()${0}",
+		"description": "TopicInfo",
+		"scope": "source.papyrus"
+	},
+	"onbegin": {
+		"prefix": "onbegin",
+		"body": "Event OnBegin(ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
+		"description": "Event TopicInfo.OnBegin",
+		"scope": "source.papyrus"
+	},
+	"onend": {
+		"prefix": "onend",
+		"body": "Event OnEnd(ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
+		"description": "Event TopicInfo.OnEnd",
+		"scope": "source.papyrus"
+	}
+}

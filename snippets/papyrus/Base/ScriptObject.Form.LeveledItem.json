@@ -1,0 +1,14 @@
+{
+	"addform": {
+		"prefix": "addform",
+		"body": "AddForm(${1:Form apForm}, ${2:int auiLevel}, ${3:int auiCount})${0}",
+		"description": "LeveledItem",
+		"scope": "source.papyrus"
+	},
+	"revert": {
+		"prefix": "revert",
+		"body": "Revert()${0}",
+		"description": "LeveledItem",
+		"scope": "source.papyrus"
+	}
+}

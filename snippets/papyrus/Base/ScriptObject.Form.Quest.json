@@ -1,0 +1,680 @@
+{
+	"completeallobjectives": {
+		"prefix": "completeallobjectives",
+		"body": "CompleteAllObjectives()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"completequest": {
+		"prefix": "completequest",
+		"body": "CompleteQuest()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"failallobjectives": {
+		"prefix": "failallobjectives",
+		"body": "FailAllObjectives()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"getalias": {
+		"prefix": "getalias",
+		"body": "GetAlias(${1:int iAliasID})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"getcurrentstageid": {
+		"prefix": "getcurrentstageid",
+		"body": "GetCurrentStageID()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"getqueststagedone": {
+		"prefix": "getqueststagedone",
+		"body": "Quest.GetQuestStageDone(${1:QuestStage questStageToCheck})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"getstage": {
+		"prefix": "getstage",
+		"body": "GetStage()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"getstagedone": {
+		"prefix": "getstagedone",
+		"body": "GetStageDone(${1:int aiStage})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"hasobjective": {
+		"prefix": "hasobjective",
+		"body": "HasObjective(${1:int aiObjective})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isactive": {
+		"prefix": "isactive",
+		"body": "IsActive()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"iscompleted": {
+		"prefix": "iscompleted",
+		"body": "IsCompleted()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isobjectivecompleted": {
+		"prefix": "isobjectivecompleted",
+		"body": "IsObjectiveCompleted(${1:int aiObjective})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isobjectivedisplayed": {
+		"prefix": "isobjectivedisplayed",
+		"body": "IsObjectiveDisplayed(${1:int aiObjective})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isobjectivefailed": {
+		"prefix": "isobjectivefailed",
+		"body": "IsObjectiveFailed(${1:int aiObjective})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isrunning": {
+		"prefix": "isrunning",
+		"body": "IsRunning()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isstagedone": {
+		"prefix": "isstagedone",
+		"body": "IsStageDone(${1:int aiStage})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isstarting": {
+		"prefix": "isstarting",
+		"body": "IsStarting()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isstopped": {
+		"prefix": "isstopped",
+		"body": "IsStopped()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"isstopping": {
+		"prefix": "isstopping",
+		"body": "IsStopping()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"modobjectiveglobal": {
+		"prefix": "modobjectiveglobal",
+		"body": "ModObjectiveGlobal(${1:float afModValue}, ${2:GlobalVariable aModGlobal}, ${3:int aiObjectiveID = -1}, ${4:float afTargetValue = -1.0}, ${5:bool abCountingUp = true}, ${6:bool abCompleteObjective = true}, ${7:bool abRedisplayObjective = true}, ${8:bool abAllowRollbackObjective = false})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"onquestinit": {
+		"prefix": "onquestinit",
+		"body": "Event OnQuestInit()\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnQuestInit",
+		"scope": "source.papyrus"
+	},
+	"onquestshutdown": {
+		"prefix": "onquestshutdown",
+		"body": "Event OnQuestShutdown()\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnQuestShutdown",
+		"scope": "source.papyrus"
+	},
+	"onstageset": {
+		"prefix": "onstageset",
+		"body": "Event OnStageSet(int auiStageID, int auiItemID)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStageSet",
+		"scope": "source.papyrus"
+	},
+	"onstoryactivateactor": {
+		"prefix": "onstoryactivateactor",
+		"body": "Event OnStoryActivateActor(Location akLocation, ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryActivateActor",
+		"scope": "source.papyrus"
+	},
+	"onstoryactorattach": {
+		"prefix": "onstoryactorattach",
+		"body": "Event OnStoryActorAttach(ObjectReference akActor, Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryActorAttach",
+		"scope": "source.papyrus"
+	},
+	"onstoryaddtoplayer": {
+		"prefix": "onstoryaddtoplayer",
+		"body": "Event OnStoryAddToPlayer(ObjectReference akOwner, ObjectReference akContainer, Location akLocation, Form akItemBase, \\\r\n  int aiAcquireType)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryAddToPlayer",
+		"scope": "source.papyrus"
+	},
+	"onstoryarrest": {
+		"prefix": "onstoryarrest",
+		"body": "Event OnStoryArrest(ObjectReference akArrestingGuard, ObjectReference akCriminal, Location akLocation, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryArrest",
+		"scope": "source.papyrus"
+	},
+	"onstoryassaultactor": {
+		"prefix": "onstoryassaultactor",
+		"body": "Event OnStoryAssaultActor(ObjectReference akVictim, ObjectReference akAttacker, Location akLocation, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryAssaultActor",
+		"scope": "source.papyrus"
+	},
+	"onstoryattractionobject": {
+		"prefix": "onstoryattractionobject",
+		"body": "Event OnStoryAttractionObject(ObjectReference akActor, ObjectReference akObject, Location akLocation, bool abCommanded)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryAttractionObject",
+		"scope": "source.papyrus"
+	},
+	"onstorybribenpc": {
+		"prefix": "onstorybribenpc",
+		"body": "Event OnStoryBribeNPC(ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryBribeNPC",
+		"scope": "source.papyrus"
+	},
+	"onstorycastmagic": {
+		"prefix": "onstorycastmagic",
+		"body": "Event OnStoryCastMagic(ObjectReference akCastingActor, ObjectReference akSpellTarget, Location akLocation, Form akSpell)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryCastMagic",
+		"scope": "source.papyrus"
+	},
+	"onstorychangelocation": {
+		"prefix": "onstorychangelocation",
+		"body": "Event OnStoryChangeLocation(ObjectReference akActor, Location akOldLocation, Location akNewLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryChangeLocation",
+		"scope": "source.papyrus"
+	},
+	"onstoryclearlocation": {
+		"prefix": "onstoryclearlocation",
+		"body": "Event OnStoryClearLocation(Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryClearLocation",
+		"scope": "source.papyrus"
+	},
+	"onstorycraftitem": {
+		"prefix": "onstorycraftitem",
+		"body": "Event OnStoryCraftItem(ObjectReference akBench, Location akLocation, Form akCreatedItem)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryCraftItem",
+		"scope": "source.papyrus"
+	},
+	"onstorycrimegold": {
+		"prefix": "onstorycrimegold",
+		"body": "Event OnStoryCrimeGold(ObjectReference akVictim, ObjectReference akCriminal, Form akFaction, int aiGoldAmount, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryCrimeGold",
+		"scope": "source.papyrus"
+	},
+	"onstorycure": {
+		"prefix": "onstorycure",
+		"body": "Event OnStoryCure(Form akInfection)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryCure",
+		"scope": "source.papyrus"
+	},
+	"onstorydialogue": {
+		"prefix": "onstorydialogue",
+		"body": "Event OnStoryDialogue(Location akLocation, ObjectReference akActor1, ObjectReference akActor2)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryDialogue",
+		"scope": "source.papyrus"
+	},
+	"onstorydiscoverdeadbody": {
+		"prefix": "onstorydiscoverdeadbody",
+		"body": "Event OnStoryDiscoverDeadBody(ObjectReference akActor, ObjectReference akDeadActor, Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryDiscoverDeadBody",
+		"scope": "source.papyrus"
+	},
+	"onstoryescapejail": {
+		"prefix": "onstoryescapejail",
+		"body": "Event OnStoryEscapeJail(Location akLocation, Form akCrimeGroup)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryEscapeJail",
+		"scope": "source.papyrus"
+	},
+	"onstoryflatternpc": {
+		"prefix": "onstoryflatternpc",
+		"body": "Event OnStoryFlatterNPC(ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryFlatterNPC",
+		"scope": "source.papyrus"
+	},
+	"onstoryhackterminal": {
+		"prefix": "onstoryhackterminal",
+		"body": "Event OnStoryHackTerminal(ObjectReference akComputer, bool abSucceeded)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryHackTerminal",
+		"scope": "source.papyrus"
+	},
+	"onstoryhello": {
+		"prefix": "onstoryhello",
+		"body": "Event OnStoryHello(Location akLocation, ObjectReference akActor1, ObjectReference akActor2)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryHello",
+		"scope": "source.papyrus"
+	},
+	"onstoryincreaselevel": {
+		"prefix": "onstoryincreaselevel",
+		"body": "Event OnStoryIncreaseLevel(int aiNewLevel)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryIncreaseLevel",
+		"scope": "source.papyrus"
+	},
+	"onstoryinfection": {
+		"prefix": "onstoryinfection",
+		"body": "Event OnStoryInfection(ObjectReference akTransmittingActor, Form akInfection)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryInfection",
+		"scope": "source.papyrus"
+	},
+	"onstoryintimidatenpc": {
+		"prefix": "onstoryintimidatenpc",
+		"body": "Event OnStoryIntimidateNPC(ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryIntimidateNPC",
+		"scope": "source.papyrus"
+	},
+	"onstoryironsights": {
+		"prefix": "onstoryironsights",
+		"body": "Event OnStoryIronSights(ObjectReference akActor, Form akWeapon)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryIronSights",
+		"scope": "source.papyrus"
+	},
+	"onstoryjail": {
+		"prefix": "onstoryjail",
+		"body": "Event OnStoryJail(ObjectReference akGuard, Form akCrimeGroup, Location akLocation, int aiCrimeGold)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryJail",
+		"scope": "source.papyrus"
+	},
+	"onstorykillactor": {
+		"prefix": "onstorykillactor",
+		"body": "Event OnStoryKillActor(ObjectReference akVictim, ObjectReference akKiller, Location akLocation, int aiCrimeStatus, \\\r\n  int aiRelationshipRank)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryKillActor",
+		"scope": "source.papyrus"
+	},
+	"onstorylocationloaded": {
+		"prefix": "onstorylocationloaded",
+		"body": "Event OnStoryLocationLoaded(Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryLocationLoaded",
+		"scope": "source.papyrus"
+	},
+	"onstorymineexplosion": {
+		"prefix": "onstorymineexplosion",
+		"body": "Event OnStoryMineExplosion(ObjectReference akVictim, ObjectReference akAttacker)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryMineExplosion",
+		"scope": "source.papyrus"
+	},
+	"onstorynewvoicepower": {
+		"prefix": "onstorynewvoicepower",
+		"body": "Event OnStoryNewVoicePower(ObjectReference akActor, Form akVoicePower)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryNewVoicePower",
+		"scope": "source.papyrus"
+	},
+	"onstorypayfine": {
+		"prefix": "onstorypayfine",
+		"body": "Event OnStoryPayFine(ObjectReference akCriminal, ObjectReference akGuard, Form akCrimeGroup, int aiCrimeGold)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryPayFine",
+		"scope": "source.papyrus"
+	},
+	"onstorypicklock": {
+		"prefix": "onstorypicklock",
+		"body": "Event OnStoryPickLock(ObjectReference akActor, ObjectReference akLock)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryPickLock",
+		"scope": "source.papyrus"
+	},
+	"onstorypickpocket": {
+		"prefix": "onstorypickpocket",
+		"body": "Event OnStoryPickPocket(ObjectReference akVictim, bool abSuccess)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryPickPocket",
+		"scope": "source.papyrus"
+	},
+	"onstoryplayergetsfavor": {
+		"prefix": "onstoryplayergetsfavor",
+		"body": "Event OnStoryPlayerGetsFavor(ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryPlayerGetsFavor",
+		"scope": "source.papyrus"
+	},
+	"onstoryrelationshipchange": {
+		"prefix": "onstoryrelationshipchange",
+		"body": "Event OnStoryRelationshipChange(ObjectReference akActor1, ObjectReference akActor2, int aiOldRelationship, \\\r\n  int aiNewRelationship)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryRelationshipChange",
+		"scope": "source.papyrus"
+	},
+	"onstoryremovefromplayer": {
+		"prefix": "onstoryremovefromplayer",
+		"body": "Event OnStoryRemoveFromPlayer(ObjectReference akOwner, ObjectReference akItem, Location akLocation, \\\r\n  Form akItemBase, int aiRemoveType)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryRemoveFromPlayer",
+		"scope": "source.papyrus"
+	},
+	"onstoryscript": {
+		"prefix": "onstoryscript",
+		"body": "Event OnStoryScript(Keyword akKeyword, Location akLocation, ObjectReference akRef1, ObjectReference akRef2, \\\r\n  int aiValue1, int aiValue2)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryScript",
+		"scope": "source.papyrus"
+	},
+	"onstoryservedtime": {
+		"prefix": "onstoryservedtime",
+		"body": "Event OnStoryServedTime(Location akLocation, Form akCrimeGroup, int aiCrimeGold, int aiDaysJail)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryServedTime",
+		"scope": "source.papyrus"
+	},
+	"onstorytrespass": {
+		"prefix": "onstorytrespass",
+		"body": "Event OnStoryTrespass(ObjectReference akVictim, ObjectReference akTrespasser, Location akLocation, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Quest.OnStoryTrespass",
+		"scope": "source.papyrus"
+	},
+	"reset": {
+		"prefix": "reset",
+		"body": "Reset()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"resetspeechchallenges": {
+		"prefix": "resetspeechchallenges",
+		"body": "ResetSpeechChallenges()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setactive": {
+		"prefix": "setactive",
+		"body": "SetActive(${1:bool abActive = true})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setcurrentstageid": {
+		"prefix": "setcurrentstageid",
+		"body": "SetCurrentStageID(${1:int iStage})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setobjectivecompleted": {
+		"prefix": "setobjectivecompleted",
+		"body": "SetObjectiveCompleted(${1:int aiObjective}, ${2:bool abCompleted = true})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setobjectivedisplayed": {
+		"prefix": "setobjectivedisplayed",
+		"body": "SetObjectiveDisplayed(${1:int aiObjective}, ${2:bool abDisplayed = true}, ${3:bool abForce = false})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setobjectivefailed": {
+		"prefix": "setobjectivefailed",
+		"body": "SetObjectiveFailed(${1:int aiObjective}, ${2:bool abFailed = true})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setobjectiveskipped": {
+		"prefix": "setobjectiveskipped",
+		"body": "SetObjectiveSkipped(${1:int aiObjective})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setqueststage": {
+		"prefix": "setqueststage",
+		"body": "Quest.SetQuestStage(${1:QuestStage questStageToSet})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"setstage": {
+		"prefix": "setstage",
+		"body": "SetStage(${1:int aiStage})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"start": {
+		"prefix": "start",
+		"body": "Start()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"stop": {
+		"prefix": "stop",
+		"body": "Stop()${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"updatecurrentinstanceglobal": {
+		"prefix": "updatecurrentinstanceglobal",
+		"body": "UpdateCurrentInstanceGlobal(${1:GlobalVariable aUpdateGlobal})${0}",
+		"description": "Quest",
+		"scope": "source.papyrus"
+	},
+	"onquestinit-REM": {
+		"prefix": "onquestinit-REM",
+		"body": "Event Quest.OnQuestInit(Quest akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnQuestInit",
+		"scope": "source.papyrus"
+	},
+	"onquestshutdown-REM": {
+		"prefix": "onquestshutdown-REM",
+		"body": "Event Quest.OnQuestShutdown(Quest akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnQuestShutdown",
+		"scope": "source.papyrus"
+	},
+	"onstageset-REM": {
+		"prefix": "onstageset-REM",
+		"body": "Event Quest.OnStageSet(Quest akSender, int auiStageID, int auiItemID)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStageSet",
+		"scope": "source.papyrus"
+	},
+	"onstoryactivateactor-REM": {
+		"prefix": "onstoryactivateactor-REM",
+		"body": "Event Quest.OnStoryActivateActor(Quest akSender, Location akLocation, ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryActivateActor",
+		"scope": "source.papyrus"
+	},
+	"onstoryactorattach-REM": {
+		"prefix": "onstoryactorattach-REM",
+		"body": "Event Quest.OnStoryActorAttach(Quest akSender, ObjectReference akActor, Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryActorAttach",
+		"scope": "source.papyrus"
+	},
+	"onstoryaddtoplayer-REM": {
+		"prefix": "onstoryaddtoplayer-REM",
+		"body": "Event Quest.OnStoryAddToPlayer(Quest akSender, ObjectReference akOwner, ObjectReference akContainer, Location akLocation, Form akItemBase, \\\r\n  int aiAcquireType)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryAddToPlayer",
+		"scope": "source.papyrus"
+	},
+	"onstoryarrest-REM": {
+		"prefix": "onstoryarrest-REM",
+		"body": "Event Quest.OnStoryArrest(Quest akSender, ObjectReference akArrestingGuard, ObjectReference akCriminal, Location akLocation, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryArrest",
+		"scope": "source.papyrus"
+	},
+	"onstoryassaultactor-REM": {
+		"prefix": "onstoryassaultactor-REM",
+		"body": "Event Quest.OnStoryAssaultActor(Quest akSender, ObjectReference akVictim, ObjectReference akAttacker, Location akLocation, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryAssaultActor",
+		"scope": "source.papyrus"
+	},
+	"onstoryattractionobject-REM": {
+		"prefix": "onstoryattractionobject-REM",
+		"body": "Event Quest.OnStoryAttractionObject(Quest akSender, ObjectReference akActor, ObjectReference akObject, Location akLocation, bool abCommanded)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryAttractionObject",
+		"scope": "source.papyrus"
+	},
+	"onstorybribenpc-REM": {
+		"prefix": "onstorybribenpc-REM",
+		"body": "Event Quest.OnStoryBribeNPC(Quest akSender, ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryBribeNPC",
+		"scope": "source.papyrus"
+	},
+	"onstorycastmagic-REM": {
+		"prefix": "onstorycastmagic-REM",
+		"body": "Event Quest.OnStoryCastMagic(Quest akSender, ObjectReference akCastingActor, ObjectReference akSpellTarget, Location akLocation, Form akSpell)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryCastMagic",
+		"scope": "source.papyrus"
+	},
+	"onstorychangelocation-REM": {
+		"prefix": "onstorychangelocation-REM",
+		"body": "Event Quest.OnStoryChangeLocation(Quest akSender, ObjectReference akActor, Location akOldLocation, Location akNewLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryChangeLocation",
+		"scope": "source.papyrus"
+	},
+	"onstoryclearlocation-REM": {
+		"prefix": "onstoryclearlocation-REM",
+		"body": "Event Quest.OnStoryClearLocation(Quest akSender, Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryClearLocation",
+		"scope": "source.papyrus"
+	},
+	"onstorycraftitem-REM": {
+		"prefix": "onstorycraftitem-REM",
+		"body": "Event Quest.OnStoryCraftItem(Quest akSender, ObjectReference akBench, Location akLocation, Form akCreatedItem)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryCraftItem",
+		"scope": "source.papyrus"
+	},
+	"onstorycrimegold-REM": {
+		"prefix": "onstorycrimegold-REM",
+		"body": "Event Quest.OnStoryCrimeGold(Quest akSender, ObjectReference akVictim, ObjectReference akCriminal, Form akFaction, int aiGoldAmount, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryCrimeGold",
+		"scope": "source.papyrus"
+	},
+	"onstorycure-REM": {
+		"prefix": "onstorycure-REM",
+		"body": "Event Quest.OnStoryCure(Quest akSender, Form akInfection)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryCure",
+		"scope": "source.papyrus"
+	},
+	"onstorydialogue-REM": {
+		"prefix": "onstorydialogue-REM",
+		"body": "Event Quest.OnStoryDialogue(Quest akSender, Location akLocation, ObjectReference akActor1, ObjectReference akActor2)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryDialogue",
+		"scope": "source.papyrus"
+	},
+	"onstorydiscoverdeadbody-REM": {
+		"prefix": "onstorydiscoverdeadbody-REM",
+		"body": "Event Quest.OnStoryDiscoverDeadBody(Quest akSender, ObjectReference akActor, ObjectReference akDeadActor, Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryDiscoverDeadBody",
+		"scope": "source.papyrus"
+	},
+	"onstoryescapejail-REM": {
+		"prefix": "onstoryescapejail-REM",
+		"body": "Event Quest.OnStoryEscapeJail(Quest akSender, Location akLocation, Form akCrimeGroup)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryEscapeJail",
+		"scope": "source.papyrus"
+	},
+	"onstoryflatternpc-REM": {
+		"prefix": "onstoryflatternpc-REM",
+		"body": "Event Quest.OnStoryFlatterNPC(Quest akSender, ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryFlatterNPC",
+		"scope": "source.papyrus"
+	},
+	"onstoryhackterminal-REM": {
+		"prefix": "onstoryhackterminal-REM",
+		"body": "Event Quest.OnStoryHackTerminal(Quest akSender, ObjectReference akComputer, bool abSucceeded)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryHackTerminal",
+		"scope": "source.papyrus"
+	},
+	"onstoryhello-REM": {
+		"prefix": "onstoryhello-REM",
+		"body": "Event Quest.OnStoryHello(Quest akSender, Location akLocation, ObjectReference akActor1, ObjectReference akActor2)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryHello",
+		"scope": "source.papyrus"
+	},
+	"onstoryincreaselevel-REM": {
+		"prefix": "onstoryincreaselevel-REM",
+		"body": "Event Quest.OnStoryIncreaseLevel(Quest akSender, int aiNewLevel)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryIncreaseLevel",
+		"scope": "source.papyrus"
+	},
+	"onstoryinfection-REM": {
+		"prefix": "onstoryinfection-REM",
+		"body": "Event Quest.OnStoryInfection(Quest akSender, ObjectReference akTransmittingActor, Form akInfection)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryInfection",
+		"scope": "source.papyrus"
+	},
+	"onstoryintimidatenpc-REM": {
+		"prefix": "onstoryintimidatenpc-REM",
+		"body": "Event Quest.OnStoryIntimidateNPC(Quest akSender, ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryIntimidateNPC",
+		"scope": "source.papyrus"
+	},
+	"onstoryironsights-REM": {
+		"prefix": "onstoryironsights-REM",
+		"body": "Event Quest.OnStoryIronSights(Quest akSender, ObjectReference akActor, Form akWeapon)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryIronSights",
+		"scope": "source.papyrus"
+	},
+	"onstoryjail-REM": {
+		"prefix": "onstoryjail-REM",
+		"body": "Event Quest.OnStoryJail(Quest akSender, ObjectReference akGuard, Form akCrimeGroup, Location akLocation, int aiCrimeGold)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryJail",
+		"scope": "source.papyrus"
+	},
+	"onstorykillactor-REM": {
+		"prefix": "onstorykillactor-REM",
+		"body": "Event Quest.OnStoryKillActor(Quest akSender, ObjectReference akVictim, ObjectReference akKiller, Location akLocation, int aiCrimeStatus, \\\r\n  int aiRelationshipRank)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryKillActor",
+		"scope": "source.papyrus"
+	},
+	"onstorylocationloaded-REM": {
+		"prefix": "onstorylocationloaded-REM",
+		"body": "Event Quest.OnStoryLocationLoaded(Quest akSender, Location akLocation)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryLocationLoaded",
+		"scope": "source.papyrus"
+	},
+	"onstorymineexplosion-REM": {
+		"prefix": "onstorymineexplosion-REM",
+		"body": "Event Quest.OnStoryMineExplosion(Quest akSender, ObjectReference akVictim, ObjectReference akAttacker)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryMineExplosion",
+		"scope": "source.papyrus"
+	},
+	"onstorynewvoicepower-REM": {
+		"prefix": "onstorynewvoicepower-REM",
+		"body": "Event Quest.OnStoryNewVoicePower(Quest akSender, ObjectReference akActor, Form akVoicePower)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryNewVoicePower",
+		"scope": "source.papyrus"
+	},
+	"onstorypayfine-REM": {
+		"prefix": "onstorypayfine-REM",
+		"body": "Event Quest.OnStoryPayFine(Quest akSender, ObjectReference akCriminal, ObjectReference akGuard, Form akCrimeGroup, int aiCrimeGold)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryPayFine",
+		"scope": "source.papyrus"
+	},
+	"onstorypicklock-REM": {
+		"prefix": "onstorypicklock-REM",
+		"body": "Event Quest.OnStoryPickLock(Quest akSender, ObjectReference akActor, ObjectReference akLock)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryPickLock",
+		"scope": "source.papyrus"
+	},
+	"onstorypickpocket-REM": {
+		"prefix": "onstorypickpocket-REM",
+		"body": "Event Quest.OnStoryPickPocket(Quest akSender, ObjectReference akVictim, bool abSuccess)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryPickPocket",
+		"scope": "source.papyrus"
+	},
+	"onstoryplayergetsfavor-REM": {
+		"prefix": "onstoryplayergetsfavor-REM",
+		"body": "Event Quest.OnStoryPlayerGetsFavor(Quest akSender, ObjectReference akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryPlayerGetsFavor",
+		"scope": "source.papyrus"
+	},
+	"onstoryrelationshipchange-REM": {
+		"prefix": "onstoryrelationshipchange-REM",
+		"body": "Event Quest.OnStoryRelationshipChange(Quest akSender, ObjectReference akActor1, ObjectReference akActor2, int aiOldRelationship, \\\r\n  int aiNewRelationship)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryRelationshipChange",
+		"scope": "source.papyrus"
+	},
+	"onstoryremovefromplayer-REM": {
+		"prefix": "onstoryremovefromplayer-REM",
+		"body": "Event Quest.OnStoryRemoveFromPlayer(Quest akSender, ObjectReference akOwner, ObjectReference akItem, Location akLocation, \\\r\n  Form akItemBase, int aiRemoveType)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryRemoveFromPlayer",
+		"scope": "source.papyrus"
+	},
+	"onstoryscript-REM": {
+		"prefix": "onstoryscript-REM",
+		"body": "Event Quest.OnStoryScript(Quest akSender, Keyword akKeyword, Location akLocation, ObjectReference akRef1, ObjectReference akRef2, \\\r\n  int aiValue1, int aiValue2)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryScript",
+		"scope": "source.papyrus"
+	},
+	"onstoryservedtime-REM": {
+		"prefix": "onstoryservedtime-REM",
+		"body": "Event Quest.OnStoryServedTime(Quest akSender, Location akLocation, Form akCrimeGroup, int aiCrimeGold, int aiDaysJail)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryServedTime",
+		"scope": "source.papyrus"
+	},
+	"onstorytrespass-REM": {
+		"prefix": "onstorytrespass-REM",
+		"body": "Event Quest.OnStoryTrespass(Quest akSender, ObjectReference akVictim, ObjectReference akTrespasser, Location akLocation, int aiCrime)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Quest.OnStoryTrespass",
+		"scope": "source.papyrus"
+	}
+}

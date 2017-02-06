@@ -1,0 +1,1856 @@
+{
+	"activate": {
+		"prefix": "activate",
+		"body": "Activate(${1:ObjectReference akActivator}, ${2:bool abDefaultProcessingOnly = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"additem": {
+		"prefix": "additem",
+		"body": "AddItem(${1:Form akItemToAdd}, ${2:int aiCount = 1}, ${3:bool abSilent = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"addkeyifneeded": {
+		"prefix": "addkeyifneeded",
+		"body": "AddKeyIfNeeded(${1:ObjectReference ObjectWithNeededKey})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"addkeyword": {
+		"prefix": "addkeyword",
+		"body": "AddKeyword(${1:Keyword akKeyword})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"addtextreplacementdata": {
+		"prefix": "addtextreplacementdata",
+		"body": "AddTextReplacementData(${1:string asTokenLabel}, ${2:Form akForm})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"addtomap": {
+		"prefix": "addtomap",
+		"body": "AddToMap(${1:bool abFastTravel = False})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"applyconveyorbelt": {
+		"prefix": "applyconveyorbelt",
+		"body": "ApplyConveyorBelt(${1:string aTarget}, ${2:float aLinVelX}, ${3:float aLinVelY}, ${4:float aLinVelZ}, ${5:bool abOn = true}, ${6:bool abReverse = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"applyfanmotor": {
+		"prefix": "applyfanmotor",
+		"body": "ApplyFanMotor(${1:string aTarget}, ${2:float aAxisX}, ${3:float aAxisY}, ${4:float aAxisZ}, ${5:float aForce}, ${6:bool abOn = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"applyhavokimpulse": {
+		"prefix": "applyhavokimpulse",
+		"body": "ApplyHavokImpulse(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afMagnitude})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"attachmod": {
+		"prefix": "attachmod",
+		"body": "AttachMod(${1:ObjectMod akMod}, ${2:int aiAttachIndex = 1})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"attachmodtoinventoryitem": {
+		"prefix": "attachmodtoinventoryitem",
+		"body": "AttachModToInventoryItem(${1:Form akItem}, ${2:ObjectMod akMod})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"attachto": {
+		"prefix": "attachto",
+		"body": "AttachTo(${1:ObjectReference akParent})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"blockactivation": {
+		"prefix": "blockactivation",
+		"body": "BlockActivation(${1:bool abBlocked = True}, ${2:bool abHideActivateText = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"calculateencounterlevel": {
+		"prefix": "calculateencounterlevel",
+		"body": "CalculateEncounterLevel(${1:int aiDifficulty = 4})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"canfasttraveltomarker": {
+		"prefix": "canfasttraveltomarker",
+		"body": "CanFastTravelToMarker()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"canproduceforworkshop": {
+		"prefix": "canproduceforworkshop",
+		"body": "CanProduceForWorkshop()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"cleardestruction": {
+		"prefix": "cleardestruction",
+		"body": "ClearDestruction()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"conveyorbelton": {
+		"prefix": "conveyorbelton",
+		"body": "ConveyorBeltOn(${1:bool abOn = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"countactorslinkedtome": {
+		"prefix": "countactorslinkedtome",
+		"body": "CountActorsLinkedToMe(${1:apLinkKeyword = None}, ${2:apExcludeKeyword = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"countlinkedrefchain": {
+		"prefix": "countlinkedrefchain",
+		"body": "CountLinkedRefChain(${1:keyword apKeyword = None}, ${2:int maxExpectedLinkedRefs = 100})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"countrefslinkedtome": {
+		"prefix": "countrefslinkedtome",
+		"body": "CountRefsLinkedToMe(${1:Keyword apLinkKeyword = None}, ${2:Keyword apExcludeKeyword = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"createdetectionevent": {
+		"prefix": "createdetectionevent",
+		"body": "CreateDetectionEvent(${1:Actor akOwner}, ${2:int aiSoundLevel = 0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"damageobject": {
+		"prefix": "damageobject",
+		"body": "DamageObject(${1:float afDamage})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"damagevalue": {
+		"prefix": "damagevalue",
+		"body": "DamageValue(${1:ActorValue akAV}, ${2:float afDamage})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"delete": {
+		"prefix": "delete",
+		"body": "Delete()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"deletewhenable": {
+		"prefix": "deletewhenable",
+		"body": "DeleteWhenAble()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"disable": {
+		"prefix": "disable",
+		"body": "Disable(${1:bool abFadeOut = False})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"disablelinkchain": {
+		"prefix": "disablelinkchain",
+		"body": "DisableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeOut = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"disablenowait": {
+		"prefix": "disablenowait",
+		"body": "DisableNoWait(${1:bool abFadeOut = False})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"drop": {
+		"prefix": "drop",
+		"body": "Drop(${1:bool abSilent = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"dropfirstobject": {
+		"prefix": "dropfirstobject",
+		"body": "DropFirstObject(${1:bool abInitiallyDisabled=false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"dropobject": {
+		"prefix": "dropobject",
+		"body": "DropObject(${1:Form akObject}, ${2:int aiCount = 1})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"enable": {
+		"prefix": "enable",
+		"body": "Enable(${1:bool abFadeIn = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"enablefasttravel": {
+		"prefix": "enablefasttravel",
+		"body": "EnableFastTravel(${1:bool abEnable = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"enablelinkchain": {
+		"prefix": "enablelinkchain",
+		"body": "EnableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeIn = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"enablenowait": {
+		"prefix": "enablenowait",
+		"body": "EnableNoWait(${1:bool abFadeIn = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"fanmotoron": {
+		"prefix": "fanmotoron",
+		"body": "FanMotorOn(${1:bool abOn = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"findallreferencesoftype": {
+		"prefix": "findallreferencesoftype",
+		"body": "FindAllReferencesOfType(${1:Form arObjectOrList}, ${2:float afRadius})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"findallreferenceswithkeyword": {
+		"prefix": "findallreferenceswithkeyword",
+		"body": "FindAllReferencesWithKeyword(${1:Form arKeywordOrList}, ${2:float afRadius})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"forceaddragdolltoworld": {
+		"prefix": "forceaddragdolltoworld",
+		"body": "ForceAddRagdollToWorld()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"forceremoveragdollfromworld": {
+		"prefix": "forceremoveragdollfromworld",
+		"body": "ForceRemoveRagdollFromWorld()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getactorowner": {
+		"prefix": "getactorowner",
+		"body": "GetActorOwner()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getactorrefowner": {
+		"prefix": "getactorrefowner",
+		"body": "GetActorRefOwner()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getactorslinkedtome": {
+		"prefix": "getactorslinkedtome",
+		"body": "GetActorsLinkedToMe(${1:apLinkKeyword = None}, ${2:apExcludeKeyword = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getanglex": {
+		"prefix": "getanglex",
+		"body": "GetAngleX()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getangley": {
+		"prefix": "getangley",
+		"body": "GetAngleY()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getanglez": {
+		"prefix": "getanglez",
+		"body": "GetAngleZ()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getanimationvariablebool": {
+		"prefix": "getanimationvariablebool",
+		"body": "GetAnimationVariableBool(${1:string asVariableName})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getanimationvariablefloat": {
+		"prefix": "getanimationvariablefloat",
+		"body": "GetAnimationVariableFloat(${1:string asVariableName})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getanimationvariableint": {
+		"prefix": "getanimationvariableint",
+		"body": "GetAnimationVariableInt(${1:string asVariableName})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getbaseobject": {
+		"prefix": "getbaseobject",
+		"body": "GetBaseObject()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getbasevalue": {
+		"prefix": "getbasevalue",
+		"body": "GetBaseValue(${1:ActorValue akAV})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getcomponentcount": {
+		"prefix": "getcomponentcount",
+		"body": "GetComponentCount(${1:Form akItem = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getcontainer": {
+		"prefix": "getcontainer",
+		"body": "GetContainer()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getcurrentdestructionstage": {
+		"prefix": "getcurrentdestructionstage",
+		"body": "GetCurrentDestructionStage()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getcurrentlocation": {
+		"prefix": "getcurrentlocation",
+		"body": "GetCurrentLocation()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getcurrentscene": {
+		"prefix": "getcurrentscene",
+		"body": "GetCurrentScene()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getdistance": {
+		"prefix": "getdistance",
+		"body": "GetDistance(${1:ObjectReference akOther})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"geteditorlocation": {
+		"prefix": "geteditorlocation",
+		"body": "GetEditorLocation()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getencounterzone": {
+		"prefix": "getencounterzone",
+		"body": "GetEncounterZone()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getfactionowner": {
+		"prefix": "getfactionowner",
+		"body": "GetFactionOwner()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getheadingangle": {
+		"prefix": "getheadingangle",
+		"body": "GetHeadingAngle(${1:ObjectReference akOther})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getheight": {
+		"prefix": "getheight",
+		"body": "GetHeight()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getinventoryvalue": {
+		"prefix": "getinventoryvalue",
+		"body": "GetInventoryValue()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getitemcount": {
+		"prefix": "getitemcount",
+		"body": "GetItemCount(${1:Form akItem})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getitemhealthpercent": {
+		"prefix": "getitemhealthpercent",
+		"body": "GetItemHealthPercent()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getkey": {
+		"prefix": "getkey",
+		"body": "GetKey()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getlength": {
+		"prefix": "getlength",
+		"body": "GetLength()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getlinkedref": {
+		"prefix": "getlinkedref",
+		"body": "GetLinkedRef(${1:Keyword apKeyword = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getlinkedrefchain": {
+		"prefix": "getlinkedrefchain",
+		"body": "GetLinkedRefChain(${1:keyword apKeyword = None}, ${2:int iMaxExpectedLinkedRefs = 100})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getlinkedrefchildren": {
+		"prefix": "getlinkedrefchildren",
+		"body": "GetLinkedRefChildren(${1:keyword apKeyword})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getlocklevel": {
+		"prefix": "getlocklevel",
+		"body": "GetLockLevel()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getlocreftypes": {
+		"prefix": "getlocreftypes",
+		"body": "GetLocRefTypes()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getmass": {
+		"prefix": "getmass",
+		"body": "GetMass()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getnthlinkedref": {
+		"prefix": "getnthlinkedref",
+		"body": "GetNthLinkedRef(${1:int aiLinkedRef}, ${2:Keyword apKeyword = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getopenstate": {
+		"prefix": "getopenstate",
+		"body": "GetOpenState()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getparentcell": {
+		"prefix": "getparentcell",
+		"body": "GetParentCell()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getpositionx": {
+		"prefix": "getpositionx",
+		"body": "GetPositionX()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getpositiony": {
+		"prefix": "getpositiony",
+		"body": "GetPositionY()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getpositionz": {
+		"prefix": "getpositionz",
+		"body": "GetPositionZ()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getradiofrequency": {
+		"prefix": "getradiofrequency",
+		"body": "GetRadioFrequency()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getradiovolume": {
+		"prefix": "getradiovolume",
+		"body": "GetRadioVolume()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getrefslinkedtome": {
+		"prefix": "getrefslinkedtome",
+		"body": "GetRefsLinkedToMe(${1:Keyword apLinkKeyword = None}, ${2:Keyword apExcludeKeyword = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getresourcedamage": {
+		"prefix": "getresourcedamage",
+		"body": "GetResourceDamage(${1:ActorValue akAV = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getsafeposition": {
+		"prefix": "getsafeposition",
+		"body": "GetSafePosition(${1:float aSearchRadius=-1}, ${2:float aSafeRadius=-1})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getscale": {
+		"prefix": "getscale",
+		"body": "GetScale()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getteleportcell": {
+		"prefix": "getteleportcell",
+		"body": "GetTeleportCell()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"gettransitioncell": {
+		"prefix": "gettransitioncell",
+		"body": "GetTransitionCell()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"gettransmitterdistance": {
+		"prefix": "gettransmitterdistance",
+		"body": "GetTransmitterDistance()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"gettriggerobjectcount": {
+		"prefix": "gettriggerobjectcount",
+		"body": "GetTriggerObjectCount()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getvalue": {
+		"prefix": "getvalue",
+		"body": "GetValue(${1:ActorValue akAV})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getvaluepercentage": {
+		"prefix": "getvaluepercentage",
+		"body": "GetValuePercentage(${1:ActorValue akAV})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getvoicetype": {
+		"prefix": "getvoicetype",
+		"body": "GetVoiceType()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getwidth": {
+		"prefix": "getwidth",
+		"body": "GetWidth()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getworkshopownedobjects": {
+		"prefix": "getworkshopownedobjects",
+		"body": "GetWorkshopOwnedObjects(${1:Actor akActor})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getworkshopresourcedamage": {
+		"prefix": "getworkshopresourcedamage",
+		"body": "GetWorkshopResourceDamage(${1:ActorValue akAV = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getworkshopresourceobjects": {
+		"prefix": "getworkshopresourceobjects",
+		"body": "GetWorkshopResourceObjects(${1:ActorValue akAV = None}, ${2:int aiOption=0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getworldspace": {
+		"prefix": "getworldspace",
+		"body": "GetWorldSpace()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"hasactorrefowner": {
+		"prefix": "hasactorrefowner",
+		"body": "HasActorRefOwner()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"hasdirectlos": {
+		"prefix": "hasdirectlos",
+		"body": "HasDirectLOS(${1:ObjectReference akTarget}, ${2:string asSourceNode = \\\"\\\"}, ${3:string asTargetNode = \\\"\\\"})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"haseffectkeyword": {
+		"prefix": "haseffectkeyword",
+		"body": "HasEffectKeyword(${1:Keyword akKeyword})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"haskeyword": {
+		"prefix": "haskeyword",
+		"body": "HasKeyword(${1:Keyword akKeyword})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"haskeywordinformlist": {
+		"prefix": "haskeywordinformlist",
+		"body": "HasKeywordInFormList(${1:FormList akKeywordList})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"haslocreftype": {
+		"prefix": "haslocreftype",
+		"body": "HasLocRefType(${1:LocationRefType akRefType})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"hasnode": {
+		"prefix": "hasnode",
+		"body": "HasNode(${1:string asNodeName})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"hasowner": {
+		"prefix": "hasowner",
+		"body": "HasOwner()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"hassharedpowergrid": {
+		"prefix": "hassharedpowergrid",
+		"body": "HasSharedPowerGrid(${1:ObjectReference akChild})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"ignorefriendlyhits": {
+		"prefix": "ignorefriendlyhits",
+		"body": "IgnoreFriendlyHits(${1:bool abIgnore = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"interruptcast": {
+		"prefix": "interruptcast",
+		"body": "InterruptCast()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"is3dloaded": {
+		"prefix": "is3dloaded",
+		"body": "Is3DLoaded()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isactivatechild": {
+		"prefix": "isactivatechild",
+		"body": "IsActivateChild(${1:ObjectReference akChild})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isactivationblocked": {
+		"prefix": "isactivationblocked",
+		"body": "IsActivationBlocked()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isconveyorbelton": {
+		"prefix": "isconveyorbelton",
+		"body": "IsConveyorBeltOn()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"iscreated": {
+		"prefix": "iscreated",
+		"body": "IsCreated()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isdeleted": {
+		"prefix": "isdeleted",
+		"body": "IsDeleted()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isdestroyed": {
+		"prefix": "isdestroyed",
+		"body": "IsDestroyed()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isdisabled": {
+		"prefix": "isdisabled",
+		"body": "IsDisabled()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isenabled": {
+		"prefix": "isenabled",
+		"body": "IsEnabled()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isfanmotoron": {
+		"prefix": "isfanmotoron",
+		"body": "IsFanMotorOn()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isfurnitureinuse": {
+		"prefix": "isfurnitureinuse",
+		"body": "IsFurnitureInUse(${1:bool abIgnoreReserved = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isfurnituremarkerinuse": {
+		"prefix": "isfurnituremarkerinuse",
+		"body": "IsFurnitureMarkerInUse(${1:int aiMarker}, ${2:bool abIgnoreReserved = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isignoringfriendlyhits": {
+		"prefix": "isignoringfriendlyhits",
+		"body": "IsIgnoringFriendlyHits()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isindialoguewithplayer": {
+		"prefix": "isindialoguewithplayer",
+		"body": "IsInDialogueWithPlayer()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isininterior": {
+		"prefix": "isininterior",
+		"body": "IsInInterior()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isinlocation": {
+		"prefix": "isinlocation",
+		"body": "IsInLocation(${1:Location akLocation})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"islockbroken": {
+		"prefix": "islockbroken",
+		"body": "IsLockBroken()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"islocked": {
+		"prefix": "islocked",
+		"body": "IsLocked()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"ismapmarkervisible": {
+		"prefix": "ismapmarkervisible",
+		"body": "IsMapMarkerVisible()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isnearplayer": {
+		"prefix": "isnearplayer",
+		"body": "IsNearPlayer()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isownedby": {
+		"prefix": "isownedby",
+		"body": "IsOwnedBy(${1:Actor akOwner})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"ispowered": {
+		"prefix": "ispowered",
+		"body": "IsPowered()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isquestitem": {
+		"prefix": "isquestitem",
+		"body": "IsQuestItem()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isradioon": {
+		"prefix": "isradioon",
+		"body": "IsRadioOn()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isrefintransitioncell": {
+		"prefix": "isrefintransitioncell",
+		"body": "IsRefInTransitionCell(${1:ObjectReference akRef})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"isteleportarealoaded": {
+		"prefix": "isteleportarealoaded",
+		"body": "IsTeleportAreaLoaded()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"iswithinbuildablearea": {
+		"prefix": "iswithinbuildablearea",
+		"body": "IsWithinBuildableArea(${1:ObjectReference akRef})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"knockareaeffect": {
+		"prefix": "knockareaeffect",
+		"body": "KnockAreaEffect(${1:float afMagnitude}, ${2:float afRadius})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"lock": {
+		"prefix": "lock",
+		"body": "Lock(${1:bool abLock = true}, ${2:bool abAsOwner = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"makeradioreceiver": {
+		"prefix": "makeradioreceiver",
+		"body": "MakeRadioReceiver(${1:float afFrequency}, ${2:float afVolume = 1.0}, ${3:OutputModel aOverrideModel = None}, ${4:bool abActive = true}, ${5:bool abNoStatic = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"maketransmitterrepeater": {
+		"prefix": "maketransmitterrepeater",
+		"body": "MakeTransmitterRepeater(${1:ObjectReference akTransmitterToRepeat}, ${2:float afInnerRadius}, ${3:float afOuterRadius}, ${4:bool abUnlimitedRange = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"modvalue": {
+		"prefix": "modvalue",
+		"body": "ModValue(${1:ActorValue akAV}, ${2:float afAmount})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"moveto": {
+		"prefix": "moveto",
+		"body": "MoveTo(${1:ObjectReference akTarget}, ${2:float afXOffset = 0.0}, ${3:float afYOffset = 0.0}, ${4:float afZOffset = 0.0}, ${5:bool abMatchRotation = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"movetoifunloaded": {
+		"prefix": "movetoifunloaded",
+		"body": "MoveToIfUnloaded(${1:ObjectReference akTarget}, ${2:float afXOffset = 0.0}, ${3:float afYOffset = 0.0}, ${4:float afZOffset = 0.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"movetomyeditorlocation": {
+		"prefix": "movetomyeditorlocation",
+		"body": "MoveToMyEditorLocation()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"movetonearestnavmeshlocation": {
+		"prefix": "movetonearestnavmeshlocation",
+		"body": "MoveToNearestNavmeshLocation()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"movetonode": {
+		"prefix": "movetonode",
+		"body": "MoveToNode(${1:ObjectReference akTarget}, ${2:string asNodeName}, ${3:string asMatchNodeName = \\\"\\\"})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"onactivate": {
+		"prefix": "onactivate",
+		"body": "Event OnActivate(ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnActivate",
+		"scope": "source.papyrus"
+	},
+	"oncellattach": {
+		"prefix": "oncellattach",
+		"body": "Event OnCellAttach()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnCellAttach",
+		"scope": "source.papyrus"
+	},
+	"oncelldetach": {
+		"prefix": "oncelldetach",
+		"body": "Event OnCellDetach()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnCellDetach",
+		"scope": "source.papyrus"
+	},
+	"oncellload": {
+		"prefix": "oncellload",
+		"body": "Event OnCellLoad()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnCellLoad",
+		"scope": "source.papyrus"
+	},
+	"onclose": {
+		"prefix": "onclose",
+		"body": "Event OnClose(ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnClose",
+		"scope": "source.papyrus"
+	},
+	"oncontainerchanged": {
+		"prefix": "oncontainerchanged",
+		"body": "Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnContainerChanged",
+		"scope": "source.papyrus"
+	},
+	"ondestructionstagechanged": {
+		"prefix": "ondestructionstagechanged",
+		"body": "Event OnDestructionStageChanged(int aiOldStage, int aiCurrentStage)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnDestructionStageChanged",
+		"scope": "source.papyrus"
+	},
+	"onequipped": {
+		"prefix": "onequipped",
+		"body": "Event OnEquipped(Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnEquipped",
+		"scope": "source.papyrus"
+	},
+	"onexitfurniture": {
+		"prefix": "onexitfurniture",
+		"body": "Event OnExitFurniture(ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnExitFurniture",
+		"scope": "source.papyrus"
+	},
+	"ongrab": {
+		"prefix": "ongrab",
+		"body": "Event OnGrab()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnGrab",
+		"scope": "source.papyrus"
+	},
+	"onholotapechatter": {
+		"prefix": "onholotapechatter",
+		"body": "Event OnHolotapeChatter( string astrChatter, float afNumericData )\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnHolotapeChatter",
+		"scope": "source.papyrus"
+	},
+	"onholotapeplay": {
+		"prefix": "onholotapeplay",
+		"body": "Event OnHolotapePlay(ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnHolotapePlay",
+		"scope": "source.papyrus"
+	},
+	"onitemadded": {
+		"prefix": "onitemadded",
+		"body": "Event OnItemAdded(Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnItemAdded",
+		"scope": "source.papyrus"
+	},
+	"onitemremoved": {
+		"prefix": "onitemremoved",
+		"body": "Event OnItemRemoved(Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akDestContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnItemRemoved",
+		"scope": "source.papyrus"
+	},
+	"onload": {
+		"prefix": "onload",
+		"body": "Event OnLoad()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnLoad",
+		"scope": "source.papyrus"
+	},
+	"onlockstatechanged": {
+		"prefix": "onlockstatechanged",
+		"body": "Event OnLockStateChanged()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnLockStateChanged",
+		"scope": "source.papyrus"
+	},
+	"onopen": {
+		"prefix": "onopen",
+		"body": "Event OnOpen(ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnOpen",
+		"scope": "source.papyrus"
+	},
+	"onpipboyradiodetection": {
+		"prefix": "onpipboyradiodetection",
+		"body": "Event OnPipboyRadioDetection(bool abDetected)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnPipboyRadioDetection",
+		"scope": "source.papyrus"
+	},
+	"onplayerdialoguetarget": {
+		"prefix": "onplayerdialoguetarget",
+		"body": "Event OnPlayerDialogueTarget()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnPlayerDialogueTarget",
+		"scope": "source.papyrus"
+	},
+	"onpoweroff": {
+		"prefix": "onpoweroff",
+		"body": "Event OnPowerOff()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnPowerOff",
+		"scope": "source.papyrus"
+	},
+	"onpoweron": {
+		"prefix": "onpoweron",
+		"body": "Event OnPowerOn(ObjectReference akPowerGenerator)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnPowerOn",
+		"scope": "source.papyrus"
+	},
+	"onread": {
+		"prefix": "onread",
+		"body": "Event OnRead()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnRead",
+		"scope": "source.papyrus"
+	},
+	"onrelease": {
+		"prefix": "onrelease",
+		"body": "Event OnRelease()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnRelease",
+		"scope": "source.papyrus"
+	},
+	"onreset": {
+		"prefix": "onreset",
+		"body": "Event OnReset()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnReset",
+		"scope": "source.papyrus"
+	},
+	"onsell": {
+		"prefix": "onsell",
+		"body": "Event OnSell(Actor akSeller)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnSell",
+		"scope": "source.papyrus"
+	},
+	"onspellcast": {
+		"prefix": "onspellcast",
+		"body": "Event OnSpellCast(Form akSpell)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnSpellCast",
+		"scope": "source.papyrus"
+	},
+	"ontranslationalmostcomplete": {
+		"prefix": "ontranslationalmostcomplete",
+		"body": "Event OnTranslationAlmostComplete()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnTranslationAlmostComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationcomplete": {
+		"prefix": "ontranslationcomplete",
+		"body": "Event OnTranslationComplete()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnTranslationComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationfailed": {
+		"prefix": "ontranslationfailed",
+		"body": "Event OnTranslationFailed()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnTranslationFailed",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstart": {
+		"prefix": "ontraphitstart",
+		"body": "Event OnTrapHitStart(ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnTrapHitStart",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstop": {
+		"prefix": "ontraphitstop",
+		"body": "Event OnTrapHitStop(ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnTrapHitStop",
+		"scope": "source.papyrus"
+	},
+	"ontriggerenter": {
+		"prefix": "ontriggerenter",
+		"body": "Event OnTriggerEnter(ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnTriggerEnter",
+		"scope": "source.papyrus"
+	},
+	"ontriggerleave": {
+		"prefix": "ontriggerleave",
+		"body": "Event OnTriggerLeave(ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnTriggerLeave",
+		"scope": "source.papyrus"
+	},
+	"onunequipped": {
+		"prefix": "onunequipped",
+		"body": "Event OnUnequipped(Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnUnequipped",
+		"scope": "source.papyrus"
+	},
+	"onunload": {
+		"prefix": "onunload",
+		"body": "Event OnUnload()\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnUnload",
+		"scope": "source.papyrus"
+	},
+	"onworkshopmode": {
+		"prefix": "onworkshopmode",
+		"body": "Event OnWorkshopMode(bool aStart)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnWorkshopMode",
+		"scope": "source.papyrus"
+	},
+	"onworkshopnpctransfer": {
+		"prefix": "onworkshopnpctransfer",
+		"body": "Event OnWorkshopNPCTransfer(Location akNewWorkshop, Keyword akActionKW)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnWorkshopNPCTransfer",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectdestroyed": {
+		"prefix": "onworkshopobjectdestroyed",
+		"body": "Event OnWorkshopObjectDestroyed(ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnWorkshopObjectDestroyed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectgrabbed": {
+		"prefix": "onworkshopobjectgrabbed",
+		"body": "Event OnWorkshopObjectGrabbed(ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnWorkshopObjectGrabbed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectmoved": {
+		"prefix": "onworkshopobjectmoved",
+		"body": "Event OnWorkshopObjectMoved(ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnWorkshopObjectMoved",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectplaced": {
+		"prefix": "onworkshopobjectplaced",
+		"body": "Event OnWorkshopObjectPlaced(ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnWorkshopObjectPlaced",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectrepaired": {
+		"prefix": "onworkshopobjectrepaired",
+		"body": "Event OnWorkshopObjectRepaired(ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ObjectReference.OnWorkshopObjectRepaired",
+		"scope": "source.papyrus"
+	},
+	"openworkshopsettlementmenu": {
+		"prefix": "openworkshopsettlementmenu",
+		"body": "OpenWorkshopSettlementMenu(${1:Keyword akActionKW}, ${2:Message astrConfirm = None}, ${3:Location aLocToHighlight = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"openworkshopsettlementmenuex": {
+		"prefix": "openworkshopsettlementmenuex",
+		"body": "OpenWorkshopSettlementMenuEx(${1:Keyword akActionKW}, ${2:Message astrConfirm = None}, ${3:Location aLocToHighlight = None}, ${4:FormList akIncludeKeywordList = None}, ${5:FormList akExcludeKeywordList = None}, ${6:bool abExcludeZeroPopulation = false}, ${7:bool abOnlyOwnedWorkshops= true}, ${8:bool abTurnOffHeader= false}, ${9:bool abOnlyPotentialVassalSettlements= false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"pauseaudio": {
+		"prefix": "pauseaudio",
+		"body": "PauseAudio()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"placeactoratme": {
+		"prefix": "placeactoratme",
+		"body": "PlaceActorAtMe(${1:ActorBase akActorToPlace}, ${2:int aiLevelMod = 4}, ${3:EncounterZone akZone = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"placeatme": {
+		"prefix": "placeatme",
+		"body": "PlaceAtMe(${1:Form akFormToPlace}, ${2:int aiCount = 1}, ${3:bool abForcePersist = false}, ${4:bool abInitiallyDisabled = false}, ${5:bool abDeleteWhenAble = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"placeatnode": {
+		"prefix": "placeatnode",
+		"body": "PlaceAtNode(${1:string asNodeName}, ${2:Form akFormToPlace}, ${3:int aiCount = 1}, ${4:bool abForcePersist = false}, ${5:bool abInitiallyDisabled = false}, ${6:bool abDeleteWhenAble = true}, ${7:bool abAttach = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"playanimation": {
+		"prefix": "playanimation",
+		"body": "PlayAnimation(${1:string asAnimation})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"playanimationandwait": {
+		"prefix": "playanimationandwait",
+		"body": "PlayAnimationAndWait(${1:string asAnimation}, ${2:string asEventName})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"playgamebryoanimation": {
+		"prefix": "playgamebryoanimation",
+		"body": "PlayGamebryoAnimation(${1:string asAnimation}, ${2:bool abStartOver = false}, ${3:float afEaseInTime = 0.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"playimpacteffect": {
+		"prefix": "playimpacteffect",
+		"body": "PlayImpactEffect(${1:ImpactDataSet akImpactEffect}, ${2:string asNodeName = \\\"\\\"}, ${3:float afPickDirX = 0.0}, ${4:float afPickDirY = 0.0}, ${5:float afPickDirZ = -1.0}, ${6:float afPickLength = 512.0}, ${7:bool abApplyNodeRotation = false}, ${8:bool abUseNodeLocalRotation = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"playsyncedanimationandwaitss": {
+		"prefix": "playsyncedanimationandwaitss",
+		"body": "PlaySyncedAnimationAndWaitSS(${1:string asAnimation1}, ${2:string asEvent1}, ${3:ObjectReference akObj2}, ${4:string asAnimation2}, ${5:string asEvent2})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"playsyncedanimationss": {
+		"prefix": "playsyncedanimationss",
+		"body": "PlaySyncedAnimationSS(${1:string asAnimation1}, ${2:ObjectReference akObj2}, ${3:string asAnimation2})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"playterraineffect": {
+		"prefix": "playterraineffect",
+		"body": "PlayTerrainEffect(${1:string asEffectModelName}, ${2:string asAttachBoneName})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"preloadexteriorcell": {
+		"prefix": "preloadexteriorcell",
+		"body": "PreloadExteriorCell()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"preloadtargetarea": {
+		"prefix": "preloadtargetarea",
+		"body": "PreloadTargetArea()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"processtraphit": {
+		"prefix": "processtraphit",
+		"body": "ProcessTrapHit(${1:ObjectReference akTrap}, ${2:float afDamage}, ${3:float afPushback}, ${4:float afXVel}, ${5:float afYVel}, ${6:float afZVel}, ${7:float afXPos}, ${8:float afYPos}, ${9:float afZPos}, ${10:int aeMaterial}, ${11:float afStagger})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"pushactoraway": {
+		"prefix": "pushactoraway",
+		"body": "PushActorAway(${1:Actor akActorToPush}, ${2:float afKnockbackForce})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"ramprumble": {
+		"prefix": "ramprumble",
+		"body": "RampRumble(${1:float power = 0.5}, ${2:float duration = 0.25}, ${3:float falloff = 1600.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"recalculateresources": {
+		"prefix": "recalculateresources",
+		"body": "RecalculateResources()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removeallitems": {
+		"prefix": "removeallitems",
+		"body": "RemoveAllItems(${1:ObjectReference akTransferTo = None}, ${2:bool abKeepOwnership = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removeallmods": {
+		"prefix": "removeallmods",
+		"body": "RemoveAllMods()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removeallmodsfrominventoryitem": {
+		"prefix": "removeallmodsfrominventoryitem",
+		"body": "RemoveAllModsFromInventoryItem(${1:Form akItem})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removecomponents": {
+		"prefix": "removecomponents",
+		"body": "RemoveComponents(${1:Component akComponent}, ${2:int aiCount}, ${3:bool abSilent = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removeitem": {
+		"prefix": "removeitem",
+		"body": "RemoveItem(${1:Form akItemToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = false}, ${4:ObjectReference akOtherContainer = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removeitembycomponent": {
+		"prefix": "removeitembycomponent",
+		"body": "RemoveItemByComponent(${1:Form akComponentToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = false}, ${4:ObjectReference akOtherContainer = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removekeyword": {
+		"prefix": "removekeyword",
+		"body": "RemoveKeyword(${1:Keyword akKeyword})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removemod": {
+		"prefix": "removemod",
+		"body": "RemoveMod(${1:ObjectMod akMod})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"removemodfrominventoryitem": {
+		"prefix": "removemodfrominventoryitem",
+		"body": "RemoveModFromInventoryItem(${1:Form akItem}, ${2:ObjectMod akMod})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"repair": {
+		"prefix": "repair",
+		"body": "Repair()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"reset": {
+		"prefix": "reset",
+		"body": "Reset(${1:ObjectReference akTarget = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"resetkeyword": {
+		"prefix": "resetkeyword",
+		"body": "ResetKeyword(${1:Keyword akKeyword})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"restorevalue": {
+		"prefix": "restorevalue",
+		"body": "RestoreValue(${1:ActorValue akAV}, ${2:float afAmount})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"resumeaudio": {
+		"prefix": "resumeaudio",
+		"body": "ResumeAudio()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"reverseconveyorbelt": {
+		"prefix": "reverseconveyorbelt",
+		"body": "ReverseConveyorBelt(${1:bool abReverse = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"say": {
+		"prefix": "say",
+		"body": "Say(${1:Topic akTopicToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = false}, ${4:ObjectReference akTarget = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"saycustom": {
+		"prefix": "saycustom",
+		"body": "SayCustom(${1:Keyword akKeywordToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = false}, ${4:ObjectReference akTarget = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"sellitem": {
+		"prefix": "sellitem",
+		"body": "SellItem(${1:Form Item}, ${2:int Value}, ${3:int amountToSell = -1}, ${4:bool silent = false}, ${5:form paymentItem = none}, ${6:objectReference PaymentContainer = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"sendstealalarm": {
+		"prefix": "sendstealalarm",
+		"body": "SendStealAlarm(${1:Actor akThief})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setactivatetextoverride": {
+		"prefix": "setactivatetextoverride",
+		"body": "SetActivateTextOverride(${1:Message akText})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setactorcause": {
+		"prefix": "setactorcause",
+		"body": "SetActorCause(${1:Actor akActor})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setactorowner": {
+		"prefix": "setactorowner",
+		"body": "SetActorOwner(${1:ActorBase akActorBase}, ${2:bool abNoCrime = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setactorrefowner": {
+		"prefix": "setactorrefowner",
+		"body": "SetActorRefOwner(${1:Actor akActor}, ${2:bool abNoCrime = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setangle": {
+		"prefix": "setangle",
+		"body": "SetAngle(${1:float afXAngle}, ${2:float afYAngle}, ${3:float afZAngle})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setanimationvariablebool": {
+		"prefix": "setanimationvariablebool",
+		"body": "SetAnimationVariableBool(${1:string asVariableName}, ${2:bool abNewValue})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setanimationvariablefloat": {
+		"prefix": "setanimationvariablefloat",
+		"body": "SetAnimationVariableFloat(${1:string asVariableName}, ${2:float afNewValue})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setanimationvariableint": {
+		"prefix": "setanimationvariableint",
+		"body": "SetAnimationVariableInt(${1:string asVariableName}, ${2:int aiNewValue})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setattractionactive": {
+		"prefix": "setattractionactive",
+		"body": "SetAttractionActive(${1:Keyword apKeyword}, ${2:bool abActive = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setconveyorbeltvelocity": {
+		"prefix": "setconveyorbeltvelocity",
+		"body": "SetConveyorBeltVelocity(${1:float afLinVelX}, ${2:float afLinVelY}, ${3:float afLinVelZ})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setdestroyed": {
+		"prefix": "setdestroyed",
+		"body": "SetDestroyed(${1:bool abDestroyed = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setdirectattarget": {
+		"prefix": "setdirectattarget",
+		"body": "SetDirectAtTarget(${1:ObjectReference akTarget})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setfactionowner": {
+		"prefix": "setfactionowner",
+		"body": "SetFactionOwner(${1:Faction akFaction}, ${2:bool abNoCrime = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setharvested": {
+		"prefix": "setharvested",
+		"body": "SetHarvested(${1:bool abHarvested})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setlinkedref": {
+		"prefix": "setlinkedref",
+		"body": "SetLinkedRef(${1:ObjectReference apRef}, ${2:Keyword apKeyword = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setlocklevel": {
+		"prefix": "setlocklevel",
+		"body": "SetLockLevel(${1:int aiLockLevel})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setlocreftype": {
+		"prefix": "setlocreftype",
+		"body": "SetLocRefType(${1:Location akLoc}, ${2:LocationRefType akRefType})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setmotiontype": {
+		"prefix": "setmotiontype",
+		"body": "SetMotionType(${1:int aiMotionType}, ${2:bool abAllowActivate = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setnofavorallowed": {
+		"prefix": "setnofavorallowed",
+		"body": "SetNoFavorAllowed(${1:bool abNoFavor = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setopen": {
+		"prefix": "setopen",
+		"body": "SetOpen(${1:bool abOpen = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setpersistloc": {
+		"prefix": "setpersistloc",
+		"body": "SetPersistLoc(${1:Location akLoc})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setplayerhastaken": {
+		"prefix": "setplayerhastaken",
+		"body": "SetPlayerHasTaken(${1:bool abTaken = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setposition": {
+		"prefix": "setposition",
+		"body": "SetPosition(${1:float afX}, ${2:float afY}, ${3:float afZ})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setradiofrequency": {
+		"prefix": "setradiofrequency",
+		"body": "SetRadioFrequency(${1:float afFrequency})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setradioon": {
+		"prefix": "setradioon",
+		"body": "SetRadioOn(${1:bool abOn = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setradiovolume": {
+		"prefix": "setradiovolume",
+		"body": "SetRadioVolume(${1:float afVolume})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setscale": {
+		"prefix": "setscale",
+		"body": "SetScale(${1:float afScale})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"setvalue": {
+		"prefix": "setvalue",
+		"body": "SetValue(${1:ActorValue akAV}, ${2:float afValue})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"splinetranslateto": {
+		"prefix": "splinetranslateto",
+		"body": "SplineTranslateTo(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afAngleX}, ${5:float afAngleY}, ${6:float afAngleZ}, ${7:float afTangentMagnitude}, ${8:float afSpeed}, ${9:float afMaxRotationSpeed = 0.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"splinetranslatetoref": {
+		"prefix": "splinetranslatetoref",
+		"body": "SplineTranslateToRef(${1:ObjectReference arTarget}, ${2:float afTangentMagnitude}, ${3:float afSpeed}, ${4:float afMaxRotationSpeed = 0.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"splinetranslatetorefnode": {
+		"prefix": "splinetranslatetorefnode",
+		"body": "SplineTranslateToRefNode(${1:ObjectReference arTarget}, ${2:string arNodeName}, ${3:float afTangentMagnitude}, ${4:float afSpeed}, ${5:float afMaxRotationSpeed = 0.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"startworkshop": {
+		"prefix": "startworkshop",
+		"body": "StartWorkshop(${1:bool abStart = true})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"stoptranslation": {
+		"prefix": "stoptranslation",
+		"body": "StopTranslation()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"storeinworkshop": {
+		"prefix": "storeinworkshop",
+		"body": "StoreInWorkshop(${1:Form akBaseItem}, ${2:int aiCount = 1})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"tethertohorse": {
+		"prefix": "tethertohorse",
+		"body": "TetherToHorse(${1:ObjectReference akHorse})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"translateto": {
+		"prefix": "translateto",
+		"body": "TranslateTo(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afAngleX}, ${5:float afAngleY}, ${6:float afAngleZ}, ${7:float afSpeed}, ${8:float afMaxRotationSpeed = 0.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"translatetoref": {
+		"prefix": "translatetoref",
+		"body": "TranslateToRef(${1:ObjectReference arTarget}, ${2:float afSpeed}, ${3:float afMaxRotationSpeed = 0.0})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"unlock": {
+		"prefix": "unlock",
+		"body": "Unlock(${1:bool abAsOwner = false})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"waitfor3dload": {
+		"prefix": "waitfor3dload",
+		"body": "WaitFor3DLoad()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"waitforanimationevent": {
+		"prefix": "waitforanimationevent",
+		"body": "WaitForAnimationEvent(${1:string asEventName})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"waitforworkshopresourcerecalc": {
+		"prefix": "waitforworkshopresourcerecalc",
+		"body": "WaitForWorkshopResourceRecalc()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"onactivate-REM": {
+		"prefix": "onactivate-REM",
+		"body": "Event ObjectReference.OnActivate(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnActivate",
+		"scope": "source.papyrus"
+	},
+	"oncellattach-REM": {
+		"prefix": "oncellattach-REM",
+		"body": "Event ObjectReference.OnCellAttach(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnCellAttach",
+		"scope": "source.papyrus"
+	},
+	"oncelldetach-REM": {
+		"prefix": "oncelldetach-REM",
+		"body": "Event ObjectReference.OnCellDetach(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnCellDetach",
+		"scope": "source.papyrus"
+	},
+	"oncellload-REM": {
+		"prefix": "oncellload-REM",
+		"body": "Event ObjectReference.OnCellLoad(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnCellLoad",
+		"scope": "source.papyrus"
+	},
+	"onclose-REM": {
+		"prefix": "onclose-REM",
+		"body": "Event ObjectReference.OnClose(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnClose",
+		"scope": "source.papyrus"
+	},
+	"oncontainerchanged-REM": {
+		"prefix": "oncontainerchanged-REM",
+		"body": "Event ObjectReference.OnContainerChanged(ObjectReference akSender, ObjectReference akNewContainer, ObjectReference akOldContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnContainerChanged",
+		"scope": "source.papyrus"
+	},
+	"ondestructionstagechanged-REM": {
+		"prefix": "ondestructionstagechanged-REM",
+		"body": "Event ObjectReference.OnDestructionStageChanged(ObjectReference akSender, int aiOldStage, int aiCurrentStage)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnDestructionStageChanged",
+		"scope": "source.papyrus"
+	},
+	"onequipped-REM": {
+		"prefix": "onequipped-REM",
+		"body": "Event ObjectReference.OnEquipped(ObjectReference akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnEquipped",
+		"scope": "source.papyrus"
+	},
+	"onexitfurniture-REM": {
+		"prefix": "onexitfurniture-REM",
+		"body": "Event ObjectReference.OnExitFurniture(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnExitFurniture",
+		"scope": "source.papyrus"
+	},
+	"ongrab-REM": {
+		"prefix": "ongrab-REM",
+		"body": "Event ObjectReference.OnGrab(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnGrab",
+		"scope": "source.papyrus"
+	},
+	"onholotapechatter-REM": {
+		"prefix": "onholotapechatter-REM",
+		"body": "Event ObjectReference.OnHolotapeChatter(ObjectReference akSender, string astrChatter, float afNumericData )\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnHolotapeChatter",
+		"scope": "source.papyrus"
+	},
+	"onholotapeplay-REM": {
+		"prefix": "onholotapeplay-REM",
+		"body": "Event ObjectReference.OnHolotapePlay(ObjectReference akSender, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnHolotapePlay",
+		"scope": "source.papyrus"
+	},
+	"onitemadded-REM": {
+		"prefix": "onitemadded-REM",
+		"body": "Event ObjectReference.OnItemAdded(ObjectReference akSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnItemAdded",
+		"scope": "source.papyrus"
+	},
+	"onitemremoved-REM": {
+		"prefix": "onitemremoved-REM",
+		"body": "Event ObjectReference.OnItemRemoved(ObjectReference akSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akDestContainer)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnItemRemoved",
+		"scope": "source.papyrus"
+	},
+	"onload-REM": {
+		"prefix": "onload-REM",
+		"body": "Event ObjectReference.OnLoad(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnLoad",
+		"scope": "source.papyrus"
+	},
+	"onlockstatechanged-REM": {
+		"prefix": "onlockstatechanged-REM",
+		"body": "Event ObjectReference.OnLockStateChanged(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnLockStateChanged",
+		"scope": "source.papyrus"
+	},
+	"onopen-REM": {
+		"prefix": "onopen-REM",
+		"body": "Event ObjectReference.OnOpen(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnOpen",
+		"scope": "source.papyrus"
+	},
+	"onpipboyradiodetection-REM": {
+		"prefix": "onpipboyradiodetection-REM",
+		"body": "Event ObjectReference.OnPipboyRadioDetection(ObjectReference akSender, bool abDetected)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnPipboyRadioDetection",
+		"scope": "source.papyrus"
+	},
+	"onplayerdialoguetarget-REM": {
+		"prefix": "onplayerdialoguetarget-REM",
+		"body": "Event ObjectReference.OnPlayerDialogueTarget(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnPlayerDialogueTarget",
+		"scope": "source.papyrus"
+	},
+	"onpoweroff-REM": {
+		"prefix": "onpoweroff-REM",
+		"body": "Event ObjectReference.OnPowerOff(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnPowerOff",
+		"scope": "source.papyrus"
+	},
+	"onpoweron-REM": {
+		"prefix": "onpoweron-REM",
+		"body": "Event ObjectReference.OnPowerOn(ObjectReference akSender, ObjectReference akPowerGenerator)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnPowerOn",
+		"scope": "source.papyrus"
+	},
+	"onread-REM": {
+		"prefix": "onread-REM",
+		"body": "Event ObjectReference.OnRead(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnRead",
+		"scope": "source.papyrus"
+	},
+	"onrelease-REM": {
+		"prefix": "onrelease-REM",
+		"body": "Event ObjectReference.OnRelease(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnRelease",
+		"scope": "source.papyrus"
+	},
+	"onreset-REM": {
+		"prefix": "onreset-REM",
+		"body": "Event ObjectReference.OnReset(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnReset",
+		"scope": "source.papyrus"
+	},
+	"onsell-REM": {
+		"prefix": "onsell-REM",
+		"body": "Event ObjectReference.OnSell(ObjectReference akSender, Actor akSeller)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnSell",
+		"scope": "source.papyrus"
+	},
+	"onspellcast-REM": {
+		"prefix": "onspellcast-REM",
+		"body": "Event ObjectReference.OnSpellCast(ObjectReference akSender, Form akSpell)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnSpellCast",
+		"scope": "source.papyrus"
+	},
+	"ontranslationalmostcomplete-REM": {
+		"prefix": "ontranslationalmostcomplete-REM",
+		"body": "Event ObjectReference.OnTranslationAlmostComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnTranslationAlmostComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationcomplete-REM": {
+		"prefix": "ontranslationcomplete-REM",
+		"body": "Event ObjectReference.OnTranslationComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnTranslationComplete",
+		"scope": "source.papyrus"
+	},
+	"ontranslationfailed-REM": {
+		"prefix": "ontranslationfailed-REM",
+		"body": "Event ObjectReference.OnTranslationFailed(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnTranslationFailed",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstart-REM": {
+		"prefix": "ontraphitstart-REM",
+		"body": "Event ObjectReference.OnTrapHitStart(ObjectReference akSender, ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnTrapHitStart",
+		"scope": "source.papyrus"
+	},
+	"ontraphitstop-REM": {
+		"prefix": "ontraphitstop-REM",
+		"body": "Event ObjectReference.OnTrapHitStop(ObjectReference akSender, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnTrapHitStop",
+		"scope": "source.papyrus"
+	},
+	"ontriggerenter-REM": {
+		"prefix": "ontriggerenter-REM",
+		"body": "Event ObjectReference.OnTriggerEnter(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnTriggerEnter",
+		"scope": "source.papyrus"
+	},
+	"ontriggerleave-REM": {
+		"prefix": "ontriggerleave-REM",
+		"body": "Event ObjectReference.OnTriggerLeave(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnTriggerLeave",
+		"scope": "source.papyrus"
+	},
+	"onunequipped-REM": {
+		"prefix": "onunequipped-REM",
+		"body": "Event ObjectReference.OnUnequipped(ObjectReference akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnUnequipped",
+		"scope": "source.papyrus"
+	},
+	"onunload-REM": {
+		"prefix": "onunload-REM",
+		"body": "Event ObjectReference.OnUnload(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnUnload",
+		"scope": "source.papyrus"
+	},
+	"onworkshopmode-REM": {
+		"prefix": "onworkshopmode-REM",
+		"body": "Event ObjectReference.OnWorkshopMode(ObjectReference akSender, bool aStart)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnWorkshopMode",
+		"scope": "source.papyrus"
+	},
+	"onworkshopnpctransfer-REM": {
+		"prefix": "onworkshopnpctransfer-REM",
+		"body": "Event ObjectReference.OnWorkshopNPCTransfer(ObjectReference akSender, Location akNewWorkshop, Keyword akActionKW)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnWorkshopNPCTransfer",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectdestroyed-REM": {
+		"prefix": "onworkshopobjectdestroyed-REM",
+		"body": "Event ObjectReference.OnWorkshopObjectDestroyed(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnWorkshopObjectDestroyed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectgrabbed-REM": {
+		"prefix": "onworkshopobjectgrabbed-REM",
+		"body": "Event ObjectReference.OnWorkshopObjectGrabbed(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnWorkshopObjectGrabbed",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectmoved-REM": {
+		"prefix": "onworkshopobjectmoved-REM",
+		"body": "Event ObjectReference.OnWorkshopObjectMoved(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnWorkshopObjectMoved",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectplaced-REM": {
+		"prefix": "onworkshopobjectplaced-REM",
+		"body": "Event ObjectReference.OnWorkshopObjectPlaced(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnWorkshopObjectPlaced",
+		"scope": "source.papyrus"
+	},
+	"onworkshopobjectrepaired-REM": {
+		"prefix": "onworkshopobjectrepaired-REM",
+		"body": "Event ObjectReference.OnWorkshopObjectRepaired(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ObjectReference.OnWorkshopObjectRepaired",
+		"scope": "source.papyrus"
+	}
+}

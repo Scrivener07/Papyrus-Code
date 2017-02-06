@@ -1,0 +1,20 @@
+{
+	"countactors": {
+		"prefix": "countactors",
+		"body": "CountActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"getactors": {
+		"prefix": "getactors",
+		"body": "GetActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"reset": {
+		"prefix": "reset",
+		"body": "Reset()${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	}
+}

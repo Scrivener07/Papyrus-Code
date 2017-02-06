@@ -1,85 +1,340 @@
 {
-    "name": "papyrus",
-    "displayName": "Papyrus Code",
-    "description": "A package for working with Mark Hanna's Papyrus scripting language.",
+	"name": "papyrus",
+	"displayName": "Papyrus Code",
+	"description": "A package for working with Mark Hanna's Papyrus scripting language.",
 	"publisher": "Scrivener07",
-    "icon": "images/icon.png",
-	"galleryBanner":
-	{
+	"icon": "images/icon.png",
+	"galleryBanner": {
 		"color": "#1e415e",
 		"theme": "dark"
 	},
-    "license": "SEE LICENSE IN LICENSE.md",
-    "version": "0.0.1",
-	"engines":
-    {
-        "vscode": "^1.9.0"
-    },
-    "homepage": "https://github.com/Scrivener07/Papyrus-Code/blob/master/README.md",
-    "repository":
-    {
+	"license": "SEE LICENSE IN LICENSE.md",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.9.0"
+	},
+	"homepage": "https://github.com/Scrivener07/Papyrus-Code/blob/master/README.md",
+	"repository": {
 		"type": "git",
 		"url": "https://github.com/Scrivener07/Papyrus-Code.git"
 	},
-	"bugs":
-	{
+	"bugs": {
 		"url": "https://github.com/Scrivener07/Papyrus-Code/issues"
 	},
-	"keywords":
-	[
+	"keywords": [
 		"papyrus",
 		"fallout-4"
 	],
-    "categories":
-    [
-        "Languages",
-        "Snippets"
-    ],
-    "contributes":
-    {
-        "languages":
-        [
-            {
-                "id": "papyrus",
-                "aliases": ["Papyrus", "papyrus"],
-                "extensions": [".psc"],
-                "configuration": "./language-configuration.json"
-            },
+	"categories": [
+		"Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "papyrus",
+				"aliases": [
+					"Papyrus",
+					"papyrus"
+				],
+				"extensions": [
+					".psc"
+				],
+				"configuration": "./papyrus-configuration.json"
+			},
 			{
 				"id": "papyrus-assembly",
-				"aliases": ["Papyrus Assembly", "papyrus-assembly"],
-				"extensions": [".pas"]
+				"aliases": [
+					"Papyrus Assembly",
+					"papyrus-assembly"
+				],
+				"extensions": [
+					".pas"
+				],
+				"configuration": "./papyrus-assembly-configuration.json"
 			},
 			{
 				"id": "papyrus-compiled",
-				"aliases": ["Papyrus Compiled", "papyrus-compiled"],
-				"extensions": [".pex"]
+				"aliases": [
+					"Papyrus Compiled",
+					"papyrus-compiled"
+				],
+				"extensions": [
+					".pex"
+				],
+				"configuration": "./papyrus-compiled-configuration.json"
+			},
+			{
+				"id": "papyrus-project",
+				"aliases": [
+					"Papyrus Project",
+					"papyrus-project"
+				],
+				"extensions": [
+					".ppj"
+				],
+				"configuration": "./papyrus-project-configuration.json"
 			}
-        ],
-        "grammars":
-        [
-            {
-                "language": "papyrus",
-                "scopeName": "source.papyrus",
-                "path": "./syntaxes/Papyrus.tmLanguage"
-            },
+		],
+		"grammars": [
+			{
+				"language": "papyrus",
+				"scopeName": "source.papyrus",
+				"path": "./syntaxes/papyrus.tmLanguage"
+			},
 			{
 				"language": "papyrus-assembly",
 				"scopeName": "source.papyrus-assembly",
-				"path": "./syntaxes/Papyrus-Assembly.tmLanguage"
+				"path": "./syntaxes/papyrus-assembly.tmLanguage"
 			},
 			{
 				"language": "papyrus-compiled",
 				"scopeName": "source.papyrus-compiled",
-				"path": "./syntaxes/Papyrus-Compiled.tmLanguage"
+				"path": "./syntaxes/papyrus-compiled.tmLanguage"
+			},
+			{
+				"language": "papyrus-project",
+				"scopeName": "text.xml.papyrus-project",
+				"path": "./syntaxes/papyrus-project.json"
 			}
-        ],
-        "snippets":
-        [
-            {
-                "language": "papyrus",
-                "path": "./snippets/language.json"
-            }
-        ]
-    }
+		],
+		"snippets": [
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/papyrus-arrays.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/papyrus-classes.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/papyrus-comments.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/papyrus-statements.json"
+			},
+			{
+				"language": "papyrus-project",
+				"path": "./snippets/papyrus-project/papyrus-project.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.ActiveMagicEffect.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Alias.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Alias.LocationAlias.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Alias.RefCollectionAlias.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Alias.ReferenceAlias.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.CommonArrayFunctions.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Debug.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Activator.Furniture.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Activator.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.ActorBase.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Cell.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.EffectShader.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Enchantment.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.EncounterZone.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Faction.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.FormList.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.GlobalVariable.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.ImageSpaceModifier.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Ingredient.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.InstanceNamingRules.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Keyword.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.LeveledActor.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.LeveledItem.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.LeveledSpell.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Location.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.MagicEffect.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Message.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.MiscObject.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.MusicType.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.ObjectReference.Actor.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.ObjectReference.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Package.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Perk.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Potion.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Quest.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Scene.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Scroll.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.ShaderParticleGeometry.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Sound.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.SoundCategory.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.SoundCategorySnapshot.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Spell.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Terminal.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Topic.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.TopicInfo.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.VisualEffect.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Weapon.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Weather.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Game.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.InputEnableLayer.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Math.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Utility.json"
+			}
+		]
+	}
 }

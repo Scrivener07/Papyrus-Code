@@ -1,0 +1,198 @@
+{
+	// Classes
+	"Script Header": {
+		"prefix": "Script Header",
+		"scope": "source.papyrus",
+		"description": [
+			"Script Header Snippet"
+		],
+		"body": [
+			"Scriptname ${1:FolderName:}${2:$TM_FILENAME} extends ${3:ScriptObject}",
+			"{${4:The documentation string.}}",
+			"\n${0:; PATH: \"$TM_FILEPATH\"}"
+		]
+	},
+
+	"Script Import": {
+		"prefix": "Import Snippet",
+		"scope": "source.papyrus",
+		"description": [
+			"Script Import Snippet"
+		],
+		"body": [
+			"import ${1:namespace}",
+			"${0}"
+		]
+	},
+
+
+
+
+
+
+
+	// Script States
+	"State": {
+		"prefix": "state",
+		"scope": "source.papyrus",
+		"description": [
+			"State Snippet"
+		],
+		"body": [
+			"State ${1:state}\r\n\t${0}\r\nEndState"
+		]
+	},
+
+	"State Auto": {
+		"prefix": "stateAuto",
+		"scope": "source.papyrus",
+		"description": [
+			"Auto State Snippet"
+		],
+		"body": [
+			"Auto State ${1:state}\r\n\t${0}\r\nEndState"
+		]
+	},
+
+
+
+	// Script Types
+
+	"Structure": {
+		"prefix": "Structure Snippet",
+		"scope": "source.papyrus",
+		"description": [
+			"Structure Snippet"
+		],
+		"body": [
+			"Struct ${1:StructureName}",
+			"\t${2:type} ${3:Value}",
+			"\t${0}",
+			"EndStruct"
+		]
+	},
+
+
+
+
+
+	// Events
+
+	"Event": {
+		"prefix": "Event Member",
+		"scope": "source.papyrus",
+		"description": [
+			"Event Snippet"
+		],
+		"body": [
+			"Event ${1:EventName}(${2:params})\r\n\t${0}\r\nEndEvent"
+		]
+	},
+
+
+
+
+
+
+
+
+
+
+	// Functions
+	"Function": {
+		"prefix": "Function Snippet",
+		"scope": "source.papyrus",
+		"description": [
+			"Function Snippet"
+		],
+		"body": [
+			"Function ${1:Foo}()\r\n\t${0:; code}\r\nEndFunction"
+		]
+	},
+	"Function Full": {
+		"prefix": "Function Full Member",
+		"scope": "source.papyrus",
+		"description": [
+			"Function Full Snippet"
+		],
+		"body": [
+			"${1:var} Function ${2:Foobar}(${3:var} ${4:argument})",
+			"\t${0:; code}",
+			"\treturn ${5:none}",
+			"EndFunction"
+		]
+	},
+	"Function Getter": {
+		"prefix": "Function Getter Member",
+		"scope": "source.papyrus",
+		"description": [
+			"Function Getter Snippet"
+		],
+		"body": [
+			"${1:var} Function ${2:GetFoo}()\r\n\t${1:var} ${3:value} = ${4:\"type\"}\n\t${0:; code}\r\n\treturn ${3:value}\nEndFunction",
+			"",
+			"",
+			""
+		]
+	},
+	"Function Setter": {
+		"prefix": "Function Setter Member",
+		"scope": "source.papyrus",
+		"description": [
+			"Function Setter Snippet"
+		],
+		"body": [
+			"Function ${1:SetFoo}(${2:var} ${3:argument})\r\n\t${0:; code}\r\nEndFunction"
+		]
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	"Property": {
+		"prefix": "prop",
+		"scope": "source.papyrus",
+		"description": [
+			"Auto Property Snippet"
+		],
+		"body": [
+			"${1:type} Property ${2:PropertyName}${0} Auto ${3:Const} ${4:Mandatory}"
+		]
+	},
+	"Property Full": {
+		"prefix": "propFull",
+		"scope": "source.papyrus",
+		"description": [
+			"Property Full Snippet"
+		],
+		"body": [
+			"${1:type} ${2:PropertyName}_var${0}\r\n${1:type} Property ${2:PropertyName} ${3:Mandatory}\r\n\t${1:type} Function Get()\r\n\t\treturn ${2:PropertyName}_var\r\n\tEndFunction\r\n\r\n\tFunction Set(${1:type} aValue)\r\n\t\t${2:PropertyName}_var = aValue\r\n\tEndFunction\r\nEndProperty"
+		]
+	},
+	"Property Group": {
+		"prefix": "propGroup",
+		"scope": "source.papyrus",
+		"description": [
+			"Property Group Snippet"
+		],
+		"body": [
+			"Group ${1:GroupName}\r\n\t${0}\r\nEndGroup"
+		]
+	}
+}

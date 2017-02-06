@@ -1,0 +1,14 @@
+{
+	"fire": {
+		"prefix": "fire",
+		"body": "Fire(${1:ObjectReference akSource}, ${2:Ammo akAmmo = None})${0}",
+		"description": "Weapon",
+		"scope": "source.papyrus"
+	},
+	"getammo": {
+		"prefix": "getammo",
+		"body": "GetAmmo()${0}",
+		"description": "Weapon",
+		"scope": "source.papyrus"
+	}
+}

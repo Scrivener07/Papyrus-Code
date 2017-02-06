@@ -1,0 +1,44 @@
+{
+	"getformid": {
+		"prefix": "getformid",
+		"body": "GetFormID()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getgoldvalue": {
+		"prefix": "getgoldvalue",
+		"body": "GetGoldValue()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"haskeyword": {
+		"prefix": "haskeyword",
+		"body": "HasKeyword(${1:Keyword akKeyword})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"haskeywordinformlist": {
+		"prefix": "haskeywordinformlist",
+		"body": "HasKeywordInFormList(${1:FormList akKeywordList})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"playerknows": {
+		"prefix": "playerknows",
+		"body": "PlayerKnows()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"startobjectprofiling": {
+		"prefix": "startobjectprofiling",
+		"body": "StartObjectProfiling()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"stopobjectprofiling": {
+		"prefix": "stopobjectprofiling",
+		"body": "StopObjectProfiling()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	}
+}

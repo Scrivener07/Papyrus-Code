@@ -1,0 +1,32 @@
+{
+	"clearhelpmessages": {
+		"prefix": "clearhelpmessages",
+		"body": "Message.ClearHelpMessages()${0}",
+		"description": "Message",
+		"scope": "source.papyrus"
+	},
+	"resethelpmessage": {
+		"prefix": "resethelpmessage",
+		"body": "Message.ResetHelpMessage(${1:string asEvent})${0}",
+		"description": "Message",
+		"scope": "source.papyrus"
+	},
+	"show": {
+		"prefix": "show",
+		"body": "Show(${1:float afArg1 = 0.0}, ${2:float afArg2 = 0.0}, ${3:float afArg3 = 0.0}, ${4:float afArg4 = 0.0}, ${5:float afArg5 = 0.0}, ${6:float afArg6 = 0.0}, ${7:float afArg7 = 0.0}, ${8:float afArg8 = 0.0}, ${9:float afArg9 = 0.0})${0}",
+		"description": "Message",
+		"scope": "source.papyrus"
+	},
+	"showashelpmessage": {
+		"prefix": "showashelpmessage",
+		"body": "ShowAsHelpMessage(${1:string asEvent}, ${2:float afDuration}, ${3:float afInterval}, ${4:int aiMaxTimes}, ${5:string asContext=\\\"\\\"}, ${6:int aiPriority=0})${0}",
+		"description": "Message",
+		"scope": "source.papyrus"
+	},
+	"unshowashelpmessage": {
+		"prefix": "unshowashelpmessage",
+		"body": "UnshowAsHelpMessage()${0}",
+		"description": "Message",
+		"scope": "source.papyrus"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"ishostile": {
+		"prefix": "ishostile",
+		"body": "IsHostile()${0}",
+		"description": "Potion",
+		"scope": "source.papyrus"
+	}
+}

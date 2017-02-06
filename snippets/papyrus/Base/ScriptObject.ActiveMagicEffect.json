@@ -1,0 +1,50 @@
+{
+	"dispel": {
+		"prefix": "dispel",
+		"body": "Dispel()${0}",
+		"description": "ActiveMagicEffect",
+		"scope": "source.papyrus"
+	},
+	"getbaseobject": {
+		"prefix": "getbaseobject",
+		"body": "GetBaseObject()${0}",
+		"description": "ActiveMagicEffect",
+		"scope": "source.papyrus"
+	},
+	"getcasteractor": {
+		"prefix": "getcasteractor",
+		"body": "GetCasterActor()${0}",
+		"description": "ActiveMagicEffect",
+		"scope": "source.papyrus"
+	},
+	"gettargetactor": {
+		"prefix": "gettargetactor",
+		"body": "GetTargetActor()${0}",
+		"description": "ActiveMagicEffect",
+		"scope": "source.papyrus"
+	},
+	"oneffectfinish": {
+		"prefix": "oneffectfinish",
+		"body": "Event OnEffectFinish(Actor akTarget, Actor akCaster)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ActiveMagicEffect.OnEffectFinish",
+		"scope": "source.papyrus"
+	},
+	"oneffectstart": {
+		"prefix": "oneffectstart",
+		"body": "Event OnEffectStart(Actor akTarget, Actor akCaster)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ActiveMagicEffect.OnEffectStart",
+		"scope": "source.papyrus"
+	},
+	"oneffectfinish-REM": {
+		"prefix": "oneffectfinish-REM",
+		"body": "Event ActiveMagicEffect.OnEffectFinish(ActiveMagicEffect akSender, Actor akTarget, Actor akCaster)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ActiveMagicEffect.OnEffectFinish",
+		"scope": "source.papyrus"
+	},
+	"oneffectstart-REM": {
+		"prefix": "oneffectstart-REM",
+		"body": "Event ActiveMagicEffect.OnEffectStart(ActiveMagicEffect akSender, Actor akTarget, Actor akCaster)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote ActiveMagicEffect.OnEffectStart",
+		"scope": "source.papyrus"
+	}
+}

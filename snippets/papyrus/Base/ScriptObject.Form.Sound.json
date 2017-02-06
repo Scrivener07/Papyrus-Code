@@ -1,0 +1,26 @@
+{
+	"play": {
+		"prefix": "play",
+		"body": "Play(${1:ObjectReference akSource})${0}",
+		"description": "Sound",
+		"scope": "source.papyrus"
+	},
+	"playandwait": {
+		"prefix": "playandwait",
+		"body": "PlayAndWait(${1:ObjectReference akSource})${0}",
+		"description": "Sound",
+		"scope": "source.papyrus"
+	},
+	"setinstancevolume": {
+		"prefix": "setinstancevolume",
+		"body": "Sound.SetInstanceVolume(${1:int aiPlaybackInstance}, ${2:float afVolume})${0}",
+		"description": "Sound",
+		"scope": "source.papyrus"
+	},
+	"stopinstance": {
+		"prefix": "stopinstance",
+		"body": "Sound.StopInstance(${1:int aiPlaybackInstance})${0}",
+		"description": "Sound",
+		"scope": "source.papyrus"
+	}
+}

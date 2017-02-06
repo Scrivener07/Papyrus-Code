@@ -1,0 +1,32 @@
+{
+	"getvalue": {
+		"prefix": "getvalue",
+		"body": "GetValue()${0}",
+		"description": "GlobalVariable",
+		"scope": "source.papyrus"
+	},
+	"getvalueint": {
+		"prefix": "getvalueint",
+		"body": "GetValueInt()${0}",
+		"description": "GlobalVariable",
+		"scope": "source.papyrus"
+	},
+	"mod": {
+		"prefix": "mod",
+		"body": "Mod(${1:float afHowMuch})${0}",
+		"description": "GlobalVariable",
+		"scope": "source.papyrus"
+	},
+	"setvalue": {
+		"prefix": "setvalue",
+		"body": "SetValue(${1:float afValue})${0}",
+		"description": "GlobalVariable",
+		"scope": "source.papyrus"
+	},
+	"setvalueint": {
+		"prefix": "setvalueint",
+		"body": "SetValueInt(${1:int aiValue})${0}",
+		"description": "GlobalVariable",
+		"scope": "source.papyrus"
+	}
+}

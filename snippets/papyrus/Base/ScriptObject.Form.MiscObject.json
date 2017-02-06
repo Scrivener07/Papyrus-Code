@@ -1,0 +1,8 @@
+{
+	"getobjectcomponentcount": {
+		"prefix": "getobjectcomponentcount",
+		"body": "GetObjectComponentCount(${1:Component akComponent})${0}",
+		"description": "MiscObject",
+		"scope": "source.papyrus"
+	}
+}

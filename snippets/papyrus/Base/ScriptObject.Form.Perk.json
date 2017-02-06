@@ -1,0 +1,14 @@
+{
+	"onentryrun": {
+		"prefix": "onentryrun",
+		"body": "Event OnEntryRun(int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
+		"description": "Event Perk.OnEntryRun",
+		"scope": "source.papyrus"
+	},
+	"onentryrun-REM": {
+		"prefix": "onentryrun-REM",
+		"body": "Event Perk.OnEntryRun(Perk akSender, int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
+		"description": "Remote Perk.OnEntryRun",
+		"scope": "source.papyrus"
+	}
+}

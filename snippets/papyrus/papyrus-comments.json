@@ -1,0 +1,14 @@
+{
+	"Documentation Region": {
+		"prefix": "docRegion",
+		"scope": "source.papyrus",
+		"description": [
+			"Comment Division Snippet"
+		],
+		"body": [
+			"; ${1:Documentation Division}",
+			";---------------------------------------------",
+			"\n\n${0}"
+		]
+	}
+}
