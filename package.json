@@ -147,22 +147,22 @@
 			{
 				"language": "papyrus",
 				"scopeName": "source.papyrus",
-				"path": "./syntaxes/papyrus.tmLanguage"
+				"path": "./syntaxes/papyrus/papyrus.tmLanguage"
 			},
 			{
 				"language": "papyrus-assembly",
 				"scopeName": "source.papyrus-assembly",
-				"path": "./syntaxes/papyrus-assembly.tmLanguage"
+				"path": "./syntaxes/papyrus-assembly/papyrus-assembly.tmLanguage"
 			},
 			{
 				"language": "papyrus-compiled",
 				"scopeName": "source.papyrus-compiled",
-				"path": "./syntaxes/papyrus-compiled.tmLanguage"
+				"path": "./syntaxes/papyrus-compiled/papyrus-compiled.tmLanguage"
 			},
 			{
 				"language": "papyrus-project",
 				"scopeName": "text.xml.papyrus-project",
-				"path": "./syntaxes/papyrus-project.json"
+				"path": "./syntaxes/papyrus-project/papyrus-project.json"
 			}
 		],
 		"snippets": [
