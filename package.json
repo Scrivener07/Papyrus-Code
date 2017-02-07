@@ -30,7 +30,7 @@
 		"Snippets",
 		"Other"
 	],
-	"main": "./out/src/extension",
+	"main": "./out/src/main",
 	"scripts": {
 		"vscode:prepublish": "tsc -p ./",
 		"compile": "tsc -watch -p ./",
@@ -45,11 +45,30 @@
 		"@types/mocha": "^2.2.32"
 	},
 	"activationEvents": [
+		"onLanguage:papyrus",
+		"onLanguage:papyrus-assembly",
+		"onLanguage:papyrus-compiled",
+		"onLanguage:papyrus-project",
 		"onCommand:extension.papyrusHello",
-		"onCommand:extension.papyrusCount",
-		"onLanguage:markdown"
+		"onCommand:extension.papyrusCount"
 	],
 	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Papyrus Settings",
+			"properties": {
+				"papyrus.installDirectory": {
+					"type": "string",
+					"default": "MyInstallDirectory",
+					"description": "Specifies the folder path containing `Fallout4.exe`."
+				},
+				"papyrus.outputDirectory": {
+					"type": "string",
+					"default": "MyOutputDirectory",
+					"description": "Specifies the folder path to output compiled papyrus files."
+				}
+			}
+		},
 		"commands": [
 			{
 				"command": "extension.papyrusHello",
@@ -58,8 +77,26 @@
 			{
 				"command": "extension.papyrusCount",
 				"title": "Papyrus - Count Selection"
+			},
+			{
+				"command": "papyrus.showPreview",
+				"title": "Papyrus - Show Preview"
+			},
+			{
+				"command": "papyrus.showPreviewToSide",
+				"title": "Papyrus - Show Preview To Side"
 			}
 		],
+		"menus": {
+			"editor/title": [
+				{
+					"when": "resourceLangId == papyrus",
+					"command": "papyrus.showPreview",
+					"alt": "papyrus.showPreviewToSide",
+					"group": "navigation"
+				}
+			]
+		},
 		"languages": [
 			{
 				"id": "papyrus",
