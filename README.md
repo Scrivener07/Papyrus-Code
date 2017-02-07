@@ -4,7 +4,7 @@ This is the README for your extension "papyrus-code". After writing up a brief d
 ## Features
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-![](images/feature-1.png?raw=true)
+![](images/feature-1.gif)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
