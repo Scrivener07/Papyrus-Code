@@ -2,13 +2,13 @@
 import * as vscode from 'vscode';
 import { window, workspace, commands, ExtensionContext } from 'vscode';
 import { PapyrusHelloFeature } from './features/papyrusHello';
-import { WordCounter, WordCounterController, WordCountFeature } from './features/papyrusWordCount';
+import { PapyrusWordCounter, PapyrusWordCounterController, PapyrusWordCountFeature } from './features/papyrusCount';
 import { PapyrusPreviewFeature } from './features/papyrusPreview';
 
 
 export function activate(context: ExtensionContext) {
 	new PapyrusHelloFeature(context);
-	new WordCountFeature(context);
+	new PapyrusWordCountFeature(context);
 	new PapyrusPreviewFeature(context);
 
     console.log('The extension "papyrus-code" is now active.');

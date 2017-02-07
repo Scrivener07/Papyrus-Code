@@ -9,46 +9,55 @@ import {
     ExtensionContext
 } from 'vscode';
 
-
-export class WordCountFeature {
-    private readonly _Context: ExtensionContext;
+export class PapyrusWordCountFeature {
+    private readonly Context: ExtensionContext;
+    private readonly CommandCountSelection: string;
 
 
     constructor(context: ExtensionContext) {
-        console.log('WordCountFeature.constructor');
-        this._Context = context;
-
-        // Count words in document
-        let wordCounter = new WordCounter();
-        let wordCounterController = new WordCounterController(wordCounter);
-        context.subscriptions.push(wordCounterController);
-        context.subscriptions.push(wordCounter);
-
-        // Count words in selection
-        let papyrusCount = commands.registerCommand('extension.papyrusCount', () => {
-            console.log('Command `extension.papyrusCount`');
-            var editor = window.activeTextEditor;
-            if (!editor) {
-                return; // No open text editor
-            }
-
-            var selection = editor.selection;
-            var text = editor.document.getText(selection);
-            window.showInformationMessage('Papyrus, Selected Characters: ' + text.length);
-        });
-        context.subscriptions.push(papyrusCount);
+        console.log('PapyrusWordCountFeature.constructor');
+        this.Context = context;
+        this.CommandCountSelection = "papyrus.countSelection";
+        this.Register();
     }
+
+
+    private Register() {
+        console.log('PapyrusWordCountFeature.Register');
+
+        let wordCounter = new PapyrusWordCounter();
+        let wordCounterController = new PapyrusWordCounterController(wordCounter);
+        this.Context.subscriptions.push(wordCounterController);
+        this.Context.subscriptions.push(wordCounter);
+
+        let commandCountSelection = commands.registerCommand(this.CommandCountSelection, this.CountSelection);
+        this.Context.subscriptions.push(commandCountSelection);
+    }
+
+
+    private CountSelection() {
+        console.log('PapyrusWordCountFeature.CountSelection');
+        var editor = window.activeTextEditor;
+        if (!editor) {
+            return; // No open text editor
+        }
+
+        var selection = editor.selection;
+        var text = editor.document.getText(selection);
+        window.showInformationMessage('Papyrus, Selected Characters: ' + text.length);
+    }
+
 }
 
 
 
-export class WordCounterController {
-    private _wordCounter: WordCounter;
+export class PapyrusWordCounterController {
+    private _wordCounter: PapyrusWordCounter;
     private _disposable: Disposable;
 
 
-    constructor(wordCounter: WordCounter) {
-        console.log('WordCounterController.constructor');
+    constructor(wordCounter: PapyrusWordCounter) {
+        console.log('PapyrusWordCounterController.constructor');
         this._wordCounter = wordCounter;
         this._wordCounter.updateWordCount();
 
@@ -63,20 +72,20 @@ export class WordCounterController {
 
 
     private _onEvent() {
-        console.log('WordCounterController._onEvent');
+        console.log('PapyrusWordCounterController._onEvent');
         this._wordCounter.updateWordCount();
     }
 
 
     public dispose() {
-        console.log('WordCounterController.dispose');
+        console.log('PapyrusWordCounterController.dispose');
         this._disposable.dispose();
     }
 }
 
 
 
-export class WordCounter {
+export class PapyrusWordCounter {
     private readonly _LanguageId:string;
     private _statusBarItem:StatusBarItem;
 
@@ -88,17 +97,17 @@ export class WordCounter {
 
 
     public updateWordCount() {
-        console.log('WordCounter.updateWordCount');
+        console.log('PapyrusWordCounter.updateWordCount');
         // Create as needed
         if (!this._statusBarItem) {
-            console.log('WordCounter, created a new StatusBarItem');
+            console.log('PapyrusWordCounter, created a new StatusBarItem');
             this._statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left);
         }
 
         // Get the current text editor
         let editor = window.activeTextEditor;
         if (!editor) {
-            console.log('WordCounter, hiding because there is no active text editor.');
+            console.log('PapyrusWordCounter, hiding because there is no active text editor.');
             this._statusBarItem.hide();
             return;
         }
@@ -111,16 +120,16 @@ export class WordCounter {
             // Update the status bar
             this._statusBarItem.text = wordCount !== 1 ? `$(pencil) ${wordCount} Words` : '$(pencil) 1 Word';
             this._statusBarItem.show();
-            console.log('WordCounter, Updated count from the current document.');
+            console.log('PapyrusWordCounter, Updated count from the current document.');
         } else {
-            console.log('WordCounter, hiding because the documents languageId is not equal to '+this._LanguageId+'.');
+            console.log('PapyrusWordCounter, hiding because the documents languageId is not equal to '+this._LanguageId+'.');
             this._statusBarItem.hide();
         }
     }
 
 
     public _getWordCount(doc: TextDocument): number {
-        console.log('WordCounter._getWordCount');
+        console.log('PapyrusWordCounter._getWordCount');
         let docContent = doc.getText();
 
         // Parse out unwanted whitespace so the split is accurate
@@ -136,7 +145,7 @@ export class WordCounter {
 
 
     public dispose() {
-        console.log('WordCounter.dispose');
+        console.log('PapyrusWordCounter.dispose');
         this._statusBarItem.dispose();
     }
 }

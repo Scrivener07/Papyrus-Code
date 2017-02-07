@@ -9,7 +9,7 @@ export class PapyrusHelloFeature {
 	constructor(context: ExtensionContext) {
 		console.log('PapyrusHelloFeature.constructor');
 		this.Context = context;
-		this.CommandSayHello = "extension.papyrusHello";
+		this.CommandSayHello = "papyrus.sayHello";
 		this.Register();
 	}
 

@@ -71,11 +71,11 @@
 		},
 		"commands": [
 			{
-				"command": "extension.papyrusHello",
+				"command": "papyrus.sayHello",
 				"title": "Papyrus - Hello World!"
 			},
 			{
-				"command": "extension.papyrusCount",
+				"command": "papyrus.countSelection",
 				"title": "Papyrus - Count Selection"
 			},
 			{

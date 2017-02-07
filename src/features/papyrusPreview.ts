@@ -2,26 +2,38 @@
 import { window, commands, ExtensionContext } from 'vscode';
 
 export class PapyrusPreviewFeature {
-	private readonly _Context: ExtensionContext;
+	private readonly Context: ExtensionContext;
+	private readonly CommandShowPreview: string;
+	private readonly CommandShowPreviewToSide: string;
 
 
 	constructor(context: ExtensionContext) {
 		console.log('PapyrusPreviewFeature.constructor');
-		this._Context = context;
-
-		// Papyrus Preview
-		let papyrusPreview = commands.registerCommand('papyrus.showPreview', () => {
-			console.log('Command `papyrus.showPreview`');
-			window.showInformationMessage('Papyrus, Show Preview');
-		});
-		context.subscriptions.push(papyrusPreview);
+		this.Context = context;
+		this.CommandShowPreview = "papyrus.showPreview";
+		this.CommandShowPreviewToSide = "papyrus.showPreviewToSide";
+		this.Register();
+	}
 
 
-		let papyrusPreviewToSide = commands.registerCommand('papyrus.showPreviewToSide', () => {
-			console.log('Command `papyrus.showPreviewToSide`');
-			window.showInformationMessage('Papyrus, Show Preview To Side');
-		});
-		context.subscriptions.push(papyrusPreviewToSide);
+	private Register() {
+		let papyrusPreview = commands.registerCommand(this.CommandShowPreview, this.ShowPreview);
+		this.Context.subscriptions.push(papyrusPreview);
+
+		let papyrusPreviewToSide = commands.registerCommand(this.CommandShowPreviewToSide, this.ShowPreviewToSide);
+		this.Context.subscriptions.push(papyrusPreviewToSide);
+	}
+
+
+	private ShowPreview() {
+		console.log('PapyrusPreviewFeature.ShowPreview');
+		window.showInformationMessage('Papyrus, Show Preview');
+	}
+
+
+	private ShowPreviewToSide() {
+		console.log('PapyrusPreviewFeature.ShowPreviewToSide');
+		window.showInformationMessage('Papyrus, Show Preview To Side');
 	}
 
 }
