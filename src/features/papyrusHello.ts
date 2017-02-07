@@ -2,19 +2,28 @@
 import { window, commands, ExtensionContext } from 'vscode';
 
 export class PapyrusHelloFeature {
-	private readonly _Context: ExtensionContext;
+	private readonly Context: ExtensionContext;
+	private readonly CommandSayHello: string;
 
 
 	constructor(context: ExtensionContext) {
 		console.log('PapyrusHelloFeature.constructor');
-		this._Context = context;
+		this.Context = context;
+		this.CommandSayHello = "extension.papyrusHello";
+		this.Register();
+	}
 
-		// Hello World!
-		let papyrusHello = commands.registerCommand('extension.papyrusHello', () => {
-			console.log('Command `extension.papyrusHello`');
-			window.showInformationMessage('Papyrus, Hello World!');
-		});
-		context.subscriptions.push(papyrusHello);
+
+	private Register() {
+		console.log('PapyrusHelloFeature.Register');
+		let commandSayHello = commands.registerCommand(this.CommandSayHello, this.SayHello);
+		this.Context.subscriptions.push(commandSayHello);
+	}
+
+
+	private SayHello() {
+		console.log('PapyrusHelloFeature.SayHello');
+		window.showInformationMessage('Papyrus, Hello World!');
 	}
 
 }
