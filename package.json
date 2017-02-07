@@ -49,8 +49,8 @@
 		"onLanguage:papyrus-assembly",
 		"onLanguage:papyrus-compiled",
 		"onLanguage:papyrus-project",
-		"onCommand:extension.papyrusHello",
-		"onCommand:extension.papyrusCount"
+		"onCommand:papyrus.sayHello",
+		"onCommand:papyrus.countSelection"
 	],
 	"contributes": {
 		"configuration": {
@@ -107,7 +107,7 @@
 				"extensions": [
 					".psc"
 				],
-				"configuration": "./papyrus-configuration.json"
+				"configuration": "./syntaxes/papyrus/papyrus-configuration.json"
 			},
 			{
 				"id": "papyrus-assembly",
@@ -118,7 +118,7 @@
 				"extensions": [
 					".pas"
 				],
-				"configuration": "./papyrus-assembly-configuration.json"
+				"configuration": "./syntaxes/papyrus-assembly/papyrus-assembly-configuration.json"
 			},
 			{
 				"id": "papyrus-compiled",
@@ -129,7 +129,7 @@
 				"extensions": [
 					".pex"
 				],
-				"configuration": "./papyrus-compiled-configuration.json"
+				"configuration": "./syntaxes/papyrus-compiled/papyrus-compiled-configuration.json"
 			},
 			{
 				"id": "papyrus-project",
@@ -140,7 +140,7 @@
 				"extensions": [
 					".ppj"
 				],
-				"configuration": "./papyrus-project-configuration.json"
+				"configuration": "./syntaxes/papyrus-project/papyrus-project-configuration.json"
 			}
 		],
 		"grammars": [
