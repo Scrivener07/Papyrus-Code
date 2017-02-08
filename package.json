@@ -49,6 +49,7 @@
 		"onLanguage:papyrus-assembly",
 		"onLanguage:papyrus-compiled",
 		"onLanguage:papyrus-project",
+		"onCommand:papyrus.compile",
 		"onCommand:papyrus.sayHello",
 		"onCommand:papyrus.countSelection"
 	],
@@ -92,11 +93,65 @@
 			}
 		],
 		"menus": {
+			"editor/context": [
+				{
+					"when": "resourceLangId == papyrus",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus-project",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
+					"group": "navigation"
+				}
+			],
 			"editor/title": [
 				{
 					"when": "resourceLangId == papyrus",
 					"command": "papyrus.showPreview",
 					"alt": "papyrus.showPreviewToSide",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus-project",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
+					"group": "navigation"
+				}
+			],
+			"editor/title/context": [
+				{
+					"when": "resourceLangId == papyrus",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus-project",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
+					"group": "navigation"
+				}
+			],
+			"explorer/context": [
+				{
+					"when": "resourceLangId == papyrus",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus-project",
+					"command": "papyrus.compile",
+					"alt": "papyrus.compile",
 					"group": "navigation"
 				}
 			]

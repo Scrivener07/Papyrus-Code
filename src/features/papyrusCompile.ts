@@ -41,7 +41,7 @@ export class PapyrusCompileFeature {
 		const targetpath = '\"' + editor.document.fileName + '\"';
 		const flags = '-flags=Institute_Papyrus_Flags.flg';
 		const output = '-output=\"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Output\"';
-		const imports = '-import=\"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Data\\Scripts\"';
+		const imports = '-import=\"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Data\\Scripts\\Source\\Base\"';
 
 		let cmd = compilerPath + ' ' + targetpath + ' ' + flags + ' ' + output + ' ' + imports;
 		console.log(this.TerminalName + ': ' + cmd);
