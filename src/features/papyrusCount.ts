@@ -37,13 +37,13 @@ export class PapyrusWordCountFeature {
 
     private CountSelection() {
         console.log('PapyrusWordCountFeature.CountSelection');
-        var editor = window.activeTextEditor;
+        let editor = window.activeTextEditor;
         if (!editor) {
             return; // No open text editor
         }
 
-        var selection = editor.selection;
-        var text = editor.document.getText(selection);
+        let selection = editor.selection;
+        let text = editor.document.getText(selection);
         window.showInformationMessage('Papyrus, Selected Characters: ' + text.length);
     }
 

@@ -85,6 +85,10 @@
 			{
 				"command": "papyrus.showPreviewToSide",
 				"title": "Papyrus - Show Preview To Side"
+			},
+			{
+				"command": "papyrus.compile",
+				"title": "Papyrus - Compile"
 			}
 		],
 		"menus": {
