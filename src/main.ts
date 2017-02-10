@@ -6,6 +6,7 @@ import { PapyrusWordCountFeature } from './features/papyrusCount';
 import { PapyrusPreviewFeature } from './features/papyrusPreview';
 import { PapyrusCompileFeature } from './features/papyrusCompile';
 
+
 export function activate(context: ExtensionContext) {
 	new PapyrusHelloFeature(context);
 	new PapyrusWordCountFeature(context);
@@ -13,9 +14,6 @@ export function activate(context: ExtensionContext) {
 	new PapyrusCompileFeature(context);
 
     console.log('The extension "papyrus-code" is now active.');
-    console.log('context.extensionPath '+context.extensionPath);
-    console.log('context.storagePath '+context.storagePath);
-	console.log('context.subscriptions: Length='+context.subscriptions.length);
 }
 
 
