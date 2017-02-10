@@ -4,26 +4,23 @@ This is the README for your extension "papyrus-code". After writing up a brief d
 ## Features
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-Tools
-- [ ] Compilation
-- [ ] Assembly
-- [ ] Disassembly
+Tooling
+- [ ] Compilation of psc files.
+- [ ] Assembly of pas files.
+- [ ] Disassembly of pex files.
 - [ ] Launch Online Documentation
 
 Papyrus.
 - [x] Syntax Colorizer
 - [x] Snippets
-- [ ] Build Systems
 
 Papyrus Assembly
 - [x] Syntax Colorizer
 - [ ] Snippets
-- [ ] Build Systems
 
 Papyrus Project
 - [x] Syntax Colorizer
 - [x] Snippets
-- [ ] Build Systems
 
 ![](images/feature-1.gif)
 
