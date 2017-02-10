@@ -4,9 +4,11 @@ This is the README for your extension "papyrus-code". After writing up a brief d
 ## Features
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-![](images/feature-1.gif)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Tools
+- [ ] Compilation
+- [ ] Assembly
+- [ ] Disassembly
+- [ ] Launch Online Documentation
 
 Papyrus.
 - [x] Syntax Colorizer
@@ -23,47 +25,25 @@ Papyrus Project
 - [x] Snippets
 - [ ] Build Systems
 
+![](images/feature-1.gif)
+
 
 ## Requirements
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-
 ## Extension Settings
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `papyrus.game.installDirectory`: Specifies a directory path containing `Fallout4.exe`.
+* `papyrus.game.userDirectory`: Specifies a directory path the game uses to store user data.
+* `papyrus.compiler.executableFile`: Specifies a file path to `PapyrusCompiler.exe`.
+* `papyrus.compiler.outputDirectory`: Specifies a directory path where compiled papyrus files are output.
+* `papyrus.compiler.importsList`: A list of import directories the papyrus compiler should use. Folders listed first override ones listed after.
 
 ## Known Issues
-Calling out known issues can help limit users opening duplicate issues against your extension.
+This extension is currently a work in progress. There are no releases at this point in time.
 
 ## Release Notes
-Users appreciate release notes as you update your extension.
+There is no release at this time but the extension will work as is by downloading the repository and [side-loading](https://code.visualstudio.com/docs/extensions/install-extension#_side-loading) it into VS Code.
 
-### 1.0.0
-Initial release of ...
-
-### 1.0.1
-Fixed issue #.
-
-### 1.1.0
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### 0.0.0
+Github
