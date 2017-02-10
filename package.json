@@ -56,17 +56,41 @@
 	"contributes": {
 		"configuration": {
 			"type": "object",
-			"title": "Papyrus Settings",
+			"title": "Papyrus",
 			"properties": {
-				"papyrus.installDirectory": {
+				"papyrus.game.installDirectory": {
+					"description": "Specifies a directory path containing `Fallout4.exe`.",
 					"type": "string",
-					"default": "MyInstallDirectory",
-					"description": "Specifies the folder path containing `Fallout4.exe`."
+					"default": "D:\\Games\\Steam\\SteamApps\\common\\Fallout 4"
 				},
-				"papyrus.outputDirectory": {
+				"papyrus.game.userDirectory": {
+					"description": "Specifies a directory path the game uses to store user data.",
 					"type": "string",
-					"default": "MyOutputDirectory",
-					"description": "Specifies the folder path to output compiled papyrus files."
+					"default": "C:\\Users\\Scrivener07\\Documents\\My Games\\Fallout4"
+				},
+				"papyrus.compiler.executableFile": {
+					"description": "Specifies a file path to `PapyrusCompiler.exe`.",
+					"type": "string",
+					"default": "D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Papyrus Compiler\\PapyrusCompiler.exe"
+				},
+				"papyrus.compiler.outputDirectory": {
+					"description": "Specifies a directory path where compiled papyrus files are output.",
+					"type": "string",
+					"default": "D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Data\\Scripts"
+				},
+				"papyrus.compiler.importsList": {
+					"description": "A list of import directories the papyrus compiler should use. Folders listed first override ones listed after.",
+					"uniqueItems": true,
+					"type": "array",
+					"default": [
+						"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Data\\Scripts\\Source\\User",
+						"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Data\\Scripts\\Source\\Base"
+					],
+					"items": {
+						"type": "string",
+						"default": "",
+						"description": "Import Directory"
+					}
 				}
 			}
 		},

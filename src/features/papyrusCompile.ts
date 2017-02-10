@@ -2,6 +2,9 @@
 import * as vscode from 'vscode';
 import { window, commands, ExtensionContext, Terminal } from 'vscode';
 
+// http://www.creationkit.com/fallout4/index.php?title=Papyrus_Compiler_Reference
+// http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects
+
 export class PapyrusCompileFeature {
 	private readonly Context: ExtensionContext;
 	private readonly CommandCompile: string;
@@ -22,10 +25,7 @@ export class PapyrusCompileFeature {
 	private Register() {
 		console.log('PapyrusCompileFeature.Register');
 		this.PapyrusTerminal = window.createTerminal(this.TerminalName);
-
-		// The context of `this` is lost in the callback.
-		// Use arrow functions in typescript to preserve the context!
-		let CommandCompile = commands.registerCommand(this.CommandCompile, ()=>{this.Compile()});
+		let CommandCompile = commands.registerCommand(this.CommandCompile, () => { this.Compile() });
 		this.Context.subscriptions.push(CommandCompile);
 	}
 
@@ -34,20 +34,49 @@ export class PapyrusCompileFeature {
 		let editor = window.activeTextEditor;
 		if (!editor) {
 			window.showWarningMessage('No active text editor for the papyrus compile command.');
-			return; // No open text editor
+			return;
 		}
 
-		const compilerPath = '\"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Papyrus Compiler\\PapyrusCompiler.exe\"';
-		const targetpath = '\"' + editor.document.fileName + '\"';
-		const flags = '-flags=Institute_Papyrus_Flags.flg';
-		const output = '-output=\"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Output\"';
-		const imports = '-import=\"D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Data\\Scripts\\Source\\Base\"';
-
-		let cmd = compilerPath + ' ' + targetpath + ' ' + flags + ' ' + output + ' ' + imports;
-		console.log(this.TerminalName + ': ' + cmd);
+		let commandLine = this.GetArguments(editor.document.fileName);
+		console.log(this.TerminalName + ': ' + commandLine);
 
 		this.PapyrusTerminal.show();
-		this.PapyrusTerminal.sendText(cmd)
+		this.PapyrusTerminal.sendText(commandLine);
 	}
+
+
+	// compiler may accept a script file, directory, or project
+	private GetArguments(targetFile: string): string {
+		let configuration = vscode.workspace.getConfiguration('papyrus');
+		if (!configuration) {
+			window.showWarningMessage('No papyrus configuration.');
+			return;
+		}
+
+		const compiler = '\"' + configuration.get('compiler.executableFile') + '\"';
+		const target = '\"' + targetFile + '\"';
+		const imports = this.GetImport(configuration.get('compiler.importsList') as Array<string>);
+		const output = '-output=\"' + configuration.get('compiler.outputDirectory') + '\"';
+		const flags = '-flags=Institute_Papyrus_Flags.flg';
+
+		return compiler + ' ' + target + ' ' + imports + ' ' + output + ' ' + flags;
+	}
+
+
+	private GetImport(array: Array<string>): string {
+		let value = '';
+		for (let element of array) {
+			if (value == '') {
+				value += element;
+			}
+			else {
+				value += ';' + element;
+			}
+		}
+		return '-import=\"' + value + '\"';
+	}
+
+
+
 
 }
