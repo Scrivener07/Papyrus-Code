@@ -1,8 +1,7 @@
 # Papyrus-Code
-This is the README for your extension "papyrus-code". After writing up a brief description, we recommend including the following sections.
+A package for working with Mark Hanna's Papyrus scripting language.
 
 ## Features
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 Tooling
 - [ ] Compilation of psc files.
@@ -23,10 +22,6 @@ Papyrus Project
 - [x] Snippets
 
 ![](images/feature-1.gif)
-
-
-## Requirements
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Extension Settings
 This extension contributes the following settings:
