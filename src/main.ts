@@ -1,10 +1,10 @@
 'use strict';
 import * as vscode from 'vscode';
 import { window, workspace, commands, ExtensionContext } from 'vscode';
-import { PapyrusHelloFeature } from './features/papyrusHello';
-import { PapyrusWordCountFeature } from './features/papyrusCount';
-import { PapyrusPreviewFeature } from './features/papyrusPreview';
-import { PapyrusCompileFeature } from './features/papyrusCompile';
+import { PapyrusHelloFeature } from './features/hello';
+import { PapyrusWordCountFeature } from './features/wordCount';
+import { PapyrusPreviewFeature } from './features/preview';
+import { PapyrusCompileFeature } from './features/compile';
 
 
 export function activate(context: ExtensionContext) {
