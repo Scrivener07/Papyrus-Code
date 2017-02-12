@@ -6,7 +6,7 @@ import { Feature } from '../feature';
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Compiler_Reference
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects
 
-export class CompileFeature extends Feature {
+export class Compiler extends Feature {
 	private readonly CompileCommand: string = "papyrus.compile";
 
 	private PapyrusTerminal: Terminal;
@@ -16,26 +16,32 @@ export class CompileFeature extends Feature {
 	constructor(context: ExtensionContext) {
 		super(context);
 
-		this.PapyrusTerminal = window.createTerminal(this.TerminalName);
-		this.Subscription(this.PapyrusTerminal);
-
-		let CommandCompile = commands.registerCommand(this.CompileCommand, () => { this.Compile() });
-		this.Subscription(CommandCompile);
+		this.PapyrusTerminal = undefined;
+		this.RegisterCommand(this.CompileCommand);
 	}
 
 
-	private Compile() {
-		let editor = window.activeTextEditor;
-		if (!editor) {
-			window.showWarningMessage('No active text editor for the papyrus compile command.');
-			return;
+	protected OnCommand(commandName: string) {
+		if (commandName == this.CompileCommand) {
+
+			if (!this.PapyrusTerminal) {
+				this.PapyrusTerminal = window.createTerminal(this.TerminalName);
+			}
+
+			let editor = window.activeTextEditor;
+			if (!editor) {
+				window.showWarningMessage('No active text editor for the papyrus compile command.');
+				return;
+			}
+
+			let commandLine = this.GetArguments(editor.document.fileName);
+			console.log(this.TerminalName + ': ' + commandLine);
+
+			this.PapyrusTerminal.show();
+			this.PapyrusTerminal.sendText(commandLine);
+		} else {
+			window.showWarningMessage('The `'+commandName+'` command is unhandled.');
 		}
-
-		let commandLine = this.GetArguments(editor.document.fileName);
-		console.log(this.TerminalName + ': ' + commandLine);
-
-		this.PapyrusTerminal.show();
-		this.PapyrusTerminal.sendText(commandLine);
 	}
 
 
@@ -71,6 +77,7 @@ export class CompileFeature extends Feature {
 
 
 	public dispose() {
+		this.PapyrusTerminal.dispose();
 	}
 
 

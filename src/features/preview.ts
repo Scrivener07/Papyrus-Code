@@ -2,37 +2,32 @@
 import { window, commands, ExtensionContext } from 'vscode';
 import { Feature } from '../feature';
 
-export class PreviewFeature extends Feature {
+export class Preview extends Feature {
 	private readonly ShowPreviewCommand: string = 'papyrus.showPreview';
 	private readonly ShowPreviewToSideCommand: string = 'papyrus.showPreviewToSide';
 
 
 	constructor(context: ExtensionContext) {
 		super(context);
-
-		let papyrusPreview = commands.registerCommand(this.ShowPreviewCommand, this.ShowPreview);
-		this.Context.subscriptions.push(papyrusPreview);
-
-		let papyrusPreviewToSide = commands.registerCommand(this.ShowPreviewToSideCommand, this.ShowPreviewToSide);
-		this.Context.subscriptions.push(papyrusPreviewToSide);
+		this.RegisterCommand(this.ShowPreviewCommand);
+		this.RegisterCommand(this.ShowPreviewToSideCommand);
 	}
 
 
-
-	private ShowPreview() {
-		console.log('PreviewFeature.ShowPreview');
-		window.showInformationMessage('Papyrus, Show Preview');
-	}
-
-
-	private ShowPreviewToSide() {
-		console.log('PreviewFeature.ShowPreviewToSide');
-		window.showInformationMessage('Papyrus, Show Preview To Side');
+	protected OnCommand(commandName: string) {
+		if (commandName == this.ShowPreviewCommand) {
+			window.showInformationMessage('Papyrus, Show Preview');
+		}
+		else if (commandName == this.ShowPreviewToSideCommand) {
+			window.showInformationMessage('Papyrus, Show Preview To Side');
+		} else {
+			window.showWarningMessage('The `'+commandName+'` command is unhandled.');
+		}
 	}
 
 
 	public dispose() {
+		// nothing to dispose
 	}
-
 
 }

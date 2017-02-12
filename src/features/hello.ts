@@ -2,26 +2,26 @@
 import { window, commands, ExtensionContext } from 'vscode';
 import { Feature } from '../feature';
 
-export class HelloFeature extends Feature {
+export class Hello extends Feature {
 	private readonly SayHelloCommand: string = 'papyrus.sayHello';
 
 
 	constructor(context: ExtensionContext) {
 		super(context);
-
-		let commandSayHello = commands.registerCommand(this.SayHelloCommand, this.SayHello);
-		this.Subscription(commandSayHello);
+		this.RegisterCommand(this.SayHelloCommand);
 	}
 
 
-	private SayHello() {
-		console.log('HelloFeature.SayHello');
-		window.showInformationMessage('Papyrus, Hello World!');
+	protected OnCommand(commandName: string) {
+		if (commandName == this.SayHelloCommand) {
+			window.showInformationMessage('Papyrus, Hello World!');
+		} else {
+			window.showWarningMessage('The `'+commandName+'` command is unhandled.');
+		}
 	}
 
 
 	public dispose() {
 	}
-
 
 }
