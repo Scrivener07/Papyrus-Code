@@ -1,32 +1,26 @@
 'use strict';
-import * as vscode from 'vscode';
-import { window, commands, ExtensionContext, Terminal } from 'vscode';
+import { window, commands, workspace, ExtensionContext, Terminal } from 'vscode';
+import { Extension } from '../extension';
+import { Feature } from '../feature';
 
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Compiler_Reference
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects
 
-export class PapyrusCompileFeature {
-	private readonly Context: ExtensionContext;
-	private readonly CommandCompile: string;
+export class CompileFeature extends Feature {
+	private readonly CompileCommand: string = "papyrus.compile";
 
 	private PapyrusTerminal: Terminal;
-	private readonly TerminalName: string;
+	private readonly TerminalName: string = 'Papyrus Terminal';
 
 
 	constructor(context: ExtensionContext) {
-		console.log('PapyrusCompileFeature.constructor');
-		this.Context = context;
-		this.TerminalName = 'Papyrus Terminal';
-		this.CommandCompile = "papyrus.compile";
-		this.Register();
-	}
+		super(context);
 
-
-	private Register() {
-		console.log('PapyrusCompileFeature.Register');
 		this.PapyrusTerminal = window.createTerminal(this.TerminalName);
-		let CommandCompile = commands.registerCommand(this.CommandCompile, () => { this.Compile() });
-		this.Context.subscriptions.push(CommandCompile);
+		this.Subscription(this.PapyrusTerminal);
+
+		let CommandCompile = commands.registerCommand(this.CompileCommand, () => { this.Compile() });
+		this.Subscription(CommandCompile);
 	}
 
 
@@ -45,9 +39,8 @@ export class PapyrusCompileFeature {
 	}
 
 
-	// compiler may accept a script file, directory, or project
 	private GetArguments(targetFile: string): string {
-		let configuration = vscode.workspace.getConfiguration('papyrus');
+		let configuration = workspace.getConfiguration(Extension.ConfigurationName);
 		if (!configuration) {
 			window.showWarningMessage('No papyrus configuration.');
 			return;
@@ -75,8 +68,6 @@ export class PapyrusCompileFeature {
 		}
 		return '-import=\"' + value + '\"';
 	}
-
-
 
 
 }

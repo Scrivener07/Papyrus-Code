@@ -1,28 +1,21 @@
 'use strict';
 import { window, commands, ExtensionContext } from 'vscode';
+import { Feature } from '../feature';
 
-export class PapyrusHelloFeature {
-	private readonly Context: ExtensionContext;
-	private readonly CommandSayHello: string;
+export class HelloFeature extends Feature {
+	private readonly SayHelloCommand: string = 'papyrus.sayHello';
 
 
 	constructor(context: ExtensionContext) {
-		console.log('PapyrusHelloFeature.constructor');
-		this.Context = context;
-		this.CommandSayHello = "papyrus.sayHello";
-		this.Register();
-	}
+		super(context);
 
-
-	private Register() {
-		console.log('PapyrusHelloFeature.Register');
-		let commandSayHello = commands.registerCommand(this.CommandSayHello, this.SayHello);
-		this.Context.subscriptions.push(commandSayHello);
+		let commandSayHello = commands.registerCommand(this.SayHelloCommand, this.SayHello);
+		this.Subscription(commandSayHello);
 	}
 
 
 	private SayHello() {
-		console.log('PapyrusHelloFeature.SayHello');
+		console.log('HelloFeature.SayHello');
 		window.showInformationMessage('Papyrus, Hello World!');
 	}
 

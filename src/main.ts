@@ -1,22 +1,22 @@
 'use strict';
-import * as vscode from 'vscode';
-import { window, workspace, commands, ExtensionContext } from 'vscode';
-import { PapyrusHelloFeature } from './features/hello';
-import { PapyrusWordCountFeature } from './features/wordCount';
-import { PapyrusPreviewFeature } from './features/preview';
-import { PapyrusCompileFeature } from './features/compile';
+import { ExtensionContext } from 'vscode';
+import { Extension } from './extension';
+import { HelloFeature } from './features/hello';
+import { WordCounterFeature } from './features/wordCounter';
+import { PreviewFeature } from './features/preview';
+import { CompileFeature } from './features/compile';
 
 
 export function activate(context: ExtensionContext) {
-	new PapyrusHelloFeature(context);
-	new PapyrusWordCountFeature(context);
-	new PapyrusPreviewFeature(context);
-	new PapyrusCompileFeature(context);
+	new HelloFeature(context);
+	new WordCounterFeature(context);
+	new PreviewFeature(context);
+	new CompileFeature(context);
 
-    console.log('The extension "papyrus-code" is now active.');
+    console.log('The extension '+Extension.Name+' is now active.');
 }
 
 
 export function deactivate() {
-    console.log('The extension "papyrus-code" is now deactivated.');
+    console.log('The extension '+Extension.Name+' is now deactivated.');
 }

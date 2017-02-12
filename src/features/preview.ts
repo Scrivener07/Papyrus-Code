@@ -1,38 +1,32 @@
 'use strict';
 import { window, commands, ExtensionContext } from 'vscode';
+import { Feature } from '../feature';
 
-export class PapyrusPreviewFeature {
-	private readonly Context: ExtensionContext;
-	private readonly CommandShowPreview: string;
-	private readonly CommandShowPreviewToSide: string;
+export class PreviewFeature extends Feature {
+	private readonly ShowPreviewCommand: string = 'papyrus.showPreview';
+	private readonly ShowPreviewToSideCommand: string = 'papyrus.showPreviewToSide';
 
 
 	constructor(context: ExtensionContext) {
-		console.log('PapyrusPreviewFeature.constructor');
-		this.Context = context;
-		this.CommandShowPreview = "papyrus.showPreview";
-		this.CommandShowPreviewToSide = "papyrus.showPreviewToSide";
-		this.Register();
-	}
+		super(context);
 
-
-	private Register() {
-		let papyrusPreview = commands.registerCommand(this.CommandShowPreview, this.ShowPreview);
+		let papyrusPreview = commands.registerCommand(this.ShowPreviewCommand, this.ShowPreview);
 		this.Context.subscriptions.push(papyrusPreview);
 
-		let papyrusPreviewToSide = commands.registerCommand(this.CommandShowPreviewToSide, this.ShowPreviewToSide);
+		let papyrusPreviewToSide = commands.registerCommand(this.ShowPreviewToSideCommand, this.ShowPreviewToSide);
 		this.Context.subscriptions.push(papyrusPreviewToSide);
 	}
 
 
+
 	private ShowPreview() {
-		console.log('PapyrusPreviewFeature.ShowPreview');
+		console.log('PreviewFeature.ShowPreview');
 		window.showInformationMessage('Papyrus, Show Preview');
 	}
 
 
 	private ShowPreviewToSide() {
-		console.log('PapyrusPreviewFeature.ShowPreviewToSide');
+		console.log('PreviewFeature.ShowPreviewToSide');
 		window.showInformationMessage('Papyrus, Show Preview To Side');
 	}
 
