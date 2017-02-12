@@ -11,6 +11,7 @@ export abstract class Feature {
 
 	constructor(context: ExtensionContext) {
 		this.Context = context;
+		this.Subscription(this);
 	}
 
 
@@ -18,5 +19,7 @@ export abstract class Feature {
 		this.Context.subscriptions.push(subscription);
 	}
 
+
+	public abstract dispose(): void;
 
 }

@@ -30,4 +30,9 @@ export class PreviewFeature extends Feature {
 		window.showInformationMessage('Papyrus, Show Preview To Side');
 	}
 
+
+	public dispose() {
+	}
+
+
 }

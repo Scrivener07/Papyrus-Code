@@ -19,4 +19,9 @@ export class HelloFeature extends Feature {
 		window.showInformationMessage('Papyrus, Hello World!');
 	}
 
+
+	public dispose() {
+	}
+
+
 }

@@ -70,4 +70,8 @@ export class CompileFeature extends Feature {
 	}
 
 
+	public dispose() {
+	}
+
+
 }
