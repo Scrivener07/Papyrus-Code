@@ -14,15 +14,15 @@ import { Feature } from '../feature';
 
 export class WordCounterFeature extends Feature {
     private readonly CountSelectionCommand: string = 'papyrus.countSelection';
+    private statusBarItem: StatusBarItem;
 
 
     constructor(context: ExtensionContext) {
         super(context);
 
-        let wordCounter = new WordCounter();
-        this.Subscription(wordCounter);
+        this.statusBarItem = undefined;
 
-        let wordCounterController = new WordCounterController(wordCounter);
+        let wordCounterController = new WordCounterController(this);
         this.Subscription(wordCounterController);
 
         let commandCountSelection = commands.registerCommand(this.CountSelectionCommand, this.CountSelection);
@@ -43,51 +43,6 @@ export class WordCounterFeature extends Feature {
         window.showInformationMessage('Papyrus, Selected Characters: ' + text.length);
     }
 
-
-}
-
-
-
-export class WordCounterController {
-    private wordCounter: WordCounter;
-    private disposable: Disposable;
-
-
-    constructor(wordCounter: WordCounter) {
-        this.wordCounter = wordCounter;
-        this.wordCounter.OnUpdateWordCount();
-
-        // subscribe to selection change and editor activation events
-        let subscriptions: Disposable[] = [];
-        window.onDidChangeTextEditorSelection(this.OnEvent, this, subscriptions);
-        window.onDidChangeActiveTextEditor(this.OnEvent, this, subscriptions);
-
-        // create a combined disposable from both event subscriptions
-        this.disposable = Disposable.from(...subscriptions);
-    }
-
-
-    private OnEvent() {
-        console.log('WordCounterController.onEvent');
-        this.wordCounter.OnUpdateWordCount();
-    }
-
-
-    public dispose() {
-        console.log('WordCounterController.dispose');
-        this.disposable.dispose();
-    }
-}
-
-
-
-class WordCounter {
-    private statusBarItem: StatusBarItem;
-
-
-    constructor() {
-        this.statusBarItem = undefined;
-    }
 
 
     public OnUpdateWordCount() {
@@ -143,3 +98,37 @@ class WordCounter {
         this.statusBarItem.dispose();
     }
 }
+
+
+
+class WordCounterController {
+    private wordCounter: WordCounterFeature;
+    private disposable: Disposable;
+
+
+    constructor(wordCounter: WordCounterFeature) {
+        this.wordCounter = wordCounter;
+        this.wordCounter.OnUpdateWordCount();
+
+        // subscribe to selection change and editor activation events
+        let subscriptions: Disposable[] = [];
+        window.onDidChangeTextEditorSelection(this.OnEvent, this, subscriptions);
+        window.onDidChangeActiveTextEditor(this.OnEvent, this, subscriptions);
+
+        // create a combined disposable from both event subscriptions
+        this.disposable = Disposable.from(...subscriptions);
+    }
+
+
+    private OnEvent() {
+        console.log('WordCounterController.onEvent');
+        this.wordCounter.OnUpdateWordCount();
+    }
+
+
+    public dispose() {
+        console.log('WordCounterController.dispose');
+        this.disposable.dispose();
+    }
+}
+
