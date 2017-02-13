@@ -19,12 +19,14 @@ export abstract class Feature {
 
 	// Commands
 	//---------------------------------------------
+
+	/** Registers a VS Code command for the `OnCommand` event. */
 	protected RegisterCommand(commandName: string) {
 		let command = commands.registerCommand(commandName, () => { this.OnCommand(commandName) });
 		this.AddDisposable(command);
 	}
 
-
+	/** Handles the `OnCommand` event for VS Code command registerations. */
 	protected OnCommand(commandName: string) {
 		console.log('The feature has not implemented `OnCommand` for the `'+commandName+'` command.');
 	}

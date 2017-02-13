@@ -1,5 +1,6 @@
 'use strict';
 
+
 export class Extension {
 	static readonly Name: string = 'papyrus-code';
 	static readonly ConfigurationName: string = 'papyrus';
