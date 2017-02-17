@@ -1,18 +1,12 @@
 'use strict';
 import { window, commands, workspace, ExtensionContext, Disposable, Terminal } from 'vscode';
-import { IDisposable, using } from '../common/system';
-import { Extension } from '../extension';
-import { Feature } from '../feature';
-const path = require('path');
-
+import { Properties, Commands, Feature } from '../extension';
 
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Compiler_Reference
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects
 
 /**A VS Code feature for compiling papyrus source files.*/
 export class Compiler extends Feature {
-	private readonly CompileCommand: string = "papyrus.compile";
-
 	private TerminalReference: Terminal;
 	private readonly TerminalName: string = 'Papyrus Terminal';
 
@@ -20,12 +14,12 @@ export class Compiler extends Feature {
 	constructor(context: ExtensionContext) {
 		super(context);
 		this.TerminalReference = undefined;
-		this.RegisterCommand(this.CompileCommand);
+		this.RegisterCommand(Commands.Compile);
 	}
 
 
 	protected OnCommand(commandName: string) {
-		if (commandName == this.CompileCommand) {
+		if (commandName == Commands.Compile) {
 
 			let editor = window.activeTextEditor;
 			if (!editor) {
@@ -33,21 +27,23 @@ export class Compiler extends Feature {
 				return;
 			}
 
-			let configuration = workspace.getConfiguration(Extension.ConfigurationName);
+			let configuration = workspace.getConfiguration(Properties.SectionName);
 			if (!configuration) {
-				window.showWarningMessage('The `' + commandName + '` command has no .`' + Extension.ConfigurationName + '` configuration.');
+				window.showWarningMessage('The `' + commandName + '` command has no .`' + Properties.SectionName + '` configuration.');
 				return;
 			}
+
+			let compiler = new PapyrusCompiler();
+			compiler.Executable = configuration.get(Properties.CompilerExecutable) as string;
+			compiler.Target = editor.document.fileName;
+			compiler.Imports = configuration.get(Properties.CompilerImports) as Array<string>;
+			compiler.Output = configuration.get(Properties.CompilerOutput) as string;
+
+			console.log(compiler.Parameters);
 
 			if (!this.TerminalReference) {
 				this.TerminalReference = window.createTerminal(this.TerminalName);
 			}
-
-			let compiler = new PapyrusCompiler();
-			compiler.Executable = configuration.get('compiler.executableFile') as string;
-			compiler.Target = editor.document.fileName;
-			compiler.Imports = configuration.get('compiler.importsList') as Array<string>;
-			compiler.Output = configuration.get('compiler.outputDirectory') as string;
 
 			if (compiler.Execute(this.TerminalReference)) {
 				window.showInformationMessage('The `' + commandName + '` command has executed.');
@@ -87,19 +83,6 @@ class PapyrusCompiler {
 	public All: boolean = false;
 	public Quiet: boolean = false;
 
-	public get Parameters(): string {
-		return this.ExecutableFile
-		+ this.TargetPath
-		+ this.ImportList
-		+ this.OutputDirectory
-		+ this.FlagsFile
-		+ this.OptimizeMode
-		+ this.ReleaseMode
-		+ this.FinalMode
-		+ this.AllMode
-		+ this.QuietMode;
-	}
-
 	private static readonly IMPORT: string = '-import=';
 	private static readonly OUTPUT: string = '-output=';
 	private static readonly FLAGS: string = '-flags=';
@@ -109,7 +92,6 @@ class PapyrusCompiler {
 	private static readonly FINAL: string = '-final';
 	private static readonly ALL: string = '-all';
 	private static readonly QUIET: string = '-quiet';
-
 
 
 	public Execute(terminal: Terminal): boolean {
@@ -125,6 +107,20 @@ class PapyrusCompiler {
 	}
 
 
+	public get Parameters(): string {
+		return this.ExecutableFile
+		+ this.TargetPath
+		+ this.ImportList
+		+ this.OutputDirectory
+		+ this.FlagsFile
+		+ this.OptimizeMode
+		+ this.ReleaseMode
+		+ this.FinalMode
+		+ this.AllMode
+		+ this.QuietMode;
+	}
+
+
 	private ArrayToString(array: Array<string>): string {
 		let value = '';
 		for (let element of array) {
@@ -137,7 +133,6 @@ class PapyrusCompiler {
 		}
 		return value;
 	}
-
 
 
 	private get ExecutableFile(): string {
@@ -158,7 +153,7 @@ class PapyrusCompiler {
 	}
 
 	private get FlagsFile(): string {
-		if (this.Flags == undefined || this.Flags == '') {
+		if (!this.Flags || this.Flags == '') {
 			return ' ' + PapyrusCompiler.FLAGS + '\"' + PapyrusCompiler.FLAGS_DEFAULT + '\"';
 		}
 		else {
