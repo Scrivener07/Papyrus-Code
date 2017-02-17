@@ -8,11 +8,9 @@ import {
     TextDocument,
     ExtensionContext
 } from 'vscode';
-import { Papyrus, PapyrusProject } from '../extension';
-import { Feature } from '../feature';
+import { Feature, Commands, Papyrus, PapyrusProject } from '../extension';
 
 export class WordCounter extends Feature {
-    private readonly CountSelectionCommand: string = 'papyrus.countSelection';
     private statusBarItem: StatusBarItem;
 
 
@@ -24,12 +22,12 @@ export class WordCounter extends Feature {
         let wordCounterController = new WordCounterController(this);
         this.AddDisposable(wordCounterController);
 
-        this.RegisterCommand(this.CountSelectionCommand);
+        this.RegisterCommand(Commands.CountSelection);
     }
 
 
     protected OnCommand(commandName: string) {
-        if (commandName == this.CountSelectionCommand) {
+        if (commandName == Commands.CountSelection) {
             let editor = window.activeTextEditor;
             if (!editor) {
                 return; // No open text editor

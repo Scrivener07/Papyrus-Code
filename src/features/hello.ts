@@ -1,19 +1,17 @@
 'use strict';
-import { window, commands, ExtensionContext } from 'vscode';
-import { Feature } from '../feature';
+import { window, ExtensionContext } from 'vscode';
+import { Feature, Commands } from '../extension';
 
 export class Hello extends Feature {
-	private readonly SayHelloCommand: string = 'papyrus.sayHello';
-
 
 	constructor(context: ExtensionContext) {
 		super(context);
-		this.RegisterCommand(this.SayHelloCommand);
+		this.RegisterCommand(Commands.SayHello);
 	}
 
 
 	protected OnCommand(commandName: string) {
-		if (commandName == this.SayHelloCommand) {
+		if (commandName == Commands.SayHello) {
 			window.showInformationMessage('Papyrus, Hello World!');
 		} else {
 			window.showWarningMessage('The `'+commandName+'` command is unhandled.');

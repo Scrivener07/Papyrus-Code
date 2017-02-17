@@ -1,24 +1,21 @@
 'use strict';
-import { window, commands, ExtensionContext } from 'vscode';
-import { Feature } from '../feature';
+import { window, ExtensionContext } from 'vscode';
+import { Feature, Commands } from '../extension';
 
 export class Preview extends Feature {
-	private readonly ShowPreviewCommand: string = 'papyrus.showPreview';
-	private readonly ShowPreviewToSideCommand: string = 'papyrus.showPreviewToSide';
-
 
 	constructor(context: ExtensionContext) {
 		super(context);
-		this.RegisterCommand(this.ShowPreviewCommand);
-		this.RegisterCommand(this.ShowPreviewToSideCommand);
+		this.RegisterCommand(Commands.ShowPreviewCommand);
+		this.RegisterCommand(Commands.ShowPreviewToSideCommand);
 	}
 
 
 	protected OnCommand(commandName: string) {
-		if (commandName == this.ShowPreviewCommand) {
+		if (commandName == Commands.ShowPreviewCommand) {
 			window.showInformationMessage('Papyrus, Show Preview');
 		}
-		else if (commandName == this.ShowPreviewToSideCommand) {
+		else if (commandName == Commands.ShowPreviewToSideCommand) {
 			window.showInformationMessage('Papyrus, Show Preview To Side');
 		} else {
 			window.showWarningMessage('The `'+commandName+'` command is unhandled.');
