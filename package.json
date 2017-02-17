@@ -50,6 +50,8 @@
 		"onLanguage:papyrus-compiled",
 		"onLanguage:papyrus-project",
 		"onCommand:papyrus.compile",
+		"onCommand:papyrus.game.install.reveal",
+		"onCommand:papyrus.game.user.reveal",
 		"onCommand:papyrus.sayHello",
 		"onCommand:papyrus.countSelection"
 	],
@@ -58,27 +60,27 @@
 			"type": "object",
 			"title": "Papyrus",
 			"properties": {
-				"papyrus.game.installDirectory": {
+				"papyrus.game.install": {
 					"description": "Specifies a directory path containing `Fallout4.exe`.",
 					"type": "string",
 					"default": "D:\\Games\\Steam\\SteamApps\\common\\Fallout 4"
 				},
-				"papyrus.game.userDirectory": {
+				"papyrus.game.user": {
 					"description": "Specifies a directory path the game uses to store user data.",
 					"type": "string",
 					"default": "C:\\Users\\Scrivener07\\Documents\\My Games\\Fallout4"
 				},
-				"papyrus.compiler.executableFile": {
+				"papyrus.compiler.executable": {
 					"description": "Specifies a file path to `PapyrusCompiler.exe`.",
 					"type": "string",
 					"default": "D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Papyrus Compiler\\PapyrusCompiler.exe"
 				},
-				"papyrus.compiler.outputDirectory": {
+				"papyrus.compiler.output": {
 					"description": "Specifies a directory path where compiled papyrus files are output.",
 					"type": "string",
 					"default": "D:\\Games\\Steam\\SteamApps\\common\\Fallout 4\\Data\\Scripts"
 				},
-				"papyrus.compiler.importsList": {
+				"papyrus.compiler.imports": {
 					"description": "A list of import directories the papyrus compiler should use. Folders listed first override ones listed after.",
 					"uniqueItems": true,
 					"type": "array",
@@ -96,6 +98,22 @@
 		},
 		"commands": [
 			{
+				"command": "papyrus.game.install.reveal",
+				"title": "Reveal Game Folder"
+			},
+			{
+				"command": "papyrus.game.user.reveal",
+				"title": "Reveal User Folder"
+			},
+			{
+				"command": "papyrus.compile",
+				"title": "Compile",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				}
+			},
+			{
 				"command": "papyrus.sayHello",
 				"title": "Papyrus - Hello World!"
 			},
@@ -110,10 +128,6 @@
 			{
 				"command": "papyrus.showPreviewToSide",
 				"title": "Papyrus - Show Preview To Side"
-			},
-			{
-				"command": "papyrus.compile",
-				"title": "Papyrus - Compile"
 			}
 		],
 		"menus": {
@@ -132,12 +146,6 @@
 				}
 			],
 			"editor/title": [
-				{
-					"when": "resourceLangId == papyrus",
-					"command": "papyrus.showPreview",
-					"alt": "papyrus.showPreviewToSide",
-					"group": "navigation"
-				},
 				{
 					"when": "resourceLangId == papyrus",
 					"command": "papyrus.compile",
@@ -166,6 +174,30 @@
 				}
 			],
 			"explorer/context": [
+				{
+					"when": "resourceLangId == papyrus",
+					"command": "papyrus.game.install.reveal",
+					"alt": "papyrus.game.install.reveal",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus-project",
+					"command": "papyrus.game.install.reveal",
+					"alt": "papyrus.game.install.reveal",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus",
+					"command": "papyrus.game.user.reveal",
+					"alt": "papyrus.game.user.reveal",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == papyrus-project",
+					"command": "papyrus.game.user.reveal",
+					"alt": "papyrus.game.user.reveal",
+					"group": "navigation"
+				},
 				{
 					"when": "resourceLangId == papyrus",
 					"command": "papyrus.compile",

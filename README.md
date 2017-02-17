@@ -25,11 +25,11 @@ Papyrus Project
 
 ## Extension Settings
 This extension contributes the following settings:
-* `papyrus.game.installDirectory`: Specifies a directory path containing `Fallout4.exe`.
-* `papyrus.game.userDirectory`: Specifies a directory path the game uses to store user data.
-* `papyrus.compiler.executableFile`: Specifies a file path to `PapyrusCompiler.exe`.
-* `papyrus.compiler.outputDirectory`: Specifies a directory path where compiled papyrus files are output.
-* `papyrus.compiler.importsList`: A list of import directories the papyrus compiler should use. Folders listed first override ones listed after.
+* `papyrus.game.install`: Specifies a directory path containing `Fallout4.exe`.
+* `papyrus.game.user`: Specifies a directory path the game uses to store user data.
+* `papyrus.compiler.executable`: Specifies a file path to `PapyrusCompiler.exe`.
+* `papyrus.compiler.output`: Specifies a directory path where compiled papyrus files are output.
+* `papyrus.compiler.imports`: A list of import directories the papyrus compiler should use. Folders listed first override ones listed after.
 
 ## Known Issues
 This extension is currently a work in progress. There are no releases at this point in time.
