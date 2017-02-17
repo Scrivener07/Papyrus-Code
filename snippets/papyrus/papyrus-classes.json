@@ -1,5 +1,4 @@
 {
-	// Classes
 	"Script Header": {
 		"prefix": "Script Header",
 		"scope": "source.papyrus",
@@ -12,7 +11,6 @@
 			"\n${0:; PATH: \"$TM_FILEPATH\"}"
 		]
 	},
-
 	"Script Import": {
 		"prefix": "Import Snippet",
 		"scope": "source.papyrus",
@@ -24,14 +22,6 @@
 			"${0}"
 		]
 	},
-
-
-
-
-
-
-
-	// Script States
 	"State": {
 		"prefix": "state",
 		"scope": "source.papyrus",
@@ -42,7 +32,6 @@
 			"State ${1:state}\r\n\t${0}\r\nEndState"
 		]
 	},
-
 	"State Auto": {
 		"prefix": "stateAuto",
 		"scope": "source.papyrus",
@@ -53,11 +42,6 @@
 			"Auto State ${1:state}\r\n\t${0}\r\nEndState"
 		]
 	},
-
-
-
-	// Script Types
-
 	"Structure": {
 		"prefix": "Structure Snippet",
 		"scope": "source.papyrus",
@@ -71,13 +55,6 @@
 			"EndStruct"
 		]
 	},
-
-
-
-
-
-	// Events
-
 	"Event": {
 		"prefix": "Event Member",
 		"scope": "source.papyrus",
@@ -88,17 +65,6 @@
 			"Event ${1:EventName}(${2:params})\r\n\t${0}\r\nEndEvent"
 		]
 	},
-
-
-
-
-
-
-
-
-
-
-	// Functions
 	"Function": {
 		"prefix": "Function Snippet",
 		"scope": "source.papyrus",
@@ -145,26 +111,6 @@
 			"Function ${1:SetFoo}(${2:var} ${3:argument})\r\n\t${0:; code}\r\nEndFunction"
 		]
 	},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	"Property": {
 		"prefix": "prop",
 		"scope": "source.papyrus",
