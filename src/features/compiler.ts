@@ -109,15 +109,15 @@ class PapyrusCompiler {
 
 	public get Parameters(): string {
 		return this.ExecutableFile
-		+ this.TargetPath
-		+ this.ImportList
-		+ this.OutputDirectory
-		+ this.FlagsFile
-		+ this.OptimizeMode
-		+ this.ReleaseMode
-		+ this.FinalMode
-		+ this.AllMode
-		+ this.QuietMode;
+			+ this.TargetPath
+			+ this.ImportList
+			+ this.OutputDirectory
+			+ this.FlagsFile
+			+ this.OptimizeMode
+			+ this.ReleaseMode
+			+ this.FinalMode
+			+ this.AllMode
+			+ this.QuietMode;
 	}
 
 

@@ -45,7 +45,7 @@ export class PapyrusProject {
 
 export abstract class Feature {
 
-	/** An extension context is a collection of utilities private to an extension. http://usejsdoc.org/*/
+	/** An extension context is a collection of utilities private to an extension. */
 	protected readonly Context: ExtensionContext;
 
 
@@ -66,7 +66,7 @@ export abstract class Feature {
 
 	/** Handles the `OnCommand` event for VS Code command registerations. */
 	protected OnCommand(commandName: string) {
-		console.log('The feature has not implemented `OnCommand` for the `'+commandName+'` command.');
+		console.log('The feature has not implemented `OnCommand` for the `' + commandName + '` command.');
 	}
 
 

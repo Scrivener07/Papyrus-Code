@@ -262,7 +262,7 @@
 			{
 				"language": "papyrus",
 				"scopeName": "source.papyrus",
-				"path": "./syntaxes/papyrus/papyrus.tmLanguage"
+				"path": "./syntaxes/papyrus/papyrus.json"
 			},
 			{
 				"language": "papyrus-assembly",
