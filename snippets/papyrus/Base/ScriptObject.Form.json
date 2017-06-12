@@ -40,5 +40,125 @@
 		"body": "StopObjectProfiling()${0}",
 		"description": "Form",
 		"scope": "source.papyrus"
+	},
+	"getname": {
+		"prefix": "getname",
+		"body": "GetName()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setname": {
+		"prefix": "setname",
+		"body": "SetName(${1:string asName})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getdescription": {
+		"prefix": "getdescription",
+		"body": "GetDescription()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getweight": {
+		"prefix": "getweight",
+		"body": "GetWeight()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setweight": {
+		"prefix": "setweight",
+		"body": "SetWeight(${1:float afWeight})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setgoldvalue": {
+		"prefix": "setgoldvalue",
+		"body": "SetGoldValue(${1:int aiValue})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getkeywords": {
+		"prefix": "getkeywords",
+		"body": "GetKeywords()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"hasworldmodel": {
+		"prefix": "hasworldmodel",
+		"body": "HasWorldModel()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getworldmodelpath": {
+		"prefix": "getworldmodelpath",
+		"body": "GetWorldModelPath()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setworldmodelpath": {
+		"prefix": "setworldmodelpath",
+		"body": "SetWorldModelPath(${1:string asPath})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"geticonpath": {
+		"prefix": "geticonpath",
+		"body": "GetIconPath()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"seticonpath": {
+		"prefix": "seticonpath",
+		"body": "SetIconPath(${1:string asPath})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getmessageiconpath": {
+		"prefix": "getmessageiconpath",
+		"body": "GetMessageIconPath()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setmessageiconpath": {
+		"prefix": "setmessageiconpath",
+		"body": "SetMessageIconPath(${1:string asPath})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getenchantment": {
+		"prefix": "getenchantment",
+		"body": "GetEnchantment()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setenchantment": {
+		"prefix": "setenchantment",
+		"body": "SetEnchantment(${1:Enchantment akEnchantment})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getenchantmentvalue": {
+		"prefix": "getenchantmentvalue",
+		"body": "GetEnchantmentValue()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setenchantmentvalue": {
+		"prefix": "setenchantmentvalue",
+		"body": "SetEnchantmentValue(${1:int aiValue})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"getequiptype": {
+		"prefix": "getequiptype",
+		"body": "GetEquipType()${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
+	},
+	"setequiptype": {
+		"prefix": "setequiptype",
+		"body": "SetEquipType(${1:EquipSlot akType})${0}",
+		"description": "Form",
+		"scope": "source.papyrus"
 	}
 }

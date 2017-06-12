@@ -10,7 +10,7 @@
 		]
 	},
 	"Statement loop While": {
-		"prefix": "Loop While",
+		"prefix": "while",
 		"scope": "source.papyrus",
 		"description": [
 			"While Loop Snippet"
@@ -20,7 +20,7 @@
 		]
 	},
 	"Statement loop For": {
-		"prefix": "Loop For",
+		"prefix": "for",
 		"scope": "source.papyrus",
 		"description": [
 			"Pseudo For Loop Snippet"
@@ -30,7 +30,7 @@
 		]
 	},
 	"Statement loop For Each": {
-		"prefix": "Loop For Each",
+		"prefix": "for each",
 		"scope": "source.papyrus",
 		"description": [
 			"Pseudo For-Each Loop Snippet"

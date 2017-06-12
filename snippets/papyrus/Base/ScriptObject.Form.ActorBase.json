@@ -94,5 +94,41 @@
 		"body": "SetProtected(${1:bool abProtected = true})${0}",
 		"description": "ActorBase",
 		"scope": "source.papyrus"
+	},
+	"gettemplate": {
+		"prefix": "gettemplate",
+		"body": "GetTemplate(${1:bool abTopMost = True})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"hasheadpartoverlays": {
+		"prefix": "hasheadpartoverlays",
+		"body": "HasHeadPartOverlays()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getheadparts": {
+		"prefix": "getheadparts",
+		"body": "GetTemplate(${1:bool abOverlays = False})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getoutfit": {
+		"prefix": "getoutfit",
+		"body": "GetOutfit(${1:bool abSleepOutfit = False})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"getbodyweight": {
+		"prefix": "getbodyweight",
+		"body": "GetBodyWeight()${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
+	},
+	"setbodyweight": {
+		"prefix": "setbodyweight",
+		"body": "SetBodyWeight(${1:BodyWeight akWeight})${0}",
+		"description": "ActorBase",
+		"scope": "source.papyrus"
 	}
 }

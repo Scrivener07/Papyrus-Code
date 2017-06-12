@@ -1,0 +1,38 @@
+{
+	"getpropertymodifiers": {
+		"prefix": "getpropertymodifiers",
+		"body": "GetPropertyModifiers()${0}",
+		"description": "ObjectMod",
+		"scope": "source.papyrus"
+	},
+	"getmaxrank": {
+		"prefix": "getmaxrank",
+		"body": "GetMaxRank()${0}",
+		"description": "ObjectMod",
+		"scope": "source.papyrus"
+	},
+	"setmaxrank": {
+		"prefix": "setmaxrank",
+		"body": "SetMaxRank(${1:int aiRank})${0}",
+		"description": "ObjectMod",
+		"scope": "source.papyrus"
+	},
+	"getpriority": {
+		"prefix": "getpriority",
+		"body": "GetPriority()${0}",
+		"description": "ObjectMod",
+		"scope": "source.papyrus"
+	},
+	"setpriority": {
+		"prefix": "setpriority",
+		"body": "SetPriority(${1:int aiPriority})${0}",
+		"description": "ObjectMod",
+		"scope": "source.papyrus"
+	},
+	"getloosemod": {
+		"prefix": "getloosemod",
+		"body": "GetLooseMod()${0}",
+		"description": "ObjectMod",
+		"scope": "source.papyrus"
+	}
+}

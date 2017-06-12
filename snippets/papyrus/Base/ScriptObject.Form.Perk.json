@@ -10,5 +10,47 @@
 		"body": "Event Perk.OnEntryRun(Perk akSender, int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
 		"description": "Remote Perk.OnEntryRun",
 		"scope": "source.papyrus"
+	},
+	"isplayable": {
+		"prefix": "isplayable",
+		"body": "IsPlayable()${0}",
+		"description": "Perk",
+		"scope": "source.papyrus"
+	},
+	"ishidden": {
+		"prefix": "ishidden",
+		"body": "IsHidden()${0}",
+		"description": "Perk",
+		"scope": "source.papyrus"
+	},
+	"getlevel": {
+		"prefix": "getlevel",
+		"body": "GetLevel()${0}",
+		"description": "Perk",
+		"scope": "source.papyrus"
+	},
+	"getnumranks": {
+		"prefix": "getnumranks",
+		"body": "GetNumRanks()${0}",
+		"description": "Perk",
+		"scope": "source.papyrus"
+	},
+	"getnextperk": {
+		"prefix": "getnextperk",
+		"body": "GetNextPerk()${0}",
+		"description": "Perk",
+		"scope": "source.papyrus"
+	},
+	"getswfpath": {
+		"prefix": "getswfpath",
+		"body": "GetSWFPath()${0}",
+		"description": "Perk",
+		"scope": "source.papyrus"
+	},
+	"iseligible": {
+		"prefix": "iseligible",
+		"body": "IsEligible(${1:Actor akActor})${0}",
+		"description": "Perk",
+		"scope": "source.papyrus"
 	}
 }

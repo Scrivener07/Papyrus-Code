@@ -130,5 +130,23 @@
 		"body": "Event Location.OnLocationLoaded(Location akSender)\r\n    ${0}\r\nEndEvent",
 		"description": "Remote Location.OnLocationLoaded",
 		"scope": "source.papyrus"
+	},
+	"getparent": {
+		"prefix": "getparent",
+		"body": "GetParent()${0}",
+		"description": "Location",
+		"scope": "source.papyrus"
+	},
+	"getencounterzone": {
+		"prefix": "getencounterzone",
+		"body": "GetEncounterZone(${1:bool abRecursive = False})${0}",
+		"description": "Location",
+		"scope": "source.papyrus"
+	},
+	"setencounterzone": {
+		"prefix": "setencounterzone",
+		"body": "SetEncounterZone(${1:EncounterZone akZone})${0}",
+		"description": "Location",
+		"scope": "source.papyrus"
 	}
 }

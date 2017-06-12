@@ -88,5 +88,47 @@
 		"body": "Math.tan(${1:float afValue})${0}",
 		"description": "Math",
 		"scope": "source.papyrus"
+	},
+	"leftshift": {
+		"prefix": "leftshift",
+		"body": "Math.LeftShift(${1:int aiValue}, ${2:int aiShiftBy})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
+	},
+	"rightshift": {
+		"prefix": "rightshift",
+		"body": "Math.RightShift(${1:int aiValue}, ${2:int aiShiftBy})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
+	},
+	"logicaland": {
+		"prefix": "logicaland",
+		"body": "Math.LogicalAnd(${1:int aiArg1}, ${2:int aiArg2})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
+	},
+	"logicalor": {
+		"prefix": "logicalor",
+		"body": "Math.LogicalOr(${1:int aiArg1}, ${2:int aiArg2})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
+	},
+	"logicalxor": {
+		"prefix": "logicalxor",
+		"body": "Math.LogicalXor(${1:int aiValue}, ${2:int aiArg2})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
+	},
+	"logicalnot": {
+		"prefix": "logicalnot",
+		"body": "Math.LogicalNot(${1:int aiArg1}, ${2:int aiArg2})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
+	},
+	"log": {
+		"prefix": "log",
+		"body": "Math.Log(${1:float afValue})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
 	}
 }

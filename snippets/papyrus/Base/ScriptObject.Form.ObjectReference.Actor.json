@@ -1702,5 +1702,29 @@
 		"body": "Event Actor.OnSpeechChallengeAvailable(Actor akSender, ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
 		"description": "Remote Actor.OnSpeechChallengeAvailable",
 		"scope": "source.papyrus"
+	},
+	"getwornitem": {
+		"prefix": "getwornitem",
+		"body": "GetWornItem(${1:int aiSlotIndex}, ${2:bool abFirstPerson = False})${0}",
+		"description": "Actor",
+		"scope": "source.papyrus"
+	},
+	"getwornitemmods": {
+		"prefix": "getwornitemmods",
+		"body": "GetWornItemMods(${1:int aiSlotIndex})${0}",
+		"description": "Actor",
+		"scope": "source.papyrus"
+	},
+	"getinstanceowner": {
+		"prefix": "getinstanceowner",
+		"body": "GetInstanceOwner(${1:int aiSlotIndex})${0}",
+		"description": "Actor",
+		"scope": "source.papyrus"
+	},
+	"queueupdate": {
+		"prefix": "queueupdate",
+		"body": "QueueUpdate(${1:bool abDoEquipment}, ${2:int aiFlags = 0})${0}",
+		"description": "Actor",
+		"scope": "source.papyrus"
 	}
 }

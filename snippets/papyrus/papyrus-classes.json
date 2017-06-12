@@ -1,6 +1,6 @@
 {
 	"Script Header": {
-		"prefix": "Script Header",
+		"prefix": "header",
 		"scope": "source.papyrus",
 		"description": [
 			"Script Header Snippet"
@@ -12,7 +12,7 @@
 		]
 	},
 	"Script Import": {
-		"prefix": "Import Snippet",
+		"prefix": "import",
 		"scope": "source.papyrus",
 		"description": [
 			"Script Import Snippet"
@@ -43,7 +43,7 @@
 		]
 	},
 	"Structure": {
-		"prefix": "Structure Snippet",
+		"prefix": "struct",
 		"scope": "source.papyrus",
 		"description": [
 			"Structure Snippet"
@@ -56,7 +56,7 @@
 		]
 	},
 	"Event": {
-		"prefix": "Event Member",
+		"prefix": "event",
 		"scope": "source.papyrus",
 		"description": [
 			"Event Snippet"
@@ -66,7 +66,7 @@
 		]
 	},
 	"Function": {
-		"prefix": "Function Snippet",
+		"prefix": "fun",
 		"scope": "source.papyrus",
 		"description": [
 			"Function Snippet"
@@ -76,7 +76,7 @@
 		]
 	},
 	"Function Full": {
-		"prefix": "Function Full Member",
+		"prefix": "funFull",
 		"scope": "source.papyrus",
 		"description": [
 			"Function Full Snippet"
@@ -89,7 +89,7 @@
 		]
 	},
 	"Function Getter": {
-		"prefix": "Function Getter Member",
+		"prefix": "funGet",
 		"scope": "source.papyrus",
 		"description": [
 			"Function Getter Snippet"
@@ -102,7 +102,7 @@
 		]
 	},
 	"Function Setter": {
-		"prefix": "Function Setter Member",
+		"prefix": "funSet",
 		"scope": "source.papyrus",
 		"description": [
 			"Function Setter Snippet"
