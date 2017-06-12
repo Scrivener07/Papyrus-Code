@@ -1,0 +1,26 @@
+{
+	"getconsumespell": {
+		"prefix": "getconsumespell",
+		"body": "GetConsumeSpell()${0}",
+		"description": "WaterType",
+		"scope": "source.papyrus"
+	},
+	"setconsumespell": {
+		"prefix": "setconsumespell",
+		"body": "SetConsumeSpell(${1:Spell akSpell})${0}",
+		"description": "WaterType",
+		"scope": "source.papyrus"
+	},
+	"getcontactspell": {
+		"prefix": "getcontactspell",
+		"body": "GetContactSpell()${0}",
+		"description": "WaterType",
+		"scope": "source.papyrus"
+	},
+	"setcontactspell": {
+		"prefix": "setcontactspell",
+		"body": "SetContactSpell(${1:Spell akSpell})${0}",
+		"description": "WaterType",
+		"scope": "source.papyrus"
+	}
+}

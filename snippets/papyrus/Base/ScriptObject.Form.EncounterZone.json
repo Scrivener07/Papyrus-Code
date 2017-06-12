@@ -16,5 +16,77 @@
 		"body": "Reset()${0}",
 		"description": "EncounterZone",
 		"scope": "source.papyrus"
-	}
+	},
+	"getlocation": {
+		"prefix": "getlocation",
+		"body": "GetLocation()${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"setlocation": {
+		"prefix": "setlocation",
+		"body": "SetLocation(${1:Location akLocation})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"getrank": {
+		"prefix": "getrank",
+		"body": "GetRank()${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"setrank": {
+		"prefix": "setrank",
+		"body": "SetRank(${1:int aiRank})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"getminlevel": {
+		"prefix": "getminlevel",
+		"body": "GetMinLevel()${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"setminlevel": {
+		"prefix": "setminlevel",
+		"body": "SetMinLevel(${1:int aiLevel})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"getmaxlevel": {
+		"prefix": "getmaxlevel",
+		"body": "GetMaxLevel()${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"setmaxlevel": {
+		"prefix": "setmaxlevel",
+		"body": "SetMaxLevel(${1:int aiLevel})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"isneverresetable": {
+		"prefix": "isneverresetable",
+		"body": "IsNeverResetable()${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"setneverresetable": {
+		"prefix": "setneverresetable",
+		"body": "SetNeverResetable(${1:bool abResetable})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"isworkshop": {
+		"prefix": "isworkshop",
+		"body": "IsWorkshop()${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
+	"setworkshop": {
+		"prefix": "setworkshop",
+		"body": "SetWorkshop(${1:bool abWorkshop})${0}",
+		"description": "EncounterZone",
+		"scope": "source.papyrus"
+	},
 }

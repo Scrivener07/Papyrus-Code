@@ -76,5 +76,11 @@
 		"body": "SetPublic(${1:bool abPublic = True})${0}",
 		"description": "Cell",
 		"scope": "source.papyrus"
+	},
+	"getwatertype": {
+		"prefix": "getwatertype",
+		"body": "GetWaterType()${0}",
+		"description": "Cell",
+		"scope": "source.papyrus"
 	}
 }

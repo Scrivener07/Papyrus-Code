@@ -10,5 +10,23 @@
 		"body": "GetAmmo()${0}",
 		"description": "Weapon",
 		"scope": "source.papyrus"
+	},
+	"getembeddedmod": {
+		"prefix": "getembeddedmod",
+		"body": "GetEmbeddedMod()${0}",
+		"description": "Weapon",
+		"scope": "source.papyrus"
+	},
+	"setembeddedmod": {
+		"prefix": "setembeddedmod",
+		"body": "SetEmbeddedMod(${1:ObjectMod akMod})${0}",
+		"description": "Weapon",
+		"scope": "source.papyrus"
+	},
+	"getinstanceowner": {
+		"prefix": "getinstanceowner",
+		"body": "GetInstanceOwner()${0}",
+		"description": "Weapon",
+		"scope": "source.papyrus"
 	}
 }

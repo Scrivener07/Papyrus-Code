@@ -331,6 +331,10 @@
 			},
 			{
 				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.F4SE.json"
+			},
+			{
+				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Form.Activator.Furniture.json"
 			},
 			{
@@ -359,6 +363,10 @@
 			},
 			{
 				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.EquipSlot.json"
+			},
+			{
+				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Form.Faction.json"
 			},
 			{
@@ -368,6 +376,10 @@
 			{
 				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Form.GlobalVariable.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.HeadPart.json"
 			},
 			{
 				"language": "papyrus",
@@ -420,6 +432,10 @@
 			{
 				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Form.MusicType.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.ObjectMod.json"
 			},
 			{
 				"language": "papyrus",
@@ -491,6 +507,10 @@
 			},
 			{
 				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.WaterType.json"
+			},
+			{
+				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Form.Weapon.json"
 			},
 			{
@@ -507,11 +527,23 @@
 			},
 			{
 				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Input.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.InstanceData.json"
+			},
+			{
+				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.json"
 			},
 			{
 				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Math.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.UI.json"
 			},
 			{
 				"language": "papyrus",

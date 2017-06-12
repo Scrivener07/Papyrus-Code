@@ -676,5 +676,48 @@
 		"body": "Game.Warning(${1:string asMessage})${0}",
 		"description": "Game",
 		"scope": "source.papyrus"
-	}
+	},
+	"getcurrentconsoleref": {
+		"prefix": "getcurrentconsoleref",
+		"body": "Game.GetCurrentConsoleRef()${0}",
+		"description": "Game",
+		"scope": "source.papyrus"
+	},
+	"getinstalledplugins": {
+		"prefix": "getinstalledplugins",
+		"body": "Game.GetInstalledPlugins()${0}",
+		"description": "Game",
+		"scope": "source.papyrus"
+	},
+	"getplugindependencies": {
+		"prefix": "getplugindependencies",
+		"body": "Game.GetPluginDependencies(${1:string asPlugin})${0}",
+		"description": "Game",
+		"scope": "source.papyrus"
+	},
+	"setgamesettingfloat": {
+		"prefix": "setgamesettingfloat",
+		"body": "Game.SetGameSettingFloat(${1:string asSetting}, ${2:float afValue})${0}",
+		"description": "Game",
+		"scope": "source.papyrus"
+	},
+	"setgamesettingint": {
+		"prefix": "setgamesettingint",
+		"body": "Game.SetGameSettingInt(${1:string asSetting}, ${2:int aiValue})${0}",
+		"description": "Game",
+		"scope": "source.papyrus"
+	},
+	"setgamesettingbool": {
+		"prefix": "setgamesettingbool",
+		"body": "Game.SetGameSettingBool(${1:string asSetting}, ${2:bool abValue})${0}",
+		"description": "Game",
+		"scope": "source.papyrus"
+	},
+	"setgamesettingstring": {
+		"prefix": "setgamesettingstring",
+		"body": "Game.SetGameSettingString(${1:string asSetting}, ${2:string asValue})${0}",
+		"description": "Game",
+		"scope": "source.papyrus"
+	},
+
 }

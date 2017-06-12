@@ -490,5 +490,84 @@
 		"body": "UnregisterForTutorialEvent(${1:String asEventName})${0}",
 		"description": "ScriptObject",
 		"scope": "source.papyrus"
+	},
+
+	"registerforkey": {
+		"prefix": "registerforkey",
+		"body": "RegisterForKey(${1:int aiKeyCode})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"unregisterforkey": {
+		"prefix": "unregisterforkey",
+		"body": "UnregisterForKey(${1:int aiKeyCode})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"onkeydown": {
+		"prefix": "onkeydown",
+		"body": "Event OnKeyDown(${1:int aiKeyCode})\r\n    ${0}\r\nEndEvent",
+		"description": "Event ScriptObject.OnKeyDown",
+		"scope": "source.papyrus"
+	},
+	"onkeyup": {
+		"prefix": "onkeyup",
+		"body": "Event OnKeyUp(${1:int aiKeyCode}, ${2:float fTime})\r\n    ${0}\r\nEndEvent",
+		"description": "Event ScriptObject.OnKeyUp",
+		"scope": "source.papyrus"
+	},
+	"registerforcontrol": {
+		"prefix": "registerforcontrol",
+		"body": "RegisterForControl(${1:string asControlName})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"unregisterforcontrol": {
+		"prefix": "unregisterforcontrol",
+		"body": "UnregisterForControl(${1:string asControlName})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"oncontroldown": {
+		"prefix": "oncontroldown",
+		"body": "Event OnControlDown(${1:string asControlName})\r\n    ${0}\r\nEndEvent",
+		"description": "Event ScriptObject.OnControlDown",
+		"scope": "source.papyrus"
+	},
+	"oncontrolup": {
+		"prefix": "oncontrolup",
+		"body": "Event OnControlUp(${1:string asControlName}, ${2:float fTime})\r\n    ${0}\r\nEndEvent",
+		"description": "Event ScriptObject.OnControlUp",
+		"scope": "source.papyrus"
+	},
+	"registerforexternalevent": {
+		"prefix": "registerforexternalevent",
+		"body": "RegisterForExternalEvent(${1:string asEventName}, ${2:string asCallback}})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"unregisterforexternalevent": {
+		"prefix": "unregisterforexternalevent",
+		"body": "UnregisterForExternalEvent(${1:string asEventName})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"registerforcamerastate": {
+		"prefix": "registerforcamerastate",
+		"body": "RegisterForCameraState()${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"unregisterforcamerastate": {
+		"prefix": "unregisterforcamerastate",
+		"body": "UnregisterForCameraState()${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"onplayercamerastate": {
+		"prefix": "onplayercamerastate",
+		"body": "Event OnPlayerCameraState(${1:int aiOldState}, ${2:int aiNewState})\r\n    ${0}\r\nEndEvent",
+		"description": "Event ScriptObject.OnPlayerCameraState",
+		"scope": "source.papyrus"
 	}
 }

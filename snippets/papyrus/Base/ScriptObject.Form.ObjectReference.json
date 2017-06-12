@@ -1852,5 +1852,59 @@
 		"body": "Event ObjectReference.OnWorkshopObjectRepaired(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
 		"description": "Remote ObjectReference.OnWorkshopObjectRepaired",
 		"scope": "source.papyrus"
+	},
+	"getallmods": {
+		"prefix": "getallmods",
+		"body": "GetAllMods()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getconnectedobjects": {
+		"prefix": "getconnectedobjects",
+		"body": "GetConnectedObjects()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"attachwire": {
+		"prefix": "attachwire",
+		"body": "AttachWire(${1:ObjectReference akReference}, ${2:Form akSpline = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"createwire": {
+		"prefix": "createwire",
+		"body": "CreateWire(${1:ObjectReference akReference}, ${2:Form akSpline = None})${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"scrap": {
+		"prefix": "scrap",
+		"body": "Scrap()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getdisplayname": {
+		"prefix": "getdisplayname",
+		"body": "GetDisplayName()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getinventoryitems": {
+		"prefix": "getinventoryitems",
+		"body": "GetInventoryItems()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"getconnectpoints": {
+		"prefix": "getconnectpoints",
+		"body": "GetConnectPoints()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
+	"transmitconnectedpower": {
+		"prefix": "transmitconnectedpower",
+		"body": "TransmitConnectedPower()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
 	}
 }

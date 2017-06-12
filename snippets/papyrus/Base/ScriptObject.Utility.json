@@ -94,5 +94,17 @@
 		"body": "Utility.WaitMenuMode(${1:float afSeconds})${0}",
 		"description": "Utility",
 		"scope": "source.papyrus"
+	},
+	"vartovararray": {
+		"prefix": "vartovararray",
+		"body": "Utility.VarToVarArray(${1:var avVar})${0}",
+		"description": "Utility",
+		"scope": "source.papyrus"
+	},
+	"vararraytovar": {
+		"prefix": "vararraytovar",
+		"body": "Utility.VarArrayToVar(${1:var[] avArray})${0}",
+		"description": "Utility",
+		"scope": "source.papyrus"
 	}
 }

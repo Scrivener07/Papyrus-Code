@@ -1,0 +1,8 @@
+{
+	"getparents": {
+		"prefix": "getparents",
+		"body": "GetParents()${0}",
+		"description": "EquipSlot",
+		"scope": "source.papyrus"
+	}
+}
