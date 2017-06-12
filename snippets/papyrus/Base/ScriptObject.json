@@ -542,7 +542,7 @@
 	},
 	"registerforexternalevent": {
 		"prefix": "registerforexternalevent",
-		"body": "RegisterForExternalEvent(${1:string asEventName}, ${2:string asCallback}})${0}",
+		"body": "RegisterForExternalEvent(${1:string asEventName}, ${2:string asCallback})${0}",
 		"description": "ScriptObject",
 		"scope": "source.papyrus"
 	},
