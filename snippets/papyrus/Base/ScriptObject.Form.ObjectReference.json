@@ -1895,6 +1895,12 @@
 		"description": "ObjectReference",
 		"scope": "source.papyrus"
 	},
+	"getinventoryweight": {
+		"prefix": "getinventoryweight",
+		"body": "GetInventoryWeight()${0}",
+		"description": "ObjectReference",
+		"scope": "source.papyrus"
+	},
 	"getconnectpoints": {
 		"prefix": "getconnectpoints",
 		"body": "GetConnectPoints()${0}",

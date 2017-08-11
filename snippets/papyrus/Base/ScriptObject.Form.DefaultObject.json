@@ -1,0 +1,20 @@
+{
+	"getdefaultobject": {
+		"prefix": "getdefaultobject",
+		"body": "GetDefaultObject(${1:string akEDID})${0}",
+		"description": "DefaultObject",
+		"scope": "source.papyrus"
+	},
+	"get": {
+		"prefix": "get",
+		"body": "Get()${0}",
+		"description": "DefaultObject",
+		"scope": "source.papyrus"
+	},
+	"set": {
+		"prefix": "set",
+		"body": "Set(${1:Form akNewForm})${0}",
+		"description": "DefaultObject",
+		"scope": "source.papyrus"
+	}
+}

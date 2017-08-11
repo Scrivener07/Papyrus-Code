@@ -569,5 +569,23 @@
 		"body": "Event OnPlayerCameraState(${1:int aiOldState}, ${2:int aiNewState})\r\n    ${0}\r\nEndEvent",
 		"description": "Event ScriptObject.OnPlayerCameraState",
 		"scope": "source.papyrus"
+	},
+	"registerforfurnitureevent": {
+		"prefix": "registerforfurnitureevent",
+		"body": "RegisterForFurnitureEvent(${1:var akFilter = None})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"unregisterforfurnitureevent": {
+		"prefix": "unregisterforfurnitureevent",
+		"body": "UnregisterForFurnitureEvent(${1:var akFilter = None})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"onfurnitureevent": {
+		"prefix": "onfurnitureevent",
+		"body": "Event OnFurnitureEvent(${1:Actor akActor}, ${2:ObjectReference akFurniture}, ${3:bool abGettingUp})\r\n    ${0}\r\nEndEvent",
+		"description": "Event ScriptObject.OnFurnitureEvent",
+		"scope": "source.papyrus"
 	}
 }
