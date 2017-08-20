@@ -491,7 +491,6 @@
 		"description": "ScriptObject",
 		"scope": "source.papyrus"
 	},
-
 	"registerforkey": {
 		"prefix": "registerforkey",
 		"body": "RegisterForKey(${1:int aiKeyCode})${0}",
@@ -506,13 +505,13 @@
 	},
 	"onkeydown": {
 		"prefix": "onkeydown",
-		"body": "Event OnKeyDown(${1:int aiKeyCode})\r\n    ${0}\r\nEndEvent",
+		"body": "Event OnKeyDown(int aiKeyCode)\r\n    ${0}\r\nEndEvent",
 		"description": "Event ScriptObject.OnKeyDown",
 		"scope": "source.papyrus"
 	},
 	"onkeyup": {
 		"prefix": "onkeyup",
-		"body": "Event OnKeyUp(${1:int aiKeyCode}, ${2:float fTime})\r\n    ${0}\r\nEndEvent",
+		"body": "Event OnKeyUp(int aiKeyCode, float afTime)\r\n    ${0}\r\nEndEvent",
 		"description": "Event ScriptObject.OnKeyUp",
 		"scope": "source.papyrus"
 	},
@@ -530,13 +529,13 @@
 	},
 	"oncontroldown": {
 		"prefix": "oncontroldown",
-		"body": "Event OnControlDown(${1:string asControlName})\r\n    ${0}\r\nEndEvent",
+		"body": "Event OnControlDown(string asControlName)\r\n    ${0}\r\nEndEvent",
 		"description": "Event ScriptObject.OnControlDown",
 		"scope": "source.papyrus"
 	},
 	"oncontrolup": {
 		"prefix": "oncontrolup",
-		"body": "Event OnControlUp(${1:string asControlName}, ${2:float fTime})\r\n    ${0}\r\nEndEvent",
+		"body": "Event OnControlUp(string asControlName, float afTime)\r\n    ${0}\r\nEndEvent",
 		"description": "Event ScriptObject.OnControlUp",
 		"scope": "source.papyrus"
 	},
@@ -566,8 +565,26 @@
 	},
 	"onplayercamerastate": {
 		"prefix": "onplayercamerastate",
-		"body": "Event OnPlayerCameraState(${1:int aiOldState}, ${2:int aiNewState})\r\n    ${0}\r\nEndEvent",
+		"body": "Event OnPlayerCameraState(int aiOldState, int aiNewState)\r\n    ${0}\r\nEndEvent",
 		"description": "Event ScriptObject.OnPlayerCameraState",
+		"scope": "source.papyrus"
+	},
+	"registerforfurnitureevent": {
+		"prefix": "registerforfurnitureevent",
+		"body": "RegisterForFurnitureEvent(${1:var akFilter = None})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"unregisterforfurnitureevent": {
+		"prefix": "unregisterforfurnitureevent",
+		"body": "UnregisterForFurnitureEvent(${1:var akFilter = None})${0}",
+		"description": "ScriptObject",
+		"scope": "source.papyrus"
+	},
+	"onfurnitureevent": {
+		"prefix": "onfurnitureevent",
+		"body": "Event OnFurnitureEvent(Actor akActor, ObjectReference akFurniture, bool abGettingUp)\r\n    ${0}\r\nEndEvent",
+		"description": "Event ScriptObject.OnFurnitureEvent",
 		"scope": "source.papyrus"
 	}
 }

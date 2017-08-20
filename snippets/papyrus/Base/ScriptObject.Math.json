@@ -130,5 +130,11 @@
 		"body": "Math.Log(${1:float afValue})${0}",
 		"description": "Math",
 		"scope": "source.papyrus"
+	},
+	"exp": {
+		"prefix": "exp",
+		"body": "Math.Exp(${1:float afValue})${0}",
+		"description": "Math",
+		"scope": "source.papyrus"
 	}
 }

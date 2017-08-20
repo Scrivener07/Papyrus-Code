@@ -148,5 +148,11 @@
 		"body": "SetEncounterZone(${1:EncounterZone akZone})${0}",
 		"description": "Location",
 		"scope": "source.papyrus"
+	},
+	"setparent": {
+		"prefix": "setparent",
+		"body": "SetParent(${1:Location akLocation})${0}",
+		"description": "Location",
+		"scope": "source.papyrus"
 	}
 }
