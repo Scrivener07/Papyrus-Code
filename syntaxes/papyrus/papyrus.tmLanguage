@@ -337,7 +337,15 @@
             </dict>
             <dict>
                 <key>include</key>
+                <string>#f4se-class-types</string>
+            </dict>
+            <dict>
+                <key>include</key>
                 <string>#builtin-funcs</string>
+            </dict>
+            <dict>
+                <key>include</key>
+                <string>#f4se-funcs</string>
             </dict>
         </array>
         <key>repository</key>
@@ -389,12 +397,26 @@
                 <key>name</key>
                 <string>support.function.papyrus</string>
             </dict>
+            <key>f4se-funcs</key>
+            <dict>
+                <key>match</key>
+                <string>(?i)\b(getversion|getversionminor|getversionbeta|getversionrelease|getscriptversionrelease|getpluginversion|gettemplate|hasheadpartoverlays|getheadparts|getoutfit|getbodyweight|setbodyweight|getwatertype|getlocation|setlocation|getrank|setrank|getminlevel|setminlevel|getmaxlevel|setmaxlevel|isneverresetable|setneverresetable|isworkshop|setworkshop|getparents|gettype|getextraparts|hasextrapart|isextrapart|getvalidraces|setvalidraces|getparent|getencounterzone|setencounterzone|getpropertymodifiers|getmaxrank|setmaxrank|getpriority|setpriority|getloosemod|getwornitem|getwornitemmods|getinstanceowner|queueupdate|getallmods|getconnectedobjects|attachwire|createwire|scrap|getdisplayname|getinventoryitems|getconnectpoints|transmitconnectedpower|isplayable|ishidden|getlevel|getnumranks|getnextperk|getswfpath|iseligible|getconsumespell|setconsumespell|getcontactspell|setcontactspell|getembeddedmod|setembeddedmod|getinstanceowner|getname|setname|getdescription|getweight|setweight|setgoldvalue|getkeywords|hasworldmodel|getworldmodelpath|setworldmodelpath|geticonpath|seticonpath|getmessageiconpath|setmessageiconpath|getenchantment|setenchantment|getenchantmentvalue|setenchantmentvalue|getequiptype|setequiptype|getcurrentconsoleref|getinstalledplugins|getplugindependencies|setgamesettingfloat|setgamesettingint|setgamesettingbool|setgamesettingstring|getmappedkey|getmappedcontrol|getattackdamage|setattackdamage|getdamagetypes|setdamagetypes|getammocapacity|setammocapacity|getammo|setammo|getaccuracybonus|setaccuracybonus|getactionpointcost|setactionpointcost|getattackdelay|setattackdelay|getoutofrangemultiplier|setoutofrangemultiplier|getreloadspeed|setreloadspeed|getreach|setreach|getminrange|setminrange|getmaxrange|setmaxrange|getspeed|setspeed|getstagger|setstagger|getskill|setskill|getresist|setresist|getcritmultiplier|setcritmultiplier|getcritchargebonus|setcritchargebonus|getprojectileoverride|setprojectileoverride|getnumprojectiles|setnumprojectiles|getsightedtransition|setsightedtransition|getflag|setflag|getarmorhealth|setarmorhealth|getarmorrating|setarmorrating|getweight|setweight|getgoldvalue|setgoldvalue|leftshift|rightshift|logicaland|logicalor|logicalxor|logicalnot|log|set|get|invoke|load|vartovararray|vararraytovar|registerforkey|unregisterforkey|registerforcontrol|unregisterforcontrol|registerforexternalevent|unregisterforexternalevent|registerforcamerastate|unregisterforcamerastate|getscrapitem|setscrapitem|getscrapscalar|setscrapscalar|getconstructiblecomponents|setconstructiblecomponents|getcreatedobject|setcreatedobject|getcreatedcount|setcreatedcount|getpriority|setpriority|getworkbenchkeyword|setworkbenchkeyword|getdefaultobject|setparent|getmisccomponents|setmisccomponents|getfurniturereference|getinventoryweight|exp|registerforfurnitureevent|unregisterforfurnitureevent|getinstalledlightplugins)\b</string>
+                <key>name</key>
+                <string>support.function.f4se.papyrus</string>
+            </dict>
             <key>class-types</key>
             <dict>
                 <key>match</key>
                 <string>(?i)\b(action|activator|activemagiceffect|actor|actorbase|actorvalue|alias|ammo|armor|associationtype|book|camerashot|cell|class|combatstyle|commonarrayfunctions|component|constructibleobject|container|debug|door|effectshader|enchantment|encounterzone|explosion|faction|flora|form|formlist|furniture|game|globalvariable|hazard|headpart|holotape|idle|idlemarker|imagespacemodifier|impactdataset|ingredient|inputenablelayer|instancenamingrules|key|keyword|leveledactor|leveleditem|leveledspell|light|location|locationalias|locationreftype|magiceffect|math|message|miscobject|movablestatic|musictype|objectmod|objectreference|outfit|outputmodel|package|perk|potion|projectile|quest|race|refcollectionalias|referencealias|scene|scriptobject|scroll|shaderparticlegeometry|shout|soulgem|sound|soundcategory|soundcategorysnapshot|spell|static|talkingactivator|terminal|textureset|topic|topicinfo|utility|visualeffect|voicetype|weapon|weather|wordofpower|worldspace)\b</string>
                 <key>name</key>
                 <string>support.class.papyrus</string>
+            </dict>
+            <key>f4se-class-types</key>
+            <dict>
+                <key>match</key>
+                <string>(?i)\b(f4se|ui|instancedata|input|watertype|equipslot|defaultobject)\b</string>
+                <key>name</key>
+                <string>support.class.f4se.papyrus</string>
             </dict>
             <key>params</key>
             <dict>

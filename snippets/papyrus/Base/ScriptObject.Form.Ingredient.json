@@ -1,26 +1,22 @@
 {
-	"ishostile": {
-		"prefix": "ishostile",
-		"body": "IsHostile()${0}",
-		"description": "Ingredient",
-		"scope": "source.papyrus"
-	},
-	"learnalleffects": {
-		"prefix": "learnalleffects",
-		"body": "LearnAllEffects()${0}",
-		"description": "Ingredient",
-		"scope": "source.papyrus"
-	},
-	"learneffect": {
-		"prefix": "learneffect",
-		"body": "LearnEffect(${1:int aiIndex})${0}",
-		"description": "Ingredient",
-		"scope": "source.papyrus"
-	},
-	"learnnexteffect": {
-		"prefix": "learnnexteffect",
-		"body": "LearnNextEffect()${0}",
-		"description": "Ingredient",
-		"scope": "source.papyrus"
-	}
+    "Ingredient.IsHostile()": {
+        "prefix": "ishostile",
+        "body": "IsHostile()${0}",
+        "description": "Ingredient"
+    },
+    "Ingredient.LearnAllEffects()": {
+        "prefix": "learnalleffects",
+        "body": "LearnAllEffects()${0}",
+        "description": "Ingredient"
+    },
+    "Ingredient.LearnEffect()": {
+        "prefix": "learneffect",
+        "body": "LearnEffect(${1:int aiIndex})${0}",
+        "description": "Ingredient"
+    },
+    "Ingredient.LearnNextEffect()": {
+        "prefix": "learnnexteffect",
+        "body": "LearnNextEffect()${0}",
+        "description": "Ingredient"
+    }
 }

@@ -1,128 +1,107 @@
 {
-	"applytoref": {
-		"prefix": "applytoref",
-		"body": "ApplyToRef(${1:ObjectReference akRef})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"clear": {
-		"prefix": "clear",
-		"body": "Clear()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"forcerefifempty": {
-		"prefix": "forcerefifempty",
-		"body": "ForceRefIfEmpty(${1:ObjectReference akNewRef})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"forcerefto": {
-		"prefix": "forcerefto",
-		"body": "ForceRefTo(${1:ObjectReference akNewRef})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"getactorreference": {
-		"prefix": "getactorreference",
-		"body": "GetActorReference()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"getreference": {
-		"prefix": "getreference",
-		"body": "GetReference()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"removefromref": {
-		"prefix": "removefromref",
-		"body": "RemoveFromRef(${1:ObjectReference akRef})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytoaddtofaction": {
-		"prefix": "trytoaddtofaction",
-		"body": "TryToAddToFaction(${1:Faction FactionToAddTo})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytoclear": {
-		"prefix": "trytoclear",
-		"body": "TryToClear()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytodisable": {
-		"prefix": "trytodisable",
-		"body": "TryToDisable()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytodisablenowait": {
-		"prefix": "trytodisablenowait",
-		"body": "TryToDisableNoWait()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytoenable": {
-		"prefix": "trytoenable",
-		"body": "TryToEnable()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytoenablenowait": {
-		"prefix": "trytoenablenowait",
-		"body": "TryToEnableNoWait()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytoevaluatepackage": {
-		"prefix": "trytoevaluatepackage",
-		"body": "TryToEvaluatePackage()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytogetvalue": {
-		"prefix": "trytogetvalue",
-		"body": "TryToGetValue(${1:ActorValue akAV})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytokill": {
-		"prefix": "trytokill",
-		"body": "TryToKill()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytomoveto": {
-		"prefix": "trytomoveto",
-		"body": "TryToMoveTo(${1:ObjectReference RefToMoveTo})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytoremovefromfaction": {
-		"prefix": "trytoremovefromfaction",
-		"body": "TryToRemoveFromFaction(${1:Faction FactionToRemoveFrom})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytoreset": {
-		"prefix": "trytoreset",
-		"body": "TryToReset()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytosetvalue": {
-		"prefix": "trytosetvalue",
-		"body": "TryToSetValue(${1:ActorValue akAV}, ${2:float afValue})${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	},
-	"trytostopcombat": {
-		"prefix": "trytostopcombat",
-		"body": "TryToStopCombat()${0}",
-		"description": "ReferenceAlias",
-		"scope": "source.papyrus"
-	}
+    "RefAlias.ApplyToRef()": {
+        "prefix": "applytoref",
+        "body": "ApplyToRef(${1:ObjectReference akRef})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.Clear()": {
+        "prefix": "clear",
+        "body": "Clear()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.ForceRefIfEmpty()": {
+        "prefix": "forcerefifempty",
+        "body": "ForceRefIfEmpty(${1:ObjectReference akNewRef})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.ForceRefTo()": {
+        "prefix": "forcerefto",
+        "body": "ForceRefTo(${1:ObjectReference akNewRef})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.GetActorReference()": {
+        "prefix": "getactorreference",
+        "body": "GetActorReference()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.GetReference()": {
+        "prefix": "getreference",
+        "body": "GetReference()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.RemoveFromRef()": {
+        "prefix": "removefromref",
+        "body": "RemoveFromRef(${1:ObjectReference akRef})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToAddToFaction()": {
+        "prefix": "trytoaddtofaction",
+        "body": "TryToAddToFaction(${1:Faction FactionToAddTo})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToClear()": {
+        "prefix": "trytoclear",
+        "body": "TryToClear()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToDisable()": {
+        "prefix": "trytodisable",
+        "body": "TryToDisable()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToDisableNoWait()": {
+        "prefix": "trytodisablenowait",
+        "body": "TryToDisableNoWait()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToEnable()": {
+        "prefix": "trytoenable",
+        "body": "TryToEnable()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToEnableNoWait()": {
+        "prefix": "trytoenablenowait",
+        "body": "TryToEnableNoWait()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToEvaluatePackage()": {
+        "prefix": "trytoevaluatepackage",
+        "body": "TryToEvaluatePackage()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToGetValue()": {
+        "prefix": "trytogetvalue",
+        "body": "TryToGetValue(${1:ActorValue akAV})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToKill()": {
+        "prefix": "trytokill",
+        "body": "TryToKill()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToMoveTo()": {
+        "prefix": "trytomoveto",
+        "body": "TryToMoveTo(${1:ObjectReference RefToMoveTo})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToRemoveFromFaction()": {
+        "prefix": "trytoremovefromfaction",
+        "body": "TryToRemoveFromFaction(${1:Faction FactionToRemoveFrom})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToReset()": {
+        "prefix": "trytoreset",
+        "body": "TryToReset()${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToSetValue()": {
+        "prefix": "trytosetvalue",
+        "body": "TryToSetValue(${1:ActorValue akAV}, ${2:float afValue})${0}",
+        "description": "ReferenceAlias"
+    },
+    "RefAlias.TryToStopCombat()": {
+        "prefix": "trytostopcombat",
+        "body": "TryToStopCombat()${0}",
+        "description": "ReferenceAlias"
+    }
 }

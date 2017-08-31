@@ -1,14 +1,12 @@
 {
-	"play": {
-		"prefix": "play",
-		"body": "Play(${1:ObjectReference akObject}, ${2:float afTime = -1.0}, ${3:ObjectReference akFacingObject = None})${0}",
-		"description": "VisualEffect",
-		"scope": "source.papyrus"
-	},
-	"stop": {
-		"prefix": "stop",
-		"body": "Stop(${1:ObjectReference akObject})${0}",
-		"description": "VisualEffect",
-		"scope": "source.papyrus"
-	}
+    "VisualEffect.Play()": {
+        "prefix": "play",
+        "body": "Play(${1:ObjectReference akObject}, ${2:float afTime = -1.0}, ${3:ObjectReference akFacingObject = None})${0}",
+        "description": "VisualEffect"
+    },
+    "VisualEffect.Stop()": {
+        "prefix": "stop",
+        "body": "Stop(${1:ObjectReference akObject})${0}",
+        "description": "VisualEffect"
+    }
 }

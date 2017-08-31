@@ -1,110 +1,92 @@
 {
-	"callglobalfunction": {
-		"prefix": "callglobalfunction",
-		"body": "Utility.CallGlobalFunction(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"callglobalfunctionnowait": {
-		"prefix": "callglobalfunctionnowait",
-		"body": "Utility.CallGlobalFunctionNoWait(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"gametimetostring": {
-		"prefix": "gametimetostring",
-		"body": "Utility.GameTimeToString(${1:float afGameTime})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"getcurrentgametime": {
-		"prefix": "getcurrentgametime",
-		"body": "Utility.GetCurrentGameTime()${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"getcurrentrealtime": {
-		"prefix": "getcurrentrealtime",
-		"body": "Utility.GetCurrentRealTime()${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"getcurrentstackid": {
-		"prefix": "getcurrentstackid",
-		"body": "Utility.GetCurrentStackID()${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"isinmenumode": {
-		"prefix": "isinmenumode",
-		"body": "Utility.IsInMenuMode()${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"randomfloat": {
-		"prefix": "randomfloat",
-		"body": "Utility.RandomFloat(${1:float afMin = 0.0}, ${2:float afMax = 1.0})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"randomint": {
-		"prefix": "randomint",
-		"body": "Utility.RandomInt(${1:int aiMin = 0}, ${2:int aiMax = 100})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"setinibool": {
-		"prefix": "setinibool",
-		"body": "Utility.SetINIBool(${1:string ini}, ${2:bool value})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"setinifloat": {
-		"prefix": "setinifloat",
-		"body": "Utility.SetINIFloat(${1:string ini}, ${2:float value})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"setiniint": {
-		"prefix": "setiniint",
-		"body": "Utility.SetINIInt(${1:string ini}, ${2:int value})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"setinistring": {
-		"prefix": "setinistring",
-		"body": "Utility.SetINIString(${1:string ini}, ${2:string value})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"wait": {
-		"prefix": "wait",
-		"body": "Utility.Wait(${1:float afSeconds})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"waitgametime": {
-		"prefix": "waitgametime",
-		"body": "Utility.WaitGameTime(${1:float afHours})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"waitmenumode": {
-		"prefix": "waitmenumode",
-		"body": "Utility.WaitMenuMode(${1:float afSeconds})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"vartovararray": {
-		"prefix": "vartovararray",
-		"body": "Utility.VarToVarArray(${1:var avVar})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	},
-	"vararraytovar": {
-		"prefix": "vararraytovar",
-		"body": "Utility.VarArrayToVar(${1:var[] avArray})${0}",
-		"description": "Utility",
-		"scope": "source.papyrus"
-	}
+    "Utility.CallGlobalFunction()": {
+        "prefix": "callglobalfunction",
+        "body": "Utility.CallGlobalFunction(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}",
+        "description": "Utility"
+    },
+    "Utility.CallGlobalFunctionNoWait()": {
+        "prefix": "callglobalfunctionnowait",
+        "body": "Utility.CallGlobalFunctionNoWait(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}",
+        "description": "Utility"
+    },
+    "Utility.GameTimeToString()": {
+        "prefix": "gametimetostring",
+        "body": "Utility.GameTimeToString(${1:float afGameTime})${0}",
+        "description": "Utility"
+    },
+    "Utility.GetCurrentGameTime()": {
+        "prefix": "getcurrentgametime",
+        "body": "Utility.GetCurrentGameTime()${0}",
+        "description": "Utility"
+    },
+    "Utility.GetCurrentRealTime()": {
+        "prefix": "getcurrentrealtime",
+        "body": "Utility.GetCurrentRealTime()${0}",
+        "description": "Utility"
+    },
+    "Utility.GetCurrentStackID()": {
+        "prefix": "getcurrentstackid",
+        "body": "Utility.GetCurrentStackID()${0}",
+        "description": "Utility"
+    },
+    "Utility.IsInMenuMode()": {
+        "prefix": "isinmenumode",
+        "body": "Utility.IsInMenuMode()${0}",
+        "description": "Utility"
+    },
+    "Utility.RandomFloat()": {
+        "prefix": "randomfloat",
+        "body": "Utility.RandomFloat(${1:float afMin = 0.0}, ${2:float afMax = 1.0})${0}",
+        "description": "Utility"
+    },
+    "Utility.RandomInt()": {
+        "prefix": "randomint",
+        "body": "Utility.RandomInt(${1:int aiMin = 0}, ${2:int aiMax = 100})${0}",
+        "description": "Utility"
+    },
+    "Utility.SetINIBool()": {
+        "prefix": "setinibool",
+        "body": "Utility.SetINIBool(${1:string ini}, ${2:bool value})${0}",
+        "description": "Utility"
+    },
+    "Utility.SetINIFloat()": {
+        "prefix": "setinifloat",
+        "body": "Utility.SetINIFloat(${1:string ini}, ${2:float value})${0}",
+        "description": "Utility"
+    },
+    "Utility.SetINIInt()": {
+        "prefix": "setiniint",
+        "body": "Utility.SetINIInt(${1:string ini}, ${2:int value})${0}",
+        "description": "Utility"
+    },
+    "Utility.SetINIString()": {
+        "prefix": "setinistring",
+        "body": "Utility.SetINIString(${1:string ini}, ${2:string value})${0}",
+        "description": "Utility"
+    },
+    "Utility.Wait()": {
+        "prefix": "wait",
+        "body": "Utility.Wait(${1:float afSeconds})${0}",
+        "description": "Utility"
+    },
+    "Utility.WaitGameTime()": {
+        "prefix": "waitgametime",
+        "body": "Utility.WaitGameTime(${1:float afHours})${0}",
+        "description": "Utility"
+    },
+    "Utility.WaitMenuMode()": {
+        "prefix": "waitmenumode",
+        "body": "Utility.WaitMenuMode(${1:float afSeconds})${0}",
+        "description": "Utility"
+    },
+    "Utility.VarToVarArray()": {
+        "prefix": "vartovararray",
+        "body": "Utility.VarToVarArray(${1:var avVar})${0}",
+        "description": "Utility"
+    },
+    "Utility.VarArrayToVar()": {
+        "prefix": "vararraytovar",
+        "body": "Utility.VarArrayToVar(${1:var[] avArray})${0}",
+        "description": "Utility"
+    }
 }

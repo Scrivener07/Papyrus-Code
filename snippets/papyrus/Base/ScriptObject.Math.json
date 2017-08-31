@@ -1,140 +1,117 @@
 {
-	"abs": {
-		"prefix": "abs",
-		"body": "Math.abs(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"acos": {
-		"prefix": "acos",
-		"body": "Math.acos(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"asin": {
-		"prefix": "asin",
-		"body": "Math.asin(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"atan": {
-		"prefix": "atan",
-		"body": "Math.atan(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"ceiling": {
-		"prefix": "ceiling",
-		"body": "Math.Ceiling(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"cos": {
-		"prefix": "cos",
-		"body": "Math.cos(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"degreestoradians": {
-		"prefix": "degreestoradians",
-		"body": "Math.DegreesToRadians(${1:float afDegrees})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"floor": {
-		"prefix": "floor",
-		"body": "Math.Floor(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"max": {
-		"prefix": "max",
-		"body": "Math.Max(${1:float afValue1}, ${2:float afValue2})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"min": {
-		"prefix": "min",
-		"body": "Math.Min(${1:float afValue1}, ${2:float afValue2})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"pow": {
-		"prefix": "pow",
-		"body": "Math.pow(${1:float x}, ${2:float y})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"radianstodegrees": {
-		"prefix": "radianstodegrees",
-		"body": "Math.RadiansToDegrees(${1:float afRadians})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"sin": {
-		"prefix": "sin",
-		"body": "Math.sin(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"sqrt": {
-		"prefix": "sqrt",
-		"body": "Math.sqrt(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"tan": {
-		"prefix": "tan",
-		"body": "Math.tan(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"leftshift": {
-		"prefix": "leftshift",
-		"body": "Math.LeftShift(${1:int aiValue}, ${2:int aiShiftBy})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"rightshift": {
-		"prefix": "rightshift",
-		"body": "Math.RightShift(${1:int aiValue}, ${2:int aiShiftBy})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"logicaland": {
-		"prefix": "logicaland",
-		"body": "Math.LogicalAnd(${1:int aiArg1}, ${2:int aiArg2})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"logicalor": {
-		"prefix": "logicalor",
-		"body": "Math.LogicalOr(${1:int aiArg1}, ${2:int aiArg2})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"logicalxor": {
-		"prefix": "logicalxor",
-		"body": "Math.LogicalXor(${1:int aiValue}, ${2:int aiArg2})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"logicalnot": {
-		"prefix": "logicalnot",
-		"body": "Math.LogicalNot(${1:int aiArg1}, ${2:int aiArg2})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"log": {
-		"prefix": "log",
-		"body": "Math.Log(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	},
-	"exp": {
-		"prefix": "exp",
-		"body": "Math.Exp(${1:float afValue})${0}",
-		"description": "Math",
-		"scope": "source.papyrus"
-	}
+    "Math.abs()": {
+        "prefix": "abs",
+        "body": "Math.abs(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.acos()": {
+        "prefix": "acos",
+        "body": "Math.acos(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.asin()": {
+        "prefix": "asin",
+        "body": "Math.asin(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.atan()": {
+        "prefix": "atan",
+        "body": "Math.atan(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.Ceiling()": {
+        "prefix": "ceiling",
+        "body": "Math.Ceiling(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.cos()": {
+        "prefix": "cos",
+        "body": "Math.cos(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.DegreesToRadians()": {
+        "prefix": "degreestoradians",
+        "body": "Math.DegreesToRadians(${1:float afDegrees})${0}",
+        "description": "Math"
+    },
+    "Math.Floor()": {
+        "prefix": "floor",
+        "body": "Math.Floor(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.Max()": {
+        "prefix": "max",
+        "body": "Math.Max(${1:float afValue1}, ${2:float afValue2})${0}",
+        "description": "Math"
+    },
+    "Math.Min()": {
+        "prefix": "min",
+        "body": "Math.Min(${1:float afValue1}, ${2:float afValue2})${0}",
+        "description": "Math"
+    },
+    "Math.pow()": {
+        "prefix": "pow",
+        "body": "Math.pow(${1:float x}, ${2:float y})${0}",
+        "description": "Math"
+    },
+    "Math.RadiansToDegrees()": {
+        "prefix": "radianstodegrees",
+        "body": "Math.RadiansToDegrees(${1:float afRadians})${0}",
+        "description": "Math"
+    },
+    "Math.sin()": {
+        "prefix": "sin",
+        "body": "Math.sin(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.sqrt()": {
+        "prefix": "sqrt",
+        "body": "Math.sqrt(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.tan()": {
+        "prefix": "tan",
+        "body": "Math.tan(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.LeftShift()": {
+        "prefix": "leftshift",
+        "body": "Math.LeftShift(${1:int aiValue}, ${2:int aiShiftBy})${0}",
+        "description": "Math"
+    },
+    "Math.RightShift()": {
+        "prefix": "rightshift",
+        "body": "Math.RightShift(${1:int aiValue}, ${2:int aiShiftBy})${0}",
+        "description": "Math"
+    },
+    "Math.LogicalAnd()": {
+        "prefix": "logicaland",
+        "body": "Math.LogicalAnd(${1:int aiArg1}, ${2:int aiArg2})${0}",
+        "description": "Math"
+    },
+    "Math.LogicalOr()": {
+        "prefix": "logicalor",
+        "body": "Math.LogicalOr(${1:int aiArg1}, ${2:int aiArg2})${0}",
+        "description": "Math"
+    },
+    "Math.LogicalXor()": {
+        "prefix": "logicalxor",
+        "body": "Math.LogicalXor(${1:int aiValue}, ${2:int aiArg2})${0}",
+        "description": "Math"
+    },
+    "Math.LogicalNot()": {
+        "prefix": "logicalnot",
+        "body": "Math.LogicalNot(${1:int aiArg1}, ${2:int aiArg2})${0}",
+        "description": "Math"
+    },
+    "Math.Log()": {
+        "prefix": "log",
+        "body": "Math.Log(${1:float afValue})${0}",
+        "description": "Math"
+    },
+    "Math.Exp()": {
+        "prefix": "exp",
+        "body": "Math.Exp(${1:float afValue})${0}",
+        "description": "Math"
+    }
 }

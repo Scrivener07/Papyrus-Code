@@ -1,38 +1,32 @@
 {
-	"gettype": {
-		"prefix": "gettype",
-		"body": "GetType()${0}",
-		"description": "HeadPart",
-		"scope": "source.papyrus"
-	},
-	"getextraparts": {
-		"prefix": "getextraparts",
-		"body": "GetExtraParts()${0}",
-		"description": "HeadPart",
-		"scope": "source.papyrus"
-	},
-	"hasextrapart": {
-		"prefix": "hasextrapart",
-		"body": "HasExtraPart(${1:HeadPart akHeadPart})${0}",
-		"description": "HeadPart",
-		"scope": "source.papyrus"
-	},
-	"isextrapart": {
-		"prefix": "isextrapart",
-		"body": "IsExtraPart()${0}",
-		"description": "HeadPart",
-		"scope": "source.papyrus"
-	},
-	"getvalidraces": {
-		"prefix": "getvalidraces",
-		"body": "GetValidRaces()${0}",
-		"description": "HeadPart",
-		"scope": "source.papyrus"
-	},
-	"setvalidraces": {
-		"prefix": "setvalidraces",
-		"body": "SetValidRaces(${1:FormList akRaces})${0}",
-		"description": "HeadPart",
-		"scope": "source.papyrus"
-	}
+    "HeadPart.GetType()": {
+        "prefix": "gettype",
+        "body": "GetType()${0}",
+        "description": "HeadPart"
+    },
+    "HeadPart.GetExtraParts()": {
+        "prefix": "getextraparts",
+        "body": "GetExtraParts()${0}",
+        "description": "HeadPart"
+    },
+    "HeadPart.HasExtraPart()": {
+        "prefix": "hasextrapart",
+        "body": "HasExtraPart(${1:HeadPart akHeadPart})${0}",
+        "description": "HeadPart"
+    },
+    "HeadPart.IsExtraPart()": {
+        "prefix": "isextrapart",
+        "body": "IsExtraPart()${0}",
+        "description": "HeadPart"
+    },
+    "HeadPart.GetValidRaces()": {
+        "prefix": "getvalidraces",
+        "body": "GetValidRaces()${0}",
+        "description": "HeadPart"
+    },
+    "HeadPart.SetValidRaces()": {
+        "prefix": "setvalidraces",
+        "body": "SetValidRaces(${1:FormList akRaces})${0}",
+        "description": "HeadPart"
+    }
 }

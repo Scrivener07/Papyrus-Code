@@ -1,8 +1,7 @@
 {
-	"isradio": {
-		"prefix": "isradio",
-		"body": "IsRadio()${0}",
-		"description": "Activator",
-		"scope": "source.papyrus"
-	}
+    "Activator.IsRadio()": {
+        "prefix": "isradio",
+        "body": "IsRadio()${0}",
+        "description": "Activator"
+    }
 }

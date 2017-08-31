@@ -1,26 +1,22 @@
 {
-	"getscrapitem": {
-		"prefix": "getscrapitem",
-		"body": "GetScrapItem()${0}",
-		"description": "Component",
-		"scope": "source.papyrus"
-	},
-	"setscrapitem": {
-		"prefix": "setscrapitem",
-		"body": "SetScrapItem(${1:MiscObject akMisc})${0}",
-		"description": "Component",
-		"scope": "source.papyrus"
-	},
-	"getscrapscalar": {
-		"prefix": "getscrapscalar",
-		"body": "GetScrapScalar()${0}",
-		"description": "Component",
-		"scope": "source.papyrus"
-	},
-	"setscrapscalar": {
-		"prefix": "setscrapscalar",
-		"body": "SetScrapScalar(${1:GlobalVariable akGlobal})${0}",
-		"description": "Component",
-		"scope": "source.papyrus"
-	}
+    "Component.GetScrapItem()": {
+        "prefix": "getscrapitem",
+        "body": "GetScrapItem()${0}",
+        "description": "Component"
+    },
+    "Component.SetScrapItem()": {
+        "prefix": "setscrapitem",
+        "body": "SetScrapItem(${1:MiscObject akMisc})${0}",
+        "description": "Component"
+    },
+    "Component.GetScrapScalar()": {
+        "prefix": "getscrapscalar",
+        "body": "GetScrapScalar()${0}",
+        "description": "Component"
+    },
+    "Component.SetScrapScalar()": {
+        "prefix": "setscrapscalar",
+        "body": "SetScrapScalar(${1:GlobalVariable akGlobal})${0}",
+        "description": "Component"
+    }
 }

@@ -1,32 +1,27 @@
 {
-	"apply": {
-		"prefix": "apply",
-		"body": "Apply(${1:float afStrength = 1.0})${0}",
-		"description": "ImageSpaceModifier",
-		"scope": "source.papyrus"
-	},
-	"applycrossfade": {
-		"prefix": "applycrossfade",
-		"body": "ApplyCrossFade(${1:float afFadeDuration = 1.0})${0}",
-		"description": "ImageSpaceModifier",
-		"scope": "source.papyrus"
-	},
-	"popto": {
-		"prefix": "popto",
-		"body": "PopTo(${1:ImageSpaceModifier akNewModifier}, ${2:float afStrength = 1.0})${0}",
-		"description": "ImageSpaceModifier",
-		"scope": "source.papyrus"
-	},
-	"remove": {
-		"prefix": "remove",
-		"body": "Remove()${0}",
-		"description": "ImageSpaceModifier",
-		"scope": "source.papyrus"
-	},
-	"removecrossfade": {
-		"prefix": "removecrossfade",
-		"body": "ImageSpaceModifier.RemoveCrossFade(${1:float afFadeDuration = 1.0})${0}",
-		"description": "ImageSpaceModifier",
-		"scope": "source.papyrus"
-	}
+    "ImageSpaceModifier.Apply()": {
+        "prefix": "apply",
+        "body": "Apply(${1:float afStrength = 1.0})${0}",
+        "description": "ImageSpaceModifier"
+    },
+    "ImageSpaceModifier.ApplyCrossFade()": {
+        "prefix": "applycrossfade",
+        "body": "ApplyCrossFade(${1:float afFadeDuration = 1.0})${0}",
+        "description": "ImageSpaceModifier"
+    },
+    "ImageSpaceModifier.PopTo()": {
+        "prefix": "popto",
+        "body": "PopTo(${1:ImageSpaceModifier akNewModifier}, ${2:float afStrength = 1.0})${0}",
+        "description": "ImageSpaceModifier"
+    },
+    "ImageSpaceModifier.Remove()": {
+        "prefix": "remove",
+        "body": "Remove()${0}",
+        "description": "ImageSpaceModifier"
+    },
+    "ImageSpaceModifier.RemoveCrossFade()": {
+        "prefix": "removecrossfade",
+        "body": "ImageSpaceModifier.RemoveCrossFade(${1:float afFadeDuration = 1.0})${0}",
+        "description": "ImageSpaceModifier"
+    }
 }

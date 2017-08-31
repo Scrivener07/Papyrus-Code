@@ -1,14 +1,12 @@
 {
-	"add": {
-		"prefix": "add",
-		"body": "Add()${0}",
-		"description": "MusicType",
-		"scope": "source.papyrus"
-	},
-	"remove": {
-		"prefix": "remove",
-		"body": "Remove()${0}",
-		"description": "MusicType",
-		"scope": "source.papyrus"
-	}
+    "MusicType.Add()": {
+        "prefix": "add",
+        "body": "Add()${0}",
+        "description": "MusicType"
+    },
+    "MusicType.Remove()": {
+        "prefix": "remove",
+        "body": "Remove()${0}",
+        "description": "MusicType"
+    }
 }

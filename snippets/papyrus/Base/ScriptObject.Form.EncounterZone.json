@@ -1,92 +1,77 @@
 {
-	"countactors": {
-		"prefix": "countactors",
-		"body": "CountActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"getactors": {
-		"prefix": "getactors",
-		"body": "GetActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"reset": {
-		"prefix": "reset",
-		"body": "Reset()${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"getlocation": {
-		"prefix": "getlocation",
-		"body": "GetLocation()${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"setlocation": {
-		"prefix": "setlocation",
-		"body": "SetLocation(${1:Location akLocation})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"getrank": {
-		"prefix": "getrank",
-		"body": "GetRank()${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"setrank": {
-		"prefix": "setrank",
-		"body": "SetRank(${1:int aiRank})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"getminlevel": {
-		"prefix": "getminlevel",
-		"body": "GetMinLevel()${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"setminlevel": {
-		"prefix": "setminlevel",
-		"body": "SetMinLevel(${1:int aiLevel})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"getmaxlevel": {
-		"prefix": "getmaxlevel",
-		"body": "GetMaxLevel()${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"setmaxlevel": {
-		"prefix": "setmaxlevel",
-		"body": "SetMaxLevel(${1:int aiLevel})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"isneverresetable": {
-		"prefix": "isneverresetable",
-		"body": "IsNeverResetable()${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"setneverresetable": {
-		"prefix": "setneverresetable",
-		"body": "SetNeverResetable(${1:bool abResetable})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"isworkshop": {
-		"prefix": "isworkshop",
-		"body": "IsWorkshop()${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
-	"setworkshop": {
-		"prefix": "setworkshop",
-		"body": "SetWorkshop(${1:bool abWorkshop})${0}",
-		"description": "EncounterZone",
-		"scope": "source.papyrus"
-	},
+    "EncounterZone.CountActors()": {
+        "prefix": "countactors",
+        "body": "CountActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.GetActors()": {
+        "prefix": "getactors",
+        "body": "GetActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.Reset()": {
+        "prefix": "reset",
+        "body": "Reset()${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.GetLocation()": {
+        "prefix": "getlocation",
+        "body": "GetLocation()${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.SetLocation()": {
+        "prefix": "setlocation",
+        "body": "SetLocation(${1:Location akLocation})${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.GetRank()": {
+        "prefix": "getrank",
+        "body": "GetRank()${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.SetRank()": {
+        "prefix": "setrank",
+        "body": "SetRank(${1:int aiRank})${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.GetMinLevel()": {
+        "prefix": "getminlevel",
+        "body": "GetMinLevel()${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.SetMinLevel()": {
+        "prefix": "setminlevel",
+        "body": "SetMinLevel(${1:int aiLevel})${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.GetMaxLevel()": {
+        "prefix": "getmaxlevel",
+        "body": "GetMaxLevel()${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.SetMaxLevel()": {
+        "prefix": "setmaxlevel",
+        "body": "SetMaxLevel(${1:int aiLevel})${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.IsNeverResetable()": {
+        "prefix": "isneverresetable",
+        "body": "IsNeverResetable()${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.SetNeverResetable()": {
+        "prefix": "setneverresetable",
+        "body": "SetNeverResetable(${1:bool abResetable})${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.IsWorkshop()": {
+        "prefix": "isworkshop",
+        "body": "IsWorkshop()${0}",
+        "description": "EncounterZone"
+    },
+    "EncounterZone.SetWorkshop()": {
+        "prefix": "setworkshop",
+        "body": "SetWorkshop(${1:bool abWorkshop})${0}",
+        "description": "EncounterZone"
+    }
 }

@@ -1,723 +1,607 @@
 {
-	"addachievement": {
-		"prefix": "addachievement",
-		"body": "Game.AddAchievement(${1:int aiAchievementID})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"addperkpoints": {
-		"prefix": "addperkpoints",
-		"body": "Game.AddPerkPoints(${1:int aiPerkPoints})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"advanceskill": {
-		"prefix": "advanceskill",
-		"body": "Game.AdvanceSkill(${1:string asSkillName}, ${2:float afMagnitude})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"clearprison": {
-		"prefix": "clearprison",
-		"body": "Game.ClearPrison()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"cleartempeffects": {
-		"prefix": "cleartempeffects",
-		"body": "Game.ClearTempEffects()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"enablepipboyhdrmask": {
-		"prefix": "enablepipboyhdrmask",
-		"body": "Game.EnablePipboyHDRMask(${1:bool abEnable = true})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"error": {
-		"prefix": "error",
-		"body": "Game.Error(${1:string asMessage})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"fadeoutgame": {
-		"prefix": "fadeoutgame",
-		"body": "Game.FadeOutGame(${1:bool abFadingOut}, ${2:bool abBlackFade}, ${3:float afSecsBeforeFade}, ${4:float afFadeDuration}, ${5:bool abStayFaded=false})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"fasttravel": {
-		"prefix": "fasttravel",
-		"body": "Game.FastTravel(${1:ObjectReference akDestination})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findclosestactor": {
-		"prefix": "findclosestactor",
-		"body": "Game.FindClosestActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findclosestactorfromref": {
-		"prefix": "findclosestactorfromref",
-		"body": "Game.FindClosestActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findclosestreferenceofanytypeinlist": {
-		"prefix": "findclosestreferenceofanytypeinlist",
-		"body": "Game.FindClosestReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findclosestreferenceofanytypeinlistfromref": {
-		"prefix": "findclosestreferenceofanytypeinlistfromref",
-		"body": "Game.FindClosestReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findclosestreferenceoftype": {
-		"prefix": "findclosestreferenceoftype",
-		"body": "Game.FindClosestReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findclosestreferenceoftypefromref": {
-		"prefix": "findclosestreferenceoftypefromref",
-		"body": "Game.FindClosestReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findrandomactor": {
-		"prefix": "findrandomactor",
-		"body": "Game.FindRandomActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findrandomactorfromref": {
-		"prefix": "findrandomactorfromref",
-		"body": "Game.FindRandomActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findrandomreferenceofanytypeinlist": {
-		"prefix": "findrandomreferenceofanytypeinlist",
-		"body": "Game.FindRandomReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findrandomreferenceofanytypeinlistfromref": {
-		"prefix": "findrandomreferenceofanytypeinlistfromref",
-		"body": "Game.FindRandomReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findrandomreferenceoftype": {
-		"prefix": "findrandomreferenceoftype",
-		"body": "Game.FindRandomReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"findrandomreferenceoftypefromref": {
-		"prefix": "findrandomreferenceoftypefromref",
-		"body": "Game.FindRandomReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"forcedisablessrgodraysdirlight": {
-		"prefix": "forcedisablessrgodraysdirlight",
-		"body": "Game.ForceDisableSSRGodraysDirLight(${1:bool abDisableSSR}, ${2:bool abDisableGodrays}, ${3:bool abDisableDirLight})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"forcefirstperson": {
-		"prefix": "forcefirstperson",
-		"body": "Game.ForceFirstPerson()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"forcethirdperson": {
-		"prefix": "forcethirdperson",
-		"body": "Game.ForceThirdPerson()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getaggressionav": {
-		"prefix": "getaggressionav",
-		"body": "Game.GetAggressionAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getagilityav": {
-		"prefix": "getagilityav",
-		"body": "Game.GetAgilityAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getcaps": {
-		"prefix": "getcaps",
-		"body": "Game.GetCaps()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getcharismaav": {
-		"prefix": "getcharismaav",
-		"body": "Game.GetCharismaAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getconfidenceav": {
-		"prefix": "getconfidenceav",
-		"body": "Game.GetConfidenceAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getdifficulty": {
-		"prefix": "getdifficulty",
-		"body": "Game.GetDifficulty()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getenduranceav": {
-		"prefix": "getenduranceav",
-		"body": "Game.GetEnduranceAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getform": {
-		"prefix": "getform",
-		"body": "Game.GetForm(${1:int aiFormID})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getformfromfile": {
-		"prefix": "getformfromfile",
-		"body": "Game.GetFormFromFile(${1:int aiFormID}, ${2:string asFilename})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getgamesettingfloat": {
-		"prefix": "getgamesettingfloat",
-		"body": "Game.GetGameSettingFloat(${1:string asGameSetting})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getgamesettingint": {
-		"prefix": "getgamesettingint",
-		"body": "Game.GetGameSettingInt(${1:string asGameSetting})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getgamesettingstring": {
-		"prefix": "getgamesettingstring",
-		"body": "Game.GetGameSettingString(${1:string asGameSetting})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"gethealthav": {
-		"prefix": "gethealthav",
-		"body": "Game.GetHealthAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getintelligenceav": {
-		"prefix": "getintelligenceav",
-		"body": "Game.GetIntelligenceAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getluckav": {
-		"prefix": "getluckav",
-		"body": "Game.GetLuckAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getperceptionav": {
-		"prefix": "getperceptionav",
-		"body": "Game.GetPerceptionAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getplayer": {
-		"prefix": "getplayer",
-		"body": "Game.GetPlayer()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getplayerfollowers": {
-		"prefix": "getplayerfollowers",
-		"body": "Game.GetPlayerFollowers()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getplayergrabbedref": {
-		"prefix": "getplayergrabbedref",
-		"body": "Game.GetPlayerGrabbedRef()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getplayerlevel": {
-		"prefix": "getplayerlevel",
-		"body": "Game.GetPlayerLevel()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getplayerradiofrequency": {
-		"prefix": "getplayerradiofrequency",
-		"body": "Game.GetPlayerRadioFrequency()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getplayerslastriddenhorse": {
-		"prefix": "getplayerslastriddenhorse",
-		"body": "Game.GetPlayersLastRiddenHorse()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getrealhourspassed": {
-		"prefix": "getrealhourspassed",
-		"body": "Game.GetRealHoursPassed()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getstrengthav": {
-		"prefix": "getstrengthav",
-		"body": "Game.GetStrengthAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getsuspiciousav": {
-		"prefix": "getsuspiciousav",
-		"body": "Game.GetSuspiciousAV()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getxpforlevel": {
-		"prefix": "getxpforlevel",
-		"body": "Game.GetXPForLevel(${1:int auiLevel})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"giveplayercaps": {
-		"prefix": "giveplayercaps",
-		"body": "Game.GivePlayerCaps(${1:int nCaps})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"hidetitlesequencemenu": {
-		"prefix": "hidetitlesequencemenu",
-		"body": "Game.HideTitleSequenceMenu()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"incrementskill": {
-		"prefix": "incrementskill",
-		"body": "Game.IncrementSkill(${1:ActorValue akActorValue}, ${2:int aiCount = 1})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"incrementstat": {
-		"prefix": "incrementstat",
-		"body": "Game.IncrementStat(${1:string asStatName}, ${2:int aiModAmount = 1})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"initializemarkerdistances": {
-		"prefix": "initializemarkerdistances",
-		"body": "Game.InitializeMarkerDistances()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isactivatecontrolsenabled": {
-		"prefix": "isactivatecontrolsenabled",
-		"body": "Game.IsActivateControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"iscamswitchcontrolsenabled": {
-		"prefix": "iscamswitchcontrolsenabled",
-		"body": "Game.IsCamSwitchControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isfasttravelcontrolsenabled": {
-		"prefix": "isfasttravelcontrolsenabled",
-		"body": "Game.IsFastTravelControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isfasttravelenabled": {
-		"prefix": "isfasttravelenabled",
-		"body": "Game.IsFastTravelEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isfavoritescontrolsenabled": {
-		"prefix": "isfavoritescontrolsenabled",
-		"body": "Game.IsFavoritesControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isfightingcontrolsenabled": {
-		"prefix": "isfightingcontrolsenabled",
-		"body": "Game.IsFightingControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isjournalcontrolsenabled": {
-		"prefix": "isjournalcontrolsenabled",
-		"body": "Game.IsJournalControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"islookingcontrolsenabled": {
-		"prefix": "islookingcontrolsenabled",
-		"body": "Game.IsLookingControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"ismenucontrolsenabled": {
-		"prefix": "ismenucontrolsenabled",
-		"body": "Game.IsMenuControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"ismovementcontrolsenabled": {
-		"prefix": "ismovementcontrolsenabled",
-		"body": "Game.IsMovementControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isplayerinradiorange": {
-		"prefix": "isplayerinradiorange",
-		"body": "Game.IsPlayerInRadioRange(${1:float afFrequency})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isplayerlistening": {
-		"prefix": "isplayerlistening",
-		"body": "Game.IsPlayerListening(${1:float afFrequency})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isplayerradioon": {
-		"prefix": "isplayerradioon",
-		"body": "Game.IsPlayerRadioOn()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isplugininstalled": {
-		"prefix": "isplugininstalled",
-		"body": "Game.IsPluginInstalled(${1:string asName})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"issneakingcontrolsenabled": {
-		"prefix": "issneakingcontrolsenabled",
-		"body": "Game.IsSneakingControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isvatscontrolsenabled": {
-		"prefix": "isvatscontrolsenabled",
-		"body": "Game.IsVATSControlsEnabled()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"isvatsplaybackactive": {
-		"prefix": "isvatsplaybackactive",
-		"body": "Game.IsVATSPlaybackActive()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"passtime": {
-		"prefix": "passtime",
-		"body": "Game.PassTime(${1:int aiHours})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"playbink": {
-		"prefix": "playbink",
-		"body": "Game.PlayBink(${1:string asFileName}, ${2:bool abInterruptible = false}, ${3:bool abMuteAudio = true}, ${4:bool abMuteMusic = true}, ${5:bool abLetterbox = true}, ${6:bool abIsNewGameBink = false})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"playeventcamera": {
-		"prefix": "playeventcamera",
-		"body": "Game.PlayEventCamera(${1:CameraShot akCamera}, ${2:ObjectReference akRef})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"precachechargen": {
-		"prefix": "precachechargen",
-		"body": "Game.PrecacheCharGen()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"precachechargenclear": {
-		"prefix": "precachechargenclear",
-		"body": "Game.PrecacheCharGenClear()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"querystat": {
-		"prefix": "querystat",
-		"body": "Game.QueryStat(${1:string asStat})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"quittomainmenu": {
-		"prefix": "quittomainmenu",
-		"body": "Game.QuitToMainMenu()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"removeplayercaps": {
-		"prefix": "removeplayercaps",
-		"body": "Game.RemovePlayerCaps(${1:int nCaps})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"requestautosave": {
-		"prefix": "requestautosave",
-		"body": "Game.RequestAutoSave()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"requestmodel": {
-		"prefix": "requestmodel",
-		"body": "Game.RequestModel(${1:string asModelName})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"requestsave": {
-		"prefix": "requestsave",
-		"body": "Game.RequestSave()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"rewardplayerxp": {
-		"prefix": "rewardplayerxp",
-		"body": "Game.RewardPlayerXP(${1:int auiXPAmount}, ${2:bool abDirect = false})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"servetime": {
-		"prefix": "servetime",
-		"body": "Game.ServeTime()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setcameratarget": {
-		"prefix": "setcameratarget",
-		"body": "Game.SetCameraTarget(${1:Actor arTarget})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setchargenhudmode": {
-		"prefix": "setchargenhudmode",
-		"body": "Game.SetCharGenHUDMode(${1:int aiCGHUDMode})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setinchargen": {
-		"prefix": "setinchargen",
-		"body": "Game.SetInChargen(${1:bool abDisableSaving}, ${2:bool abDisableWaiting}, ${3:bool abShowControlsDisabledMessage})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setinsidememoryhudmode": {
-		"prefix": "setinsidememoryhudmode",
-		"body": "Game.SetInsideMemoryHUDMode(${1:bool aInsideMemory})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setplayeraidriven": {
-		"prefix": "setplayeraidriven",
-		"body": "Game.SetPlayerAIDriven(${1:bool abAIDriven = true})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setplayeronelevator": {
-		"prefix": "setplayeronelevator",
-		"body": "Game.SetPlayerOnElevator(${1:bool abOnElevator= true})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setplayerradiofrequency": {
-		"prefix": "setplayerradiofrequency",
-		"body": "Game.SetPlayerRadioFrequency(${1:float afFrequency})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setplayerreportcrime": {
-		"prefix": "setplayerreportcrime",
-		"body": "Game.SetPlayerReportCrime(${1:bool abReportCrime = true})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setsittingrotation": {
-		"prefix": "setsittingrotation",
-		"body": "Game.SetSittingRotation(${1:float afValue})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"shakecamera": {
-		"prefix": "shakecamera",
-		"body": "Game.ShakeCamera(${1:ObjectReference akSource = None}, ${2:float afStrength = 0.5}, ${3:float afDuration = 0.0})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"shakecontroller": {
-		"prefix": "shakecontroller",
-		"body": "Game.ShakeController(${1:float afLeftStrength}, ${2:float afRightStrength}, ${3:float afDuration})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showallmapmarkers": {
-		"prefix": "showallmapmarkers",
-		"body": "Game.ShowAllMapMarkers()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showfatiguewarningonhud": {
-		"prefix": "showfatiguewarningonhud",
-		"body": "Game.ShowFatigueWarningOnHUD()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showfirstpersongeometry": {
-		"prefix": "showfirstpersongeometry",
-		"body": "Game.ShowFirstPersonGeometry(${1:bool abShow = True})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showperkvaultboyonhud": {
-		"prefix": "showperkvaultboyonhud",
-		"body": "Game.ShowPerkVaultBoyOnHUD(${1:string aVaultBoySwf}, ${2:Sound aSoundDescriptor = None})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showpipboybootsequence": {
-		"prefix": "showpipboybootsequence",
-		"body": "Game.ShowPipboyBootSequence(${1:string asAnimationName})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showpipboyplugin": {
-		"prefix": "showpipboyplugin",
-		"body": "Game.ShowPipboyPlugin()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showracemenu": {
-		"prefix": "showracemenu",
-		"body": "Game.ShowRaceMenu(${1:ObjectReference akMenuTarget = None}, ${2:int uiMode = 0}, ${3:ObjectReference akMenuSpouseFemale = None}, ${4:ObjectReference akMenuSpouseMale = None}, ${5:ObjectReference akVendor = None})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showspecialmenu": {
-		"prefix": "showspecialmenu",
-		"body": "Game.ShowSPECIALMenu(${1:int aiPointPool}, ${2:bool abStatsLocked})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showtitlesequencemenu": {
-		"prefix": "showtitlesequencemenu",
-		"body": "Game.ShowTitleSequenceMenu()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"showtrainingmenu": {
-		"prefix": "showtrainingmenu",
-		"body": "Game.ShowTrainingMenu(${1:Actor aActor})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"startdialoguecameraorcenterontarget": {
-		"prefix": "startdialoguecameraorcenterontarget",
-		"body": "Game.StartDialogueCameraOrCenterOnTarget(${1:ObjectReference akCameraTarget = None})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"starttitlesequence": {
-		"prefix": "starttitlesequence",
-		"body": "Game.StartTitleSequence(${1:string asSequenceName})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"stopdialoguecamera": {
-		"prefix": "stopdialoguecamera",
-		"body": "Game.StopDialogueCamera(${1:bool abConsiderResume = false}, ${2:bool abSwitchingTo1stP = false})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"triggerscreenblood": {
-		"prefix": "triggerscreenblood",
-		"body": "Game.TriggerScreenBlood(${1:int aiValue})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"turnplayerradioon": {
-		"prefix": "turnplayerradioon",
-		"body": "Game.TurnPlayerRadioOn(${1:bool abRadioOn = true})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"usinggamepad": {
-		"prefix": "usinggamepad",
-		"body": "Game.UsingGamepad()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"warning": {
-		"prefix": "warning",
-		"body": "Game.Warning(${1:string asMessage})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getcurrentconsoleref": {
-		"prefix": "getcurrentconsoleref",
-		"body": "Game.GetCurrentConsoleRef()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getinstalledplugins": {
-		"prefix": "getinstalledplugins",
-		"body": "Game.GetInstalledPlugins()${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"getplugindependencies": {
-		"prefix": "getplugindependencies",
-		"body": "Game.GetPluginDependencies(${1:string asPlugin})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setgamesettingfloat": {
-		"prefix": "setgamesettingfloat",
-		"body": "Game.SetGameSettingFloat(${1:string asSetting}, ${2:float afValue})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setgamesettingint": {
-		"prefix": "setgamesettingint",
-		"body": "Game.SetGameSettingInt(${1:string asSetting}, ${2:int aiValue})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setgamesettingbool": {
-		"prefix": "setgamesettingbool",
-		"body": "Game.SetGameSettingBool(${1:string asSetting}, ${2:bool abValue})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-	"setgamesettingstring": {
-		"prefix": "setgamesettingstring",
-		"body": "Game.SetGameSettingString(${1:string asSetting}, ${2:string asValue})${0}",
-		"description": "Game",
-		"scope": "source.papyrus"
-	},
-
+    "Game.AddAchievement()": {
+        "prefix": "addachievement",
+        "body": "Game.AddAchievement(${1:int aiAchievementID})${0}",
+        "description": "Game"
+    },
+    "Game.AddPerkPoints()": {
+        "prefix": "addperkpoints",
+        "body": "Game.AddPerkPoints(${1:int aiPerkPoints})${0}",
+        "description": "Game"
+    },
+    "Game.AdvanceSkill()": {
+        "prefix": "advanceskill",
+        "body": "Game.AdvanceSkill(${1:string asSkillName}, ${2:float afMagnitude})${0}",
+        "description": "Game"
+    },
+    "Game.ClearPrison()": {
+        "prefix": "clearprison",
+        "body": "Game.ClearPrison()${0}",
+        "description": "Game"
+    },
+    "Game.ClearTempEffects()": {
+        "prefix": "cleartempeffects",
+        "body": "Game.ClearTempEffects()${0}",
+        "description": "Game"
+    },
+    "Game.EnablePipboyHDRMask()": {
+        "prefix": "enablepipboyhdrmask",
+        "body": "Game.EnablePipboyHDRMask(${1:bool abEnable = true})${0}",
+        "description": "Game"
+    },
+    "Game.Error()": {
+        "prefix": "error",
+        "body": "Game.Error(${1:string asMessage})${0}",
+        "description": "Game"
+    },
+    "Game.FadeOutGame()": {
+        "prefix": "fadeoutgame",
+        "body": "Game.FadeOutGame(${1:bool abFadingOut}, ${2:bool abBlackFade}, ${3:float afSecsBeforeFade}, ${4:float afFadeDuration}, ${5:bool abStayFaded=false})${0}",
+        "description": "Game"
+    },
+    "Game.FastTravel()": {
+        "prefix": "fasttravel",
+        "body": "Game.FastTravel(${1:ObjectReference akDestination})${0}",
+        "description": "Game"
+    },
+    "Game.FindClosestActor()": {
+        "prefix": "findclosestactor",
+        "body": "Game.FindClosestActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindClosestActorFromRef()": {
+        "prefix": "findclosestactorfromref",
+        "body": "Game.FindClosestActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindClosestReferenceOfAnyTypeInList()": {
+        "prefix": "findclosestreferenceofanytypeinlist",
+        "body": "Game.FindClosestReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindClosestReferenceOfAnyTypeInListFromRef()": {
+        "prefix": "findclosestreferenceofanytypeinlistfromref",
+        "body": "Game.FindClosestReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindClosestReferenceOfType()": {
+        "prefix": "findclosestreferenceoftype",
+        "body": "Game.FindClosestReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindClosestReferenceOfTypeFromRef()": {
+        "prefix": "findclosestreferenceoftypefromref",
+        "body": "Game.FindClosestReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindRandomActor()": {
+        "prefix": "findrandomactor",
+        "body": "Game.FindRandomActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindRandomActorFromRef()": {
+        "prefix": "findrandomactorfromref",
+        "body": "Game.FindRandomActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindRandomReferenceOfAnyTypeInList()": {
+        "prefix": "findrandomreferenceofanytypeinlist",
+        "body": "Game.FindRandomReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindRandomReferenceOfAnyTypeInListFromRef()": {
+        "prefix": "findrandomreferenceofanytypeinlistfromref",
+        "body": "Game.FindRandomReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindRandomReferenceOfType()": {
+        "prefix": "findrandomreferenceoftype",
+        "body": "Game.FindRandomReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.FindRandomReferenceOfTypeFromRef()": {
+        "prefix": "findrandomreferenceoftypefromref",
+        "body": "Game.FindRandomReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
+        "description": "Game"
+    },
+    "Game.ForceDisableSSRGodraysDirLight()": {
+        "prefix": "forcedisablessrgodraysdirlight",
+        "body": "Game.ForceDisableSSRGodraysDirLight(${1:bool abDisableSSR}, ${2:bool abDisableGodrays}, ${3:bool abDisableDirLight})${0}",
+        "description": "Game"
+    },
+    "Game.ForceFirstPerson()": {
+        "prefix": "forcefirstperson",
+        "body": "Game.ForceFirstPerson()${0}",
+        "description": "Game"
+    },
+    "Game.ForceThirdPerson()": {
+        "prefix": "forcethirdperson",
+        "body": "Game.ForceThirdPerson()${0}",
+        "description": "Game"
+    },
+    "Game.GetAggressionAV()": {
+        "prefix": "getaggressionav",
+        "body": "Game.GetAggressionAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetAgilityAV()": {
+        "prefix": "getagilityav",
+        "body": "Game.GetAgilityAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetCaps()": {
+        "prefix": "getcaps",
+        "body": "Game.GetCaps()${0}",
+        "description": "Game"
+    },
+    "Game.GetCharismaAV()": {
+        "prefix": "getcharismaav",
+        "body": "Game.GetCharismaAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetConfidenceAV()": {
+        "prefix": "getconfidenceav",
+        "body": "Game.GetConfidenceAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetDifficulty()": {
+        "prefix": "getdifficulty",
+        "body": "Game.GetDifficulty()${0}",
+        "description": "Game"
+    },
+    "Game.GetEnduranceAV()": {
+        "prefix": "getenduranceav",
+        "body": "Game.GetEnduranceAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetForm()": {
+        "prefix": "getform",
+        "body": "Game.GetForm(${1:int aiFormID})${0}",
+        "description": "Game"
+    },
+    "Game.GetFormFromFile()": {
+        "prefix": "getformfromfile",
+        "body": "Game.GetFormFromFile(${1:int aiFormID}, ${2:string asFilename})${0}",
+        "description": "Game"
+    },
+    "Game.GetGameSettingFloat()": {
+        "prefix": "getgamesettingfloat",
+        "body": "Game.GetGameSettingFloat(${1:string asGameSetting})${0}",
+        "description": "Game"
+    },
+    "Game.GetGameSettingInt()": {
+        "prefix": "getgamesettingint",
+        "body": "Game.GetGameSettingInt(${1:string asGameSetting})${0}",
+        "description": "Game"
+    },
+    "Game.GetGameSettingString()": {
+        "prefix": "getgamesettingstring",
+        "body": "Game.GetGameSettingString(${1:string asGameSetting})${0}",
+        "description": "Game"
+    },
+    "Game.GetHealthAV()": {
+        "prefix": "gethealthav",
+        "body": "Game.GetHealthAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetIntelligenceAV()": {
+        "prefix": "getintelligenceav",
+        "body": "Game.GetIntelligenceAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetLuckAV()": {
+        "prefix": "getluckav",
+        "body": "Game.GetLuckAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetPerceptionAV()": {
+        "prefix": "getperceptionav",
+        "body": "Game.GetPerceptionAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetPlayer()": {
+        "prefix": "getplayer",
+        "body": "Game.GetPlayer()${0}",
+        "description": "Game"
+    },
+    "Game.GetPlayerFollowers()": {
+        "prefix": "getplayerfollowers",
+        "body": "Game.GetPlayerFollowers()${0}",
+        "description": "Game"
+    },
+    "Game.GetPlayerGrabbedRef()": {
+        "prefix": "getplayergrabbedref",
+        "body": "Game.GetPlayerGrabbedRef()${0}",
+        "description": "Game"
+    },
+    "Game.GetPlayerLevel()": {
+        "prefix": "getplayerlevel",
+        "body": "Game.GetPlayerLevel()${0}",
+        "description": "Game"
+    },
+    "Game.GetPlayerRadioFrequency()": {
+        "prefix": "getplayerradiofrequency",
+        "body": "Game.GetPlayerRadioFrequency()${0}",
+        "description": "Game"
+    },
+    "Game.GetPlayersLastRiddenHorse()": {
+        "prefix": "getplayerslastriddenhorse",
+        "body": "Game.GetPlayersLastRiddenHorse()${0}",
+        "description": "Game"
+    },
+    "Game.GetRealHoursPassed()": {
+        "prefix": "getrealhourspassed",
+        "body": "Game.GetRealHoursPassed()${0}",
+        "description": "Game"
+    },
+    "Game.GetStrengthAV()": {
+        "prefix": "getstrengthav",
+        "body": "Game.GetStrengthAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetSuspiciousAV()": {
+        "prefix": "getsuspiciousav",
+        "body": "Game.GetSuspiciousAV()${0}",
+        "description": "Game"
+    },
+    "Game.GetXPForLevel()": {
+        "prefix": "getxpforlevel",
+        "body": "Game.GetXPForLevel(${1:int auiLevel})${0}",
+        "description": "Game"
+    },
+    "Game.GivePlayerCaps()": {
+        "prefix": "giveplayercaps",
+        "body": "Game.GivePlayerCaps(${1:int nCaps})${0}",
+        "description": "Game"
+    },
+    "Game.HideTitleSequenceMenu()": {
+        "prefix": "hidetitlesequencemenu",
+        "body": "Game.HideTitleSequenceMenu()${0}",
+        "description": "Game"
+    },
+    "Game.IncrementSkill()": {
+        "prefix": "incrementskill",
+        "body": "Game.IncrementSkill(${1:ActorValue akActorValue}, ${2:int aiCount = 1})${0}",
+        "description": "Game"
+    },
+    "Game.IncrementStat()": {
+        "prefix": "incrementstat",
+        "body": "Game.IncrementStat(${1:string asStatName}, ${2:int aiModAmount = 1})${0}",
+        "description": "Game"
+    },
+    "Game.InitializeMarkerDistances()": {
+        "prefix": "initializemarkerdistances",
+        "body": "Game.InitializeMarkerDistances()${0}",
+        "description": "Game"
+    },
+    "Game.IsActivateControlsEnabled()": {
+        "prefix": "isactivatecontrolsenabled",
+        "body": "Game.IsActivateControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsCamSwitchControlsEnabled()": {
+        "prefix": "iscamswitchcontrolsenabled",
+        "body": "Game.IsCamSwitchControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsFastTravelControlsEnabled()": {
+        "prefix": "isfasttravelcontrolsenabled",
+        "body": "Game.IsFastTravelControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsFastTravelEnabled()": {
+        "prefix": "isfasttravelenabled",
+        "body": "Game.IsFastTravelEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsFavoritesControlsEnabled()": {
+        "prefix": "isfavoritescontrolsenabled",
+        "body": "Game.IsFavoritesControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsFightingControlsEnabled()": {
+        "prefix": "isfightingcontrolsenabled",
+        "body": "Game.IsFightingControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsJournalControlsEnabled()": {
+        "prefix": "isjournalcontrolsenabled",
+        "body": "Game.IsJournalControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsLookingControlsEnabled()": {
+        "prefix": "islookingcontrolsenabled",
+        "body": "Game.IsLookingControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsMenuControlsEnabled()": {
+        "prefix": "ismenucontrolsenabled",
+        "body": "Game.IsMenuControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsMovementControlsEnabled()": {
+        "prefix": "ismovementcontrolsenabled",
+        "body": "Game.IsMovementControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsPlayerInRadioRange()": {
+        "prefix": "isplayerinradiorange",
+        "body": "Game.IsPlayerInRadioRange(${1:float afFrequency})${0}",
+        "description": "Game"
+    },
+    "Game.IsPlayerListening()": {
+        "prefix": "isplayerlistening",
+        "body": "Game.IsPlayerListening(${1:float afFrequency})${0}",
+        "description": "Game"
+    },
+    "Game.IsPlayerRadioOn()": {
+        "prefix": "isplayerradioon",
+        "body": "Game.IsPlayerRadioOn()${0}",
+        "description": "Game"
+    },
+    "Game.IsPluginInstalled()": {
+        "prefix": "isplugininstalled",
+        "body": "Game.IsPluginInstalled(${1:string asName})${0}",
+        "description": "Game"
+    },
+    "Game.IsSneakingControlsEnabled()": {
+        "prefix": "issneakingcontrolsenabled",
+        "body": "Game.IsSneakingControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsVATSControlsEnabled()": {
+        "prefix": "isvatscontrolsenabled",
+        "body": "Game.IsVATSControlsEnabled()${0}",
+        "description": "Game"
+    },
+    "Game.IsVATSPlaybackActive()": {
+        "prefix": "isvatsplaybackactive",
+        "body": "Game.IsVATSPlaybackActive()${0}",
+        "description": "Game"
+    },
+    "Game.PassTime()": {
+        "prefix": "passtime",
+        "body": "Game.PassTime(${1:int aiHours})${0}",
+        "description": "Game"
+    },
+    "Game.PlayBink()": {
+        "prefix": "playbink",
+        "body": "Game.PlayBink(${1:string asFileName}, ${2:bool abInterruptible = false}, ${3:bool abMuteAudio = true}, ${4:bool abMuteMusic = true}, ${5:bool abLetterbox = true}, ${6:bool abIsNewGameBink = false})${0}",
+        "description": "Game"
+    },
+    "Game.PlayEventCamera()": {
+        "prefix": "playeventcamera",
+        "body": "Game.PlayEventCamera(${1:CameraShot akCamera}, ${2:ObjectReference akRef})${0}",
+        "description": "Game"
+    },
+    "Game.PrecacheCharGen()": {
+        "prefix": "precachechargen",
+        "body": "Game.PrecacheCharGen()${0}",
+        "description": "Game"
+    },
+    "Game.PrecacheCharGenClear()": {
+        "prefix": "precachechargenclear",
+        "body": "Game.PrecacheCharGenClear()${0}",
+        "description": "Game"
+    },
+    "Game.QueryStat()": {
+        "prefix": "querystat",
+        "body": "Game.QueryStat(${1:string asStat})${0}",
+        "description": "Game"
+    },
+    "Game.QuitToMainMenu()": {
+        "prefix": "quittomainmenu",
+        "body": "Game.QuitToMainMenu()${0}",
+        "description": "Game"
+    },
+    "Game.RemovePlayerCaps()": {
+        "prefix": "removeplayercaps",
+        "body": "Game.RemovePlayerCaps(${1:int nCaps})${0}",
+        "description": "Game"
+    },
+    "Game.RequestAutoSave()": {
+        "prefix": "requestautosave",
+        "body": "Game.RequestAutoSave()${0}",
+        "description": "Game"
+    },
+    "Game.RequestModel()": {
+        "prefix": "requestmodel",
+        "body": "Game.RequestModel(${1:string asModelName})${0}",
+        "description": "Game"
+    },
+    "Game.RequestSave()": {
+        "prefix": "requestsave",
+        "body": "Game.RequestSave()${0}",
+        "description": "Game"
+    },
+    "Game.RewardPlayerXP()": {
+        "prefix": "rewardplayerxp",
+        "body": "Game.RewardPlayerXP(${1:int auiXPAmount}, ${2:bool abDirect = false})${0}",
+        "description": "Game"
+    },
+    "Game.ServeTime()": {
+        "prefix": "servetime",
+        "body": "Game.ServeTime()${0}",
+        "description": "Game"
+    },
+    "Game.SetCameraTarget()": {
+        "prefix": "setcameratarget",
+        "body": "Game.SetCameraTarget(${1:Actor arTarget})${0}",
+        "description": "Game"
+    },
+    "Game.SetCharGenHUDMode()": {
+        "prefix": "setchargenhudmode",
+        "body": "Game.SetCharGenHUDMode(${1:int aiCGHUDMode})${0}",
+        "description": "Game"
+    },
+    "Game.SetInChargen()": {
+        "prefix": "setinchargen",
+        "body": "Game.SetInChargen(${1:bool abDisableSaving}, ${2:bool abDisableWaiting}, ${3:bool abShowControlsDisabledMessage})${0}",
+        "description": "Game"
+    },
+    "Game.SetInsideMemoryHUDMode()": {
+        "prefix": "setinsidememoryhudmode",
+        "body": "Game.SetInsideMemoryHUDMode(${1:bool aInsideMemory})${0}",
+        "description": "Game"
+    },
+    "Game.SetPlayerAIDriven()": {
+        "prefix": "setplayeraidriven",
+        "body": "Game.SetPlayerAIDriven(${1:bool abAIDriven = true})${0}",
+        "description": "Game"
+    },
+    "Game.SetPlayerOnElevator()": {
+        "prefix": "setplayeronelevator",
+        "body": "Game.SetPlayerOnElevator(${1:bool abOnElevator= true})${0}",
+        "description": "Game"
+    },
+    "Game.SetPlayerRadioFrequency()": {
+        "prefix": "setplayerradiofrequency",
+        "body": "Game.SetPlayerRadioFrequency(${1:float afFrequency})${0}",
+        "description": "Game"
+    },
+    "Game.SetPlayerReportCrime()": {
+        "prefix": "setplayerreportcrime",
+        "body": "Game.SetPlayerReportCrime(${1:bool abReportCrime = true})${0}",
+        "description": "Game"
+    },
+    "Game.SetSittingRotation()": {
+        "prefix": "setsittingrotation",
+        "body": "Game.SetSittingRotation(${1:float afValue})${0}",
+        "description": "Game"
+    },
+    "Game.ShakeCamera()": {
+        "prefix": "shakecamera",
+        "body": "Game.ShakeCamera(${1:ObjectReference akSource = None}, ${2:float afStrength = 0.5}, ${3:float afDuration = 0.0})${0}",
+        "description": "Game"
+    },
+    "Game.ShakeController()": {
+        "prefix": "shakecontroller",
+        "body": "Game.ShakeController(${1:float afLeftStrength}, ${2:float afRightStrength}, ${3:float afDuration})${0}",
+        "description": "Game"
+    },
+    "Game.ShowAllMapMarkers()": {
+        "prefix": "showallmapmarkers",
+        "body": "Game.ShowAllMapMarkers()${0}",
+        "description": "Game"
+    },
+    "Game.ShowFatigueWarningOnHUD()": {
+        "prefix": "showfatiguewarningonhud",
+        "body": "Game.ShowFatigueWarningOnHUD()${0}",
+        "description": "Game"
+    },
+    "Game.ShowFirstPersonGeometry()": {
+        "prefix": "showfirstpersongeometry",
+        "body": "Game.ShowFirstPersonGeometry(${1:bool abShow = True})${0}",
+        "description": "Game"
+    },
+    "Game.ShowPerkVaultBoyOnHUD()": {
+        "prefix": "showperkvaultboyonhud",
+        "body": "Game.ShowPerkVaultBoyOnHUD(${1:string aVaultBoySwf}, ${2:Sound aSoundDescriptor = None})${0}",
+        "description": "Game"
+    },
+    "Game.ShowPipboyBootSequence()": {
+        "prefix": "showpipboybootsequence",
+        "body": "Game.ShowPipboyBootSequence(${1:string asAnimationName})${0}",
+        "description": "Game"
+    },
+    "Game.ShowPipboyPlugin()": {
+        "prefix": "showpipboyplugin",
+        "body": "Game.ShowPipboyPlugin()${0}",
+        "description": "Game"
+    },
+    "Game.ShowRaceMenu()": {
+        "prefix": "showracemenu",
+        "body": "Game.ShowRaceMenu(${1:ObjectReference akMenuTarget = None}, ${2:int uiMode = 0}, ${3:ObjectReference akMenuSpouseFemale = None}, ${4:ObjectReference akMenuSpouseMale = None}, ${5:ObjectReference akVendor = None})${0}",
+        "description": "Game"
+    },
+    "Game.ShowSPECIALMenu()": {
+        "prefix": "showspecialmenu",
+        "body": "Game.ShowSPECIALMenu(${1:int aiPointPool}, ${2:bool abStatsLocked})${0}",
+        "description": "Game"
+    },
+    "Game.ShowTitleSequenceMenu()": {
+        "prefix": "showtitlesequencemenu",
+        "body": "Game.ShowTitleSequenceMenu()${0}",
+        "description": "Game"
+    },
+    "Game.ShowTrainingMenu()": {
+        "prefix": "showtrainingmenu",
+        "body": "Game.ShowTrainingMenu(${1:Actor aActor})${0}",
+        "description": "Game"
+    },
+    "Game.StartDialogueCameraOrCenterOnTarget()": {
+        "prefix": "startdialoguecameraorcenterontarget",
+        "body": "Game.StartDialogueCameraOrCenterOnTarget(${1:ObjectReference akCameraTarget = None})${0}",
+        "description": "Game"
+    },
+    "Game.StartTitleSequence()": {
+        "prefix": "starttitlesequence",
+        "body": "Game.StartTitleSequence(${1:string asSequenceName})${0}",
+        "description": "Game"
+    },
+    "Game.StopDialogueCamera()": {
+        "prefix": "stopdialoguecamera",
+        "body": "Game.StopDialogueCamera(${1:bool abConsiderResume = false}, ${2:bool abSwitchingTo1stP = false})${0}",
+        "description": "Game"
+    },
+    "Game.TriggerScreenBlood()": {
+        "prefix": "triggerscreenblood",
+        "body": "Game.TriggerScreenBlood(${1:int aiValue})${0}",
+        "description": "Game"
+    },
+    "Game.TurnPlayerRadioOn()": {
+        "prefix": "turnplayerradioon",
+        "body": "Game.TurnPlayerRadioOn(${1:bool abRadioOn = true})${0}",
+        "description": "Game"
+    },
+    "Game.UsingGamepad()": {
+        "prefix": "usinggamepad",
+        "body": "Game.UsingGamepad()${0}",
+        "description": "Game"
+    },
+    "Game.Warning()": {
+        "prefix": "warning",
+        "body": "Game.Warning(${1:string asMessage})${0}",
+        "description": "Game"
+    },
+    "Game.GetCurrentConsoleRef()": {
+        "prefix": "getcurrentconsoleref",
+        "body": "Game.GetCurrentConsoleRef()${0}",
+        "description": "Game"
+    },
+    "Game.GetInstalledPlugins()": {
+        "prefix": "getinstalledplugins",
+        "body": "Game.GetInstalledPlugins()${0}",
+        "description": "Game"
+    },
+    "Game.GetInstalledLightPlugins()": {
+        "prefix": "getinstalledlightplugins",
+        "body": "Game.GetInstalledLightPlugins()${0}",
+        "description": "Game"
+    },
+    "Game.GetPluginDependencies()": {
+        "prefix": "getplugindependencies",
+        "body": "Game.GetPluginDependencies(${1:string asPlugin})${0}",
+        "description": "Game"
+    },
+    "Game.SetGameSettingFloat()": {
+        "prefix": "setgamesettingfloat",
+        "body": "Game.SetGameSettingFloat(${1:string asSetting}, ${2:float afValue})${0}",
+        "description": "Game"
+    },
+    "Game.SetGameSettingInt()": {
+        "prefix": "setgamesettingint",
+        "body": "Game.SetGameSettingInt(${1:string asSetting}, ${2:int aiValue})${0}",
+        "description": "Game"
+    },
+    "Game.SetGameSettingBool()": {
+        "prefix": "setgamesettingbool",
+        "body": "Game.SetGameSettingBool(${1:string asSetting}, ${2:bool abValue})${0}",
+        "description": "Game"
+    },
+    "Game.SetGameSettingString()": {
+        "prefix": "setgamesettingstring",
+        "body": "Game.SetGameSettingString(${1:string asSetting}, ${2:string asValue})${0}",
+        "description": "Game"
+    }
 }

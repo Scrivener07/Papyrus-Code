@@ -1,44 +1,37 @@
 {
-	"getowningquest": {
-		"prefix": "getowningquest",
-		"body": "GetOwningQuest()${0}",
-		"description": "Alias",
-		"scope": "source.papyrus"
-	},
-	"onaliasinit": {
-		"prefix": "onaliasinit",
-		"body": "Event OnAliasInit()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Alias.OnAliasInit",
-		"scope": "source.papyrus"
-	},
-	"onaliasreset": {
-		"prefix": "onaliasreset",
-		"body": "Event OnAliasReset()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Alias.OnAliasReset",
-		"scope": "source.papyrus"
-	},
-	"onaliasshutdown": {
-		"prefix": "onaliasshutdown",
-		"body": "Event OnAliasShutdown()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Alias.OnAliasShutdown",
-		"scope": "source.papyrus"
-	},
-	"onaliasinit-REM": {
-		"prefix": "onaliasinit-REM",
-		"body": "Event Alias.OnAliasInit(Alias akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Alias.OnAliasInit",
-		"scope": "source.papyrus"
-	},
-	"onaliasreset-REM": {
-		"prefix": "onaliasreset-REM",
-		"body": "Event Alias.OnAliasReset(Alias akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Alias.OnAliasReset",
-		"scope": "source.papyrus"
-	},
-	"onaliasshutdown-REM": {
-		"prefix": "onaliasshutdown-REM",
-		"body": "Event Alias.OnAliasShutdown(Alias akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Alias.OnAliasShutdown",
-		"scope": "source.papyrus"
-	}
+    "Alias.GetOwningQuest()": {
+        "prefix": "getowningquest",
+        "body": "GetOwningQuest()${0}",
+        "description": "Alias"
+    },
+    "Alias.OnAliasInit()": {
+        "prefix": "onaliasinit",
+        "body": "Event OnAliasInit()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Alias.OnAliasInit"
+    },
+    "Alias.OnAliasReset()": {
+        "prefix": "onaliasreset",
+        "body": "Event OnAliasReset()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Alias.OnAliasReset"
+    },
+    "Alias.OnAliasShutdown()": {
+        "prefix": "onaliasshutdown",
+        "body": "Event OnAliasShutdown()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Alias.OnAliasShutdown"
+    },
+    "Remote Alias.OnAliasInit()": {
+        "prefix": "onaliasinit-REM",
+        "body": "Event Alias.OnAliasInit(Alias akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Alias.OnAliasInit"
+    },
+    "Remote Alias.OnAliasReset()": {
+        "prefix": "onaliasreset-REM",
+        "body": "Event Alias.OnAliasReset(Alias akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Alias.OnAliasReset"
+    },
+    "Remote Alias.OnAliasShutdown()": {
+        "prefix": "onaliasshutdown-REM",
+        "body": "Event Alias.OnAliasShutdown(Alias akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Alias.OnAliasShutdown"
+    }
 }

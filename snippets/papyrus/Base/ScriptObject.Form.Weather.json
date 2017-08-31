@@ -1,44 +1,37 @@
 {
-	"enableambientparticles": {
-		"prefix": "enableambientparticles",
-		"body": "Weather.EnableAmbientParticles(${1:bool abEnable = true})${0}",
-		"description": "Weather",
-		"scope": "source.papyrus"
-	},
-	"findweather": {
-		"prefix": "findweather",
-		"body": "Weather.FindWeather(${1:int auiType})${0}",
-		"description": "Weather",
-		"scope": "source.papyrus"
-	},
-	"getcurrentweather": {
-		"prefix": "getcurrentweather",
-		"body": "Weather.GetCurrentWeather()${0}",
-		"description": "Weather",
-		"scope": "source.papyrus"
-	},
-	"getcurrentweathertransition": {
-		"prefix": "getcurrentweathertransition",
-		"body": "Weather.GetCurrentWeatherTransition()${0}",
-		"description": "Weather",
-		"scope": "source.papyrus"
-	},
-	"getoutgoingweather": {
-		"prefix": "getoutgoingweather",
-		"body": "Weather.GetOutgoingWeather()${0}",
-		"description": "Weather",
-		"scope": "source.papyrus"
-	},
-	"getskymode": {
-		"prefix": "getskymode",
-		"body": "Weather.GetSkyMode()${0}",
-		"description": "Weather",
-		"scope": "source.papyrus"
-	},
-	"releaseoverride": {
-		"prefix": "releaseoverride",
-		"body": "Weather.ReleaseOverride()${0}",
-		"description": "Weather",
-		"scope": "source.papyrus"
-	}
+    "Weather.EnableAmbientParticles()": {
+        "prefix": "enableambientparticles",
+        "body": "Weather.EnableAmbientParticles(${1:bool abEnable = true})${0}",
+        "description": "Weather"
+    },
+    "Weather.FindWeather()": {
+        "prefix": "findweather",
+        "body": "Weather.FindWeather(${1:int auiType})${0}",
+        "description": "Weather"
+    },
+    "Weather.GetCurrentWeather()": {
+        "prefix": "getcurrentweather",
+        "body": "Weather.GetCurrentWeather()${0}",
+        "description": "Weather"
+    },
+    "Weather.GetCurrentWeatherTransition()": {
+        "prefix": "getcurrentweathertransition",
+        "body": "Weather.GetCurrentWeatherTransition()${0}",
+        "description": "Weather"
+    },
+    "Weather.GetOutgoingWeather()": {
+        "prefix": "getoutgoingweather",
+        "body": "Weather.GetOutgoingWeather()${0}",
+        "description": "Weather"
+    },
+    "Weather.GetSkyMode()": {
+        "prefix": "getskymode",
+        "body": "Weather.GetSkyMode()${0}",
+        "description": "Weather"
+    },
+    "Weather.ReleaseOverride()": {
+        "prefix": "releaseoverride",
+        "body": "Weather.ReleaseOverride()${0}",
+        "description": "Weather"
+    }
 }

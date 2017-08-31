@@ -1,42 +1,38 @@
 {
-	"Statement If": {
-		"prefix": "if",
-		"scope": "source.papyrus",
-		"description": [
-			"If Condition Snippet"
-		],
-		"body": [
-			"\r\nIf (${1:$SELECTION})\r\n\t${0}\r\nEndIf"
-		]
-	},
-	"Statement loop While": {
-		"prefix": "while",
-		"scope": "source.papyrus",
-		"description": [
-			"While Loop Snippet"
-		],
-		"body": [
-			"While (${1:$SELECTION})\r\n\t${0}\r\nEndWhile"
-		]
-	},
-	"Statement loop For": {
-		"prefix": "for",
-		"scope": "source.papyrus",
-		"description": [
-			"Pseudo For Loop Snippet"
-		],
-		"body": [
-			"int ${1:index} = 0\r\nWhile (${1:index} < ${2:maxSize})\r\n\t${0}\r\n\t${1:index} += 1\r\nEndWhile"
-		]
-	},
-	"Statement loop For Each": {
-		"prefix": "for each",
-		"scope": "source.papyrus",
-		"description": [
-			"Pseudo For-Each Loop Snippet"
-		],
-		"body": [
-			"int ${1:index} = 0\r\nWhile (${1:index} < ${2:array}.Length)\r\n\t${3:type} curItem = ${2:array}[${1:index}]\r\n\t${0}\r\n\t${1:index} += 1\r\nEndWhile"
-		]
-	}
+    "If": {
+        "prefix": "if",
+        "body": [
+            "\r\nIf (${1:$SELECTION})\r\n\t${0}\r\nEndIf"
+        ],
+        "description": [
+            "If Condition Snippet"
+        ]
+    },
+    "While": {
+        "prefix": "while",
+        "body": [
+            "While (${1:$SELECTION})\r\n\t${0}\r\nEndWhile"
+        ],
+        "description": [
+            "While Loop Snippet"
+        ]
+    },
+    "For": {
+        "prefix": "for",
+        "body": [
+            "int ${1:index} = 0\r\nWhile (${1:index} < ${2:maxSize})\r\n\t${0}\r\n\t${1:index} += 1\r\nEndWhile"
+        ],
+        "description": [
+            "Pseudo For Loop Snippet"
+        ]
+    },
+    "For Each": {
+        "prefix": "for each",
+        "body": [
+            "int ${1:index} = 0\r\nWhile (${1:index} < ${2:array}.Length)\r\n\t${3:type} curItem = ${2:array}[${1:index}]\r\n\t${0}\r\n\t${1:index} += 1\r\nEndWhile"
+        ],
+        "description": [
+            "Pseudo For-Each Loop Snippet"
+        ]
+    }
 }
