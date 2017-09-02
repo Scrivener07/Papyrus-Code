@@ -1,10 +1,10 @@
 {
-    "LeveledSpell.AddForm()": {
+    "LeveledSpell.AddForm": {
         "prefix": "addform",
         "body": "AddForm(${1:Form apForm}, ${2:int auiLevel})${0}",
         "description": "LeveledSpell"
     },
-    "LeveledSpell.Revert()": {
+    "LeveledSpell.Revert": {
         "prefix": "revert",
         "body": "Revert()${0}",
         "description": "LeveledSpell"

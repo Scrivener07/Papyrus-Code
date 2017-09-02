@@ -1,15 +1,15 @@
 {
-    "Spell.Cast()": {
+    "Spell.Cast": {
         "prefix": "cast",
         "body": "Cast(${1:ObjectReference akSource}, ${2:ObjectReference akTarget = None})${0}",
         "description": "Spell"
     },
-    "Spell.IsHostile()": {
+    "Spell.IsHostile": {
         "prefix": "ishostile",
         "body": "IsHostile()${0}",
         "description": "Spell"
     },
-    "Spell.RemoteCast()": {
+    "Spell.RemoteCast": {
         "prefix": "remotecast",
         "body": "RemoteCast(${1:ObjectReference akSource}, ${2:Actor akBlameActor}, ${3:ObjectReference akTarget = None})${0}",
         "description": "Spell"

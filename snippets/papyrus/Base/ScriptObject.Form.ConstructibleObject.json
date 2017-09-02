@@ -1,50 +1,50 @@
 {
-    "ConstructibleObject.GetConstructibleComponents()": {
+    "ConstructibleObject.GetConstructibleComponents": {
         "prefix": "getconstructiblecomponents",
         "body": "GetConstructibleComponents()${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.SetConstructibleComponents()": {
+    "ConstructibleObject.SetConstructibleComponents": {
         "prefix": "setconstructiblecomponents",
         "body": "SetConstructibleComponents(${1:ConstructibleComponent[] akComponents})${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.GetCreatedObject()": {
+    "ConstructibleObject.GetCreatedObject": {
         "prefix": "getcreatedobject",
         "body": "GetCreatedObject()${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.SetCreatedObject()": {
+    "ConstructibleObject.SetCreatedObject": {
         "prefix": "setcreatedobject",
         "body": "SetCreatedObject(${1:Form akNewForm})${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.GetCreatedCount()": {
+    "ConstructibleObject.GetCreatedCount": {
         "prefix": "getcreatedcount",
         "body": "GetCreatedCount()${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.SetCreatedCount()": {
+    "ConstructibleObject.SetCreatedCount": {
         "prefix": "setcreatedcount",
         "body": "SetCreatedCount(${1:int aiCount})${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.GetPriority()": {
+    "ConstructibleObject.GetPriority": {
         "prefix": "getpriority",
         "body": "GetPriority()${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.SetPriority()": {
+    "ConstructibleObject.SetPriority": {
         "prefix": "setpriority",
         "body": "SetPriority(${1:int aiPriority})${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.GetWorkbenchKeyword()": {
+    "ConstructibleObject.GetWorkbenchKeyword": {
         "prefix": "getworkbenchkeyword",
         "body": "GetWorkbenchKeyword()${0}",
         "description": "ConstructibleObject"
     },
-    "ConstructibleObject.SetWorkbenchKeyword()": {
+    "ConstructibleObject.SetWorkbenchKeyword": {
         "prefix": "setworkbenchkeyword",
         "body": "SetWorkbenchKeyword(${1:Keyword akKeyword})${0}",
         "description": "ConstructibleObject"

@@ -1,20 +1,20 @@
 {
-    "Component.GetScrapItem()": {
+    "Component.GetScrapItem": {
         "prefix": "getscrapitem",
         "body": "GetScrapItem()${0}",
         "description": "Component"
     },
-    "Component.SetScrapItem()": {
+    "Component.SetScrapItem": {
         "prefix": "setscrapitem",
         "body": "SetScrapItem(${1:MiscObject akMisc})${0}",
         "description": "Component"
     },
-    "Component.GetScrapScalar()": {
+    "Component.GetScrapScalar": {
         "prefix": "getscrapscalar",
         "body": "GetScrapScalar()${0}",
         "description": "Component"
     },
-    "Component.SetScrapScalar()": {
+    "Component.SetScrapScalar": {
         "prefix": "setscrapscalar",
         "body": "SetScrapScalar(${1:GlobalVariable akGlobal})${0}",
         "description": "Component"

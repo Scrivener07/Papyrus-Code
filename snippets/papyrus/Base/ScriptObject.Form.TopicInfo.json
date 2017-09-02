@@ -1,30 +1,30 @@
 {
-    "Remote TopicInfo.OnBegin()": {
+    "Remote TopicInfo.OnBegin": {
         "prefix": "onbegin-REM",
         "body": "Event TopicInfo.OnBegin(TopicInfo akSender, ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
         "description": "Remote TopicInfo.OnBegin"
     },
-    "Remote TopicInfo.OnEnd()": {
+    "Remote TopicInfo.OnEnd": {
         "prefix": "onend-REM",
         "body": "Event TopicInfo.OnEnd(TopicInfo akSender, ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
         "description": "Remote TopicInfo.OnEnd"
     },
-    "TopicInfo.GetOwningQuest()": {
+    "TopicInfo.GetOwningQuest": {
         "prefix": "getowningquest",
         "body": "GetOwningQuest()${0}",
         "description": "TopicInfo"
     },
-    "TopicInfo.HasBeenSaid()": {
+    "TopicInfo.HasBeenSaid": {
         "prefix": "hasbeensaid",
         "body": "HasBeenSaid()${0}",
         "description": "TopicInfo"
     },
-    "TopicInfo.OnBegin()": {
+    "TopicInfo.OnBegin": {
         "prefix": "onbegin",
         "body": "Event OnBegin(ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
         "description": "Event TopicInfo.OnBegin"
     },
-    "TopicInfo.OnEnd()": {
+    "TopicInfo.OnEnd": {
         "prefix": "onend",
         "body": "Event OnEnd(ObjectReference akSpeakerRef, bool abHasBeenSaid)\r\n    ${0}\r\nEndEvent",
         "description": "Event TopicInfo.OnEnd"

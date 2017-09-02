@@ -1,10 +1,10 @@
 {
-    "LeveledActor.AddForm()": {
+    "LeveledActor.AddForm": {
         "prefix": "addform",
         "body": "AddForm(${1:Form apForm}, ${2:int auiLevel})${0}",
         "description": "LeveledActor"
     },
-    "LeveledActor.Revert()": {
+    "LeveledActor.Revert": {
         "prefix": "revert",
         "body": "Revert()${0}",
         "description": "LeveledActor"

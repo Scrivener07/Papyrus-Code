@@ -1,605 +1,605 @@
 {
-    "Game.AddAchievement()": {
+    "Game.AddAchievement": {
         "prefix": "addachievement",
         "body": "Game.AddAchievement(${1:int aiAchievementID})${0}",
         "description": "Game"
     },
-    "Game.AddPerkPoints()": {
+    "Game.AddPerkPoints": {
         "prefix": "addperkpoints",
         "body": "Game.AddPerkPoints(${1:int aiPerkPoints})${0}",
         "description": "Game"
     },
-    "Game.AdvanceSkill()": {
+    "Game.AdvanceSkill": {
         "prefix": "advanceskill",
         "body": "Game.AdvanceSkill(${1:string asSkillName}, ${2:float afMagnitude})${0}",
         "description": "Game"
     },
-    "Game.ClearPrison()": {
+    "Game.ClearPrison": {
         "prefix": "clearprison",
         "body": "Game.ClearPrison()${0}",
         "description": "Game"
     },
-    "Game.ClearTempEffects()": {
+    "Game.ClearTempEffects": {
         "prefix": "cleartempeffects",
         "body": "Game.ClearTempEffects()${0}",
         "description": "Game"
     },
-    "Game.EnablePipboyHDRMask()": {
+    "Game.EnablePipboyHDRMask": {
         "prefix": "enablepipboyhdrmask",
         "body": "Game.EnablePipboyHDRMask(${1:bool abEnable = true})${0}",
         "description": "Game"
     },
-    "Game.Error()": {
+    "Game.Error": {
         "prefix": "error",
         "body": "Game.Error(${1:string asMessage})${0}",
         "description": "Game"
     },
-    "Game.FadeOutGame()": {
+    "Game.FadeOutGame": {
         "prefix": "fadeoutgame",
         "body": "Game.FadeOutGame(${1:bool abFadingOut}, ${2:bool abBlackFade}, ${3:float afSecsBeforeFade}, ${4:float afFadeDuration}, ${5:bool abStayFaded=false})${0}",
         "description": "Game"
     },
-    "Game.FastTravel()": {
+    "Game.FastTravel": {
         "prefix": "fasttravel",
         "body": "Game.FastTravel(${1:ObjectReference akDestination})${0}",
         "description": "Game"
     },
-    "Game.FindClosestActor()": {
+    "Game.FindClosestActor": {
         "prefix": "findclosestactor",
         "body": "Game.FindClosestActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindClosestActorFromRef()": {
+    "Game.FindClosestActorFromRef": {
         "prefix": "findclosestactorfromref",
         "body": "Game.FindClosestActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindClosestReferenceOfAnyTypeInList()": {
+    "Game.FindClosestReferenceOfAnyTypeInList": {
         "prefix": "findclosestreferenceofanytypeinlist",
         "body": "Game.FindClosestReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindClosestReferenceOfAnyTypeInListFromRef()": {
+    "Game.FindClosestReferenceOfAnyTypeInListFromRef": {
         "prefix": "findclosestreferenceofanytypeinlistfromref",
         "body": "Game.FindClosestReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindClosestReferenceOfType()": {
+    "Game.FindClosestReferenceOfType": {
         "prefix": "findclosestreferenceoftype",
         "body": "Game.FindClosestReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindClosestReferenceOfTypeFromRef()": {
+    "Game.FindClosestReferenceOfTypeFromRef": {
         "prefix": "findclosestreferenceoftypefromref",
         "body": "Game.FindClosestReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindRandomActor()": {
+    "Game.FindRandomActor": {
         "prefix": "findrandomactor",
         "body": "Game.FindRandomActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindRandomActorFromRef()": {
+    "Game.FindRandomActorFromRef": {
         "prefix": "findrandomactorfromref",
         "body": "Game.FindRandomActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindRandomReferenceOfAnyTypeInList()": {
+    "Game.FindRandomReferenceOfAnyTypeInList": {
         "prefix": "findrandomreferenceofanytypeinlist",
         "body": "Game.FindRandomReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindRandomReferenceOfAnyTypeInListFromRef()": {
+    "Game.FindRandomReferenceOfAnyTypeInListFromRef": {
         "prefix": "findrandomreferenceofanytypeinlistfromref",
         "body": "Game.FindRandomReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindRandomReferenceOfType()": {
+    "Game.FindRandomReferenceOfType": {
         "prefix": "findrandomreferenceoftype",
         "body": "Game.FindRandomReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.FindRandomReferenceOfTypeFromRef()": {
+    "Game.FindRandomReferenceOfTypeFromRef": {
         "prefix": "findrandomreferenceoftypefromref",
         "body": "Game.FindRandomReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}",
         "description": "Game"
     },
-    "Game.ForceDisableSSRGodraysDirLight()": {
+    "Game.ForceDisableSSRGodraysDirLight": {
         "prefix": "forcedisablessrgodraysdirlight",
         "body": "Game.ForceDisableSSRGodraysDirLight(${1:bool abDisableSSR}, ${2:bool abDisableGodrays}, ${3:bool abDisableDirLight})${0}",
         "description": "Game"
     },
-    "Game.ForceFirstPerson()": {
+    "Game.ForceFirstPerson": {
         "prefix": "forcefirstperson",
         "body": "Game.ForceFirstPerson()${0}",
         "description": "Game"
     },
-    "Game.ForceThirdPerson()": {
+    "Game.ForceThirdPerson": {
         "prefix": "forcethirdperson",
         "body": "Game.ForceThirdPerson()${0}",
         "description": "Game"
     },
-    "Game.GetAggressionAV()": {
+    "Game.GetAggressionAV": {
         "prefix": "getaggressionav",
         "body": "Game.GetAggressionAV()${0}",
         "description": "Game"
     },
-    "Game.GetAgilityAV()": {
+    "Game.GetAgilityAV": {
         "prefix": "getagilityav",
         "body": "Game.GetAgilityAV()${0}",
         "description": "Game"
     },
-    "Game.GetCaps()": {
+    "Game.GetCaps": {
         "prefix": "getcaps",
         "body": "Game.GetCaps()${0}",
         "description": "Game"
     },
-    "Game.GetCharismaAV()": {
+    "Game.GetCharismaAV": {
         "prefix": "getcharismaav",
         "body": "Game.GetCharismaAV()${0}",
         "description": "Game"
     },
-    "Game.GetConfidenceAV()": {
+    "Game.GetConfidenceAV": {
         "prefix": "getconfidenceav",
         "body": "Game.GetConfidenceAV()${0}",
         "description": "Game"
     },
-    "Game.GetDifficulty()": {
+    "Game.GetDifficulty": {
         "prefix": "getdifficulty",
         "body": "Game.GetDifficulty()${0}",
         "description": "Game"
     },
-    "Game.GetEnduranceAV()": {
+    "Game.GetEnduranceAV": {
         "prefix": "getenduranceav",
         "body": "Game.GetEnduranceAV()${0}",
         "description": "Game"
     },
-    "Game.GetForm()": {
+    "Game.GetForm": {
         "prefix": "getform",
         "body": "Game.GetForm(${1:int aiFormID})${0}",
         "description": "Game"
     },
-    "Game.GetFormFromFile()": {
+    "Game.GetFormFromFile": {
         "prefix": "getformfromfile",
         "body": "Game.GetFormFromFile(${1:int aiFormID}, ${2:string asFilename})${0}",
         "description": "Game"
     },
-    "Game.GetGameSettingFloat()": {
+    "Game.GetGameSettingFloat": {
         "prefix": "getgamesettingfloat",
         "body": "Game.GetGameSettingFloat(${1:string asGameSetting})${0}",
         "description": "Game"
     },
-    "Game.GetGameSettingInt()": {
+    "Game.GetGameSettingInt": {
         "prefix": "getgamesettingint",
         "body": "Game.GetGameSettingInt(${1:string asGameSetting})${0}",
         "description": "Game"
     },
-    "Game.GetGameSettingString()": {
+    "Game.GetGameSettingString": {
         "prefix": "getgamesettingstring",
         "body": "Game.GetGameSettingString(${1:string asGameSetting})${0}",
         "description": "Game"
     },
-    "Game.GetHealthAV()": {
+    "Game.GetHealthAV": {
         "prefix": "gethealthav",
         "body": "Game.GetHealthAV()${0}",
         "description": "Game"
     },
-    "Game.GetIntelligenceAV()": {
+    "Game.GetIntelligenceAV": {
         "prefix": "getintelligenceav",
         "body": "Game.GetIntelligenceAV()${0}",
         "description": "Game"
     },
-    "Game.GetLuckAV()": {
+    "Game.GetLuckAV": {
         "prefix": "getluckav",
         "body": "Game.GetLuckAV()${0}",
         "description": "Game"
     },
-    "Game.GetPerceptionAV()": {
+    "Game.GetPerceptionAV": {
         "prefix": "getperceptionav",
         "body": "Game.GetPerceptionAV()${0}",
         "description": "Game"
     },
-    "Game.GetPlayer()": {
+    "Game.GetPlayer": {
         "prefix": "getplayer",
         "body": "Game.GetPlayer()${0}",
         "description": "Game"
     },
-    "Game.GetPlayerFollowers()": {
+    "Game.GetPlayerFollowers": {
         "prefix": "getplayerfollowers",
         "body": "Game.GetPlayerFollowers()${0}",
         "description": "Game"
     },
-    "Game.GetPlayerGrabbedRef()": {
+    "Game.GetPlayerGrabbedRef": {
         "prefix": "getplayergrabbedref",
         "body": "Game.GetPlayerGrabbedRef()${0}",
         "description": "Game"
     },
-    "Game.GetPlayerLevel()": {
+    "Game.GetPlayerLevel": {
         "prefix": "getplayerlevel",
         "body": "Game.GetPlayerLevel()${0}",
         "description": "Game"
     },
-    "Game.GetPlayerRadioFrequency()": {
+    "Game.GetPlayerRadioFrequency": {
         "prefix": "getplayerradiofrequency",
         "body": "Game.GetPlayerRadioFrequency()${0}",
         "description": "Game"
     },
-    "Game.GetPlayersLastRiddenHorse()": {
+    "Game.GetPlayersLastRiddenHorse": {
         "prefix": "getplayerslastriddenhorse",
         "body": "Game.GetPlayersLastRiddenHorse()${0}",
         "description": "Game"
     },
-    "Game.GetRealHoursPassed()": {
+    "Game.GetRealHoursPassed": {
         "prefix": "getrealhourspassed",
         "body": "Game.GetRealHoursPassed()${0}",
         "description": "Game"
     },
-    "Game.GetStrengthAV()": {
+    "Game.GetStrengthAV": {
         "prefix": "getstrengthav",
         "body": "Game.GetStrengthAV()${0}",
         "description": "Game"
     },
-    "Game.GetSuspiciousAV()": {
+    "Game.GetSuspiciousAV": {
         "prefix": "getsuspiciousav",
         "body": "Game.GetSuspiciousAV()${0}",
         "description": "Game"
     },
-    "Game.GetXPForLevel()": {
+    "Game.GetXPForLevel": {
         "prefix": "getxpforlevel",
         "body": "Game.GetXPForLevel(${1:int auiLevel})${0}",
         "description": "Game"
     },
-    "Game.GivePlayerCaps()": {
+    "Game.GivePlayerCaps": {
         "prefix": "giveplayercaps",
         "body": "Game.GivePlayerCaps(${1:int nCaps})${0}",
         "description": "Game"
     },
-    "Game.HideTitleSequenceMenu()": {
+    "Game.HideTitleSequenceMenu": {
         "prefix": "hidetitlesequencemenu",
         "body": "Game.HideTitleSequenceMenu()${0}",
         "description": "Game"
     },
-    "Game.IncrementSkill()": {
+    "Game.IncrementSkill": {
         "prefix": "incrementskill",
         "body": "Game.IncrementSkill(${1:ActorValue akActorValue}, ${2:int aiCount = 1})${0}",
         "description": "Game"
     },
-    "Game.IncrementStat()": {
+    "Game.IncrementStat": {
         "prefix": "incrementstat",
         "body": "Game.IncrementStat(${1:string asStatName}, ${2:int aiModAmount = 1})${0}",
         "description": "Game"
     },
-    "Game.InitializeMarkerDistances()": {
+    "Game.InitializeMarkerDistances": {
         "prefix": "initializemarkerdistances",
         "body": "Game.InitializeMarkerDistances()${0}",
         "description": "Game"
     },
-    "Game.IsActivateControlsEnabled()": {
+    "Game.IsActivateControlsEnabled": {
         "prefix": "isactivatecontrolsenabled",
         "body": "Game.IsActivateControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsCamSwitchControlsEnabled()": {
+    "Game.IsCamSwitchControlsEnabled": {
         "prefix": "iscamswitchcontrolsenabled",
         "body": "Game.IsCamSwitchControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsFastTravelControlsEnabled()": {
+    "Game.IsFastTravelControlsEnabled": {
         "prefix": "isfasttravelcontrolsenabled",
         "body": "Game.IsFastTravelControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsFastTravelEnabled()": {
+    "Game.IsFastTravelEnabled": {
         "prefix": "isfasttravelenabled",
         "body": "Game.IsFastTravelEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsFavoritesControlsEnabled()": {
+    "Game.IsFavoritesControlsEnabled": {
         "prefix": "isfavoritescontrolsenabled",
         "body": "Game.IsFavoritesControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsFightingControlsEnabled()": {
+    "Game.IsFightingControlsEnabled": {
         "prefix": "isfightingcontrolsenabled",
         "body": "Game.IsFightingControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsJournalControlsEnabled()": {
+    "Game.IsJournalControlsEnabled": {
         "prefix": "isjournalcontrolsenabled",
         "body": "Game.IsJournalControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsLookingControlsEnabled()": {
+    "Game.IsLookingControlsEnabled": {
         "prefix": "islookingcontrolsenabled",
         "body": "Game.IsLookingControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsMenuControlsEnabled()": {
+    "Game.IsMenuControlsEnabled": {
         "prefix": "ismenucontrolsenabled",
         "body": "Game.IsMenuControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsMovementControlsEnabled()": {
+    "Game.IsMovementControlsEnabled": {
         "prefix": "ismovementcontrolsenabled",
         "body": "Game.IsMovementControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsPlayerInRadioRange()": {
+    "Game.IsPlayerInRadioRange": {
         "prefix": "isplayerinradiorange",
         "body": "Game.IsPlayerInRadioRange(${1:float afFrequency})${0}",
         "description": "Game"
     },
-    "Game.IsPlayerListening()": {
+    "Game.IsPlayerListening": {
         "prefix": "isplayerlistening",
         "body": "Game.IsPlayerListening(${1:float afFrequency})${0}",
         "description": "Game"
     },
-    "Game.IsPlayerRadioOn()": {
+    "Game.IsPlayerRadioOn": {
         "prefix": "isplayerradioon",
         "body": "Game.IsPlayerRadioOn()${0}",
         "description": "Game"
     },
-    "Game.IsPluginInstalled()": {
+    "Game.IsPluginInstalled": {
         "prefix": "isplugininstalled",
         "body": "Game.IsPluginInstalled(${1:string asName})${0}",
         "description": "Game"
     },
-    "Game.IsSneakingControlsEnabled()": {
+    "Game.IsSneakingControlsEnabled": {
         "prefix": "issneakingcontrolsenabled",
         "body": "Game.IsSneakingControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsVATSControlsEnabled()": {
+    "Game.IsVATSControlsEnabled": {
         "prefix": "isvatscontrolsenabled",
         "body": "Game.IsVATSControlsEnabled()${0}",
         "description": "Game"
     },
-    "Game.IsVATSPlaybackActive()": {
+    "Game.IsVATSPlaybackActive": {
         "prefix": "isvatsplaybackactive",
         "body": "Game.IsVATSPlaybackActive()${0}",
         "description": "Game"
     },
-    "Game.PassTime()": {
+    "Game.PassTime": {
         "prefix": "passtime",
         "body": "Game.PassTime(${1:int aiHours})${0}",
         "description": "Game"
     },
-    "Game.PlayBink()": {
+    "Game.PlayBink": {
         "prefix": "playbink",
         "body": "Game.PlayBink(${1:string asFileName}, ${2:bool abInterruptible = false}, ${3:bool abMuteAudio = true}, ${4:bool abMuteMusic = true}, ${5:bool abLetterbox = true}, ${6:bool abIsNewGameBink = false})${0}",
         "description": "Game"
     },
-    "Game.PlayEventCamera()": {
+    "Game.PlayEventCamera": {
         "prefix": "playeventcamera",
         "body": "Game.PlayEventCamera(${1:CameraShot akCamera}, ${2:ObjectReference akRef})${0}",
         "description": "Game"
     },
-    "Game.PrecacheCharGen()": {
+    "Game.PrecacheCharGen": {
         "prefix": "precachechargen",
         "body": "Game.PrecacheCharGen()${0}",
         "description": "Game"
     },
-    "Game.PrecacheCharGenClear()": {
+    "Game.PrecacheCharGenClear": {
         "prefix": "precachechargenclear",
         "body": "Game.PrecacheCharGenClear()${0}",
         "description": "Game"
     },
-    "Game.QueryStat()": {
+    "Game.QueryStat": {
         "prefix": "querystat",
         "body": "Game.QueryStat(${1:string asStat})${0}",
         "description": "Game"
     },
-    "Game.QuitToMainMenu()": {
+    "Game.QuitToMainMenu": {
         "prefix": "quittomainmenu",
         "body": "Game.QuitToMainMenu()${0}",
         "description": "Game"
     },
-    "Game.RemovePlayerCaps()": {
+    "Game.RemovePlayerCaps": {
         "prefix": "removeplayercaps",
         "body": "Game.RemovePlayerCaps(${1:int nCaps})${0}",
         "description": "Game"
     },
-    "Game.RequestAutoSave()": {
+    "Game.RequestAutoSave": {
         "prefix": "requestautosave",
         "body": "Game.RequestAutoSave()${0}",
         "description": "Game"
     },
-    "Game.RequestModel()": {
+    "Game.RequestModel": {
         "prefix": "requestmodel",
         "body": "Game.RequestModel(${1:string asModelName})${0}",
         "description": "Game"
     },
-    "Game.RequestSave()": {
+    "Game.RequestSave": {
         "prefix": "requestsave",
         "body": "Game.RequestSave()${0}",
         "description": "Game"
     },
-    "Game.RewardPlayerXP()": {
+    "Game.RewardPlayerXP": {
         "prefix": "rewardplayerxp",
         "body": "Game.RewardPlayerXP(${1:int auiXPAmount}, ${2:bool abDirect = false})${0}",
         "description": "Game"
     },
-    "Game.ServeTime()": {
+    "Game.ServeTime": {
         "prefix": "servetime",
         "body": "Game.ServeTime()${0}",
         "description": "Game"
     },
-    "Game.SetCameraTarget()": {
+    "Game.SetCameraTarget": {
         "prefix": "setcameratarget",
         "body": "Game.SetCameraTarget(${1:Actor arTarget})${0}",
         "description": "Game"
     },
-    "Game.SetCharGenHUDMode()": {
+    "Game.SetCharGenHUDMode": {
         "prefix": "setchargenhudmode",
         "body": "Game.SetCharGenHUDMode(${1:int aiCGHUDMode})${0}",
         "description": "Game"
     },
-    "Game.SetInChargen()": {
+    "Game.SetInChargen": {
         "prefix": "setinchargen",
         "body": "Game.SetInChargen(${1:bool abDisableSaving}, ${2:bool abDisableWaiting}, ${3:bool abShowControlsDisabledMessage})${0}",
         "description": "Game"
     },
-    "Game.SetInsideMemoryHUDMode()": {
+    "Game.SetInsideMemoryHUDMode": {
         "prefix": "setinsidememoryhudmode",
         "body": "Game.SetInsideMemoryHUDMode(${1:bool aInsideMemory})${0}",
         "description": "Game"
     },
-    "Game.SetPlayerAIDriven()": {
+    "Game.SetPlayerAIDriven": {
         "prefix": "setplayeraidriven",
         "body": "Game.SetPlayerAIDriven(${1:bool abAIDriven = true})${0}",
         "description": "Game"
     },
-    "Game.SetPlayerOnElevator()": {
+    "Game.SetPlayerOnElevator": {
         "prefix": "setplayeronelevator",
         "body": "Game.SetPlayerOnElevator(${1:bool abOnElevator= true})${0}",
         "description": "Game"
     },
-    "Game.SetPlayerRadioFrequency()": {
+    "Game.SetPlayerRadioFrequency": {
         "prefix": "setplayerradiofrequency",
         "body": "Game.SetPlayerRadioFrequency(${1:float afFrequency})${0}",
         "description": "Game"
     },
-    "Game.SetPlayerReportCrime()": {
+    "Game.SetPlayerReportCrime": {
         "prefix": "setplayerreportcrime",
         "body": "Game.SetPlayerReportCrime(${1:bool abReportCrime = true})${0}",
         "description": "Game"
     },
-    "Game.SetSittingRotation()": {
+    "Game.SetSittingRotation": {
         "prefix": "setsittingrotation",
         "body": "Game.SetSittingRotation(${1:float afValue})${0}",
         "description": "Game"
     },
-    "Game.ShakeCamera()": {
+    "Game.ShakeCamera": {
         "prefix": "shakecamera",
         "body": "Game.ShakeCamera(${1:ObjectReference akSource = None}, ${2:float afStrength = 0.5}, ${3:float afDuration = 0.0})${0}",
         "description": "Game"
     },
-    "Game.ShakeController()": {
+    "Game.ShakeController": {
         "prefix": "shakecontroller",
         "body": "Game.ShakeController(${1:float afLeftStrength}, ${2:float afRightStrength}, ${3:float afDuration})${0}",
         "description": "Game"
     },
-    "Game.ShowAllMapMarkers()": {
+    "Game.ShowAllMapMarkers": {
         "prefix": "showallmapmarkers",
         "body": "Game.ShowAllMapMarkers()${0}",
         "description": "Game"
     },
-    "Game.ShowFatigueWarningOnHUD()": {
+    "Game.ShowFatigueWarningOnHUD": {
         "prefix": "showfatiguewarningonhud",
         "body": "Game.ShowFatigueWarningOnHUD()${0}",
         "description": "Game"
     },
-    "Game.ShowFirstPersonGeometry()": {
+    "Game.ShowFirstPersonGeometry": {
         "prefix": "showfirstpersongeometry",
         "body": "Game.ShowFirstPersonGeometry(${1:bool abShow = True})${0}",
         "description": "Game"
     },
-    "Game.ShowPerkVaultBoyOnHUD()": {
+    "Game.ShowPerkVaultBoyOnHUD": {
         "prefix": "showperkvaultboyonhud",
         "body": "Game.ShowPerkVaultBoyOnHUD(${1:string aVaultBoySwf}, ${2:Sound aSoundDescriptor = None})${0}",
         "description": "Game"
     },
-    "Game.ShowPipboyBootSequence()": {
+    "Game.ShowPipboyBootSequence": {
         "prefix": "showpipboybootsequence",
         "body": "Game.ShowPipboyBootSequence(${1:string asAnimationName})${0}",
         "description": "Game"
     },
-    "Game.ShowPipboyPlugin()": {
+    "Game.ShowPipboyPlugin": {
         "prefix": "showpipboyplugin",
         "body": "Game.ShowPipboyPlugin()${0}",
         "description": "Game"
     },
-    "Game.ShowRaceMenu()": {
+    "Game.ShowRaceMenu": {
         "prefix": "showracemenu",
         "body": "Game.ShowRaceMenu(${1:ObjectReference akMenuTarget = None}, ${2:int uiMode = 0}, ${3:ObjectReference akMenuSpouseFemale = None}, ${4:ObjectReference akMenuSpouseMale = None}, ${5:ObjectReference akVendor = None})${0}",
         "description": "Game"
     },
-    "Game.ShowSPECIALMenu()": {
+    "Game.ShowSPECIALMenu": {
         "prefix": "showspecialmenu",
         "body": "Game.ShowSPECIALMenu(${1:int aiPointPool}, ${2:bool abStatsLocked})${0}",
         "description": "Game"
     },
-    "Game.ShowTitleSequenceMenu()": {
+    "Game.ShowTitleSequenceMenu": {
         "prefix": "showtitlesequencemenu",
         "body": "Game.ShowTitleSequenceMenu()${0}",
         "description": "Game"
     },
-    "Game.ShowTrainingMenu()": {
+    "Game.ShowTrainingMenu": {
         "prefix": "showtrainingmenu",
         "body": "Game.ShowTrainingMenu(${1:Actor aActor})${0}",
         "description": "Game"
     },
-    "Game.StartDialogueCameraOrCenterOnTarget()": {
+    "Game.StartDialogueCameraOrCenterOnTarget": {
         "prefix": "startdialoguecameraorcenterontarget",
         "body": "Game.StartDialogueCameraOrCenterOnTarget(${1:ObjectReference akCameraTarget = None})${0}",
         "description": "Game"
     },
-    "Game.StartTitleSequence()": {
+    "Game.StartTitleSequence": {
         "prefix": "starttitlesequence",
         "body": "Game.StartTitleSequence(${1:string asSequenceName})${0}",
         "description": "Game"
     },
-    "Game.StopDialogueCamera()": {
+    "Game.StopDialogueCamera": {
         "prefix": "stopdialoguecamera",
         "body": "Game.StopDialogueCamera(${1:bool abConsiderResume = false}, ${2:bool abSwitchingTo1stP = false})${0}",
         "description": "Game"
     },
-    "Game.TriggerScreenBlood()": {
+    "Game.TriggerScreenBlood": {
         "prefix": "triggerscreenblood",
         "body": "Game.TriggerScreenBlood(${1:int aiValue})${0}",
         "description": "Game"
     },
-    "Game.TurnPlayerRadioOn()": {
+    "Game.TurnPlayerRadioOn": {
         "prefix": "turnplayerradioon",
         "body": "Game.TurnPlayerRadioOn(${1:bool abRadioOn = true})${0}",
         "description": "Game"
     },
-    "Game.UsingGamepad()": {
+    "Game.UsingGamepad": {
         "prefix": "usinggamepad",
         "body": "Game.UsingGamepad()${0}",
         "description": "Game"
     },
-    "Game.Warning()": {
+    "Game.Warning": {
         "prefix": "warning",
         "body": "Game.Warning(${1:string asMessage})${0}",
         "description": "Game"
     },
-    "Game.GetCurrentConsoleRef()": {
+    "Game.GetCurrentConsoleRef": {
         "prefix": "getcurrentconsoleref",
         "body": "Game.GetCurrentConsoleRef()${0}",
         "description": "Game"
     },
-    "Game.GetInstalledPlugins()": {
+    "Game.GetInstalledPlugins": {
         "prefix": "getinstalledplugins",
         "body": "Game.GetInstalledPlugins()${0}",
         "description": "Game"
     },
-    "Game.GetInstalledLightPlugins()": {
+    "Game.GetInstalledLightPlugins": {
         "prefix": "getinstalledlightplugins",
         "body": "Game.GetInstalledLightPlugins()${0}",
         "description": "Game"
     },
-    "Game.GetPluginDependencies()": {
+    "Game.GetPluginDependencies": {
         "prefix": "getplugindependencies",
         "body": "Game.GetPluginDependencies(${1:string asPlugin})${0}",
         "description": "Game"
     },
-    "Game.SetGameSettingFloat()": {
+    "Game.SetGameSettingFloat": {
         "prefix": "setgamesettingfloat",
         "body": "Game.SetGameSettingFloat(${1:string asSetting}, ${2:float afValue})${0}",
         "description": "Game"
     },
-    "Game.SetGameSettingInt()": {
+    "Game.SetGameSettingInt": {
         "prefix": "setgamesettingint",
         "body": "Game.SetGameSettingInt(${1:string asSetting}, ${2:int aiValue})${0}",
         "description": "Game"
     },
-    "Game.SetGameSettingBool()": {
+    "Game.SetGameSettingBool": {
         "prefix": "setgamesettingbool",
         "body": "Game.SetGameSettingBool(${1:string asSetting}, ${2:bool abValue})${0}",
         "description": "Game"
     },
-    "Game.SetGameSettingString()": {
+    "Game.SetGameSettingString": {
         "prefix": "setgamesettingstring",
         "body": "Game.SetGameSettingString(${1:string asSetting}, ${2:string asValue})${0}",
         "description": "Game"

@@ -1,135 +1,135 @@
 {
-    "Form.GetFormID()": {
+    "Form.GetFormID": {
         "prefix": "getformid",
         "body": "GetFormID()${0}",
         "description": "Form"
     },
-    "Form.GetGoldValue()": {
+    "Form.GetGoldValue": {
         "prefix": "getgoldvalue",
         "body": "GetGoldValue()${0}",
         "description": "Form"
     },
-    "Form.HasKeyword()": {
+    "Form.HasKeyword": {
         "prefix": "haskeyword",
         "body": "HasKeyword(${1:Keyword akKeyword})${0}",
         "description": "Form"
     },
-    "Form.HasKeywordInFormList()": {
+    "Form.HasKeywordInFormList": {
         "prefix": "haskeywordinformlist",
         "body": "HasKeywordInFormList(${1:FormList akKeywordList})${0}",
         "description": "Form"
     },
-    "Form.PlayerKnows()": {
+    "Form.PlayerKnows": {
         "prefix": "playerknows",
         "body": "PlayerKnows()${0}",
         "description": "Form"
     },
-    "Form.StartObjectProfiling()": {
+    "Form.StartObjectProfiling": {
         "prefix": "startobjectprofiling",
         "body": "StartObjectProfiling()${0}",
         "description": "Form"
     },
-    "Form.StopObjectProfiling()": {
+    "Form.StopObjectProfiling": {
         "prefix": "stopobjectprofiling",
         "body": "StopObjectProfiling()${0}",
         "description": "Form"
     },
-    "Form.GetName()": {
+    "Form.GetName": {
         "prefix": "getname",
         "body": "GetName()${0}",
         "description": "Form"
     },
-    "Form.SetName()": {
+    "Form.SetName": {
         "prefix": "setname",
         "body": "SetName(${1:string asName})${0}",
         "description": "Form"
     },
-    "Form.GetDescription()": {
+    "Form.GetDescription": {
         "prefix": "getdescription",
         "body": "GetDescription()${0}",
         "description": "Form"
     },
-    "Form.GetWeight()": {
+    "Form.GetWeight": {
         "prefix": "getweight",
         "body": "GetWeight()${0}",
         "description": "Form"
     },
-    "Form.SetWeight()": {
+    "Form.SetWeight": {
         "prefix": "setweight",
         "body": "SetWeight(${1:float afWeight})${0}",
         "description": "Form"
     },
-    "Form.SetGoldValue()": {
+    "Form.SetGoldValue": {
         "prefix": "setgoldvalue",
         "body": "SetGoldValue(${1:int aiValue})${0}",
         "description": "Form"
     },
-    "Form.GetKeywords()": {
+    "Form.GetKeywords": {
         "prefix": "getkeywords",
         "body": "GetKeywords()${0}",
         "description": "Form"
     },
-    "Form.HasWorldModel()": {
+    "Form.HasWorldModel": {
         "prefix": "hasworldmodel",
         "body": "HasWorldModel()${0}",
         "description": "Form"
     },
-    "Form.GetWorldModelPath()": {
+    "Form.GetWorldModelPath": {
         "prefix": "getworldmodelpath",
         "body": "GetWorldModelPath()${0}",
         "description": "Form"
     },
-    "Form.SetWorldModelPath()": {
+    "Form.SetWorldModelPath": {
         "prefix": "setworldmodelpath",
         "body": "SetWorldModelPath(${1:string asPath})${0}",
         "description": "Form"
     },
-    "Form.GetIconPath()": {
+    "Form.GetIconPath": {
         "prefix": "geticonpath",
         "body": "GetIconPath()${0}",
         "description": "Form"
     },
-    "Form.SetIconPath()": {
+    "Form.SetIconPath": {
         "prefix": "seticonpath",
         "body": "SetIconPath(${1:string asPath})${0}",
         "description": "Form"
     },
-    "Form.GetMessageIconPath()": {
+    "Form.GetMessageIconPath": {
         "prefix": "getmessageiconpath",
         "body": "GetMessageIconPath()${0}",
         "description": "Form"
     },
-    "Form.SetMessageIconPath()": {
+    "Form.SetMessageIconPath": {
         "prefix": "setmessageiconpath",
         "body": "SetMessageIconPath(${1:string asPath})${0}",
         "description": "Form"
     },
-    "Form.GetEnchantment()": {
+    "Form.GetEnchantment": {
         "prefix": "getenchantment",
         "body": "GetEnchantment()${0}",
         "description": "Form"
     },
-    "Form.SetEnchantment()": {
+    "Form.SetEnchantment": {
         "prefix": "setenchantment",
         "body": "SetEnchantment(${1:Enchantment akEnchantment})${0}",
         "description": "Form"
     },
-    "Form.GetEnchantmentValue()": {
+    "Form.GetEnchantmentValue": {
         "prefix": "getenchantmentvalue",
         "body": "GetEnchantmentValue()${0}",
         "description": "Form"
     },
-    "Form.SetEnchantmentValue()": {
+    "Form.SetEnchantmentValue": {
         "prefix": "setenchantmentvalue",
         "body": "SetEnchantmentValue(${1:int aiValue})${0}",
         "description": "Form"
     },
-    "Form.GetEquipType()": {
+    "Form.GetEquipType": {
         "prefix": "getequiptype",
         "body": "GetEquipType()${0}",
         "description": "Form"
     },
-    "Form.SetEquipType()": {
+    "Form.SetEquipType": {
         "prefix": "setequiptype",
         "body": "SetEquipType(${1:EquipSlot akType})${0}",
         "description": "Form"

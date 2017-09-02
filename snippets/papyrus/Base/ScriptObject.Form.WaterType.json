@@ -1,20 +1,20 @@
 {
-    "WaterType.GetConsumeSpell()": {
+    "WaterType.GetConsumeSpell": {
         "prefix": "getconsumespell",
         "body": "GetConsumeSpell()${0}",
         "description": "WaterType"
     },
-    "WaterType.SetConsumeSpell()": {
+    "WaterType.SetConsumeSpell": {
         "prefix": "setconsumespell",
         "body": "SetConsumeSpell(${1:Spell akSpell})${0}",
         "description": "WaterType"
     },
-    "WaterType.GetContactSpell()": {
+    "WaterType.GetContactSpell": {
         "prefix": "getcontactspell",
         "body": "GetContactSpell()${0}",
         "description": "WaterType"
     },
-    "WaterType.SetContactSpell()": {
+    "WaterType.SetContactSpell": {
         "prefix": "setcontactspell",
         "body": "SetContactSpell(${1:Spell akSpell})${0}",
         "description": "WaterType"

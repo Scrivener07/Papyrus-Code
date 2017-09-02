@@ -1,85 +1,85 @@
 {
-    "Remote Scene.OnAction()": {
+    "Remote Scene.OnAction": {
         "prefix": "onaction-REM",
         "body": "Event Scene.OnAction(Scene akSender, int auiActionID, ReferenceAlias akAlias)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Scene.OnAction"
     },
-    "Remote Scene.OnBegin()": {
+    "Remote Scene.OnBegin": {
         "prefix": "onbegin-REM",
         "body": "Event Scene.OnBegin(Scene akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Scene.OnBegin"
     },
-    "Remote Scene.OnEnd()": {
+    "Remote Scene.OnEnd": {
         "prefix": "onend-REM",
         "body": "Event Scene.OnEnd(Scene akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Scene.OnEnd"
     },
-    "Remote Scene.OnPhaseBegin()": {
+    "Remote Scene.OnPhaseBegin": {
         "prefix": "onphasebegin-REM",
         "body": "Event Scene.OnPhaseBegin(Scene akSender, int auiPhaseIndex)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Scene.OnPhaseBegin"
     },
-    "Remote Scene.OnPhaseEnd()": {
+    "Remote Scene.OnPhaseEnd": {
         "prefix": "onphaseend-REM",
         "body": "Event Scene.OnPhaseEnd(Scene akSender, int auiPhaseIndex)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Scene.OnPhaseEnd"
     },
-    "Scene.ForceStart()": {
+    "Scene.ForceStart": {
         "prefix": "forcestart",
         "body": "ForceStart()${0}",
         "description": "Scene"
     },
-    "Scene.GetOwningQuest()": {
+    "Scene.GetOwningQuest": {
         "prefix": "getowningquest",
         "body": "GetOwningQuest()${0}",
         "description": "Scene"
     },
-    "Scene.IsActionComplete()": {
+    "Scene.IsActionComplete": {
         "prefix": "isactioncomplete",
         "body": "IsActionComplete(${1:int aiActionID})${0}",
         "description": "Scene"
     },
-    "Scene.IsPlaying()": {
+    "Scene.IsPlaying": {
         "prefix": "isplaying",
         "body": "IsPlaying()${0}",
         "description": "Scene"
     },
-    "Scene.OnAction()": {
+    "Scene.OnAction": {
         "prefix": "onaction",
         "body": "Event OnAction(int auiActionID, ReferenceAlias akAlias)\r\n    ${0}\r\nEndEvent",
         "description": "Event Scene.OnAction"
     },
-    "Scene.OnBegin()": {
+    "Scene.OnBegin": {
         "prefix": "onbegin",
         "body": "Event OnBegin()\r\n    ${0}\r\nEndEvent",
         "description": "Event Scene.OnBegin"
     },
-    "Scene.OnEnd()": {
+    "Scene.OnEnd": {
         "prefix": "onend",
         "body": "Event OnEnd()\r\n    ${0}\r\nEndEvent",
         "description": "Event Scene.OnEnd"
     },
-    "Scene.OnPhaseBegin()": {
+    "Scene.OnPhaseBegin": {
         "prefix": "onphasebegin",
         "body": "Event OnPhaseBegin(int auiPhaseIndex)\r\n    ${0}\r\nEndEvent",
         "description": "Event Scene.OnPhaseBegin"
     },
-    "Scene.OnPhaseEnd()": {
+    "Scene.OnPhaseEnd": {
         "prefix": "onphaseend",
         "body": "Event OnPhaseEnd(int auiPhaseIndex)\r\n    ${0}\r\nEndEvent",
         "description": "Event Scene.OnPhaseEnd"
     },
-    "Scene.Pause()": {
+    "Scene.Pause": {
         "prefix": "pause",
         "body": "Pause(${1:bool abPause})${0}",
         "description": "Scene"
     },
-    "Scene.Start()": {
+    "Scene.Start": {
         "prefix": "start",
         "body": "Start()${0}",
         "description": "Scene"
     },
-    "Scene.Stop()": {
+    "Scene.Stop": {
         "prefix": "stop",
         "body": "Stop()${0}",
         "description": "Scene"

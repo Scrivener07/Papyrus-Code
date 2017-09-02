@@ -1,130 +1,130 @@
 {
-    "Location.AddLinkedLocation()": {
+    "Location.AddLinkedLocation": {
         "prefix": "addlinkedlocation",
         "body": "AddLinkedLocation(${1:Location akLoc}, ${2:Keyword akKeyword})${0}",
         "description": "Location"
     },
-    "Location.GetAllLinkedLocations()": {
+    "Location.GetAllLinkedLocations": {
         "prefix": "getalllinkedlocations",
         "body": "GetAllLinkedLocations(${1:Keyword akKeyword})${0}",
         "description": "Location"
     },
-    "Location.GetKeywordData()": {
+    "Location.GetKeywordData": {
         "prefix": "getkeyworddata",
         "body": "GetKeywordData(${1:Keyword akKeyword})${0}",
         "description": "Location"
     },
-    "Location.GetRefTypeAliveCount()": {
+    "Location.GetRefTypeAliveCount": {
         "prefix": "getreftypealivecount",
         "body": "GetRefTypeAliveCount(${1:LocationRefType akRefType})${0}",
         "description": "Location"
     },
-    "Location.GetRefTypeDeadCount()": {
+    "Location.GetRefTypeDeadCount": {
         "prefix": "getreftypedeadcount",
         "body": "GetRefTypeDeadCount(${1:LocationRefType akRefType})${0}",
         "description": "Location"
     },
-    "Location.HasCommonParent()": {
+    "Location.HasCommonParent": {
         "prefix": "hascommonparent",
         "body": "HasCommonParent(${1:Location akOther}, ${2:Keyword akFilter = None})${0}",
         "description": "Location"
     },
-    "Location.HasEverBeenCleared()": {
+    "Location.HasEverBeenCleared": {
         "prefix": "haseverbeencleared",
         "body": "HasEverBeenCleared()${0}",
         "description": "Location"
     },
-    "Location.HasRefType()": {
+    "Location.HasRefType": {
         "prefix": "hasreftype",
         "body": "HasRefType(${1:LocationRefType akRefType})${0}",
         "description": "Location"
     },
-    "Location.IsChild()": {
+    "Location.IsChild": {
         "prefix": "ischild",
         "body": "IsChild(${1:Location akOther})${0}",
         "description": "Location"
     },
-    "Location.IsCleared()": {
+    "Location.IsCleared": {
         "prefix": "iscleared",
         "body": "IsCleared()${0}",
         "description": "Location"
     },
-    "Location.IsLinkedLocation()": {
+    "Location.IsLinkedLocation": {
         "prefix": "islinkedlocation",
         "body": "IsLinkedLocation(${1:Location akLoc}, ${2:Keyword akKeyword})${0}",
         "description": "Location"
     },
-    "Location.IsLoaded()": {
+    "Location.IsLoaded": {
         "prefix": "isloaded",
         "body": "IsLoaded()${0}",
         "description": "Location"
     },
-    "Location.IsSameLocation()": {
+    "Location.IsSameLocation": {
         "prefix": "issamelocation",
         "body": "IsSameLocation(${1:Location akOtherLocation}, ${2:Keyword akKeyword = None})${0}",
         "description": "Location"
     },
-    "Location.ModifyKeywordData()": {
+    "Location.ModifyKeywordData": {
         "prefix": "modifykeyworddata",
         "body": "ModifyKeywordData(${1:Keyword akKeyword}, ${2:float afData})${0}",
         "description": "Location"
     },
-    "Location.OnLocationCleared()": {
+    "Location.OnLocationCleared": {
         "prefix": "onlocationcleared",
         "body": "Event OnLocationCleared()\r\n    ${0}\r\nEndEvent",
         "description": "Event Location.OnLocationCleared"
     },
-    "Location.OnLocationLoaded()": {
+    "Location.OnLocationLoaded": {
         "prefix": "onlocationloaded",
         "body": "Event OnLocationLoaded()\r\n    ${0}\r\nEndEvent",
         "description": "Event Location.OnLocationLoaded"
     },
-    "Location.RemoveLinkedLocation()": {
+    "Location.RemoveLinkedLocation": {
         "prefix": "removelinkedlocation",
         "body": "RemoveLinkedLocation(${1:Location akLoc}, ${2:Keyword akKeyword})${0}",
         "description": "Location"
     },
-    "Location.Reset()": {
+    "Location.Reset": {
         "prefix": "reset",
         "body": "Reset()${0}",
         "description": "Location"
     },
-    "Location.SetCleared()": {
+    "Location.SetCleared": {
         "prefix": "setcleared",
         "body": "SetCleared(${1:bool abCleared = true})${0}",
         "description": "Location"
     },
-    "Location.SetKeywordData()": {
+    "Location.SetKeywordData": {
         "prefix": "setkeyworddata",
         "body": "SetKeywordData(${1:Keyword akKeyword}, ${2:float afData})${0}",
         "description": "Location"
     },
-    "Remote Location.OnLocationCleared()": {
+    "Remote Location.OnLocationCleared": {
         "prefix": "onlocationcleared-REM",
         "body": "Event Location.OnLocationCleared(Location akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Location.OnLocationCleared"
     },
-    "Remote Location.OnLocationLoaded()": {
+    "Remote Location.OnLocationLoaded": {
         "prefix": "onlocationloaded-REM",
         "body": "Event Location.OnLocationLoaded(Location akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Location.OnLocationLoaded"
     },
-    "Location.GetParent()": {
+    "Location.GetParent": {
         "prefix": "getparent",
         "body": "GetParent()${0}",
         "description": "Location"
     },
-    "Location.GetEncounterZone()": {
+    "Location.GetEncounterZone": {
         "prefix": "getencounterzone",
         "body": "GetEncounterZone(${1:bool abRecursive = False})${0}",
         "description": "Location"
     },
-    "Location.SetEncounterZone()": {
+    "Location.SetEncounterZone": {
         "prefix": "setencounterzone",
         "body": "SetEncounterZone(${1:EncounterZone akZone})${0}",
         "description": "Location"
     },
-    "Location.SetParent()": {
+    "Location.SetParent": {
         "prefix": "setparent",
         "body": "SetParent(${1:Location akLocation})${0}",
         "description": "Location"

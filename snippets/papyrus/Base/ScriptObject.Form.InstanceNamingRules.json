@@ -1,5 +1,5 @@
 {
-    "InstanceNamingRules.MergeWith()": {
+    "InstanceNamingRules.MergeWith": {
         "prefix": "mergewith",
         "body": "MergeWith(${1:InstanceNamingRules aSource})${0}",
         "description": "InstanceNamingRules"

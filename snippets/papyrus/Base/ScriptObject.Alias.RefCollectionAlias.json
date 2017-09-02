@@ -1,935 +1,935 @@
 {
-    "RefColAlias.AddArray()": {
+    "RefColAlias.AddArray": {
         "prefix": "addarray",
         "body": "AddArray(${1:ObjectReference[] refArrayToAdd})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.AddRef()": {
+    "RefColAlias.AddRef": {
         "prefix": "addref",
         "body": "AddRef(${1:ObjectReference akNewRef})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.AddRefCollection()": {
+    "RefColAlias.AddRefCollection": {
         "prefix": "addrefcollection",
         "body": "AddRefCollection(${1:RefCollectionAlias refCollectionAliasToAdd})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.AddToFaction()": {
+    "RefColAlias.AddToFaction": {
         "prefix": "addtofaction",
         "body": "AddToFaction(${1:faction akFaction})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.BlockActivation()": {
+    "RefColAlias.BlockActivation": {
         "prefix": "blockactivation",
         "body": "BlockActivation(${1:bool abBlocked = true}, ${2:bool abHideActivateText = false})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.DisableAll()": {
+    "RefColAlias.DisableAll": {
         "prefix": "disableall",
         "body": "DisableAll(${1:bool bFadeOut = false})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.EnableAll()": {
+    "RefColAlias.EnableAll": {
         "prefix": "enableall",
         "body": "EnableAll(${1:bool bFadeIn = false})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.EvaluateAll()": {
+    "RefColAlias.EvaluateAll": {
         "prefix": "evaluateall",
         "body": "EvaluateAll()${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.Find()": {
+    "RefColAlias.Find": {
         "prefix": "find",
         "body": "Find(${1:ObjectReference akFindRef})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.GetAt()": {
+    "RefColAlias.GetAt": {
         "prefix": "getat",
         "body": "GetAt(${1:int aiIndex})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.GetCount()": {
+    "RefColAlias.GetCount": {
         "prefix": "getcount",
         "body": "GetCount()${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.GetFirstOwnedObject()": {
+    "RefColAlias.GetFirstOwnedObject": {
         "prefix": "getfirstownedobject",
         "body": "GetFirstOwnedObject(${1:Actor actorOwner})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.IsOwnedObjectInList()": {
+    "RefColAlias.IsOwnedObjectInList": {
         "prefix": "isownedobjectinlist",
         "body": "IsOwnedObjectInList(${1:Actor actorOwner})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.KillAll()": {
+    "RefColAlias.KillAll": {
         "prefix": "killall",
         "body": "KillAll(${1:actor akKiller = NONE})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.LinkCollectionTo()": {
+    "RefColAlias.LinkCollectionTo": {
         "prefix": "linkcollectionto",
         "body": "LinkCollectionTo(${1:RefCollectionAlias LinkedRefCollectionAlias}, ${2:keyword LinkKeyword = none}, ${3:bool WrapLinks = false})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.MoveAllTo()": {
+    "RefColAlias.MoveAllTo": {
         "prefix": "moveallto",
         "body": "MoveAllTo(${1:ObjectReference akTarget})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.OnActivate()": {
+    "RefColAlias.OnActivate": {
         "prefix": "onactivate",
         "body": "Event OnActivate(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnActivate"
     },
-    "RefColAlias.OnCellAttach()": {
+    "RefColAlias.OnCellAttach": {
         "prefix": "oncellattach",
         "body": "Event OnCellAttach(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCellAttach"
     },
-    "RefColAlias.OnCellDetach()": {
+    "RefColAlias.OnCellDetach": {
         "prefix": "oncelldetach",
         "body": "Event OnCellDetach(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCellDetach"
     },
-    "RefColAlias.OnCellLoad()": {
+    "RefColAlias.OnCellLoad": {
         "prefix": "oncellload",
         "body": "Event OnCellLoad(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCellLoad"
     },
-    "RefColAlias.OnClose()": {
+    "RefColAlias.OnClose": {
         "prefix": "onclose",
         "body": "Event OnClose(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnClose"
     },
-    "RefColAlias.OnCombatStateChanged()": {
+    "RefColAlias.OnCombatStateChanged": {
         "prefix": "oncombatstatechanged",
         "body": "Event OnCombatStateChanged(ObjectReference akSender, Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCombatStateChanged"
     },
-    "RefColAlias.OnCommandModeCompleteCommand()": {
+    "RefColAlias.OnCommandModeCompleteCommand": {
         "prefix": "oncommandmodecompletecommand",
         "body": "Event OnCommandModeCompleteCommand(ObjectReference akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCommandModeCompleteCommand"
     },
-    "RefColAlias.OnCommandModeEnter()": {
+    "RefColAlias.OnCommandModeEnter": {
         "prefix": "oncommandmodeenter",
         "body": "Event OnCommandModeEnter(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCommandModeEnter"
     },
-    "RefColAlias.OnCommandModeExit()": {
+    "RefColAlias.OnCommandModeExit": {
         "prefix": "oncommandmodeexit",
         "body": "Event OnCommandModeExit(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCommandModeExit"
     },
-    "RefColAlias.OnCommandModeGiveCommand()": {
+    "RefColAlias.OnCommandModeGiveCommand": {
         "prefix": "oncommandmodegivecommand",
         "body": "Event OnCommandModeGiveCommand(ObjectReference akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCommandModeGiveCommand"
     },
-    "RefColAlias.OnCompanionDismiss()": {
+    "RefColAlias.OnCompanionDismiss": {
         "prefix": "oncompaniondismiss",
         "body": "Event OnCompanionDismiss(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCompanionDismiss"
     },
-    "RefColAlias.OnConsciousnessStateChanged()": {
+    "RefColAlias.OnConsciousnessStateChanged": {
         "prefix": "onconsciousnessstatechanged",
         "body": "Event OnConsciousnessStateChanged(ObjectReference akSender, bool abUnconscious )\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnConsciousnessStateChanged"
     },
-    "RefColAlias.OnContainerChanged()": {
+    "RefColAlias.OnContainerChanged": {
         "prefix": "oncontainerchanged",
         "body": "Event OnContainerChanged(ObjectReference akSender, ObjectReference akNewContainer, ObjectReference akOldContainer)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnContainerChanged"
     },
-    "RefColAlias.OnCripple()": {
+    "RefColAlias.OnCripple": {
         "prefix": "oncripple",
         "body": "Event OnCripple(ObjectReference akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnCripple"
     },
-    "RefColAlias.OnDeath()": {
+    "RefColAlias.OnDeath": {
         "prefix": "ondeath",
         "body": "Event OnDeath(ObjectReference akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnDeath"
     },
-    "RefColAlias.OnDeferredKill()": {
+    "RefColAlias.OnDeferredKill": {
         "prefix": "ondeferredkill",
         "body": "Event OnDeferredKill(ObjectReference akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnDeferredKill"
     },
-    "RefColAlias.OnDestructionStageChanged()": {
+    "RefColAlias.OnDestructionStageChanged": {
         "prefix": "ondestructionstagechanged",
         "body": "Event OnDestructionStageChanged(ObjectReference akSender, int aiOldStage, int aiCurrentStage)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnDestructionStageChanged"
     },
-    "RefColAlias.OnDifficultyChanged()": {
+    "RefColAlias.OnDifficultyChanged": {
         "prefix": "ondifficultychanged",
         "body": "Event OnDifficultyChanged(ObjectReference akSender, int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnDifficultyChanged"
     },
-    "RefColAlias.OnDying()": {
+    "RefColAlias.OnDying": {
         "prefix": "ondying",
         "body": "Event OnDying(ObjectReference akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnDying"
     },
-    "RefColAlias.OnEnterBleedout()": {
+    "RefColAlias.OnEnterBleedout": {
         "prefix": "onenterbleedout",
         "body": "Event OnEnterBleedout(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnEnterBleedout"
     },
-    "RefColAlias.OnEnterSneaking()": {
+    "RefColAlias.OnEnterSneaking": {
         "prefix": "onentersneaking",
         "body": "Event OnEnterSneaking(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnEnterSneaking"
     },
-    "RefColAlias.OnEquipped()": {
+    "RefColAlias.OnEquipped": {
         "prefix": "onequipped",
         "body": "Event OnEquipped(ObjectReference akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnEquipped"
     },
-    "RefColAlias.OnEscortWaitStart()": {
+    "RefColAlias.OnEscortWaitStart": {
         "prefix": "onescortwaitstart",
         "body": "Event OnEscortWaitStart(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnEscortWaitStart"
     },
-    "RefColAlias.OnEscortWaitStop()": {
+    "RefColAlias.OnEscortWaitStop": {
         "prefix": "onescortwaitstop",
         "body": "Event OnEscortWaitStop(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnEscortWaitStop"
     },
-    "RefColAlias.OnExitFurniture()": {
+    "RefColAlias.OnExitFurniture": {
         "prefix": "onexitfurniture",
         "body": "Event OnExitFurniture(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnExitFurniture"
     },
-    "RefColAlias.OnGetUp()": {
+    "RefColAlias.OnGetUp": {
         "prefix": "ongetup",
         "body": "Event OnGetUp(ObjectReference akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnGetUp"
     },
-    "RefColAlias.OnGrab()": {
+    "RefColAlias.OnGrab": {
         "prefix": "ongrab",
         "body": "Event OnGrab(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnGrab"
     },
-    "RefColAlias.OnHolotapeChatter()": {
+    "RefColAlias.OnHolotapeChatter": {
         "prefix": "onholotapechatter",
         "body": "Event OnHolotapeChatter(ObjectReference akSender, string astrChatter, float afNumericData )\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnHolotapeChatter"
     },
-    "RefColAlias.OnHolotapePlay()": {
+    "RefColAlias.OnHolotapePlay": {
         "prefix": "onholotapeplay",
         "body": "Event OnHolotapePlay(ObjectReference akSender, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnHolotapePlay"
     },
-    "RefColAlias.OnItemAdded()": {
+    "RefColAlias.OnItemAdded": {
         "prefix": "onitemadded",
         "body": "Event OnItemAdded(ObjectReference akSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnItemAdded"
     },
-    "RefColAlias.OnItemEquipped()": {
+    "RefColAlias.OnItemEquipped": {
         "prefix": "onitemequipped",
         "body": "Event OnItemEquipped(ObjectReference akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnItemEquipped"
     },
-    "RefColAlias.OnItemRemoved()": {
+    "RefColAlias.OnItemRemoved": {
         "prefix": "onitemremoved",
         "body": "Event OnItemRemoved(ObjectReference akSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akDestContainer)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnItemRemoved"
     },
-    "RefColAlias.OnItemUnequipped()": {
+    "RefColAlias.OnItemUnequipped": {
         "prefix": "onitemunequipped",
         "body": "Event OnItemUnequipped(ObjectReference akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnItemUnequipped"
     },
-    "RefColAlias.OnKill()": {
+    "RefColAlias.OnKill": {
         "prefix": "onkill",
         "body": "Event OnKill(ObjectReference akSender, Actor akVictim)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnKill"
     },
-    "RefColAlias.OnLoad()": {
+    "RefColAlias.OnLoad": {
         "prefix": "onload",
         "body": "Event OnLoad(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnLoad"
     },
-    "RefColAlias.OnLocationChange()": {
+    "RefColAlias.OnLocationChange": {
         "prefix": "onlocationchange",
         "body": "Event OnLocationChange(ObjectReference akSender, Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnLocationChange"
     },
-    "RefColAlias.OnLockStateChanged()": {
+    "RefColAlias.OnLockStateChanged": {
         "prefix": "onlockstatechanged",
         "body": "Event OnLockStateChanged(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnLockStateChanged"
     },
-    "RefColAlias.OnOpen()": {
+    "RefColAlias.OnOpen": {
         "prefix": "onopen",
         "body": "Event OnOpen(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnOpen"
     },
-    "RefColAlias.OnPackageChange()": {
+    "RefColAlias.OnPackageChange": {
         "prefix": "onpackagechange",
         "body": "Event OnPackageChange(ObjectReference akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPackageChange"
     },
-    "RefColAlias.OnPackageEnd()": {
+    "RefColAlias.OnPackageEnd": {
         "prefix": "onpackageend",
         "body": "Event OnPackageEnd(ObjectReference akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPackageEnd"
     },
-    "RefColAlias.OnPackageStart()": {
+    "RefColAlias.OnPackageStart": {
         "prefix": "onpackagestart",
         "body": "Event OnPackageStart(ObjectReference akSender, Package akNewPackage)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPackageStart"
     },
-    "RefColAlias.OnPartialCripple()": {
+    "RefColAlias.OnPartialCripple": {
         "prefix": "onpartialcripple",
         "body": "Event OnPartialCripple(ObjectReference akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPartialCripple"
     },
-    "RefColAlias.OnPickpocketFailed()": {
+    "RefColAlias.OnPickpocketFailed": {
         "prefix": "onpickpocketfailed",
         "body": "Event OnPickpocketFailed(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPickpocketFailed"
     },
-    "RefColAlias.OnPipboyRadioDetection()": {
+    "RefColAlias.OnPipboyRadioDetection": {
         "prefix": "onpipboyradiodetection",
         "body": "Event OnPipboyRadioDetection(ObjectReference akSender, bool abDetected)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPipboyRadioDetection"
     },
-    "RefColAlias.OnPlayerCreateRobot()": {
+    "RefColAlias.OnPlayerCreateRobot": {
         "prefix": "onplayercreaterobot",
         "body": "Event OnPlayerCreateRobot(ObjectReference akSender, Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerCreateRobot"
     },
-    "RefColAlias.OnPlayerDialogueTarget()": {
+    "RefColAlias.OnPlayerDialogueTarget": {
         "prefix": "onplayerdialoguetarget",
         "body": "Event OnPlayerDialogueTarget(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerDialogueTarget"
     },
-    "RefColAlias.OnPlayerEnterVertibird()": {
+    "RefColAlias.OnPlayerEnterVertibird": {
         "prefix": "onplayerentervertibird",
         "body": "Event OnPlayerEnterVertibird(ObjectReference akSender, ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerEnterVertibird"
     },
-    "RefColAlias.OnPlayerFallLongDistance()": {
+    "RefColAlias.OnPlayerFallLongDistance": {
         "prefix": "onplayerfalllongdistance",
         "body": "Event OnPlayerFallLongDistance(ObjectReference akSender, float afDamage)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerFallLongDistance"
     },
-    "RefColAlias.OnPlayerFireWeapon()": {
+    "RefColAlias.OnPlayerFireWeapon": {
         "prefix": "onplayerfireweapon",
         "body": "Event OnPlayerFireWeapon(ObjectReference akSender, Form akBaseObject)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerFireWeapon"
     },
-    "RefColAlias.OnPlayerHealTeammate()": {
+    "RefColAlias.OnPlayerHealTeammate": {
         "prefix": "onplayerhealteammate",
         "body": "Event OnPlayerHealTeammate(ObjectReference akSender, Actor akTeammate)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerHealTeammate"
     },
-    "RefColAlias.OnPlayerLoadGame()": {
+    "RefColAlias.OnPlayerLoadGame": {
         "prefix": "onplayerloadgame",
         "body": "Event OnPlayerLoadGame(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerLoadGame"
     },
-    "RefColAlias.OnPlayerModArmorWeapon()": {
+    "RefColAlias.OnPlayerModArmorWeapon": {
         "prefix": "onplayermodarmorweapon",
         "body": "Event OnPlayerModArmorWeapon(ObjectReference akSender, Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerModArmorWeapon"
     },
-    "RefColAlias.OnPlayerModRobot()": {
+    "RefColAlias.OnPlayerModRobot": {
         "prefix": "onplayermodrobot",
         "body": "Event OnPlayerModRobot(ObjectReference akSender, Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerModRobot"
     },
-    "RefColAlias.OnPlayerSwimming()": {
+    "RefColAlias.OnPlayerSwimming": {
         "prefix": "onplayerswimming",
         "body": "Event OnPlayerSwimming(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerSwimming"
     },
-    "RefColAlias.OnPlayerUseWorkBench()": {
+    "RefColAlias.OnPlayerUseWorkBench": {
         "prefix": "onplayeruseworkbench",
         "body": "Event OnPlayerUseWorkBench(ObjectReference akSender, ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPlayerUseWorkBench"
     },
-    "RefColAlias.OnPowerOff()": {
+    "RefColAlias.OnPowerOff": {
         "prefix": "onpoweroff",
         "body": "Event OnPowerOff(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPowerOff"
     },
-    "RefColAlias.OnPowerOn()": {
+    "RefColAlias.OnPowerOn": {
         "prefix": "onpoweron",
         "body": "Event OnPowerOn(ObjectReference akSender, ObjectReference akPowerGenerator)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnPowerOn"
     },
-    "RefColAlias.OnRaceSwitchComplete()": {
+    "RefColAlias.OnRaceSwitchComplete": {
         "prefix": "onraceswitchcomplete",
         "body": "Event OnRaceSwitchComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnRaceSwitchComplete"
     },
-    "RefColAlias.OnRead()": {
+    "RefColAlias.OnRead": {
         "prefix": "onread",
         "body": "Event OnRead(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnRead"
     },
-    "RefColAlias.OnRelease()": {
+    "RefColAlias.OnRelease": {
         "prefix": "onrelease",
         "body": "Event OnRelease(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnRelease"
     },
-    "RefColAlias.OnReset()": {
+    "RefColAlias.OnReset": {
         "prefix": "onreset",
         "body": "Event OnReset(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnReset"
     },
-    "RefColAlias.OnSell()": {
+    "RefColAlias.OnSell": {
         "prefix": "onsell",
         "body": "Event OnSell(ObjectReference akSender, Actor akSeller)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnSell"
     },
-    "RefColAlias.OnSit()": {
+    "RefColAlias.OnSit": {
         "prefix": "onsit",
         "body": "Event OnSit(ObjectReference akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnSit"
     },
-    "RefColAlias.OnSpeechChallengeAvailable()": {
+    "RefColAlias.OnSpeechChallengeAvailable": {
         "prefix": "onspeechchallengeavailable",
         "body": "Event OnSpeechChallengeAvailable(ObjectReference akSender, ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnSpeechChallengeAvailable"
     },
-    "RefColAlias.OnSpellCast()": {
+    "RefColAlias.OnSpellCast": {
         "prefix": "onspellcast",
         "body": "Event OnSpellCast(ObjectReference akSender, Form akSpell)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnSpellCast"
     },
-    "RefColAlias.OnTranslationAlmostComplete()": {
+    "RefColAlias.OnTranslationAlmostComplete": {
         "prefix": "ontranslationalmostcomplete",
         "body": "Event OnTranslationAlmostComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnTranslationAlmostComplete"
     },
-    "RefColAlias.OnTranslationComplete()": {
+    "RefColAlias.OnTranslationComplete": {
         "prefix": "ontranslationcomplete",
         "body": "Event OnTranslationComplete(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnTranslationComplete"
     },
-    "RefColAlias.OnTranslationFailed()": {
+    "RefColAlias.OnTranslationFailed": {
         "prefix": "ontranslationfailed",
         "body": "Event OnTranslationFailed(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnTranslationFailed"
     },
-    "RefColAlias.OnTrapHitStart()": {
+    "RefColAlias.OnTrapHitStart": {
         "prefix": "ontraphitstart",
         "body": "Event OnTrapHitStart(ObjectReference akSender, ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnTrapHitStart"
     },
-    "RefColAlias.OnTrapHitStop()": {
+    "RefColAlias.OnTrapHitStop": {
         "prefix": "ontraphitstop",
         "body": "Event OnTrapHitStop(ObjectReference akSender, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnTrapHitStop"
     },
-    "RefColAlias.OnTriggerEnter()": {
+    "RefColAlias.OnTriggerEnter": {
         "prefix": "ontriggerenter",
         "body": "Event OnTriggerEnter(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnTriggerEnter"
     },
-    "RefColAlias.OnTriggerLeave()": {
+    "RefColAlias.OnTriggerLeave": {
         "prefix": "ontriggerleave",
         "body": "Event OnTriggerLeave(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnTriggerLeave"
     },
-    "RefColAlias.OnUnequipped()": {
+    "RefColAlias.OnUnequipped": {
         "prefix": "onunequipped",
         "body": "Event OnUnequipped(ObjectReference akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnUnequipped"
     },
-    "RefColAlias.OnUnload()": {
+    "RefColAlias.OnUnload": {
         "prefix": "onunload",
         "body": "Event OnUnload(ObjectReference akSender)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnUnload"
     },
-    "RefColAlias.OnWorkshopMode()": {
+    "RefColAlias.OnWorkshopMode": {
         "prefix": "onworkshopmode",
         "body": "Event OnWorkshopMode(ObjectReference akSender, bool aStart)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnWorkshopMode"
     },
-    "RefColAlias.OnWorkshopNPCTransfer()": {
+    "RefColAlias.OnWorkshopNPCTransfer": {
         "prefix": "onworkshopnpctransfer",
         "body": "Event OnWorkshopNPCTransfer(ObjectReference akSender, Location akNewWorkshop, Keyword akActionKW)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnWorkshopNPCTransfer"
     },
-    "RefColAlias.OnWorkshopObjectDestroyed()": {
+    "RefColAlias.OnWorkshopObjectDestroyed": {
         "prefix": "onworkshopobjectdestroyed",
         "body": "Event OnWorkshopObjectDestroyed(ObjectReference akSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnWorkshopObjectDestroyed"
     },
-    "RefColAlias.OnWorkshopObjectGrabbed()": {
+    "RefColAlias.OnWorkshopObjectGrabbed": {
         "prefix": "onworkshopobjectgrabbed",
         "body": "Event OnWorkshopObjectGrabbed(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnWorkshopObjectGrabbed"
     },
-    "RefColAlias.OnWorkshopObjectMoved()": {
+    "RefColAlias.OnWorkshopObjectMoved": {
         "prefix": "onworkshopobjectmoved",
         "body": "Event OnWorkshopObjectMoved(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnWorkshopObjectMoved"
     },
-    "RefColAlias.OnWorkshopObjectPlaced()": {
+    "RefColAlias.OnWorkshopObjectPlaced": {
         "prefix": "onworkshopobjectplaced",
         "body": "Event OnWorkshopObjectPlaced(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnWorkshopObjectPlaced"
     },
-    "RefColAlias.OnWorkshopObjectRepaired()": {
+    "RefColAlias.OnWorkshopObjectRepaired": {
         "prefix": "onworkshopobjectrepaired",
         "body": "Event OnWorkshopObjectRepaired(ObjectReference akSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Event RefCollectionAlias.OnWorkshopObjectRepaired"
     },
-    "RefColAlias.RemoveAll()": {
+    "RefColAlias.RemoveAll": {
         "prefix": "removeall",
         "body": "RemoveAll()${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.RemoveFromAllFactions()": {
+    "RefColAlias.RemoveFromAllFactions": {
         "prefix": "removefromallfactions",
         "body": "RemoveFromAllFactions()${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.RemoveFromFaction()": {
+    "RefColAlias.RemoveFromFaction": {
         "prefix": "removefromfaction",
         "body": "RemoveFromFaction(${1:faction akFaction})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.RemoveRef()": {
+    "RefColAlias.RemoveRef": {
         "prefix": "removeref",
         "body": "RemoveRef(${1:ObjectReference akRefToRemove})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.ResetAll()": {
+    "RefColAlias.ResetAll": {
         "prefix": "resetall",
         "body": "ResetAll()${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.SetEssential()": {
+    "RefColAlias.SetEssential": {
         "prefix": "setessential",
         "body": "SetEssential(${1:bool bSetEssential = true})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.SetProtected()": {
+    "RefColAlias.SetProtected": {
         "prefix": "setprotected",
         "body": "SetProtected(${1:bool bSetProtected = true})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.SetValue()": {
+    "RefColAlias.SetValue": {
         "prefix": "setvalue",
         "body": "SetValue(${1:ActorValue akActorValue}, ${2:float fValue})${0}",
         "description": "RefCollectionAlias"
     },
-    "RefColAlias.StartCombatAll()": {
+    "RefColAlias.StartCombatAll": {
         "prefix": "startcombatall",
         "body": "StartCombatAll(${1:Actor akCombatTarget})${0}",
         "description": "RefCollectionAlias"
     },
-    "Remote RefColAlias.OnActivate()": {
+    "Remote RefColAlias.OnActivate": {
         "prefix": "onactivate-REM",
         "body": "Event RefCollectionAlias.OnActivate(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnActivate"
     },
-    "Remote RefColAlias.OnCellAttach()": {
+    "Remote RefColAlias.OnCellAttach": {
         "prefix": "oncellattach-REM",
         "body": "Event RefCollectionAlias.OnCellAttach(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCellAttach"
     },
-    "Remote RefColAlias.OnCellDetach()": {
+    "Remote RefColAlias.OnCellDetach": {
         "prefix": "oncelldetach-REM",
         "body": "Event RefCollectionAlias.OnCellDetach(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCellDetach"
     },
-    "Remote RefColAlias.OnCellLoad()": {
+    "Remote RefColAlias.OnCellLoad": {
         "prefix": "oncellload-REM",
         "body": "Event RefCollectionAlias.OnCellLoad(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCellLoad"
     },
-    "Remote RefColAlias.OnClose()": {
+    "Remote RefColAlias.OnClose": {
         "prefix": "onclose-REM",
         "body": "Event RefCollectionAlias.OnClose(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnClose"
     },
-    "Remote RefColAlias.OnCombatStateChanged()": {
+    "Remote RefColAlias.OnCombatStateChanged": {
         "prefix": "oncombatstatechanged-REM",
         "body": "Event RefCollectionAlias.OnCombatStateChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCombatStateChanged"
     },
-    "Remote RefColAlias.OnCommandModeCompleteCommand()": {
+    "Remote RefColAlias.OnCommandModeCompleteCommand": {
         "prefix": "oncommandmodecompletecommand-REM",
         "body": "Event RefCollectionAlias.OnCommandModeCompleteCommand(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCommandModeCompleteCommand"
     },
-    "Remote RefColAlias.OnCommandModeEnter()": {
+    "Remote RefColAlias.OnCommandModeEnter": {
         "prefix": "oncommandmodeenter-REM",
         "body": "Event RefCollectionAlias.OnCommandModeEnter(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCommandModeEnter"
     },
-    "Remote RefColAlias.OnCommandModeExit()": {
+    "Remote RefColAlias.OnCommandModeExit": {
         "prefix": "oncommandmodeexit-REM",
         "body": "Event RefCollectionAlias.OnCommandModeExit(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCommandModeExit"
     },
-    "Remote RefColAlias.OnCommandModeGiveCommand()": {
+    "Remote RefColAlias.OnCommandModeGiveCommand": {
         "prefix": "oncommandmodegivecommand-REM",
         "body": "Event RefCollectionAlias.OnCommandModeGiveCommand(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCommandModeGiveCommand"
     },
-    "Remote RefColAlias.OnCompanionDismiss()": {
+    "Remote RefColAlias.OnCompanionDismiss": {
         "prefix": "oncompaniondismiss-REM",
         "body": "Event RefCollectionAlias.OnCompanionDismiss(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCompanionDismiss"
     },
-    "Remote RefColAlias.OnConsciousnessStateChanged()": {
+    "Remote RefColAlias.OnConsciousnessStateChanged": {
         "prefix": "onconsciousnessstatechanged-REM",
         "body": "Event RefCollectionAlias.OnConsciousnessStateChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, bool abUnconscious )\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnConsciousnessStateChanged"
     },
-    "Remote RefColAlias.OnContainerChanged()": {
+    "Remote RefColAlias.OnContainerChanged": {
         "prefix": "oncontainerchanged-REM",
         "body": "Event RefCollectionAlias.OnContainerChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akNewContainer, ObjectReference akOldContainer)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnContainerChanged"
     },
-    "Remote RefColAlias.OnCripple()": {
+    "Remote RefColAlias.OnCripple": {
         "prefix": "oncripple-REM",
         "body": "Event RefCollectionAlias.OnCripple(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnCripple"
     },
-    "Remote RefColAlias.OnDeath()": {
+    "Remote RefColAlias.OnDeath": {
         "prefix": "ondeath-REM",
         "body": "Event RefCollectionAlias.OnDeath(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnDeath"
     },
-    "Remote RefColAlias.OnDeferredKill()": {
+    "Remote RefColAlias.OnDeferredKill": {
         "prefix": "ondeferredkill-REM",
         "body": "Event RefCollectionAlias.OnDeferredKill(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnDeferredKill"
     },
-    "Remote RefColAlias.OnDestructionStageChanged()": {
+    "Remote RefColAlias.OnDestructionStageChanged": {
         "prefix": "ondestructionstagechanged-REM",
         "body": "Event RefCollectionAlias.OnDestructionStageChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aiOldStage, int aiCurrentStage)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnDestructionStageChanged"
     },
-    "Remote RefColAlias.OnDifficultyChanged()": {
+    "Remote RefColAlias.OnDifficultyChanged": {
         "prefix": "ondifficultychanged-REM",
         "body": "Event RefCollectionAlias.OnDifficultyChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender, int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnDifficultyChanged"
     },
-    "Remote RefColAlias.OnDying()": {
+    "Remote RefColAlias.OnDying": {
         "prefix": "ondying-REM",
         "body": "Event RefCollectionAlias.OnDying(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnDying"
     },
-    "Remote RefColAlias.OnEnterBleedout()": {
+    "Remote RefColAlias.OnEnterBleedout": {
         "prefix": "onenterbleedout-REM",
         "body": "Event RefCollectionAlias.OnEnterBleedout(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnEnterBleedout"
     },
-    "Remote RefColAlias.OnEnterSneaking()": {
+    "Remote RefColAlias.OnEnterSneaking": {
         "prefix": "onentersneaking-REM",
         "body": "Event RefCollectionAlias.OnEnterSneaking(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnEnterSneaking"
     },
-    "Remote RefColAlias.OnEquipped()": {
+    "Remote RefColAlias.OnEquipped": {
         "prefix": "onequipped-REM",
         "body": "Event RefCollectionAlias.OnEquipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnEquipped"
     },
-    "Remote RefColAlias.OnEscortWaitStart()": {
+    "Remote RefColAlias.OnEscortWaitStart": {
         "prefix": "onescortwaitstart-REM",
         "body": "Event RefCollectionAlias.OnEscortWaitStart(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnEscortWaitStart"
     },
-    "Remote RefColAlias.OnEscortWaitStop()": {
+    "Remote RefColAlias.OnEscortWaitStop": {
         "prefix": "onescortwaitstop-REM",
         "body": "Event RefCollectionAlias.OnEscortWaitStop(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnEscortWaitStop"
     },
-    "Remote RefColAlias.OnExitFurniture()": {
+    "Remote RefColAlias.OnExitFurniture": {
         "prefix": "onexitfurniture-REM",
         "body": "Event RefCollectionAlias.OnExitFurniture(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnExitFurniture"
     },
-    "Remote RefColAlias.OnGetUp()": {
+    "Remote RefColAlias.OnGetUp": {
         "prefix": "ongetup-REM",
         "body": "Event RefCollectionAlias.OnGetUp(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnGetUp"
     },
-    "Remote RefColAlias.OnGrab()": {
+    "Remote RefColAlias.OnGrab": {
         "prefix": "ongrab-REM",
         "body": "Event RefCollectionAlias.OnGrab(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnGrab"
     },
-    "Remote RefColAlias.OnHolotapeChatter()": {
+    "Remote RefColAlias.OnHolotapeChatter": {
         "prefix": "onholotapechatter-REM",
         "body": "Event RefCollectionAlias.OnHolotapeChatter(RefCollectionAlias akAliasSender, ObjectReference akRefSender, string astrChatter, float afNumericData )\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnHolotapeChatter"
     },
-    "Remote RefColAlias.OnHolotapePlay()": {
+    "Remote RefColAlias.OnHolotapePlay": {
         "prefix": "onholotapeplay-REM",
         "body": "Event RefCollectionAlias.OnHolotapePlay(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnHolotapePlay"
     },
-    "Remote RefColAlias.OnItemAdded()": {
+    "Remote RefColAlias.OnItemAdded": {
         "prefix": "onitemadded-REM",
         "body": "Event RefCollectionAlias.OnItemAdded(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnItemAdded"
     },
-    "Remote RefColAlias.OnItemEquipped()": {
+    "Remote RefColAlias.OnItemEquipped": {
         "prefix": "onitemequipped-REM",
         "body": "Event RefCollectionAlias.OnItemEquipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnItemEquipped"
     },
-    "Remote RefColAlias.OnItemRemoved()": {
+    "Remote RefColAlias.OnItemRemoved": {
         "prefix": "onitemremoved-REM",
         "body": "Event RefCollectionAlias.OnItemRemoved(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akDestContainer)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnItemRemoved"
     },
-    "Remote RefColAlias.OnItemUnequipped()": {
+    "Remote RefColAlias.OnItemUnequipped": {
         "prefix": "onitemunequipped-REM",
         "body": "Event RefCollectionAlias.OnItemUnequipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnItemUnequipped"
     },
-    "Remote RefColAlias.OnKill()": {
+    "Remote RefColAlias.OnKill": {
         "prefix": "onkill-REM",
         "body": "Event RefCollectionAlias.OnKill(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akVictim)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnKill"
     },
-    "Remote RefColAlias.OnLoad()": {
+    "Remote RefColAlias.OnLoad": {
         "prefix": "onload-REM",
         "body": "Event RefCollectionAlias.OnLoad(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnLoad"
     },
-    "Remote RefColAlias.OnLocationChange()": {
+    "Remote RefColAlias.OnLocationChange": {
         "prefix": "onlocationchange-REM",
         "body": "Event RefCollectionAlias.OnLocationChange(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnLocationChange"
     },
-    "Remote RefColAlias.OnLockStateChanged()": {
+    "Remote RefColAlias.OnLockStateChanged": {
         "prefix": "onlockstatechanged-REM",
         "body": "Event RefCollectionAlias.OnLockStateChanged(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnLockStateChanged"
     },
-    "Remote RefColAlias.OnOpen()": {
+    "Remote RefColAlias.OnOpen": {
         "prefix": "onopen-REM",
         "body": "Event RefCollectionAlias.OnOpen(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnOpen"
     },
-    "Remote RefColAlias.OnPackageChange()": {
+    "Remote RefColAlias.OnPackageChange": {
         "prefix": "onpackagechange-REM",
         "body": "Event RefCollectionAlias.OnPackageChange(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPackageChange"
     },
-    "Remote RefColAlias.OnPackageEnd()": {
+    "Remote RefColAlias.OnPackageEnd": {
         "prefix": "onpackageend-REM",
         "body": "Event RefCollectionAlias.OnPackageEnd(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPackageEnd"
     },
-    "Remote RefColAlias.OnPackageStart()": {
+    "Remote RefColAlias.OnPackageStart": {
         "prefix": "onpackagestart-REM",
         "body": "Event RefCollectionAlias.OnPackageStart(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Package akNewPackage)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPackageStart"
     },
-    "Remote RefColAlias.OnPartialCripple()": {
+    "Remote RefColAlias.OnPartialCripple": {
         "prefix": "onpartialcripple-REM",
         "body": "Event RefCollectionAlias.OnPartialCripple(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPartialCripple"
     },
-    "Remote RefColAlias.OnPickpocketFailed()": {
+    "Remote RefColAlias.OnPickpocketFailed": {
         "prefix": "onpickpocketfailed-REM",
         "body": "Event RefCollectionAlias.OnPickpocketFailed(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPickpocketFailed"
     },
-    "Remote RefColAlias.OnPipboyRadioDetection()": {
+    "Remote RefColAlias.OnPipboyRadioDetection": {
         "prefix": "onpipboyradiodetection-REM",
         "body": "Event RefCollectionAlias.OnPipboyRadioDetection(RefCollectionAlias akAliasSender, ObjectReference akRefSender, bool abDetected)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPipboyRadioDetection"
     },
-    "Remote RefColAlias.OnPlayerCreateRobot()": {
+    "Remote RefColAlias.OnPlayerCreateRobot": {
         "prefix": "onplayercreaterobot-REM",
         "body": "Event RefCollectionAlias.OnPlayerCreateRobot(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerCreateRobot"
     },
-    "Remote RefColAlias.OnPlayerDialogueTarget()": {
+    "Remote RefColAlias.OnPlayerDialogueTarget": {
         "prefix": "onplayerdialoguetarget-REM",
         "body": "Event RefCollectionAlias.OnPlayerDialogueTarget(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerDialogueTarget"
     },
-    "Remote RefColAlias.OnPlayerEnterVertibird()": {
+    "Remote RefColAlias.OnPlayerEnterVertibird": {
         "prefix": "onplayerentervertibird-REM",
         "body": "Event RefCollectionAlias.OnPlayerEnterVertibird(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerEnterVertibird"
     },
-    "Remote RefColAlias.OnPlayerFallLongDistance()": {
+    "Remote RefColAlias.OnPlayerFallLongDistance": {
         "prefix": "onplayerfalllongdistance-REM",
         "body": "Event RefCollectionAlias.OnPlayerFallLongDistance(RefCollectionAlias akAliasSender, ObjectReference akRefSender, float afDamage)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerFallLongDistance"
     },
-    "Remote RefColAlias.OnPlayerFireWeapon()": {
+    "Remote RefColAlias.OnPlayerFireWeapon": {
         "prefix": "onplayerfireweapon-REM",
         "body": "Event RefCollectionAlias.OnPlayerFireWeapon(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerFireWeapon"
     },
-    "Remote RefColAlias.OnPlayerHealTeammate()": {
+    "Remote RefColAlias.OnPlayerHealTeammate": {
         "prefix": "onplayerhealteammate-REM",
         "body": "Event RefCollectionAlias.OnPlayerHealTeammate(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akTeammate)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerHealTeammate"
     },
-    "Remote RefColAlias.OnPlayerLoadGame()": {
+    "Remote RefColAlias.OnPlayerLoadGame": {
         "prefix": "onplayerloadgame-REM",
         "body": "Event RefCollectionAlias.OnPlayerLoadGame(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerLoadGame"
     },
-    "Remote RefColAlias.OnPlayerModArmorWeapon()": {
+    "Remote RefColAlias.OnPlayerModArmorWeapon": {
         "prefix": "onplayermodarmorweapon-REM",
         "body": "Event RefCollectionAlias.OnPlayerModArmorWeapon(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerModArmorWeapon"
     },
-    "Remote RefColAlias.OnPlayerModRobot()": {
+    "Remote RefColAlias.OnPlayerModRobot": {
         "prefix": "onplayermodrobot-REM",
         "body": "Event RefCollectionAlias.OnPlayerModRobot(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerModRobot"
     },
-    "Remote RefColAlias.OnPlayerSwimming()": {
+    "Remote RefColAlias.OnPlayerSwimming": {
         "prefix": "onplayerswimming-REM",
         "body": "Event RefCollectionAlias.OnPlayerSwimming(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerSwimming"
     },
-    "Remote RefColAlias.OnPlayerUseWorkBench()": {
+    "Remote RefColAlias.OnPlayerUseWorkBench": {
         "prefix": "onplayeruseworkbench-REM",
         "body": "Event RefCollectionAlias.OnPlayerUseWorkBench(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPlayerUseWorkBench"
     },
-    "Remote RefColAlias.OnPowerOff()": {
+    "Remote RefColAlias.OnPowerOff": {
         "prefix": "onpoweroff-REM",
         "body": "Event RefCollectionAlias.OnPowerOff(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPowerOff"
     },
-    "Remote RefColAlias.OnPowerOn()": {
+    "Remote RefColAlias.OnPowerOn": {
         "prefix": "onpoweron-REM",
         "body": "Event RefCollectionAlias.OnPowerOn(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akPowerGenerator)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnPowerOn"
     },
-    "Remote RefColAlias.OnRaceSwitchComplete()": {
+    "Remote RefColAlias.OnRaceSwitchComplete": {
         "prefix": "onraceswitchcomplete-REM",
         "body": "Event RefCollectionAlias.OnRaceSwitchComplete(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnRaceSwitchComplete"
     },
-    "Remote RefColAlias.OnRead()": {
+    "Remote RefColAlias.OnRead": {
         "prefix": "onread-REM",
         "body": "Event RefCollectionAlias.OnRead(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnRead"
     },
-    "Remote RefColAlias.OnRelease()": {
+    "Remote RefColAlias.OnRelease": {
         "prefix": "onrelease-REM",
         "body": "Event RefCollectionAlias.OnRelease(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnRelease"
     },
-    "Remote RefColAlias.OnReset()": {
+    "Remote RefColAlias.OnReset": {
         "prefix": "onreset-REM",
         "body": "Event RefCollectionAlias.OnReset(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnReset"
     },
-    "Remote RefColAlias.OnSell()": {
+    "Remote RefColAlias.OnSell": {
         "prefix": "onsell-REM",
         "body": "Event RefCollectionAlias.OnSell(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akSeller)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnSell"
     },
-    "Remote RefColAlias.OnSit()": {
+    "Remote RefColAlias.OnSit": {
         "prefix": "onsit-REM",
         "body": "Event RefCollectionAlias.OnSit(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnSit"
     },
-    "Remote RefColAlias.OnSpeechChallengeAvailable()": {
+    "Remote RefColAlias.OnSpeechChallengeAvailable": {
         "prefix": "onspeechchallengeavailable-REM",
         "body": "Event RefCollectionAlias.OnSpeechChallengeAvailable(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnSpeechChallengeAvailable"
     },
-    "Remote RefColAlias.OnSpellCast()": {
+    "Remote RefColAlias.OnSpellCast": {
         "prefix": "onspellcast-REM",
         "body": "Event RefCollectionAlias.OnSpellCast(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Form akSpell)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnSpellCast"
     },
-    "Remote RefColAlias.OnTranslationAlmostComplete()": {
+    "Remote RefColAlias.OnTranslationAlmostComplete": {
         "prefix": "ontranslationalmostcomplete-REM",
         "body": "Event RefCollectionAlias.OnTranslationAlmostComplete(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnTranslationAlmostComplete"
     },
-    "Remote RefColAlias.OnTranslationComplete()": {
+    "Remote RefColAlias.OnTranslationComplete": {
         "prefix": "ontranslationcomplete-REM",
         "body": "Event RefCollectionAlias.OnTranslationComplete(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnTranslationComplete"
     },
-    "Remote RefColAlias.OnTranslationFailed()": {
+    "Remote RefColAlias.OnTranslationFailed": {
         "prefix": "ontranslationfailed-REM",
         "body": "Event RefCollectionAlias.OnTranslationFailed(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnTranslationFailed"
     },
-    "Remote RefColAlias.OnTrapHitStart()": {
+    "Remote RefColAlias.OnTrapHitStart": {
         "prefix": "ontraphitstart-REM",
         "body": "Event RefCollectionAlias.OnTrapHitStart(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnTrapHitStart"
     },
-    "Remote RefColAlias.OnTrapHitStop()": {
+    "Remote RefColAlias.OnTrapHitStop": {
         "prefix": "ontraphitstop-REM",
         "body": "Event RefCollectionAlias.OnTrapHitStop(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnTrapHitStop"
     },
-    "Remote RefColAlias.OnTriggerEnter()": {
+    "Remote RefColAlias.OnTriggerEnter": {
         "prefix": "ontriggerenter-REM",
         "body": "Event RefCollectionAlias.OnTriggerEnter(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnTriggerEnter"
     },
-    "Remote RefColAlias.OnTriggerLeave()": {
+    "Remote RefColAlias.OnTriggerLeave": {
         "prefix": "ontriggerleave-REM",
         "body": "Event RefCollectionAlias.OnTriggerLeave(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnTriggerLeave"
     },
-    "Remote RefColAlias.OnUnequipped()": {
+    "Remote RefColAlias.OnUnequipped": {
         "prefix": "onunequipped-REM",
         "body": "Event RefCollectionAlias.OnUnequipped(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnUnequipped"
     },
-    "Remote RefColAlias.OnUnload()": {
+    "Remote RefColAlias.OnUnload": {
         "prefix": "onunload-REM",
         "body": "Event RefCollectionAlias.OnUnload(RefCollectionAlias akAliasSender, ObjectReference akRefSender)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnUnload"
     },
-    "Remote RefColAlias.OnWorkshopMode()": {
+    "Remote RefColAlias.OnWorkshopMode": {
         "prefix": "onworkshopmode-REM",
         "body": "Event RefCollectionAlias.OnWorkshopMode(RefCollectionAlias akAliasSender, ObjectReference akRefSender, bool aStart)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnWorkshopMode"
     },
-    "Remote RefColAlias.OnWorkshopNPCTransfer()": {
+    "Remote RefColAlias.OnWorkshopNPCTransfer": {
         "prefix": "onworkshopnpctransfer-REM",
         "body": "Event RefCollectionAlias.OnWorkshopNPCTransfer(RefCollectionAlias akAliasSender, ObjectReference akRefSender, Location akNewWorkshop, Keyword akActionKW)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnWorkshopNPCTransfer"
     },
-    "Remote RefColAlias.OnWorkshopObjectDestroyed()": {
+    "Remote RefColAlias.OnWorkshopObjectDestroyed": {
         "prefix": "onworkshopobjectdestroyed-REM",
         "body": "Event RefCollectionAlias.OnWorkshopObjectDestroyed(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akActionRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnWorkshopObjectDestroyed"
     },
-    "Remote RefColAlias.OnWorkshopObjectGrabbed()": {
+    "Remote RefColAlias.OnWorkshopObjectGrabbed": {
         "prefix": "onworkshopobjectgrabbed-REM",
         "body": "Event RefCollectionAlias.OnWorkshopObjectGrabbed(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnWorkshopObjectGrabbed"
     },
-    "Remote RefColAlias.OnWorkshopObjectMoved()": {
+    "Remote RefColAlias.OnWorkshopObjectMoved": {
         "prefix": "onworkshopobjectmoved-REM",
         "body": "Event RefCollectionAlias.OnWorkshopObjectMoved(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnWorkshopObjectMoved"
     },
-    "Remote RefColAlias.OnWorkshopObjectPlaced()": {
+    "Remote RefColAlias.OnWorkshopObjectPlaced": {
         "prefix": "onworkshopobjectplaced-REM",
         "body": "Event RefCollectionAlias.OnWorkshopObjectPlaced(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnWorkshopObjectPlaced"
     },
-    "Remote RefColAlias.OnWorkshopObjectRepaired()": {
+    "Remote RefColAlias.OnWorkshopObjectRepaired": {
         "prefix": "onworkshopobjectrepaired-REM",
         "body": "Event RefCollectionAlias.OnWorkshopObjectRepaired(RefCollectionAlias akAliasSender, ObjectReference akRefSender, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
         "description": "Remote RefCollectionAlias.OnWorkshopObjectRepaired"

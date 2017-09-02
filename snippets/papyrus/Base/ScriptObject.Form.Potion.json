@@ -1,5 +1,5 @@
 {
-    "Potion.IsHostile()": {
+    "Potion.IsHostile": {
         "prefix": "ishostile",
         "body": "IsHostile()${0}",
         "description": "Potion"

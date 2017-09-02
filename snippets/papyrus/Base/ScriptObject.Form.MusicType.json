@@ -1,10 +1,10 @@
 {
-    "MusicType.Add()": {
+    "MusicType.Add": {
         "prefix": "add",
         "body": "Add()${0}",
         "description": "MusicType"
     },
-    "MusicType.Remove()": {
+    "MusicType.Remove": {
         "prefix": "remove",
         "body": "Remove()${0}",
         "description": "MusicType"

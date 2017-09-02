@@ -1,35 +1,35 @@
 {
-    "Weather.EnableAmbientParticles()": {
+    "Weather.EnableAmbientParticles": {
         "prefix": "enableambientparticles",
         "body": "Weather.EnableAmbientParticles(${1:bool abEnable = true})${0}",
         "description": "Weather"
     },
-    "Weather.FindWeather()": {
+    "Weather.FindWeather": {
         "prefix": "findweather",
         "body": "Weather.FindWeather(${1:int auiType})${0}",
         "description": "Weather"
     },
-    "Weather.GetCurrentWeather()": {
+    "Weather.GetCurrentWeather": {
         "prefix": "getcurrentweather",
         "body": "Weather.GetCurrentWeather()${0}",
         "description": "Weather"
     },
-    "Weather.GetCurrentWeatherTransition()": {
+    "Weather.GetCurrentWeatherTransition": {
         "prefix": "getcurrentweathertransition",
         "body": "Weather.GetCurrentWeatherTransition()${0}",
         "description": "Weather"
     },
-    "Weather.GetOutgoingWeather()": {
+    "Weather.GetOutgoingWeather": {
         "prefix": "getoutgoingweather",
         "body": "Weather.GetOutgoingWeather()${0}",
         "description": "Weather"
     },
-    "Weather.GetSkyMode()": {
+    "Weather.GetSkyMode": {
         "prefix": "getskymode",
         "body": "Weather.GetSkyMode()${0}",
         "description": "Weather"
     },
-    "Weather.ReleaseOverride()": {
+    "Weather.ReleaseOverride": {
         "prefix": "releaseoverride",
         "body": "Weather.ReleaseOverride()${0}",
         "description": "Weather"

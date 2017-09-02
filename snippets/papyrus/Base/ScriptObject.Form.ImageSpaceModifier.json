@@ -1,25 +1,25 @@
 {
-    "ImageSpaceModifier.Apply()": {
+    "ImageSpaceModifier.Apply": {
         "prefix": "apply",
         "body": "Apply(${1:float afStrength = 1.0})${0}",
         "description": "ImageSpaceModifier"
     },
-    "ImageSpaceModifier.ApplyCrossFade()": {
+    "ImageSpaceModifier.ApplyCrossFade": {
         "prefix": "applycrossfade",
         "body": "ApplyCrossFade(${1:float afFadeDuration = 1.0})${0}",
         "description": "ImageSpaceModifier"
     },
-    "ImageSpaceModifier.PopTo()": {
+    "ImageSpaceModifier.PopTo": {
         "prefix": "popto",
         "body": "PopTo(${1:ImageSpaceModifier akNewModifier}, ${2:float afStrength = 1.0})${0}",
         "description": "ImageSpaceModifier"
     },
-    "ImageSpaceModifier.Remove()": {
+    "ImageSpaceModifier.Remove": {
         "prefix": "remove",
         "body": "Remove()${0}",
         "description": "ImageSpaceModifier"
     },
-    "ImageSpaceModifier.RemoveCrossFade()": {
+    "ImageSpaceModifier.RemoveCrossFade": {
         "prefix": "removecrossfade",
         "body": "ImageSpaceModifier.RemoveCrossFade(${1:float afFadeDuration = 1.0})${0}",
         "description": "ImageSpaceModifier"

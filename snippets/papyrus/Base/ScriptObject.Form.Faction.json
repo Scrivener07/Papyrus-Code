@@ -1,115 +1,115 @@
 {
-    "Faction.CanPayCrimeGold()": {
+    "Faction.CanPayCrimeGold": {
         "prefix": "canpaycrimegold",
         "body": "CanPayCrimeGold()${0}",
         "description": "Faction"
     },
-    "Faction.GetCrimeGold()": {
+    "Faction.GetCrimeGold": {
         "prefix": "getcrimegold",
         "body": "GetCrimeGold()${0}",
         "description": "Faction"
     },
-    "Faction.GetCrimeGoldNonViolent()": {
+    "Faction.GetCrimeGoldNonViolent": {
         "prefix": "getcrimegoldnonviolent",
         "body": "GetCrimeGoldNonViolent()${0}",
         "description": "Faction"
     },
-    "Faction.GetCrimeGoldViolent()": {
+    "Faction.GetCrimeGoldViolent": {
         "prefix": "getcrimegoldviolent",
         "body": "GetCrimeGoldViolent()${0}",
         "description": "Faction"
     },
-    "Faction.GetFactionReaction()": {
+    "Faction.GetFactionReaction": {
         "prefix": "getfactionreaction",
         "body": "GetFactionReaction(${1:Actor akOther})${0}",
         "description": "Faction"
     },
-    "Faction.GetInfamy()": {
+    "Faction.GetInfamy": {
         "prefix": "getinfamy",
         "body": "GetInfamy()${0}",
         "description": "Faction"
     },
-    "Faction.GetInfamyNonViolent()": {
+    "Faction.GetInfamyNonViolent": {
         "prefix": "getinfamynonviolent",
         "body": "GetInfamyNonViolent()${0}",
         "description": "Faction"
     },
-    "Faction.GetInfamyViolent()": {
+    "Faction.GetInfamyViolent": {
         "prefix": "getinfamyviolent",
         "body": "GetInfamyViolent()${0}",
         "description": "Faction"
     },
-    "Faction.GetStolenItemValueCrime()": {
+    "Faction.GetStolenItemValueCrime": {
         "prefix": "getstolenitemvaluecrime",
         "body": "GetStolenItemValueCrime()${0}",
         "description": "Faction"
     },
-    "Faction.GetStolenItemValueNoCrime()": {
+    "Faction.GetStolenItemValueNoCrime": {
         "prefix": "getstolenitemvaluenocrime",
         "body": "GetStolenItemValueNoCrime()${0}",
         "description": "Faction"
     },
-    "Faction.IsFactionInCrimeGroup()": {
+    "Faction.IsFactionInCrimeGroup": {
         "prefix": "isfactionincrimegroup",
         "body": "IsFactionInCrimeGroup(${1:Faction akOther})${0}",
         "description": "Faction"
     },
-    "Faction.IsPlayerEnemy()": {
+    "Faction.IsPlayerEnemy": {
         "prefix": "isplayerenemy",
         "body": "IsPlayerEnemy()${0}",
         "description": "Faction"
     },
-    "Faction.IsPlayerExpelled()": {
+    "Faction.IsPlayerExpelled": {
         "prefix": "isplayerexpelled",
         "body": "IsPlayerExpelled()${0}",
         "description": "Faction"
     },
-    "Faction.ModCrimeGold()": {
+    "Faction.ModCrimeGold": {
         "prefix": "modcrimegold",
         "body": "ModCrimeGold(${1:int aiAmount}, ${2:bool abViolent = False})${0}",
         "description": "Faction"
     },
-    "Faction.PlayerPayCrimeGold()": {
+    "Faction.PlayerPayCrimeGold": {
         "prefix": "playerpaycrimegold",
         "body": "PlayerPayCrimeGold(${1:bool abRemoveStolenItems = True}, ${2:bool abGoToJail = True})${0}",
         "description": "Faction"
     },
-    "Faction.SendAssaultAlarm()": {
+    "Faction.SendAssaultAlarm": {
         "prefix": "sendassaultalarm",
         "body": "SendAssaultAlarm()${0}",
         "description": "Faction"
     },
-    "Faction.SendPlayerToJail()": {
+    "Faction.SendPlayerToJail": {
         "prefix": "sendplayertojail",
         "body": "SendPlayerToJail(${1:bool abRemoveInventory = True}, ${2:bool abRealJail = True})${0}",
         "description": "Faction"
     },
-    "Faction.SetAlly()": {
+    "Faction.SetAlly": {
         "prefix": "setally",
         "body": "SetAlly(${1:Faction akOther}, ${2:bool abSelfIsFriendToOther = false}, ${3:bool abOtherIsFriendToSelf = false})${0}",
         "description": "Faction"
     },
-    "Faction.SetCrimeGold()": {
+    "Faction.SetCrimeGold": {
         "prefix": "setcrimegold",
         "body": "SetCrimeGold(${1:int aiGold})${0}",
         "description": "Faction"
     },
-    "Faction.SetCrimeGoldViolent()": {
+    "Faction.SetCrimeGoldViolent": {
         "prefix": "setcrimegoldviolent",
         "body": "SetCrimeGoldViolent(${1:int aiGold})${0}",
         "description": "Faction"
     },
-    "Faction.SetEnemy()": {
+    "Faction.SetEnemy": {
         "prefix": "setenemy",
         "body": "SetEnemy(${1:Faction akOther}, ${2:bool abSelfIsNeutralToOther = false}, ${3:bool abOtherIsNeutralToSelf = false})${0}",
         "description": "Faction"
     },
-    "Faction.SetPlayerEnemy()": {
+    "Faction.SetPlayerEnemy": {
         "prefix": "setplayerenemy",
         "body": "SetPlayerEnemy(${1:bool abIsEnemy = true})${0}",
         "description": "Faction"
     },
-    "Faction.SetPlayerExpelled()": {
+    "Faction.SetPlayerExpelled": {
         "prefix": "setplayerexpelled",
         "body": "SetPlayerExpelled(${1:bool abIsExpelled = true})${0}",
         "description": "Faction"

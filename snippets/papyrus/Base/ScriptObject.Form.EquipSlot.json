@@ -1,5 +1,5 @@
 {
-    "EquipSlot.GetParents()": {
+    "EquipSlot.GetParents": {
         "prefix": "getparents",
         "body": "GetParents()${0}",
         "description": "EquipSlot"

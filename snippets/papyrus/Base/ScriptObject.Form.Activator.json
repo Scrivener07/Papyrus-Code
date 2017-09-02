@@ -1,5 +1,5 @@
 {
-    "Activator.IsRadio()": {
+    "Activator.IsRadio": {
         "prefix": "isradio",
         "body": "IsRadio()${0}",
         "description": "Activator"

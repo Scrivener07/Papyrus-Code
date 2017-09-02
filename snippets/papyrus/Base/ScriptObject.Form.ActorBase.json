@@ -1,110 +1,110 @@
 {
-    "ActorBase.GetClass()": {
+    "ActorBase.GetClass": {
         "prefix": "getclass",
         "body": "GetClass()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetDeadCount()": {
+    "ActorBase.GetDeadCount": {
         "prefix": "getdeadcount",
         "body": "GetDeadCount()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetGiftFilter()": {
+    "ActorBase.GetGiftFilter": {
         "prefix": "getgiftfilter",
         "body": "GetGiftFilter()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetLevel()": {
+    "ActorBase.GetLevel": {
         "prefix": "getlevel",
         "body": "GetLevel()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetLevelExact()": {
+    "ActorBase.GetLevelExact": {
         "prefix": "getlevelexact",
         "body": "GetLevelExact()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetRace()": {
+    "ActorBase.GetRace": {
         "prefix": "getrace",
         "body": "GetRace()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetSex()": {
+    "ActorBase.GetSex": {
         "prefix": "getsex",
         "body": "GetSex()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetUniqueActor()": {
+    "ActorBase.GetUniqueActor": {
         "prefix": "getuniqueactor",
         "body": "GetUniqueActor()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.IsEssential()": {
+    "ActorBase.IsEssential": {
         "prefix": "isessential",
         "body": "IsEssential()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.IsInvulnerable()": {
+    "ActorBase.IsInvulnerable": {
         "prefix": "isinvulnerable",
         "body": "IsInvulnerable()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.IsProtected()": {
+    "ActorBase.IsProtected": {
         "prefix": "isprotected",
         "body": "IsProtected()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.IsUnique()": {
+    "ActorBase.IsUnique": {
         "prefix": "isunique",
         "body": "IsUnique()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.SetEssential()": {
+    "ActorBase.SetEssential": {
         "prefix": "setessential",
         "body": "SetEssential(${1:bool abEssential = true})${0}",
         "description": "ActorBase"
     },
-    "ActorBase.SetInvulnerable()": {
+    "ActorBase.SetInvulnerable": {
         "prefix": "setinvulnerable",
         "body": "SetInvulnerable(${1:bool abInvulnerable = true})${0}",
         "description": "ActorBase"
     },
-    "ActorBase.SetOutfit()": {
+    "ActorBase.SetOutfit": {
         "prefix": "setoutfit",
         "body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}",
         "description": "ActorBase"
     },
-    "ActorBase.SetProtected()": {
+    "ActorBase.SetProtected": {
         "prefix": "setprotected",
         "body": "SetProtected(${1:bool abProtected = true})${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetTemplate()": {
+    "ActorBase.GetTemplate": {
         "prefix": "gettemplate",
         "body": "GetTemplate(${1:bool abTopMost = True})${0}",
         "description": "ActorBase"
     },
-    "ActorBase.HasHeadPartOverlays()": {
+    "ActorBase.HasHeadPartOverlays": {
         "prefix": "hasheadpartoverlays",
         "body": "HasHeadPartOverlays()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetHeadParts()": {
+    "ActorBase.GetHeadParts": {
         "prefix": "getheadparts",
         "body": "GetHeadParts(${1:bool abOverlays = False})${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetOutfit()": {
+    "ActorBase.GetOutfit": {
         "prefix": "getoutfit",
         "body": "GetOutfit(${1:bool abSleepOutfit = False})${0}",
         "description": "ActorBase"
     },
-    "ActorBase.GetBodyWeight()": {
+    "ActorBase.GetBodyWeight": {
         "prefix": "getbodyweight",
         "body": "GetBodyWeight()${0}",
         "description": "ActorBase"
     },
-    "ActorBase.SetBodyWeight()": {
+    "ActorBase.SetBodyWeight": {
         "prefix": "setbodyweight",
         "body": "SetBodyWeight(${1:BodyWeight akWeight})${0}",
         "description": "ActorBase"

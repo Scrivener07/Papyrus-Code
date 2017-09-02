@@ -1,25 +1,25 @@
 {
-    "GlobalVariable.GetValue()": {
+    "GlobalVariable.GetValue": {
         "prefix": "getvalue",
         "body": "GetValue()${0}",
         "description": "GlobalVariable"
     },
-    "GlobalVariable.GetValueInt()": {
+    "GlobalVariable.GetValueInt": {
         "prefix": "getvalueint",
         "body": "GetValueInt()${0}",
         "description": "GlobalVariable"
     },
-    "GlobalVariable.Mod()": {
+    "GlobalVariable.Mod": {
         "prefix": "mod",
         "body": "Mod(${1:float afHowMuch})${0}",
         "description": "GlobalVariable"
     },
-    "GlobalVariable.SetValue()": {
+    "GlobalVariable.SetValue": {
         "prefix": "setvalue",
         "body": "SetValue(${1:float afValue})${0}",
         "description": "GlobalVariable"
     },
-    "GlobalVariable.SetValueInt()": {
+    "GlobalVariable.SetValueInt": {
         "prefix": "setvalueint",
         "body": "SetValueInt(${1:int aiValue})${0}",
         "description": "GlobalVariable"

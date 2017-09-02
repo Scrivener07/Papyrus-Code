@@ -1,20 +1,20 @@
 {
-    "UI.Set()": {
+    "UI.Set": {
         "prefix": "set",
         "body": "UI.Set(${1:string asMenu}, ${2:string asPath}, ${3:var akArg})${0}",
         "description": "UI"
     },
-    "UI.Get()": {
+    "UI.Get": {
         "prefix": "get",
         "body": "UI.Get(${1:string asMenu}, ${2:string asPath})${0}",
         "description": "UI"
     },
-    "UI.Invoke()": {
+    "UI.Invoke": {
         "prefix": "invoke",
         "body": "UI.Invoke(${1:string asMenu}, ${2:string asPath}, ${3:var[] akArgs})${0}",
         "description": "UI"
     },
-    "UI.Load()": {
+    "UI.Load": {
         "prefix": "load",
         "body": "UI.Load(${1:string asMenu}, ${2:string asSource}, ${3:string asAssetPath}, ${4:ScriptObject akReceiver = None}, ${5:string asCallback = \"\"})${0}",
         "description": "UI"

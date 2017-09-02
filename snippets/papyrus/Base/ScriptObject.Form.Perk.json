@@ -1,45 +1,45 @@
 {
-    "Perk.OnEntryRun()": {
+    "Perk.OnEntryRun": {
         "prefix": "onentryrun",
         "body": "Event OnEntryRun(int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
         "description": "Event Perk.OnEntryRun"
     },
-    "Remote Perk.OnEntryRun()": {
+    "Remote Perk.OnEntryRun": {
         "prefix": "onentryrun-REM",
         "body": "Event Perk.OnEntryRun(Perk akSender, int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Perk.OnEntryRun"
     },
-    "Perk.IsPlayable()": {
+    "Perk.IsPlayable": {
         "prefix": "isplayable",
         "body": "IsPlayable()${0}",
         "description": "Perk"
     },
-    "Perk.IsHidden()": {
+    "Perk.IsHidden": {
         "prefix": "ishidden",
         "body": "IsHidden()${0}",
         "description": "Perk"
     },
-    "Perk.GetLevel()": {
+    "Perk.GetLevel": {
         "prefix": "getlevel",
         "body": "GetLevel()${0}",
         "description": "Perk"
     },
-    "Perk.GetNumRanks()": {
+    "Perk.GetNumRanks": {
         "prefix": "getnumranks",
         "body": "GetNumRanks()${0}",
         "description": "Perk"
     },
-    "Perk.GetNextPerk()": {
+    "Perk.GetNextPerk": {
         "prefix": "getnextperk",
         "body": "GetNextPerk()${0}",
         "description": "Perk"
     },
-    "Perk.GetSWFPath()": {
+    "Perk.GetSWFPath": {
         "prefix": "getswfpath",
         "body": "GetSWFPath()${0}",
         "description": "Perk"
     },
-    "Perk.IsEligible()": {
+    "Perk.IsEligible": {
         "prefix": "iseligible",
         "body": "IsEligible(${1:Actor akActor})${0}",
         "description": "Perk"

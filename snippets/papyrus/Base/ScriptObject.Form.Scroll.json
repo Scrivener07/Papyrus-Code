@@ -1,5 +1,5 @@
 {
-    "Scroll.Cast()": {
+    "Scroll.Cast": {
         "prefix": "cast",
         "body": "Cast(${1:ObjectReference akSource}, ${2:ObjectReference akTarget = None})${0}",
         "description": "Scroll"

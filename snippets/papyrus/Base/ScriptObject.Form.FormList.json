@@ -1,35 +1,35 @@
 {
-    "FormList.AddForm()": {
+    "FormList.AddForm": {
         "prefix": "addform",
         "body": "AddForm(${1:Form apForm})${0}",
         "description": "FormList"
     },
-    "FormList.Find()": {
+    "FormList.Find": {
         "prefix": "find",
         "body": "Find(${1:Form apForm})${0}",
         "description": "FormList"
     },
-    "FormList.GetAt()": {
+    "FormList.GetAt": {
         "prefix": "getat",
         "body": "GetAt(${1:int aiIndex})${0}",
         "description": "FormList"
     },
-    "FormList.GetSize()": {
+    "FormList.GetSize": {
         "prefix": "getsize",
         "body": "GetSize()${0}",
         "description": "FormList"
     },
-    "FormList.HasForm()": {
+    "FormList.HasForm": {
         "prefix": "hasform",
         "body": "HasForm(${1:Form akForm})${0}",
         "description": "FormList"
     },
-    "FormList.RemoveAddedForm()": {
+    "FormList.RemoveAddedForm": {
         "prefix": "removeaddedform",
         "body": "RemoveAddedForm(${1:Form apForm})${0}",
         "description": "FormList"
     },
-    "FormList.Revert()": {
+    "FormList.Revert": {
         "prefix": "revert",
         "body": "Revert()${0}",
         "description": "FormList"

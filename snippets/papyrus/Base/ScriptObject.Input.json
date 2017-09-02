@@ -1,10 +1,10 @@
 {
-    "Input.GetMappedKey()": {
+    "Input.GetMappedKey": {
         "prefix": "getmappedkey",
         "body": "Input.GetMappedKey(${1:string asControl}, ${2:int aiDeviceType = 0xFF})${0}",
         "description": "Input"
     },
-    "Input.GetMappedControl()": {
+    "Input.GetMappedControl": {
         "prefix": "getmappedcontrol",
         "body": "Input.GetMappedControl(${1:int aiKeyCode})${0}",
         "description": "Input"

@@ -1,20 +1,20 @@
 {
-    "Ingredient.IsHostile()": {
+    "Ingredient.IsHostile": {
         "prefix": "ishostile",
         "body": "IsHostile()${0}",
         "description": "Ingredient"
     },
-    "Ingredient.LearnAllEffects()": {
+    "Ingredient.LearnAllEffects": {
         "prefix": "learnalleffects",
         "body": "LearnAllEffects()${0}",
         "description": "Ingredient"
     },
-    "Ingredient.LearnEffect()": {
+    "Ingredient.LearnEffect": {
         "prefix": "learneffect",
         "body": "LearnEffect(${1:int aiIndex})${0}",
         "description": "Ingredient"
     },
-    "Ingredient.LearnNextEffect()": {
+    "Ingredient.LearnNextEffect": {
         "prefix": "learnnexteffect",
         "body": "LearnNextEffect()${0}",
         "description": "Ingredient"

@@ -1,15 +1,15 @@
 {
-    "DefaultObject.GetDefaultObject()": {
+    "DefaultObject.GetDefaultObject": {
         "prefix": "getdefaultobject",
         "body": "GetDefaultObject(${1:string asEditorID})${0}",
         "description": "DefaultObject"
     },
-    "DefaultObject.Get()": {
+    "DefaultObject.Get": {
         "prefix": "get",
         "body": "Get()${0}",
         "description": "DefaultObject"
     },
-    "DefaultObject.Set()": {
+    "DefaultObject.Set": {
         "prefix": "set",
         "body": "Set(${1:Form akNewForm})${0}",
         "description": "DefaultObject"

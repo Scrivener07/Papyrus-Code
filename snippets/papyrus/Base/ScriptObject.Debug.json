@@ -1,165 +1,165 @@
 {
-    "Debug.CenterOnCell()": {
+    "Debug.CenterOnCell": {
         "prefix": "centeroncell",
         "body": "Debug.CenterOnCell(${1:string asCellName})${0}",
         "description": "Debug"
     },
-    "Debug.CenterOnCellAndWait()": {
+    "Debug.CenterOnCellAndWait": {
         "prefix": "centeroncellandwait",
         "body": "Debug.CenterOnCellAndWait(${1:string asCellName})${0}",
         "description": "Debug"
     },
-    "Debug.CloseUserLog()": {
+    "Debug.CloseUserLog": {
         "prefix": "closeuserlog",
         "body": "Debug.CloseUserLog(${1:string asLogName})${0}",
         "description": "Debug"
     },
-    "Debug.DumpAliasData()": {
+    "Debug.DumpAliasData": {
         "prefix": "dumpaliasdata",
         "body": "Debug.DumpAliasData(${1:Quest akQuest})${0}",
         "description": "Debug"
     },
-    "Debug.DumpEventRegistrations()": {
+    "Debug.DumpEventRegistrations": {
         "prefix": "dumpeventregistrations",
         "body": "Debug.DumpEventRegistrations(${1:ScriptObject akScript})${0}",
         "description": "Debug"
     },
-    "Debug.EnableAI()": {
+    "Debug.EnableAI": {
         "prefix": "enableai",
         "body": "Debug.EnableAI(${1:bool abEnable = true})${0}",
         "description": "Debug"
     },
-    "Debug.EnableCollisions()": {
+    "Debug.EnableCollisions": {
         "prefix": "enablecollisions",
         "body": "Debug.EnableCollisions(${1:bool abEnable = true})${0}",
         "description": "Debug"
     },
-    "Debug.EnableDetection()": {
+    "Debug.EnableDetection": {
         "prefix": "enabledetection",
         "body": "Debug.EnableDetection(${1:bool abEnable = true})${0}",
         "description": "Debug"
     },
-    "Debug.EnableMenus()": {
+    "Debug.EnableMenus": {
         "prefix": "enablemenus",
         "body": "Debug.EnableMenus(${1:bool abEnable = true})${0}",
         "description": "Debug"
     },
-    "Debug.GetConfigName()": {
+    "Debug.GetConfigName": {
         "prefix": "getconfigname",
         "body": "Debug.GetConfigName()${0}",
         "description": "Debug"
     },
-    "Debug.GetPlatformName()": {
+    "Debug.GetPlatformName": {
         "prefix": "getplatformname",
         "body": "Debug.GetPlatformName()${0}",
         "description": "Debug"
     },
-    "Debug.GetVersionNumber()": {
+    "Debug.GetVersionNumber": {
         "prefix": "getversionnumber",
         "body": "Debug.GetVersionNumber()${0}",
         "description": "Debug"
     },
-    "Debug.MessageBox()": {
+    "Debug.MessageBox": {
         "prefix": "messagebox",
         "body": "Debug.MessageBox(${1:string asMessageBoxText})${0}",
         "description": "Debug"
     },
-    "Debug.Notification()": {
+    "Debug.Notification": {
         "prefix": "notification",
         "body": "Debug.Notification(${1:string asNotificationText})${0}",
         "description": "Debug"
     },
-    "Debug.OpenUserLog()": {
+    "Debug.OpenUserLog": {
         "prefix": "openuserlog",
         "body": "Debug.OpenUserLog(${1:string asLogName})${0}",
         "description": "Debug"
     },
-    "Debug.PlayerMoveToAndWait()": {
+    "Debug.PlayerMoveToAndWait": {
         "prefix": "playermovetoandwait",
         "body": "Debug.PlayerMoveToAndWait(${1:string asDestRef})${0}",
         "description": "Debug"
     },
-    "Debug.QuitGame()": {
+    "Debug.QuitGame": {
         "prefix": "quitgame",
         "body": "Debug.QuitGame()${0}",
         "description": "Debug"
     },
-    "Debug.SetFootIK()": {
+    "Debug.SetFootIK": {
         "prefix": "setfootik",
         "body": "Debug.SetFootIK(${1:bool abFootIK})${0}",
         "description": "Debug"
     },
-    "Debug.SetGodMode()": {
+    "Debug.SetGodMode": {
         "prefix": "setgodmode",
         "body": "Debug.SetGodMode(${1:bool abGodMode})${0}",
         "description": "Debug"
     },
-    "Debug.StartScriptProfiling()": {
+    "Debug.StartScriptProfiling": {
         "prefix": "startscriptprofiling",
         "body": "Debug.StartScriptProfiling(${1:string asScriptName})${0}",
         "description": "Debug"
     },
-    "Debug.StartStackProfiling()": {
+    "Debug.StartStackProfiling": {
         "prefix": "startstackprofiling",
         "body": "Debug.StartStackProfiling()${0}",
         "description": "Debug"
     },
-    "Debug.StartStackRootProfiling()": {
+    "Debug.StartStackRootProfiling": {
         "prefix": "startstackrootprofiling",
         "body": "Debug.StartStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}",
         "description": "Debug"
     },
-    "Debug.StopScriptProfiling()": {
+    "Debug.StopScriptProfiling": {
         "prefix": "stopscriptprofiling",
         "body": "Debug.StopScriptProfiling(${1:string asScriptName})${0}",
         "description": "Debug"
     },
-    "Debug.StopStackProfiling()": {
+    "Debug.StopStackProfiling": {
         "prefix": "stopstackprofiling",
         "body": "Debug.StopStackProfiling()${0}",
         "description": "Debug"
     },
-    "Debug.StopStackRootProfiling()": {
+    "Debug.StopStackRootProfiling": {
         "prefix": "stopstackrootprofiling",
         "body": "Debug.StopStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}",
         "description": "Debug"
     },
-    "Debug.Trace()": {
+    "Debug.Trace": {
         "prefix": "trace",
         "body": "Debug.Trace(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}",
         "description": "Debug"
     },
-    "Debug.TraceAndBox()": {
+    "Debug.TraceAndBox": {
         "prefix": "traceandbox",
         "body": "Debug.TraceAndBox(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}",
         "description": "Debug"
     },
-    "Debug.TraceConditional()": {
+    "Debug.TraceConditional": {
         "prefix": "traceconditional",
         "body": "Debug.TraceConditional(${1:string TextToPrint}, ${2:bool ShowTrace}, ${3:int Severity = 0})${0}",
         "description": "Debug"
     },
-    "Debug.TraceConditionalGlobal()": {
+    "Debug.TraceConditionalGlobal": {
         "prefix": "traceconditionalglobal",
         "body": "Debug.TraceConditionalGlobal(${1:string TextToPrint}, ${2:GlobalVariable ShowTrace})${0}",
         "description": "Debug"
     },
-    "Debug.TraceFunction()": {
+    "Debug.TraceFunction": {
         "prefix": "tracefunction",
         "body": "Debug.TraceFunction(${1:string asTextToPrint = \\\"Tracing function on request\\\"}, ${2:int aiSeverity = 0})${0}",
         "description": "Debug"
     },
-    "Debug.TraceSelf()": {
+    "Debug.TraceSelf": {
         "prefix": "traceself",
         "body": "Debug.TraceSelf(${1:ScriptObject CallingScript}, ${2:string FunctionName}, ${3:string StringToTrace})${0}",
         "description": "Debug"
     },
-    "Debug.TraceStack()": {
+    "Debug.TraceStack": {
         "prefix": "tracestack",
         "body": "Debug.TraceStack(${1:string asTextToPrint = \\\"Tracing stack on request\\\"}, ${2:int aiSeverity = 0})${0}",
         "description": "Debug"
     },
-    "Debug.TraceUser()": {
+    "Debug.TraceUser": {
         "prefix": "traceuser",
         "body": "Debug.TraceUser(${1:string asUserLog}, ${2:string asTextToPrint}, ${3:int aiSeverity = 0})${0}",
         "description": "Debug"

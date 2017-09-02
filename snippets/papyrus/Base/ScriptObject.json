@@ -1,490 +1,490 @@
 {
-    "ScriptObject.AddInventoryEventFilter()": {
+    "ScriptObject.AddInventoryEventFilter": {
         "prefix": "addinventoryeventfilter",
         "body": "AddInventoryEventFilter(${1:Form akFilter})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.CallFunction()": {
+    "ScriptObject.CallFunction": {
         "prefix": "callfunction",
         "body": "CallFunction(${1:string asFuncName}, ${2:Var[] aParams})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.CallFunctionNoWait()": {
+    "ScriptObject.CallFunctionNoWait": {
         "prefix": "callfunctionnowait",
         "body": "CallFunctionNoWait(${1:string asFuncName}, ${2:Var[] aParams})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.CancelTimer()": {
+    "ScriptObject.CancelTimer": {
         "prefix": "canceltimer",
         "body": "CancelTimer(${1:int aiTimerID = 0})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.CancelTimerGameTime()": {
+    "ScriptObject.CancelTimerGameTime": {
         "prefix": "canceltimergametime",
         "body": "CancelTimerGameTime(${1:int aiTimerID = 0})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.CastAs()": {
+    "ScriptObject.CastAs": {
         "prefix": "castas",
         "body": "CastAs(${1:string asScriptName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.GetPropertyValue()": {
+    "ScriptObject.GetPropertyValue": {
         "prefix": "getpropertyvalue",
         "body": "GetPropertyValue(${1:string asPropertyName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.GetState()": {
+    "ScriptObject.GetState": {
         "prefix": "getstate",
         "body": "GetState()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.GotoState()": {
+    "ScriptObject.GotoState": {
         "prefix": "gotostate",
         "body": "GotoState(${1:string asNewState})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.IsBoundGameObjectAvailable()": {
+    "ScriptObject.IsBoundGameObjectAvailable": {
         "prefix": "isboundgameobjectavailable",
         "body": "IsBoundGameObjectAvailable()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.OnAnimationEvent()": {
+    "ScriptObject.OnAnimationEvent": {
         "prefix": "onanimationevent",
         "body": "Event OnAnimationEvent(ObjectReference akSource, string asEventName)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnAnimationEvent"
     },
-    "ScriptObject.OnAnimationEventUnregistered()": {
+    "ScriptObject.OnAnimationEventUnregistered": {
         "prefix": "onanimationeventunregistered",
         "body": "Event OnAnimationEventUnregistered(ObjectReference akSource, string asEventName)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnAnimationEventUnregistered"
     },
-    "ScriptObject.OnBeginState()": {
+    "ScriptObject.OnBeginState": {
         "prefix": "onbeginstate",
         "body": "Event OnBeginState(string asOldState)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnBeginState"
     },
-    "ScriptObject.OnDistanceGreaterThan()": {
+    "ScriptObject.OnDistanceGreaterThan": {
         "prefix": "ondistancegreaterthan",
         "body": "Event OnDistanceGreaterThan(ObjectReference akObj1, ObjectReference akObj2, float afDistance)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnDistanceGreaterThan"
     },
-    "ScriptObject.OnDistanceLessThan()": {
+    "ScriptObject.OnDistanceLessThan": {
         "prefix": "ondistancelessthan",
         "body": "Event OnDistanceLessThan(ObjectReference akObj1, ObjectReference akObj2, float afDistance)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnDistanceLessThan"
     },
-    "ScriptObject.OnEndState()": {
+    "ScriptObject.OnEndState": {
         "prefix": "onendstate",
         "body": "Event OnEndState(string asNewState)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnEndState"
     },
-    "ScriptObject.OnGainLOS()": {
+    "ScriptObject.OnGainLOS": {
         "prefix": "ongainlos",
         "body": "Event OnGainLOS(ObjectReference akViewer, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnGainLOS"
     },
-    "ScriptObject.OnHit()": {
+    "ScriptObject.OnHit": {
         "prefix": "onhit",
         "body": "Event OnHit(ObjectReference akTarget, ObjectReference akAggressor, Form akSource, Projectile akProjectile, bool abPowerAttack, \\\r\n  bool abSneakAttack, bool abBashAttack, bool abHitBlocked, string apMaterial)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnHit"
     },
-    "ScriptObject.OnInit()": {
+    "ScriptObject.OnInit": {
         "prefix": "oninit",
         "body": "Event OnInit()\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnInit"
     },
-    "ScriptObject.OnLooksMenuEvent()": {
+    "ScriptObject.OnLooksMenuEvent": {
         "prefix": "onlooksmenuevent",
         "body": "Event OnLooksMenuEvent(int aiFlavor)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnLooksMenuEvent"
     },
-    "ScriptObject.OnLostLOS()": {
+    "ScriptObject.OnLostLOS": {
         "prefix": "onlostlos",
         "body": "Event OnLostLOS(ObjectReference akViewer, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnLostLOS"
     },
-    "ScriptObject.OnMagicEffectApply()": {
+    "ScriptObject.OnMagicEffectApply": {
         "prefix": "onmagiceffectapply",
         "body": "Event OnMagicEffectApply(ObjectReference akTarget, ObjectReference akCaster, MagicEffect akEffect)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnMagicEffectApply"
     },
-    "ScriptObject.OnMenuOpenCloseEvent()": {
+    "ScriptObject.OnMenuOpenCloseEvent": {
         "prefix": "onmenuopencloseevent",
         "body": "Event OnMenuOpenCloseEvent(string asMenuName, bool abOpening)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnMenuOpenCloseEvent"
     },
-    "ScriptObject.OnPlayerSleepStart()": {
+    "ScriptObject.OnPlayerSleepStart": {
         "prefix": "onplayersleepstart",
         "body": "Event OnPlayerSleepStart(float afSleepStartTime, float afDesiredSleepEndTime, ObjectReference akBed)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnPlayerSleepStart"
     },
-    "ScriptObject.OnPlayerSleepStop()": {
+    "ScriptObject.OnPlayerSleepStop": {
         "prefix": "onplayersleepstop",
         "body": "Event OnPlayerSleepStop(bool abInterrupted, ObjectReference akBed)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnPlayerSleepStop"
     },
-    "ScriptObject.OnPlayerTeleport()": {
+    "ScriptObject.OnPlayerTeleport": {
         "prefix": "onplayerteleport",
         "body": "Event OnPlayerTeleport()\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnPlayerTeleport"
     },
-    "ScriptObject.OnPlayerWaitStart()": {
+    "ScriptObject.OnPlayerWaitStart": {
         "prefix": "onplayerwaitstart",
         "body": "Event OnPlayerWaitStart(float afWaitStartTime, float afDesiredWaitEndTime)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnPlayerWaitStart"
     },
-    "ScriptObject.OnPlayerWaitStop()": {
+    "ScriptObject.OnPlayerWaitStop": {
         "prefix": "onplayerwaitstop",
         "body": "Event OnPlayerWaitStop(bool abInterrupted)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnPlayerWaitStop"
     },
-    "ScriptObject.OnRadiationDamage()": {
+    "ScriptObject.OnRadiationDamage": {
         "prefix": "onradiationdamage",
         "body": "Event OnRadiationDamage(ObjectReference akTarget, bool abIngested)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnRadiationDamage"
     },
-    "ScriptObject.OnTimer()": {
+    "ScriptObject.OnTimer": {
         "prefix": "ontimer",
         "body": "Event OnTimer(int aiTimerID)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnTimer"
     },
-    "ScriptObject.OnTimerGameTime()": {
+    "ScriptObject.OnTimerGameTime": {
         "prefix": "ontimergametime",
         "body": "Event OnTimerGameTime(int aiTimerID)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnTimerGameTime"
     },
-    "ScriptObject.OnTrackedStatsEvent()": {
+    "ScriptObject.OnTrackedStatsEvent": {
         "prefix": "ontrackedstatsevent",
         "body": "Event OnTrackedStatsEvent(string asStat, int aiStatValue)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnTrackedStatsEvent"
     },
-    "ScriptObject.OnTutorialEvent()": {
+    "ScriptObject.OnTutorialEvent": {
         "prefix": "ontutorialevent",
         "body": "Event OnTutorialEvent(String asEventName, Message aMessage)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnTutorialEvent"
     },
-    "ScriptObject.RegisterForAnimationEvent()": {
+    "ScriptObject.RegisterForAnimationEvent": {
         "prefix": "registerforanimationevent",
         "body": "RegisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForCustomEvent()": {
+    "ScriptObject.RegisterForCustomEvent": {
         "prefix": "registerforcustomevent",
         "body": "RegisterForCustomEvent(${1:ScriptObject akEventSource}, ${2:CustomEventName asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForDetectionLOSGain()": {
+    "ScriptObject.RegisterForDetectionLOSGain": {
         "prefix": "registerfordetectionlosgain",
         "body": "RegisterForDetectionLOSGain(${1:Actor akViewer}, ${2:ObjectReference akTarget})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForDetectionLOSLost()": {
+    "ScriptObject.RegisterForDetectionLOSLost": {
         "prefix": "registerfordetectionloslost",
         "body": "RegisterForDetectionLOSLost(${1:Actor akViewer}, ${2:ObjectReference akTarget})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForDirectLOSGain()": {
+    "ScriptObject.RegisterForDirectLOSGain": {
         "prefix": "registerfordirectlosgain",
         "body": "RegisterForDirectLOSGain(${1:ObjectReference akViewer}, ${2:ObjectReference akTarget}, ${3:string asViewerNode = \\\"\\\"}, ${4:string asTargetNode = \\\"\\\"})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForDirectLOSLost()": {
+    "ScriptObject.RegisterForDirectLOSLost": {
         "prefix": "registerfordirectloslost",
         "body": "RegisterForDirectLOSLost(${1:ObjectReference akViewer}, ${2:ObjectReference akTarget}, ${3:string asViewerNode = \\\"\\\"}, ${4:string asTargetNode = \\\"\\\"})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForDistanceGreaterThanEvent()": {
+    "ScriptObject.RegisterForDistanceGreaterThanEvent": {
         "prefix": "registerfordistancegreaterthanevent",
         "body": "RegisterForDistanceGreaterThanEvent(${1:ScriptObject akObj1}, ${2:ScriptObject akObj2}, ${3:float afDistance})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForDistanceLessThanEvent()": {
+    "ScriptObject.RegisterForDistanceLessThanEvent": {
         "prefix": "registerfordistancelessthanevent",
         "body": "RegisterForDistanceLessThanEvent(${1:ScriptObject akObj1}, ${2:ScriptObject akObj2}, ${3:float afDistance})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForHitEvent()": {
+    "ScriptObject.RegisterForHitEvent": {
         "prefix": "registerforhitevent",
         "body": "RegisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = true})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForLooksMenuEvent()": {
+    "ScriptObject.RegisterForLooksMenuEvent": {
         "prefix": "registerforlooksmenuevent",
         "body": "RegisterForLooksMenuEvent()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForMagicEffectApplyEvent()": {
+    "ScriptObject.RegisterForMagicEffectApplyEvent": {
         "prefix": "registerformagiceffectapplyevent",
         "body": "RegisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = true})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForMenuOpenCloseEvent()": {
+    "ScriptObject.RegisterForMenuOpenCloseEvent": {
         "prefix": "registerformenuopencloseevent",
         "body": "RegisterForMenuOpenCloseEvent(${1:string asMenuName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForPlayerSleep()": {
+    "ScriptObject.RegisterForPlayerSleep": {
         "prefix": "registerforplayersleep",
         "body": "RegisterForPlayerSleep()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForPlayerTeleport()": {
+    "ScriptObject.RegisterForPlayerTeleport": {
         "prefix": "registerforplayerteleport",
         "body": "RegisterForPlayerTeleport()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForPlayerWait()": {
+    "ScriptObject.RegisterForPlayerWait": {
         "prefix": "registerforplayerwait",
         "body": "RegisterForPlayerWait()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForRadiationDamageEvent()": {
+    "ScriptObject.RegisterForRadiationDamageEvent": {
         "prefix": "registerforradiationdamageevent",
         "body": "RegisterForRadiationDamageEvent(${1:ScriptObject akTarget})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForRemoteEvent()": {
+    "ScriptObject.RegisterForRemoteEvent": {
         "prefix": "registerforremoteevent",
         "body": "RegisterForRemoteEvent(${1:ScriptObject akEventSource}, ${2:ScriptEventName asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForTrackedStatsEvent()": {
+    "ScriptObject.RegisterForTrackedStatsEvent": {
         "prefix": "registerfortrackedstatsevent",
         "body": "RegisterForTrackedStatsEvent(${1:string asStat}, ${2:int aiThreshold})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForTutorialEvent()": {
+    "ScriptObject.RegisterForTutorialEvent": {
         "prefix": "registerfortutorialevent",
         "body": "RegisterForTutorialEvent(${1:String asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RemoveAllInventoryEventFilters()": {
+    "ScriptObject.RemoveAllInventoryEventFilters": {
         "prefix": "removeallinventoryeventfilters",
         "body": "RemoveAllInventoryEventFilters()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RemoveInventoryEventFilter()": {
+    "ScriptObject.RemoveInventoryEventFilter": {
         "prefix": "removeinventoryeventfilter",
         "body": "RemoveInventoryEventFilter(${1:Form akFilter})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.SendCustomEvent()": {
+    "ScriptObject.SendCustomEvent": {
         "prefix": "sendcustomevent",
         "body": "SendCustomEvent(${1:CustomEventName asEventName}, ${2:Var[] akArgs = None})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.SetPropertyValue()": {
+    "ScriptObject.SetPropertyValue": {
         "prefix": "setpropertyvalue",
         "body": "SetPropertyValue(${1:string asProperyName}, ${2:Var aValue})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.SetPropertyValueNoWait()": {
+    "ScriptObject.SetPropertyValueNoWait": {
         "prefix": "setpropertyvaluenowait",
         "body": "SetPropertyValueNoWait(${1:string asProperyName}, ${2:Var aValue})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.StartTimer()": {
+    "ScriptObject.StartTimer": {
         "prefix": "starttimer",
         "body": "StartTimer(${1:float afInterval}, ${2:int aiTimerID = 0})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.StartTimerGameTime()": {
+    "ScriptObject.StartTimerGameTime": {
         "prefix": "starttimergametime",
         "body": "StartTimerGameTime(${1:float afInterval}, ${2:int aiTimerID = 0})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllCustomEvents()": {
+    "ScriptObject.UnregisterForAllCustomEvents": {
         "prefix": "unregisterforallcustomevents",
         "body": "UnregisterForAllCustomEvents()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllEvents()": {
+    "ScriptObject.UnregisterForAllEvents": {
         "prefix": "unregisterforallevents",
         "body": "UnregisterForAllEvents()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllHitEvents()": {
+    "ScriptObject.UnregisterForAllHitEvents": {
         "prefix": "unregisterforallhitevents",
         "body": "UnregisterForAllHitEvents(${1:ScriptObject akTarget = None})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllMagicEffectApplyEvents()": {
+    "ScriptObject.UnregisterForAllMagicEffectApplyEvents": {
         "prefix": "unregisterforallmagiceffectapplyevents",
         "body": "UnregisterForAllMagicEffectApplyEvents(${1:ScriptObject akTarget = None})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllMenuOpenCloseEvents()": {
+    "ScriptObject.UnregisterForAllMenuOpenCloseEvents": {
         "prefix": "unregisterforallmenuopencloseevents",
         "body": "UnregisterForAllMenuOpenCloseEvents()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllRadiationDamageEvents()": {
+    "ScriptObject.UnregisterForAllRadiationDamageEvents": {
         "prefix": "unregisterforallradiationdamageevents",
         "body": "UnregisterForAllRadiationDamageEvents()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllRemoteEvents()": {
+    "ScriptObject.UnregisterForAllRemoteEvents": {
         "prefix": "unregisterforallremoteevents",
         "body": "UnregisterForAllRemoteEvents()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAllTrackedStatsEvents()": {
+    "ScriptObject.UnregisterForAllTrackedStatsEvents": {
         "prefix": "unregisterforalltrackedstatsevents",
         "body": "UnregisterForAllTrackedStatsEvents()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForAnimationEvent()": {
+    "ScriptObject.UnregisterForAnimationEvent": {
         "prefix": "unregisterforanimationevent",
         "body": "UnregisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForCustomEvent()": {
+    "ScriptObject.UnregisterForCustomEvent": {
         "prefix": "unregisterforcustomevent",
         "body": "UnregisterForCustomEvent(${1:ScriptObject akEventSource}, ${2:CustomEventName asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForDistanceEvents()": {
+    "ScriptObject.UnregisterForDistanceEvents": {
         "prefix": "unregisterfordistanceevents",
         "body": "UnregisterForDistanceEvents(${1:ScriptObject akObj1}, ${2:ScriptObject akObj2})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForHitEvent()": {
+    "ScriptObject.UnregisterForHitEvent": {
         "prefix": "unregisterforhitevent",
         "body": "UnregisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = true})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForLooksMenuEvent()": {
+    "ScriptObject.UnregisterForLooksMenuEvent": {
         "prefix": "unregisterforlooksmenuevent",
         "body": "UnregisterForLooksMenuEvent()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForLOS()": {
+    "ScriptObject.UnregisterForLOS": {
         "prefix": "unregisterforlos",
         "body": "UnregisterForLOS(${1:ObjectReference akViewer}, ${2:ObjectReference akTarget})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForMagicEffectApplyEvent()": {
+    "ScriptObject.UnregisterForMagicEffectApplyEvent": {
         "prefix": "unregisterformagiceffectapplyevent",
         "body": "UnregisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = true})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForMenuOpenCloseEvent()": {
+    "ScriptObject.UnregisterForMenuOpenCloseEvent": {
         "prefix": "unregisterformenuopencloseevent",
         "body": "UnregisterForMenuOpenCloseEvent(${1:string asMenuName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForPlayerSleep()": {
+    "ScriptObject.UnregisterForPlayerSleep": {
         "prefix": "unregisterforplayersleep",
         "body": "UnregisterForPlayerSleep()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForPlayerTeleport()": {
+    "ScriptObject.UnregisterForPlayerTeleport": {
         "prefix": "unregisterforplayerteleport",
         "body": "UnregisterForPlayerTeleport()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForPlayerWait()": {
+    "ScriptObject.UnregisterForPlayerWait": {
         "prefix": "unregisterforplayerwait",
         "body": "UnregisterForPlayerWait()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForRadiationDamageEvent()": {
+    "ScriptObject.UnregisterForRadiationDamageEvent": {
         "prefix": "unregisterforradiationdamageevent",
         "body": "UnregisterForRadiationDamageEvent(${1:ScriptObject akTarget})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForRemoteEvent()": {
+    "ScriptObject.UnregisterForRemoteEvent": {
         "prefix": "unregisterforremoteevent",
         "body": "UnregisterForRemoteEvent(${1:ScriptObject akEventSource}, ${2:ScriptEventName asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForTrackedStatsEvent()": {
+    "ScriptObject.UnregisterForTrackedStatsEvent": {
         "prefix": "unregisterfortrackedstatsevent",
         "body": "UnregisterForTrackedStatsEvent(${1:string asStat})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForTutorialEvent()": {
+    "ScriptObject.UnregisterForTutorialEvent": {
         "prefix": "unregisterfortutorialevent",
         "body": "UnregisterForTutorialEvent(${1:String asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForKey()": {
+    "ScriptObject.RegisterForKey": {
         "prefix": "registerforkey",
         "body": "RegisterForKey(${1:int aiKeyCode})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForKey()": {
+    "ScriptObject.UnregisterForKey": {
         "prefix": "unregisterforkey",
         "body": "UnregisterForKey(${1:int aiKeyCode})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.OnKeyDown()": {
+    "ScriptObject.OnKeyDown": {
         "prefix": "onkeydown",
         "body": "Event OnKeyDown(int aiKeyCode)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnKeyDown"
     },
-    "ScriptObject.OnKeyUp()": {
+    "ScriptObject.OnKeyUp": {
         "prefix": "onkeyup",
         "body": "Event OnKeyUp(int aiKeyCode, float afTime)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnKeyUp"
     },
-    "ScriptObject.RegisterForControl()": {
+    "ScriptObject.RegisterForControl": {
         "prefix": "registerforcontrol",
         "body": "RegisterForControl(${1:string asControlName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForControl()": {
+    "ScriptObject.UnregisterForControl": {
         "prefix": "unregisterforcontrol",
         "body": "UnregisterForControl(${1:string asControlName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.OnControlDown()": {
+    "ScriptObject.OnControlDown": {
         "prefix": "oncontroldown",
         "body": "Event OnControlDown(string asControlName)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnControlDown"
     },
-    "ScriptObject.OnControlUp()": {
+    "ScriptObject.OnControlUp": {
         "prefix": "oncontrolup",
         "body": "Event OnControlUp(string asControlName, float afTime)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnControlUp"
     },
-    "ScriptObject.RegisterForExternalEvent()": {
+    "ScriptObject.RegisterForExternalEvent": {
         "prefix": "registerforexternalevent",
         "body": "RegisterForExternalEvent(${1:string asEventName}, ${2:string asCallback})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForExternalEvent()": {
+    "ScriptObject.UnregisterForExternalEvent": {
         "prefix": "unregisterforexternalevent",
         "body": "UnregisterForExternalEvent(${1:string asEventName})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.RegisterForCameraState()": {
+    "ScriptObject.RegisterForCameraState": {
         "prefix": "registerforcamerastate",
         "body": "RegisterForCameraState()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForCameraState()": {
+    "ScriptObject.UnregisterForCameraState": {
         "prefix": "unregisterforcamerastate",
         "body": "UnregisterForCameraState()${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.OnPlayerCameraState()": {
+    "ScriptObject.OnPlayerCameraState": {
         "prefix": "onplayercamerastate",
         "body": "Event OnPlayerCameraState(int aiOldState, int aiNewState)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnPlayerCameraState"
     },
-    "ScriptObject.RegisterForFurnitureEvent()": {
+    "ScriptObject.RegisterForFurnitureEvent": {
         "prefix": "registerforfurnitureevent",
         "body": "RegisterForFurnitureEvent(${1:var akFilter = None})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.UnregisterForFurnitureEvent()": {
+    "ScriptObject.UnregisterForFurnitureEvent": {
         "prefix": "unregisterforfurnitureevent",
         "body": "UnregisterForFurnitureEvent(${1:var akFilter = None})${0}",
         "description": "ScriptObject"
     },
-    "ScriptObject.OnFurnitureEvent()": {
+    "ScriptObject.OnFurnitureEvent": {
         "prefix": "onfurnitureevent",
         "body": "Event OnFurnitureEvent(Actor akActor, ObjectReference akFurniture, bool abGettingUp)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnFurnitureEvent"

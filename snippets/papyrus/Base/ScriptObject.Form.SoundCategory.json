@@ -1,30 +1,30 @@
 {
-    "SoundCategory.Mute()": {
+    "SoundCategory.Mute": {
         "prefix": "mute",
         "body": "Mute()${0}",
         "description": "SoundCategory"
     },
-    "SoundCategory.Pause()": {
+    "SoundCategory.Pause": {
         "prefix": "pause",
         "body": "Pause()${0}",
         "description": "SoundCategory"
     },
-    "SoundCategory.SetFrequency()": {
+    "SoundCategory.SetFrequency": {
         "prefix": "setfrequency",
         "body": "SetFrequency(${1:float afFrequencyCoeffecient})${0}",
         "description": "SoundCategory"
     },
-    "SoundCategory.SetVolume()": {
+    "SoundCategory.SetVolume": {
         "prefix": "setvolume",
         "body": "SetVolume(${1:float afVolume})${0}",
         "description": "SoundCategory"
     },
-    "SoundCategory.UnMute()": {
+    "SoundCategory.UnMute": {
         "prefix": "unmute",
         "body": "UnMute()${0}",
         "description": "SoundCategory"
     },
-    "SoundCategory.UnPause()": {
+    "SoundCategory.UnPause": {
         "prefix": "unpause",
         "body": "UnPause()${0}",
         "description": "SoundCategory"

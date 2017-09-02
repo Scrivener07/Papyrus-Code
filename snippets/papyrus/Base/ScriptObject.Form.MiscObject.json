@@ -1,15 +1,15 @@
 {
-    "MiscObject.GetObjectComponentCount()": {
+    "MiscObject.GetObjectComponentCount": {
         "prefix": "getobjectcomponentcount",
         "body": "GetObjectComponentCount(${1:Component akComponent})${0}",
         "description": "MiscObject"
     },
-    "MiscObject.GetMiscComponents()": {
+    "MiscObject.GetMiscComponents": {
         "prefix": "getmisccomponents",
         "body": "GetMiscComponents()${0}",
         "description": "MiscObject"
     },
-    "MiscObject.SetMiscComponents()": {
+    "MiscObject.SetMiscComponents": {
         "prefix": "setmisccomponents",
         "body": "SetMiscComponents(${1:MiscComponent[] akComponents})${0}",
         "description": "MiscObject"

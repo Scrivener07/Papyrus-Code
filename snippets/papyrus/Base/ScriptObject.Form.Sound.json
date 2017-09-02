@@ -1,20 +1,20 @@
 {
-    "Sound.Play()": {
+    "Sound.Play": {
         "prefix": "play",
         "body": "Play(${1:ObjectReference akSource})${0}",
         "description": "Sound"
     },
-    "Sound.PlayAndWait()": {
+    "Sound.PlayAndWait": {
         "prefix": "playandwait",
         "body": "PlayAndWait(${1:ObjectReference akSource})${0}",
         "description": "Sound"
     },
-    "Sound.SetInstanceVolume()": {
+    "Sound.SetInstanceVolume": {
         "prefix": "setinstancevolume",
         "body": "Sound.SetInstanceVolume(${1:int aiPlaybackInstance}, ${2:float afVolume})${0}",
         "description": "Sound"
     },
-    "Sound.StopInstance()": {
+    "Sound.StopInstance": {
         "prefix": "stopinstance",
         "body": "Sound.StopInstance(${1:int aiPlaybackInstance})${0}",
         "description": "Sound"

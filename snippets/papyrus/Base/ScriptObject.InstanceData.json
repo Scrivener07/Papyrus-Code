@@ -1,260 +1,260 @@
 {
-    "InstanceData.GetAttackDamage()": {
+    "InstanceData.GetAttackDamage": {
         "prefix": "getattackdamage",
         "body": "InstanceData.GetAttackDamage(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetAttackDamage()": {
+    "InstanceData.SetAttackDamage": {
         "prefix": "setattackdamage",
         "body": "InstanceData.SetAttackDamage(${1:Owner akOwner}, ${2:int aiDamage})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetDamageTypes()": {
+    "InstanceData.GetDamageTypes": {
         "prefix": "getdamagetypes",
         "body": "InstanceData.GetDamageTypes(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetDamageTypes()": {
+    "InstanceData.SetDamageTypes": {
         "prefix": "setdamagetypes",
         "body": "InstanceData.SetDamageTypes(${1:Owner akOwner}, ${2:DamageTypeInfo[] akDTS})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetAmmoCapacity()": {
+    "InstanceData.GetAmmoCapacity": {
         "prefix": "getammocapacity",
         "body": "InstanceData.GetAmmoCapacity(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetAmmoCapacity()": {
+    "InstanceData.SetAmmoCapacity": {
         "prefix": "setammocapacity",
         "body": "InstanceData.SetAmmoCapacity(${1:Owner akOwner}, ${2:int aiCapacity})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetAmmo()": {
+    "InstanceData.GetAmmo": {
         "prefix": "getammo",
         "body": "InstanceData.GetAmmo(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetAmmo()": {
+    "InstanceData.SetAmmo": {
         "prefix": "setammo",
         "body": "InstanceData.SetAmmo(${1:Owner akOwner}, ${2:Ammo akAmmo})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetAccuracyBonus()": {
+    "InstanceData.GetAccuracyBonus": {
         "prefix": "getaccuracybonus",
         "body": "InstanceData.GetAccuracyBonus(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetAccuracyBonus()": {
+    "InstanceData.SetAccuracyBonus": {
         "prefix": "setaccuracybonus",
         "body": "InstanceData.SetAccuracyBonus(${1:Owner akOwner}, ${2:int aiBonus})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetActionPointCost()": {
+    "InstanceData.GetActionPointCost": {
         "prefix": "getactionpointcost",
         "body": "InstanceData.GetActionPointCost(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetActionPointCost()": {
+    "InstanceData.SetActionPointCost": {
         "prefix": "setactionpointcost",
         "body": "InstanceData.SetActionPointCost(${1:Owner akOwner}, ${2:float afCost})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetAttackDelay()": {
+    "InstanceData.GetAttackDelay": {
         "prefix": "getattackdelay",
         "body": "InstanceData.GetAttackDelay(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetAttackDelay()": {
+    "InstanceData.SetAttackDelay": {
         "prefix": "setattackdelay",
         "body": "InstanceData.SetAttackDelay(${1:Owner akOwner}, ${2:float afDelay})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetOutOfRangeMultiplier()": {
+    "InstanceData.GetOutOfRangeMultiplier": {
         "prefix": "getoutofrangemultiplier",
         "body": "InstanceData.GetOutOfRangeMultiplier(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetOutOfRangeMultiplier()": {
+    "InstanceData.SetOutOfRangeMultiplier": {
         "prefix": "setoutofrangemultiplier",
         "body": "InstanceData.SetOutOfRangeMultiplier(${1:Owner akOwner}, ${2:float afMult})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetReloadSpeed()": {
+    "InstanceData.GetReloadSpeed": {
         "prefix": "getreloadspeed",
         "body": "InstanceData.GetReloadSpeed(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetReloadSpeed()": {
+    "InstanceData.SetReloadSpeed": {
         "prefix": "setreloadspeed",
         "body": "InstanceData.SetReloadSpeed(${1:Owner akOwner}, ${2:float afSpeed})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetReach()": {
+    "InstanceData.GetReach": {
         "prefix": "getreach",
         "body": "InstanceData.GetReach(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetReach()": {
+    "InstanceData.SetReach": {
         "prefix": "setreach",
         "body": "InstanceData.SetReach(${1:Owner akOwner}, ${2:float afReach})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetMinRange()": {
+    "InstanceData.GetMinRange": {
         "prefix": "getminrange",
         "body": "InstanceData.GetMinRange(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetMinRange()": {
+    "InstanceData.SetMinRange": {
         "prefix": "setminrange",
         "body": "InstanceData.SetMinRange(${1:Owner akOwner}, ${2:float afMinRange})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetMaxRange()": {
+    "InstanceData.GetMaxRange": {
         "prefix": "getmaxrange",
         "body": "InstanceData.GetMaxRange(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetMaxRange()": {
+    "InstanceData.SetMaxRange": {
         "prefix": "setmaxrange",
         "body": "InstanceData.SetMaxRange(${1:Owner akOwner}, ${2:float afMaxRange})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetSpeed()": {
+    "InstanceData.GetSpeed": {
         "prefix": "getspeed",
         "body": "InstanceData.GetSpeed(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetSpeed()": {
+    "InstanceData.SetSpeed": {
         "prefix": "setspeed",
         "body": "InstanceData.SetSpeed(${1:Owner akOwner}, ${2:float afSpeed})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetStagger()": {
+    "InstanceData.GetStagger": {
         "prefix": "getstagger",
         "body": "InstanceData.GetStagger(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetStagger()": {
+    "InstanceData.SetStagger": {
         "prefix": "setstagger",
         "body": "InstanceData.SetStagger(${1:Owner akOwner}, ${2:int aiStagger})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetSkill()": {
+    "InstanceData.GetSkill": {
         "prefix": "getskill",
         "body": "InstanceData.GetSkill(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetSkill()": {
+    "InstanceData.SetSkill": {
         "prefix": "setskill",
         "body": "InstanceData.SetSkill(${1:Owner akOwner}, ${2:ActorValue akSkill})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetResist()": {
+    "InstanceData.GetResist": {
         "prefix": "getresist",
         "body": "InstanceData.GetResist(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetResist()": {
+    "InstanceData.SetResist": {
         "prefix": "setresist",
         "body": "InstanceData.SetResist(${1:Owner akOwner}, ${2:ActorValue akResist})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetCritMultiplier()": {
+    "InstanceData.GetCritMultiplier": {
         "prefix": "getcritmultiplier",
         "body": "InstanceData.GetCritMultiplier(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetCritMultiplier()": {
+    "InstanceData.SetCritMultiplier": {
         "prefix": "setcritmultiplier",
         "body": "InstanceData.SetCritMultiplier(${1:Owner akOwner}, ${2:float afCrit})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetCritChargeBonus()": {
+    "InstanceData.GetCritChargeBonus": {
         "prefix": "getcritchargebonus",
         "body": "InstanceData.GetCritChargeBonus(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetCritChargeBonus()": {
+    "InstanceData.SetCritChargeBonus": {
         "prefix": "setcritchargebonus",
         "body": "InstanceData.SetCritChargeBonus(${1:Owner akOwner}, ${2:float afBonus})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetProjectileOverride()": {
+    "InstanceData.GetProjectileOverride": {
         "prefix": "getprojectileoverride",
         "body": "InstanceData.GetProjectileOverride(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetProjectileOverride()": {
+    "InstanceData.SetProjectileOverride": {
         "prefix": "setprojectileoverride",
         "body": "InstanceData.SetProjectileOverride(${1:Owner akOwner}, ${2:Projectile akProjectile})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetNumProjectiles()": {
+    "InstanceData.GetNumProjectiles": {
         "prefix": "getnumprojectiles",
         "body": "InstanceData.GetNumProjectiles(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetNumProjectiles()": {
+    "InstanceData.SetNumProjectiles": {
         "prefix": "setnumprojectiles",
         "body": "InstanceData.SetNumProjectiles(${1:Owner akOwner}, ${2:int aiNumber})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetSightedTransition()": {
+    "InstanceData.GetSightedTransition": {
         "prefix": "getsightedtransition",
         "body": "InstanceData.GetSightedTransition(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetSightedTransition()": {
+    "InstanceData.SetSightedTransition": {
         "prefix": "setsightedtransition",
         "body": "InstanceData.SetSightedTransition(${1:Owner akOwner}, ${2:float afSeconds})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetFlag()": {
+    "InstanceData.GetFlag": {
         "prefix": "getflag",
         "body": "InstanceData.GetFlag(${1:Owner akOwner}, ${2:int aiFlag})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetFlag()": {
+    "InstanceData.SetFlag": {
         "prefix": "setflag",
         "body": "InstanceData.SetFlag(${1:Owner akOwner}, ${2:int aiFlag}, ${3:bool abSet})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetArmorHealth()": {
+    "InstanceData.GetArmorHealth": {
         "prefix": "getarmorhealth",
         "body": "InstanceData.GetArmorHealth(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetArmorHealth()": {
+    "InstanceData.SetArmorHealth": {
         "prefix": "setarmorhealth",
         "body": "InstanceData.SetArmorHealth(${1:Owner akOwner}, ${2:int aiHealth})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetArmorRating()": {
+    "InstanceData.GetArmorRating": {
         "prefix": "getarmorrating",
         "body": "InstanceData.GetArmorRating(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetArmorRating()": {
+    "InstanceData.SetArmorRating": {
         "prefix": "setarmorrating",
         "body": "InstanceData.SetArmorRating(${1:Owner akOwner}, ${2:int aiRating})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetWeight()": {
+    "InstanceData.GetWeight": {
         "prefix": "getweight",
         "body": "InstanceData.GetWeight(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetWeight()": {
+    "InstanceData.SetWeight": {
         "prefix": "setweight",
         "body": "InstanceData.SetWeight(${1:Owner akOwner}, ${2:float afWeight})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.GetGoldValue()": {
+    "InstanceData.GetGoldValue": {
         "prefix": "getgoldvalue",
         "body": "InstanceData.GetGoldValue(${1:Owner akOwner})${0}",
         "description": "InstanceData"
     },
-    "InstanceData.SetGoldValue()": {
+    "InstanceData.SetGoldValue": {
         "prefix": "setgoldvalue",
         "body": "InstanceData.SetGoldValue(${1:Owner akOwner}, ${2:int aiValue})${0}",
         "description": "InstanceData"

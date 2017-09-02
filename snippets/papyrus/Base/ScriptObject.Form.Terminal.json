@@ -1,15 +1,15 @@
 {
-    "Remote Terminal.OnMenuItemRun()": {
+    "Remote Terminal.OnMenuItemRun": {
         "prefix": "onmenuitemrun-REM",
         "body": "Event Terminal.OnMenuItemRun(Terminal akSender, int auiMenuItemID, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Terminal.OnMenuItemRun"
     },
-    "Terminal.OnMenuItemRun()": {
+    "Terminal.OnMenuItemRun": {
         "prefix": "onmenuitemrun",
         "body": "Event OnMenuItemRun(int auiMenuItemID, ObjectReference akTerminalRef)\r\n    ${0}\r\nEndEvent",
         "description": "Event Terminal.OnMenuItemRun"
     },
-    "Terminal.ShowOnPipboy()": {
+    "Terminal.ShowOnPipboy": {
         "prefix": "showonpipboy",
         "body": "ShowOnPipboy()${0}",
         "description": "Terminal"

@@ -1,165 +1,165 @@
 {
-    "InputEnableLayer.Create()": {
+    "InputEnableLayer.Create": {
         "prefix": "create",
         "body": "InputEnableLayer.Create()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.Delete()": {
+    "InputEnableLayer.Delete": {
         "prefix": "delete",
         "body": "Delete()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.DisablePlayerControls()": {
+    "InputEnableLayer.DisablePlayerControls": {
         "prefix": "disableplayercontrols",
         "body": "DisablePlayerControls(${1:bool abMovement = true}, ${2:bool abFighting = true}, ${3:bool abCamSwitch = false}, ${4:bool abLooking = false}, ${5:bool abSneaking = false}, ${6:bool abMenu = true}, ${7:bool abActivate = true}, ${8:bool abJournalTabs = false}, ${9:bool abVATS = true}, ${10:bool abFavorites = true}, ${11:bool abRunning = false})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableActivate()": {
+    "InputEnableLayer.EnableActivate": {
         "prefix": "enableactivate",
         "body": "EnableActivate(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableCamSwitch()": {
+    "InputEnableLayer.EnableCamSwitch": {
         "prefix": "enablecamswitch",
         "body": "EnableCamSwitch(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableFastTravel()": {
+    "InputEnableLayer.EnableFastTravel": {
         "prefix": "enablefasttravel",
         "body": "EnableFastTravel(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableFavorites()": {
+    "InputEnableLayer.EnableFavorites": {
         "prefix": "enablefavorites",
         "body": "EnableFavorites(${1:bool abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableFighting()": {
+    "InputEnableLayer.EnableFighting": {
         "prefix": "enablefighting",
         "body": "EnableFighting(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableJournal()": {
+    "InputEnableLayer.EnableJournal": {
         "prefix": "enablejournal",
         "body": "EnableJournal(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableLooking()": {
+    "InputEnableLayer.EnableLooking": {
         "prefix": "enablelooking",
         "body": "EnableLooking(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableMenu()": {
+    "InputEnableLayer.EnableMenu": {
         "prefix": "enablemenu",
         "body": "EnableMenu(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableMovement()": {
+    "InputEnableLayer.EnableMovement": {
         "prefix": "enablemovement",
         "body": "EnableMovement(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnablePlayerControls()": {
+    "InputEnableLayer.EnablePlayerControls": {
         "prefix": "enableplayercontrols",
         "body": "EnablePlayerControls(${1:bool abMovement = true}, ${2:bool abFighting = true}, ${3:bool abCamSwitch = true}, ${4:bool abLooking = true}, ${5:bool abSneaking = true}, ${6:bool abMenu = true}, ${7:bool abActivate = true}, ${8:bool abJournalTabs = true}, ${9:bool abVATS = true}, ${10:bool abFavorites = true}, ${11:bool abRunning = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableRunning()": {
+    "InputEnableLayer.EnableRunning": {
         "prefix": "enablerunning",
         "body": "EnableRunning(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableSneaking()": {
+    "InputEnableLayer.EnableSneaking": {
         "prefix": "enablesneaking",
         "body": "EnableSneaking(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableSprinting()": {
+    "InputEnableLayer.EnableSprinting": {
         "prefix": "enablesprinting",
         "body": "EnableSprinting(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableVATS()": {
+    "InputEnableLayer.EnableVATS": {
         "prefix": "enablevats",
         "body": "EnableVATS(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.EnableZKey()": {
+    "InputEnableLayer.EnableZKey": {
         "prefix": "enablezkey",
         "body": "EnableZKey(${1:abEnable = true})${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsActivateEnabled()": {
+    "InputEnableLayer.IsActivateEnabled": {
         "prefix": "isactivateenabled",
         "body": "IsActivateEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsCamSwitchEnabled()": {
+    "InputEnableLayer.IsCamSwitchEnabled": {
         "prefix": "iscamswitchenabled",
         "body": "IsCamSwitchEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsFastTravelEnabled()": {
+    "InputEnableLayer.IsFastTravelEnabled": {
         "prefix": "isfasttravelenabled",
         "body": "IsFastTravelEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsFavoritesEnabled()": {
+    "InputEnableLayer.IsFavoritesEnabled": {
         "prefix": "isfavoritesenabled",
         "body": "IsFavoritesEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsFightingEnabled()": {
+    "InputEnableLayer.IsFightingEnabled": {
         "prefix": "isfightingenabled",
         "body": "IsFightingEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsJournalEnabled()": {
+    "InputEnableLayer.IsJournalEnabled": {
         "prefix": "isjournalenabled",
         "body": "IsJournalEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsLookingEnabled()": {
+    "InputEnableLayer.IsLookingEnabled": {
         "prefix": "islookingenabled",
         "body": "IsLookingEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsMenuEnabled()": {
+    "InputEnableLayer.IsMenuEnabled": {
         "prefix": "ismenuenabled",
         "body": "IsMenuEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsMovementEnabled()": {
+    "InputEnableLayer.IsMovementEnabled": {
         "prefix": "ismovementenabled",
         "body": "IsMovementEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsRunningEnabled()": {
+    "InputEnableLayer.IsRunningEnabled": {
         "prefix": "isrunningenabled",
         "body": "IsRunningEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsSneakingEnabled()": {
+    "InputEnableLayer.IsSneakingEnabled": {
         "prefix": "issneakingenabled",
         "body": "IsSneakingEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsSprintingEnabled()": {
+    "InputEnableLayer.IsSprintingEnabled": {
         "prefix": "issprintingenabled",
         "body": "IsSprintingEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsVATSEnabled()": {
+    "InputEnableLayer.IsVATSEnabled": {
         "prefix": "isvatsenabled",
         "body": "IsVATSEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.IsZKeyEnabled()": {
+    "InputEnableLayer.IsZKeyEnabled": {
         "prefix": "iszkeyenabled",
         "body": "IsZKeyEnabled()${0}",
         "description": "InputEnableLayer"
     },
-    "InputEnableLayer.Reset()": {
+    "InputEnableLayer.Reset": {
         "prefix": "reset",
         "body": "Reset()${0}",
         "description": "InputEnableLayer"

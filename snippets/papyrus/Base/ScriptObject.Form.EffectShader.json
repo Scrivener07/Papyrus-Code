@@ -1,10 +1,10 @@
 {
-    "EffectShader.Play()": {
+    "EffectShader.Play": {
         "prefix": "play",
         "body": "Play(${1:ObjectReference akObject}, ${2:float afDuration = -1.0})${0}",
         "description": "EffectShader"
     },
-    "EffectShader.Stop()": {
+    "EffectShader.Stop": {
         "prefix": "stop",
         "body": "Stop(${1:ObjectReference akObject})${0}",
         "description": "EffectShader"

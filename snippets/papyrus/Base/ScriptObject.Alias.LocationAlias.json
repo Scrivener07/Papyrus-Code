@@ -1,15 +1,15 @@
 {
-    "LocationAlias.Clear()": {
+    "LocationAlias.Clear": {
         "prefix": "clear",
         "body": "Clear()${0}",
         "description": "LocationAlias"
     },
-    "LocationAlias.ForceLocationTo()": {
+    "LocationAlias.ForceLocationTo": {
         "prefix": "forcelocationto",
         "body": "ForceLocationTo(${1:Location akNewLocation})${0}",
         "description": "LocationAlias"
     },
-    "LocationAlias.GetLocation()": {
+    "LocationAlias.GetLocation": {
         "prefix": "getlocation",
         "body": "GetLocation()${0}",
         "description": "LocationAlias"
