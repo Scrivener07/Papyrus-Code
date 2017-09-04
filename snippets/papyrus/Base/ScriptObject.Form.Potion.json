@@ -1,8 +1,7 @@
 {
-	"ishostile": {
-		"prefix": "ishostile",
-		"body": "IsHostile()${0}",
-		"description": "Potion",
-		"scope": "source.papyrus"
-	}
+    "Potion.IsHostile": {
+        "prefix": "ishostile",
+        "body": "IsHostile()${0}",
+        "description": "Potion"
+    }
 }

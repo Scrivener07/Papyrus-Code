@@ -1,8 +1,7 @@
 {
-	"add": {
-		"prefix": "add",
-		"body": "Add()${0}",
-		"description": "Topic",
-		"scope": "source.papyrus"
-	}
+    "Topic.Add": {
+        "prefix": "add",
+        "body": "Add()${0}",
+        "description": "Topic"
+    }
 }

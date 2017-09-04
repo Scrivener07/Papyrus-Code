@@ -1,68 +1,57 @@
 {
-	"checkactoragainstfactionarray": {
-		"prefix": "checkactoragainstfactionarray",
-		"body": "CommonArrayFunctions.CheckActorAgainstFactionArray(${1:Actor ObjectToCheck}, ${2:Faction[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"checkformagainstarray": {
-		"prefix": "checkformagainstarray",
-		"body": "CommonArrayFunctions.CheckFormAgainstArray(${1:Form FormToCheck}, ${2:Form[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"checklocationagainstarray": {
-		"prefix": "checklocationagainstarray",
-		"body": "CommonArrayFunctions.CheckLocationAgainstArray(${1:Location ObjectToCheck}, ${2:Location[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false}, ${4:bool matchIfChildLocation = false})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"checklocationagainstlocationaliasarray": {
-		"prefix": "checklocationagainstlocationaliasarray",
-		"body": "CommonArrayFunctions.CheckLocationAgainstLocationAliasArray(${1:Location ObjectToCheck}, ${2:LocationAlias[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false}, ${4:bool matchIfChildLocation = false})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"checkobjectagainstkeywordarray": {
-		"prefix": "checkobjectagainstkeywordarray",
-		"body": "CommonArrayFunctions.CheckObjectAgainstKeywordArray(${1:ObjectReference ObjectToCheck}, ${2:Keyword[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"checkobjectreferenceagainstarray": {
-		"prefix": "checkobjectreferenceagainstarray",
-		"body": "CommonArrayFunctions.CheckObjectReferenceAgainstArray(${1:ObjectReference ObjectToCheck}, ${2:ObjectReference[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"checkobjectreferenceagainstreferencealiasarray": {
-		"prefix": "checkobjectreferenceagainstreferencealiasarray",
-		"body": "CommonArrayFunctions.CheckObjectReferenceAgainstReferenceAliasArray(${1:ObjectReference ObjectToCheck}, ${2:ReferenceAlias[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"findinreferencealiasarray": {
-		"prefix": "findinreferencealiasarray",
-		"body": "CommonArrayFunctions.FindInReferenceAliasArray(${1:ObjectReference ObjectToCheck}, ${2:ReferenceAlias[] ArrayToCheck})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"getfirstfoundfactioninarrayforactor": {
-		"prefix": "getfirstfoundfactioninarrayforactor",
-		"body": "CommonArrayFunctions.GetFirstFoundFactionInArrayForActor(${1:Actor ActorToCheck}, ${2:Faction[] ArrayToCheck})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"getfirstfoundkeywordinarrayforlocation": {
-		"prefix": "getfirstfoundkeywordinarrayforlocation",
-		"body": "CommonArrayFunctions.GetFirstFoundKeywordInArrayForLocation(${1:Location LocationToCheck}, ${2:Keyword[] ArrayToCheck})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	},
-	"isactorinarrayhostiletoactor": {
-		"prefix": "isactorinarrayhostiletoactor",
-		"body": "CommonArrayFunctions.IsActorInArrayHostileToActor(${1:Actor ActorToCheck}, ${2:ObjectReference[] ArrayToCheck})${0}",
-		"description": "CommonArrayFunctions",
-		"scope": "source.papyrus"
-	}
+    "CommonArrayFunctions.CheckActorAgainstFactionArray": {
+        "prefix": "checkactoragainstfactionarray",
+        "body": "CommonArrayFunctions.CheckActorAgainstFactionArray(${1:Actor ObjectToCheck}, ${2:Faction[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.CheckFormAgainstArray": {
+        "prefix": "checkformagainstarray",
+        "body": "CommonArrayFunctions.CheckFormAgainstArray(${1:Form FormToCheck}, ${2:Form[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.CheckLocationAgainstArray": {
+        "prefix": "checklocationagainstarray",
+        "body": "CommonArrayFunctions.CheckLocationAgainstArray(${1:Location ObjectToCheck}, ${2:Location[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false}, ${4:bool matchIfChildLocation = false})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.CheckLocationAgainstLocationAliasArray": {
+        "prefix": "checklocationagainstlocationaliasarray",
+        "body": "CommonArrayFunctions.CheckLocationAgainstLocationAliasArray(${1:Location ObjectToCheck}, ${2:LocationAlias[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false}, ${4:bool matchIfChildLocation = false})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.CheckObjectAgainstKeywordArray": {
+        "prefix": "checkobjectagainstkeywordarray",
+        "body": "CommonArrayFunctions.CheckObjectAgainstKeywordArray(${1:ObjectReference ObjectToCheck}, ${2:Keyword[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.CheckObjectRefAgainstArray": {
+        "prefix": "checkobjectreferenceagainstarray",
+        "body": "CommonArrayFunctions.CheckObjectReferenceAgainstArray(${1:ObjectReference ObjectToCheck}, ${2:ObjectReference[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.CheckObjectRefAgainstRefAliasArray": {
+        "prefix": "checkobjectreferenceagainstreferencealiasarray",
+        "body": "CommonArrayFunctions.CheckObjectReferenceAgainstReferenceAliasArray(${1:ObjectReference ObjectToCheck}, ${2:ReferenceAlias[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.FindInRefAliasArray": {
+        "prefix": "findinreferencealiasarray",
+        "body": "CommonArrayFunctions.FindInReferenceAliasArray(${1:ObjectReference ObjectToCheck}, ${2:ReferenceAlias[] ArrayToCheck})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.GetFirstFoundFactionInArrayForActor": {
+        "prefix": "getfirstfoundfactioninarrayforactor",
+        "body": "CommonArrayFunctions.GetFirstFoundFactionInArrayForActor(${1:Actor ActorToCheck}, ${2:Faction[] ArrayToCheck})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.GetFirstFoundKeywordInArrayForLocation": {
+        "prefix": "getfirstfoundkeywordinarrayforlocation",
+        "body": "CommonArrayFunctions.GetFirstFoundKeywordInArrayForLocation(${1:Location LocationToCheck}, ${2:Keyword[] ArrayToCheck})${0}",
+        "description": "CommonArrayFunctions"
+    },
+    "CommonArrayFunctions.IsActorInArrayHostileToActor": {
+        "prefix": "isactorinarrayhostiletoactor",
+        "body": "CommonArrayFunctions.IsActorInArrayHostileToActor(${1:Actor ActorToCheck}, ${2:ObjectReference[] ArrayToCheck})${0}",
+        "description": "CommonArrayFunctions"
+    }
 }

@@ -1,50 +1,42 @@
 {
-	"getowningquest": {
-		"prefix": "getowningquest",
-		"body": "GetOwningQuest()${0}",
-		"description": "Package",
-		"scope": "source.papyrus"
-	},
-	"gettemplate": {
-		"prefix": "gettemplate",
-		"body": "GetTemplate()${0}",
-		"description": "Package",
-		"scope": "source.papyrus"
-	},
-	"onchange": {
-		"prefix": "onchange",
-		"body": "Event OnChange(Actor akActor)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Package.OnChange",
-		"scope": "source.papyrus"
-	},
-	"onend": {
-		"prefix": "onend",
-		"body": "Event OnEnd(Actor akActor)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Package.OnEnd",
-		"scope": "source.papyrus"
-	},
-	"onstart": {
-		"prefix": "onstart",
-		"body": "Event OnStart(Actor akActor)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Package.OnStart",
-		"scope": "source.papyrus"
-	},
-	"onchange-REM": {
-		"prefix": "onchange-REM",
-		"body": "Event Package.OnChange(Package akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Package.OnChange",
-		"scope": "source.papyrus"
-	},
-	"onend-REM": {
-		"prefix": "onend-REM",
-		"body": "Event Package.OnEnd(Package akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Package.OnEnd",
-		"scope": "source.papyrus"
-	},
-	"onstart-REM": {
-		"prefix": "onstart-REM",
-		"body": "Event Package.OnStart(Package akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Package.OnStart",
-		"scope": "source.papyrus"
-	}
+    "Package.GetOwningQuest": {
+        "prefix": "getowningquest",
+        "body": "GetOwningQuest()${0}",
+        "description": "Package"
+    },
+    "Package.GetTemplate": {
+        "prefix": "gettemplate",
+        "body": "GetTemplate()${0}",
+        "description": "Package"
+    },
+    "Package.OnChange": {
+        "prefix": "onchange",
+        "body": "Event OnChange(Actor akActor)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Package.OnChange"
+    },
+    "Package.OnEnd": {
+        "prefix": "onend",
+        "body": "Event OnEnd(Actor akActor)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Package.OnEnd"
+    },
+    "Package.OnStart": {
+        "prefix": "onstart",
+        "body": "Event OnStart(Actor akActor)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Package.OnStart"
+    },
+    "Remote Package.OnChange": {
+        "prefix": "onchange-REM",
+        "body": "Event Package.OnChange(Package akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Package.OnChange"
+    },
+    "Remote Package.OnEnd": {
+        "prefix": "onend-REM",
+        "body": "Event Package.OnEnd(Package akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Package.OnEnd"
+    },
+    "Remote Package.OnStart": {
+        "prefix": "onstart-REM",
+        "body": "Event Package.OnStart(Package akSender, Actor akActor)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Package.OnStart"
+    }
 }

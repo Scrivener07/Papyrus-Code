@@ -1,200 +1,167 @@
 {
-	"centeroncell": {
-		"prefix": "centeroncell",
-		"body": "Debug.CenterOnCell(${1:string asCellName})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"centeroncellandwait": {
-		"prefix": "centeroncellandwait",
-		"body": "Debug.CenterOnCellAndWait(${1:string asCellName})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"closeuserlog": {
-		"prefix": "closeuserlog",
-		"body": "Debug.CloseUserLog(${1:string asLogName})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"dumpaliasdata": {
-		"prefix": "dumpaliasdata",
-		"body": "Debug.DumpAliasData(${1:Quest akQuest})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"dumpeventregistrations": {
-		"prefix": "dumpeventregistrations",
-		"body": "Debug.DumpEventRegistrations(${1:ScriptObject akScript})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"enableai": {
-		"prefix": "enableai",
-		"body": "Debug.EnableAI(${1:bool abEnable = true})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"enablecollisions": {
-		"prefix": "enablecollisions",
-		"body": "Debug.EnableCollisions(${1:bool abEnable = true})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"enabledetection": {
-		"prefix": "enabledetection",
-		"body": "Debug.EnableDetection(${1:bool abEnable = true})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"enablemenus": {
-		"prefix": "enablemenus",
-		"body": "Debug.EnableMenus(${1:bool abEnable = true})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"getconfigname": {
-		"prefix": "getconfigname",
-		"body": "Debug.GetConfigName()${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"getplatformname": {
-		"prefix": "getplatformname",
-		"body": "Debug.GetPlatformName()${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"getversionnumber": {
-		"prefix": "getversionnumber",
-		"body": "Debug.GetVersionNumber()${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"messagebox": {
-		"prefix": "messagebox",
-		"body": "Debug.MessageBox(${1:string asMessageBoxText})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"notification": {
-		"prefix": "notification",
-		"body": "Debug.Notification(${1:string asNotificationText})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"openuserlog": {
-		"prefix": "openuserlog",
-		"body": "Debug.OpenUserLog(${1:string asLogName})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"playermovetoandwait": {
-		"prefix": "playermovetoandwait",
-		"body": "Debug.PlayerMoveToAndWait(${1:string asDestRef})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"quitgame": {
-		"prefix": "quitgame",
-		"body": "Debug.QuitGame()${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"setfootik": {
-		"prefix": "setfootik",
-		"body": "Debug.SetFootIK(${1:bool abFootIK})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"setgodmode": {
-		"prefix": "setgodmode",
-		"body": "Debug.SetGodMode(${1:bool abGodMode})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"startscriptprofiling": {
-		"prefix": "startscriptprofiling",
-		"body": "Debug.StartScriptProfiling(${1:string asScriptName})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"startstackprofiling": {
-		"prefix": "startstackprofiling",
-		"body": "Debug.StartStackProfiling()${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"startstackrootprofiling": {
-		"prefix": "startstackrootprofiling",
-		"body": "Debug.StartStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"stopscriptprofiling": {
-		"prefix": "stopscriptprofiling",
-		"body": "Debug.StopScriptProfiling(${1:string asScriptName})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"stopstackprofiling": {
-		"prefix": "stopstackprofiling",
-		"body": "Debug.StopStackProfiling()${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"stopstackrootprofiling": {
-		"prefix": "stopstackrootprofiling",
-		"body": "Debug.StopStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"trace": {
-		"prefix": "trace",
-		"body": "Debug.Trace(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"traceandbox": {
-		"prefix": "traceandbox",
-		"body": "Debug.TraceAndBox(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"traceconditional": {
-		"prefix": "traceconditional",
-		"body": "Debug.TraceConditional(${1:string TextToPrint}, ${2:bool ShowTrace}, ${3:int Severity = 0})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"traceconditionalglobal": {
-		"prefix": "traceconditionalglobal",
-		"body": "Debug.TraceConditionalGlobal(${1:string TextToPrint}, ${2:GlobalVariable ShowTrace})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"tracefunction": {
-		"prefix": "tracefunction",
-		"body": "Debug.TraceFunction(${1:string asTextToPrint = \\\"Tracing function on request\\\"}, ${2:int aiSeverity = 0})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"traceself": {
-		"prefix": "traceself",
-		"body": "Debug.TraceSelf(${1:ScriptObject CallingScript}, ${2:string FunctionName}, ${3:string StringToTrace})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"tracestack": {
-		"prefix": "tracestack",
-		"body": "Debug.TraceStack(${1:string asTextToPrint = \\\"Tracing stack on request\\\"}, ${2:int aiSeverity = 0})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	},
-	"traceuser": {
-		"prefix": "traceuser",
-		"body": "Debug.TraceUser(${1:string asUserLog}, ${2:string asTextToPrint}, ${3:int aiSeverity = 0})${0}",
-		"description": "Debug",
-		"scope": "source.papyrus"
-	}
+    "Debug.CenterOnCell": {
+        "prefix": "centeroncell",
+        "body": "Debug.CenterOnCell(${1:string asCellName})${0}",
+        "description": "Debug"
+    },
+    "Debug.CenterOnCellAndWait": {
+        "prefix": "centeroncellandwait",
+        "body": "Debug.CenterOnCellAndWait(${1:string asCellName})${0}",
+        "description": "Debug"
+    },
+    "Debug.CloseUserLog": {
+        "prefix": "closeuserlog",
+        "body": "Debug.CloseUserLog(${1:string asLogName})${0}",
+        "description": "Debug"
+    },
+    "Debug.DumpAliasData": {
+        "prefix": "dumpaliasdata",
+        "body": "Debug.DumpAliasData(${1:Quest akQuest})${0}",
+        "description": "Debug"
+    },
+    "Debug.DumpEventRegistrations": {
+        "prefix": "dumpeventregistrations",
+        "body": "Debug.DumpEventRegistrations(${1:ScriptObject akScript})${0}",
+        "description": "Debug"
+    },
+    "Debug.EnableAI": {
+        "prefix": "enableai",
+        "body": "Debug.EnableAI(${1:bool abEnable = true})${0}",
+        "description": "Debug"
+    },
+    "Debug.EnableCollisions": {
+        "prefix": "enablecollisions",
+        "body": "Debug.EnableCollisions(${1:bool abEnable = true})${0}",
+        "description": "Debug"
+    },
+    "Debug.EnableDetection": {
+        "prefix": "enabledetection",
+        "body": "Debug.EnableDetection(${1:bool abEnable = true})${0}",
+        "description": "Debug"
+    },
+    "Debug.EnableMenus": {
+        "prefix": "enablemenus",
+        "body": "Debug.EnableMenus(${1:bool abEnable = true})${0}",
+        "description": "Debug"
+    },
+    "Debug.GetConfigName": {
+        "prefix": "getconfigname",
+        "body": "Debug.GetConfigName()${0}",
+        "description": "Debug"
+    },
+    "Debug.GetPlatformName": {
+        "prefix": "getplatformname",
+        "body": "Debug.GetPlatformName()${0}",
+        "description": "Debug"
+    },
+    "Debug.GetVersionNumber": {
+        "prefix": "getversionnumber",
+        "body": "Debug.GetVersionNumber()${0}",
+        "description": "Debug"
+    },
+    "Debug.MessageBox": {
+        "prefix": "messagebox",
+        "body": "Debug.MessageBox(${1:string asMessageBoxText})${0}",
+        "description": "Debug"
+    },
+    "Debug.Notification": {
+        "prefix": "notification",
+        "body": "Debug.Notification(${1:string asNotificationText})${0}",
+        "description": "Debug"
+    },
+    "Debug.OpenUserLog": {
+        "prefix": "openuserlog",
+        "body": "Debug.OpenUserLog(${1:string asLogName})${0}",
+        "description": "Debug"
+    },
+    "Debug.PlayerMoveToAndWait": {
+        "prefix": "playermovetoandwait",
+        "body": "Debug.PlayerMoveToAndWait(${1:string asDestRef})${0}",
+        "description": "Debug"
+    },
+    "Debug.QuitGame": {
+        "prefix": "quitgame",
+        "body": "Debug.QuitGame()${0}",
+        "description": "Debug"
+    },
+    "Debug.SetFootIK": {
+        "prefix": "setfootik",
+        "body": "Debug.SetFootIK(${1:bool abFootIK})${0}",
+        "description": "Debug"
+    },
+    "Debug.SetGodMode": {
+        "prefix": "setgodmode",
+        "body": "Debug.SetGodMode(${1:bool abGodMode})${0}",
+        "description": "Debug"
+    },
+    "Debug.StartScriptProfiling": {
+        "prefix": "startscriptprofiling",
+        "body": "Debug.StartScriptProfiling(${1:string asScriptName})${0}",
+        "description": "Debug"
+    },
+    "Debug.StartStackProfiling": {
+        "prefix": "startstackprofiling",
+        "body": "Debug.StartStackProfiling()${0}",
+        "description": "Debug"
+    },
+    "Debug.StartStackRootProfiling": {
+        "prefix": "startstackrootprofiling",
+        "body": "Debug.StartStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}",
+        "description": "Debug"
+    },
+    "Debug.StopScriptProfiling": {
+        "prefix": "stopscriptprofiling",
+        "body": "Debug.StopScriptProfiling(${1:string asScriptName})${0}",
+        "description": "Debug"
+    },
+    "Debug.StopStackProfiling": {
+        "prefix": "stopstackprofiling",
+        "body": "Debug.StopStackProfiling()${0}",
+        "description": "Debug"
+    },
+    "Debug.StopStackRootProfiling": {
+        "prefix": "stopstackrootprofiling",
+        "body": "Debug.StopStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}",
+        "description": "Debug"
+    },
+    "Debug.Trace": {
+        "prefix": "trace",
+        "body": "Debug.Trace(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}",
+        "description": "Debug"
+    },
+    "Debug.TraceAndBox": {
+        "prefix": "traceandbox",
+        "body": "Debug.TraceAndBox(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}",
+        "description": "Debug"
+    },
+    "Debug.TraceConditional": {
+        "prefix": "traceconditional",
+        "body": "Debug.TraceConditional(${1:string TextToPrint}, ${2:bool ShowTrace}, ${3:int Severity = 0})${0}",
+        "description": "Debug"
+    },
+    "Debug.TraceConditionalGlobal": {
+        "prefix": "traceconditionalglobal",
+        "body": "Debug.TraceConditionalGlobal(${1:string TextToPrint}, ${2:GlobalVariable ShowTrace})${0}",
+        "description": "Debug"
+    },
+    "Debug.TraceFunction": {
+        "prefix": "tracefunction",
+        "body": "Debug.TraceFunction(${1:string asTextToPrint = \\\"Tracing function on request\\\"}, ${2:int aiSeverity = 0})${0}",
+        "description": "Debug"
+    },
+    "Debug.TraceSelf": {
+        "prefix": "traceself",
+        "body": "Debug.TraceSelf(${1:ScriptObject CallingScript}, ${2:string FunctionName}, ${3:string StringToTrace})${0}",
+        "description": "Debug"
+    },
+    "Debug.TraceStack": {
+        "prefix": "tracestack",
+        "body": "Debug.TraceStack(${1:string asTextToPrint = \\\"Tracing stack on request\\\"}, ${2:int aiSeverity = 0})${0}",
+        "description": "Debug"
+    },
+    "Debug.TraceUser": {
+        "prefix": "traceuser",
+        "body": "Debug.TraceUser(${1:string asUserLog}, ${2:string asTextToPrint}, ${3:int aiSeverity = 0})${0}",
+        "description": "Debug"
+    }
 }

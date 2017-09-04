@@ -1,56 +1,47 @@
 {
-	"add": {
-		"prefix": "add",
-		"body": "Add(${1:elementType akElement}, ${2:int aiCount = 1})${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"clear": {
-		"prefix": "clear",
-		"body": "Clear()${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"find": {
-		"prefix": "find",
-		"body": "Find(${1:elementType akElement}, ${2:int aiStartIndex = 0})${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"findstruct": {
-		"prefix": "findstruct",
-		"body": "FindStruct(${1:StructVarName asVarName}, ${2:varType akElement}, ${3:int aiStartIndex = 0})${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"insert": {
-		"prefix": "insert",
-		"body": "Insert(${1:elementType akElement}, ${2:int aiLocation})${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"remove": {
-		"prefix": "remove",
-		"body": "Remove(${1:int aiLocation}, ${2:int aiCount = 1})${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"removelast": {
-		"prefix": "removelast",
-		"body": "RemoveLast()${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"rfind": {
-		"prefix": "rfind",
-		"body": "RFind(${1:elementType akElement}, ${2:int aiStartIndex = -1})${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	},
-	"rfindstruct": {
-		"prefix": "rfindstruct",
-		"body": "RFindStruct(${1:StructVarName asVarName}, ${2:varType akElement}, ${3:int aiStartIndex = -1})${0}",
-		"description": "Array",
-		"scope": "source.papyrus"
-	}
+    "Array.Add": {
+        "prefix": "add",
+        "body": "Add(${1:elementType akElement}, ${2:int aiCount = 1})${0}",
+        "description": "Array"
+    },
+    "Array.Clear": {
+        "prefix": "clear",
+        "body": "Clear()${0}",
+        "description": "Array"
+    },
+    "Array.Find": {
+        "prefix": "find",
+        "body": "Find(${1:elementType akElement}, ${2:int aiStartIndex = 0})${0}",
+        "description": "Array"
+    },
+    "Array.FindStruct": {
+        "prefix": "findstruct",
+        "body": "FindStruct(${1:StructVarName asVarName}, ${2:varType akElement}, ${3:int aiStartIndex = 0})${0}",
+        "description": "Array"
+    },
+    "Array.Insert": {
+        "prefix": "insert",
+        "body": "Insert(${1:elementType akElement}, ${2:int aiLocation})${0}",
+        "description": "Array"
+    },
+    "Array.Remove": {
+        "prefix": "remove",
+        "body": "Remove(${1:int aiLocation}, ${2:int aiCount = 1})${0}",
+        "description": "Array"
+    },
+    "Array.RemoveLast": {
+        "prefix": "removelast",
+        "body": "RemoveLast()${0}",
+        "description": "Array"
+    },
+    "Array.RFind": {
+        "prefix": "rfind",
+        "body": "RFind(${1:elementType akElement}, ${2:int aiStartIndex = -1})${0}",
+        "description": "Array"
+    },
+    "Array.RFindStruct": {
+        "prefix": "rfindstruct",
+        "body": "RFindStruct(${1:StructVarName asVarName}, ${2:varType akElement}, ${3:int aiStartIndex = -1})${0}",
+        "description": "Array"
+    }
 }

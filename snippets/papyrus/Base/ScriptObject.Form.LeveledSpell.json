@@ -1,14 +1,12 @@
 {
-	"addform": {
-		"prefix": "addform",
-		"body": "AddForm(${1:Form apForm}, ${2:int auiLevel})${0}",
-		"description": "LeveledSpell",
-		"scope": "source.papyrus"
-	},
-	"revert": {
-		"prefix": "revert",
-		"body": "Revert()${0}",
-		"description": "LeveledSpell",
-		"scope": "source.papyrus"
-	}
+    "LeveledSpell.AddForm": {
+        "prefix": "addform",
+        "body": "AddForm(${1:Form apForm}, ${2:int auiLevel})${0}",
+        "description": "LeveledSpell"
+    },
+    "LeveledSpell.Revert": {
+        "prefix": "revert",
+        "body": "Revert()${0}",
+        "description": "LeveledSpell"
+    }
 }

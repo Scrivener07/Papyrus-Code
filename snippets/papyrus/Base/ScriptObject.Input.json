@@ -1,14 +1,12 @@
 {
-	"getmappedkey": {
-		"prefix": "getmappedkey",
-		"body": "Input.GetMappedKey(${1:string asControl}, ${2:int aiDeviceType = 0xFF})${0}",
-		"description": "Input",
-		"scope": "source.papyrus"
-	},
-	"getmappedcontrol": {
-		"prefix": "getmappedcontrol",
-		"body": "Input.GetMappedControl(${1:int aiKeyCode})${0}",
-		"description": "Input",
-		"scope": "source.papyrus"
-	}
+    "Input.GetMappedKey": {
+        "prefix": "getmappedkey",
+        "body": "Input.GetMappedKey(${1:string asControl}, ${2:int aiDeviceType = 0xFF})${0}",
+        "description": "Input"
+    },
+    "Input.GetMappedControl": {
+        "prefix": "getmappedcontrol",
+        "body": "Input.GetMappedControl(${1:int aiKeyCode})${0}",
+        "description": "Input"
+    }
 }

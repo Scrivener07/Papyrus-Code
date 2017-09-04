@@ -1,38 +1,32 @@
 {
-	"mute": {
-		"prefix": "mute",
-		"body": "Mute()${0}",
-		"description": "SoundCategory",
-		"scope": "source.papyrus"
-	},
-	"pause": {
-		"prefix": "pause",
-		"body": "Pause()${0}",
-		"description": "SoundCategory",
-		"scope": "source.papyrus"
-	},
-	"setfrequency": {
-		"prefix": "setfrequency",
-		"body": "SetFrequency(${1:float afFrequencyCoeffecient})${0}",
-		"description": "SoundCategory",
-		"scope": "source.papyrus"
-	},
-	"setvolume": {
-		"prefix": "setvolume",
-		"body": "SetVolume(${1:float afVolume})${0}",
-		"description": "SoundCategory",
-		"scope": "source.papyrus"
-	},
-	"unmute": {
-		"prefix": "unmute",
-		"body": "UnMute()${0}",
-		"description": "SoundCategory",
-		"scope": "source.papyrus"
-	},
-	"unpause": {
-		"prefix": "unpause",
-		"body": "UnPause()${0}",
-		"description": "SoundCategory",
-		"scope": "source.papyrus"
-	}
+    "SoundCategory.Mute": {
+        "prefix": "mute",
+        "body": "Mute()${0}",
+        "description": "SoundCategory"
+    },
+    "SoundCategory.Pause": {
+        "prefix": "pause",
+        "body": "Pause()${0}",
+        "description": "SoundCategory"
+    },
+    "SoundCategory.SetFrequency": {
+        "prefix": "setfrequency",
+        "body": "SetFrequency(${1:float afFrequencyCoeffecient})${0}",
+        "description": "SoundCategory"
+    },
+    "SoundCategory.SetVolume": {
+        "prefix": "setvolume",
+        "body": "SetVolume(${1:float afVolume})${0}",
+        "description": "SoundCategory"
+    },
+    "SoundCategory.UnMute": {
+        "prefix": "unmute",
+        "body": "UnMute()${0}",
+        "description": "SoundCategory"
+    },
+    "SoundCategory.UnPause": {
+        "prefix": "unpause",
+        "body": "UnPause()${0}",
+        "description": "SoundCategory"
+    }
 }

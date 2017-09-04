@@ -1,1736 +1,1447 @@
 {
-	"addperk": {
-		"prefix": "addperk",
-		"body": "AddPerk(${1:Perk akPerk}, ${2:bool abNotify = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"addspell": {
-		"prefix": "addspell",
-		"body": "AddSpell(${1:Spell akSpell}, ${2:bool abVerbose = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"addtofaction": {
-		"prefix": "addtofaction",
-		"body": "AddToFaction(${1:Faction akFaction})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"allowbleedoutdialogue": {
-		"prefix": "allowbleedoutdialogue",
-		"body": "AllowBleedoutDialogue(${1:bool abCanTalk})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"allowcompanion": {
-		"prefix": "allowcompanion",
-		"body": "AllowCompanion(${1:bool MakeCompanionIfNoneCurrently = true}, ${2:bool ForceCompanion = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"allowpcdialogue": {
-		"prefix": "allowpcdialogue",
-		"body": "AllowPCDialogue(${1:bool abTalk})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"attachashpile": {
-		"prefix": "attachashpile",
-		"body": "AttachAshPile(${1:Form akAshPileBase = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"attemptanimationsetswitch": {
-		"prefix": "attemptanimationsetswitch",
-		"body": "AttemptAnimationSetSwitch()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"canflyhere": {
-		"prefix": "canflyhere",
-		"body": "CanFlyHere()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"changeanimarchetype": {
-		"prefix": "changeanimarchetype",
-		"body": "ChangeAnimArchetype(${1:keyword apKeyword = none})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"changeanimfacearchetype": {
-		"prefix": "changeanimfacearchetype",
-		"body": "ChangeAnimFaceArchetype(${1:keyword apKeyword = none})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"changeanimflavor": {
-		"prefix": "changeanimflavor",
-		"body": "ChangeAnimFlavor(${1:keyword apKeyword = none})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"changeheadpart": {
-		"prefix": "changeheadpart",
-		"body": "ChangeHeadPart(${1:headpart apHeadPart}, ${2:bool abRemovePart = false}, ${3:bool abRemoveExtraParts = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"cleararrested": {
-		"prefix": "cleararrested",
-		"body": "ClearArrested()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"clearexpressionoverride": {
-		"prefix": "clearexpressionoverride",
-		"body": "ClearExpressionOverride()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"clearextraarrows": {
-		"prefix": "clearextraarrows",
-		"body": "ClearExtraArrows()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"clearforcedlandingmarker": {
-		"prefix": "clearforcedlandingmarker",
-		"body": "ClearForcedLandingMarker()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"clearlookat": {
-		"prefix": "clearlookat",
-		"body": "ClearLookAt()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"disallowcompanion": {
-		"prefix": "disallowcompanion",
-		"body": "DisallowCompanion(${1:bool SuppressDismissMessage = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"dismember": {
-		"prefix": "dismember",
-		"body": "Dismember(${1:string asBodyPart}, ${2:bool abForceExplode = false}, ${3:bool abForceDismember = false}, ${4:bool abForceBloodyMess = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"dismount": {
-		"prefix": "dismount",
-		"body": "Dismount()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"dispelallspells": {
-		"prefix": "dispelallspells",
-		"body": "DispelAllSpells()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"dispelspell": {
-		"prefix": "dispelspell",
-		"body": "DispelSpell(${1:Spell akSpell})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"docombatspellapply": {
-		"prefix": "docombatspellapply",
-		"body": "DoCombatSpellApply(${1:Spell akSpell}, ${2:ObjectReference akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"dogdropitems": {
-		"prefix": "dogdropitems",
-		"body": "DogDropItems()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"dogplaceinmouth": {
-		"prefix": "dogplaceinmouth",
-		"body": "DogPlaceInMouth(${1:Form akItem})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"drawweapon": {
-		"prefix": "drawweapon",
-		"body": "DrawWeapon()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"enableai": {
-		"prefix": "enableai",
-		"body": "EnableAI(${1:bool abEnable = true}, ${2:bool abPauseVoice = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"enddeferredkill": {
-		"prefix": "enddeferredkill",
-		"body": "EndDeferredKill()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"equipitem": {
-		"prefix": "equipitem",
-		"body": "EquipItem(${1:Form akItem}, ${2:bool abPreventRemoval = false}, ${3:bool abSilent = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"equipspell": {
-		"prefix": "equipspell",
-		"body": "EquipSpell(${1:Spell akSpell}, ${2:int aiSource})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"evaluatepackage": {
-		"prefix": "evaluatepackage",
-		"body": "EvaluatePackage(${1:bool abResetAI=false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"followerfollow": {
-		"prefix": "followerfollow",
-		"body": "FollowerFollow()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"followersetdistancefar": {
-		"prefix": "followersetdistancefar",
-		"body": "FollowerSetDistanceFar()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"followersetdistancemedium": {
-		"prefix": "followersetdistancemedium",
-		"body": "FollowerSetDistanceMedium()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"followersetdistancenear": {
-		"prefix": "followersetdistancenear",
-		"body": "FollowerSetDistanceNear()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"followerwait": {
-		"prefix": "followerwait",
-		"body": "FollowerWait()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getactorbase": {
-		"prefix": "getactorbase",
-		"body": "GetActorBase()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getallcombattargets": {
-		"prefix": "getallcombattargets",
-		"body": "GetAllCombatTargets()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getbribeamount": {
-		"prefix": "getbribeamount",
-		"body": "GetBribeAmount()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getcombatstate": {
-		"prefix": "getcombatstate",
-		"body": "GetCombatState()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getcombattarget": {
-		"prefix": "getcombattarget",
-		"body": "GetCombatTarget()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getcrimefaction": {
-		"prefix": "getcrimefaction",
-		"body": "GetCrimeFaction()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getcurrentpackage": {
-		"prefix": "getcurrentpackage",
-		"body": "GetCurrentPackage()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getdialoguetarget": {
-		"prefix": "getdialoguetarget",
-		"body": "GetDialogueTarget()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getequippeditemtype": {
-		"prefix": "getequippeditemtype",
-		"body": "GetEquippedItemType(${1:int aiEquipIndex})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getequippedshield": {
-		"prefix": "getequippedshield",
-		"body": "GetEquippedShield()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getequippedspell": {
-		"prefix": "getequippedspell",
-		"body": "GetEquippedSpell(${1:int aiSource})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getequippedweapon": {
-		"prefix": "getequippedweapon",
-		"body": "GetEquippedWeapon(${1:int aiEquipIndex = 0})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getfactionrank": {
-		"prefix": "getfactionrank",
-		"body": "GetFactionRank(${1:Faction akFaction})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getfactionreaction": {
-		"prefix": "getfactionreaction",
-		"body": "GetFactionReaction(${1:Actor akOther})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getflyingstate": {
-		"prefix": "getflyingstate",
-		"body": "GetFlyingState()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getforcedlandingmarker": {
-		"prefix": "getforcedlandingmarker",
-		"body": "GetForcedLandingMarker()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getgoldamount": {
-		"prefix": "getgoldamount",
-		"body": "GetGoldAmount()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"gethighestrelationshiprank": {
-		"prefix": "gethighestrelationshiprank",
-		"body": "GetHighestRelationshipRank()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getkiller": {
-		"prefix": "getkiller",
-		"body": "GetKiller()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getlevel": {
-		"prefix": "getlevel",
-		"body": "GetLevel()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getleveledactorbase": {
-		"prefix": "getleveledactorbase",
-		"body": "GetLeveledActorBase()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getlightlevel": {
-		"prefix": "getlightlevel",
-		"body": "GetLightLevel()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getlowestrelationshiprank": {
-		"prefix": "getlowestrelationshiprank",
-		"body": "GetLowestRelationshipRank()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getnobleedoutrecovery": {
-		"prefix": "getnobleedoutrecovery",
-		"body": "GetNoBleedoutRecovery()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getplayercontrols": {
-		"prefix": "getplayercontrols",
-		"body": "GetPlayerControls()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getrace": {
-		"prefix": "getrace",
-		"body": "GetRace()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getrelationshiprank": {
-		"prefix": "getrelationshiprank",
-		"body": "GetRelationshipRank(${1:Actor akOther})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getsitstate": {
-		"prefix": "getsitstate",
-		"body": "GetSitState()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getsleepstate": {
-		"prefix": "getsleepstate",
-		"body": "GetSleepState()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasassociation": {
-		"prefix": "hasassociation",
-		"body": "HasAssociation(${1:AssociationType akAssociation}, ${2:Actor akOther = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasdetectionlos": {
-		"prefix": "hasdetectionlos",
-		"body": "HasDetectionLOS(${1:ObjectReference akOther})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasfamilyrelationship": {
-		"prefix": "hasfamilyrelationship",
-		"body": "HasFamilyRelationship(${1:Actor akOther = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasmagiceffect": {
-		"prefix": "hasmagiceffect",
-		"body": "HasMagicEffect(${1:MagicEffect akEffect})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasmagiceffectwithkeyword": {
-		"prefix": "hasmagiceffectwithkeyword",
-		"body": "HasMagicEffectWithKeyword(${1:Keyword akKeyword})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasparentrelationship": {
-		"prefix": "hasparentrelationship",
-		"body": "HasParentRelationship(${1:Actor akOther})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasperk": {
-		"prefix": "hasperk",
-		"body": "HasPerk(${1:Perk akPerk})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"hasspell": {
-		"prefix": "hasspell",
-		"body": "HasSpell(${1:Form akForm})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isaienabled": {
-		"prefix": "isaienabled",
-		"body": "IsAIEnabled()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isalarmed": {
-		"prefix": "isalarmed",
-		"body": "IsAlarmed()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isalerted": {
-		"prefix": "isalerted",
-		"body": "IsAlerted()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isallowedtofly": {
-		"prefix": "isallowedtofly",
-		"body": "IsAllowedToFly()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isarrested": {
-		"prefix": "isarrested",
-		"body": "IsArrested()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isarrestingtarget": {
-		"prefix": "isarrestingtarget",
-		"body": "IsArrestingTarget()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isbeingridden": {
-		"prefix": "isbeingridden",
-		"body": "IsBeingRidden()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isbeingriddenby": {
-		"prefix": "isbeingriddenby",
-		"body": "IsBeingRiddenBy(${1:Actor akActor})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isbleedingout": {
-		"prefix": "isbleedingout",
-		"body": "IsBleedingOut()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isbribed": {
-		"prefix": "isbribed",
-		"body": "IsBribed()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"ischild": {
-		"prefix": "ischild",
-		"body": "IsChild()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"iscommandedactor": {
-		"prefix": "iscommandedactor",
-		"body": "IsCommandedActor()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isdead": {
-		"prefix": "isdead",
-		"body": "IsDead()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isdetectedby": {
-		"prefix": "isdetectedby",
-		"body": "IsDetectedBy(${1:Actor akOther})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isdismembered": {
-		"prefix": "isdismembered",
-		"body": "IsDismembered(${1:string asBodyPart = \\\"\\\"})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isdoingfavor": {
-		"prefix": "isdoingfavor",
-		"body": "IsDoingFavor()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isequipped": {
-		"prefix": "isequipped",
-		"body": "IsEquipped(${1:Form akItem})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isessential": {
-		"prefix": "isessential",
-		"body": "IsEssential()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isflying": {
-		"prefix": "isflying",
-		"body": "IsFlying()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isghost": {
-		"prefix": "isghost",
-		"body": "IsGhost()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isguard": {
-		"prefix": "isguard",
-		"body": "IsGuard()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"ishostiletoactor": {
-		"prefix": "ishostiletoactor",
-		"body": "IsHostileToActor(${1:Actor akActor})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isincombat": {
-		"prefix": "isincombat",
-		"body": "IsInCombat()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isinfaction": {
-		"prefix": "isinfaction",
-		"body": "IsInFaction(${1:Faction akFaction})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isinironsights": {
-		"prefix": "isinironsights",
-		"body": "IsInIronSights()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isinkillmove": {
-		"prefix": "isinkillmove",
-		"body": "IsInKillMove()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isinpowerarmor": {
-		"prefix": "isinpowerarmor",
-		"body": "IsInPowerArmor()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isinscene": {
-		"prefix": "isinscene",
-		"body": "IsInScene()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isintimidated": {
-		"prefix": "isintimidated",
-		"body": "IsIntimidated()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isonmount": {
-		"prefix": "isonmount",
-		"body": "IsOnMount()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isoverencumbered": {
-		"prefix": "isoverencumbered",
-		"body": "IsOverEncumbered()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isowner": {
-		"prefix": "isowner",
-		"body": "IsOwner(${1:ObjectReference akObject})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isplayerslastriddenhorse": {
-		"prefix": "isplayerslastriddenhorse",
-		"body": "IsPlayersLastRiddenHorse()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isplayerteammate": {
-		"prefix": "isplayerteammate",
-		"body": "IsPlayerTeammate()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isrunning": {
-		"prefix": "isrunning",
-		"body": "IsRunning()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isseatoccupied": {
-		"prefix": "isseatoccupied",
-		"body": "IsSeatOccupied(${1:keyword apKeyword})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"issneaking": {
-		"prefix": "issneaking",
-		"body": "IsSneaking()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"issprinting": {
-		"prefix": "issprinting",
-		"body": "IsSprinting()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"istalking": {
-		"prefix": "istalking",
-		"body": "IsTalking()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"istrespassing": {
-		"prefix": "istrespassing",
-		"body": "IsTrespassing()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isunconscious": {
-		"prefix": "isunconscious",
-		"body": "IsUnconscious()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"isweapondrawn": {
-		"prefix": "isweapondrawn",
-		"body": "IsWeaponDrawn()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"kill": {
-		"prefix": "kill",
-		"body": "Kill(${1:Actor akKiller = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"killessential": {
-		"prefix": "killessential",
-		"body": "KillEssential(${1:Actor akKiller = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"killsilent": {
-		"prefix": "killsilent",
-		"body": "KillSilent(${1:Actor akKiller = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"makeplayerfriend": {
-		"prefix": "makeplayerfriend",
-		"body": "MakePlayerFriend()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"markitemasfavorite": {
-		"prefix": "markitemasfavorite",
-		"body": "MarkItemAsFavorite(${1:Form akItem}, ${2:int aiSlot=-1})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"modfactionrank": {
-		"prefix": "modfactionrank",
-		"body": "ModFactionRank(${1:Faction akFaction}, ${2:int aiMod})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"movetopackagelocation": {
-		"prefix": "movetopackagelocation",
-		"body": "MoveToPackageLocation()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"oncombatstatechanged": {
-		"prefix": "oncombatstatechanged",
-		"body": "Event OnCombatStateChanged(Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnCombatStateChanged",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodecompletecommand": {
-		"prefix": "oncommandmodecompletecommand",
-		"body": "Event OnCommandModeCompleteCommand(int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnCommandModeCompleteCommand",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodeenter": {
-		"prefix": "oncommandmodeenter",
-		"body": "Event OnCommandModeEnter()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnCommandModeEnter",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodeexit": {
-		"prefix": "oncommandmodeexit",
-		"body": "Event OnCommandModeExit()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnCommandModeExit",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodegivecommand": {
-		"prefix": "oncommandmodegivecommand",
-		"body": "Event OnCommandModeGiveCommand(int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnCommandModeGiveCommand",
-		"scope": "source.papyrus"
-	},
-	"oncompaniondismiss": {
-		"prefix": "oncompaniondismiss",
-		"body": "Event OnCompanionDismiss()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnCompanionDismiss",
-		"scope": "source.papyrus"
-	},
-	"onconsciousnessstatechanged": {
-		"prefix": "onconsciousnessstatechanged",
-		"body": "Event OnConsciousnessStateChanged( bool abUnconscious )\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnConsciousnessStateChanged",
-		"scope": "source.papyrus"
-	},
-	"oncripple": {
-		"prefix": "oncripple",
-		"body": "Event OnCripple(ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnCripple",
-		"scope": "source.papyrus"
-	},
-	"ondeath": {
-		"prefix": "ondeath",
-		"body": "Event OnDeath(Actor akKiller)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnDeath",
-		"scope": "source.papyrus"
-	},
-	"ondeferredkill": {
-		"prefix": "ondeferredkill",
-		"body": "Event OnDeferredKill(Actor akKiller)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnDeferredKill",
-		"scope": "source.papyrus"
-	},
-	"ondifficultychanged": {
-		"prefix": "ondifficultychanged",
-		"body": "Event OnDifficultyChanged(int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnDifficultyChanged",
-		"scope": "source.papyrus"
-	},
-	"ondying": {
-		"prefix": "ondying",
-		"body": "Event OnDying(Actor akKiller)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnDying",
-		"scope": "source.papyrus"
-	},
-	"onenterbleedout": {
-		"prefix": "onenterbleedout",
-		"body": "Event OnEnterBleedout()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnEnterBleedout",
-		"scope": "source.papyrus"
-	},
-	"onentersneaking": {
-		"prefix": "onentersneaking",
-		"body": "Event OnEnterSneaking()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnEnterSneaking",
-		"scope": "source.papyrus"
-	},
-	"onescortwaitstart": {
-		"prefix": "onescortwaitstart",
-		"body": "Event OnEscortWaitStart()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnEscortWaitStart",
-		"scope": "source.papyrus"
-	},
-	"onescortwaitstop": {
-		"prefix": "onescortwaitstop",
-		"body": "Event OnEscortWaitStop()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnEscortWaitStop",
-		"scope": "source.papyrus"
-	},
-	"ongetup": {
-		"prefix": "ongetup",
-		"body": "Event OnGetUp(ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnGetUp",
-		"scope": "source.papyrus"
-	},
-	"onitemequipped": {
-		"prefix": "onitemequipped",
-		"body": "Event OnItemEquipped(Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnItemEquipped",
-		"scope": "source.papyrus"
-	},
-	"onitemunequipped": {
-		"prefix": "onitemunequipped",
-		"body": "Event OnItemUnequipped(Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnItemUnequipped",
-		"scope": "source.papyrus"
-	},
-	"onkill": {
-		"prefix": "onkill",
-		"body": "Event OnKill(Actor akVictim)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnKill",
-		"scope": "source.papyrus"
-	},
-	"onlocationchange": {
-		"prefix": "onlocationchange",
-		"body": "Event OnLocationChange(Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnLocationChange",
-		"scope": "source.papyrus"
-	},
-	"onpackagechange": {
-		"prefix": "onpackagechange",
-		"body": "Event OnPackageChange(Package akOldPackage)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPackageChange",
-		"scope": "source.papyrus"
-	},
-	"onpackageend": {
-		"prefix": "onpackageend",
-		"body": "Event OnPackageEnd(Package akOldPackage)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPackageEnd",
-		"scope": "source.papyrus"
-	},
-	"onpackagestart": {
-		"prefix": "onpackagestart",
-		"body": "Event OnPackageStart(Package akNewPackage)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPackageStart",
-		"scope": "source.papyrus"
-	},
-	"onpartialcripple": {
-		"prefix": "onpartialcripple",
-		"body": "Event OnPartialCripple(ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPartialCripple",
-		"scope": "source.papyrus"
-	},
-	"onpickpocketfailed": {
-		"prefix": "onpickpocketfailed",
-		"body": "Event OnPickpocketFailed()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPickpocketFailed",
-		"scope": "source.papyrus"
-	},
-	"onplayercreaterobot": {
-		"prefix": "onplayercreaterobot",
-		"body": "Event OnPlayerCreateRobot(Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerCreateRobot",
-		"scope": "source.papyrus"
-	},
-	"onplayerentervertibird": {
-		"prefix": "onplayerentervertibird",
-		"body": "Event OnPlayerEnterVertibird(ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerEnterVertibird",
-		"scope": "source.papyrus"
-	},
-	"onplayerfalllongdistance": {
-		"prefix": "onplayerfalllongdistance",
-		"body": "Event OnPlayerFallLongDistance(float afDamage)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerFallLongDistance",
-		"scope": "source.papyrus"
-	},
-	"onplayerfireweapon": {
-		"prefix": "onplayerfireweapon",
-		"body": "Event OnPlayerFireWeapon(Form akBaseObject)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerFireWeapon",
-		"scope": "source.papyrus"
-	},
-	"onplayerhealteammate": {
-		"prefix": "onplayerhealteammate",
-		"body": "Event OnPlayerHealTeammate(Actor akTeammate)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerHealTeammate",
-		"scope": "source.papyrus"
-	},
-	"onplayerloadgame": {
-		"prefix": "onplayerloadgame",
-		"body": "Event OnPlayerLoadGame()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerLoadGame",
-		"scope": "source.papyrus"
-	},
-	"onplayermodarmorweapon": {
-		"prefix": "onplayermodarmorweapon",
-		"body": "Event OnPlayerModArmorWeapon(Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerModArmorWeapon",
-		"scope": "source.papyrus"
-	},
-	"onplayermodrobot": {
-		"prefix": "onplayermodrobot",
-		"body": "Event OnPlayerModRobot(Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerModRobot",
-		"scope": "source.papyrus"
-	},
-	"onplayerswimming": {
-		"prefix": "onplayerswimming",
-		"body": "Event OnPlayerSwimming()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerSwimming",
-		"scope": "source.papyrus"
-	},
-	"onplayeruseworkbench": {
-		"prefix": "onplayeruseworkbench",
-		"body": "Event OnPlayerUseWorkBench(ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnPlayerUseWorkBench",
-		"scope": "source.papyrus"
-	},
-	"onraceswitchcomplete": {
-		"prefix": "onraceswitchcomplete",
-		"body": "Event OnRaceSwitchComplete()\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnRaceSwitchComplete",
-		"scope": "source.papyrus"
-	},
-	"onsit": {
-		"prefix": "onsit",
-		"body": "Event OnSit(ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnSit",
-		"scope": "source.papyrus"
-	},
-	"onspeechchallengeavailable": {
-		"prefix": "onspeechchallengeavailable",
-		"body": "Event OnSpeechChallengeAvailable(ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Actor.OnSpeechChallengeAvailable",
-		"scope": "source.papyrus"
-	},
-	"openinventory": {
-		"prefix": "openinventory",
-		"body": "OpenInventory(${1:bool abForceOpen = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"pathtoreference": {
-		"prefix": "pathtoreference",
-		"body": "PathToReference(${1:ObjectReference aTarget}, ${2:float afWalkRunPercent})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"playidle": {
-		"prefix": "playidle",
-		"body": "PlayIdle(${1:Idle akIdle})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"playidleaction": {
-		"prefix": "playidleaction",
-		"body": "PlayIdleAction(${1:Action aAction}, ${2:ObjectReference aTarget = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"playidlewithtarget": {
-		"prefix": "playidlewithtarget",
-		"body": "PlayIdleWithTarget(${1:Idle akIdle}, ${2:ObjectReference akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"playsubgraphanimation": {
-		"prefix": "playsubgraphanimation",
-		"body": "PlaySubGraphAnimation(${1:string asEventName})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"removefromallfactions": {
-		"prefix": "removefromallfactions",
-		"body": "RemoveFromAllFactions()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"removefromfaction": {
-		"prefix": "removefromfaction",
-		"body": "RemoveFromFaction(${1:Faction akFaction})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"removeperk": {
-		"prefix": "removeperk",
-		"body": "RemovePerk(${1:Perk akPerk})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"removespell": {
-		"prefix": "removespell",
-		"body": "RemoveSpell(${1:Spell akSpell})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"resethealthandlimbs": {
-		"prefix": "resethealthandlimbs",
-		"body": "ResetHealthAndLimbs()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"resurrect": {
-		"prefix": "resurrect",
-		"body": "Resurrect()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"sendassaultalarm": {
-		"prefix": "sendassaultalarm",
-		"body": "SendAssaultAlarm()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"sendtrespassalarm": {
-		"prefix": "sendtrespassalarm",
-		"body": "SendTrespassAlarm(${1:Actor akCriminal})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setalert": {
-		"prefix": "setalert",
-		"body": "SetAlert(${1:bool abAlerted = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setallowflying": {
-		"prefix": "setallowflying",
-		"body": "SetAllowFlying(${1:bool abAllowed = true}, ${2:bool abAllowCrash = true}, ${3:bool abAllowSearch = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setalpha": {
-		"prefix": "setalpha",
-		"body": "SetAlpha(${1:float afTargetAlpha}, ${2:bool abFade = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setanimarchetypeconfident": {
-		"prefix": "setanimarchetypeconfident",
-		"body": "SetAnimArchetypeConfident()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setanimarchetypedepressed": {
-		"prefix": "setanimarchetypedepressed",
-		"body": "SetAnimArchetypeDepressed()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setanimarchetypeelderly": {
-		"prefix": "setanimarchetypeelderly",
-		"body": "SetAnimArchetypeElderly()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setanimarchetypefriendly": {
-		"prefix": "setanimarchetypefriendly",
-		"body": "SetAnimArchetypeFriendly()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setanimarchetypeirritated": {
-		"prefix": "setanimarchetypeirritated",
-		"body": "SetAnimArchetypeIrritated()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setanimarchetypenervous": {
-		"prefix": "setanimarchetypenervous",
-		"body": "SetAnimArchetypeNervous()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setanimarchetypeneutral": {
-		"prefix": "setanimarchetypeneutral",
-		"body": "SetAnimArchetypeNeutral()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setattackactoronsight": {
-		"prefix": "setattackactoronsight",
-		"body": "SetAttackActorOnSight(${1:bool abAttackOnSight = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setavailabletobecompanion": {
-		"prefix": "setavailabletobecompanion",
-		"body": "SetAvailableToBeCompanion()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setavoidplayer": {
-		"prefix": "setavoidplayer",
-		"body": "SetAvoidPlayer(${1:bool abAvoid = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setbribed": {
-		"prefix": "setbribed",
-		"body": "SetBribed(${1:bool abBribe = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setcandocommand": {
-		"prefix": "setcandocommand",
-		"body": "SetCanDoCommand(${1:bool abCanDoCommand= true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setcombatstyle": {
-		"prefix": "setcombatstyle",
-		"body": "SetCombatStyle(${1:CombatStyle akCombatStyle})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setcommandstate": {
-		"prefix": "setcommandstate",
-		"body": "SetCommandState(${1:bool abStartCommandMode})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setcompanion": {
-		"prefix": "setcompanion",
-		"body": "SetCompanion(${1:bool SetCompanion = true}, ${2:FillCompanionAlias = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setcrimefaction": {
-		"prefix": "setcrimefaction",
-		"body": "SetCrimeFaction(${1:Faction akFaction})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setcriticalstage": {
-		"prefix": "setcriticalstage",
-		"body": "SetCriticalStage(${1:int aiStage})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setdoganimarchetypeagitated": {
-		"prefix": "setdoganimarchetypeagitated",
-		"body": "SetDogAnimArchetypeAgitated()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setdoganimarchetypealert": {
-		"prefix": "setdoganimarchetypealert",
-		"body": "SetDogAnimArchetypeAlert()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setdoganimarchetypeneutral": {
-		"prefix": "setdoganimarchetypeneutral",
-		"body": "SetDogAnimArchetypeNeutral()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setdoganimarchetypeplayful": {
-		"prefix": "setdoganimarchetypeplayful",
-		"body": "SetDogAnimArchetypePlayful()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setdoingfavor": {
-		"prefix": "setdoingfavor",
-		"body": "SetDoingFavor(${1:bool abDoingFavor = true}, ${2:bool abWorkShopMode = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setessential": {
-		"prefix": "setessential",
-		"body": "SetEssential(${1:bool abEssential})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"seteyetexture": {
-		"prefix": "seteyetexture",
-		"body": "SetEyeTexture(${1:TextureSet akTexture})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setfactionrank": {
-		"prefix": "setfactionrank",
-		"body": "SetFactionRank(${1:Faction akFaction}, ${2:int aiRank})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setforcedlandingmarker": {
-		"prefix": "setforcedlandingmarker",
-		"body": "SetForcedLandingMarker(${1:ObjectReference aMarker})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setghost": {
-		"prefix": "setghost",
-		"body": "SetGhost(${1:bool abIsGhost = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"sethaschargenskeleton": {
-		"prefix": "sethaschargenskeleton",
-		"body": "SetHasCharGenSkeleton(${1:bool abCharGen = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setheadtracking": {
-		"prefix": "setheadtracking",
-		"body": "SetHeadTracking(${1:bool abEnable = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setintimidated": {
-		"prefix": "setintimidated",
-		"body": "SetIntimidated(${1:bool abIntimidate = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setlookat": {
-		"prefix": "setlookat",
-		"body": "SetLookAt(${1:ObjectReference akTarget}, ${2:bool abPathingLookAt = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setnobleedoutrecovery": {
-		"prefix": "setnobleedoutrecovery",
-		"body": "SetNoBleedoutRecovery(${1:bool abAllowed})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setnotshowonstealthmeter": {
-		"prefix": "setnotshowonstealthmeter",
-		"body": "SetNotShowOnStealthMeter(${1:bool abNotShow})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setoutfit": {
-		"prefix": "setoutfit",
-		"body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setoverridevoicetype": {
-		"prefix": "setoverridevoicetype",
-		"body": "SetOverrideVoiceType(${1:VoiceType akVoiceType})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setplayercontrols": {
-		"prefix": "setplayercontrols",
-		"body": "SetPlayerControls(${1:bool abControls})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setplayerresistingarrest": {
-		"prefix": "setplayerresistingarrest",
-		"body": "SetPlayerResistingArrest()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setplayerteammate": {
-		"prefix": "setplayerteammate",
-		"body": "SetPlayerTeammate(${1:bool abTeammate = true}, ${2:bool abCanDoFavor = true}, ${3:bool abGivePlayerXP = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setprotected": {
-		"prefix": "setprotected",
-		"body": "SetProtected(${1:bool abProtected = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setrace": {
-		"prefix": "setrace",
-		"body": "SetRace(${1:Race akRace = None})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setrelationshiprank": {
-		"prefix": "setrelationshiprank",
-		"body": "SetRelationshipRank(${1:Actor akOther}, ${2:int aiRank})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setrestrained": {
-		"prefix": "setrestrained",
-		"body": "SetRestrained(${1:bool abRestrained = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setsubgraphfloatvariable": {
-		"prefix": "setsubgraphfloatvariable",
-		"body": "SetSubGraphFloatVariable(${1:string asVariableName}, ${2:float afValue})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setunconscious": {
-		"prefix": "setunconscious",
-		"body": "SetUnconscious(${1:bool abUnconscious = true})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"setvehicle": {
-		"prefix": "setvehicle",
-		"body": "SetVehicle(${1:Actor akVehicle})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"showbartermenu": {
-		"prefix": "showbartermenu",
-		"body": "ShowBarterMenu()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"snapintointeraction": {
-		"prefix": "snapintointeraction",
-		"body": "SnapIntoInteraction(${1:ObjectReference akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"startcannibal": {
-		"prefix": "startcannibal",
-		"body": "StartCannibal(${1:Actor akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"startcombat": {
-		"prefix": "startcombat",
-		"body": "StartCombat(${1:Actor akTarget}, ${2:bool abPreferredTarget = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"startdeferredkill": {
-		"prefix": "startdeferredkill",
-		"body": "StartDeferredKill()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"startfrenzyattack": {
-		"prefix": "startfrenzyattack",
-		"body": "StartFrenzyAttack(${1:float aChance = 0.1}, ${2:float aInterval = 0.5})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"startsneaking": {
-		"prefix": "startsneaking",
-		"body": "StartSneaking()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"startvampirefeed": {
-		"prefix": "startvampirefeed",
-		"body": "StartVampireFeed(${1:Actor akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"stopcombat": {
-		"prefix": "stopcombat",
-		"body": "StopCombat()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"stopcombatalarm": {
-		"prefix": "stopcombatalarm",
-		"body": "StopCombatAlarm()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"switchtopowerarmor": {
-		"prefix": "switchtopowerarmor",
-		"body": "SwitchToPowerArmor(${1:ObjectReference aArmorFurniture})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"trapsoul": {
-		"prefix": "trapsoul",
-		"body": "TrapSoul(${1:Actor akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"unequipall": {
-		"prefix": "unequipall",
-		"body": "UnequipAll()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"unequipitem": {
-		"prefix": "unequipitem",
-		"body": "UnequipItem(${1:Form akItem}, ${2:bool abPreventEquip = false}, ${3:bool abSilent = false})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"unequipitemslot": {
-		"prefix": "unequipitemslot",
-		"body": "UnequipItemSlot(${1:int aiSlot})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"unequipspell": {
-		"prefix": "unequipspell",
-		"body": "UnequipSpell(${1:Spell akSpell}, ${2:int aiSource})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"unlockowneddoorsincell": {
-		"prefix": "unlockowneddoorsincell",
-		"body": "UnlockOwnedDoorsInCell()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"willintimidatesucceed": {
-		"prefix": "willintimidatesucceed",
-		"body": "WillIntimidateSucceed()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"wornhaskeyword": {
-		"prefix": "wornhaskeyword",
-		"body": "WornHasKeyword(${1:Keyword akKeyword})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"wouldbestealing": {
-		"prefix": "wouldbestealing",
-		"body": "WouldBeStealing(${1:ObjectReference akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"wouldrefusecommand": {
-		"prefix": "wouldrefusecommand",
-		"body": "WouldRefuseCommand(${1:ObjectReference akTarget})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"oncombatstatechanged-REM": {
-		"prefix": "oncombatstatechanged-REM",
-		"body": "Event Actor.OnCombatStateChanged(Actor akSender, Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnCombatStateChanged",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodecompletecommand-REM": {
-		"prefix": "oncommandmodecompletecommand-REM",
-		"body": "Event Actor.OnCommandModeCompleteCommand(Actor akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnCommandModeCompleteCommand",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodeenter-REM": {
-		"prefix": "oncommandmodeenter-REM",
-		"body": "Event Actor.OnCommandModeEnter(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnCommandModeEnter",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodeexit-REM": {
-		"prefix": "oncommandmodeexit-REM",
-		"body": "Event Actor.OnCommandModeExit(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnCommandModeExit",
-		"scope": "source.papyrus"
-	},
-	"oncommandmodegivecommand-REM": {
-		"prefix": "oncommandmodegivecommand-REM",
-		"body": "Event Actor.OnCommandModeGiveCommand(Actor akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnCommandModeGiveCommand",
-		"scope": "source.papyrus"
-	},
-	"oncompaniondismiss-REM": {
-		"prefix": "oncompaniondismiss-REM",
-		"body": "Event Actor.OnCompanionDismiss(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnCompanionDismiss",
-		"scope": "source.papyrus"
-	},
-	"onconsciousnessstatechanged-REM": {
-		"prefix": "onconsciousnessstatechanged-REM",
-		"body": "Event Actor.OnConsciousnessStateChanged(Actor akSender, bool abUnconscious )\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnConsciousnessStateChanged",
-		"scope": "source.papyrus"
-	},
-	"oncripple-REM": {
-		"prefix": "oncripple-REM",
-		"body": "Event Actor.OnCripple(Actor akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnCripple",
-		"scope": "source.papyrus"
-	},
-	"ondeath-REM": {
-		"prefix": "ondeath-REM",
-		"body": "Event Actor.OnDeath(Actor akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnDeath",
-		"scope": "source.papyrus"
-	},
-	"ondeferredkill-REM": {
-		"prefix": "ondeferredkill-REM",
-		"body": "Event Actor.OnDeferredKill(Actor akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnDeferredKill",
-		"scope": "source.papyrus"
-	},
-	"ondifficultychanged-REM": {
-		"prefix": "ondifficultychanged-REM",
-		"body": "Event Actor.OnDifficultyChanged(Actor akSender, int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnDifficultyChanged",
-		"scope": "source.papyrus"
-	},
-	"ondying-REM": {
-		"prefix": "ondying-REM",
-		"body": "Event Actor.OnDying(Actor akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnDying",
-		"scope": "source.papyrus"
-	},
-	"onenterbleedout-REM": {
-		"prefix": "onenterbleedout-REM",
-		"body": "Event Actor.OnEnterBleedout(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnEnterBleedout",
-		"scope": "source.papyrus"
-	},
-	"onentersneaking-REM": {
-		"prefix": "onentersneaking-REM",
-		"body": "Event Actor.OnEnterSneaking(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnEnterSneaking",
-		"scope": "source.papyrus"
-	},
-	"onescortwaitstart-REM": {
-		"prefix": "onescortwaitstart-REM",
-		"body": "Event Actor.OnEscortWaitStart(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnEscortWaitStart",
-		"scope": "source.papyrus"
-	},
-	"onescortwaitstop-REM": {
-		"prefix": "onescortwaitstop-REM",
-		"body": "Event Actor.OnEscortWaitStop(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnEscortWaitStop",
-		"scope": "source.papyrus"
-	},
-	"ongetup-REM": {
-		"prefix": "ongetup-REM",
-		"body": "Event Actor.OnGetUp(Actor akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnGetUp",
-		"scope": "source.papyrus"
-	},
-	"onitemequipped-REM": {
-		"prefix": "onitemequipped-REM",
-		"body": "Event Actor.OnItemEquipped(Actor akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnItemEquipped",
-		"scope": "source.papyrus"
-	},
-	"onitemunequipped-REM": {
-		"prefix": "onitemunequipped-REM",
-		"body": "Event Actor.OnItemUnequipped(Actor akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnItemUnequipped",
-		"scope": "source.papyrus"
-	},
-	"onkill-REM": {
-		"prefix": "onkill-REM",
-		"body": "Event Actor.OnKill(Actor akSender, Actor akVictim)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnKill",
-		"scope": "source.papyrus"
-	},
-	"onlocationchange-REM": {
-		"prefix": "onlocationchange-REM",
-		"body": "Event Actor.OnLocationChange(Actor akSender, Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnLocationChange",
-		"scope": "source.papyrus"
-	},
-	"onpackagechange-REM": {
-		"prefix": "onpackagechange-REM",
-		"body": "Event Actor.OnPackageChange(Actor akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPackageChange",
-		"scope": "source.papyrus"
-	},
-	"onpackageend-REM": {
-		"prefix": "onpackageend-REM",
-		"body": "Event Actor.OnPackageEnd(Actor akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPackageEnd",
-		"scope": "source.papyrus"
-	},
-	"onpackagestart-REM": {
-		"prefix": "onpackagestart-REM",
-		"body": "Event Actor.OnPackageStart(Actor akSender, Package akNewPackage)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPackageStart",
-		"scope": "source.papyrus"
-	},
-	"onpartialcripple-REM": {
-		"prefix": "onpartialcripple-REM",
-		"body": "Event Actor.OnPartialCripple(Actor akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPartialCripple",
-		"scope": "source.papyrus"
-	},
-	"onpickpocketfailed-REM": {
-		"prefix": "onpickpocketfailed-REM",
-		"body": "Event Actor.OnPickpocketFailed(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPickpocketFailed",
-		"scope": "source.papyrus"
-	},
-	"onplayercreaterobot-REM": {
-		"prefix": "onplayercreaterobot-REM",
-		"body": "Event Actor.OnPlayerCreateRobot(Actor akSender, Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerCreateRobot",
-		"scope": "source.papyrus"
-	},
-	"onplayerentervertibird-REM": {
-		"prefix": "onplayerentervertibird-REM",
-		"body": "Event Actor.OnPlayerEnterVertibird(Actor akSender, ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerEnterVertibird",
-		"scope": "source.papyrus"
-	},
-	"onplayerfalllongdistance-REM": {
-		"prefix": "onplayerfalllongdistance-REM",
-		"body": "Event Actor.OnPlayerFallLongDistance(Actor akSender, float afDamage)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerFallLongDistance",
-		"scope": "source.papyrus"
-	},
-	"onplayerfireweapon-REM": {
-		"prefix": "onplayerfireweapon-REM",
-		"body": "Event Actor.OnPlayerFireWeapon(Actor akSender, Form akBaseObject)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerFireWeapon",
-		"scope": "source.papyrus"
-	},
-	"onplayerhealteammate-REM": {
-		"prefix": "onplayerhealteammate-REM",
-		"body": "Event Actor.OnPlayerHealTeammate(Actor akSender, Actor akTeammate)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerHealTeammate",
-		"scope": "source.papyrus"
-	},
-	"onplayerloadgame-REM": {
-		"prefix": "onplayerloadgame-REM",
-		"body": "Event Actor.OnPlayerLoadGame(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerLoadGame",
-		"scope": "source.papyrus"
-	},
-	"onplayermodarmorweapon-REM": {
-		"prefix": "onplayermodarmorweapon-REM",
-		"body": "Event Actor.OnPlayerModArmorWeapon(Actor akSender, Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerModArmorWeapon",
-		"scope": "source.papyrus"
-	},
-	"onplayermodrobot-REM": {
-		"prefix": "onplayermodrobot-REM",
-		"body": "Event Actor.OnPlayerModRobot(Actor akSender, Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerModRobot",
-		"scope": "source.papyrus"
-	},
-	"onplayerswimming-REM": {
-		"prefix": "onplayerswimming-REM",
-		"body": "Event Actor.OnPlayerSwimming(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerSwimming",
-		"scope": "source.papyrus"
-	},
-	"onplayeruseworkbench-REM": {
-		"prefix": "onplayeruseworkbench-REM",
-		"body": "Event Actor.OnPlayerUseWorkBench(Actor akSender, ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnPlayerUseWorkBench",
-		"scope": "source.papyrus"
-	},
-	"onraceswitchcomplete-REM": {
-		"prefix": "onraceswitchcomplete-REM",
-		"body": "Event Actor.OnRaceSwitchComplete(Actor akSender)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnRaceSwitchComplete",
-		"scope": "source.papyrus"
-	},
-	"onsit-REM": {
-		"prefix": "onsit-REM",
-		"body": "Event Actor.OnSit(Actor akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnSit",
-		"scope": "source.papyrus"
-	},
-	"onspeechchallengeavailable-REM": {
-		"prefix": "onspeechchallengeavailable-REM",
-		"body": "Event Actor.OnSpeechChallengeAvailable(Actor akSender, ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Actor.OnSpeechChallengeAvailable",
-		"scope": "source.papyrus"
-	},
-	"getwornitem": {
-		"prefix": "getwornitem",
-		"body": "GetWornItem(${1:int aiSlotIndex}, ${2:bool abFirstPerson = False})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getwornitemmods": {
-		"prefix": "getwornitemmods",
-		"body": "GetWornItemMods(${1:int aiSlotIndex})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getinstanceowner": {
-		"prefix": "getinstanceowner",
-		"body": "GetInstanceOwner(${1:int aiSlotIndex})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"queueupdate": {
-		"prefix": "queueupdate",
-		"body": "QueueUpdate(${1:bool abDoEquipment}, ${2:int aiFlags = 0})${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	},
-	"getfurniturereference": {
-		"prefix": "getfurniturereference",
-		"body": "GetFurnitureReference()${0}",
-		"description": "Actor",
-		"scope": "source.papyrus"
-	}
+    "Actor.AddPerk": {
+        "prefix": "addperk",
+        "body": "AddPerk(${1:Perk akPerk}, ${2:bool abNotify = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.AddSpell": {
+        "prefix": "addspell",
+        "body": "AddSpell(${1:Spell akSpell}, ${2:bool abVerbose = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.AddToFaction": {
+        "prefix": "addtofaction",
+        "body": "AddToFaction(${1:Faction akFaction})${0}",
+        "description": "Actor"
+    },
+    "Actor.AllowBleedoutDialogue": {
+        "prefix": "allowbleedoutdialogue",
+        "body": "AllowBleedoutDialogue(${1:bool abCanTalk})${0}",
+        "description": "Actor"
+    },
+    "Actor.AllowCompanion": {
+        "prefix": "allowcompanion",
+        "body": "AllowCompanion(${1:bool MakeCompanionIfNoneCurrently = true}, ${2:bool ForceCompanion = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.AllowPCDialogue": {
+        "prefix": "allowpcdialogue",
+        "body": "AllowPCDialogue(${1:bool abTalk})${0}",
+        "description": "Actor"
+    },
+    "Actor.AttachAshPile": {
+        "prefix": "attachashpile",
+        "body": "AttachAshPile(${1:Form akAshPileBase = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.AttemptAnimationSetSwitch": {
+        "prefix": "attemptanimationsetswitch",
+        "body": "AttemptAnimationSetSwitch()${0}",
+        "description": "Actor"
+    },
+    "Actor.CanFlyHere": {
+        "prefix": "canflyhere",
+        "body": "CanFlyHere()${0}",
+        "description": "Actor"
+    },
+    "Actor.ChangeAnimArchetype": {
+        "prefix": "changeanimarchetype",
+        "body": "ChangeAnimArchetype(${1:keyword apKeyword = none})${0}",
+        "description": "Actor"
+    },
+    "Actor.ChangeAnimFaceArchetype": {
+        "prefix": "changeanimfacearchetype",
+        "body": "ChangeAnimFaceArchetype(${1:keyword apKeyword = none})${0}",
+        "description": "Actor"
+    },
+    "Actor.ChangeAnimFlavor": {
+        "prefix": "changeanimflavor",
+        "body": "ChangeAnimFlavor(${1:keyword apKeyword = none})${0}",
+        "description": "Actor"
+    },
+    "Actor.ChangeHeadPart": {
+        "prefix": "changeheadpart",
+        "body": "ChangeHeadPart(${1:headpart apHeadPart}, ${2:bool abRemovePart = false}, ${3:bool abRemoveExtraParts = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.ClearArrested": {
+        "prefix": "cleararrested",
+        "body": "ClearArrested()${0}",
+        "description": "Actor"
+    },
+    "Actor.ClearExpressionOverride": {
+        "prefix": "clearexpressionoverride",
+        "body": "ClearExpressionOverride()${0}",
+        "description": "Actor"
+    },
+    "Actor.ClearExtraArrows": {
+        "prefix": "clearextraarrows",
+        "body": "ClearExtraArrows()${0}",
+        "description": "Actor"
+    },
+    "Actor.ClearForcedLandingMarker": {
+        "prefix": "clearforcedlandingmarker",
+        "body": "ClearForcedLandingMarker()${0}",
+        "description": "Actor"
+    },
+    "Actor.ClearLookAt": {
+        "prefix": "clearlookat",
+        "body": "ClearLookAt()${0}",
+        "description": "Actor"
+    },
+    "Actor.DisallowCompanion": {
+        "prefix": "disallowcompanion",
+        "body": "DisallowCompanion(${1:bool SuppressDismissMessage = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.Dismember": {
+        "prefix": "dismember",
+        "body": "Dismember(${1:string asBodyPart}, ${2:bool abForceExplode = false}, ${3:bool abForceDismember = false}, ${4:bool abForceBloodyMess = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.Dismount": {
+        "prefix": "dismount",
+        "body": "Dismount()${0}",
+        "description": "Actor"
+    },
+    "Actor.DispelAllSpells": {
+        "prefix": "dispelallspells",
+        "body": "DispelAllSpells()${0}",
+        "description": "Actor"
+    },
+    "Actor.DispelSpell": {
+        "prefix": "dispelspell",
+        "body": "DispelSpell(${1:Spell akSpell})${0}",
+        "description": "Actor"
+    },
+    "Actor.DoCombatSpellApply": {
+        "prefix": "docombatspellapply",
+        "body": "DoCombatSpellApply(${1:Spell akSpell}, ${2:ObjectReference akTarget})${0}",
+        "description": "Actor"
+    },
+    "Actor.DogDropItems": {
+        "prefix": "dogdropitems",
+        "body": "DogDropItems()${0}",
+        "description": "Actor"
+    },
+    "Actor.DogPlaceInMouth": {
+        "prefix": "dogplaceinmouth",
+        "body": "DogPlaceInMouth(${1:Form akItem})${0}",
+        "description": "Actor"
+    },
+    "Actor.DrawWeapon": {
+        "prefix": "drawweapon",
+        "body": "DrawWeapon()${0}",
+        "description": "Actor"
+    },
+    "Actor.EnableAI": {
+        "prefix": "enableai",
+        "body": "EnableAI(${1:bool abEnable = true}, ${2:bool abPauseVoice = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.EndDeferredKill": {
+        "prefix": "enddeferredkill",
+        "body": "EndDeferredKill()${0}",
+        "description": "Actor"
+    },
+    "Actor.EquipItem": {
+        "prefix": "equipitem",
+        "body": "EquipItem(${1:Form akItem}, ${2:bool abPreventRemoval = false}, ${3:bool abSilent = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.EquipSpell": {
+        "prefix": "equipspell",
+        "body": "EquipSpell(${1:Spell akSpell}, ${2:int aiSource})${0}",
+        "description": "Actor"
+    },
+    "Actor.EvaluatePackage": {
+        "prefix": "evaluatepackage",
+        "body": "EvaluatePackage(${1:bool abResetAI=false})${0}",
+        "description": "Actor"
+    },
+    "Actor.FollowerFollow": {
+        "prefix": "followerfollow",
+        "body": "FollowerFollow()${0}",
+        "description": "Actor"
+    },
+    "Actor.FollowerSetDistanceFar": {
+        "prefix": "followersetdistancefar",
+        "body": "FollowerSetDistanceFar()${0}",
+        "description": "Actor"
+    },
+    "Actor.FollowerSetDistanceMedium": {
+        "prefix": "followersetdistancemedium",
+        "body": "FollowerSetDistanceMedium()${0}",
+        "description": "Actor"
+    },
+    "Actor.FollowerSetDistanceNear": {
+        "prefix": "followersetdistancenear",
+        "body": "FollowerSetDistanceNear()${0}",
+        "description": "Actor"
+    },
+    "Actor.FollowerWait": {
+        "prefix": "followerwait",
+        "body": "FollowerWait()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetActorBase": {
+        "prefix": "getactorbase",
+        "body": "GetActorBase()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetAllCombatTargets": {
+        "prefix": "getallcombattargets",
+        "body": "GetAllCombatTargets()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetBribeAmount": {
+        "prefix": "getbribeamount",
+        "body": "GetBribeAmount()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetCombatState": {
+        "prefix": "getcombatstate",
+        "body": "GetCombatState()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetCombatTarget": {
+        "prefix": "getcombattarget",
+        "body": "GetCombatTarget()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetCrimeFaction": {
+        "prefix": "getcrimefaction",
+        "body": "GetCrimeFaction()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetCurrentPackage": {
+        "prefix": "getcurrentpackage",
+        "body": "GetCurrentPackage()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetDialogueTarget": {
+        "prefix": "getdialoguetarget",
+        "body": "GetDialogueTarget()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetEquippedItemType": {
+        "prefix": "getequippeditemtype",
+        "body": "GetEquippedItemType(${1:int aiEquipIndex})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetEquippedShield": {
+        "prefix": "getequippedshield",
+        "body": "GetEquippedShield()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetEquippedSpell": {
+        "prefix": "getequippedspell",
+        "body": "GetEquippedSpell(${1:int aiSource})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetEquippedWeapon": {
+        "prefix": "getequippedweapon",
+        "body": "GetEquippedWeapon(${1:int aiEquipIndex = 0})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetFactionRank": {
+        "prefix": "getfactionrank",
+        "body": "GetFactionRank(${1:Faction akFaction})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetFactionReaction": {
+        "prefix": "getfactionreaction",
+        "body": "GetFactionReaction(${1:Actor akOther})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetFlyingState": {
+        "prefix": "getflyingstate",
+        "body": "GetFlyingState()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetForcedLandingMarker": {
+        "prefix": "getforcedlandingmarker",
+        "body": "GetForcedLandingMarker()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetGoldAmount": {
+        "prefix": "getgoldamount",
+        "body": "GetGoldAmount()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetHighestRelationshipRank": {
+        "prefix": "gethighestrelationshiprank",
+        "body": "GetHighestRelationshipRank()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetKiller": {
+        "prefix": "getkiller",
+        "body": "GetKiller()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetLevel": {
+        "prefix": "getlevel",
+        "body": "GetLevel()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetLeveledActorBase": {
+        "prefix": "getleveledactorbase",
+        "body": "GetLeveledActorBase()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetLightLevel": {
+        "prefix": "getlightlevel",
+        "body": "GetLightLevel()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetLowestRelationshipRank": {
+        "prefix": "getlowestrelationshiprank",
+        "body": "GetLowestRelationshipRank()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetNoBleedoutRecovery": {
+        "prefix": "getnobleedoutrecovery",
+        "body": "GetNoBleedoutRecovery()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetPlayerControls": {
+        "prefix": "getplayercontrols",
+        "body": "GetPlayerControls()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetRace": {
+        "prefix": "getrace",
+        "body": "GetRace()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetRelationshipRank": {
+        "prefix": "getrelationshiprank",
+        "body": "GetRelationshipRank(${1:Actor akOther})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetSitState": {
+        "prefix": "getsitstate",
+        "body": "GetSitState()${0}",
+        "description": "Actor"
+    },
+    "Actor.GetSleepState": {
+        "prefix": "getsleepstate",
+        "body": "GetSleepState()${0}",
+        "description": "Actor"
+    },
+    "Actor.HasAssociation": {
+        "prefix": "hasassociation",
+        "body": "HasAssociation(${1:AssociationType akAssociation}, ${2:Actor akOther = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.HasDetectionLOS": {
+        "prefix": "hasdetectionlos",
+        "body": "HasDetectionLOS(${1:ObjectReference akOther})${0}",
+        "description": "Actor"
+    },
+    "Actor.HasFamilyRelationship": {
+        "prefix": "hasfamilyrelationship",
+        "body": "HasFamilyRelationship(${1:Actor akOther = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.HasMagicEffect": {
+        "prefix": "hasmagiceffect",
+        "body": "HasMagicEffect(${1:MagicEffect akEffect})${0}",
+        "description": "Actor"
+    },
+    "Actor.HasMagicEffectWithKeyword": {
+        "prefix": "hasmagiceffectwithkeyword",
+        "body": "HasMagicEffectWithKeyword(${1:Keyword akKeyword})${0}",
+        "description": "Actor"
+    },
+    "Actor.HasParentRelationship": {
+        "prefix": "hasparentrelationship",
+        "body": "HasParentRelationship(${1:Actor akOther})${0}",
+        "description": "Actor"
+    },
+    "Actor.HasPerk": {
+        "prefix": "hasperk",
+        "body": "HasPerk(${1:Perk akPerk})${0}",
+        "description": "Actor"
+    },
+    "Actor.HasSpell": {
+        "prefix": "hasspell",
+        "body": "HasSpell(${1:Form akForm})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsAIEnabled": {
+        "prefix": "isaienabled",
+        "body": "IsAIEnabled()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsAlarmed": {
+        "prefix": "isalarmed",
+        "body": "IsAlarmed()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsAlerted": {
+        "prefix": "isalerted",
+        "body": "IsAlerted()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsAllowedToFly": {
+        "prefix": "isallowedtofly",
+        "body": "IsAllowedToFly()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsArrested": {
+        "prefix": "isarrested",
+        "body": "IsArrested()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsArrestingTarget": {
+        "prefix": "isarrestingtarget",
+        "body": "IsArrestingTarget()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsBeingRidden": {
+        "prefix": "isbeingridden",
+        "body": "IsBeingRidden()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsBeingRiddenBy": {
+        "prefix": "isbeingriddenby",
+        "body": "IsBeingRiddenBy(${1:Actor akActor})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsBleedingOut": {
+        "prefix": "isbleedingout",
+        "body": "IsBleedingOut()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsBribed": {
+        "prefix": "isbribed",
+        "body": "IsBribed()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsChild": {
+        "prefix": "ischild",
+        "body": "IsChild()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsCommandedActor": {
+        "prefix": "iscommandedactor",
+        "body": "IsCommandedActor()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsDead": {
+        "prefix": "isdead",
+        "body": "IsDead()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsDetectedBy": {
+        "prefix": "isdetectedby",
+        "body": "IsDetectedBy(${1:Actor akOther})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsDismembered": {
+        "prefix": "isdismembered",
+        "body": "IsDismembered(${1:string asBodyPart = \\\"\\\"})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsDoingFavor": {
+        "prefix": "isdoingfavor",
+        "body": "IsDoingFavor()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsEquipped": {
+        "prefix": "isequipped",
+        "body": "IsEquipped(${1:Form akItem})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsEssential": {
+        "prefix": "isessential",
+        "body": "IsEssential()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsFlying": {
+        "prefix": "isflying",
+        "body": "IsFlying()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsGhost": {
+        "prefix": "isghost",
+        "body": "IsGhost()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsGuard": {
+        "prefix": "isguard",
+        "body": "IsGuard()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsHostileToActor": {
+        "prefix": "ishostiletoactor",
+        "body": "IsHostileToActor(${1:Actor akActor})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsInCombat": {
+        "prefix": "isincombat",
+        "body": "IsInCombat()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsInFaction": {
+        "prefix": "isinfaction",
+        "body": "IsInFaction(${1:Faction akFaction})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsInIronSights": {
+        "prefix": "isinironsights",
+        "body": "IsInIronSights()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsInKillMove": {
+        "prefix": "isinkillmove",
+        "body": "IsInKillMove()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsInPowerArmor": {
+        "prefix": "isinpowerarmor",
+        "body": "IsInPowerArmor()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsInScene": {
+        "prefix": "isinscene",
+        "body": "IsInScene()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsIntimidated": {
+        "prefix": "isintimidated",
+        "body": "IsIntimidated()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsOnMount": {
+        "prefix": "isonmount",
+        "body": "IsOnMount()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsOverEncumbered": {
+        "prefix": "isoverencumbered",
+        "body": "IsOverEncumbered()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsOwner": {
+        "prefix": "isowner",
+        "body": "IsOwner(${1:ObjectReference akObject})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsPlayersLastRiddenHorse": {
+        "prefix": "isplayerslastriddenhorse",
+        "body": "IsPlayersLastRiddenHorse()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsPlayerTeammate": {
+        "prefix": "isplayerteammate",
+        "body": "IsPlayerTeammate()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsRunning": {
+        "prefix": "isrunning",
+        "body": "IsRunning()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsSeatOccupied": {
+        "prefix": "isseatoccupied",
+        "body": "IsSeatOccupied(${1:keyword apKeyword})${0}",
+        "description": "Actor"
+    },
+    "Actor.IsSneaking": {
+        "prefix": "issneaking",
+        "body": "IsSneaking()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsSprinting": {
+        "prefix": "issprinting",
+        "body": "IsSprinting()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsTalking": {
+        "prefix": "istalking",
+        "body": "IsTalking()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsTrespassing": {
+        "prefix": "istrespassing",
+        "body": "IsTrespassing()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsUnconscious": {
+        "prefix": "isunconscious",
+        "body": "IsUnconscious()${0}",
+        "description": "Actor"
+    },
+    "Actor.IsWeaponDrawn": {
+        "prefix": "isweapondrawn",
+        "body": "IsWeaponDrawn()${0}",
+        "description": "Actor"
+    },
+    "Actor.Kill": {
+        "prefix": "kill",
+        "body": "Kill(${1:Actor akKiller = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.KillEssential": {
+        "prefix": "killessential",
+        "body": "KillEssential(${1:Actor akKiller = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.KillSilent": {
+        "prefix": "killsilent",
+        "body": "KillSilent(${1:Actor akKiller = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.MakePlayerFriend": {
+        "prefix": "makeplayerfriend",
+        "body": "MakePlayerFriend()${0}",
+        "description": "Actor"
+    },
+    "Actor.MarkItemAsFavorite": {
+        "prefix": "markitemasfavorite",
+        "body": "MarkItemAsFavorite(${1:Form akItem}, ${2:int aiSlot=-1})${0}",
+        "description": "Actor"
+    },
+    "Actor.ModFactionRank": {
+        "prefix": "modfactionrank",
+        "body": "ModFactionRank(${1:Faction akFaction}, ${2:int aiMod})${0}",
+        "description": "Actor"
+    },
+    "Actor.MoveToPackageLocation": {
+        "prefix": "movetopackagelocation",
+        "body": "MoveToPackageLocation()${0}",
+        "description": "Actor"
+    },
+    "Actor.OnCombatStateChanged": {
+        "prefix": "oncombatstatechanged",
+        "body": "Event OnCombatStateChanged(Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnCombatStateChanged"
+    },
+    "Actor.OnCommandModeCompleteCommand": {
+        "prefix": "oncommandmodecompletecommand",
+        "body": "Event OnCommandModeCompleteCommand(int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnCommandModeCompleteCommand"
+    },
+    "Actor.OnCommandModeEnter": {
+        "prefix": "oncommandmodeenter",
+        "body": "Event OnCommandModeEnter()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnCommandModeEnter"
+    },
+    "Actor.OnCommandModeExit": {
+        "prefix": "oncommandmodeexit",
+        "body": "Event OnCommandModeExit()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnCommandModeExit"
+    },
+    "Actor.OnCommandModeGiveCommand": {
+        "prefix": "oncommandmodegivecommand",
+        "body": "Event OnCommandModeGiveCommand(int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnCommandModeGiveCommand"
+    },
+    "Actor.OnCompanionDismiss": {
+        "prefix": "oncompaniondismiss",
+        "body": "Event OnCompanionDismiss()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnCompanionDismiss"
+    },
+    "Actor.OnConsciousnessStateChanged": {
+        "prefix": "onconsciousnessstatechanged",
+        "body": "Event OnConsciousnessStateChanged( bool abUnconscious )\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnConsciousnessStateChanged"
+    },
+    "Actor.OnCripple": {
+        "prefix": "oncripple",
+        "body": "Event OnCripple(ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnCripple"
+    },
+    "Actor.OnDeath": {
+        "prefix": "ondeath",
+        "body": "Event OnDeath(Actor akKiller)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnDeath"
+    },
+    "Actor.OnDeferredKill": {
+        "prefix": "ondeferredkill",
+        "body": "Event OnDeferredKill(Actor akKiller)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnDeferredKill"
+    },
+    "Actor.OnDifficultyChanged": {
+        "prefix": "ondifficultychanged",
+        "body": "Event OnDifficultyChanged(int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnDifficultyChanged"
+    },
+    "Actor.OnDying": {
+        "prefix": "ondying",
+        "body": "Event OnDying(Actor akKiller)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnDying"
+    },
+    "Actor.OnEnterBleedout": {
+        "prefix": "onenterbleedout",
+        "body": "Event OnEnterBleedout()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnEnterBleedout"
+    },
+    "Actor.OnEnterSneaking": {
+        "prefix": "onentersneaking",
+        "body": "Event OnEnterSneaking()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnEnterSneaking"
+    },
+    "Actor.OnEscortWaitStart": {
+        "prefix": "onescortwaitstart",
+        "body": "Event OnEscortWaitStart()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnEscortWaitStart"
+    },
+    "Actor.OnEscortWaitStop": {
+        "prefix": "onescortwaitstop",
+        "body": "Event OnEscortWaitStop()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnEscortWaitStop"
+    },
+    "Actor.OnGetUp": {
+        "prefix": "ongetup",
+        "body": "Event OnGetUp(ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnGetUp"
+    },
+    "Actor.OnItemEquipped": {
+        "prefix": "onitemequipped",
+        "body": "Event OnItemEquipped(Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnItemEquipped"
+    },
+    "Actor.OnItemUnequipped": {
+        "prefix": "onitemunequipped",
+        "body": "Event OnItemUnequipped(Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnItemUnequipped"
+    },
+    "Actor.OnKill": {
+        "prefix": "onkill",
+        "body": "Event OnKill(Actor akVictim)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnKill"
+    },
+    "Actor.OnLocationChange": {
+        "prefix": "onlocationchange",
+        "body": "Event OnLocationChange(Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnLocationChange"
+    },
+    "Actor.OnPackageChange": {
+        "prefix": "onpackagechange",
+        "body": "Event OnPackageChange(Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPackageChange"
+    },
+    "Actor.OnPackageEnd": {
+        "prefix": "onpackageend",
+        "body": "Event OnPackageEnd(Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPackageEnd"
+    },
+    "Actor.OnPackageStart": {
+        "prefix": "onpackagestart",
+        "body": "Event OnPackageStart(Package akNewPackage)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPackageStart"
+    },
+    "Actor.OnPartialCripple": {
+        "prefix": "onpartialcripple",
+        "body": "Event OnPartialCripple(ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPartialCripple"
+    },
+    "Actor.OnPickpocketFailed": {
+        "prefix": "onpickpocketfailed",
+        "body": "Event OnPickpocketFailed()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPickpocketFailed"
+    },
+    "Actor.OnPlayerCreateRobot": {
+        "prefix": "onplayercreaterobot",
+        "body": "Event OnPlayerCreateRobot(Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerCreateRobot"
+    },
+    "Actor.OnPlayerEnterVertibird": {
+        "prefix": "onplayerentervertibird",
+        "body": "Event OnPlayerEnterVertibird(ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerEnterVertibird"
+    },
+    "Actor.OnPlayerFallLongDistance": {
+        "prefix": "onplayerfalllongdistance",
+        "body": "Event OnPlayerFallLongDistance(float afDamage)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerFallLongDistance"
+    },
+    "Actor.OnPlayerFireWeapon": {
+        "prefix": "onplayerfireweapon",
+        "body": "Event OnPlayerFireWeapon(Form akBaseObject)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerFireWeapon"
+    },
+    "Actor.OnPlayerHealTeammate": {
+        "prefix": "onplayerhealteammate",
+        "body": "Event OnPlayerHealTeammate(Actor akTeammate)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerHealTeammate"
+    },
+    "Actor.OnPlayerLoadGame": {
+        "prefix": "onplayerloadgame",
+        "body": "Event OnPlayerLoadGame()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerLoadGame"
+    },
+    "Actor.OnPlayerModArmorWeapon": {
+        "prefix": "onplayermodarmorweapon",
+        "body": "Event OnPlayerModArmorWeapon(Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerModArmorWeapon"
+    },
+    "Actor.OnPlayerModRobot": {
+        "prefix": "onplayermodrobot",
+        "body": "Event OnPlayerModRobot(Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerModRobot"
+    },
+    "Actor.OnPlayerSwimming": {
+        "prefix": "onplayerswimming",
+        "body": "Event OnPlayerSwimming()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerSwimming"
+    },
+    "Actor.OnPlayerUseWorkBench": {
+        "prefix": "onplayeruseworkbench",
+        "body": "Event OnPlayerUseWorkBench(ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnPlayerUseWorkBench"
+    },
+    "Actor.OnRaceSwitchComplete": {
+        "prefix": "onraceswitchcomplete",
+        "body": "Event OnRaceSwitchComplete()\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnRaceSwitchComplete"
+    },
+    "Actor.OnSit": {
+        "prefix": "onsit",
+        "body": "Event OnSit(ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnSit"
+    },
+    "Actor.OnSpeechChallengeAvailable": {
+        "prefix": "onspeechchallengeavailable",
+        "body": "Event OnSpeechChallengeAvailable(ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Actor.OnSpeechChallengeAvailable"
+    },
+    "Actor.OpenInventory": {
+        "prefix": "openinventory",
+        "body": "OpenInventory(${1:bool abForceOpen = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.PathToReference": {
+        "prefix": "pathtoreference",
+        "body": "PathToReference(${1:ObjectReference aTarget}, ${2:float afWalkRunPercent})${0}",
+        "description": "Actor"
+    },
+    "Actor.PlayIdle": {
+        "prefix": "playidle",
+        "body": "PlayIdle(${1:Idle akIdle})${0}",
+        "description": "Actor"
+    },
+    "Actor.PlayIdleAction": {
+        "prefix": "playidleaction",
+        "body": "PlayIdleAction(${1:Action aAction}, ${2:ObjectReference aTarget = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.PlayIdleWithTarget": {
+        "prefix": "playidlewithtarget",
+        "body": "PlayIdleWithTarget(${1:Idle akIdle}, ${2:ObjectReference akTarget})${0}",
+        "description": "Actor"
+    },
+    "Actor.PlaySubGraphAnimation": {
+        "prefix": "playsubgraphanimation",
+        "body": "PlaySubGraphAnimation(${1:string asEventName})${0}",
+        "description": "Actor"
+    },
+    "Actor.RemoveFromAllFactions": {
+        "prefix": "removefromallfactions",
+        "body": "RemoveFromAllFactions()${0}",
+        "description": "Actor"
+    },
+    "Actor.RemoveFromFaction": {
+        "prefix": "removefromfaction",
+        "body": "RemoveFromFaction(${1:Faction akFaction})${0}",
+        "description": "Actor"
+    },
+    "Actor.RemovePerk": {
+        "prefix": "removeperk",
+        "body": "RemovePerk(${1:Perk akPerk})${0}",
+        "description": "Actor"
+    },
+    "Actor.RemoveSpell": {
+        "prefix": "removespell",
+        "body": "RemoveSpell(${1:Spell akSpell})${0}",
+        "description": "Actor"
+    },
+    "Actor.ResetHealthAndLimbs": {
+        "prefix": "resethealthandlimbs",
+        "body": "ResetHealthAndLimbs()${0}",
+        "description": "Actor"
+    },
+    "Actor.Resurrect": {
+        "prefix": "resurrect",
+        "body": "Resurrect()${0}",
+        "description": "Actor"
+    },
+    "Actor.SendAssaultAlarm": {
+        "prefix": "sendassaultalarm",
+        "body": "SendAssaultAlarm()${0}",
+        "description": "Actor"
+    },
+    "Actor.SendTrespassAlarm": {
+        "prefix": "sendtrespassalarm",
+        "body": "SendTrespassAlarm(${1:Actor akCriminal})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAlert": {
+        "prefix": "setalert",
+        "body": "SetAlert(${1:bool abAlerted = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAllowFlying": {
+        "prefix": "setallowflying",
+        "body": "SetAllowFlying(${1:bool abAllowed = true}, ${2:bool abAllowCrash = true}, ${3:bool abAllowSearch = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAlpha": {
+        "prefix": "setalpha",
+        "body": "SetAlpha(${1:float afTargetAlpha}, ${2:bool abFade = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAnimArchetypeConfident": {
+        "prefix": "setanimarchetypeconfident",
+        "body": "SetAnimArchetypeConfident()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAnimArchetypeDepressed": {
+        "prefix": "setanimarchetypedepressed",
+        "body": "SetAnimArchetypeDepressed()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAnimArchetypeElderly": {
+        "prefix": "setanimarchetypeelderly",
+        "body": "SetAnimArchetypeElderly()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAnimArchetypeFriendly": {
+        "prefix": "setanimarchetypefriendly",
+        "body": "SetAnimArchetypeFriendly()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAnimArchetypeIrritated": {
+        "prefix": "setanimarchetypeirritated",
+        "body": "SetAnimArchetypeIrritated()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAnimArchetypeNervous": {
+        "prefix": "setanimarchetypenervous",
+        "body": "SetAnimArchetypeNervous()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAnimArchetypeNeutral": {
+        "prefix": "setanimarchetypeneutral",
+        "body": "SetAnimArchetypeNeutral()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAttackActorOnSight": {
+        "prefix": "setattackactoronsight",
+        "body": "SetAttackActorOnSight(${1:bool abAttackOnSight = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAvailableToBeCompanion": {
+        "prefix": "setavailabletobecompanion",
+        "body": "SetAvailableToBeCompanion()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetAvoidPlayer": {
+        "prefix": "setavoidplayer",
+        "body": "SetAvoidPlayer(${1:bool abAvoid = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetBribed": {
+        "prefix": "setbribed",
+        "body": "SetBribed(${1:bool abBribe = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetCanDoCommand": {
+        "prefix": "setcandocommand",
+        "body": "SetCanDoCommand(${1:bool abCanDoCommand= true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetCombatStyle": {
+        "prefix": "setcombatstyle",
+        "body": "SetCombatStyle(${1:CombatStyle akCombatStyle})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetCommandState": {
+        "prefix": "setcommandstate",
+        "body": "SetCommandState(${1:bool abStartCommandMode})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetCompanion": {
+        "prefix": "setcompanion",
+        "body": "SetCompanion(${1:bool SetCompanion = true}, ${2:FillCompanionAlias = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetCrimeFaction": {
+        "prefix": "setcrimefaction",
+        "body": "SetCrimeFaction(${1:Faction akFaction})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetCriticalStage": {
+        "prefix": "setcriticalstage",
+        "body": "SetCriticalStage(${1:int aiStage})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetDogAnimArchetypeAgitated": {
+        "prefix": "setdoganimarchetypeagitated",
+        "body": "SetDogAnimArchetypeAgitated()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetDogAnimArchetypeAlert": {
+        "prefix": "setdoganimarchetypealert",
+        "body": "SetDogAnimArchetypeAlert()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetDogAnimArchetypeNeutral": {
+        "prefix": "setdoganimarchetypeneutral",
+        "body": "SetDogAnimArchetypeNeutral()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetDogAnimArchetypePlayful": {
+        "prefix": "setdoganimarchetypeplayful",
+        "body": "SetDogAnimArchetypePlayful()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetDoingFavor": {
+        "prefix": "setdoingfavor",
+        "body": "SetDoingFavor(${1:bool abDoingFavor = true}, ${2:bool abWorkShopMode = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetEssential": {
+        "prefix": "setessential",
+        "body": "SetEssential(${1:bool abEssential})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetEyeTexture": {
+        "prefix": "seteyetexture",
+        "body": "SetEyeTexture(${1:TextureSet akTexture})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetFactionRank": {
+        "prefix": "setfactionrank",
+        "body": "SetFactionRank(${1:Faction akFaction}, ${2:int aiRank})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetForcedLandingMarker": {
+        "prefix": "setforcedlandingmarker",
+        "body": "SetForcedLandingMarker(${1:ObjectReference aMarker})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetGhost": {
+        "prefix": "setghost",
+        "body": "SetGhost(${1:bool abIsGhost = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetHasCharGenSkeleton": {
+        "prefix": "sethaschargenskeleton",
+        "body": "SetHasCharGenSkeleton(${1:bool abCharGen = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetHeadTracking": {
+        "prefix": "setheadtracking",
+        "body": "SetHeadTracking(${1:bool abEnable = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetIntimidated": {
+        "prefix": "setintimidated",
+        "body": "SetIntimidated(${1:bool abIntimidate = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetLookAt": {
+        "prefix": "setlookat",
+        "body": "SetLookAt(${1:ObjectReference akTarget}, ${2:bool abPathingLookAt = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetNoBleedoutRecovery": {
+        "prefix": "setnobleedoutrecovery",
+        "body": "SetNoBleedoutRecovery(${1:bool abAllowed})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetNotShowOnStealthMeter": {
+        "prefix": "setnotshowonstealthmeter",
+        "body": "SetNotShowOnStealthMeter(${1:bool abNotShow})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetOutfit": {
+        "prefix": "setoutfit",
+        "body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetOverrideVoiceType": {
+        "prefix": "setoverridevoicetype",
+        "body": "SetOverrideVoiceType(${1:VoiceType akVoiceType})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetPlayerControls": {
+        "prefix": "setplayercontrols",
+        "body": "SetPlayerControls(${1:bool abControls})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetPlayerResistingArrest": {
+        "prefix": "setplayerresistingarrest",
+        "body": "SetPlayerResistingArrest()${0}",
+        "description": "Actor"
+    },
+    "Actor.SetPlayerTeammate": {
+        "prefix": "setplayerteammate",
+        "body": "SetPlayerTeammate(${1:bool abTeammate = true}, ${2:bool abCanDoFavor = true}, ${3:bool abGivePlayerXP = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetProtected": {
+        "prefix": "setprotected",
+        "body": "SetProtected(${1:bool abProtected = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetRace": {
+        "prefix": "setrace",
+        "body": "SetRace(${1:Race akRace = None})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetRelationshipRank": {
+        "prefix": "setrelationshiprank",
+        "body": "SetRelationshipRank(${1:Actor akOther}, ${2:int aiRank})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetRestrained": {
+        "prefix": "setrestrained",
+        "body": "SetRestrained(${1:bool abRestrained = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetSubGraphFloatVariable": {
+        "prefix": "setsubgraphfloatvariable",
+        "body": "SetSubGraphFloatVariable(${1:string asVariableName}, ${2:float afValue})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetUnconscious": {
+        "prefix": "setunconscious",
+        "body": "SetUnconscious(${1:bool abUnconscious = true})${0}",
+        "description": "Actor"
+    },
+    "Actor.SetVehicle": {
+        "prefix": "setvehicle",
+        "body": "SetVehicle(${1:Actor akVehicle})${0}",
+        "description": "Actor"
+    },
+    "Actor.ShowBarterMenu": {
+        "prefix": "showbartermenu",
+        "body": "ShowBarterMenu()${0}",
+        "description": "Actor"
+    },
+    "Actor.SnapIntoInteraction": {
+        "prefix": "snapintointeraction",
+        "body": "SnapIntoInteraction(${1:ObjectReference akTarget})${0}",
+        "description": "Actor"
+    },
+    "Actor.StartCannibal": {
+        "prefix": "startcannibal",
+        "body": "StartCannibal(${1:Actor akTarget})${0}",
+        "description": "Actor"
+    },
+    "Actor.StartCombat": {
+        "prefix": "startcombat",
+        "body": "StartCombat(${1:Actor akTarget}, ${2:bool abPreferredTarget = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.StartDeferredKill": {
+        "prefix": "startdeferredkill",
+        "body": "StartDeferredKill()${0}",
+        "description": "Actor"
+    },
+    "Actor.StartFrenzyAttack": {
+        "prefix": "startfrenzyattack",
+        "body": "StartFrenzyAttack(${1:float aChance = 0.1}, ${2:float aInterval = 0.5})${0}",
+        "description": "Actor"
+    },
+    "Actor.StartSneaking": {
+        "prefix": "startsneaking",
+        "body": "StartSneaking()${0}",
+        "description": "Actor"
+    },
+    "Actor.StartVampireFeed": {
+        "prefix": "startvampirefeed",
+        "body": "StartVampireFeed(${1:Actor akTarget})${0}",
+        "description": "Actor"
+    },
+    "Actor.StopCombat": {
+        "prefix": "stopcombat",
+        "body": "StopCombat()${0}",
+        "description": "Actor"
+    },
+    "Actor.StopCombatAlarm": {
+        "prefix": "stopcombatalarm",
+        "body": "StopCombatAlarm()${0}",
+        "description": "Actor"
+    },
+    "Actor.SwitchToPowerArmor": {
+        "prefix": "switchtopowerarmor",
+        "body": "SwitchToPowerArmor(${1:ObjectReference aArmorFurniture})${0}",
+        "description": "Actor"
+    },
+    "Actor.TrapSoul": {
+        "prefix": "trapsoul",
+        "body": "TrapSoul(${1:Actor akTarget})${0}",
+        "description": "Actor"
+    },
+    "Actor.UnequipAll": {
+        "prefix": "unequipall",
+        "body": "UnequipAll()${0}",
+        "description": "Actor"
+    },
+    "Actor.UnequipItem": {
+        "prefix": "unequipitem",
+        "body": "UnequipItem(${1:Form akItem}, ${2:bool abPreventEquip = false}, ${3:bool abSilent = false})${0}",
+        "description": "Actor"
+    },
+    "Actor.UnequipItemSlot": {
+        "prefix": "unequipitemslot",
+        "body": "UnequipItemSlot(${1:int aiSlot})${0}",
+        "description": "Actor"
+    },
+    "Actor.UnequipSpell": {
+        "prefix": "unequipspell",
+        "body": "UnequipSpell(${1:Spell akSpell}, ${2:int aiSource})${0}",
+        "description": "Actor"
+    },
+    "Actor.UnlockOwnedDoorsInCell": {
+        "prefix": "unlockowneddoorsincell",
+        "body": "UnlockOwnedDoorsInCell()${0}",
+        "description": "Actor"
+    },
+    "Actor.WillIntimidateSucceed": {
+        "prefix": "willintimidatesucceed",
+        "body": "WillIntimidateSucceed()${0}",
+        "description": "Actor"
+    },
+    "Actor.WornHasKeyword": {
+        "prefix": "wornhaskeyword",
+        "body": "WornHasKeyword(${1:Keyword akKeyword})${0}",
+        "description": "Actor"
+    },
+    "Actor.WouldBeStealing": {
+        "prefix": "wouldbestealing",
+        "body": "WouldBeStealing(${1:ObjectReference akTarget})${0}",
+        "description": "Actor"
+    },
+    "Actor.WouldRefuseCommand": {
+        "prefix": "wouldrefusecommand",
+        "body": "WouldRefuseCommand(${1:ObjectReference akTarget})${0}",
+        "description": "Actor"
+    },
+    "Remote Actor.OnCombatStateChanged": {
+        "prefix": "oncombatstatechanged-REM",
+        "body": "Event Actor.OnCombatStateChanged(Actor akSender, Actor akTarget, int aeCombatState)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnCombatStateChanged"
+    },
+    "Remote Actor.OnCommandModeCompleteCommand": {
+        "prefix": "oncommandmodecompletecommand-REM",
+        "body": "Event Actor.OnCommandModeCompleteCommand(Actor akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnCommandModeCompleteCommand"
+    },
+    "Remote Actor.OnCommandModeEnter": {
+        "prefix": "oncommandmodeenter-REM",
+        "body": "Event Actor.OnCommandModeEnter(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnCommandModeEnter"
+    },
+    "Remote Actor.OnCommandModeExit": {
+        "prefix": "oncommandmodeexit-REM",
+        "body": "Event Actor.OnCommandModeExit(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnCommandModeExit"
+    },
+    "Remote Actor.OnCommandModeGiveCommand": {
+        "prefix": "oncommandmodegivecommand-REM",
+        "body": "Event Actor.OnCommandModeGiveCommand(Actor akSender, int aeCommandType, ObjectReference akTarget)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnCommandModeGiveCommand"
+    },
+    "Remote Actor.OnCompanionDismiss": {
+        "prefix": "oncompaniondismiss-REM",
+        "body": "Event Actor.OnCompanionDismiss(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnCompanionDismiss"
+    },
+    "Remote Actor.OnConsciousnessStateChanged": {
+        "prefix": "onconsciousnessstatechanged-REM",
+        "body": "Event Actor.OnConsciousnessStateChanged(Actor akSender, bool abUnconscious )\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnConsciousnessStateChanged"
+    },
+    "Remote Actor.OnCripple": {
+        "prefix": "oncripple-REM",
+        "body": "Event Actor.OnCripple(Actor akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnCripple"
+    },
+    "Remote Actor.OnDeath": {
+        "prefix": "ondeath-REM",
+        "body": "Event Actor.OnDeath(Actor akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnDeath"
+    },
+    "Remote Actor.OnDeferredKill": {
+        "prefix": "ondeferredkill-REM",
+        "body": "Event Actor.OnDeferredKill(Actor akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnDeferredKill"
+    },
+    "Remote Actor.OnDifficultyChanged": {
+        "prefix": "ondifficultychanged-REM",
+        "body": "Event Actor.OnDifficultyChanged(Actor akSender, int aOldDifficulty, int aNewDifficulty)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnDifficultyChanged"
+    },
+    "Remote Actor.OnDying": {
+        "prefix": "ondying-REM",
+        "body": "Event Actor.OnDying(Actor akSender, Actor akKiller)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnDying"
+    },
+    "Remote Actor.OnEnterBleedout": {
+        "prefix": "onenterbleedout-REM",
+        "body": "Event Actor.OnEnterBleedout(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnEnterBleedout"
+    },
+    "Remote Actor.OnEnterSneaking": {
+        "prefix": "onentersneaking-REM",
+        "body": "Event Actor.OnEnterSneaking(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnEnterSneaking"
+    },
+    "Remote Actor.OnEscortWaitStart": {
+        "prefix": "onescortwaitstart-REM",
+        "body": "Event Actor.OnEscortWaitStart(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnEscortWaitStart"
+    },
+    "Remote Actor.OnEscortWaitStop": {
+        "prefix": "onescortwaitstop-REM",
+        "body": "Event Actor.OnEscortWaitStop(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnEscortWaitStop"
+    },
+    "Remote Actor.OnGetUp": {
+        "prefix": "ongetup-REM",
+        "body": "Event Actor.OnGetUp(Actor akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnGetUp"
+    },
+    "Remote Actor.OnItemEquipped": {
+        "prefix": "onitemequipped-REM",
+        "body": "Event Actor.OnItemEquipped(Actor akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnItemEquipped"
+    },
+    "Remote Actor.OnItemUnequipped": {
+        "prefix": "onitemunequipped-REM",
+        "body": "Event Actor.OnItemUnequipped(Actor akSender, Form akBaseObject, ObjectReference akReference)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnItemUnequipped"
+    },
+    "Remote Actor.OnKill": {
+        "prefix": "onkill-REM",
+        "body": "Event Actor.OnKill(Actor akSender, Actor akVictim)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnKill"
+    },
+    "Remote Actor.OnLocationChange": {
+        "prefix": "onlocationchange-REM",
+        "body": "Event Actor.OnLocationChange(Actor akSender, Location akOldLoc, Location akNewLoc)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnLocationChange"
+    },
+    "Remote Actor.OnPackageChange": {
+        "prefix": "onpackagechange-REM",
+        "body": "Event Actor.OnPackageChange(Actor akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPackageChange"
+    },
+    "Remote Actor.OnPackageEnd": {
+        "prefix": "onpackageend-REM",
+        "body": "Event Actor.OnPackageEnd(Actor akSender, Package akOldPackage)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPackageEnd"
+    },
+    "Remote Actor.OnPackageStart": {
+        "prefix": "onpackagestart-REM",
+        "body": "Event Actor.OnPackageStart(Actor akSender, Package akNewPackage)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPackageStart"
+    },
+    "Remote Actor.OnPartialCripple": {
+        "prefix": "onpartialcripple-REM",
+        "body": "Event Actor.OnPartialCripple(Actor akSender, ActorValue akActorValue, bool abCrippled)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPartialCripple"
+    },
+    "Remote Actor.OnPickpocketFailed": {
+        "prefix": "onpickpocketfailed-REM",
+        "body": "Event Actor.OnPickpocketFailed(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPickpocketFailed"
+    },
+    "Remote Actor.OnPlayerCreateRobot": {
+        "prefix": "onplayercreaterobot-REM",
+        "body": "Event Actor.OnPlayerCreateRobot(Actor akSender, Actor akNewRobot)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerCreateRobot"
+    },
+    "Remote Actor.OnPlayerEnterVertibird": {
+        "prefix": "onplayerentervertibird-REM",
+        "body": "Event Actor.OnPlayerEnterVertibird(Actor akSender, ObjectReference akVertibird)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerEnterVertibird"
+    },
+    "Remote Actor.OnPlayerFallLongDistance": {
+        "prefix": "onplayerfalllongdistance-REM",
+        "body": "Event Actor.OnPlayerFallLongDistance(Actor akSender, float afDamage)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerFallLongDistance"
+    },
+    "Remote Actor.OnPlayerFireWeapon": {
+        "prefix": "onplayerfireweapon-REM",
+        "body": "Event Actor.OnPlayerFireWeapon(Actor akSender, Form akBaseObject)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerFireWeapon"
+    },
+    "Remote Actor.OnPlayerHealTeammate": {
+        "prefix": "onplayerhealteammate-REM",
+        "body": "Event Actor.OnPlayerHealTeammate(Actor akSender, Actor akTeammate)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerHealTeammate"
+    },
+    "Remote Actor.OnPlayerLoadGame": {
+        "prefix": "onplayerloadgame-REM",
+        "body": "Event Actor.OnPlayerLoadGame(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerLoadGame"
+    },
+    "Remote Actor.OnPlayerModArmorWeapon": {
+        "prefix": "onplayermodarmorweapon-REM",
+        "body": "Event Actor.OnPlayerModArmorWeapon(Actor akSender, Form akBaseObject, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerModArmorWeapon"
+    },
+    "Remote Actor.OnPlayerModRobot": {
+        "prefix": "onplayermodrobot-REM",
+        "body": "Event Actor.OnPlayerModRobot(Actor akSender, Actor akRobot, ObjectMod akModBaseObject)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerModRobot"
+    },
+    "Remote Actor.OnPlayerSwimming": {
+        "prefix": "onplayerswimming-REM",
+        "body": "Event Actor.OnPlayerSwimming(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerSwimming"
+    },
+    "Remote Actor.OnPlayerUseWorkBench": {
+        "prefix": "onplayeruseworkbench-REM",
+        "body": "Event Actor.OnPlayerUseWorkBench(Actor akSender, ObjectReference akWorkBench)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnPlayerUseWorkBench"
+    },
+    "Remote Actor.OnRaceSwitchComplete": {
+        "prefix": "onraceswitchcomplete-REM",
+        "body": "Event Actor.OnRaceSwitchComplete(Actor akSender)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnRaceSwitchComplete"
+    },
+    "Remote Actor.OnSit": {
+        "prefix": "onsit-REM",
+        "body": "Event Actor.OnSit(Actor akSender, ObjectReference akFurniture)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnSit"
+    },
+    "Remote Actor.OnSpeechChallengeAvailable": {
+        "prefix": "onspeechchallengeavailable-REM",
+        "body": "Event Actor.OnSpeechChallengeAvailable(Actor akSender, ObjectReference akSpeaker)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Actor.OnSpeechChallengeAvailable"
+    },
+    "Actor.GetWornItem": {
+        "prefix": "getwornitem",
+        "body": "GetWornItem(${1:int aiSlotIndex}, ${2:bool abFirstPerson = False})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetWornItemMods": {
+        "prefix": "getwornitemmods",
+        "body": "GetWornItemMods(${1:int aiSlotIndex})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetInstanceOwner": {
+        "prefix": "getinstanceowner",
+        "body": "GetInstanceOwner(${1:int aiSlotIndex})${0}",
+        "description": "Actor"
+    },
+    "Actor.QueueUpdate": {
+        "prefix": "queueupdate",
+        "body": "QueueUpdate(${1:bool abDoEquipment}, ${2:int aiFlags = 0})${0}",
+        "description": "Actor"
+    },
+    "Actor.GetFurnitureReference": {
+        "prefix": "getfurniturereference",
+        "body": "GetFurnitureReference()${0}",
+        "description": "Actor"
+    }
 }

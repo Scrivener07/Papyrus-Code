@@ -1,14 +1,12 @@
 {
-	"apply": {
-		"prefix": "apply",
-		"body": "Apply(${1:float afFadeInTime = 0.0})${0}",
-		"description": "ShaderParticleGeometry",
-		"scope": "source.papyrus"
-	},
-	"remove": {
-		"prefix": "remove",
-		"body": "Remove(${1:float afFadeOutTime = 0.0})${0}",
-		"description": "ShaderParticleGeometry",
-		"scope": "source.papyrus"
-	}
+    "ShaderParticleGeometry.Apply": {
+        "prefix": "apply",
+        "body": "Apply(${1:float afFadeInTime = 0.0})${0}",
+        "description": "ShaderParticleGeometry"
+    },
+    "ShaderParticleGeometry.Remove": {
+        "prefix": "remove",
+        "body": "Remove(${1:float afFadeOutTime = 0.0})${0}",
+        "description": "ShaderParticleGeometry"
+    }
 }

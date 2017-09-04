@@ -1,14 +1,12 @@
 {
-	"sendstoryevent": {
-		"prefix": "sendstoryevent",
-		"body": "SendStoryEvent(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None}, ${4:int aiValue1 = 0}, ${5:int aiValue2 = 0})${0}",
-		"description": "Keyword",
-		"scope": "source.papyrus"
-	},
-	"sendstoryeventandwait": {
-		"prefix": "sendstoryeventandwait",
-		"body": "SendStoryEventAndWait(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None}, ${4:int aiValue1 = 0}, ${5:int aiValue2 = 0})${0}",
-		"description": "Keyword",
-		"scope": "source.papyrus"
-	}
+    "Keyword.SendStoryEvent": {
+        "prefix": "sendstoryevent",
+        "body": "SendStoryEvent(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None}, ${4:int aiValue1 = 0}, ${5:int aiValue2 = 0})${0}",
+        "description": "Keyword"
+    },
+    "Keyword.SendStoryEventAndWait": {
+        "prefix": "sendstoryeventandwait",
+        "body": "SendStoryEventAndWait(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None}, ${4:int aiValue1 = 0}, ${5:int aiValue2 = 0})${0}",
+        "description": "Keyword"
+    }
 }

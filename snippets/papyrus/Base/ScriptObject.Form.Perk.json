@@ -1,56 +1,47 @@
 {
-	"onentryrun": {
-		"prefix": "onentryrun",
-		"body": "Event OnEntryRun(int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
-		"description": "Event Perk.OnEntryRun",
-		"scope": "source.papyrus"
-	},
-	"onentryrun-REM": {
-		"prefix": "onentryrun-REM",
-		"body": "Event Perk.OnEntryRun(Perk akSender, int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
-		"description": "Remote Perk.OnEntryRun",
-		"scope": "source.papyrus"
-	},
-	"isplayable": {
-		"prefix": "isplayable",
-		"body": "IsPlayable()${0}",
-		"description": "Perk",
-		"scope": "source.papyrus"
-	},
-	"ishidden": {
-		"prefix": "ishidden",
-		"body": "IsHidden()${0}",
-		"description": "Perk",
-		"scope": "source.papyrus"
-	},
-	"getlevel": {
-		"prefix": "getlevel",
-		"body": "GetLevel()${0}",
-		"description": "Perk",
-		"scope": "source.papyrus"
-	},
-	"getnumranks": {
-		"prefix": "getnumranks",
-		"body": "GetNumRanks()${0}",
-		"description": "Perk",
-		"scope": "source.papyrus"
-	},
-	"getnextperk": {
-		"prefix": "getnextperk",
-		"body": "GetNextPerk()${0}",
-		"description": "Perk",
-		"scope": "source.papyrus"
-	},
-	"getswfpath": {
-		"prefix": "getswfpath",
-		"body": "GetSWFPath()${0}",
-		"description": "Perk",
-		"scope": "source.papyrus"
-	},
-	"iseligible": {
-		"prefix": "iseligible",
-		"body": "IsEligible(${1:Actor akActor})${0}",
-		"description": "Perk",
-		"scope": "source.papyrus"
-	}
+    "Perk.OnEntryRun": {
+        "prefix": "onentryrun",
+        "body": "Event OnEntryRun(int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
+        "description": "Event Perk.OnEntryRun"
+    },
+    "Remote Perk.OnEntryRun": {
+        "prefix": "onentryrun-REM",
+        "body": "Event Perk.OnEntryRun(Perk akSender, int auiEntryID, ObjectReference akTarget, Actor akOwner)\r\n    ${0}\r\nEndEvent",
+        "description": "Remote Perk.OnEntryRun"
+    },
+    "Perk.IsPlayable": {
+        "prefix": "isplayable",
+        "body": "IsPlayable()${0}",
+        "description": "Perk"
+    },
+    "Perk.IsHidden": {
+        "prefix": "ishidden",
+        "body": "IsHidden()${0}",
+        "description": "Perk"
+    },
+    "Perk.GetLevel": {
+        "prefix": "getlevel",
+        "body": "GetLevel()${0}",
+        "description": "Perk"
+    },
+    "Perk.GetNumRanks": {
+        "prefix": "getnumranks",
+        "body": "GetNumRanks()${0}",
+        "description": "Perk"
+    },
+    "Perk.GetNextPerk": {
+        "prefix": "getnextperk",
+        "body": "GetNextPerk()${0}",
+        "description": "Perk"
+    },
+    "Perk.GetSWFPath": {
+        "prefix": "getswfpath",
+        "body": "GetSWFPath()${0}",
+        "description": "Perk"
+    },
+    "Perk.IsEligible": {
+        "prefix": "iseligible",
+        "body": "IsEligible(${1:Actor akActor})${0}",
+        "description": "Perk"
+    }
 }
