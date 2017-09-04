@@ -351,6 +351,18 @@
 			},
 			{
 				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.Component.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.ConstructibleObject.json"
+			},
+			{
+				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.DefaultObject.json"
+			},
+			{
+				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Form.EffectShader.json"
 			},
 			{

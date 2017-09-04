@@ -4,5 +4,17 @@
 		"body": "GetObjectComponentCount(${1:Component akComponent})${0}",
 		"description": "MiscObject",
 		"scope": "source.papyrus"
+	},
+	"getmisccomponents": {
+		"prefix": "getmisccomponents",
+		"body": "GetMiscComponents()${0}",
+		"description": "MiscObject",
+		"scope": "source.papyrus"
+	},
+	"setmisccomponents": {
+		"prefix": "setmisccomponents",
+		"body": "SetMiscComponents(${1:MiscComponent[] akComponents})${0}",
+		"description": "MiscObject",
+		"scope": "source.papyrus"
 	}
 }

@@ -1726,5 +1726,11 @@
 		"body": "QueueUpdate(${1:bool abDoEquipment}, ${2:int aiFlags = 0})${0}",
 		"description": "Actor",
 		"scope": "source.papyrus"
+	},
+	"getfurniturereference": {
+		"prefix": "getfurniturereference",
+		"body": "GetFurnitureReference()${0}",
+		"description": "Actor",
+		"scope": "source.papyrus"
 	}
 }
