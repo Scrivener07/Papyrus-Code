@@ -4,10 +4,12 @@ A package for working with Mark Hanna's Papyrus scripting language.
 ## Features
 
 Tooling
-- [ ] Compilation of psc files.
-- [ ] Assembly of pas files.
-- [ ] Disassembly of pex files.
-- [ ] Launch Online Documentation
+- [ ] Compilation of psc files
+- [ ] Assembly of pas files
+- [ ] Disassembly of pex files
+- [ ] Launch online documentation
+- [ ] Reveal game directory
+- [ ] Reveal user directory
 
 Papyrus.
 - [x] Syntax Colorizer
