@@ -1,5 +1,5 @@
 # Papyrus-Code
-A package for working with Mark Hanna's Papyrus scripting language.
+A package for working with [Mark Hanna's](https://github.com/Cipscis) Papyrus scripting language.
 
 ## Features
 
