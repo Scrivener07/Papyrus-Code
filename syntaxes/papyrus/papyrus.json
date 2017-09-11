@@ -177,6 +177,18 @@
             "name": "keyword.control.new.papyrus"
         },
         {
+            "match": "(?i)\\b(as)\\b",
+            "name": "keyword.control.as.papyrus"
+		},
+		{
+            "match": "(?i)\\b(is)\\b",
+            "name": "keyword.control.is.papyrus"
+        },
+        {
+            "match": "(?i)\\b(customevent)\\b",
+            "name": "keyword.control.customevent.papyrus"
+        },
+        {
             "match": "(?i)\\b(global|hidden|native|const|conditional|debugonly|betaonly)\\b",
             "name": "storage.modifier.papyrus"
         },
@@ -236,6 +248,10 @@
                     "name": "constant.numeric.float.papyrus"
                 },
                 {
+                    "match": "\\b(?i:(\\d+[x]\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])",
+                    "name": "constant.numeric.hexadecimal.papyrus"
+                },
+                {
                     "match": "\\b([1-9]+[0-9]*|0)",
                     "name": "constant.numeric.integer.papyrus"
                 },
@@ -259,7 +275,7 @@
             "name": "support.function.f4se.papyrus"
         },
         "class-types": {
-            "match": "(?i)\\b(action|activator|activemagiceffect|actor|actorbase|actorvalue|alias|ammo|armor|associationtype|book|camerashot|cell|class|combatstyle|commonarrayfunctions|component|constructibleobject|container|debug|door|effectshader|enchantment|encounterzone|explosion|faction|flora|form|formlist|furniture|game|globalvariable|hazard|headpart|holotape|idle|idlemarker|imagespacemodifier|impactdataset|ingredient|inputenablelayer|instancenamingrules|key|keyword|leveledactor|leveleditem|leveledspell|light|location|locationalias|locationreftype|magiceffect|math|message|miscobject|movablestatic|musictype|objectmod|objectreference|outfit|outputmodel|package|perk|potion|projectile|quest|race|refcollectionalias|referencealias|scene|scriptobject|scroll|shaderparticlegeometry|shout|soulgem|sound|soundcategory|soundcategorysnapshot|spell|static|talkingactivator|terminal|textureset|topic|topicinfo|utility|visualeffect|voicetype|weapon|weather|wordofpower|worldspace|customevent)\\b",
+            "match": "(?i)\\b(action|activator|activemagiceffect|actor|actorbase|actorvalue|alias|ammo|armor|associationtype|book|camerashot|cell|class|combatstyle|commonarrayfunctions|component|constructibleobject|container|debug|door|effectshader|enchantment|encounterzone|explosion|faction|flora|form|formlist|furniture|game|globalvariable|hazard|headpart|holotape|idle|idlemarker|imagespacemodifier|impactdataset|ingredient|inputenablelayer|instancenamingrules|key|keyword|leveledactor|leveleditem|leveledspell|light|location|locationalias|locationreftype|magiceffect|math|message|miscobject|movablestatic|musictype|objectmod|objectreference|outfit|outputmodel|package|perk|potion|projectile|quest|race|refcollectionalias|referencealias|scene|scriptobject|scroll|shaderparticlegeometry|shout|soulgem|sound|soundcategory|soundcategorysnapshot|spell|static|talkingactivator|terminal|textureset|topic|topicinfo|utility|visualeffect|voicetype|weapon|weather|wordofpower|worldspace)\\b",
             "name": "support.class.papyrus"
         },
         "f4se-class-types": {

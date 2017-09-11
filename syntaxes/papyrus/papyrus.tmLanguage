@@ -281,6 +281,24 @@
             </dict>
             <dict>
                 <key>match</key>
+                <string>(?i)\b(as)\b</string>
+                <key>name</key>
+                <string>keyword.control.as.papyrus</string>
+            </dict>
+			<dict>
+                <key>match</key>
+                <string>(?i)\b(is)\b</string>
+                <key>name</key>
+                <string>keyword.control.is.papyrus</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(?i)\b(customevent)\b</string>
+                <key>name</key>
+                <string>keyword.control.customevent.papyrus</string>
+            </dict>
+            <dict>
+                <key>match</key>
                 <string>(?i)\b(global|hidden|native|const|conditional|debugonly|betaonly)\b</string>
                 <key>name</key>
                 <string>storage.modifier.papyrus</string>
@@ -369,6 +387,12 @@
                     </dict>
                     <dict>
                         <key>match</key>
+                        <string>\b(?i:(\d+[x]\d*(e[\-\+]?\d+)?))(?=[^a-zA-Z_])</string>
+                        <key>name</key>
+                        <string>constant.numeric.hexadecimal.papyrus</string>
+                    </dict>
+                    <dict>
+                        <key>match</key>
                         <string>\b([1-9]+[0-9]*|0)</string>
                         <key>name</key>
                         <string>constant.numeric.integer.papyrus</string>
@@ -407,7 +431,7 @@
             <key>class-types</key>
             <dict>
                 <key>match</key>
-                <string>(?i)\b(action|activator|activemagiceffect|actor|actorbase|actorvalue|alias|ammo|armor|associationtype|book|camerashot|cell|class|combatstyle|commonarrayfunctions|component|constructibleobject|container|debug|door|effectshader|enchantment|encounterzone|explosion|faction|flora|form|formlist|furniture|game|globalvariable|hazard|headpart|holotape|idle|idlemarker|imagespacemodifier|impactdataset|ingredient|inputenablelayer|instancenamingrules|key|keyword|leveledactor|leveleditem|leveledspell|light|location|locationalias|locationreftype|magiceffect|math|message|miscobject|movablestatic|musictype|objectmod|objectreference|outfit|outputmodel|package|perk|potion|projectile|quest|race|refcollectionalias|referencealias|scene|scriptobject|scroll|shaderparticlegeometry|shout|soulgem|sound|soundcategory|soundcategorysnapshot|spell|static|talkingactivator|terminal|textureset|topic|topicinfo|utility|visualeffect|voicetype|weapon|weather|wordofpower|worldspace|customevent)\b</string>
+                <string>(?i)\b(action|activator|activemagiceffect|actor|actorbase|actorvalue|alias|ammo|armor|associationtype|book|camerashot|cell|class|combatstyle|commonarrayfunctions|component|constructibleobject|container|debug|door|effectshader|enchantment|encounterzone|explosion|faction|flora|form|formlist|furniture|game|globalvariable|hazard|headpart|holotape|idle|idlemarker|imagespacemodifier|impactdataset|ingredient|inputenablelayer|instancenamingrules|key|keyword|leveledactor|leveleditem|leveledspell|light|location|locationalias|locationreftype|magiceffect|math|message|miscobject|movablestatic|musictype|objectmod|objectreference|outfit|outputmodel|package|perk|potion|projectile|quest|race|refcollectionalias|referencealias|scene|scriptobject|scroll|shaderparticlegeometry|shout|soulgem|sound|soundcategory|soundcategorysnapshot|spell|static|talkingactivator|terminal|textureset|topic|topicinfo|utility|visualeffect|voicetype|weapon|weather|wordofpower|worldspace)\b</string>
                 <key>name</key>
                 <string>support.class.papyrus</string>
             </dict>
