@@ -51,7 +51,7 @@
                     "name": "comment.line.semicolon.papyrus"
                 },
                 {
-                    "match": "(?i)(conditional|default|hidden|native|const)",
+                    "match": "(?i)(conditional|default|hidden|native|debugonly|betaonly)",
                     "name": "keyword.language.script-flag.papyrus"
                 }
             ]
@@ -177,7 +177,7 @@
             "name": "keyword.control.new.papyrus"
         },
         {
-            "match": "(?i)\\b(global|hidden|native|const|conditional)\\b",
+            "match": "(?i)\\b(global|hidden|native|const|conditional|debugonly|betaonly)\\b",
             "name": "storage.modifier.papyrus"
         },
         {

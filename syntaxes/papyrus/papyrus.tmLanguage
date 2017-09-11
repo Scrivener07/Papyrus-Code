@@ -88,7 +88,7 @@
                     </dict>
                     <dict>
                         <key>match</key>
-                        <string>(?i)(conditional|default|hidden|native|const)</string>
+                        <string>(?i)(conditional|default|hidden|native|const|debugonly|betaonly)</string>
                         <key>name</key>
                         <string>keyword.language.script-flag.papyrus</string>
                     </dict>
@@ -281,7 +281,7 @@
             </dict>
             <dict>
                 <key>match</key>
-                <string>(?i)\b(global|hidden|native|const|conditional)\b</string>
+                <string>(?i)\b(global|hidden|native|const|conditional|debugonly|betaonly)\b</string>
                 <key>name</key>
                 <string>storage.modifier.papyrus</string>
             </dict>
