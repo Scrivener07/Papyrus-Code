@@ -88,7 +88,7 @@
                     </dict>
                     <dict>
                         <key>match</key>
-                        <string>(?i)(conditional|default|hidden|native|const)</string>
+                        <string>(?i)(conditional|default|hidden|native|const|debugonly|betaonly)</string>
                         <key>name</key>
                         <string>keyword.language.script-flag.papyrus</string>
                     </dict>
@@ -281,7 +281,25 @@
             </dict>
             <dict>
                 <key>match</key>
-                <string>(?i)\b(global|hidden|native|const|conditional)\b</string>
+                <string>(?i)\b(as)\b</string>
+                <key>name</key>
+                <string>keyword.control.as.papyrus</string>
+            </dict>
+			<dict>
+                <key>match</key>
+                <string>(?i)\b(is)\b</string>
+                <key>name</key>
+                <string>keyword.control.is.papyrus</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(?i)\b(customevent)\b</string>
+                <key>name</key>
+                <string>keyword.control.customevent.papyrus</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(?i)\b(global|hidden|native|const|conditional|debugonly|betaonly)\b</string>
                 <key>name</key>
                 <string>storage.modifier.papyrus</string>
             </dict>
@@ -366,6 +384,12 @@
                         <string>\b(?i:(\d+\.\d*(e[\-\+]?\d+)?))(?=[^a-zA-Z_])</string>
                         <key>name</key>
                         <string>constant.numeric.float.papyrus</string>
+                    </dict>
+                    <dict>
+                        <key>match</key>
+                        <string>\b(?i:(\d+[x]\d*(e[\-\+]?\d+)?))(?=[^a-zA-Z_])</string>
+                        <key>name</key>
+                        <string>constant.numeric.hexadecimal.papyrus</string>
                     </dict>
                     <dict>
                         <key>match</key>

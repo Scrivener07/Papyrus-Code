@@ -51,7 +51,7 @@
                     "name": "comment.line.semicolon.papyrus"
                 },
                 {
-                    "match": "(?i)(conditional|default|hidden|native|const)",
+                    "match": "(?i)(conditional|default|hidden|native|debugonly|betaonly)",
                     "name": "keyword.language.script-flag.papyrus"
                 }
             ]
@@ -177,7 +177,19 @@
             "name": "keyword.control.new.papyrus"
         },
         {
-            "match": "(?i)\\b(global|hidden|native|const|conditional)\\b",
+            "match": "(?i)\\b(as)\\b",
+            "name": "keyword.control.as.papyrus"
+		},
+		{
+            "match": "(?i)\\b(is)\\b",
+            "name": "keyword.control.is.papyrus"
+        },
+        {
+            "match": "(?i)\\b(customevent)\\b",
+            "name": "keyword.control.customevent.papyrus"
+        },
+        {
+            "match": "(?i)\\b(global|hidden|native|const|conditional|debugonly|betaonly)\\b",
             "name": "storage.modifier.papyrus"
         },
         {
@@ -234,6 +246,10 @@
                 {
                     "match": "\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])",
                     "name": "constant.numeric.float.papyrus"
+                },
+                {
+                    "match": "\\b(?i:(\\d+[x]\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])",
+                    "name": "constant.numeric.hexadecimal.papyrus"
                 },
                 {
                     "match": "\\b([1-9]+[0-9]*|0)",
