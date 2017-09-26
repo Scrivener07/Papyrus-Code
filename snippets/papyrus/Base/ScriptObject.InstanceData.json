@@ -258,5 +258,15 @@
         "prefix": "setgoldvalue",
         "body": "InstanceData.SetGoldValue(${1:Owner akOwner}, ${2:int aiValue})${0}",
         "description": "InstanceData"
+    },
+    "InstanceData.GetKeywords": {
+        "prefix": "getkeywords",
+        "body": "InstanceData.GetKeywords(${1:Owner akOwner})${0}",
+        "description": "InstanceData"
+    },
+    "InstanceData.SetKeywords": {
+        "prefix": "setkeywords",
+        "body": "InstanceData.SetKeywords(${1:Owner akOwner}, ${2: Keyword[] akKeywords})${0}",
+        "description": "InstanceData"
     }
 }
