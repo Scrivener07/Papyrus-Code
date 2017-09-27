@@ -387,7 +387,7 @@
                     </dict>
                     <dict>
                         <key>match</key>
-                        <string>\b(?i:(\d+[x]\d*(e[\-\+]?\d+)?))(?=[^a-zA-Z_])</string>
+                        <string>\b(?i:(0x([\-\+]?[\da-fA-F]+)?))</string>
                         <key>name</key>
                         <string>constant.numeric.hexadecimal.papyrus</string>
                     </dict>

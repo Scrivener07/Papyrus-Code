@@ -248,7 +248,7 @@
                     "name": "constant.numeric.float.papyrus"
                 },
                 {
-                    "match": "\\b(?i:(\\d+[x]\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])",
+                    "match": "\\b(?i:(0x([\\-\\+]?[\\da-fA-F]+)?))",
                     "name": "constant.numeric.hexadecimal.papyrus"
                 },
                 {
