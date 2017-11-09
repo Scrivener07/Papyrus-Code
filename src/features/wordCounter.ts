@@ -1,20 +1,21 @@
 'use strict';
-import {
-    window,
-    commands,
-    Disposable,
-    StatusBarAlignment,
-    StatusBarItem,
+import { Feature } from '../feature';
+import { Commands, Papyrus, PapyrusProject } from '../extension';
+import
+{
+    commands, window,
+    ExtensionContext, Disposable,
     TextDocument,
-    ExtensionContext
+    StatusBarItem, StatusBarAlignment
 } from 'vscode';
-import { Feature, Commands, Papyrus, PapyrusProject } from '../extension';
 
-export class WordCounter extends Feature {
+export class WordCounter extends Feature
+{
     private statusBarItem: StatusBarItem;
 
 
-    constructor(context: ExtensionContext) {
+    constructor(context: ExtensionContext)
+    {
         super(context);
 
         this.statusBarItem = undefined;
@@ -26,33 +27,41 @@ export class WordCounter extends Feature {
     }
 
 
-    protected OnCommand(commandName: string) {
-        if (commandName == Commands.CountSelection) {
+    protected OnCommand(commandName: string)
+    {
+        if (commandName == Commands.CountSelection)
+        {
             let editor = window.activeTextEditor;
-            if (!editor) {
+            if (!editor)
+            {
                 return; // No open text editor
             }
 
             let selection = editor.selection;
             let text = editor.document.getText(selection);
             window.showInformationMessage('Papyrus, Selected Characters: ' + text.length);
-        } else {
-			window.showWarningMessage('The `'+commandName+'` command is unhandled.');
-		}
+        }
+        else
+        {
+            window.showWarningMessage('The `' + commandName + '` command is unhandled.');
+        }
     }
 
 
-    public OnUpdateWordCount() {
+    public OnUpdateWordCount()
+    {
         console.log('WordCounter.OnUpdateWordCount');
         // Create as needed
-        if (!this.statusBarItem) {
+        if (!this.statusBarItem)
+        {
             console.log('WordCounter, created a new StatusBarItem');
             this.statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left);
         }
 
         // Get the current text editor
         let editor = window.activeTextEditor;
-        if (!editor) {
+        if (!editor)
+        {
             console.log('WordCounter, hiding because there is no active text editor.');
             this.statusBarItem.hide();
             return;
@@ -60,21 +69,25 @@ export class WordCounter extends Feature {
 
         let document = editor.document;
 
-        if (document.languageId == Papyrus.LanguageID || document.languageId == PapyrusProject.LanguageID) {
+        if (document.languageId == Papyrus.LanguageID || document.languageId == PapyrusProject.LanguageID)
+        {
             let wordCount = this.GetWordCount(document);
 
             // Update the status bar
             this.statusBarItem.text = wordCount !== 1 ? `$(pencil) ${wordCount} Words` : '$(pencil) 1 Word';
             this.statusBarItem.show();
             console.log('WordCounter, Updated count from the current document.');
-        } else {
+        }
+        else
+        {
             console.log('WordCounter, hiding because the documents languageId is not equal to `' + Papyrus.LanguageID + '` or `' + PapyrusProject.LanguageID + '`.');
             this.statusBarItem.hide();
         }
     }
 
 
-    private GetWordCount(document: TextDocument): number {
+    private GetWordCount(document: TextDocument): number
+    {
         console.log('WordCounter.GetWordCount');
         let text = document.getText();
 
@@ -82,7 +95,8 @@ export class WordCounter extends Feature {
         text = text.replace(/(< ([^>]+)<)/g, '').replace(/\s+/g, ' ');
         text = text.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
         let wordCount = 0;
-        if (text != "") {
+        if (text != "")
+        {
             wordCount = text.split(" ").length;
         }
 
@@ -90,7 +104,8 @@ export class WordCounter extends Feature {
     }
 
 
-    public dispose() {
+    public dispose()
+    {
         this.statusBarItem.dispose();
     }
 
@@ -98,12 +113,14 @@ export class WordCounter extends Feature {
 
 
 
-class WordCounterController {
+class WordCounterController
+{
     private WordCounter: WordCounter;
     private disposable: Disposable;
 
 
-    constructor(wordCounter: WordCounter) {
+    constructor(wordCounter: WordCounter)
+    {
         this.WordCounter = wordCounter;
         this.WordCounter.OnUpdateWordCount();
 
@@ -117,13 +134,15 @@ class WordCounterController {
     }
 
 
-    private OnEvent() {
+    private OnEvent()
+    {
         console.log('WordCounterController.OnEvent');
         this.WordCounter.OnUpdateWordCount();
     }
 
 
-    public dispose() {
+    public dispose()
+    {
         console.log('WordCounterController.dispose');
         this.disposable.dispose();
     }

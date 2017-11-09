@@ -1,34 +1,41 @@
 'use strict';
+import { Feature } from '../feature';
+import { Properties, Commands } from '../extension';
 import { window, commands, workspace, ExtensionContext, Disposable, Terminal } from 'vscode';
-import { Properties, Commands, Feature } from '../extension';
 
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Compiler_Reference
 // http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects
 
 /**A VS Code feature for compiling papyrus source files.*/
-export class Compiler extends Feature {
+export class Compiler extends Feature
+{
 	private TerminalReference: Terminal;
 	private readonly TerminalName: string = 'Papyrus Terminal';
 
 
-	constructor(context: ExtensionContext) {
+	constructor(context: ExtensionContext)
+	{
 		super(context);
 		this.TerminalReference = undefined;
 		this.RegisterCommand(Commands.Compile);
 	}
 
 
-	protected OnCommand(commandName: string) {
-		if (commandName == Commands.Compile) {
+	protected OnCommand(commandName: string)
+	{
+		if (commandName == Commands.Compile)
+		{
 
 			let editor = window.activeTextEditor;
-			if (!editor) {
+			if (!editor)
+			{
 				window.showWarningMessage('No active text editor for the papyrus compile command.');
 				return;
 			}
 
 			let configuration = workspace.getConfiguration(Properties.SectionName);
-			if (!configuration) {
+			if (!configuration)
+			{
 				window.showWarningMessage('The `' + commandName + '` command has no .`' + Properties.SectionName + '` configuration.');
 				return;
 			}
@@ -41,24 +48,29 @@ export class Compiler extends Feature {
 
 			console.log(compiler.Parameters);
 
-			if (!this.TerminalReference) {
+			if (!this.TerminalReference)
+			{
 				this.TerminalReference = window.createTerminal(this.TerminalName);
 			}
 
-			if (compiler.Execute(this.TerminalReference)) {
+			if (compiler.Execute(this.TerminalReference))
+			{
 				window.showInformationMessage('The `' + commandName + '` command has executed.');
 			}
-			else {
+			else
+			{
 				window.showWarningMessage('The `' + commandName + '` command could not be executed.');
 			}
 		}
-		else {
+		else
+		{
 			window.showWarningMessage('The `' + commandName + '` command is unhandled.');
 		}
 	}
 
 
-	public dispose() {
+	public dispose()
+	{
 		this.TerminalReference.dispose();
 	}
 
@@ -70,7 +82,8 @@ export class Compiler extends Feature {
  * CompilerArguments
  * Release adds the "-r" and "-op" flags to the command, and release final uses the release flags plus the "-final" option.
  */
-class PapyrusCompiler {
+class PapyrusCompiler
+{
 	public Executable: string;
 	public Target: string;
 
@@ -94,11 +107,14 @@ class PapyrusCompiler {
 	private static readonly QUIET: string = '-quiet';
 
 
-	public Execute(terminal: Terminal): boolean {
-		if (!terminal) {
+	public Execute(terminal: Terminal): boolean
+	{
+		if (!terminal)
+		{
 			return false;
 		}
-		else {
+		else
+		{
 			console.log(terminal.name + ': ' + this.Parameters);
 			terminal.show();
 			terminal.sendText(this.Parameters);
@@ -107,7 +123,8 @@ class PapyrusCompiler {
 	}
 
 
-	public get Parameters(): string {
+	public get Parameters(): string
+	{
 		return this.ExecutableFile
 			+ this.TargetPath
 			+ this.ImportList
@@ -121,13 +138,17 @@ class PapyrusCompiler {
 	}
 
 
-	private ArrayToString(array: Array<string>): string {
+	private ArrayToString(array: Array<string>): string
+	{
 		let value = '';
-		for (let element of array) {
-			if (value == '') {
+		for (let element of array)
+		{
+			if (value == '')
+			{
 				value += element;
 			}
-			else {
+			else
+			{
 				value += ';' + element;
 			}
 		}
@@ -135,73 +156,95 @@ class PapyrusCompiler {
 	}
 
 
-	private get ExecutableFile(): string {
+	private get ExecutableFile(): string
+	{
 		return '\"' + this.Executable + '\"';
 	}
 
-	private get TargetPath(): string {
+	private get TargetPath(): string
+	{
 		return ' \"' + this.Target + '\"';
 	}
 
-	private get ImportList(): string {
+	private get ImportList(): string
+	{
 		let values = this.ArrayToString(this.Imports);
 		return ' ' + PapyrusCompiler.IMPORT + '\"' + values + '\"';
 	}
 
-	private get OutputDirectory(): string {
+	private get OutputDirectory(): string
+	{
 		return ' ' + PapyrusCompiler.OUTPUT + '\"' + this.Output + '\"';
 	}
 
-	private get FlagsFile(): string {
-		if (!this.Flags || this.Flags == '') {
+	private get FlagsFile(): string
+	{
+		if (!this.Flags || this.Flags == '')
+		{
 			return ' ' + PapyrusCompiler.FLAGS + '\"' + PapyrusCompiler.FLAGS_DEFAULT + '\"';
 		}
-		else {
+		else
+		{
 			return ' ' + PapyrusCompiler.FLAGS + '\"' + this.Flags + '\"';
 		}
 	}
 
-	private get OptimizeMode(): string {
-		if (this.Optimize) {
+	private get OptimizeMode(): string
+	{
+		if (this.Optimize)
+		{
 			return ' ' + PapyrusCompiler.OPTIMIZE;
 		}
-		else {
+		else
+		{
 			return '';
 		}
 	}
 
-	private get ReleaseMode(): string {
-		if (this.Release) {
+	private get ReleaseMode(): string
+	{
+		if (this.Release)
+		{
 			return ' ' + PapyrusCompiler.RELEASE;
 		}
-		else {
+		else
+		{
 			return '';
 		}
 	}
 
-	private get FinalMode(): string {
-		if (this.Final) {
+	private get FinalMode(): string
+	{
+		if (this.Final)
+		{
 			return ' ' + PapyrusCompiler.FINAL;
 		}
-		else {
+		else
+		{
 			return '';
 		}
 	}
 
-	private get AllMode(): string {
-		if (this.All) {
+	private get AllMode(): string
+	{
+		if (this.All)
+		{
 			return ' ' + PapyrusCompiler.ALL;
 		}
-		else {
+		else
+		{
 			return '';
 		}
 	}
 
-	private get QuietMode(): string {
-		if (this.Quiet) {
+	private get QuietMode(): string
+	{
+		if (this.Quiet)
+		{
 			return ' ' + PapyrusCompiler.QUIET;
 		}
-		else {
+		else
+		{
 			return '';
 		}
 	}

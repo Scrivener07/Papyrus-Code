@@ -1,16 +1,51 @@
 'use strict';
-import {
-	commands,
-	Disposable,
-	ExtensionContext
-} from 'vscode';
+import { Feature } from './feature';
+import { Hello } from './features/hello';
+import { WordCounter } from './features/wordCounter';
+import { Preview } from './features/preview';
+import { Compiler } from './features/compiler';
+import { Explorer } from './features/explorer';
+import { commands, Disposable, ExtensionContext } from 'vscode';
 
 
-export class Extension {
+let hello: Feature;
+let wordCounter: Feature;
+let preview: Feature;
+let compiler: Feature;
+let explorer: Feature;
+
+
+export function activate(context: ExtensionContext)
+{
+	hello = new Hello(context);
+	wordCounter = new WordCounter(context);
+	preview = new Preview(context);
+	compiler = new Compiler(context);
+	explorer = new Explorer(context);
+	console.log('The extension ' + Extension.Name + ' is now active.');
+}
+
+
+export function deactivate()
+{
+	hello.dispose();
+	wordCounter.dispose();
+	preview.dispose();
+	compiler.dispose();
+	explorer.dispose();
+	console.log('The extension ' + Extension.Name + ' is now deactivated.');
+}
+
+
+
+export class Extension
+{
 	static readonly Name: string = 'papyrus-code';
 }
 
-export class Properties {
+
+export class Properties
+{
 	static readonly SectionName: string = 'papyrus';
 	static readonly GameInstall: string = 'game.install';
 	static readonly GameUser: string = 'game.user';
@@ -19,7 +54,9 @@ export class Properties {
 	static readonly CompilerImports: string = 'compiler.imports';
 }
 
-export class Commands {
+
+export class Commands
+{
 	static readonly Compile: string = 'papyrus.compile';
 	static readonly GameInstallReveal: string = 'papyrus.game.install.reveal';
 	static readonly GameUserReveal: string = "papyrus.game.user.reveal";
@@ -27,56 +64,22 @@ export class Commands {
 	static readonly CountSelection: string = 'papyrus.countSelection';
 	static readonly ShowPreviewCommand: string = 'papyrus.showPreview';
 	static readonly ShowPreviewToSideCommand: string = 'papyrus.showPreviewToSide';
-
 }
 
-export class Papyrus {
+
+export class Papyrus
+{
 	static readonly LanguageID: string = 'papyrus';
 }
 
-export class PapyrusAssembly {
+
+export class PapyrusAssembly
+{
 	static readonly LanguageID: string = 'papyrus-assembly';
 }
 
-export class PapyrusProject {
+
+export class PapyrusProject
+{
 	static readonly LanguageID: string = 'papyrus-project';
-}
-
-
-export abstract class Feature {
-
-	/** An extension context is a collection of utilities private to an extension. */
-	protected readonly Context: ExtensionContext;
-
-
-	constructor(context: ExtensionContext) {
-		this.Context = context;
-		this.AddDisposable(this);
-	}
-
-
-	// Commands
-	//---------------------------------------------
-
-	/** Registers a VS Code command for the `OnCommand` event. */
-	protected RegisterCommand(commandName: string) {
-		let command = commands.registerCommand(commandName, () => { this.OnCommand(commandName) });
-		this.AddDisposable(command);
-	}
-
-	/** Handles the `OnCommand` event for VS Code command registerations. */
-	protected OnCommand(commandName: string) {
-		console.log('The feature has not implemented `OnCommand` for the `' + commandName + '` command.');
-	}
-
-
-	// Disposable
-	//---------------------------------------------
-
-	protected AddDisposable(subscription: Disposable) {
-		this.Context.subscriptions.push(subscription);
-	}
-
-	public abstract dispose(): void;
-
 }

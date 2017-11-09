@@ -37,7 +37,7 @@
 		"@types/node": "^7.0.43",
 		"@types/mocha": "^2.2.42"
 	},
-	"main": "./out/src/main",
+	"main": "./out/src/extension",
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",

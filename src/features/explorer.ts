@@ -1,13 +1,16 @@
 'use strict';
+import { Feature } from '../feature';
+import { Properties, Commands } from '../extension';
 import { window, commands, workspace, ExtensionContext, Disposable, Terminal } from 'vscode';
-import { Properties, Commands, Feature } from '../extension';
 
-export class Explorer extends Feature {
+export class Explorer extends Feature
+{
 	private TerminalReference: Terminal;
 	private readonly TerminalName: string = 'Explorer Terminal';
 
 
-	constructor(context: ExtensionContext) {
+	constructor(context: ExtensionContext)
+	{
 		super(context);
 		this.TerminalReference = undefined;
 		this.RegisterCommand(Commands.GameInstallReveal);
@@ -15,38 +18,46 @@ export class Explorer extends Feature {
 	}
 
 
-	protected OnCommand(commandName: string) {
+	protected OnCommand(commandName: string)
+	{
 		let configuration = workspace.getConfiguration(Properties.SectionName);
-		if (!configuration) {
+		if (!configuration)
+		{
 			window.showWarningMessage('The `' + commandName + '` command has no .`' + Properties.SectionName + '` configuration.');
 			return;
 		}
 
-		if (commandName == Commands.GameInstallReveal) {
+		if (commandName == Commands.GameInstallReveal)
+		{
 			window.showInformationMessage(Commands.GameInstallReveal);
 			let folder = configuration.get(Properties.GameInstall) as string
 			this.Reveal(folder);
 		}
-		else if (commandName == Commands.GameUserReveal) {
+		else if (commandName == Commands.GameUserReveal)
+		{
 			window.showInformationMessage(Commands.GameUserReveal);
 			let folder = configuration.get(Properties.GameUser) as string
 			this.Reveal(folder);
 		}
-		else {
+		else
+		{
 			window.showWarningMessage('The `' + commandName + '` command is unhandled.');
 		}
 	}
 
 
-	private Reveal(folder: string) {
-		if (!this.TerminalReference) {
+	private Reveal(folder: string)
+	{
+		if (!this.TerminalReference)
+		{
 			this.TerminalReference = window.createTerminal(this.TerminalName);
 		}
 		this.TerminalReference.sendText('start' + ' \"\" \"' + folder + '\"');
 	}
 
 
-	public dispose() {
+	public dispose()
+	{
 		this.TerminalReference.dispose();
 	}
 
