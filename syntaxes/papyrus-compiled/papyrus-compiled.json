@@ -1,0 +1,9 @@
+{
+	"name": "Papyrus Compiled",
+	"scopeName": "source.papyrus-compiled",
+	"fileTypes": [
+		"pex"
+	],
+	"uuid": "23d8c729-aa50-4521-8b92-b2e75fc58f4a",
+	"patterns": []
+}

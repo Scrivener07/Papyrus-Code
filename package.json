@@ -268,12 +268,12 @@
 			{
 				"language": "papyrus-assembly",
 				"scopeName": "source.papyrus-assembly",
-				"path": "./syntaxes/papyrus-assembly/papyrus-assembly.tmLanguage"
+				"path": "./syntaxes/papyrus-assembly/papyrus-assembly.json"
 			},
 			{
 				"language": "papyrus-compiled",
 				"scopeName": "source.papyrus-compiled",
-				"path": "./syntaxes/papyrus-compiled/papyrus-compiled.tmLanguage"
+				"path": "./syntaxes/papyrus-compiled/papyrus-compiled.json"
 			},
 			{
 				"language": "papyrus-project",

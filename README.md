@@ -37,7 +37,7 @@ This extension contributes the following settings:
 This extension is currently a work in progress. There are no releases at this point in time.
 
 ## Release Notes
-There is no release at this time but the extension will work as is by downloading the repository and [side-loading](https://code.visualstudio.com/docs/extensions/install-extension#_side-loading) it into VS Code.
+There is no release at this time but the extension will work as is by downloading the repository and [side-loading](https://code.visualstudio.com/docs/editor/extension-gallery#_common-questions) it into VS Code.
 
 ### 0.0.0
 Github
