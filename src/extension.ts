@@ -16,7 +16,7 @@ export function activate(context: ExtensionContext)
 {
 	Extension.Log('The extension ' + Extension.Name + ' is activating..');
 
-	let compiler = new Extension.Papyrus.PapyrusCompiler(context);
+	let compiler = new Extension.Papyrus.Build(context);
 	let explorer = new Extension.Explorer(context);
 
 	let hello = new Extension.Experimental.Hello(context);
@@ -89,8 +89,7 @@ export namespace Extension
 		/** Registers a VS Code command for the `OnCommand` event. */
 		protected RegisterCommand(context: ExtensionContext, commandName: string)
 		{
-			let command: Disposable = vscode.commands.registerCommand(commandName, () => { this.OnCommand(commandName) });
-			Subscribe(context, command);
+			Subscribe(context, vscode.commands.registerCommand(commandName, () => { this.OnCommand(commandName) }));
 			Log(this.ToString(), 'Registered for the `' + commandName + '` command event.');
 		}
 
@@ -101,21 +100,21 @@ export namespace Extension
 			Log(this.ToString(), 'Has not implemented `OnCommand` for the `' + commandName + '` command.');
 		}
 
-		public abstract dispose(): void;
+
 		public abstract ToString(): string;
 	}
 
 
 	export class Explorer extends Feature
 	{
-		private TerminalReference: Terminal;
+		private ExplorerTerminal: Terminal;
 		private readonly TerminalName: string = 'Explorer Terminal';
 
 
 		constructor(context: ExtensionContext)
 		{
 			super(context);
-			this.TerminalReference = undefined;
+			this.ExplorerTerminal = undefined;
 			this.RegisterCommand(context, Commands.GameInstallReveal);
 			this.RegisterCommand(context, Commands.GameUserReveal);
 		}
@@ -151,11 +150,11 @@ export namespace Extension
 
 		private Reveal(folder: string)
 		{
-			if (!this.TerminalReference)
+			if (!this.ExplorerTerminal)
 			{
-				this.TerminalReference = Window.createTerminal(this.TerminalName);
+				this.ExplorerTerminal = Window.createTerminal(this.TerminalName);
 			}
-			this.TerminalReference.sendText('start' + ' \"\" \"' + folder + '\"');
+			this.ExplorerTerminal.sendText('start' + ' \"\" \"' + folder + '\"');
 		}
 
 
@@ -167,12 +166,9 @@ export namespace Extension
 
 		public dispose()
 		{
-			this.TerminalReference.dispose();
+			this.ExplorerTerminal.dispose();
 		}
 	}
-
-
-
 
 
 	export namespace Papyrus
@@ -180,32 +176,55 @@ export namespace Extension
 		export const LanguageID: string = 'papyrus';
 
 		/**A VS Code feature for compiling papyrus source files.*/
-		export class PapyrusCompiler extends Feature
+		export class Build extends Feature
 		{
 			// http://www.creationkit.com/fallout4/index.php?title=Papyrus_Compiler_Reference
 			// http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects
-			private TerminalReference: Terminal;
+
+			private PapyrusTerminal: Terminal;
 
 
 			constructor(context: ExtensionContext)
 			{
 				super(context);
+				this.PapyrusTerminal = undefined;
 				this.RegisterCommand(context, Extension.Commands.Compile);
+				Extension.Subscribe(context, vscode.window.onDidCloseTerminal(() => { this.OnTerminalClosed(); }));
 			}
 
 
-			protected OnCommand(commandName: string)
+			protected OnCommand(commandName: string): void
 			{
 				if (commandName == Extension.Commands.Compile)
 				{
-					let compiler: Compiler = this.Create();
-
-					if (!this.TerminalReference)
+					let editor = Window.activeTextEditor;
+					if (!editor)
 					{
-						this.TerminalReference = Window.createTerminal("Papyrus");
+						Extension.Log(this.ToString(), 'No active text editor for the papyrus compile command.');
+						return;
 					}
 
-					if (compiler.Execute(this.TerminalReference))
+					let configuration = Workspace.getConfiguration(Extension.Configuration.Section);
+					if (!configuration)
+					{
+						Extension.Log(this.ToString(), 'The `' + Extension.Commands.Compile + '` command has no .`' + Extension.Configuration.Section + '` configuration.');
+						return;
+					}
+
+					let compiler = new Compiler();
+					compiler.Executable = configuration.get(Extension.Configuration.CompilerExecutable) as string;
+					compiler.Target = editor.document.fileName;
+					compiler.Imports = configuration.get(Extension.Configuration.CompilerImports) as Array<string>;
+					compiler.Output = configuration.get(Extension.Configuration.CompilerOutput) as string;
+					Extension.Log(this.ToString(), 'Created compiler with parameters.\n' + compiler.Parameters + "\n");
+
+					if (this.PapyrusTerminal == undefined)
+					{
+						this.PapyrusTerminal = Window.createTerminal("Papyrus");
+						Extension.Log(this.ToString(), "Created the "+this.PapyrusTerminal.name+" terminal.");
+					}
+
+					if (compiler.Execute(this.PapyrusTerminal))
 					{
 						Extension.Log(this.ToString(), 'The `' + Extension.Commands.Compile + '` command has executed.');
 					}
@@ -221,41 +240,22 @@ export namespace Extension
 			}
 
 
-			private Create(): Compiler
+			protected OnTerminalClosed(): void
 			{
-				let editor = Window.activeTextEditor;
-				if (!editor)
-				{
-					Extension.Log(this.ToString(), 'No active text editor for the papyrus compile command.');
-					return undefined;
-				}
-
-				let configuration = Workspace.getConfiguration(Extension.Configuration.Section);
-				if (!configuration)
-				{
-					Extension.Log(this.ToString(), 'The `' + Extension.Commands.Compile + '` command has no .`' + Extension.Configuration.Section + '` configuration.');
-					return undefined;
-				}
-
-				let compiler = new Compiler();
-				compiler.Executable = configuration.get(Extension.Configuration.CompilerExecutable) as string;
-				compiler.Target = editor.document.fileName;
-				compiler.Imports = configuration.get(Extension.Configuration.CompilerImports) as Array<string>;
-				compiler.Output = configuration.get(Extension.Configuration.CompilerOutput) as string;
-				Extension.Log(this.ToString(), 'Created compiler with parameters.\n' + compiler.Parameters);
-				return compiler;
+				Extension.Log(this.ToString(), "OnTerminalClosed");
 			}
 
 
 			public ToString(): string
 			{
-				return "Papyrus Compiler";
+				return "Papyrus Build";
 			}
 
 
 			public dispose()
 			{
-				this.TerminalReference.dispose();
+				Extension.Log(this.ToString(), "Disposing this object.");
+				this.PapyrusTerminal.dispose();
 			}
 
 		}
