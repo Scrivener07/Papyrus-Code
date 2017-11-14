@@ -11,7 +11,7 @@ import Window = vscode.window;
 import Workspace = vscode.workspace;
 import WorkspaceConfiguration = vscode.WorkspaceConfiguration;
 import Terminal = vscode.Terminal;
-import Commands = vscode.commands;
+// import Commands = vscode.commands;
 import TextDocument = vscode.TextDocument;
 import StatusBarItem = vscode.StatusBarItem;
 import StatusBarAlignment = vscode.StatusBarAlignment;
@@ -21,11 +21,11 @@ import StatusBarAlignment = vscode.StatusBarAlignment;
 export function activate(context: ExtensionContext)
 {
 	Extension.Log('The extension ' + Extension.Name + ' is activating..');
-	let compiler = new Extension.Papyrus.Build(context);
-	let explorer = new Extension.Explorer(context);
-	let hello = new Extension.Experimental.Hello(context);
-	let wordCounter = new Extension.Experimental.WordCounter(context);
-	let preview = new Extension.Experimental.Preview(context);
+	// let compiler = new Extension.Papyrus.Build(context);
+	// let explorer = new Extension.Explorer(context);
+	// let hello = new Extension.Experimental.Hello(context);
+	// let wordCounter = new Extension.Experimental.WordCounter(context);
+	// let preview = new Extension.Experimental.Preview(context);
 	Extension.Log('The extension ' + Extension.Name + ' is now active.');
 
 
@@ -50,7 +50,7 @@ export function activate(context: ExtensionContext)
 			// Synchronize the setting section 'languageServerExample' to the server
 			configurationSection: 'lspSample',
 			// Notify the server about file changes to '.clientrc files contain in the workspace
-			fileEvents: workspace.createFileSystemWatcher('**/.clientrc')
+			fileEvents: Workspace.createFileSystemWatcher('**/.clientrc')
 		}
 	}
 

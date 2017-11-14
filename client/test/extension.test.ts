@@ -15,6 +15,7 @@ import PapyrusCode = extension.Extension;
 
 // Defines a Mocha test suite to group tests of similar kind together
 suite("Extension Tests", () => {
+    PapyrusCode.Log("The VS Code version is " + vscode.version);
 
     // Defines a Mocha unit test
     test("Something 1", () => {
