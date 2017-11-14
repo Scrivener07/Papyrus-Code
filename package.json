@@ -1,14 +1,6 @@
 {
-	"name": "lsp--sample",
-	"description": "A language server example",
-	"author": "Microsoft Corporation",
-	"license": "MIT",
+	"name": "papyrus",
 	"version": "0.0.1",
-	"publisher": "vscode",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-extension-samples"
-	},
 	"scripts": {
 		"postinstall": "cd server && npm install && cd ../client && npm install && cd ..",
 		"compile": "tsc -p client/tsconfig.json && cd server && npm run installServer && cd .. && tsc -p server/tsconfig.json",
@@ -21,5 +13,6 @@
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^6.0.88",
 		"typescript": "^2.5.2"
-	}
+	},
+	"contributes": {}
 }

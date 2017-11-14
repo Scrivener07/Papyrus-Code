@@ -1,12 +1,11 @@
 {
-	"name": "papyrus",
+	"name": "client",
 	"displayName": "Papyrus Code",
 	"description": "A package for working with Mark Hanna's Papyrus scripting language.",
-	"author": "Scrivener07",
 	"publisher": "Scrivener07",
 	"version": "0.0.1",
 	"preview": true,
-	"license": "MIT",
+	"license": "SEE LICENSE IN LICENSE.md",
 	"homepage": "https://github.com/Scrivener07/Papyrus-Code/blob/master/README.md",
 	"repository": {
 		"type": "git",

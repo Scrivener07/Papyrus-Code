@@ -3,15 +3,15 @@
 {
     "version": "2.0.0",
     "tasks": [
-        { // LSP - Language Server Protocol
-            "taskName": "compile",
+        {
+            "label": "compile",
             "dependsOn": [
                 "compile:client",
                 "compile:server"
             ],
             "problemMatcher": []
         },
-        { // LSP - Language Server Protocol
+        {
             "label": "compile:client",
             "type": "npm",
             "script": "compile:client",
@@ -24,7 +24,7 @@
                 "$tsc"
             ]
         },
-        { // LSP - Language Server Protocol
+        {
             "label": "compile:server",
             "type": "npm",
             "script": "compile:server",
@@ -37,8 +37,8 @@
                 "$tsc"
             ]
         },
-        { // LSP - Language Server Protocol
-            "taskName": "watch",
+        {
+            "label": "watch",
             "dependsOn": [
                 "watch:client",
                 "watch:server"
@@ -49,7 +49,7 @@
             },
             "problemMatcher": []
         },
-        { // LSP - Language Server Protocol
+        {
             "label": "watch:client",
             "type": "npm",
             "script": "watch:client",
@@ -63,7 +63,7 @@
                 "$tsc-watch"
             ]
         },
-        { // LSP - Language Server Protocol
+        {
             "label": "watch:server",
             "type": "npm",
             "script": "watch:server",
