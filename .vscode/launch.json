@@ -1,7 +1,7 @@
-// A launch configuration that compiles the extension and then opens it inside a new window
 {
     "version": "0.1.0",
     "configurations": [
+        // A launch configuration that compiles the extension and then opens it inside a new window
         {
             "name": "Extension",
             "type": "extensionHost",
@@ -23,6 +23,32 @@
             "sourceMaps": true,
             "outFiles": [ "${workspaceRoot}/out/test/**/*.js" ],
             "preLaunchTask": "npm: watch"
-        }
+        },
+		{ // LSP - Language Server Protocol
+			"name": "Launch Client",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceRoot}/client"
+			],
+			"stopOnEntry": false,
+			"sourceMaps": true,
+			"outFiles": [
+				"${workspaceRoot}/client/out/**/*.js"
+			],
+			"preLaunchTask": "watch:client"
+		},
+		{ // LSP - Language Server Protocol
+			"name": "Attach to Server",
+			"type": "node",
+			"request": "attach",
+			"port": 6009,
+			"sourceMaps": true,
+			"outFiles": [
+				"${workspaceRoot}/client/server/**/*.js"
+			],
+			"preLaunchTask": "watch:server"
+		}
     ]
 }

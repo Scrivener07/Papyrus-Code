@@ -221,7 +221,7 @@ export namespace Extension
 					if (this.PapyrusTerminal == undefined)
 					{
 						this.PapyrusTerminal = Window.createTerminal("Papyrus");
-						Extension.Log(this.ToString(), "Created the "+this.PapyrusTerminal.name+" terminal.");
+						Extension.Log(this.ToString(), "Created the " + this.PapyrusTerminal.name + " terminal.");
 					}
 
 					if (compiler.Execute(this.PapyrusTerminal))
@@ -663,11 +663,8 @@ export namespace Extension
 				this.disposable.dispose();
 			}
 
-
 		}
 
 
 	}
-
-
 }

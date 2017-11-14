@@ -15,6 +15,80 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        { // LSP - Language Server Protocol
+            "taskName": "compile",
+            "dependsOn": [
+                "compile:client",
+                "compile:server"
+            ],
+            "problemMatcher": []
+        },
+        { // LSP - Language Server Protocol
+            "label": "compile:client",
+            "type": "npm",
+            "script": "compile:client",
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "never"
+            },
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        { // LSP - Language Server Protocol
+            "label": "compile:server",
+            "type": "npm",
+            "script": "compile:server",
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "never"
+            },
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        { // LSP - Language Server Protocol
+            "taskName": "watch",
+            "dependsOn": [
+                "watch:client",
+                "watch:server"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        { // LSP - Language Server Protocol
+            "label": "watch:client",
+            "type": "npm",
+            "script": "watch:client",
+            "isBackground": true,
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "never"
+            },
+            "problemMatcher": [
+                "$tsc-watch"
+            ]
+        },
+        { // LSP - Language Server Protocol
+            "label": "watch:server",
+            "type": "npm",
+            "script": "watch:server",
+            "isBackground": true,
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "never"
+            },
+            "problemMatcher": [
+                "$tsc-watch"
+            ]
         }
     ]
 }
