@@ -1,7 +1,7 @@
 {
 	"version": "0.1.0",
 	"configurations": [
-		{ // TODO: The paths are located in "client" now.
+		{
 			"name": "Launch Tests",
 			"type": "extensionHost",
 			"request": "launch",
@@ -15,7 +15,7 @@
 			"outFiles": [
 				"${workspaceRoot}/client/out/test/**/*.js"
 			],
-			"preLaunchTask": "npm: watch"
+			"preLaunchTask": "watch:client"
 		},
 		{ // LSP - Language Server Protocol
 			"name": "Launch Client",
