@@ -41,7 +41,8 @@
 			"outFiles": [
 				"${workspaceRoot}/client/server/**/*.js"
 			],
-			"preLaunchTask": "watch:server"
+			"preLaunchTask": "watch:server",
+			"protocol": "auto"
 		}
 	]
 }

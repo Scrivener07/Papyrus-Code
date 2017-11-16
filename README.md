@@ -23,7 +23,7 @@ Papyrus Project
 - [x] Syntax Colorizer
 - [x] Snippets
 
-![](images/feature-1.gif)
+![](https://raw.githubusercontent.com/Scrivener07/Papyrus-Code/master/images/feature-1.gif)
 
 ## Extension Settings
 This extension contributes the following settings:

@@ -1,9 +1,9 @@
 {
-	"name": "client",
+	"name": "papyrus-code",
 	"displayName": "Papyrus Code",
 	"description": "A package for working with Mark Hanna's Papyrus scripting language.",
 	"publisher": "Scrivener07",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"preview": true,
 	"license": "SEE LICENSE IN LICENSE.md",
 	"homepage": "https://github.com/Scrivener07/Papyrus-Code/blob/master/README.md",
@@ -14,7 +14,7 @@
 	"bugs": {
 		"url": "https://github.com/Scrivener07/Papyrus-Code/issues"
 	},
-	"icon": "images/icon.png",
+	"icon": "./images/icon.png",
 	"galleryBanner": {
 		"color": "#1e415e",
 		"theme": "dark"
@@ -32,16 +32,14 @@
 		"vscode": "^1.17.0"
 	},
 	"dependencies": {
-		"vscode": "^1.1.5",
+		"vscode": "^1.1.7",
 		"vscode-languageclient": "^3.4.2"
 	},
 	"devDependencies": {
-		"typescript": "^2.6.1",
-		"vscode": "^1.1.6",
-		"@types/node": "^7.0.43",
-		"@types/mocha": "^2.2.42"
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^8.9.1",
+		"typescript": "^2.6.1"
 	},
-	"main": "./out/src/extension",
 	"scripts": {
 		"vscode:prepublish": "tsc -p ./",
 		"compile": "tsc -p ./",
@@ -50,6 +48,7 @@
 		"update-vscode": "node ./node_modules/vscode/bin/install",
 		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
+	"main": "./out/src/extension",
 	"activationEvents": [
 		"onLanguage:plaintext",
 		"onLanguage:papyrus",

@@ -1,9 +1,5 @@
 'use strict';
 import * as path from 'path';
-//import { workspace, ExtensionContext } from 'vscode';
-import { LanguageClient, LanguageClientOptions, ServerOptions, TransportKind } from 'vscode-languageclient';
-
-// EXTENSION IMPORTS AND USING
 import * as vscode from 'vscode';
 import Disposable = vscode.Disposable;
 import ExtensionContext = vscode.ExtensionContext;
@@ -11,25 +7,34 @@ import Window = vscode.window;
 import Workspace = vscode.workspace;
 import WorkspaceConfiguration = vscode.WorkspaceConfiguration;
 import Terminal = vscode.Terminal;
-// import Commands = vscode.commands;
 import TextDocument = vscode.TextDocument;
 import StatusBarItem = vscode.StatusBarItem;
 import StatusBarAlignment = vscode.StatusBarAlignment;
-
+import { LanguageClient, LanguageClientOptions, ServerOptions, TransportKind } from 'vscode-languageclient';
 
 
 export function activate(context: ExtensionContext)
 {
 	Extension.Log('The extension ' + Extension.Name + ' is activating..');
-	// let compiler = new Extension.Papyrus.Build(context);
-	// let explorer = new Extension.Explorer(context);
-	// let hello = new Extension.Experimental.Hello(context);
+
+	let compiler = new Extension.Papyrus.Build(context);
+	Extension.Log(compiler.ToString(), "Created.")
+
+	let explorer = new Extension.Explorer(context);
+	Extension.Log(explorer.ToString(), "Created.")
+
+	let hello = new Extension.Experimental.Hello(context);
+	Extension.Log(hello.ToString(), "Created.")
+
 	// let wordCounter = new Extension.Experimental.WordCounter(context);
-	// let preview = new Extension.Experimental.Preview(context);
+	// Extension.Log(wordCounter.ToString(), "Created.")
+
+	let preview = new Extension.Experimental.Preview(context);
+	Extension.Log(preview.ToString(), "Created.")
+
 	Extension.Log('The extension ' + Extension.Name + ' is now active.');
 
 
-	//-------------------------------------
 	// The server is implemented in node
 	let serverModule = context.asAbsolutePath(path.join('server', 'server.js'));
 	// The debug options for the server
@@ -119,6 +124,7 @@ export namespace Extension
 		constructor(context: ExtensionContext)
 		{
 			Subscribe(context, this);
+
 		}
 
 
