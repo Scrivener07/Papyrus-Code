@@ -1,12 +1,12 @@
 {
     "Actor.AddPerk": {
         "prefix": "addperk",
-        "body": "AddPerk(${1:Perk akPerk}, ${2:bool abNotify = false})${0}",
+        "body": "AddPerk(${1:Perk akPerk}, ${2:bool abNotify = False})${0}",
         "description": "Actor"
     },
     "Actor.AddSpell": {
         "prefix": "addspell",
-        "body": "AddSpell(${1:Spell akSpell}, ${2:bool abVerbose = true})${0}",
+        "body": "AddSpell(${1:Spell akSpell}, ${2:bool abVerbose = True})${0}",
         "description": "Actor"
     },
     "Actor.AddToFaction": {
@@ -21,7 +21,7 @@
     },
     "Actor.AllowCompanion": {
         "prefix": "allowcompanion",
-        "body": "AllowCompanion(${1:bool MakeCompanionIfNoneCurrently = true}, ${2:bool ForceCompanion = false})${0}",
+        "body": "AllowCompanion(${1:bool MakeCompanionIfNoneCurrently = True}, ${2:bool ForceCompanion = False})${0}",
         "description": "Actor"
     },
     "Actor.AllowPCDialogue": {
@@ -61,7 +61,7 @@
     },
     "Actor.ChangeHeadPart": {
         "prefix": "changeheadpart",
-        "body": "ChangeHeadPart(${1:headpart apHeadPart}, ${2:bool abRemovePart = false}, ${3:bool abRemoveExtraParts = false})${0}",
+        "body": "ChangeHeadPart(${1:headpart apHeadPart}, ${2:bool abRemovePart = False}, ${3:bool abRemoveExtraParts = False})${0}",
         "description": "Actor"
     },
     "Actor.ClearArrested": {
@@ -91,12 +91,12 @@
     },
     "Actor.DisallowCompanion": {
         "prefix": "disallowcompanion",
-        "body": "DisallowCompanion(${1:bool SuppressDismissMessage = false})${0}",
+        "body": "DisallowCompanion(${1:bool SuppressDismissMessage = False})${0}",
         "description": "Actor"
     },
     "Actor.Dismember": {
         "prefix": "dismember",
-        "body": "Dismember(${1:string asBodyPart}, ${2:bool abForceExplode = false}, ${3:bool abForceDismember = false}, ${4:bool abForceBloodyMess = false})${0}",
+        "body": "Dismember(${1:string asBodyPart}, ${2:bool abForceExplode = False}, ${3:bool abForceDismember = False}, ${4:bool abForceBloodyMess = False})${0}",
         "description": "Actor"
     },
     "Actor.Dismount": {
@@ -136,7 +136,7 @@
     },
     "Actor.EnableAI": {
         "prefix": "enableai",
-        "body": "EnableAI(${1:bool abEnable = true}, ${2:bool abPauseVoice = false})${0}",
+        "body": "EnableAI(${1:bool abEnable = True}, ${2:bool abPauseVoice = False})${0}",
         "description": "Actor"
     },
     "Actor.EndDeferredKill": {
@@ -146,7 +146,7 @@
     },
     "Actor.EquipItem": {
         "prefix": "equipitem",
-        "body": "EquipItem(${1:Form akItem}, ${2:bool abPreventRemoval = false}, ${3:bool abSilent = false})${0}",
+        "body": "EquipItem(${1:Form akItem}, ${2:bool abPreventRemoval = False}, ${3:bool abSilent = False})${0}",
         "description": "Actor"
     },
     "Actor.EquipSpell": {
@@ -156,7 +156,7 @@
     },
     "Actor.EvaluatePackage": {
         "prefix": "evaluatepackage",
-        "body": "EvaluatePackage(${1:bool abResetAI=false})${0}",
+        "body": "EvaluatePackage(${1:bool abResetAI=False})${0}",
         "description": "Actor"
     },
     "Actor.FollowerFollow": {
@@ -811,7 +811,7 @@
     },
     "Actor.OpenInventory": {
         "prefix": "openinventory",
-        "body": "OpenInventory(${1:bool abForceOpen = false})${0}",
+        "body": "OpenInventory(${1:bool abForceOpen = False})${0}",
         "description": "Actor"
     },
     "Actor.PathToReference": {
@@ -881,17 +881,17 @@
     },
     "Actor.SetAlert": {
         "prefix": "setalert",
-        "body": "SetAlert(${1:bool abAlerted = true})${0}",
+        "body": "SetAlert(${1:bool abAlerted = True})${0}",
         "description": "Actor"
     },
     "Actor.SetAllowFlying": {
         "prefix": "setallowflying",
-        "body": "SetAllowFlying(${1:bool abAllowed = true}, ${2:bool abAllowCrash = true}, ${3:bool abAllowSearch = false})${0}",
+        "body": "SetAllowFlying(${1:bool abAllowed = True}, ${2:bool abAllowCrash = True}, ${3:bool abAllowSearch = False})${0}",
         "description": "Actor"
     },
     "Actor.SetAlpha": {
         "prefix": "setalpha",
-        "body": "SetAlpha(${1:float afTargetAlpha}, ${2:bool abFade = false})${0}",
+        "body": "SetAlpha(${1:float afTargetAlpha}, ${2:bool abFade = False})${0}",
         "description": "Actor"
     },
     "Actor.SetAnimArchetypeConfident": {
@@ -931,7 +931,7 @@
     },
     "Actor.SetAttackActorOnSight": {
         "prefix": "setattackactoronsight",
-        "body": "SetAttackActorOnSight(${1:bool abAttackOnSight = true})${0}",
+        "body": "SetAttackActorOnSight(${1:bool abAttackOnSight = True})${0}",
         "description": "Actor"
     },
     "Actor.SetAvailableToBeCompanion": {
@@ -941,17 +941,17 @@
     },
     "Actor.SetAvoidPlayer": {
         "prefix": "setavoidplayer",
-        "body": "SetAvoidPlayer(${1:bool abAvoid = true})${0}",
+        "body": "SetAvoidPlayer(${1:bool abAvoid = True})${0}",
         "description": "Actor"
     },
     "Actor.SetBribed": {
         "prefix": "setbribed",
-        "body": "SetBribed(${1:bool abBribe = true})${0}",
+        "body": "SetBribed(${1:bool abBribe = True})${0}",
         "description": "Actor"
     },
     "Actor.SetCanDoCommand": {
         "prefix": "setcandocommand",
-        "body": "SetCanDoCommand(${1:bool abCanDoCommand= true})${0}",
+        "body": "SetCanDoCommand(${1:bool abCanDoCommand= True})${0}",
         "description": "Actor"
     },
     "Actor.SetCombatStyle": {
@@ -966,7 +966,7 @@
     },
     "Actor.SetCompanion": {
         "prefix": "setcompanion",
-        "body": "SetCompanion(${1:bool SetCompanion = true}, ${2:FillCompanionAlias = true})${0}",
+        "body": "SetCompanion(${1:bool SetCompanion = True}, ${2:FillCompanionAlias = True})${0}",
         "description": "Actor"
     },
     "Actor.SetCrimeFaction": {
@@ -1001,7 +1001,7 @@
     },
     "Actor.SetDoingFavor": {
         "prefix": "setdoingfavor",
-        "body": "SetDoingFavor(${1:bool abDoingFavor = true}, ${2:bool abWorkShopMode = false})${0}",
+        "body": "SetDoingFavor(${1:bool abDoingFavor = True}, ${2:bool abWorkShopMode = False})${0}",
         "description": "Actor"
     },
     "Actor.SetEssential": {
@@ -1026,27 +1026,27 @@
     },
     "Actor.SetGhost": {
         "prefix": "setghost",
-        "body": "SetGhost(${1:bool abIsGhost = true})${0}",
+        "body": "SetGhost(${1:bool abIsGhost = True})${0}",
         "description": "Actor"
     },
     "Actor.SetHasCharGenSkeleton": {
         "prefix": "sethaschargenskeleton",
-        "body": "SetHasCharGenSkeleton(${1:bool abCharGen = true})${0}",
+        "body": "SetHasCharGenSkeleton(${1:bool abCharGen = True})${0}",
         "description": "Actor"
     },
     "Actor.SetHeadTracking": {
         "prefix": "setheadtracking",
-        "body": "SetHeadTracking(${1:bool abEnable = true})${0}",
+        "body": "SetHeadTracking(${1:bool abEnable = True})${0}",
         "description": "Actor"
     },
     "Actor.SetIntimidated": {
         "prefix": "setintimidated",
-        "body": "SetIntimidated(${1:bool abIntimidate = true})${0}",
+        "body": "SetIntimidated(${1:bool abIntimidate = True})${0}",
         "description": "Actor"
     },
     "Actor.SetLookAt": {
         "prefix": "setlookat",
-        "body": "SetLookAt(${1:ObjectReference akTarget}, ${2:bool abPathingLookAt = false})${0}",
+        "body": "SetLookAt(${1:ObjectReference akTarget}, ${2:bool abPathingLookAt = False})${0}",
         "description": "Actor"
     },
     "Actor.SetNoBleedoutRecovery": {
@@ -1061,7 +1061,7 @@
     },
     "Actor.SetOutfit": {
         "prefix": "setoutfit",
-        "body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}",
+        "body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = False})${0}",
         "description": "Actor"
     },
     "Actor.SetOverrideVoiceType": {
@@ -1081,12 +1081,12 @@
     },
     "Actor.SetPlayerTeammate": {
         "prefix": "setplayerteammate",
-        "body": "SetPlayerTeammate(${1:bool abTeammate = true}, ${2:bool abCanDoFavor = true}, ${3:bool abGivePlayerXP = false})${0}",
+        "body": "SetPlayerTeammate(${1:bool abTeammate = True}, ${2:bool abCanDoFavor = True}, ${3:bool abGivePlayerXP = False})${0}",
         "description": "Actor"
     },
     "Actor.SetProtected": {
         "prefix": "setprotected",
-        "body": "SetProtected(${1:bool abProtected = true})${0}",
+        "body": "SetProtected(${1:bool abProtected = True})${0}",
         "description": "Actor"
     },
     "Actor.SetRace": {
@@ -1101,7 +1101,7 @@
     },
     "Actor.SetRestrained": {
         "prefix": "setrestrained",
-        "body": "SetRestrained(${1:bool abRestrained = true})${0}",
+        "body": "SetRestrained(${1:bool abRestrained = True})${0}",
         "description": "Actor"
     },
     "Actor.SetSubGraphFloatVariable": {
@@ -1111,7 +1111,7 @@
     },
     "Actor.SetUnconscious": {
         "prefix": "setunconscious",
-        "body": "SetUnconscious(${1:bool abUnconscious = true})${0}",
+        "body": "SetUnconscious(${1:bool abUnconscious = True})${0}",
         "description": "Actor"
     },
     "Actor.SetVehicle": {
@@ -1136,7 +1136,7 @@
     },
     "Actor.StartCombat": {
         "prefix": "startcombat",
-        "body": "StartCombat(${1:Actor akTarget}, ${2:bool abPreferredTarget = false})${0}",
+        "body": "StartCombat(${1:Actor akTarget}, ${2:bool abPreferredTarget = False})${0}",
         "description": "Actor"
     },
     "Actor.StartDeferredKill": {
@@ -1186,7 +1186,7 @@
     },
     "Actor.UnequipItem": {
         "prefix": "unequipitem",
-        "body": "UnequipItem(${1:Form akItem}, ${2:bool abPreventEquip = false}, ${3:bool abSilent = false})${0}",
+        "body": "UnequipItem(${1:Form akItem}, ${2:bool abPreventEquip = False}, ${3:bool abSilent = False})${0}",
         "description": "Actor"
     },
     "Actor.UnequipItemSlot": {

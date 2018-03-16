@@ -21,17 +21,17 @@
     },
     "RefColAlias.BlockActivation": {
         "prefix": "blockactivation",
-        "body": "BlockActivation(${1:bool abBlocked = true}, ${2:bool abHideActivateText = false})${0}",
+        "body": "BlockActivation(${1:bool abBlocked = True}, ${2:bool abHideActivateText = False})${0}",
         "description": "RefCollectionAlias"
     },
     "RefColAlias.DisableAll": {
         "prefix": "disableall",
-        "body": "DisableAll(${1:bool bFadeOut = false})${0}",
+        "body": "DisableAll(${1:bool bFadeOut = False})${0}",
         "description": "RefCollectionAlias"
     },
     "RefColAlias.EnableAll": {
         "prefix": "enableall",
-        "body": "EnableAll(${1:bool bFadeIn = false})${0}",
+        "body": "EnableAll(${1:bool bFadeIn = False})${0}",
         "description": "RefCollectionAlias"
     },
     "RefColAlias.EvaluateAll": {
@@ -71,7 +71,7 @@
     },
     "RefColAlias.LinkCollectionTo": {
         "prefix": "linkcollectionto",
-        "body": "LinkCollectionTo(${1:RefCollectionAlias LinkedRefCollectionAlias}, ${2:keyword LinkKeyword = none}, ${3:bool WrapLinks = false})${0}",
+        "body": "LinkCollectionTo(${1:RefCollectionAlias LinkedRefCollectionAlias}, ${2:keyword LinkKeyword = none}, ${3:bool WrapLinks = False})${0}",
         "description": "RefCollectionAlias"
     },
     "RefColAlias.MoveAllTo": {
@@ -511,12 +511,12 @@
     },
     "RefColAlias.SetEssential": {
         "prefix": "setessential",
-        "body": "SetEssential(${1:bool bSetEssential = true})${0}",
+        "body": "SetEssential(${1:bool bSetEssential = True})${0}",
         "description": "RefCollectionAlias"
     },
     "RefColAlias.SetProtected": {
         "prefix": "setprotected",
-        "body": "SetProtected(${1:bool bSetProtected = true})${0}",
+        "body": "SetProtected(${1:bool bSetProtected = True})${0}",
         "description": "RefCollectionAlias"
     },
     "RefColAlias.SetValue": {

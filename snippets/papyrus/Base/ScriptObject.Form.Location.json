@@ -91,7 +91,7 @@
     },
     "Location.SetCleared": {
         "prefix": "setcleared",
-        "body": "SetCleared(${1:bool abCleared = true})${0}",
+        "body": "SetCleared(${1:bool abCleared = True})${0}",
         "description": "Location"
     },
     "Location.SetKeywordData": {

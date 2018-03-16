@@ -1,7 +1,7 @@
 {
     "Weather.EnableAmbientParticles": {
         "prefix": "enableambientparticles",
-        "body": "Weather.EnableAmbientParticles(${1:bool abEnable = true})${0}",
+        "body": "Weather.EnableAmbientParticles(${1:bool abEnable = True})${0}",
         "description": "Weather"
     },
     "Weather.FindWeather": {
@@ -32,6 +32,21 @@
     "Weather.ReleaseOverride": {
         "prefix": "releaseoverride",
         "body": "Weather.ReleaseOverride()${0}",
+        "description": "Weather"
+    },
+    "Weather.ForceActive": {
+        "prefix": "forceactive",
+        "body": "ForceActive(${1:bool abOverride = False})${0}",
+        "description": "Weather"
+    },
+    "Weather.GetClassification": {
+        "prefix": "getclassification",
+        "body": "GetClassification()${0}",
+        "description": "Weather"
+    },
+    "Weather.SetActive": {
+        "prefix": "setactive",
+        "body": "SetActive(${1:bool abOverride = False}, ${2:bool abAccelerate = False})${0}",
         "description": "Weather"
     }
 }

@@ -436,6 +436,10 @@
 			},
 			{
 				"language": "papyrus",
+				"path": "./snippets/papyrus/Base/ScriptObject.Form.MatSwap.json"
+			},
+			{
+				"language": "papyrus",
 				"path": "./snippets/papyrus/Base/ScriptObject.Form.Message.json"
 			},
 			{

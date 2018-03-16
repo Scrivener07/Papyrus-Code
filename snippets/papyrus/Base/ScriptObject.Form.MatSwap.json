@@ -1,0 +1,12 @@
+{
+    "MatSwap.SetRemapData": {
+        "prefix": "setremapdata",
+        "body": "MatSwap.SetRemapData(${1:RemapData[] akData})${0}",
+        "description": "MatSwap"
+    },
+    "MatSwap.GetRemapData": {
+        "prefix": "getremapdata",
+        "body": "MatSwap.GetRemapData()${0}",
+        "description": "MatSwap"
+    }
+}

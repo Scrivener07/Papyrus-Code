@@ -26,7 +26,7 @@
     },
     "Game.EnablePipboyHDRMask": {
         "prefix": "enablepipboyhdrmask",
-        "body": "Game.EnablePipboyHDRMask(${1:bool abEnable = true})${0}",
+        "body": "Game.EnablePipboyHDRMask(${1:bool abEnable = True})${0}",
         "description": "Game"
     },
     "Game.Error": {
@@ -36,7 +36,7 @@
     },
     "Game.FadeOutGame": {
         "prefix": "fadeoutgame",
-        "body": "Game.FadeOutGame(${1:bool abFadingOut}, ${2:bool abBlackFade}, ${3:float afSecsBeforeFade}, ${4:float afFadeDuration}, ${5:bool abStayFaded=false})${0}",
+        "body": "Game.FadeOutGame(${1:bool abFadingOut}, ${2:bool abBlackFade}, ${3:float afSecsBeforeFade}, ${4:float afFadeDuration}, ${5:bool abStayFaded=False})${0}",
         "description": "Game"
     },
     "Game.FastTravel": {
@@ -366,7 +366,7 @@
     },
     "Game.PlayBink": {
         "prefix": "playbink",
-        "body": "Game.PlayBink(${1:string asFileName}, ${2:bool abInterruptible = false}, ${3:bool abMuteAudio = true}, ${4:bool abMuteMusic = true}, ${5:bool abLetterbox = true}, ${6:bool abIsNewGameBink = false})${0}",
+        "body": "Game.PlayBink(${1:string asFileName}, ${2:bool abInterruptible = False}, ${3:bool abMuteAudio = True}, ${4:bool abMuteMusic = True}, ${5:bool abLetterbox = True}, ${6:bool abIsNewGameBink = False})${0}",
         "description": "Game"
     },
     "Game.PlayEventCamera": {
@@ -416,7 +416,7 @@
     },
     "Game.RewardPlayerXP": {
         "prefix": "rewardplayerxp",
-        "body": "Game.RewardPlayerXP(${1:int auiXPAmount}, ${2:bool abDirect = false})${0}",
+        "body": "Game.RewardPlayerXP(${1:int auiXPAmount}, ${2:bool abDirect = False})${0}",
         "description": "Game"
     },
     "Game.ServeTime": {
@@ -446,12 +446,12 @@
     },
     "Game.SetPlayerAIDriven": {
         "prefix": "setplayeraidriven",
-        "body": "Game.SetPlayerAIDriven(${1:bool abAIDriven = true})${0}",
+        "body": "Game.SetPlayerAIDriven(${1:bool abAIDriven = True})${0}",
         "description": "Game"
     },
     "Game.SetPlayerOnElevator": {
         "prefix": "setplayeronelevator",
-        "body": "Game.SetPlayerOnElevator(${1:bool abOnElevator= true})${0}",
+        "body": "Game.SetPlayerOnElevator(${1:bool abOnElevator= True})${0}",
         "description": "Game"
     },
     "Game.SetPlayerRadioFrequency": {
@@ -461,7 +461,7 @@
     },
     "Game.SetPlayerReportCrime": {
         "prefix": "setplayerreportcrime",
-        "body": "Game.SetPlayerReportCrime(${1:bool abReportCrime = true})${0}",
+        "body": "Game.SetPlayerReportCrime(${1:bool abReportCrime = True})${0}",
         "description": "Game"
     },
     "Game.SetSittingRotation": {
@@ -541,7 +541,7 @@
     },
     "Game.StopDialogueCamera": {
         "prefix": "stopdialoguecamera",
-        "body": "Game.StopDialogueCamera(${1:bool abConsiderResume = false}, ${2:bool abSwitchingTo1stP = false})${0}",
+        "body": "Game.StopDialogueCamera(${1:bool abConsiderResume = False}, ${2:bool abSwitchingTo1stP = False})${0}",
         "description": "Game"
     },
     "Game.TriggerScreenBlood": {
@@ -551,7 +551,7 @@
     },
     "Game.TurnPlayerRadioOn": {
         "prefix": "turnplayerradioon",
-        "body": "Game.TurnPlayerRadioOn(${1:bool abRadioOn = true})${0}",
+        "body": "Game.TurnPlayerRadioOn(${1:bool abRadioOn = True})${0}",
         "description": "Game"
     },
     "Game.UsingGamepad": {

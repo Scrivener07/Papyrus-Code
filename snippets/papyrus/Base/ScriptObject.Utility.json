@@ -1,12 +1,12 @@
 {
     "Utility.CallGlobalFunction": {
         "prefix": "callglobalfunction",
-        "body": "Utility.CallGlobalFunction(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}",
+        "body": "Utility.CallGlobalFunction(${1:string asScriptName}, ${2:string asFuncName}, ${3:var[] aParams})${0}",
         "description": "Utility"
     },
     "Utility.CallGlobalFunctionNoWait": {
         "prefix": "callglobalfunctionnowait",
-        "body": "Utility.CallGlobalFunctionNoWait(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}",
+        "body": "Utility.CallGlobalFunctionNoWait(${1:string asScriptName}, ${2:string asFuncName}, ${3:var[] aParams})${0}",
         "description": "Utility"
     },
     "Utility.GameTimeToString": {

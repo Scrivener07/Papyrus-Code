@@ -96,7 +96,7 @@
     },
     "Quest.ModObjectiveGlobal": {
         "prefix": "modobjectiveglobal",
-        "body": "ModObjectiveGlobal(${1:float afModValue}, ${2:GlobalVariable aModGlobal}, ${3:int aiObjectiveID = -1}, ${4:float afTargetValue = -1.0}, ${5:bool abCountingUp = true}, ${6:bool abCompleteObjective = true}, ${7:bool abRedisplayObjective = true}, ${8:bool abAllowRollbackObjective = false})${0}",
+        "body": "ModObjectiveGlobal(${1:float afModValue}, ${2:GlobalVariable aModGlobal}, ${3:int aiObjectiveID = -1}, ${4:float afTargetValue = -1.0}, ${5:bool abCountingUp = True}, ${6:bool abCompleteObjective = True}, ${7:bool abRedisplayObjective = True}, ${8:bool abAllowRollbackObjective = False})${0}",
         "description": "Quest"
     },
     "Quest.OnQuestInit": {
@@ -311,7 +311,7 @@
     },
     "Quest.SetActive": {
         "prefix": "setactive",
-        "body": "SetActive(${1:bool abActive = true})${0}",
+        "body": "SetActive(${1:bool abActive = True})${0}",
         "description": "Quest"
     },
     "Quest.SetCurrentStageID": {
@@ -321,17 +321,17 @@
     },
     "Quest.SetObjectiveCompleted": {
         "prefix": "setobjectivecompleted",
-        "body": "SetObjectiveCompleted(${1:int aiObjective}, ${2:bool abCompleted = true})${0}",
+        "body": "SetObjectiveCompleted(${1:int aiObjective}, ${2:bool abCompleted = True})${0}",
         "description": "Quest"
     },
     "Quest.SetObjectiveDisplayed": {
         "prefix": "setobjectivedisplayed",
-        "body": "SetObjectiveDisplayed(${1:int aiObjective}, ${2:bool abDisplayed = true}, ${3:bool abForce = false})${0}",
+        "body": "SetObjectiveDisplayed(${1:int aiObjective}, ${2:bool abDisplayed = True}, ${3:bool abForce = False})${0}",
         "description": "Quest"
     },
     "Quest.SetObjectiveFailed": {
         "prefix": "setobjectivefailed",
-        "body": "SetObjectiveFailed(${1:int aiObjective}, ${2:bool abFailed = true})${0}",
+        "body": "SetObjectiveFailed(${1:int aiObjective}, ${2:bool abFailed = True})${0}",
         "description": "Quest"
     },
     "Quest.SetObjectiveSkipped": {

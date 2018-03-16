@@ -61,22 +61,22 @@
     },
     "ActorBase.SetEssential": {
         "prefix": "setessential",
-        "body": "SetEssential(${1:bool abEssential = true})${0}",
+        "body": "SetEssential(${1:bool abEssential = True})${0}",
         "description": "ActorBase"
     },
     "ActorBase.SetInvulnerable": {
         "prefix": "setinvulnerable",
-        "body": "SetInvulnerable(${1:bool abInvulnerable = true})${0}",
+        "body": "SetInvulnerable(${1:bool abInvulnerable = True})${0}",
         "description": "ActorBase"
     },
     "ActorBase.SetOutfit": {
         "prefix": "setoutfit",
-        "body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}",
+        "body": "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = False})${0}",
         "description": "ActorBase"
     },
     "ActorBase.SetProtected": {
         "prefix": "setprotected",
-        "body": "SetProtected(${1:bool abProtected = true})${0}",
+        "body": "SetProtected(${1:bool abProtected = True})${0}",
         "description": "ActorBase"
     },
     "ActorBase.GetTemplate": {

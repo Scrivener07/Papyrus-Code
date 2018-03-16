@@ -26,22 +26,22 @@
     },
     "Debug.EnableAI": {
         "prefix": "enableai",
-        "body": "Debug.EnableAI(${1:bool abEnable = true})${0}",
+        "body": "Debug.EnableAI(${1:bool abEnable = True})${0}",
         "description": "Debug"
     },
     "Debug.EnableCollisions": {
         "prefix": "enablecollisions",
-        "body": "Debug.EnableCollisions(${1:bool abEnable = true})${0}",
+        "body": "Debug.EnableCollisions(${1:bool abEnable = True})${0}",
         "description": "Debug"
     },
     "Debug.EnableDetection": {
         "prefix": "enabledetection",
-        "body": "Debug.EnableDetection(${1:bool abEnable = true})${0}",
+        "body": "Debug.EnableDetection(${1:bool abEnable = True})${0}",
         "description": "Debug"
     },
     "Debug.EnableMenus": {
         "prefix": "enablemenus",
-        "body": "Debug.EnableMenus(${1:bool abEnable = true})${0}",
+        "body": "Debug.EnableMenus(${1:bool abEnable = True})${0}",
         "description": "Debug"
     },
     "Debug.GetConfigName": {

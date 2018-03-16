@@ -1,12 +1,12 @@
 {
     "ObjectRef.Activate": {
         "prefix": "activate",
-        "body": "Activate(${1:ObjectReference akActivator}, ${2:bool abDefaultProcessingOnly = false})${0}",
+        "body": "Activate(${1:ObjectReference akActivator}, ${2:bool abDefaultProcessingOnly = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.AddItem": {
         "prefix": "additem",
-        "body": "AddItem(${1:Form akItemToAdd}, ${2:int aiCount = 1}, ${3:bool abSilent = false})${0}",
+        "body": "AddItem(${1:Form akItemToAdd}, ${2:int aiCount = 1}, ${3:bool abSilent = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.AddKeyIfNeeded": {
@@ -31,12 +31,12 @@
     },
     "ObjectRef.ApplyConveyorBelt": {
         "prefix": "applyconveyorbelt",
-        "body": "ApplyConveyorBelt(${1:string aTarget}, ${2:float aLinVelX}, ${3:float aLinVelY}, ${4:float aLinVelZ}, ${5:bool abOn = true}, ${6:bool abReverse = false})${0}",
+        "body": "ApplyConveyorBelt(${1:string aTarget}, ${2:float aLinVelX}, ${3:float aLinVelY}, ${4:float aLinVelZ}, ${5:bool abOn = True}, ${6:bool abReverse = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.ApplyFanMotor": {
         "prefix": "applyfanmotor",
-        "body": "ApplyFanMotor(${1:string aTarget}, ${2:float aAxisX}, ${3:float aAxisY}, ${4:float aAxisZ}, ${5:float aForce}, ${6:bool abOn = true})${0}",
+        "body": "ApplyFanMotor(${1:string aTarget}, ${2:float aAxisX}, ${3:float aAxisY}, ${4:float aAxisZ}, ${5:float aForce}, ${6:bool abOn = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.ApplyHavokImpulse": {
@@ -61,7 +61,7 @@
     },
     "ObjectRef.BlockActivation": {
         "prefix": "blockactivation",
-        "body": "BlockActivation(${1:bool abBlocked = True}, ${2:bool abHideActivateText = false})${0}",
+        "body": "BlockActivation(${1:bool abBlocked = True}, ${2:bool abHideActivateText = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.CalculateEncounterLevel": {
@@ -86,7 +86,7 @@
     },
     "ObjectRef.ConveyorBeltOn": {
         "prefix": "conveyorbelton",
-        "body": "ConveyorBeltOn(${1:bool abOn = true})${0}",
+        "body": "ConveyorBeltOn(${1:bool abOn = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.CountActorsLinkedToMe": {
@@ -136,7 +136,7 @@
     },
     "ObjectRef.DisableLinkChain": {
         "prefix": "disablelinkchain",
-        "body": "DisableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeOut = false})${0}",
+        "body": "DisableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeOut = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.DisableNoWait": {
@@ -146,12 +146,12 @@
     },
     "ObjectRef.Drop": {
         "prefix": "drop",
-        "body": "Drop(${1:bool abSilent = false})${0}",
+        "body": "Drop(${1:bool abSilent = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.DropFirstObject": {
         "prefix": "dropfirstobject",
-        "body": "DropFirstObject(${1:bool abInitiallyDisabled=false})${0}",
+        "body": "DropFirstObject(${1:bool abInitiallyDisabled=False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.DropObject": {
@@ -161,27 +161,27 @@
     },
     "ObjectRef.Enable": {
         "prefix": "enable",
-        "body": "Enable(${1:bool abFadeIn = false})${0}",
+        "body": "Enable(${1:bool abFadeIn = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.EnableFastTravel": {
         "prefix": "enablefasttravel",
-        "body": "EnableFastTravel(${1:bool abEnable = true})${0}",
+        "body": "EnableFastTravel(${1:bool abEnable = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.EnableLinkChain": {
         "prefix": "enablelinkchain",
-        "body": "EnableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeIn = false})${0}",
+        "body": "EnableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeIn = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.EnableNoWait": {
         "prefix": "enablenowait",
-        "body": "EnableNoWait(${1:bool abFadeIn = false})${0}",
+        "body": "EnableNoWait(${1:bool abFadeIn = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.FanMotorOn": {
         "prefix": "fanmotoron",
-        "body": "FanMotorOn(${1:bool abOn = true})${0}",
+        "body": "FanMotorOn(${1:bool abOn = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.FindAllReferencesOfType": {
@@ -536,7 +536,7 @@
     },
     "ObjectRef.IgnoreFriendlyHits": {
         "prefix": "ignorefriendlyhits",
-        "body": "IgnoreFriendlyHits(${1:bool abIgnore = true})${0}",
+        "body": "IgnoreFriendlyHits(${1:bool abIgnore = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.InterruptCast": {
@@ -596,12 +596,12 @@
     },
     "ObjectRef.IsFurnitureInUse": {
         "prefix": "isfurnitureinuse",
-        "body": "IsFurnitureInUse(${1:bool abIgnoreReserved = false})${0}",
+        "body": "IsFurnitureInUse(${1:bool abIgnoreReserved = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.IsFurnitureMarkerInUse": {
         "prefix": "isfurnituremarkerinuse",
-        "body": "IsFurnitureMarkerInUse(${1:int aiMarker}, ${2:bool abIgnoreReserved = false})${0}",
+        "body": "IsFurnitureMarkerInUse(${1:int aiMarker}, ${2:bool abIgnoreReserved = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.IsIgnoringFriendlyHits": {
@@ -686,17 +686,17 @@
     },
     "ObjectRef.Lock": {
         "prefix": "lock",
-        "body": "Lock(${1:bool abLock = true}, ${2:bool abAsOwner = false})${0}",
+        "body": "Lock(${1:bool abLock = True}, ${2:bool abAsOwner = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.MakeRadioReceiver": {
         "prefix": "makeradioreceiver",
-        "body": "MakeRadioReceiver(${1:float afFrequency}, ${2:float afVolume = 1.0}, ${3:OutputModel aOverrideModel = None}, ${4:bool abActive = true}, ${5:bool abNoStatic = false})${0}",
+        "body": "MakeRadioReceiver(${1:float afFrequency}, ${2:float afVolume = 1.0}, ${3:OutputModel aOverrideModel = None}, ${4:bool abActive = True}, ${5:bool abNoStatic = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.MakeTransmitterRepeater": {
         "prefix": "maketransmitterrepeater",
-        "body": "MakeTransmitterRepeater(${1:ObjectReference akTransmitterToRepeat}, ${2:float afInnerRadius}, ${3:float afOuterRadius}, ${4:bool abUnlimitedRange = false})${0}",
+        "body": "MakeTransmitterRepeater(${1:ObjectReference akTransmitterToRepeat}, ${2:float afInnerRadius}, ${3:float afOuterRadius}, ${4:bool abUnlimitedRange = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.ModValue": {
@@ -706,7 +706,7 @@
     },
     "ObjectRef.MoveTo": {
         "prefix": "moveto",
-        "body": "MoveTo(${1:ObjectReference akTarget}, ${2:float afXOffset = 0.0}, ${3:float afYOffset = 0.0}, ${4:float afZOffset = 0.0}, ${5:bool abMatchRotation = true})${0}",
+        "body": "MoveTo(${1:ObjectReference akTarget}, ${2:float afXOffset = 0.0}, ${3:float afYOffset = 0.0}, ${4:float afZOffset = 0.0}, ${5:bool abMatchRotation = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.MoveToIfUnloaded": {
@@ -946,7 +946,7 @@
     },
     "ObjectRef.OpenWorkshopSettlementMenuEx": {
         "prefix": "openworkshopsettlementmenuex",
-        "body": "OpenWorkshopSettlementMenuEx(${1:Keyword akActionKW}, ${2:Message astrConfirm = None}, ${3:Location aLocToHighlight = None}, ${4:FormList akIncludeKeywordList = None}, ${5:FormList akExcludeKeywordList = None}, ${6:bool abExcludeZeroPopulation = false}, ${7:bool abOnlyOwnedWorkshops= true}, ${8:bool abTurnOffHeader= false}, ${9:bool abOnlyPotentialVassalSettlements= false})${0}",
+        "body": "OpenWorkshopSettlementMenuEx(${1:Keyword akActionKW}, ${2:Message astrConfirm = None}, ${3:Location aLocToHighlight = None}, ${4:FormList akIncludeKeywordList = None}, ${5:FormList akExcludeKeywordList = None}, ${6:bool abExcludeZeroPopulation = False}, ${7:bool abOnlyOwnedWorkshops= True}, ${8:bool abTurnOffHeader= False}, ${9:bool abOnlyPotentialVassalSettlements= False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.PauseAudio": {
@@ -961,12 +961,12 @@
     },
     "ObjectRef.PlaceAtMe": {
         "prefix": "placeatme",
-        "body": "PlaceAtMe(${1:Form akFormToPlace}, ${2:int aiCount = 1}, ${3:bool abForcePersist = false}, ${4:bool abInitiallyDisabled = false}, ${5:bool abDeleteWhenAble = true})${0}",
+        "body": "PlaceAtMe(${1:Form akFormToPlace}, ${2:int aiCount = 1}, ${3:bool abForcePersist = False}, ${4:bool abInitiallyDisabled = False}, ${5:bool abDeleteWhenAble = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.PlaceAtNode": {
         "prefix": "placeatnode",
-        "body": "PlaceAtNode(${1:string asNodeName}, ${2:Form akFormToPlace}, ${3:int aiCount = 1}, ${4:bool abForcePersist = false}, ${5:bool abInitiallyDisabled = false}, ${6:bool abDeleteWhenAble = true}, ${7:bool abAttach = false})${0}",
+        "body": "PlaceAtNode(${1:string asNodeName}, ${2:Form akFormToPlace}, ${3:int aiCount = 1}, ${4:bool abForcePersist = False}, ${5:bool abInitiallyDisabled = False}, ${6:bool abDeleteWhenAble = True}, ${7:bool abAttach = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.PlayAnimation": {
@@ -981,12 +981,12 @@
     },
     "ObjectRef.PlayGamebryoAnimation": {
         "prefix": "playgamebryoanimation",
-        "body": "PlayGamebryoAnimation(${1:string asAnimation}, ${2:bool abStartOver = false}, ${3:float afEaseInTime = 0.0})${0}",
+        "body": "PlayGamebryoAnimation(${1:string asAnimation}, ${2:bool abStartOver = False}, ${3:float afEaseInTime = 0.0})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.PlayImpactEffect": {
         "prefix": "playimpacteffect",
-        "body": "PlayImpactEffect(${1:ImpactDataSet akImpactEffect}, ${2:string asNodeName = \\\"\\\"}, ${3:float afPickDirX = 0.0}, ${4:float afPickDirY = 0.0}, ${5:float afPickDirZ = -1.0}, ${6:float afPickLength = 512.0}, ${7:bool abApplyNodeRotation = false}, ${8:bool abUseNodeLocalRotation = false})${0}",
+        "body": "PlayImpactEffect(${1:ImpactDataSet akImpactEffect}, ${2:string asNodeName = \\\"\\\"}, ${3:float afPickDirX = 0.0}, ${4:float afPickDirY = 0.0}, ${5:float afPickDirZ = -1.0}, ${6:float afPickLength = 512.0}, ${7:bool abApplyNodeRotation = False}, ${8:bool abUseNodeLocalRotation = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.PlaySyncedAnimationAndWaitSS": {
@@ -1036,7 +1036,7 @@
     },
     "ObjectRef.RemoveAllItems": {
         "prefix": "removeallitems",
-        "body": "RemoveAllItems(${1:ObjectReference akTransferTo = None}, ${2:bool abKeepOwnership = false})${0}",
+        "body": "RemoveAllItems(${1:ObjectReference akTransferTo = None}, ${2:bool abKeepOwnership = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.RemoveAllMods": {
@@ -1051,17 +1051,17 @@
     },
     "ObjectRef.RemoveComponents": {
         "prefix": "removecomponents",
-        "body": "RemoveComponents(${1:Component akComponent}, ${2:int aiCount}, ${3:bool abSilent = false})${0}",
+        "body": "RemoveComponents(${1:Component akComponent}, ${2:int aiCount}, ${3:bool abSilent = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.RemoveItem": {
         "prefix": "removeitem",
-        "body": "RemoveItem(${1:Form akItemToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = false}, ${4:ObjectReference akOtherContainer = None})${0}",
+        "body": "RemoveItem(${1:Form akItemToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = False}, ${4:ObjectReference akOtherContainer = None})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.RemoveItemByComponent": {
         "prefix": "removeitembycomponent",
-        "body": "RemoveItemByComponent(${1:Form akComponentToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = false}, ${4:ObjectReference akOtherContainer = None})${0}",
+        "body": "RemoveItemByComponent(${1:Form akComponentToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = False}, ${4:ObjectReference akOtherContainer = None})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.RemoveKeyword": {
@@ -1106,22 +1106,22 @@
     },
     "ObjectRef.ReverseConveyorBelt": {
         "prefix": "reverseconveyorbelt",
-        "body": "ReverseConveyorBelt(${1:bool abReverse = true})${0}",
+        "body": "ReverseConveyorBelt(${1:bool abReverse = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.Say": {
         "prefix": "say",
-        "body": "Say(${1:Topic akTopicToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = false}, ${4:ObjectReference akTarget = None})${0}",
+        "body": "Say(${1:Topic akTopicToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = False}, ${4:ObjectReference akTarget = None})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SayCustom": {
         "prefix": "saycustom",
-        "body": "SayCustom(${1:Keyword akKeywordToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = false}, ${4:ObjectReference akTarget = None})${0}",
+        "body": "SayCustom(${1:Keyword akKeywordToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = False}, ${4:ObjectReference akTarget = None})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SellItem": {
         "prefix": "sellitem",
-        "body": "SellItem(${1:Form Item}, ${2:int Value}, ${3:int amountToSell = -1}, ${4:bool silent = false}, ${5:form paymentItem = none}, ${6:objectReference PaymentContainer = None})${0}",
+        "body": "SellItem(${1:Form Item}, ${2:int Value}, ${3:int amountToSell = -1}, ${4:bool silent = False}, ${5:form paymentItem = none}, ${6:objectReference PaymentContainer = None})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SendStealAlarm": {
@@ -1141,12 +1141,12 @@
     },
     "ObjectRef.SetActorOwner": {
         "prefix": "setactorowner",
-        "body": "SetActorOwner(${1:ActorBase akActorBase}, ${2:bool abNoCrime = false})${0}",
+        "body": "SetActorOwner(${1:ActorBase akActorBase}, ${2:bool abNoCrime = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetActorRefOwner": {
         "prefix": "setactorrefowner",
-        "body": "SetActorRefOwner(${1:Actor akActor}, ${2:bool abNoCrime = false})${0}",
+        "body": "SetActorRefOwner(${1:Actor akActor}, ${2:bool abNoCrime = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetAngle": {
@@ -1171,7 +1171,7 @@
     },
     "ObjectRef.SetAttractionActive": {
         "prefix": "setattractionactive",
-        "body": "SetAttractionActive(${1:Keyword apKeyword}, ${2:bool abActive = true})${0}",
+        "body": "SetAttractionActive(${1:Keyword apKeyword}, ${2:bool abActive = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetConveyorBeltVelocity": {
@@ -1181,7 +1181,7 @@
     },
     "ObjectRef.SetDestroyed": {
         "prefix": "setdestroyed",
-        "body": "SetDestroyed(${1:bool abDestroyed = true})${0}",
+        "body": "SetDestroyed(${1:bool abDestroyed = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetDirectAtTarget": {
@@ -1191,7 +1191,7 @@
     },
     "ObjectRef.SetFactionOwner": {
         "prefix": "setfactionowner",
-        "body": "SetFactionOwner(${1:Faction akFaction}, ${2:bool abNoCrime = false})${0}",
+        "body": "SetFactionOwner(${1:Faction akFaction}, ${2:bool abNoCrime = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetHarvested": {
@@ -1216,17 +1216,17 @@
     },
     "ObjectRef.SetMotionType": {
         "prefix": "setmotiontype",
-        "body": "SetMotionType(${1:int aiMotionType}, ${2:bool abAllowActivate = true})${0}",
+        "body": "SetMotionType(${1:int aiMotionType}, ${2:bool abAllowActivate = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetNoFavorAllowed": {
         "prefix": "setnofavorallowed",
-        "body": "SetNoFavorAllowed(${1:bool abNoFavor = true})${0}",
+        "body": "SetNoFavorAllowed(${1:bool abNoFavor = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetOpen": {
         "prefix": "setopen",
-        "body": "SetOpen(${1:bool abOpen = true})${0}",
+        "body": "SetOpen(${1:bool abOpen = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetPersistLoc": {
@@ -1236,7 +1236,7 @@
     },
     "ObjectRef.SetPlayerHasTaken": {
         "prefix": "setplayerhastaken",
-        "body": "SetPlayerHasTaken(${1:bool abTaken = true})${0}",
+        "body": "SetPlayerHasTaken(${1:bool abTaken = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetPosition": {
@@ -1251,7 +1251,7 @@
     },
     "ObjectRef.SetRadioOn": {
         "prefix": "setradioon",
-        "body": "SetRadioOn(${1:bool abOn = true})${0}",
+        "body": "SetRadioOn(${1:bool abOn = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.SetRadioVolume": {
@@ -1286,7 +1286,7 @@
     },
     "ObjectRef.StartWorkshop": {
         "prefix": "startworkshop",
-        "body": "StartWorkshop(${1:bool abStart = true})${0}",
+        "body": "StartWorkshop(${1:bool abStart = True})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.StopTranslation": {
@@ -1316,7 +1316,7 @@
     },
     "ObjectRef.Unlock": {
         "prefix": "unlock",
-        "body": "Unlock(${1:bool abAsOwner = false})${0}",
+        "body": "Unlock(${1:bool abAsOwner = False})${0}",
         "description": "ObjectReference"
     },
     "ObjectRef.WaitFor3DLoad": {
@@ -1592,6 +1592,11 @@
     "ObjectRef.TransmitConnectedPower": {
         "prefix": "transmitconnectedpower",
         "body": "TransmitConnectedPower()${0}",
+        "description": "ObjectReference"
+    },
+    "ObjectRef.ApplyMaterialSwap": {
+        "prefix": "applymaterialswap",
+        "body": "ApplyMaterialSwap(${1:MatSwap akMatSwap}, ${2:bool abRename = False})${0}",
         "description": "ObjectReference"
     }
 }

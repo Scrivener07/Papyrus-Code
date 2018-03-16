@@ -86,7 +86,7 @@
     },
     "Faction.SetAlly": {
         "prefix": "setally",
-        "body": "SetAlly(${1:Faction akOther}, ${2:bool abSelfIsFriendToOther = false}, ${3:bool abOtherIsFriendToSelf = false})${0}",
+        "body": "SetAlly(${1:Faction akOther}, ${2:bool abSelfIsFriendToOther = False}, ${3:bool abOtherIsFriendToSelf = False})${0}",
         "description": "Faction"
     },
     "Faction.SetCrimeGold": {
@@ -101,17 +101,17 @@
     },
     "Faction.SetEnemy": {
         "prefix": "setenemy",
-        "body": "SetEnemy(${1:Faction akOther}, ${2:bool abSelfIsNeutralToOther = false}, ${3:bool abOtherIsNeutralToSelf = false})${0}",
+        "body": "SetEnemy(${1:Faction akOther}, ${2:bool abSelfIsNeutralToOther = False}, ${3:bool abOtherIsNeutralToSelf = False})${0}",
         "description": "Faction"
     },
     "Faction.SetPlayerEnemy": {
         "prefix": "setplayerenemy",
-        "body": "SetPlayerEnemy(${1:bool abIsEnemy = true})${0}",
+        "body": "SetPlayerEnemy(${1:bool abIsEnemy = True})${0}",
         "description": "Faction"
     },
     "Faction.SetPlayerExpelled": {
         "prefix": "setplayerexpelled",
-        "body": "SetPlayerExpelled(${1:bool abIsExpelled = true})${0}",
+        "body": "SetPlayerExpelled(${1:bool abIsExpelled = True})${0}",
         "description": "Faction"
     }
 }

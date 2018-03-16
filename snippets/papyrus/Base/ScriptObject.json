@@ -6,12 +6,12 @@
     },
     "ScriptObject.CallFunction": {
         "prefix": "callfunction",
-        "body": "CallFunction(${1:string asFuncName}, ${2:Var[] aParams})${0}",
+        "body": "CallFunction(${1:string asFuncName}, ${2:var[] aParams})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.CallFunctionNoWait": {
         "prefix": "callfunctionnowait",
-        "body": "CallFunctionNoWait(${1:string asFuncName}, ${2:Var[] aParams})${0}",
+        "body": "CallFunctionNoWait(${1:string asFuncName}, ${2:var[] aParams})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.CancelTimer": {
@@ -161,7 +161,7 @@
     },
     "ScriptObject.OnTutorialEvent": {
         "prefix": "ontutorialevent",
-        "body": "Event OnTutorialEvent(String asEventName, Message aMessage)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnTutorialEvent(string asEventName, Message aMessage)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnTutorialEvent"
     },
     "ScriptObject.RegisterForAnimationEvent": {
@@ -206,7 +206,7 @@
     },
     "ScriptObject.RegisterForHitEvent": {
         "prefix": "registerforhitevent",
-        "body": "RegisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = true})${0}",
+        "body": "RegisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = True})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.RegisterForLooksMenuEvent": {
@@ -216,7 +216,7 @@
     },
     "ScriptObject.RegisterForMagicEffectApplyEvent": {
         "prefix": "registerformagiceffectapplyevent",
-        "body": "RegisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = true})${0}",
+        "body": "RegisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = True})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.RegisterForMenuOpenCloseEvent": {
@@ -256,7 +256,7 @@
     },
     "ScriptObject.RegisterForTutorialEvent": {
         "prefix": "registerfortutorialevent",
-        "body": "RegisterForTutorialEvent(${1:String asEventName})${0}",
+        "body": "RegisterForTutorialEvent(${1:string asEventName})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.RemoveAllInventoryEventFilters": {
@@ -271,17 +271,17 @@
     },
     "ScriptObject.SendCustomEvent": {
         "prefix": "sendcustomevent",
-        "body": "SendCustomEvent(${1:CustomEventName asEventName}, ${2:Var[] akArgs = None})${0}",
+        "body": "SendCustomEvent(${1:CustomEventName asEventName}, ${2:var[] akArgs = None})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.SetPropertyValue": {
         "prefix": "setpropertyvalue",
-        "body": "SetPropertyValue(${1:string asProperyName}, ${2:Var aValue})${0}",
+        "body": "SetPropertyValue(${1:string asProperyName}, ${2:var aValue})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.SetPropertyValueNoWait": {
         "prefix": "setpropertyvaluenowait",
-        "body": "SetPropertyValueNoWait(${1:string asProperyName}, ${2:Var aValue})${0}",
+        "body": "SetPropertyValueNoWait(${1:string asProperyName}, ${2:var aValue})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.StartTimer": {
@@ -351,7 +351,7 @@
     },
     "ScriptObject.UnregisterForHitEvent": {
         "prefix": "unregisterforhitevent",
-        "body": "UnregisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = true})${0}",
+        "body": "UnregisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = True})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.UnregisterForLooksMenuEvent": {
@@ -366,7 +366,7 @@
     },
     "ScriptObject.UnregisterForMagicEffectApplyEvent": {
         "prefix": "unregisterformagiceffectapplyevent",
-        "body": "UnregisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = true})${0}",
+        "body": "UnregisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = True})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.UnregisterForMenuOpenCloseEvent": {
@@ -406,7 +406,7 @@
     },
     "ScriptObject.UnregisterForTutorialEvent": {
         "prefix": "unregisterfortutorialevent",
-        "body": "UnregisterForTutorialEvent(${1:String asEventName})${0}",
+        "body": "UnregisterForTutorialEvent(${1:string asEventName})${0}",
         "description": "ScriptObject"
     },
     "ScriptObject.RegisterForKey": {
