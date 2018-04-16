@@ -1,11 +1,13 @@
 'use strict';
 import * as vscode from 'vscode';
+import * as FileSystem from 'fs';
+import * as Path from 'path';
 import { Extension } from './extension';
 import { Feature } from './feature';
 
 export function activate(context: vscode.ExtensionContext)
 {
-	let build = new Build(context);
+	Extension.Subscribe(context, new Build(context));
 	Extension.Log('Papyrus is activated.');
 }
 
@@ -14,116 +16,136 @@ export function deactivate()
 	Extension.Log('Papyrus is now deactivated.');
 }
 
-export namespace Source
-{
-	export const LanguageID: string = 'papyrus';
-}
 
-export namespace Project
-{
-	export const LanguageID: string = 'papyrus-project';
-}
-
-export namespace Assembly
-{
-	export const LanguageID: string = 'papyrus-assembly';
-}
-
-/**A VS Code feature for compiling papyrus source files.*/
+/**
+ * A VS Code feature for compiling papyrus files.
+*/
 export class Build extends Feature
 {
-	// http://www.creationkit.com/fallout4/index.php?title=Papyrus_Compiler_Reference
-	// http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects
-
-	private PapyrusTerminal: vscode.Terminal;
-
-
 	constructor(context: vscode.ExtensionContext)
 	{
-		super(context);
+		super();
 		this.RegisterCommand(context, Extension.Commands.Compile);
-		this.Subscribe(context, vscode.window.onDidCloseTerminal(() => { this.OnTerminalClosed(); }));
 	}
+
 
 	protected OnCommand(commandName: string): void
 	{
-		if (commandName == Extension.Commands.Compile)
+		let configuration = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+		if (configuration == undefined)
 		{
-			let editor = vscode.window.activeTextEditor;
-			if (!editor)
-			{
-				Extension.Log(this.ToString(), 'No active text editor for the papyrus compile command.');
-				return;
-			}
-
-			let configuration = vscode.workspace.getConfiguration(Extension.Configuration.Section);
-			if (!configuration)
-			{
-				this.WarnConfigurationMissing(Extension.Configuration.Section);
-				return;
-			}
-
-			let bCompilerExecutable = configuration.get(Extension.Configuration.CompilerExecutable) as string;
-			if (!bCompilerExecutable)
-			{
-				this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.CompilerExecutable);
-				return;
-			}
-
-			let bCompilerOutput = configuration.get(Extension.Configuration.CompilerOutput) as string;
-			if (!bCompilerOutput)
-			{
-				this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.CompilerOutput);
-				return;
-			}
-
-			let bCompilerImports = configuration.get(Extension.Configuration.CompilerImports) as string;
-			if (!bCompilerImports)
-			{
-				this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.CompilerImports);
-				return;
-			}
-
-			let compiler = new Compiler();
-			compiler.Executable = configuration.get(Extension.Configuration.CompilerExecutable) as string;
-			compiler.Target = editor.document.fileName;
-			compiler.Imports = configuration.get(Extension.Configuration.CompilerImports) as Array<string>;
-			compiler.Output = configuration.get(Extension.Configuration.CompilerOutput) as string;
-			Extension.Log(this.ToString(), 'Created compiler with parameters.\n' + compiler.Parameters + "\n");
-
-			this.PapyrusTerminal = vscode.window.createTerminal("Papyrus");
-			Extension.Log(this.ToString(), "Created the " + this.PapyrusTerminal.name + " terminal.");
-
-			if (compiler.Execute(this.PapyrusTerminal))
-			{
-				Extension.Log(this.ToString(), 'The `' + Extension.Commands.Compile + '` command has executed.');
-			}
-			else
-			{
-				Extension.Log(this.ToString(), 'The `' + Extension.Commands.Compile + '` command could not be executed.');
-			}
+			this.WarnConfigurationMissing(Extension.Configuration.Section);
+			return;
 		}
 		else
 		{
-			Extension.Log(this.ToString(), 'The `' + commandName + '` command is unhandled.');
+			let compiler = new Compiler();
+			if (this.Configure(compiler, configuration))
+			{
+				this.Run(compiler);
+			}
 		}
 	}
 
 
-	protected OnTerminalClosed(): void
+	private Configure(compiler: Compiler, configuration: vscode.WorkspaceConfiguration): boolean
 	{
-		Extension.Log(this.ToString(), "OnTerminalClosed");
+		compiler.Executable = configuration.get(Extension.Configuration.CompilerExecutable) as string;
+		if (compiler.Executable == undefined)
+		{
+			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.CompilerExecutable);
+			return false;
+		}
+		else if (FileSystem.existsSync(compiler.Executable) == false)
+		{
+			this.WarnResourceMissing(compiler.Executable);
+			return false;
+		}
+
+		compiler.Target = configuration.get(Extension.Configuration.CompilerTarget) as string;
+		if (compiler.Target == undefined)
+		{
+			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.CompilerTarget);
+			return false;
+		}
+		else if (FileSystem.existsSync(compiler.Target) == false)
+		{
+			this.WarnResourceMissing(compiler.Target);
+			return false;
+		}
+
+		if (Path.extname(compiler.Target) == ".ppj")
+		{
+			return true;
+		}
+		else
+		{
+			compiler.Output = configuration.get(Extension.Configuration.CompilerOutput) as string;
+			if (compiler.Output == undefined)
+			{
+				this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.CompilerOutput);
+				return false;
+			}
+			else if (FileSystem.existsSync(compiler.Output) == false)
+			{
+				this.WarnResourceMissing(compiler.Output);
+				return false;
+			}
+
+			compiler.Imports = configuration.get(Extension.Configuration.CompilerImports) as Array<string>;
+			if (compiler.Imports == undefined)
+			{
+				this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.CompilerImports);
+				return false;
+			}
+			else
+			{
+				for (let path of compiler.Imports)
+				{
+					if (FileSystem.existsSync(path) == false)
+					{
+						this.WarnResourceMissing(path);
+						return false;
+					}
+				}
+			}
+
+			if (FileSystem.lstatSync(compiler.Target).isDirectory())
+			{
+				compiler.All = true;
+				compiler.Imports.unshift(compiler.Target);
+			}
+			return true;
+		}
 	}
 
 
-	private WarnConfigurationMissing(sectionName: string, optionName?: string)
+	private Run(compiler: Compiler): void
+	{
+		let terminal: vscode.Terminal = vscode.window.createTerminal("Papyrus");
+		terminal.show();
+		terminal.sendText(compiler.Parameters);
+	}
+
+
+	private WarnConfigurationMissing(sectionName: string, optionName?: string): void
 	{
 		let message;
-		if (optionName) {
+		if (optionName)
+		{
 			message = 'Missing configuration. ' + sectionName + '.' + optionName;
-		} else {
+		} else
+		{
 			message = 'Missing configuration section. ' + sectionName;
 		}
+		vscode.window.showWarningMessage(message);
+		Extension.Log(this.ToString(), message);
+	}
+
+
+	private WarnResourceMissing(resource: string): void
+	{
+		let message = 'Missing resource. ' + resource;
 		vscode.window.showWarningMessage(message);
 		Extension.Log(this.ToString(), message);
 	}
@@ -133,27 +155,15 @@ export class Build extends Feature
 	{
 		return "Papyrus Build";
 	}
-
-
-	public dispose()
-	{
-		Extension.Log(this.ToString(), "Disposing this object.");
-		this.PapyrusTerminal.dispose();
-	}
-
 }
 
-/**
- * CompilerArguments
- * Release adds the "-r" and "-op" flags to the command, and release final uses the release flags plus the "-final" option.
- */
+
 class Compiler
 {
 	public Executable: string;
 	public Target: string;
-
-	public Imports: Array<string>;
 	public Output: string;
+	public Imports: Array<string>;
 	public Flags: string = Compiler.FLAGS_DEFAULT;
 	public Optimize: boolean = false;
 	public Release: boolean = false;
@@ -172,22 +182,6 @@ class Compiler
 	private static readonly QUIET: string = '-quiet';
 
 
-	public Execute(terminal: vscode.Terminal): boolean
-	{
-		if (!terminal)
-		{
-			return false;
-		}
-		else
-		{
-			Extension.Log("Compiler Settings", terminal.name + ': ' + this.Parameters);
-			terminal.show();
-			terminal.sendText(this.Parameters);
-			return true;
-		}
-	}
-
-
 	public get Parameters(): string
 	{
 		return this.ExecutableFile
@@ -202,25 +196,6 @@ class Compiler
 			+ this.QuietMode;
 	}
 
-
-	private ArrayToString(array: Array<string>): string
-	{
-		let value = '';
-		for (let element of array)
-		{
-			if (value == '')
-			{
-				value += element;
-			}
-			else
-			{
-				value += ';' + element;
-			}
-		}
-		return value;
-	}
-
-
 	private get ExecutableFile(): string
 	{
 		return '\"' + this.Executable + '\"';
@@ -231,20 +206,38 @@ class Compiler
 		return ' \"' + this.Target + '\"';
 	}
 
-	private get ImportList(): string
-	{
-		let values = this.ArrayToString(this.Imports);
-		return ' ' + Compiler.IMPORT + '\"' + values + '\"';
-	}
-
 	private get OutputDirectory(): string
 	{
-		return ' ' + Compiler.OUTPUT + '\"' + this.Output + '\"';
+		if (this.Output == undefined)
+		{
+			return '';
+		}
+		else
+		{
+			return ' ' + Compiler.OUTPUT + '\"' + this.Output + '\"';
+		}
+	}
+
+	private get ImportList(): string
+	{
+		if (this.Imports == undefined)
+		{
+			return '';
+		}
+		else
+		{
+			return ' ' + Compiler.IMPORT + '\"' + this.Imports.join(';') + '\"';
+		}
 	}
 
 	private get FlagsFile(): string
 	{
-		if (!this.Flags || this.Flags == '')
+		if (this.Imports == undefined)
+		{
+			// If no imports, then no flags
+			return '';
+		}
+		else if (this.Flags == undefined)
 		{
 			return ' ' + Compiler.FLAGS + '\"' + Compiler.FLAGS_DEFAULT + '\"';
 		}

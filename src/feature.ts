@@ -4,11 +4,6 @@ import { Extension } from './extension';
 
 export abstract class Feature
 {
-	constructor(context: vscode.ExtensionContext)
-	{
-		Extension.Subscribe(context, this);
-	}
-
 	protected Subscribe(context: vscode.ExtensionContext, subscription: any)
 	{
 		Extension.Subscribe(context, subscription);
@@ -27,6 +22,6 @@ export abstract class Feature
 		Extension.Log(this.ToString(), 'Has not implemented `OnCommand` for the `' + commandName + '` command.');
 	}
 
-
+	public dispose() {}
 	public abstract ToString(): string;
 }

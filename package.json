@@ -1,7 +1,7 @@
 {
 	"name": "papyrus",
 	"displayName": "Papyrus Code",
-	"description": "A package for working with Mark Hanna's Papyrus scripting language.",
+	"description": "A package for working with Bethesda's Papyrus scripting language.",
 	"publisher": "Scrivener07",
 	"version": "0.0.1",
 	"preview": true,
@@ -46,6 +46,8 @@
 		"test": "npm run compile && node ./node_modules/vscode/bin/test"
 	},
 	"activationEvents": [
+		"workspaceContains:Scripts/Source",
+		"workspaceContains:Data/Scripts/Source",
 		"onLanguage:papyrus",
 		"onLanguage:papyrus-assembly",
 		"onLanguage:papyrus-compiled",
@@ -65,6 +67,10 @@
 					"description": "Specifies a directory path where compiled papyrus files are output.",
 					"type": "string"
 				},
+				"papyrus.compiler.target": {
+					"description": "Specifies a file or directory path to compile.",
+					"type": "string"
+				},
 				"papyrus.compiler.imports": {
 					"description": "A list of import directories the papyrus compiler should use. Folders listed first override ones listed after.",
 					"uniqueItems": true,
@@ -80,71 +86,21 @@
 		"commands": [
 			{
 				"command": "papyrus.compile",
-				"title": "Compile",
+				"title": "Papyrus: Compile",
 				"icon": {
 					"dark": "images/icon.png",
 					"light": "images/icon.png"
 				}
 			}
 		],
-		"menus": {
-			"editor/context": [
-				{
-					"when": "resourceLangId == papyrus",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				},
-				{
-					"when": "resourceLangId == papyrus-project",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				}
-			],
-			"editor/title": [
-				{
-					"when": "resourceLangId == papyrus",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				},
-				{
-					"when": "resourceLangId == papyrus-project",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				}
-			],
-			"editor/title/context": [
-				{
-					"when": "resourceLangId == papyrus",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				},
-				{
-					"when": "resourceLangId == papyrus-project",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				}
-			],
-			"explorer/context": [
-				{
-					"when": "resourceLangId == papyrus",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				},
-				{
-					"when": "resourceLangId == papyrus-project",
-					"command": "papyrus.compile",
-					"alt": "papyrus.compile",
-					"group": "navigation"
-				}
-			]
-		},
+		"keybindings": [
+			{
+				"command": "papyrus.compile",
+				"key": "ctrl+b",
+				"mac": "cmd+b",
+				"when": "editorIsOpen"
+			}
+		],
 		"languages": [
 			{
 				"id": "papyrus",

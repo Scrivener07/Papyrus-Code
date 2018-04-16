@@ -33,6 +33,13 @@ export namespace Extension
 		context.subscriptions.push(subscription);
 	}
 
+	export namespace Language
+	{
+		export const Papyrus: string = 'papyrus';
+		export const PapyrusProject: string = 'papyrus-project';
+		export const PapyrusAssembly: string = 'papyrus-assembly';
+	}
+
 	export namespace Commands
 	{
 		export const Compile: string = 'papyrus.compile';
@@ -41,9 +48,8 @@ export namespace Extension
 	export namespace Configuration
 	{
 		export const Section: string = 'papyrus';
-		export const GameInstall: string = 'game.install';
-		export const GameUser: string = 'game.user';
 		export const CompilerExecutable: string = 'compiler.executable';
+		export const CompilerTarget: string = 'compiler.target';
 		export const CompilerOutput: string = 'compiler.output';
 		export const CompilerImports: string = 'compiler.imports';
 	}
