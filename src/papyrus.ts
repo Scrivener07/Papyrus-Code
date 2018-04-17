@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
 	Extension.Log('Papyrus is activated.');
 
 	vscode.window.onDidCloseTerminal((terminal) => {
-		if (terminal.name == Extension.VarReadOnly.TERMINAL_NAME) {
+		if (terminal.name == Extension.VarReadOnly.TERMINAL) {
 			Terminal = undefined;
 		}
 	});
@@ -187,7 +187,7 @@ export class Build extends Feature {
 			return false;
 		}
 
-		compiler.Directory = Path.join(GameifyPath(compiler.gamePath, compiler.Directory), 'PapyrusCompiler.exe');
+		compiler.Directory = Path.join(GameifyPath(compiler.gamePath, compiler.Directory), Extension.VarReadOnly.F4_COMPILER);
 		if (FileSystem.existsSync(compiler.Directory) == false) {
 			this.WarnResourceMissing(compiler.Directory);
 			return false;
@@ -284,12 +284,12 @@ export class Build extends Feature {
 			return false;
 		}
 
-		if (FileSystem.existsSync(Path.join(compiler.gamePath, "Fallout4.exe")) == false) {
+		if (FileSystem.existsSync(Path.join(compiler.gamePath, Extension.VarReadOnly.F4_EXECUTABLE)) == false) {
 			vscode.window.showErrorMessage("Fallout 4 is not installed in the configured game directory");
 			return false;
 		}
 
-		if (FileSystem.existsSync(Path.join(compiler.gamePath, "f4se_loader.exe")) == false) {
+		if (FileSystem.existsSync(Path.join(compiler.gamePath, Extension.VarReadOnly.F4_EXTENDER)) == false) {
 			vscode.window.showInformationMessage("F4SE is not installed!");
 		}
 
@@ -298,7 +298,7 @@ export class Build extends Feature {
 
 	private Compile(compiler: Compiler): void {
 		if (Terminal == undefined) {
-			Terminal = vscode.window.createTerminal(Extension.VarReadOnly.TERMINAL_NAME, "cmd.exe");
+			Terminal = vscode.window.createTerminal(Extension.VarReadOnly.TERMINAL, Extension.VarReadOnly.SHELL);
 		}
 
 		Terminal.sendText("cls"); Terminal.show();
@@ -353,7 +353,7 @@ export class Build extends Feature {
 class Compiler {
 	public Directory: string;
 	public Output: string;
-	public Flags: string = Compiler.FLAGS_DEFAULT;
+	public Flags: string = Extension.VarReadOnly.F4_FLAGS_DEFAULT;
 	public Asm: string;
 	public Project: boolean = false;
 	public Optimize: boolean = false;
@@ -363,8 +363,6 @@ class Compiler {
 	public Folders: Array<string>;
 	public Scripts: Array<string>;
 	public gamePath: string;
-
-	private static readonly FLAGS_DEFAULT: string = 'Institute_Papyrus_Flags.flg';
 
 	public get ProjectXML(): string {
 		var XMLWriter = require('xml-writer'); let xm = new XMLWriter(true); xm.startDocument();

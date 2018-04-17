@@ -54,6 +54,12 @@ export namespace Extension {
 	}
 
 	export namespace VarReadOnly {
-		export const TERMINAL_NAME: string = 'Papyrus-Code';
+		export const F4_FLAGS_DEFAULT: string = 'Institute_Papyrus_Flags.flg';
+		export const F4_COMPILER: string = 'PapyrusCompiler.exe';
+		export const F4_EXTENDER: string = 'f4se_launcher.exe';
+		export const F4_EXECUTABLE: string = 'Fallout4.exe';
+
+		export const TERMINAL: string = 'Papyrus-Code';
+		export const SHELL: string = 'cmd.exe';
 	}
 }
