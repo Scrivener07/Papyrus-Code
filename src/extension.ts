@@ -51,10 +51,6 @@ export namespace Extension {
 		export const F4_ImportDirectories: string = 'fo4.compiler.imports';
 		export const F4_OutputDirectory: string = 'fo4.compiler.output';
 		export const F4_AsmOptions: string = 'fo4.compiler.asm';
-	}
-
-	export namespace GVars {
-		// It's probably okay to refer to cmd.exe like this? Better than dealing with PowerShell?
-		export const Terminal: vscode.Terminal = vscode.window.createTerminal("Papyrus", "cmd.exe");
+		export const TERMINAL_NAME: string = 'Papyrus-Code';
 	}
 }

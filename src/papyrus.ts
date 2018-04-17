@@ -7,9 +7,18 @@ import { Extension } from './extension';
 import { Feature } from './feature';
 import { execSync } from 'child_process';
 
+// ???? Horrible Practice ????
+var Terminal: vscode.Terminal;
+
 export function activate(context: vscode.ExtensionContext) {
 	Extension.Subscribe(context, new Build(context));
 	Extension.Log('Papyrus is activated.');
+
+	vscode.window.onDidCloseTerminal((terminal) => {
+		if (terminal.name == Extension.Configuration.TERMINAL_NAME) {
+			Terminal = undefined;
+		}
+	});
 }
 
 export function deactivate() {
@@ -288,8 +297,12 @@ export class Build extends Feature {
 	}
 
 	private Compile(compiler: Compiler): void {
-		Extension.GVars.Terminal.sendText("cls"); Extension.GVars.Terminal.show();
-		Extension.GVars.Terminal.sendText(compiler.Parameters);
+		if (Terminal == undefined) {
+			Terminal = vscode.window.createTerminal(Extension.Configuration.TERMINAL_NAME, "cmd.exe");
+		}
+
+		Terminal.sendText("cls"); Terminal.show();
+		Terminal.sendText(compiler.Parameters);
 	}
 
 	private SaveProject(compiler: Compiler): void {
