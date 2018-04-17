@@ -82,7 +82,7 @@
 				"papyrus.fo4.compiler.target": {
 					"type": "string",
 					"default": "",
-					"description": "Specifies a file to be compiled with the \"Papyrus: Compile Target\" command."
+					"description": "Specifies a file to be compiled with the \"Papyrus: Compile Target\" command, supports relative pathing from the game directory."
 				},
 				"papyrus.fo4.compiler.asm": {
 					"type": "string",
