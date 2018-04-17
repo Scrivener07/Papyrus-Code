@@ -126,7 +126,7 @@
     },
     "Quest.OnStoryAddToPlayer": {
         "prefix": "onstoryaddtoplayer",
-        "body": "Event OnStoryAddToPlayer(ObjectReference akOwner, ObjectReference akContainer, Location akLocation, Form akItemBase, \\\r\n  int aiAcquireType)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnStoryAddToPlayer(ObjectReference akOwner, ObjectReference akContainer, Location akLocation, Form akItemBase, int aiAcquireType)\r\n    ${0}\r\nEndEvent",
         "description": "Event Quest.OnStoryAddToPlayer"
     },
     "Quest.OnStoryArrest": {
@@ -236,7 +236,7 @@
     },
     "Quest.OnStoryKillActor": {
         "prefix": "onstorykillactor",
-        "body": "Event OnStoryKillActor(ObjectReference akVictim, ObjectReference akKiller, Location akLocation, int aiCrimeStatus, \\\r\n  int aiRelationshipRank)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnStoryKillActor(ObjectReference akVictim, ObjectReference akKiller, Location akLocation, int aiCrimeStatus, int aiRelationshipRank)\r\n    ${0}\r\nEndEvent",
         "description": "Event Quest.OnStoryKillActor"
     },
     "Quest.OnStoryLocationLoaded": {
@@ -276,17 +276,17 @@
     },
     "Quest.OnStoryRelationshipChange": {
         "prefix": "onstoryrelationshipchange",
-        "body": "Event OnStoryRelationshipChange(ObjectReference akActor1, ObjectReference akActor2, int aiOldRelationship, \\\r\n  int aiNewRelationship)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnStoryRelationshipChange(ObjectReference akActor1, ObjectReference akActor2, int aiOldRelationship, int aiNewRelationship)\r\n    ${0}\r\nEndEvent",
         "description": "Event Quest.OnStoryRelationshipChange"
     },
     "Quest.OnStoryRemoveFromPlayer": {
         "prefix": "onstoryremovefromplayer",
-        "body": "Event OnStoryRemoveFromPlayer(ObjectReference akOwner, ObjectReference akItem, Location akLocation, \\\r\n  Form akItemBase, int aiRemoveType)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnStoryRemoveFromPlayer(ObjectReference akOwner, ObjectReference akItem, Location akLocation, Form akItemBase, int aiRemoveType)\r\n    ${0}\r\nEndEvent",
         "description": "Event Quest.OnStoryRemoveFromPlayer"
     },
     "Quest.OnStoryScript": {
         "prefix": "onstoryscript",
-        "body": "Event OnStoryScript(Keyword akKeyword, Location akLocation, ObjectReference akRef1, ObjectReference akRef2, \\\r\n  int aiValue1, int aiValue2)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnStoryScript(Keyword akKeyword, Location akLocation, ObjectReference akRef1, ObjectReference akRef2, int aiValue1, int aiValue2)\r\n    ${0}\r\nEndEvent",
         "description": "Event Quest.OnStoryScript"
     },
     "Quest.OnStoryServedTime": {
@@ -391,7 +391,7 @@
     },
     "Remote Quest.OnStoryAddToPlayer": {
         "prefix": "onstoryaddtoplayer-REM",
-        "body": "Event Quest.OnStoryAddToPlayer(Quest akSender, ObjectReference akOwner, ObjectReference akContainer, Location akLocation, Form akItemBase, \\\r\n  int aiAcquireType)\r\n    ${0}\r\nEndEvent",
+        "body": "Event Quest.OnStoryAddToPlayer(Quest akSender, ObjectReference akOwner, ObjectReference akContainer, Location akLocation, Form akItemBase, int aiAcquireType)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Quest.OnStoryAddToPlayer"
     },
     "Remote Quest.OnStoryArrest": {
@@ -501,7 +501,7 @@
     },
     "Remote Quest.OnStoryKillActor": {
         "prefix": "onstorykillactor-REM",
-        "body": "Event Quest.OnStoryKillActor(Quest akSender, ObjectReference akVictim, ObjectReference akKiller, Location akLocation, int aiCrimeStatus, \\\r\n  int aiRelationshipRank)\r\n    ${0}\r\nEndEvent",
+        "body": "Event Quest.OnStoryKillActor(Quest akSender, ObjectReference akVictim, ObjectReference akKiller, Location akLocation, int aiCrimeStatus, int aiRelationshipRank)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Quest.OnStoryKillActor"
     },
     "Remote Quest.OnStoryLocationLoaded": {
@@ -541,17 +541,17 @@
     },
     "Remote Quest.OnStoryRelationshipChange": {
         "prefix": "onstoryrelationshipchange-REM",
-        "body": "Event Quest.OnStoryRelationshipChange(Quest akSender, ObjectReference akActor1, ObjectReference akActor2, int aiOldRelationship, \\\r\n  int aiNewRelationship)\r\n    ${0}\r\nEndEvent",
+        "body": "Event Quest.OnStoryRelationshipChange(Quest akSender, ObjectReference akActor1, ObjectReference akActor2, int aiOldRelationship, int aiNewRelationship)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Quest.OnStoryRelationshipChange"
     },
     "Remote Quest.OnStoryRemoveFromPlayer": {
         "prefix": "onstoryremovefromplayer-REM",
-        "body": "Event Quest.OnStoryRemoveFromPlayer(Quest akSender, ObjectReference akOwner, ObjectReference akItem, Location akLocation, \\\r\n  Form akItemBase, int aiRemoveType)\r\n    ${0}\r\nEndEvent",
+        "body": "Event Quest.OnStoryRemoveFromPlayer(Quest akSender, ObjectReference akOwner, ObjectReference akItem, Location akLocation, Form akItemBase, int aiRemoveType)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Quest.OnStoryRemoveFromPlayer"
     },
     "Remote Quest.OnStoryScript": {
         "prefix": "onstoryscript-REM",
-        "body": "Event Quest.OnStoryScript(Quest akSender, Keyword akKeyword, Location akLocation, ObjectReference akRef1, ObjectReference akRef2, \\\r\n  int aiValue1, int aiValue2)\r\n    ${0}\r\nEndEvent",
+        "body": "Event Quest.OnStoryScript(Quest akSender, Keyword akKeyword, Location akLocation, ObjectReference akRef1, ObjectReference akRef2, int aiValue1, int aiValue2)\r\n    ${0}\r\nEndEvent",
         "description": "Remote Quest.OnStoryScript"
     },
     "Remote Quest.OnStoryServedTime": {

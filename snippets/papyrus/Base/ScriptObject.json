@@ -86,7 +86,7 @@
     },
     "ScriptObject.OnHit": {
         "prefix": "onhit",
-        "body": "Event OnHit(ObjectReference akTarget, ObjectReference akAggressor, Form akSource, Projectile akProjectile, bool abPowerAttack, \\\r\n  bool abSneakAttack, bool abBashAttack, bool abHitBlocked, string apMaterial)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnHit(ObjectReference akTarget, ObjectReference akAggressor, Form akSource, Projectile akProjectile, bool abPowerAttack,  bool abSneakAttack, bool abBashAttack, bool abHitBlocked, string apMaterial)\r\n    ${0}\r\nEndEvent",
         "description": "Event ScriptObject.OnHit"
     },
     "ScriptObject.OnInit": {

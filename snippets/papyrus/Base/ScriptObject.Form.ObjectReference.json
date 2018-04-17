@@ -876,7 +876,7 @@
     },
     "ObjectRef.OnTrapHitStart": {
         "prefix": "ontraphitstart",
-        "body": "Event OnTrapHitStart(ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
+        "body": "Event OnTrapHitStart(ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
         "description": "Event ObjectReference.OnTrapHitStart"
     },
     "ObjectRef.OnTrapHitStop": {
@@ -1481,7 +1481,7 @@
     },
     "Remote ObjectRef.OnTrapHitStart": {
         "prefix": "ontraphitstart-REM",
-        "body": "Event ObjectReference.OnTrapHitStart(ObjectReference akSender, ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, \\\r\n    float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
+        "body": "Event ObjectReference.OnTrapHitStart(ObjectReference akSender, ObjectReference akTarget, float afXVel, float afYVel, float afZVel, float afXPos, float afYPos, float afZPos, int aeMaterial, bool abInitialHit, int aeMotionType)\r\n    ${0}\r\nEndEvent",
         "description": "Remote ObjectReference.OnTrapHitStart"
     },
     "Remote ObjectRef.OnTrapHitStop": {
