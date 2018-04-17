@@ -45,6 +45,10 @@ export class Build extends Feature {
 
 		else {
 			let compiler = new Compiler();
+			if (this.InitGameDir(compiler, configuration) == false) {
+				return
+			}
+
 			if (commandName == Extension.Commands.Compile) {
 				if (this.Configure(compiler, configuration, undefined, false, false, false)) {
 					this.Compile(compiler);
@@ -65,10 +69,13 @@ export class Build extends Feature {
 
 			else if (commandName == Extension.Commands.CompileFile) {
 				var selection: Array<string> = new Array();
+				var defaultPath: vscode.Uri = vscode.Uri.file(Path.join(compiler.gamePath, "Data\\Scripts"));
+				// Data\Scripts is hardcoded, so provided gamePath is correct, we have no problems.
+
 				vscode.window.showOpenDialog({
 					canSelectFiles: true,
 					canSelectMany: true,
-					defaultUri: undefined,
+					defaultUri: defaultPath,
 					filters: {
 						'Papyrus Source': ['psc'],
 						'Papyrus Project': ['ppj']
@@ -88,10 +95,12 @@ export class Build extends Feature {
 
 			else if (commandName == Extension.Commands.CompileFolder) {
 				var selection: Array<string> = new Array();
+				var defaultPath: vscode.Uri = vscode.Uri.file(Path.join(compiler.gamePath, "Data\\Scripts"));
+
 				vscode.window.showOpenDialog({
 					canSelectFolders: true,
 					canSelectMany: true,
-					defaultUri: undefined
+					defaultUri: defaultPath
 				}).then(files => {
 					if (files) {
 						for (let i = 0; i < files.length; i++) {
@@ -107,6 +116,7 @@ export class Build extends Feature {
 
 			else if (commandName == Extension.Commands.CompileDefault) {
 				let compileTarget: Array<string> = new Array(); compileTarget.push(configuration.get(Extension.Configuration.F4_CompileTarget) as string);
+
 				if ((compileTarget[0] == undefined) || (compileTarget[0] == '')) {
 					this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_CompileTarget);
 					return;
@@ -118,7 +128,7 @@ export class Build extends Feature {
 						this.WarnResourceMissing(compileTarget[0]);
 						return;
 					}
-					
+
 					else {
 						compileTarget[0] = compileTargetTemp
 					}
@@ -131,10 +141,12 @@ export class Build extends Feature {
 
 			else if (commandName == Extension.Commands.CreateProject) {
 				var selection: Array<string> = new Array();
+				var defaultPath: vscode.Uri = vscode.Uri.file(Path.join(compiler.gamePath, "Data\\Scripts"));
+
 				vscode.window.showOpenDialog({
 					canSelectFiles: true,
 					canSelectMany: true,
-					defaultUri: undefined,
+					defaultUri: defaultPath,
 					filters: {
 						'Papyrus Source': ['psc']
 					}
@@ -154,16 +166,6 @@ export class Build extends Feature {
 	}
 
 	private Configure(compiler: Compiler, configuration: vscode.WorkspaceConfiguration, target: Array<string>, optimize: boolean, release: boolean, final: boolean): boolean {
-		compiler.gamePath = configuration.get(Extension.Configuration.F4_GameDirectory) as string;
-		if (compiler.gamePath == undefined) {
-			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_GameDirectory);
-			return false;
-
-		} else if (FileSystem.existsSync(compiler.gamePath) == false) {
-			this.WarnResourceMissing(compiler.gamePath);
-			return false;
-		}
-
 		compiler.Asm = configuration.get(Extension.Configuration.F4_AsmOptions) as string;
 		if (compiler.Asm == undefined) {
 			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_AsmOptions);
@@ -259,6 +261,29 @@ export class Build extends Feature {
 		compiler.Optimize = optimize;
 		compiler.Release = release;
 		compiler.Final = final;
+		return true;
+	}
+
+	private InitGameDir(compiler: Compiler, configuration: vscode.WorkspaceConfiguration): boolean {
+		compiler.gamePath = configuration.get(Extension.Configuration.F4_GameDirectory) as string;
+		if (compiler.gamePath == undefined) {
+			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_GameDirectory);
+			return false;
+
+		} else if (FileSystem.existsSync(compiler.gamePath) == false) {
+			this.WarnResourceMissing(compiler.gamePath);
+			return false;
+		}
+
+		if (FileSystem.existsSync(Path.join(compiler.gamePath, "Fallout4.exe")) == false) {
+			vscode.window.showErrorMessage("Fallout 4 is not installed in the configured game directory");
+			return false;
+		}
+
+		if (FileSystem.existsSync(Path.join(compiler.gamePath, "f4se_loader.exe")) == false) {
+			vscode.window.showInformationMessage("F4SE is not installed!");
+		}
+
 		return true;
 	}
 
