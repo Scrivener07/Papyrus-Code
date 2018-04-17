@@ -3,7 +3,7 @@
 	"displayName": "Papyrus Code",
 	"description": "A package for working with Bethesda's Papyrus scripting language.",
 	"publisher": "Scrivener07",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"preview": true,
 	"license": "SEE LICENSE IN LICENSE.md",
 	"homepage": "https://github.com/Scrivener07/Papyrus-Code/blob/master/README.md",
