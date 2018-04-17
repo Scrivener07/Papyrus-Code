@@ -51,7 +51,7 @@
                     "name": "comment.line.semicolon.papyrus"
                 },
                 {
-                    "match": "(?i)(conditional|default|hidden|native|debugonly|betaonly)",
+                    "match": "(?i)(const|conditional|default|hidden|native|debugonly|betaonly)",
                     "name": "keyword.language.script-flag.papyrus"
                 }
             ]
