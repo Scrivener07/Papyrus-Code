@@ -17,7 +17,6 @@ export function deactivate() {
 }
 
 function GameifyPath(gamePath: string, filePath: string): string {
-	// Is it okay for this function to just hang out here?
 	if (filePath.toLowerCase().includes(gamePath.toLowerCase()) == false) {
 		filePath = Path.join(gamePath, filePath);
 	}
@@ -114,8 +113,15 @@ export class Build extends Feature {
 				}
 
 				else if (FileSystem.existsSync(compileTarget[0]) == false) {
-					this.WarnResourceMissing(compiler.gamePath);
-					return;
+					let compileTargetTemp: string = GameifyPath(compiler.gamePath, compileTarget[0]);
+					if (FileSystem.existsSync(compileTargetTemp) == false) {
+						this.WarnResourceMissing(compileTarget[0]);
+						return;
+					}
+					
+					else {
+						compileTarget[0] = compileTargetTemp
+					}
 				}
 
 				if (this.Configure(compiler, configuration, compileTarget, false, false, false)) {
