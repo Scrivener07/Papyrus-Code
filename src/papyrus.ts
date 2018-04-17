@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
 	Extension.Log('Papyrus is activated.');
 
 	vscode.window.onDidCloseTerminal((terminal) => {
-		if (terminal.name == Extension.Configuration.TERMINAL_NAME) {
+		if (terminal.name == Extension.VarReadOnly.TERMINAL_NAME) {
 			Terminal = undefined;
 		}
 	});
@@ -298,7 +298,7 @@ export class Build extends Feature {
 
 	private Compile(compiler: Compiler): void {
 		if (Terminal == undefined) {
-			Terminal = vscode.window.createTerminal(Extension.Configuration.TERMINAL_NAME, "cmd.exe");
+			Terminal = vscode.window.createTerminal(Extension.VarReadOnly.TERMINAL_NAME, "cmd.exe");
 		}
 
 		Terminal.sendText("cls"); Terminal.show();
