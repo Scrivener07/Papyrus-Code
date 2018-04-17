@@ -24,16 +24,17 @@
 		"fallout-4"
 	],
 	"categories": [
-		"Programming Languages",
+		"Languages",
 		"Snippets",
 		"Other"
 	],
 	"engines": {
-		"vscode": "^1.17.0"
+		"vscode": "^1.21.0"
 	},
 	"devDependencies": {
 		"typescript": "^2.6.1",
 		"vscode": "^1.1.6",
+		"xml-writer": "^1.7.0",
 		"@types/node": "^7.0.43",
 		"@types/mocha": "^2.2.42"
 	},
@@ -46,39 +47,65 @@
 		"test": "npm run compile && node ./node_modules/vscode/bin/test"
 	},
 	"activationEvents": [
-		"workspaceContains:Scripts/Source",
-		"workspaceContains:Data/Scripts/Source",
 		"onLanguage:papyrus",
 		"onLanguage:papyrus-assembly",
 		"onLanguage:papyrus-compiled",
 		"onLanguage:papyrus-project",
-		"onCommand:papyrus.compile"
+		"onCommand:papyrus.compile",
+		"onCommand:papyrus.compilerelease",
+		"onCommand:papyrus.compilefinal",
+		"onCommand:papyrus.compilefile",
+		"onCommand:papyrus.compilefolder",
+		"onCommand:papyrus.compiledefault",
+		"onCommand:papyrus.createproject"
 	],
 	"contributes": {
 		"configuration": {
 			"type": "object",
 			"title": "Papyrus",
 			"properties": {
-				"papyrus.compiler.executable": {
-					"description": "Specifies a file path to `PapyrusCompiler.exe`.",
-					"type": "string"
+				"papyrus.fo4.directory": {
+					"type": "string",
+					"default": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fallout 4\\",
+					"description": "Specifies the path to Fallout 4's installation folder."
 				},
-				"papyrus.compiler.output": {
-					"description": "Specifies a directory path where compiled papyrus files are output.",
-					"type": "string"
+				"papyrus.fo4.compiler.directory": {
+					"type": "string",
+					"default": "Papyrus Compiler\\",
+					"description": "Specifies the path to the Papyrus Compiler, supports relative pathing from the game directory."
 				},
-				"papyrus.compiler.target": {
-					"description": "Specifies a file or directory path to compile.",
-					"type": "string"
+				"papyrus.fo4.compiler.output": {
+					"type": "string",
+					"default": "Data\\Scripts\\",
+					"description": "Specifies the path for compiled scripts, supports relative pathing from the game directory."
 				},
-				"papyrus.compiler.imports": {
-					"description": "A list of import directories the papyrus compiler should use. Folders listed first override ones listed after.",
-					"uniqueItems": true,
+				"papyrus.fo4.compiler.target": {
+					"type": "string",
+					"default": "",
+					"description": "Specifies a file to be compiled with the \"Papyrus: Compile Target\" command."
+				},
+				"papyrus.fo4.compiler.asm": {
+					"type": "string",
+					"default": "Discard",
+					"description": "Specify the Papyrus Compiler assembly mode. \n\"None\" disables all output, \"Only\" only generates Papyrus assembly, not compiled .pex, \"Discard\" generates .pex and deletes assembly, and \"Keep\" generates and keeps both .pex and assembly.",
+					"enum": [
+						"None",
+						"Keep",
+						"Only",
+						"Discard"
+					]
+				},
+				"papyrus.fo4.compiler.imports": {
 					"type": "array",
+					"default": [
+						"Data\\Scripts\\Source\\User",
+						"Data\\Scripts\\Source\\Base"
+					],
+					"description": "Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory.\nScript files listed located in import directories listed first will overwrite scripts of the same name in other directories.",
 					"items": {
 						"type": "string",
-						"default": "",
-						"description": "Import Directory"
+						"uniqueItems": true,
+						"minItems": 1
 					}
 				}
 			}
@@ -86,7 +113,55 @@
 		"commands": [
 			{
 				"command": "papyrus.compile",
-				"title": "Papyrus: Compile",
+				"title": "Papyrus: Compile (Debug)",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				}
+			},
+			{
+				"command": "papyrus.compilerelease",
+				"title": "Papyrus: Compile (Release)",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				}
+			},
+			{
+				"command": "papyrus.compilefinal",
+				"title": "Papyrus: Compile (Release Final)",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				}
+			},
+			{
+				"command": "papyrus.compilefile",
+				"title": "Papyrus: Compile File",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				}
+			},
+			{
+				"command": "papyrus.compilefolder",
+				"title": "Papyrus: Compile Folder",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				}
+			},
+			{
+				"command": "papyrus.compiledefault",
+				"title": "Papyrus: Compile Target",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				}
+			},
+			{
+				"command": "papyrus.createproject",
+				"title": "Papyrus: Create Project",
 				"icon": {
 					"dark": "images/icon.png",
 					"light": "images/icon.png"
@@ -98,7 +173,12 @@
 				"command": "papyrus.compile",
 				"key": "ctrl+b",
 				"mac": "cmd+b",
-				"when": "editorIsOpen"
+				"when": "editorFocus"
+			},
+			{
+				"command": "papyrus.compiledefault",
+				"key": "ctrl+shift+b",
+				"mac": "cmd+shift+b"
 			}
 		],
 		"languages": [

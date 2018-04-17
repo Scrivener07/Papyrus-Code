@@ -2,23 +2,19 @@
 import * as vscode from 'vscode';
 import { Extension } from './extension';
 
-export abstract class Feature
-{
-	protected Subscribe(context: vscode.ExtensionContext, subscription: any)
-	{
+export abstract class Feature {
+	protected Subscribe(context: vscode.ExtensionContext, subscription: any) {
 		Extension.Subscribe(context, subscription);
 	}
 
 	/** Registers a VS Code command for the `OnCommand` event. */
-	protected RegisterCommand(context: vscode.ExtensionContext, commandName: string)
-	{
+	protected RegisterCommand(context: vscode.ExtensionContext, commandName: string) {
 		Extension.Subscribe(context, vscode.commands.registerCommand(commandName, () => { this.OnCommand(commandName) }));
 		Extension.Log(this.ToString(), 'Registered for the `' + commandName + '` command event.');
 	}
 
 	/** Handles the `OnCommand` event for VS Code command registerations. */
-	protected OnCommand(commandName: string)
-	{
+	protected OnCommand(commandName: string) {
 		Extension.Log(this.ToString(), 'Has not implemented `OnCommand` for the `' + commandName + '` command.');
 	}
 
