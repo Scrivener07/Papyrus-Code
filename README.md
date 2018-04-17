@@ -42,12 +42,23 @@ This extension contributes the following settings. Add these to your user or wor
 ## Release Notes
 There are no release notes at this time.
 
+### 0.0.3
+* Added `papyrus.fo4.compiler.asm` configuration.
+* Added `papyrus.fo4.compiler.target` configuration.
+* Added `papyrus.createproject` command, which generates a ppj using file selection.
+* Added `papyrus.compiledefault` command, which compiles the psc, ppj, or folder set in `papyrus.fo4.compiler.target`, binds to `ctrl`+`shift`+`b` by default.
+* Prevented extension from creating a new terminal on every compilation.
+* Rewrote command names and configuration descriptions.
+* Added confirmation dialog to most error messages.
+* Added check to ensure that folder containing a script to be compiled is added to imports.
+
 ### 0.0.2
 * Thank you for your contributions [shad0wshayd3](https://github.com/shad0wshayd3).
 * Added the `const` script flag.
 * Added F4SE v0.6.7 snippet support.
 * Removed multiline function arguments from some snippets.
 * Fixed papyrus comments.
+
 ### 0.0.1
 * Changes including refactoring and reduction.
 
