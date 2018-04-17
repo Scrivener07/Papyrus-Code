@@ -37,15 +37,17 @@ This extension contributes the following settings. Add these to your user or wor
 * `Papyrus: Compile` The default keyboard mapping is `Ctrl` + `B`
 
 ## Known Issues
-* No relative paths in configuration settings.
-
+* Relative paths are not yet supported for papyrus compiler settings.
+* Possibly full of bugs ;)
 ## Release Notes
 There are no release notes at this time.
 
 ### 0.0.2
+* Thank you for your contributions [shad0wshayd3](https://github.com/shad0wshayd3).
 * Added the `const` script flag.
 * Added F4SE v0.6.7 snippet support.
-
+* Removed multiline function arguments from some snippets.
+* Fixed papyrus comments.
 ### 0.0.1
 * Changes including refactoring and reduction.
 
