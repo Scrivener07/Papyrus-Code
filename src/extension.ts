@@ -59,6 +59,7 @@ export namespace Extension {
 		export const F4_EXTENDER: string = 'f4se_launcher.exe';
 		export const F4_EXECUTABLE: string = 'Fallout4.exe';
 
+		export const PROJECT: string = '\\PapyrusCodeTemp.ppj';
 		export const TERMINAL: string = 'Papyrus-Code';
 		export const SHELL: string = 'cmd.exe';
 	}

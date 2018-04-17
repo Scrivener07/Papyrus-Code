@@ -399,10 +399,10 @@ class Compiler {
 		}
 
 		else {
-			let tempDir: string = Path.join(tmpdir(), "Papyrus-Code");
+			let tempDir: string = Path.join(tmpdir(), Extension.VarReadOnly.TERMINAL);
 			if (FileSystem.existsSync(tempDir) == false) { FileSystem.mkdirSync(tempDir); }
 
-			let filePath: string = Path.join(tempDir, "\\PapyrusCodeTemp.ppj");
+			let filePath: string = Path.join(tempDir, Extension.VarReadOnly.PROJECT);
 			FileSystem.writeFileSync(filePath, this.ProjectXML);
 
 			return "\"" + this.Directory + "\" \"" + filePath + "\"";
