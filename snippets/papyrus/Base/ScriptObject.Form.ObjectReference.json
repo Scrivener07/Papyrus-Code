@@ -1598,5 +1598,15 @@
         "prefix": "applymaterialswap",
         "body": "ApplyMaterialSwap(${1:MatSwap akMatSwap}, ${2:bool abRename = False})${0}",
         "description": "ObjectReference"
+    },
+    "ObjectRef.GetMaterialSwap": {
+        "prefix": "getmaterialswap",
+        "body": "GetMaterialSwap()${0}",
+        "description": "ObjectReference"
+    },
+    "ObjectRef.SetMaterialSwap": {
+        "prefix": "setmaterialswap",
+        "body": "SetMaterialSwap(${1:MatSwap akMatSwap})${0}",
+        "description": "ObjectReference"
     }
 }
