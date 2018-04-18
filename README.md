@@ -47,7 +47,7 @@ There are no known issues at this time.
 ## Release Notes
 There are no release notes at this time.
 
-### [1.0.0]
+### [1.0.0] [Details](https://github.com/Scrivener07/Papyrus-Code/releases/tag/1.0.0)
 * Added *Compile (Debug)*, *Compile (Release)*, and *Compile (Release Final)* commands for the active file.
 * Added *Compile File* and *Compile Folder* commands with **FileDialog** for compilation selection.
 * Added *Compile Default* command, works like original **Compile** to build a configured file, or folder.
@@ -60,16 +60,16 @@ There are no release notes at this time.
 * Changed, rewrote description fields for the extension **Settings** and **Commands**.
 * Fixed, prevent extension from creating more than one **Terminal** instance.
 
-### [0.0.2]
+### [0.0.2] [Details](https://github.com/Scrivener07/Papyrus-Code/releases/tag/0.0.2)
 * Thank you for your contributions [shad0wshayd3](https://github.com/shad0wshayd3).
 * Added the `const` script flag.
 * Added F4SE v0.6.7 snippet support.
 * Removed multiline function arguments from some snippets.
 * Fixed papyrus comments.
 
-### [0.0.1]
+### [0.0.1] [Details](https://github.com/Scrivener07/Papyrus-Code/releases/tag/0.0.1)
 * Changed, refactoring and reduction to the code base.
 * Removed unnecessary or experimental features.
 
 ### [0.0.0]
-* Github Only
+* [GitHub Only](https://github.com/Scrivener07/Papyrus-Code)
