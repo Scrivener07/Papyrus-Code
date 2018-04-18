@@ -56,7 +56,7 @@ There are no release notes at this time.
 * Added **Papyrus** ASM compilation options to the extension **Settings**.
 * Changed, rewrote **Compiler** interface to generate **Papyrus Project** files, rather than running command line statements.
 * Changed, refactored extension **Setting** with per-game support, Fallout 4 is still the only supported game however.
-* Changed, rewrote various error messages to be clearer, and add confirmation to error messages.
+* Changed, rewrote various error messages to be clearer, added confirmation to error messages.
 * Changed, rewrote description fields for the extension **Settings** and **Commands**.
 * Fixed, prevent extension from creating more than one **Terminal** instance.
 
@@ -69,7 +69,7 @@ There are no release notes at this time.
 
 ### [0.0.1]
 * Changed, refactoring and reduction to the code base.
-* Removed unnecessary or expirmental features.
+* Removed unnecessary or experimental features.
 
 ### [0.0.0]
 * Github Only
