@@ -33,6 +33,11 @@ function GameifyPath(gamePath: string, filePath: string): string {
 	return filePath;
 }
 
+function GetScriptPath(gamePath: string, folder?: string): vscode.Uri {
+	// Data\Scripts is hardcoded, so provided gamePath is correct, we have no problems.
+	return vscode.Uri.file(Path.join(gamePath, 'Data\\Scripts', folder));
+}
+
 export class Build extends Feature {
 	constructor(context: vscode.ExtensionContext) {
 		super();
@@ -78,13 +83,10 @@ export class Build extends Feature {
 
 			else if (commandName == Extension.Commands.CompileFile) {
 				var selection: Array<string> = new Array();
-				var defaultPath: vscode.Uri = vscode.Uri.file(Path.join(compiler.gamePath, "Data\\Scripts"));
-				// Data\Scripts is hardcoded, so provided gamePath is correct, we have no problems.
-
 				vscode.window.showOpenDialog({
 					canSelectFiles: true,
 					canSelectMany: true,
-					defaultUri: defaultPath,
+					defaultUri: GetScriptPath(compiler.gamePath, 'Source'),
 					filters: {
 						'Papyrus Source': ['psc'],
 						'Papyrus Project': ['ppj']
@@ -104,12 +106,10 @@ export class Build extends Feature {
 
 			else if (commandName == Extension.Commands.CompileFolder) {
 				var selection: Array<string> = new Array();
-				var defaultPath: vscode.Uri = vscode.Uri.file(Path.join(compiler.gamePath, "Data\\Scripts"));
-
 				vscode.window.showOpenDialog({
 					canSelectFolders: true,
 					canSelectMany: true,
-					defaultUri: defaultPath
+					defaultUri: GetScriptPath(compiler.gamePath, 'Source')
 				}).then(files => {
 					if (files) {
 						for (let i = 0; i < files.length; i++) {
@@ -150,12 +150,10 @@ export class Build extends Feature {
 
 			else if (commandName == Extension.Commands.CreateProject) {
 				var selection: Array<string> = new Array();
-				var defaultPath: vscode.Uri = vscode.Uri.file(Path.join(compiler.gamePath, "Data\\Scripts"));
-
 				vscode.window.showOpenDialog({
 					canSelectFiles: true,
 					canSelectMany: true,
-					defaultUri: defaultPath,
+					defaultUri: GetScriptPath(compiler.gamePath, 'Source'),
 					filters: {
 						'Papyrus Source': ['psc']
 					}
@@ -201,7 +199,7 @@ export class Build extends Feature {
 		else {
 			for (let path of compiler.Imports) {
 				path = GameifyPath(compiler.gamePath, path);
-				if (FileSystem.existsSync(path) == false){
+				if (FileSystem.existsSync(path) == false) {
 					this.WarnResourceMissing(path);
 					return false;
 				}
