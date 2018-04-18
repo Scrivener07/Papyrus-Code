@@ -34,8 +34,11 @@ function GameifyPath(gamePath: string, filePath: string): string {
 }
 
 function GetScriptPath(gamePath: string, folder?: string): vscode.Uri {
-	// Data\Scripts is hardcoded, so provided gamePath is correct, we have no problems.
-	return vscode.Uri.file(Path.join(gamePath, 'Data\\Scripts', folder));
+	if (folder) {
+		return vscode.Uri.file(Path.join(gamePath, 'Data\\Scripts', folder));
+	} else {
+		return vscode.Uri.file(Path.join(gamePath, 'Data\\Scripts'));
+	}
 }
 
 export class Build extends Feature {
