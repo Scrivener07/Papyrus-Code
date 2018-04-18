@@ -39,28 +39,32 @@ This extension contributes the following settings. Add these to your user or wor
 ## Known Issues
 * Relative paths are not yet supported for papyrus compiler settings.
 * Possibly full of bugs ;)
+
 ## Release Notes
 There are no release notes at this time.
 
-### 0.0.3
-* Added `papyrus.fo4.compiler.asm` configuration.
-* Added `papyrus.fo4.compiler.target` configuration.
-* Added `papyrus.createproject` command, which generates a ppj using file selection.
-* Added `papyrus.compiledefault` command, which compiles the psc, ppj, or folder set in `papyrus.fo4.compiler.target`, binds to `ctrl`+`shift`+`b` by default.
-* Prevented extension from creating a new terminal on every compilation.
-* Rewrote command names and configuration descriptions.
-* Added confirmation dialog to most error messages.
-* Added check to ensure that folder containing a script to be compiled is added to imports.
+### [1.0.0]
+* Changed **Compiler** interface to generate **Papyrus Project** files, rather than running command line statements.
+* Changed, refactor extension **Configuration** with per-game support, Fallout 4 is still the only supported game however.
+* Added support for relative pathing on some extension **Configurations**.
+* Added **Papyrus** ASM compilation options to the **Extension Configuration** settings.
+* Added *Compile (Debug)*, *Compile (Release)*, and *Compile (Release Final)* commands for the active file.
+* Added *Compile File* and *Compile Folder* commands with **FileDialog** for compilation selection.
+* Added *Compile Default* command, works like original **Compile** to build a configured file, or folder.
+* Added *Create Project* command, to create and save **Papyrus Project** files.
+* Fixed, prevent extension from creating more than one **Terminal** instance.
+* Changed, rewrote various error messages to be clearer, and add confirmation to error messages.
+* Changed, rewrote description fields for the extension **Configurations** and **Commands**.
 
-### 0.0.2
+### [0.0.2]
 * Thank you for your contributions [shad0wshayd3](https://github.com/shad0wshayd3).
 * Added the `const` script flag.
 * Added F4SE v0.6.7 snippet support.
 * Removed multiline function arguments from some snippets.
 * Fixed papyrus comments.
 
-### 0.0.1
+### [0.0.1]
 * Changes including refactoring and reduction.
 
-### 0.0.0
+### [0.0.0]
 * Github Only
