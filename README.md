@@ -6,7 +6,7 @@ A VS Code package for working with Bethesda's Papyrus scripting language.
 Papyrus.
 - [x] Syntax Colorizer
 - [x] Snippets
-- [x] Compilation of files,folders, and projects.
+- [x] Compilation of files, folders, and projects.
 
 Papyrus Assembly
 - [x] Syntax Colorizer
@@ -22,20 +22,17 @@ Papyrus Project
 * Download and install from the VS Code extension manager or [side-load](https://code.visualstudio.com/docs/extensions/yocode#_your-extensions-folder) it into VS Code.
 * Open and configure Papyrus options through the VS Code settings window if necessary. 
 
-## Extension
-Papyrus Code adds Papyrus support to various contribution points in the VS Code editor.
-
-### Settings
-This extension contributes the following settings. Add these to your user or workspace settings.
+## Settings
+This extension contributes the following settings to the VS Code editor. Add these to your user or workspace settings.
 * `papyrus.fo4.directory`	Specifies the path to Fallout 4's installation folder.
 * `papyrus.fo4.compiler.directory`	Specifies the path to the Papyrus Compiler, supports relative pathing from the game directory.
 * `papyrus.fo4.compiler.output`	Specifies the path for compiled scripts, supports relative pathing from the game directory.
-* `papyrus.fo4.compiler.target`	Specifies a file to be compiled with the "Papyrus: Compile Target" command, supports relative pathing from the game directory.
-* `papyrus.fo4.compiler.asm`	Specify the Papyrus Compiler assembly mode. "None" disables all output, "Only" only generates Papyrus assembly, not compiled .pex, "Discard" generates .pex and deletes assembly, and "Keep" generates and keeps both .pex and assembly.
-* `papyrus.fo4.compiler.imports`	Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory. Script files listed located in import directories listed first will overwrite scripts of the same name in other directories.
+* `papyrus.fo4.compiler.target`	Specifies a file to be compiled with the *Papyrus: Compile Target* command, supports relative pathing from the game directory.
+* `papyrus.fo4.compiler.asm`	Specify the Papyrus Compiler assembly mode. `None` disables all output, `Only` only generates Papyrus assembly, not compiled .pex, `Discard` generates .pex and deletes assembly, and `Keep` generates and keeps both .pex and assembly.
+* `papyrus.fo4.compiler.imports`	Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory. Script files located in import directories listed first will overwrite scripts of the same name in other directories.
 
 ### Commands
-This extension contributes the following commands. Execute these through the command palette.
+This extension contributes the following commands to the VS Code editor. Execute these through the command palette.
 * *Papyrus: Compile (Debug)*: The default keyboard mapping is `Ctrl`+`B`
 * *Papyrus: Compile (Release)*
 * *Papyrus: Compile (Release Final)*
