@@ -62,6 +62,8 @@ export class Build extends Feature {
 
 		else {
 			let compiler = new Compiler();
+			vscode.window.activeTextEditor.document.save()
+
 			if (this.InitGameDir(compiler, configuration) == false) {
 				return
 			}
