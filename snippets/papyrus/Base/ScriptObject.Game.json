@@ -516,7 +516,7 @@
     },
     "Game.ShowSPECIALMenu": {
         "prefix": "showspecialmenu",
-        "body": "Game.ShowSPECIALMenu(${1:int aiPointPool}, ${2:bool abStatsLocked})${0}",
+        "body": "Game.ShowSPECIALMenu()${0}",
         "description": "Game"
     },
     "Game.ShowTitleSequenceMenu": {
