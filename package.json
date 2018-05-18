@@ -32,12 +32,11 @@
 		"vscode": "^1.21.0"
 	},
 	"devDependencies": {
-		"@types/mocha": "^2.2.42",
-		"@types/node": "^7.0.64",
-		"typescript": "^2.8.3",
-		"vscode": "^1.1.17",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
 		"xml-writer": "^1.7.0",
-		"hoek": "5.0.3"
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
 	},
 	"main": "./out/src/extension",
 	"scripts": {
