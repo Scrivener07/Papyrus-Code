@@ -12,6 +12,7 @@ typeDefinition
     |   K_VAR
     |   namespace
     |   typeDefinition L_ARRAY
+    |   K_CUSTOMEVENTNAME // Used by ScriptObject.SendCustomEvent
     ;
 
 literalDefinition
