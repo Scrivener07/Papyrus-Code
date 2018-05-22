@@ -61,6 +61,8 @@ blockDeclaration
     |   structDeclaration
     |   groupDeclaration
     |   stateDeclaration
+    |   importDeclaration
+    |   customEventDeclaration
     ;
 
 /** Property */
