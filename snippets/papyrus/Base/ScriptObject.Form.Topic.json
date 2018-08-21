@@ -1,7 +1,0 @@
-{
-    "Topic.Add": {
-        "prefix": "add",
-        "body": "Add()${0}",
-        "description": "Topic"
-    }
-}

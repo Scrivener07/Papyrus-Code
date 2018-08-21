@@ -1,75 +1,65 @@
-# Papyrus-Code
-A VS Code package for working with Bethesda's Papyrus scripting language.
+# papyrus-code README
+
+This is the README for your extension "papyrus-code". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
-Papyrus.
-- [x] Syntax Colorizer
-- [x] Snippets
-- [x] Compilation of files, folders, and projects.
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-Papyrus Assembly
-- [x] Syntax Colorizer
-- [ ] Snippets
+For example if there is an image subfolder under your extension project workspace:
 
-Papyrus Project
-- [x] Syntax Colorizer
-- [x] Snippets
+\!\[feature X\]\(images/feature-x.png\)
 
-![](images/feature-1.gif)
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Installing
-* Download and install from the VS Code extension manager or [side-load](https://code.visualstudio.com/docs/extensions/yocode#_your-extensions-folder) it into VS Code.
-* Open and configure Papyrus options through the VS Code settings window if necessary. 
+## Requirements
 
-## Settings
-This extension contributes the following settings to the VS Code editor. Add these to your user or workspace settings.
-* `papyrus.fo4.directory`	Specifies the path to Fallout 4's installation folder.
-* `papyrus.fo4.compiler.directory`	Specifies the path to the Papyrus Compiler, supports relative pathing from the game directory.
-* `papyrus.fo4.compiler.output`	Specifies the path for compiled scripts, supports relative pathing from the game directory.
-* `papyrus.fo4.compiler.target`	Specifies a file to be compiled with the *Papyrus: Compile Target* command, supports relative pathing from the game directory.
-* `papyrus.fo4.compiler.asm`	Specify the Papyrus Compiler assembly mode. `None` disables all output, `Only` only generates Papyrus assembly, not compiled .pex, `Discard` generates .pex and deletes assembly, and `Keep` generates and keeps both .pex and assembly.
-* `papyrus.fo4.compiler.imports`	Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory. Script files located in import directories listed first will overwrite scripts of the same name in other directories.
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-### Commands
-This extension contributes the following commands to the VS Code editor. Execute these through the command palette.
-* *Papyrus: Compile (Debug)*: The default keyboard mapping is `Ctrl`+`B`
-* *Papyrus: Compile (Release)*
-* *Papyrus: Compile (Release Final)*
-* *Papyrus: Compile File*
-* *Papyrus: Compile Folder*
-* *Papyrus: Compile Target*: The default keyboard mapping is `Ctrl`+`Shift`+`B`
-* *Papyrus: Create Project*
+## Extension Settings
+
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+
+For example:
+
+This extension contributes the following settings:
+
+* `myExtension.enable`: enable/disable this extension
+* `myExtension.thing`: set to `blah` to do something
 
 ## Known Issues
-There are no known issues at this time.
+
+Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
-There are no release notes at this time.
 
-### [1.0.0] [Details](https://github.com/Scrivener07/Papyrus-Code/releases/tag/1.0.0)
-* Added *Compile (Debug)*, *Compile (Release)*, and *Compile (Release Final)* commands for the active file.
-* Added *Compile File* and *Compile Folder* commands with **FileDialog** for compilation selection.
-* Added *Compile Default* command, works like original **Compile** to build a configured file, or folder.
-* Added *Create Project* command, to create and save **Papyrus Project** files.
-* Added support for relative pathing on some extension **Settings**.
-* Added **Papyrus** ASM compilation options to the extension **Settings**.
-* Changed, rewrote **Compiler** interface to generate **Papyrus Project** files, rather than running command line statements.
-* Changed, refactored extension **Setting** with per-game support, Fallout 4 is still the only supported game however.
-* Changed, rewrote various error messages to be clearer, added confirmation to error messages.
-* Changed, rewrote description fields for the extension **Settings** and **Commands**.
-* Fixed, prevent extension from creating more than one **Terminal** instance.
+Users appreciate release notes as you update your extension.
 
-### [0.0.2] [Details](https://github.com/Scrivener07/Papyrus-Code/releases/tag/0.0.2)
-* Thank you for your contributions [shad0wshayd3](https://github.com/shad0wshayd3).
-* Added the `const` script flag.
-* Added F4SE v0.6.7 snippet support.
-* Removed multiline function arguments from some snippets.
-* Fixed papyrus comments.
+### 1.0.0
 
-### [0.0.1] [Details](https://github.com/Scrivener07/Papyrus-Code/releases/tag/0.0.1)
-* Changed, refactoring and reduction to the code base.
-* Removed unnecessary or experimental features.
+Initial release of ...
 
-### [0.0.0]
-* [GitHub Only](https://github.com/Scrivener07/Papyrus-Code)
+### 1.0.1
+
+Fixed issue #.
+
+### 1.1.0
+
+Added features X, Y, and Z.
+
+-----------------------------------------------------------------------------------------------------------
+
+## Working with Markdown
+
+**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+
+### For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**

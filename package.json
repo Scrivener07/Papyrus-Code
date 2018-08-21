@@ -1,539 +1,262 @@
 {
-	"name": "papyrus",
-	"displayName": "Papyrus Code",
-	"description": "A package for working with Bethesda's Papyrus scripting language.",
-	"publisher": "Scrivener07",
-	"version": "1.0.1",
-	"preview": true,
-	"license": "SEE LICENSE IN LICENSE.md",
-	"homepage": "https://github.com/Scrivener07/Papyrus-Code/blob/master/README.md",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Scrivener07/Papyrus-Code.git"
-	},
-	"bugs": {
-		"url": "https://github.com/Scrivener07/Papyrus-Code/issues"
-	},
-	"icon": "images/icon.png",
-	"galleryBanner": {
-		"color": "#1e415e",
-		"theme": "dark"
-	},
-	"keywords": [
-		"papyrus",
-		"fallout-4"
-	],
-	"categories": [
-		"Languages",
-		"Snippets",
-		"Other"
-	],
-	"engines": {
-		"vscode": "^1.21.0"
-	},
-	"devDependencies": {
-		"typescript": "^2.6.1",
-		"vscode": "^1.1.6",
-		"xml-writer": "^1.7.0",
-		"@types/node": "^7.0.43",
-		"@types/mocha": "^2.2.42"
-	},
-	"main": "./out/src/extension",
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
-	},
-	"activationEvents": [
-		"onLanguage:papyrus",
-		"onLanguage:papyrus-assembly",
-		"onLanguage:papyrus-compiled",
-		"onLanguage:papyrus-project",
-		"onCommand:papyrus.compile",
-		"onCommand:papyrus.compilerelease",
-		"onCommand:papyrus.compilefinal",
-		"onCommand:papyrus.compilefile",
-		"onCommand:papyrus.compilefolder",
-		"onCommand:papyrus.compiledefault",
-		"onCommand:papyrus.createproject"
-	],
-	"contributes": {
-		"configuration": {
-			"type": "object",
-			"title": "Papyrus",
-			"properties": {
-				"papyrus.fo4.directory": {
-					"type": "string",
-					"default": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fallout 4\\",
-					"description": "Specifies the path to Fallout 4's installation folder."
-				},
-				"papyrus.fo4.compiler.directory": {
-					"type": "string",
-					"default": "Papyrus Compiler\\",
-					"description": "Specifies the path to the Papyrus Compiler, supports relative pathing from the game directory."
-				},
-				"papyrus.fo4.compiler.output": {
-					"type": "string",
-					"default": "Data\\Scripts\\",
-					"description": "Specifies the path for compiled scripts, supports relative pathing from the game directory."
-				},
-				"papyrus.fo4.compiler.target": {
-					"type": "string",
-					"default": "",
-					"description": "Specifies a file to be compiled with the \"Papyrus: Compile Target\" command, supports relative pathing from the game directory."
-				},
-				"papyrus.fo4.compiler.asm": {
-					"type": "string",
-					"default": "Discard",
-					"description": "Specify the Papyrus Compiler assembly mode. \n\"None\" disables all output, \"Only\" only generates Papyrus assembly, not compiled .pex, \"Discard\" generates .pex and deletes assembly, and \"Keep\" generates and keeps both .pex and assembly.",
-					"enum": [
-						"None",
-						"Keep",
-						"Only",
-						"Discard"
-					]
-				},
-				"papyrus.fo4.compiler.imports": {
-					"type": "array",
-					"default": [
-						"Data\\Scripts\\Source\\User",
-						"Data\\Scripts\\Source\\Base"
-					],
-					"description": "Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory.\nScript files listed located in import directories listed first will overwrite scripts of the same name in other directories.",
-					"items": {
-						"type": "string",
-						"uniqueItems": true,
-						"minItems": 1
-					}
-				}
-			}
-		},
-		"commands": [
-			{
-				"command": "papyrus.compile",
-				"title": "Papyrus: Compile (Debug)",
-				"icon": {
-					"dark": "images/icon.png",
-					"light": "images/icon.png"
-				}
-			},
-			{
-				"command": "papyrus.compilerelease",
-				"title": "Papyrus: Compile (Release)",
-				"icon": {
-					"dark": "images/icon.png",
-					"light": "images/icon.png"
-				}
-			},
-			{
-				"command": "papyrus.compilefinal",
-				"title": "Papyrus: Compile (Release Final)",
-				"icon": {
-					"dark": "images/icon.png",
-					"light": "images/icon.png"
-				}
-			},
-			{
-				"command": "papyrus.compilefile",
-				"title": "Papyrus: Compile File",
-				"icon": {
-					"dark": "images/icon.png",
-					"light": "images/icon.png"
-				}
-			},
-			{
-				"command": "papyrus.compilefolder",
-				"title": "Papyrus: Compile Folder",
-				"icon": {
-					"dark": "images/icon.png",
-					"light": "images/icon.png"
-				}
-			},
-			{
-				"command": "papyrus.compiledefault",
-				"title": "Papyrus: Compile Target",
-				"icon": {
-					"dark": "images/icon.png",
-					"light": "images/icon.png"
-				}
-			},
-			{
-				"command": "papyrus.createproject",
-				"title": "Papyrus: Create Project",
-				"icon": {
-					"dark": "images/icon.png",
-					"light": "images/icon.png"
-				}
-			}
-		],
-		"keybindings": [
-			{
-				"command": "papyrus.compile",
-				"key": "ctrl+b",
-				"mac": "cmd+b",
-				"when": "editorFocus"
-			},
-			{
-				"command": "papyrus.compiledefault",
-				"key": "ctrl+shift+b",
-				"mac": "cmd+shift+b"
-			}
-		],
-		"languages": [
-			{
-				"id": "papyrus",
-				"aliases": [
-					"Papyrus",
-					"papyrus"
-				],
-				"extensions": [
-					".psc"
-				],
-				"configuration": "./syntaxes/papyrus/papyrus-configuration.json"
-			},
-			{
-				"id": "papyrus-assembly",
-				"aliases": [
-					"Papyrus Assembly",
-					"papyrus-assembly"
-				],
-				"extensions": [
-					".pas"
-				],
-				"configuration": "./syntaxes/papyrus-assembly/papyrus-assembly-configuration.json"
-			},
-			{
-				"id": "papyrus-compiled",
-				"aliases": [
-					"Papyrus Compiled",
-					"papyrus-compiled"
-				],
-				"extensions": [
-					".pex"
-				],
-				"configuration": "./syntaxes/papyrus-compiled/papyrus-compiled-configuration.json"
-			},
-			{
-				"id": "papyrus-project",
-				"aliases": [
-					"Papyrus Project",
-					"papyrus-project"
-				],
-				"extensions": [
-					".ppj"
-				],
-				"configuration": "./syntaxes/papyrus-project/papyrus-project-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "papyrus",
-				"scopeName": "source.papyrus",
-				"path": "./syntaxes/papyrus/papyrus.json"
-			},
-			{
-				"language": "papyrus-assembly",
-				"scopeName": "source.papyrus-assembly",
-				"path": "./syntaxes/papyrus-assembly/papyrus-assembly.json"
-			},
-			{
-				"language": "papyrus-compiled",
-				"scopeName": "source.papyrus-compiled",
-				"path": "./syntaxes/papyrus-compiled/papyrus-compiled.json"
-			},
-			{
-				"language": "papyrus-project",
-				"scopeName": "text.xml.papyrus-project",
-				"path": "./syntaxes/papyrus-project/papyrus-project.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/papyrus-arrays.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/papyrus-classes.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/papyrus-comments.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/papyrus-statements.json"
-			},
-			{
-				"language": "papyrus-project",
-				"path": "./snippets/papyrus-project/papyrus-project.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.ActiveMagicEffect.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Alias.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Alias.LocationAlias.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Alias.RefCollectionAlias.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Alias.ReferenceAlias.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.CommonArrayFunctions.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Debug.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.F4SE.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Activator.Furniture.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Activator.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.ActorBase.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Cell.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Component.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.ConstructibleObject.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.DefaultObject.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.EffectShader.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Enchantment.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.EncounterZone.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.EquipSlot.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Faction.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.FormList.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.GlobalVariable.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.HeadPart.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.ImageSpaceModifier.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Ingredient.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.InstanceNamingRules.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Keyword.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.LeveledActor.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.LeveledItem.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.LeveledSpell.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Location.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.MagicEffect.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.MatSwap.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Message.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.MiscObject.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.MusicType.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.ObjectMod.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.ObjectReference.Actor.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.ObjectReference.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Package.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Perk.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Potion.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Quest.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Scene.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Scroll.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.ShaderParticleGeometry.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Sound.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.SoundCategory.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.SoundCategorySnapshot.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Spell.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Terminal.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Topic.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.TopicInfo.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.VisualEffect.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.WaterType.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Weapon.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Form.Weather.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Game.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.InputEnableLayer.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Input.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.InstanceData.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Math.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.UI.json"
-			},
-			{
-				"language": "papyrus",
-				"path": "./snippets/papyrus/Base/ScriptObject.Utility.json"
-			}
-		]
-	}
+    "name": "papyrus-code",
+    "displayName": "Papyrus Code",
+    "description": "An extension for Bethesda Game Studio's Papyrus scripting language.",
+    "publisher": "shad0wshayd3",
+    "version": "2.0.0",
+    "license": "MIT",
+    "homepage": "https://github.com/Scrivener07/Papyrus-Code",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Scrivener07/Papyrus-Code.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Scrivener07/Papyrus-Code/issues"
+    },
+    "keywords": [
+        "papyrus",
+        "fallout",
+        "skyrim"
+    ],
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "main": "./out/extension",
+    "dependencies": {
+        "xml-writer": "^1.7.0"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "activationEvents": [
+        "onLanguage:papyrus-fo4",
+        "onLanguage:papyrus-sse",
+        "onLanguage:papyrus-sky",
+        "onLanguage:papyrus-project",
+        "onCommand:papyrus.compile",
+        "onCommand:papyrus.compilerelease",
+        "onCommand:papyrus.compilefinal",
+        "onCommand:papyrus.compilefile",
+        "onCommand:papyrus.compilefolder",
+        "onCommand:papyrus.compiletarget",
+        "onCommand:papyrus.createproject"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "papyrus-fo4",
+                "aliases": [
+                    "Papyrus (Fallout 4)"
+                ],
+                "extensions": [
+                    ".psc"
+                ],
+                "filenamePatterns": [
+                    "**/Fallout 4/**"
+                ]
+            },
+            {
+                "id": "papyrus-sse",
+                "aliases": [
+                    "Papyrus (Skyrim SE)"
+                ],
+                "extensions": [
+                    ".psc"
+                ],
+                "filenamePatterns": [
+                    "**/Skyrim Special Edition/**"
+                ]
+            },
+            {
+                "id": "papyrus-sky",
+                "aliases": [
+                    "Papyrus (Skyrim)"
+                ],
+                "extensions": [
+                    ".psc"
+                ],
+                "filenamePatterns": [
+                    "**/Skyrim/**"
+                ]
+            },
+            {
+                "id": "papyrus-project",
+                "aliases": [
+                    "Papyrus Project"
+                ],
+                "extensions": [
+                    ".ppj"
+                ]
+            }
+        ],
+        "commands": [
+            {
+                "command": "papyrus.compile",
+                "title": "Papyrus: Compile (Debug)"
+            },
+            {
+                "command": "papyrus.compilerelease",
+                "title": "Papyrus: Compile (Release)"
+            },
+            {
+                "command": "papyrus.compilefinal",
+                "title": "Papyrus: Compile (Final)"
+            },
+            {
+                "command": "papyrus.compilefile",
+                "title": "Papyrus: Compile File(s)"
+            },
+            {
+                "command": "papyrus.compilefolder",
+                "title": "Papyrus: Compile Folder(s)"
+            },
+            {
+                "command": "papyrus.compiletarget",
+                "title": "Papyrus: Compile Target File"
+            },
+            {
+                "command": "papyrus.createproject",
+                "title": "Papyrus: Create Project"
+            }
+        ],
+        "configuration": {
+            "title": "Papyrus",
+            "properties": {
+                "papyrus.compiler.target": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Specifies a file to be compiled with the \"Papyrus: Compile Target\" command, supports relative pathing from the game directory."
+                },
+                "papyrus.fo4.directory": {
+                    "type": "string",
+                    "default": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fallout 4\\",
+                    "description": "Specifies the path to Fallout 4's installation folder."
+                },
+                "papyrus.fo4.compiler.directory": {
+                    "type": "string",
+                    "default": "Papyrus Compiler\\",
+                    "description": "Specifies the path to the Papyrus Compiler, supports relative pathing from the game directory."
+                },
+                "papyrus.fo4.compiler.output": {
+                    "type": "string",
+                    "default": "Data\\Scripts\\",
+                    "description": "Specifies the path for compiled scripts, supports relative pathing from the game directory."
+                },
+                "papyrus.fo4.compiler.asm": {
+                    "type": "string",
+                    "default": "Discard",
+                    "description": "Specify the Papyrus Compiler assembly mode. \n\"None\" disables all output, \"Only\" only generates Papyrus assembly, not compiled .pex, \"Discard\" generates .pex and deletes assembly, and \"Keep\" generates and keeps both .pex and assembly.",
+                    "enum": [
+                        "None",
+                        "Keep",
+                        "Only",
+                        "Discard"
+                    ]
+                },
+                "papyrus.fo4.compiler.imports": {
+                    "type": "array",
+                    "default": [
+                        "Data\\Scripts\\Source\\User",
+                        "Data\\Scripts\\Source\\Base"
+                    ],
+                    "description": "Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory.\nScript files listed located in import directories listed first will overwrite scripts of the same name in other directories.",
+                    "items": {
+                        "type": "string",
+                        "uniqueItems": true,
+                        "minItems": 1
+                    }
+                },
+                "papyrus.sky.directory": {
+                    "type": "string",
+                    "default": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim\\",
+                    "description": "Specifies the path to Skyrim (Classic)'s installation folder."
+                },
+                "papyrus.sky.compiler.directory": {
+                    "type": "string",
+                    "default": "Papyrus Compiler\\",
+                    "description": "Specifies the path to the Papyrus Compiler, supports relative pathing from the game directory."
+                },
+                "papyrus.sky.compiler.output": {
+                    "type": "string",
+                    "default": "Data\\Scripts\\",
+                    "description": "Specifies the path for compiled scripts, supports relative pathing from the game directory."
+                },
+                "papyrus.sky.compiler.asm": {
+                    "type": "string",
+                    "default": "Discard",
+                    "description": "Specify the Papyrus Compiler assembly mode. \n\"None\" disables all output, \"Only\" only generates Papyrus assembly, not compiled .pex, \"Discard\" generates .pex and deletes assembly, and \"Keep\" generates and keeps both .pex and assembly.",
+                    "enum": [
+                        "None",
+                        "Keep",
+                        "Only",
+                        "Discard"
+                    ]
+                },
+                "papyrus.sky.compiler.imports": {
+                    "type": "array",
+                    "default": [
+                        "Data\\Scripts\\Source"
+                    ],
+                    "description": "Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory.\nScript files listed located in import directories listed first will overwrite scripts of the same name in other directories.",
+                    "items": {
+                        "type": "string",
+                        "uniqueItems": true,
+                        "minItems": 1
+                    }
+                },
+                "papyrus.sse.directory": {
+                    "type": "string",
+                    "default": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\",
+                    "description": "Specifies the path to Skyrim Special Edition's installation folder."
+                },
+                "papyrus.sse.compiler.directory": {
+                    "type": "string",
+                    "default": "Papyrus Compiler\\",
+                    "description": "Specifies the path to the Papyrus Compiler, supports relative pathing from the game directory."
+                },
+                "papyrus.sse.compiler.output": {
+                    "type": "string",
+                    "default": "Data\\Scripts\\",
+                    "description": "Specifies the path for compiled scripts, supports relative pathing from the game directory."
+                },
+                "papyrus.sse.compiler.asm": {
+                    "type": "string",
+                    "default": "Discard",
+                    "description": "Specify the Papyrus Compiler assembly mode. \n\"None\" disables all output, \"Only\" only generates Papyrus assembly, not compiled .pex, \"Discard\" generates .pex and deletes assembly, and \"Keep\" generates and keeps both .pex and assembly.",
+                    "enum": [
+                        "None",
+                        "Keep",
+                        "Only",
+                        "Discard"
+                    ]
+                },
+                "papyrus.sse.compiler.imports": {
+                    "type": "array",
+                    "default": [
+                        "Data\\Scripts\\Source"
+                    ],
+                    "description": "Specifies a list of import folders for the Papyrus Compiler, supports relative pathing from the game directory.\nScript files listed located in import directories listed first will overwrite scripts of the same name in other directories.",
+                    "items": {
+                        "type": "string",
+                        "uniqueItems": true,
+                        "minItems": 1
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,7 +1,0 @@
-{
-    "Enchantment.IsHostile": {
-        "prefix": "ishostile",
-        "body": "IsHostile()${0}",
-        "description": "Enchantment"
-    }
-}

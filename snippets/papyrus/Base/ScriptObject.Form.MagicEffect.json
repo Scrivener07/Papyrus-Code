@@ -1,7 +1,0 @@
-{
-    "MagicEffect.GetAssociatedSkill": {
-        "prefix": "getassociatedskill",
-        "body": "GetAssociatedSkill()${0}",
-        "description": "MagicEffect"
-    }
-}

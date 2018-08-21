@@ -1,414 +1,673 @@
 'use strict';
 import * as vscode from 'vscode';
-import * as FileSystem from 'fs';
-import * as Path from 'path';
+import { existsSync, lstatSync, mkdirSync, writeFileSync } from 'fs';
+import { join, extname, dirname } from 'path';
+import { spawn } from 'child_process';
 import { tmpdir } from 'os';
-import { Extension } from './extension';
-import { Feature } from './feature';
-import { execSync } from 'child_process';
 
-// ???? Horrible Practice ????
-var Terminal: vscode.Terminal;
+import { Extension } from './extension';
 
 export function activate(context: vscode.ExtensionContext) {
-	Extension.Subscribe(context, new Build(context));
-	Extension.Log('Papyrus is activated.');
-
-	vscode.window.onDidCloseTerminal((terminal) => {
-		if (terminal.name == Extension.VarReadOnly.TERMINAL) {
-			Terminal = undefined;
-		}
-	});
+    Extension.Subscribe(context, new PapyrusCode(context));
+    Extension.Log('The extension ' + Extension.Name + ' is now enabled.');
 }
 
 export function deactivate() {
-	Extension.Log('Papyrus is now deactivated.');
+    Extension.Log('The extension ' + Extension.Name + ' is now disabled.');
 }
 
-function GameifyPath(gamePath: string, filePath: string): string {
-	if (filePath.toLowerCase().includes(gamePath.toLowerCase()) == false) {
-		filePath = Path.join(gamePath, filePath);
-	}
+class PapyrusConfig {
+    private hardcodedGameMode: boolean = false;
+    private gameMode: number = -1;
 
-	return filePath;
+    public GameMode() : number {
+        if (this.hardcodedGameMode) { return this.gameMode; }
+
+        if (vscode.window.activeTextEditor != undefined) {
+            switch (vscode.window.activeTextEditor.document.languageId) {
+                case 'papyrus-fo4':
+                    return 0;
+
+                case 'papyrus-sky':
+                    return 1;
+
+                case 'papyrus-sse':
+                    return 2;
+
+                case 'papyrus-project':
+                    return 3;
+            }
+        }
+
+        return -1;
+    }
+
+    public GetGameMode(fileName: string) : number {
+        let result = -1;
+        if      (fileName.includes('Fallout 4'))                { result = 0; }
+        else if (fileName.includes('Skyrim Special Edition'))   { result = 2; }
+        else if (fileName.includes('Skyrim'))                   { result = 1; }
+        return result;
+    }
+
+    public SetGameMode(gameMode: number | undefined) : void {
+        this.hardcodedGameMode = (gameMode != undefined);
+        this.gameMode = (gameMode != undefined) ? gameMode : -1;
+    }
+
+    public Exists() : boolean {
+        let config = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+        return (config != undefined);
+    }
+
+    public GameDirectory() : string {
+        let config = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+        let value = undefined;
+
+        switch (this.GameMode()) {
+            case 0:
+                value = config.get(Extension.Configuration.FO4_GameDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            case 1:
+                value = config.get(Extension.Configuration.SKY_GameDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            case 2:
+                value = config.get(Extension.Configuration.SSE_GameDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            default:
+                return '';
+        }
+    }
+
+    public CompileTarget() : string {
+        let config = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+        let value = config.get(Extension.Configuration.CompileTarget);
+        return (value == undefined) ? '' : value as string;
+    }
+
+    public CompilerDirectory() : string {
+        let config = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+        let value = undefined;
+
+        switch (this.GameMode()) {
+            case 0:
+                value = config.get(Extension.Configuration.FO4_CompilerDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            case 1:
+                value = config.get(Extension.Configuration.SKY_CompilerDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            case 2:
+                value = config.get(Extension.Configuration.SSE_CompilerDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            default:
+                return '';
+        }
+    }
+
+    public ImportDirectories() : Array<string> {
+        let config = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+        let value = undefined;
+
+        switch (this.GameMode()) {
+            case 0:
+                value = config.get(Extension.Configuration.FO4_ImportDirectories);
+                return (value == undefined) ? [''] : value as Array<string>;
+
+            case 1:
+                value = config.get(Extension.Configuration.SKY_ImportDirectories);
+                return (value == undefined) ? [''] : value as Array<string>;
+
+            case 2:
+                value = config.get(Extension.Configuration.SSE_ImportDirectories);
+                return (value == undefined) ? [''] : value as Array<string>;
+
+            default:
+                return [''];
+        }
+    }
+
+    public OutputDirectory() : string {
+        let config = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+        let value = undefined;
+
+        switch (this.GameMode()) {
+            case 0:
+                value = config.get(Extension.Configuration.FO4_OutputDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            case 1:
+                value = config.get(Extension.Configuration.SKY_OutputDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            case 2:
+                value = config.get(Extension.Configuration.SSE_OutputDirectory);
+                return (value == undefined) ? '' : value as string;
+
+            default:
+                return '';
+        }
+    }
+
+    public AsmOptions() : string {
+        let config = vscode.workspace.getConfiguration(Extension.Configuration.Section);
+        let value = undefined;
+
+        switch (this.GameMode()) {
+            case 0:
+                value = config.get(Extension.Configuration.FO4_AsmOptions);
+                return (value == undefined) ? '' : value as string;
+
+            case 1:
+                value = config.get(Extension.Configuration.SKY_AsmOptions);
+                return (value == undefined) ? '' : value as string;
+
+            case 2:
+                value = config.get(Extension.Configuration.SSE_AsmOptions);
+                return (value == undefined) ? '' : value as string;
+
+            default:
+                return '';
+        }
+    }
+
+    public Flags() : string {
+        switch (this.GameMode()) {
+            case 0:
+                return 'Institute_Papyrus_Flags.flg';
+
+            case 1:
+            case 2:
+                return 'TESV_Papyrus_Flags.flg';
+
+            default:
+                return '';
+        }
+    }
 }
 
-function GetScriptPath(gamePath: string, folder?: string): vscode.Uri {
-	if (folder) {
-		return vscode.Uri.file(Path.join(gamePath, 'Data\\Scripts', folder));
-	} else {
-		return vscode.Uri.file(Path.join(gamePath, 'Data\\Scripts'));
-	}
+class PapyrusCode {
+    private Configuration: PapyrusConfig = new PapyrusConfig();
+
+    constructor(context: vscode.ExtensionContext) {
+        this.RegisterCommand(context, Extension.Command.Compile,           () => { this.Compile(false, false, false); });
+        this.RegisterCommand(context, Extension.Command.CompileRelease,    () => { this.Compile(true, true, false); });
+        this.RegisterCommand(context, Extension.Command.CompileFinal,      () => { this.Compile(true, true, true); });
+        this.RegisterCommand(context, Extension.Command.CompileFile,       () => { this.CompileFile(); });
+        this.RegisterCommand(context, Extension.Command.CompileFolder,     () => { this.CompileFolder(); });
+        this.RegisterCommand(context, Extension.Command.CompileTarget,     () => { this.CompileTarget(); });
+        this.RegisterCommand(context, Extension.Command.CreateProject,     () => { this.CreateProjectFile(); });
+    }
+
+    protected RegisterCommand(context: vscode.ExtensionContext, commandName: string, callback: () => any) : void {
+        Extension.Subscribe(context, vscode.commands.registerTextEditorCommand(commandName, callback));
+    }
+
+    private errorConfigMissing(sectionName: string, optionName?: string): void {
+        let message = (optionName) ? 'Missing Config: ' + sectionName + '.' + optionName : 'Missing Config Section: ' + sectionName;
+        vscode.window.showErrorMessage(message, { title: 'Ok' });
+    }
+
+    private Compile(Optimize: boolean, Release: boolean, Final: boolean) : void {
+        if (!this.Configuration.Exists()) {
+            this.errorConfigMissing(Extension.Configuration.Section);
+            return;
+        }
+
+        if (vscode.window.activeTextEditor != undefined) {
+            if (!vscode.window.activeTextEditor.document.languageId.includes('papyrus')) {
+                vscode.window.showErrorMessage('Active file is not a Papyrus script.');
+                return;
+            }
+
+            vscode.window.activeTextEditor.document.save();
+            let Compiler = new PapyrusCompiler(this.Configuration, Optimize, Release, Final,
+                new Array<string>(vscode.window.activeTextEditor.document.fileName));
+
+            Compiler.Run();
+        }
+        else {
+            vscode.window.showErrorMessage('There is no active file to compile!');
+        }
+    }
+
+    private CompileFile() {
+        var selection: Array<string> = new Array<string>();
+        vscode.window.showOpenDialog({
+            canSelectFiles: true,
+            canSelectMany: true,
+            defaultUri: undefined,
+            filters: {
+                'Papyrus Source': ['psc'],
+                'Papyrus Project': ['ppj']
+            }
+        }).then(files => {
+            if (files) {
+                for (let i = 0; i < files.length; i++) {
+                    selection.push(files[i].fsPath);
+                }
+
+                let Compiler = new PapyrusCompiler(this.Configuration, false, false, false, selection, this.Configuration.GetGameMode(selection[0]));
+                Compiler.Run();
+            }
+        });
+    }
+
+    private CompileFolder() {
+        var selection: Array<string> = new Array();
+        vscode.window.showOpenDialog({
+            canSelectFolders: true,
+            canSelectMany: true,
+            defaultUri: undefined
+        }).then(files => {
+            if (files) {
+                for (let i = 0; i < files.length; i++) {
+                    selection.push(files[i].fsPath);
+                }
+
+                let Compiler = new PapyrusCompiler(this.Configuration, false, false, false, selection, this.Configuration.GetGameMode(selection[0]));
+                Compiler.Run();
+            }
+        });
+    }
+
+    private CompileTarget() {
+        if (!this.Configuration.Exists()) {
+            this.errorConfigMissing(Extension.Configuration.Section);
+            return;
+        }
+
+        let compileTarget = this.Configuration.CompileTarget();
+        if (compileTarget != '') {
+            let Compiler = new PapyrusCompiler(this.Configuration, false, false, false,
+                new Array<string>(compileTarget), this.Configuration.GetGameMode(compileTarget));
+            Compiler.Run();
+        }
+        else {
+            vscode.window.showErrorMessage('There is no target file to compile!');
+        }
+    }
+
+    private CreateProjectFile() {
+        var selection: Array<string> = new Array();
+        vscode.window.showOpenDialog({
+            canSelectFiles: true,
+            canSelectMany: true,
+            defaultUri: undefined,
+            filters: {
+                'Papyrus Source': ['psc']
+            }
+        }).then(files => {
+            if (files) {
+                for (let i = 0; i < files.length; i++) {
+                    selection.push(files[i].fsPath);
+                }
+
+                let projectGameMode = this.Configuration.GetGameMode(selection[0]);
+                if (projectGameMode != 0) {
+                    vscode.window.showWarningMessage('Papyrus Project files are only supported by Fallout 4\'s Papyrus Compiler.');
+                    return;
+                }
+
+                let Compiler = new PapyrusCompiler(this.Configuration, false, false, false, selection, projectGameMode);
+
+                vscode.window.showSaveDialog({
+                    defaultUri: undefined,
+                    filters: {
+                        'Papyrus Project': ['ppj']
+                    }
+                }).then(file => {
+                    if (file) {
+                        writeFileSync(file.fsPath, Compiler.ProjectXML);
+                        vscode.window.showTextDocument(file);
+                    }
+                });
+            }
+        });
+    }
 }
 
-export class Build extends Feature {
-	constructor(context: vscode.ExtensionContext) {
-		super();
-		this.RegisterCommand(context, Extension.Commands.Compile);
-		this.RegisterCommand(context, Extension.Commands.CompileRelease);
-		this.RegisterCommand(context, Extension.Commands.CompileFinal);
-		this.RegisterCommand(context, Extension.Commands.CompileFile);
-		this.RegisterCommand(context, Extension.Commands.CompileFolder);
-		this.RegisterCommand(context, Extension.Commands.CompileDefault);
-		this.RegisterCommand(context, Extension.Commands.CreateProject);
-	}
+class PapyrusCompiler {
+    public Path:        string;
+    public Directory:   string;
+    public Output:      string;
+    public Flags:       string;
+    public Asm:         string;
+    public Project:     boolean = false;
+    public Optimize:    boolean = false;
+    public Release:     boolean = false;
+    public Final:       boolean = false;
+    public Imports:     Array<string>;
+    public Scripts:     Array<string>;
+    public Folders:     Array<string> = new Array<string>();
+    public GameMode:    number;
 
-	protected OnCommand(commandName: string): void {
-		let configuration = vscode.workspace.getConfiguration(Extension.Configuration.Section);
-		if (configuration == undefined) {
-			this.WarnConfigurationMissing(Extension.Configuration.Section);
-			return;
-		}
+    constructor(Configuration: PapyrusConfig, Optimize: boolean, Release: boolean, Final: boolean, Scripts?: Array<string>, GameMode?: number) {
+        Configuration.SetGameMode(GameMode);
+        this.GameMode   = Configuration.GameMode();
+        this.Path       = Configuration.GameDirectory();
+        this.Directory  = this.GameifyPath(Configuration.CompilerDirectory());
+        this.Output     = this.GameifyPath(Configuration.OutputDirectory());
+        this.Flags      = Configuration.Flags();
+        this.Asm        = Configuration.AsmOptions();
+        this.Optimize   = Optimize;
+        this.Release    = Release;
+        this.Final      = Final;
+        this.Imports    = this.SortImports(Configuration.ImportDirectories());
+        this.Scripts    = this.SortScripts(Scripts);
+    }
 
-		else {
-			let compiler = new Compiler();
-			vscode.window.activeTextEditor.document.save()
+    private GameifyPath(filePath: string) : string {
+        return (filePath.toLowerCase().includes(this.Path.toLowerCase())) ? filePath : join(this.Path, filePath);
+    }
 
-			if (this.InitGameDir(compiler, configuration) == false) {
-				return
-			}
+    private isPathNamespace(filePath: string) : boolean {
+        switch (this.GameMode) {
+            case 0:
+                filePath = filePath.substring(dirname(filePath).length);
+                if (filePath.split('\\').length > 3) {
+                    return true;
+                }
 
-			if (commandName == Extension.Commands.Compile) {
-				if (this.Configure(compiler, configuration, undefined, false, false, false)) {
-					this.Compile(compiler);
-				}
-			}
+            case 1:
+            case 2:
+            default:
+                return false;
+        }
+    }
 
-			else if (commandName == Extension.Commands.CompileRelease) {
-				if (this.Configure(compiler, configuration, undefined, true, true, false)) {
-					this.Compile(compiler);
-				}
-			}
+    private SortImports(imports: Array<string>) : Array<string> {
+        let result = new Array<string>();
 
-			else if (commandName == Extension.Commands.CompileFinal) {
-				if (this.Configure(compiler, configuration, undefined, true, true, true)) {
-					this.Compile(compiler);
-				}
-			}
+        imports.forEach((path) => {
+            path = this.GameifyPath(path);
 
-			else if (commandName == Extension.Commands.CompileFile) {
-				var selection: Array<string> = new Array();
-				vscode.window.showOpenDialog({
-					canSelectFiles: true,
-					canSelectMany: true,
-					defaultUri: GetScriptPath(compiler.gamePath, 'Source'),
-					filters: {
-						'Papyrus Source': ['psc'],
-						'Papyrus Project': ['ppj']
-					}
-				}).then(files => {
-					if (files) {
-						for (let i = 0; i < files.length; i++) {
-							selection.push(files[i].fsPath);
-						}
+            if (existsSync(path)) {
+                if (lstatSync(path).isDirectory()) {
+                    if (result.findIndex((tPath) => (path == tPath)) == -1) {
+                        if (!this.isPathNamespace(path)) {
+                            result.push(path);
+                        }
+                        else {
+                            vscode.window.showWarningMessage('Import path is a Namespace! It will be skipped.\n(' + path + ')');
+                        }
+                    }
+                }
+                else {
+                    vscode.window.showWarningMessage('Import path is not a folder! It will be skipped.\n(' + path + ')');
+                }
+            }
+            else {
+                vscode.window.showWarningMessage('Import path does not exist! It will be skipped.\n(' + path + ')');
+            }
+        });
 
-						if (this.Configure(compiler, configuration, selection, false, false, false)) {
-							this.Compile(compiler);
-						}
-					}
-				});
-			}
+        return result;
+    }
 
-			else if (commandName == Extension.Commands.CompileFolder) {
-				var selection: Array<string> = new Array();
-				vscode.window.showOpenDialog({
-					canSelectFolders: true,
-					canSelectMany: true,
-					defaultUri: GetScriptPath(compiler.gamePath, 'Source')
-				}).then(files => {
-					if (files) {
-						for (let i = 0; i < files.length; i++) {
-							selection.push(files[i].fsPath);
-						}
+    private SortScripts(scripts: Array<string> | undefined) : Array<string> {
+        if (scripts == undefined) { return new Array<string>(); }
+        let result = new Array<string>();
 
-						if (this.Configure(compiler, configuration, selection, false, false, false)) {
-							this.Compile(compiler);
-						}
-					}
-				});
-			}
+        scripts.forEach((path) => {
+            let fileExt = extname(path);
+            path = this.GameifyPath(path);
 
-			else if (commandName == Extension.Commands.CompileDefault) {
-				let compileTarget: Array<string> = new Array(); compileTarget.push(configuration.get(Extension.Configuration.F4_CompileTarget) as string);
+            switch (fileExt) {
+                case '.psc':
+                    let pathFolder = dirname(path) + '\\';
+                    if ((this.Imports.findIndex((tPath) => (tPath.toLowerCase() == pathFolder.toLowerCase())) == -1)) {
+                        if (!this.isPathNamespace(pathFolder)) {
+                            this.Imports.unshift(pathFolder);
+                        }
+                    }
 
-				if ((compileTarget[0] == undefined) || (compileTarget[0] == '')) {
-					this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_CompileTarget);
-					return;
-				}
+                    result.push(path);
+                    break;
 
-				else if (FileSystem.existsSync(compileTarget[0]) == false) {
-					let compileTargetTemp: string = GameifyPath(compiler.gamePath, compileTarget[0]);
-					if (FileSystem.existsSync(compileTargetTemp) == false) {
-						this.WarnResourceMissing(compileTarget[0]);
-						return;
-					}
+                case '.ppj':
+                    if (scripts.length != 1) {
+                        vscode.window.showErrorMessage('Only one Papyrus Project file can be compiled at once.', { title: 'Ok' });
+                        return new Array<string>();
+                    }
 
-					else {
-						compileTarget[0] = compileTargetTemp
-					}
-				}
+                    this.Project = true;
+                    break;
 
-				if (this.Configure(compiler, configuration, compileTarget, false, false, false)) {
-					this.Compile(compiler);
-				}
-			}
+                default:
+                    if (lstatSync(path).isDirectory()) {
+                        if ((this.Imports.findIndex((tPath) => (tPath == path)) == -1)) {
+                            this.Imports.unshift(path);
+                        }
 
-			else if (commandName == Extension.Commands.CreateProject) {
-				var selection: Array<string> = new Array();
-				vscode.window.showOpenDialog({
-					canSelectFiles: true,
-					canSelectMany: true,
-					defaultUri: GetScriptPath(compiler.gamePath, 'Source'),
-					filters: {
-						'Papyrus Source': ['psc']
-					}
-				}).then(files => {
-					if (files) {
-						for (let i = 0; i < files.length; i++) {
-							selection.push(files[i].fsPath);
-						}
+                        if (!this.isPathNamespace(path)) {
+                            this.Folders.push(path);
+                        }
+                    }
 
-						if (this.Configure(compiler, configuration, selection, false, false, false)) {
-							this.SaveProject(compiler);
-						}
-					}
-				});
-			}
-		}
-	}
+                    break;
+            }
+        });
 
-	private Configure(compiler: Compiler, configuration: vscode.WorkspaceConfiguration, target: Array<string>, optimize: boolean, release: boolean, final: boolean): boolean {
-		compiler.Asm = configuration.get(Extension.Configuration.F4_AsmOptions) as string;
-		if (compiler.Asm == undefined) {
-			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_AsmOptions);
-			return false;
-		}
+        return result;
+    }
 
-		compiler.Directory = configuration.get(Extension.Configuration.F4_CompilerDirectory) as string;
-		if (compiler.Directory == undefined) {
-			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_CompilerDirectory);
-			return false;
-		}
+    private get isPathValid() : boolean {
+        if (existsSync(this.Path)) {
+            let executableName: string = '';
+            switch (this.GameMode) {
+                case 0:
+                    executableName = 'Fallout4.exe';
+                    break;
 
-		compiler.Directory = Path.join(GameifyPath(compiler.gamePath, compiler.Directory), Extension.VarReadOnly.F4_COMPILER);
-		if (FileSystem.existsSync(compiler.Directory) == false) {
-			this.WarnResourceMissing(compiler.Directory);
-			return false;
-		}
+                case 1:
+                    executableName = 'TESV.exe';
+                    break;
 
-		compiler.Imports = configuration.get(Extension.Configuration.F4_ImportDirectories) as Array<string>;
-		if (compiler.Imports == undefined) {
-			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_ImportDirectories);
-			return false;
-		}
-		else {
-			for (let path of compiler.Imports) {
-				path = GameifyPath(compiler.gamePath, path);
-				if (FileSystem.existsSync(path) == false) {
-					this.WarnResourceMissing(path);
-					return false;
-				}
-			}
-		}
+                case 2:
+                    executableName = 'SkyrimSE.exe';
+                    break;
 
-		if (target != undefined) {
-			compiler.Scripts = target;
-		} else {
-			compiler.Scripts = new Array();
-			compiler.Scripts.push(vscode.window.activeTextEditor.document.fileName);
-		}
+                default:
+                    break;
+            }
 
-		var tempFolders: Array<string> = new Array();
-		var tempScripts: Array<string> = new Array();
+            if (existsSync(join(this.Path, executableName))) {
+                return true;
+            }
+            else {
+                vscode.window.showErrorMessage('The selected installation directory is missing: ' + executableName);
+            }
+        }
+        else {
+            vscode.window.showErrorMessage('The selected installation directory doesn\'t exist!');
+        }
 
-		for (let i = 0; i < compiler.Scripts.length; i++) {
-			let fileExt = Path.extname(compiler.Scripts[i]);
+        return false;
+    }
 
-			if (fileExt == ".psc") {
-				if ((compiler.Imports.findIndex(check => check == Path.dirname(compiler.Scripts[i])) == -1) && (compiler.Scripts[i].substring(compiler.Scripts[i].indexOf("Data\\Scripts")).split("\\").length < 6)) {
-					// DO add missing import folders, DONOT add namespaces as imports.
-					compiler.Imports.unshift(Path.dirname(compiler.Scripts[i]));
-				}
+    private get isDirectoryValid() : boolean {
+        if (existsSync(this.Directory)) {
+            if (existsSync(join(this.Directory, 'PapyrusCompiler.exe'))) {
+                return true;
+            }
+            else {
+                vscode.window.showErrorMessage('The selected compiler directory is missing: PapyrusCompiler.exe');
+            }
+        }
+        else {
+            vscode.window.showErrorMessage('The selected compiler directory doesn\'t exist!');
+        }
 
-				tempScripts.push(compiler.Scripts[i]);
+        return false;
+    }
 
-			} else if (fileExt == ".ppj") {
-				if (compiler.Scripts.length != 1) {
-					vscode.window.showErrorMessage("Only one Project can be compiled at once!", { title: "Ok" });
-					return false;
-				}
+    private get isOutputValid() : boolean {
+        if (!existsSync(this.Output)) {
 
-				compiler.Project = true;
-				return true;
+            vscode.window.showInformationMessage('The selected compiler output directory was not found! Attempting to create it...');
+            mkdirSync(this.Output);
 
-			} else if (FileSystem.lstatSync(compiler.Scripts[i]).isDirectory()) {
-				if (compiler.Scripts[i].substring(compiler.Scripts[i].indexOf("Data\\Scripts")).split("\\").length >= 6) {
-					vscode.window.showErrorMessage("Namespaces cannot be selected when using \"Compile Folder\".", { title: "Ok" });
-					return false;
-				}
+            if (existsSync(this.Output)) {
+                return true;
+            }
+            else {
+                vscode.window.showErrorMessage('The selected compiler output directory could not be created!');
+            }
+        }
 
-				if (compiler.Imports.findIndex(check => check == compiler.Scripts[i]) == -1) {
-					compiler.Imports.unshift(compiler.Scripts[i]);
-				}
+        return true;
+    }
 
-				tempFolders.push(compiler.Scripts[i]);
-			}
-		}
+    private get isAsmValid() : boolean {
+        switch (this.Asm.toLowerCase()) {
+            case 'none':
+            case 'keep':
+            case 'only':
+            case 'discard':
+                return true;
 
-		compiler.Scripts = tempScripts;
-		compiler.Folders = tempFolders;
+            default:
+                vscode.window.showErrorMessage('The selected compiler assembly option is invalid!');
+                return false;
+        }
+    }
 
-		compiler.Output = configuration.get(Extension.Configuration.F4_OutputDirectory) as string;
-		if (compiler.Output == undefined) {
-			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_OutputDirectory);
-			return false;
-		}
+    private get areImportsValid() : boolean {
+        if (this.Imports.length <= 0) {
+            vscode.window.showErrorMessage('There are no imports specified!');
+            return false;
+        }
 
-		compiler.Output = GameifyPath(compiler.gamePath, compiler.Output);
-		if (FileSystem.existsSync(compiler.Output) == false) {
-			this.WarnResourceMissing(compiler.Output);
-			return false;
-		}
+        return true;
+    }
 
-		compiler.Optimize = optimize;
-		compiler.Release = release;
-		compiler.Final = final;
-		return true;
-	}
+    private get areScriptsValid() : boolean {
+        if ((this.Scripts.length <= 0) && (this.Folders.length <= 0)) {
+            vscode.window.showErrorMessage('There are no scripts selected to be compiled!');
+            return false;
+        }
 
-	private InitGameDir(compiler: Compiler, configuration: vscode.WorkspaceConfiguration): boolean {
-		compiler.gamePath = configuration.get(Extension.Configuration.F4_GameDirectory) as string;
-		if (compiler.gamePath == undefined) {
-			this.WarnConfigurationMissing(Extension.Configuration.Section, Extension.Configuration.F4_GameDirectory);
-			return false;
+        return true;
+    }
 
-		} else if (FileSystem.existsSync(compiler.gamePath) == false) {
-			this.WarnResourceMissing(compiler.gamePath);
-			return false;
-		}
+    private get isValid() : boolean {
+        return (this.isPathValid && this.isDirectoryValid && this.isOutputValid && this.isAsmValid && this.areImportsValid && this.areScriptsValid);
+    }
 
-		if (FileSystem.existsSync(Path.join(compiler.gamePath, Extension.VarReadOnly.F4_EXECUTABLE)) == false) {
-			vscode.window.showErrorMessage("Fallout 4 is not installed in the configured game directory");
-			return false;
-		}
+    public get ProjectXML(): string {
+        var XMLWriter = require('xml-writer'); let xm = new XMLWriter(true); xm.startDocument();
+        xm.startElement('PapyrusProject').writeAttribute('xmlns', 'PapyrusProject.xsd').writeAttribute('Output', this.Output).writeAttribute('Flags', this.Flags).writeAttribute('Asm', this.Asm);
+        xm.writeAttribute('Optimize', this.Optimize.toString()).writeAttribute('Release', this.Release.toString()).writeAttribute('Final', this.Final.toString());
 
-		if (FileSystem.existsSync(Path.join(compiler.gamePath, Extension.VarReadOnly.F4_EXTENDER)) == false) {
-			vscode.window.showInformationMessage("F4SE is not installed!");
-		}
+        xm.startElement('Imports')
+        for (let i = 0; i < this.Imports.length; i++) {
+            xm.startElement('Import').text(this.Imports[i]).endElement();
+        } xm.endElement();
 
-		return true;
-	}
+        if (this.Folders.length > 0) {
+            xm.startElement('Folders')
+            for (let i = 0; i < this.Folders.length; i++) {
+                xm.startElement('Folder').text(this.Folders[i]).endElement();
+            } xm.endElement();
+        }
 
-	private Compile(compiler: Compiler): void {
-		if (Terminal == undefined) {
-			Terminal = vscode.window.createTerminal(Extension.VarReadOnly.TERMINAL, Extension.VarReadOnly.SHELL);
-		}
+        if (this.Scripts.length > 0) {
+            xm.startElement('Scripts')
+            for (let i = 0; i < this.Scripts.length; i++) {
+                xm.startElement('Script').text(this.Scripts[i]).endElement();
+            } xm.endElement();
+        }
 
-		Terminal.sendText("cls"); Terminal.show();
-		Terminal.sendText(compiler.Parameters);
-	}
+        xm.endDocument();
+        return xm.toString();
+    }
 
-	private SaveProject(compiler: Compiler): void {
-		vscode.window.showSaveDialog({
-			defaultUri: undefined,
-			filters: {
-				'Papyrus Project': ['ppj']
-			}
-		}).then(file => {
-			if (file) {
-				FileSystem.writeFileSync(file.fsPath, compiler.ProjectXML);
-				vscode.window.showTextDocument(file);
-			}
-		});
-	}
+    private get GetCompileArgs() : Array<string> {
+        let result = new Array<string>();
+        switch (this.GameMode) {
+            case 0:
+                if (this.Project) { result.push(this.Scripts[0]); }
+                else {
+                    let tempDir: string = join(tmpdir(), Extension.Name);
+                    if (!existsSync(tempDir)) { mkdirSync(tempDir); }
 
-	private WarnConfigurationMissing(sectionName: string, optionName?: string): void {
-		let message;
-		if (optionName) {
-			message = 'Missing configuration: ' + sectionName + '.' + optionName;
-		}
+                    let filePath: string = join(tempDir, '\\PapyrusCodeTemp.ppj');
+                    writeFileSync(filePath, this.ProjectXML);
 
-		else {
-			message = 'Missing configuration section: ' + sectionName;
-		}
+                    result.push(filePath);
+                }
 
-		vscode.window.showErrorMessage(message, { title: "Ok" });
-		Extension.Log(this.ToString(), message);
-	}
+                break;
 
-	private WarnResourceMissing(resource: string): void {
-		let message = 'File or Folder does not exist: ' + resource;
-		vscode.window.showErrorMessage(message, { title: "Ok" });
-		Extension.Log(this.ToString(), message);
-	}
+            case 1:
+            case 2:
+                if (this.Folders.length > 0) {
+                    result.push(this.Folders[0]);
+                    result.push('-all');
+                }
+                else {
+                    result.push(this.Scripts.join(';'));
+                }
 
-	private WarnCannotCompile(unsupportedFile: string): void {
-		let message = 'File type ' + unsupportedFile + ' is unsupported. Cannot compile.';
-		vscode.window.showWarningMessage(message);
-		Extension.Log(this.ToString(), message);
-	}
+                result.push('-f=' + this.Flags);
+                result.push('-i=' + this.Imports.join(';'));
+                result.push('-o=' + this.Output);
 
-	public ToString(): string {
-		return "Papyrus Build";
-	}
-}
+                switch (this.Asm) {
+                    case 'None':
+                        result.push('-noasm');
+                        break;
 
-class Compiler {
-	public Directory: string;
-	public Output: string;
-	public Flags: string = Extension.VarReadOnly.F4_FLAGS_DEFAULT;
-	public Asm: string;
-	public Project: boolean = false;
-	public Optimize: boolean = false;
-	public Release: boolean = false;
-	public Final: boolean = false;
-	public Imports: Array<string>;
-	public Folders: Array<string>;
-	public Scripts: Array<string>;
-	public gamePath: string;
+                    case 'Keep':
+                        result.push('-keepasm');
+                        break;
 
-	public get ProjectXML(): string {
-		var XMLWriter = require('xml-writer'); let xm = new XMLWriter(true); xm.startDocument();
-		xm.startElement('PapyrusProject').writeAttribute('xmlns', 'PapyrusProject.xsd').writeAttribute('Output', this.Output).writeAttribute('Flags', this.Flags).writeAttribute('Asm', this.Asm);
-		xm.writeAttribute('Optimize', this.Optimize.toString()).writeAttribute('Release', this.Release.toString()).writeAttribute('Final', this.Final.toString());
+                    case 'Only':
+                        result.push('-asmonly');
+                        break;
 
-		xm.startElement('Imports')
-		for (let i = 0; i < this.Imports.length; i++) {
-			this.Imports[i] = GameifyPath(this.gamePath, this.Imports[i]);
-			xm.startElement('Import').text(this.Imports[i]).endElement();
-		} xm.endElement();
+                    default:
+                        break;
+                }
 
-		if (this.Folders.length > 0) {
-			xm.startElement('Folders')
-			for (let i = 0; i < this.Folders.length; i++) {
-				xm.startElement('Folder').text(this.Folders[i]).endElement();
-			} xm.endElement();
-		}
+                if (this.Optimize) {
+                    result.push('-optimize');
+                }
 
-		if (this.Scripts.length > 0) {
-			xm.startElement('Scripts')
-			for (let i = 0; i < this.Scripts.length; i++) {
-				xm.startElement('Script').text(this.Scripts[i]).endElement();
-			} xm.endElement();
-		}
+            default:
+                break;
+        }
 
-		xm.endDocument();
-		return xm.toString();
-	}
+        return result;
+    }
 
-	public get Parameters(): string {
-		if (this.Project) {
-			return "\"" + this.Directory + "\" \"" + this.Scripts[0] + "\"";
-		}
+    public Run() {
+        if (this.isValid) {
+            Extension.OutputChannel.clear();
+            Extension.OutputChannel.show();
 
-		else {
-			let tempDir: string = Path.join(tmpdir(), Extension.VarReadOnly.TERMINAL);
-			if (FileSystem.existsSync(tempDir) == false) { FileSystem.mkdirSync(tempDir); }
+            if ((this.GameMode == 1) || (this.GameMode == 2)) {
+                Extension.OutputChannel.appendLine('Papyrus Compiler Version 1.0.0.0 for Skyrim');
+                Extension.OutputChannel.appendLine('Copyright (C) ZeniMax Media. All rights reserved.');
+            }
 
-			let filePath: string = Path.join(tempDir, Extension.VarReadOnly.PROJECT);
-			FileSystem.writeFileSync(filePath, this.ProjectXML);
+            var pCompiler = spawn(join(this.Directory, 'PapyrusCompiler.exe'), this.GetCompileArgs);
+            pCompiler.stdout.on('data', function(data) {
+                Extension.OutputChannel.append(data.toString());
+            });
 
-			return "\"" + this.Directory + "\" \"" + filePath + "\"";
-		}
-	}
+            pCompiler.stderr.on('data', function(data) {
+                Extension.OutputChannel.append(data.toString());
+            });
+        }
+        else {
+            // Compiler is not valid.
+        }
+    }
 }

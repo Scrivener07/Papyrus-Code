@@ -1,7 +1,0 @@
-{
-    "Furniture.GetAssociatedForm": {
-        "prefix": "getassociatedform",
-        "body": "GetAssociatedForm()${0}",
-        "description": "Furniture"
-    }
-}

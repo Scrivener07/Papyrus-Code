@@ -3,64 +3,63 @@ import * as vscode from 'vscode';
 import * as Papyrus from './papyrus';
 
 export function activate(context: vscode.ExtensionContext) {
-	Papyrus.activate(context);
-	Extension.Log('The extension ' + Extension.Name + ' is now active.');
+    Papyrus.activate(context);
 }
 
 export function deactivate() {
-	Papyrus.deactivate();
-	Extension.Log('The extension ' + Extension.Name + ' is now deactivated.');
+    Papyrus.deactivate();
 }
 
 export namespace Extension {
-	export const Name: string = "papyrus-code";
-	export const DisplayName: string = "Papyrus Code";
+    export const Name: string = 'papyrus-code';
+    export const OutputChannel: vscode.OutputChannel = vscode.window.createOutputChannel('Papyrus-Code');
 
-	export function Log(prefix: string, text?: string) {
-		if (text) {
-			prefix = "(" + prefix + ") " + text;
-		}
-		console.log('[' + Name + '] ' + prefix);
-	}
+    export function Log(prefix: string, text?: string) {
+        if (text) { prefix = '(' + prefix + ') ' + text; }
+        console.log('[' + Name + '] ' + prefix);
+    }
 
-	export function Subscribe(context: vscode.ExtensionContext, subscription: any) {
-		context.subscriptions.push(subscription);
-	}
+    export function Subscribe(context: vscode.ExtensionContext, subscription: any) {
+        context.subscriptions.push(subscription);
+    }
 
-	export namespace Language {
-		export const Papyrus: string = 'papyrus';
-		export const PapyrusProject: string = 'papyrus-project';
-		export const PapyrusAssembly: string = 'papyrus-assembly';
-	}
+    export namespace Configuration {
+        export const Section:               string = 'papyrus';
+        export const CompileTarget:         string = 'compiler.target';
 
-	export namespace Commands {
-		export const Compile: string = 'papyrus.compile';
-		export const CompileRelease: string = 'papyrus.compilerelease';
-		export const CompileFinal: string = 'papyrus.compilefinal';
-		export const CompileFile: string = 'papyrus.compilefile';
-		export const CompileFolder: string = 'papyrus.compilefolder';
-		export const CompileDefault: string = 'papyrus.compiledefault';
-		export const CreateProject: string = 'papyrus.createproject';
-	}
+        export const FO4_GameDirectory:     string = 'fo4.directory';
+        export const FO4_CompilerDirectory: string = 'fo4.compiler.directory';
+        export const FO4_ImportDirectories: string = 'fo4.compiler.imports';
+        export const FO4_OutputDirectory:   string = 'fo4.compiler.output';
+        export const FO4_AsmOptions:        string = 'fo4.compiler.asm';
 
-	export namespace Configuration {
-		export const Section: string = 'papyrus';
-		export const F4_GameDirectory: string = 'fo4.directory';
-		export const F4_CompileTarget: string = 'fo4.compiler.target';
-		export const F4_CompilerDirectory: string = 'fo4.compiler.directory';
-		export const F4_ImportDirectories: string = 'fo4.compiler.imports';
-		export const F4_OutputDirectory: string = 'fo4.compiler.output';
-		export const F4_AsmOptions: string = 'fo4.compiler.asm';
-	}
+        export const SKY_GameDirectory:     string = 'sky.directory';
+        export const SKY_CompilerDirectory: string = 'sky.compiler.directory';
+        export const SKY_ImportDirectories: string = 'sky.compiler.imports';
+        export const SKY_OutputDirectory:   string = 'sky.compiler.output';
+        export const SKY_AsmOptions:        string = 'sky.compiler.asm';
 
-	export namespace VarReadOnly {
-		export const F4_FLAGS_DEFAULT: string = 'Institute_Papyrus_Flags.flg';
-		export const F4_COMPILER: string = 'PapyrusCompiler.exe';
-		export const F4_EXTENDER: string = 'f4se_loader.exe';
-		export const F4_EXECUTABLE: string = 'Fallout4.exe';
+        export const SSE_GameDirectory:     string = 'sse.directory';
+        export const SSE_CompilerDirectory: string = 'sse.compiler.directory';
+        export const SSE_ImportDirectories: string = 'sse.compiler.imports';
+        export const SSE_OutputDirectory:   string = 'sse.compiler.output';
+        export const SSE_AsmOptions:        string = 'sse.compiler.asm';
+    }
 
-		export const PROJECT: string = '\\PapyrusCodeTemp.ppj';
-		export const TERMINAL: string = 'Papyrus-Code';
-		export const SHELL: string = 'cmd.exe';
-	}
+    export namespace Command {
+        export const Compile:           string = 'papyrus.compile';
+        export const CompileRelease:    string = 'papyrus.compilerelease';
+        export const CompileFinal:      string = 'papyrus.compilefinal';
+        export const CompileFile:       string = 'papyrus.compilefile';
+        export const CompileFolder:     string = 'papyrus.compilefolder';
+        export const CompileTarget:     string = 'papyrus.compiletarget';
+        export const CreateProject:     string = 'papyrus.createproject';
+    }
+
+    export namespace Language {
+        export const Papyrus_FO4:       string = 'papyrus-fo4';
+        export const Papyrus_SKY:       string = 'papyrus-sky';
+        export const Papyrus_SSE:       string = 'papyrus-sse';
+        export const PapyrusProject:    string = 'papyrus-project';
+    }
 }
